@@ -1,0 +1,188 @@
+# Prompts
+
+## 1 Mar 2026
+
+### Research
+
+```markdown
+Here is the "Times News Network Newslist" - which are sent to journalists to write stories on - as of 27 Feb 2026.
+
+If we wanted to write analytical pieces, i.e. that would be of interest even a week or two later rather than just as breaking news, what stories would you pick and why?
+
+Think like an expert editor of the Times of India. In this context:
+
+- What patterns would an expert in this field check / recognize that beginners would miss?
+- What questions would an expert ask that a beginner would not know to?
+- What problems / failures would an expert anticipate that beginners may not be aware of?
+
+Based on this, identify criteria to select news articles, select the top 10 that meet these criteria, rank order them, and explain why you chose these stories and how they would be of interest to readers even a week or two later. Also, suggest potential angles for analysis for each story.
+
+<NEWS>...</NEWS>
+```
+
+- [GPT 5.2 Extended Thinking](https://chatgpt.com/c/69a3d872-da74-839a-aa82-49fa7436a9fa)
+- [Sonnet 4.5 Extended Thinking](https://claude.ai/chat/6a18438f-4926-4323-8b1d-55b3aaaeccac)
+- [Gemini 3.1 Pro](https://gemini.google.com/app/3b5ac48dc592bdaf)
+
+### Cross-reference research
+
+```markdown
+Here are opinions by Gemini and ChatGPT. Factor in what's better in their analysis, drop what's less good, and rewrite your version. Also share whose opinion (yours, Gemini's, or ChatGPT's) was the best and why - rank-ordered.
+```
+
+### Suggest prompts
+
+```markdown
+For the top 5 stories, suggest prompts I could use to run on AI deep research agents to get deeper insights and analysis on the story.
+
+My aim is to, as a journalist, submit a story that is not just a rehash of the news, but has deeper insights and analysis that would be of interest to readers even a week or two later, and uncovers insights that are not yet publicly known or widely discussed.
+
+Ways an AI agent can achieve this include data analysis from primary data sources, niche websites (non-media / mainstream) / social media, etc. Factor these into the prompt.
+```
+
+### Research West Bengal SIR
+
+```markdown
+You are a research analyst supporting an investigative journalist at the Times of India. Your task is to map the legal and administrative precedent for West Bengal's 2025-26 Special Intensive Revision (SIR) exercise and its outcomes.
+
+Research the following specific questions:
+
+1. Has any Indian state previously conducted a voter roll revision that resulted in: (a) out-of-state judges being requisitioned to adjudicate disputes, (b) state cabinet compensating deaths linked to the process, or (c) a category of voters marked "under adjudication" on a published electoral roll? Search Election Commission of India orders, Supreme Court filings, and academic work on Indian electoral administration (search SSRN, EPW archives, and Lok Dhaba datasets).
+
+2. What is the legal status of a voter whose name is "under adjudication" on polling day? Search for Election Commission of India guidelines, Representation of the People Act provisions, and any HC or SC orders specifically addressing this category. If no precedent exists, document that gap explicitly.
+
+3. Find and analyse the geographic distribution of the 60+ lakh "under adjudication" names — are they disproportionately concentrated in specific districts or assembly constituencies? Cross-reference with 2021 Census demographic data and 2021 West Bengal election results to identify whether the burden falls unevenly on specific communities or opposition strongholds.
+
+4. Search social media (X/Twitter, Facebook public groups, Bengali-language platforms) for testimonials from BLOs (Booth Level Officers) or ground-level workers describing the verification process — specifically any accounts of threats, coercion, or impossible documentation demands placed on voters.
+
+Primary sources to prioritise: Election Commission of India press releases and order archives, Supreme Court cause list and filings (search for SIR-related petitions), West Bengal government gazette notifications, and Lok Dhaba (Trivedi Centre) electoral data.
+
+Output a structured memo with: key findings, gaps in publicly available data, and 3 questions that still require on-ground reporting to answer.
+```
+
+### Compare outputs
+
+- 🟢 Sonnet 4.6 Research: Strong analytical rigor, deep constitutional analysis, nuanced data, actionable. https://claude.ai/chat/4fa8b807-3c1a-467d-888a-4b49851f256d
+- 🟢 GPT 5.2: Strong sources, well structured, good legal analysis, intellectually honest, less granular on district data. https://chatgpt.com/g/g-p-69a3db6550888191b431eb352f946803-journalists/c/69a3dbca-b1c0-8399-91e2-63d4fce8f35c
+- 🟡 ChatGPT Deep Research: Weak district analysis. https://chatgpt.com/g/g-p-69a3db6550888191b431eb352f946803-journalists/c/69a3dbc0-33e4-83a0-bebe-676f3b5b6e77
+- 🔴 Gemini Deep Research: Poor logic, overconfident. https://gemini.google.com/app/3c5398043e4b4a29
+
+Ranking by Claude Opus 4.6 Extended - Incognito:
+
+```markdown
+Here are responses from four agents to the same question below. Rank order the responses by quality, with reason.
+<QUESTION>...</QUESTION>
+<CHATGPT>...</CHATGPT>
+<CHATGPT-DEEP-RESEARCH>...</CHATGPT-DEEP-RESEARCH>
+<CLAUDE-RESEARCH>...</CLAUDE-RESEARCH>
+<GEMINI-DEEP-RESEARCH>...</GEMINI-DEEP-RESEARCH>
+```
+
+**1. Claude Research**
+
+This is the strongest response across nearly every dimension that matters for an investigative journalist.
+
+**Analytical rigor.** It's the only response that includes a formal, tiered source-quality assessment (Tier 1–4), which is exactly what a journalist needs to know which claims can go in print and which need further verification. It flags the Hamimul Islam case — a BLO death TMC attributed to SIR stress but police later linked to a personal loan dispute — which is a genuine investigative insight none of the others catch. It also notes TMC's escalating death toll claims (39→120) as unverified at the higher figure, showing appropriate skepticism toward all sides.
+
+**Legal depth.** The constitutional analysis is the most thorough. It walks through Sections 22, 23, 24 of RPA 1950, the Registration of Electors Rules 1960, and the Electoral Roll Management Rules 2003, documenting not just that "under adjudication" has no statutory basis, but listing exactly which provisions were searched and found lacking. It traces the evolving Supreme Court jurisprudence on the right to vote from _Jyoti Basu_ (1982) through _PUCL_ (2003) to _Anoop Baranwal_ (2023), giving the legal story a doctrinal arc.
+
+**Data and nuance.** The district-level table is the most analytically useful of any response, combining under-adjudication figures, Muslim population percentages, 2021 political control, and border status in one place. Crucially, it identifies the Matua (Hindu refugee) community's burden and the Sabrang India finding that initial deletion rates were actually _lower_ in Muslim-majority areas — a counterpoint that prevents simplistic communal framing and shows genuine analytical honesty. The Purba Bardhaman anomaly (high under-adjudication numbers despite moderate Muslim population and no border) is identified as a puzzle requiring on-ground investigation — the kind of question that makes a reporter's next trip productive.
+
+**Actionability.** The recommended next steps — specific RTI requests, interview targets (Odisha/Jharkhand judicial officers as neutral witnesses), data journalism cross-references (literacy, poverty, urbanization, not just religion), and a legal angle (whether Article 142 can create voter categories Parliament hasn't legislated) — go beyond the brief and are immediately usable.
+
+**Weakness:** Occasionally verges on advocacy framing, and some district figures are hedged with tildes (~), reflecting wire-report sourcing rather than official data.
+
+---
+
+**2. ChatGPT (Regular)**
+
+A very strong second that in some ways is more polished as a deliverable than Claude's response.
+
+**Sourcing.** The inline hyperlinked citations (Indian Kanoon, CaseMine, TOI, Reuters, SSRN, EPW) are the most verifiable of any response. A journalist can click through and confirm claims immediately, which is operationally valuable.
+
+**Structure.** Clean, well-organized, and appropriately scoped. It doesn't try to do more than the brief asks, and it handles each sub-question with the right level of depth.
+
+**Legal analysis.** The framing of "under adjudication" as a "court-enabled interim label" managed through the Article 142 deeming fiction is precise and well-articulated. The practical question — "what does the presiding officer do on polling day?" — is the right one for a newsroom.
+
+**Intellectual honesty.** Clearly flags the 2021 Census gap (noting India's census won't conclude until ~2027 per Reuters), distinguishes between what was and wasn't found, and avoids overclaiming. The "Why this matters beyond WB" closing paragraph — that administrative deadlines can now trump adjudication completion, with courts "patching legitimacy after the fact" — is analytically sharp and gives the journalist a framing for the national significance.
+
+**Weakness:** Less granular than Claude on district-level data (doesn't construct a comparative table), thinner on BLO testimonials and ground-level accounts, and the social media section acknowledges its limitations without compensating with alternative sourcing. Doesn't flag the Hamimul Islam police-investigation contradiction, which matters for editorial credibility.
+
+---
+
+**3. ChatGPT Deep Research**
+
+Thorough and competent but more diffuse than the top two.
+
+**Strengths.** The comparative precedent analysis is well-structured, and the Assam D-voter parallel is developed more fully here than in any other response. The identification of Bihar as the earlier SIR escalation point — and the documentation-controversy timeline (Aadhaar added September 2025 after SC intervention) — provides useful chronological context. The distinction between enumeration-phase and hearing-phase documentation requirements is correctly identified.
+
+**Weaknesses.** The district-level analysis is the thinnest of the four — it mentions the TOI report citing 40% concentration in three districts but doesn't construct a data table or test the pattern further. The social media section is essentially an admission that nothing attributable was found, without the compensating ground-level detail that Claude and Gemini provide. The three on-ground questions are reasonable but more generic ("what is the actual decision logic," "how are judicial officers conducting adjudication") than Claude's specifically targeted questions (the Purba Bardhaman anomaly, the clearance-rate arithmetic). It doesn't include a source-quality assessment, which means the journalist has to do their own triage. Overall, it reads as a careful literature review rather than an investigative research brief.
+
+---
+
+**4. Gemini Deep Research**
+
+The most ambitious in scope and the weakest in reliability.
+
+**Strengths.** The two data tables (district impact table and Kolkata constituency table with specific draft-roll and deletion figures for Kolkata Port, Bhowanipore, Maniktala, Entally) are genuinely useful additions that no other response provides at that level of specificity. The BLO testimonial section includes named cases (Shantimoni Ekka, Rinku Tarafdar, Sanjay Garai's attack in Salanpur) and the NHRC complaint, giving the journalist concrete leads. The identification of the 4.98 lakh "no-shows" as an unresolved data gap is a good catch.
+
+**Critical weaknesses.** First, the editorial register is wrong for a research memo supporting an investigative journalist. Phrases like "catastrophic breakdown," "weaponized the livelihoods of state employees," "lethal physiological costs," and "extract rigid statistical purity" are advocacy language that would undermine credibility if carried into reporting. A research analyst's job is to present findings neutrally so the journalist can make editorial choices.
+
+Second, there's an analytical confusion around "opposition strongholds." TMC is the ruling party in West Bengal. When the data shows TMC constituencies bearing the heaviest burden, that's the _ruling party's_ base being affected — which complicates rather than supports the "targeting opposition" frame. Gemini doesn't clearly navigate this ambiguity.
+
+Third, the source list includes clearly tangential references (a US Congressional hearing on judicial appointments, US State Department country reports, an ETH Zurich research paper) that pad the bibliography without supporting the specific claims. This raises questions about source-verification discipline.
+
+Fourth, it's the least honest about uncertainty. Claims are presented with high confidence where others appropriately hedge. The CEO's alleged quote that this is "the first time any final electoral roll will be having an adjudication-marked list" is attributed without the same verification caveats other responses apply. The response doesn't flag the Hamimul Islam police-investigation contradiction or the TMC death-toll escalation issue.
+
+Finally, it's significantly longer than the others without proportionally more insight, which is itself a problem for a working journalist on deadline.
+
+### Meta-prompt
+
+I asked Claude Opus 4.6 Extended (incognito):
+
+```markdown
+Improve this prompt. How would an expert editor brief their investigative journalist?
+
+<PROMPT>
+You are a journalist at the Times of India. Your analysts have researched the legal and administrative precedent for West Bengal's 2025-26 Special Intensive Revision (SIR) exercise and its outcomes below.
+Write a story for review by the editor for publication in the Times of India. Ensure that the story is written in the style of a Times of India piece suitable for this story.
+Add a note to the editor mentioning what you're confident about, what's still uncertain, and what data / reporting gaps remain, and what further reporting could clarify the story.
+</PROMPT>
+```
+
+... which led to:
+
+```markdown
+**ROLE:** You are a senior investigative journalist on the politics & governance beat at the Times of India.
+
+**ASSIGNMENT:** Your editor has handed you analysts' research (provided below) on the legal and administrative precedent for West Bengal's 2025-26 Special Intensive Revision (SIR) exercise and its outcomes. Write the story for editorial review.
+
+**STORY REQUIREMENTS:**
+
+1. **Lead with the news.** Open with the single most consequential finding — what happened, who is affected, and why it matters now. No throat-clearing.
+
+2. **Structure:** Follow TOI's standard investigative format: hard news lede → context and stakes → evidence and precedent → official/expert response → implications. Use short paragraphs and subheadings where they aid scanning.
+
+3. **Tone & register:** Authoritative but accessible. Write for a politically literate general reader, not a legal specialist. Define jargon on first use. Avoid editorialising — let the facts carry the weight.
+
+4. **Source discipline:** Attribute every factual claim. Distinguish clearly between confirmed facts, official statements, analyst inferences, and unverified allegations. Flag any single-source claims explicitly.
+
+5. **Contextualise the precedent.** Show how prior SIR exercises (or comparable revision drives in other states) played out — what worked, what was challenged in court, and what the outcomes were. Draw the comparison explicitly so the reader understands what's new here.
+
+6. **Quantify wherever possible.** Voter numbers, demographic breakdowns, timelines, court case citations — concrete data over vague characterisations.
+
+**EDITORIAL NOTE (append after the story):**
+
+Separately, write a candid note to the editor covering:
+
+- **High-confidence claims:** What in this story is well-sourced and publication-ready?
+- **Uncertain or thinly sourced elements:** Where are you relying on a single source, inference, or incomplete data?
+- **Known gaps:** What questions does the available research _not_ answer?
+- **Recommended next steps:** What specific reporting (RTI requests, interviews, court filings, field verification) would strengthen or reshape the story before publication?
+- **Legal/sensitivity flags:** Anything that should go past the legal desk before print.
+
+<CHATGPT>...</CHATGPT>
+<CLAUDE-RESEARCH>...</CLAUDE-RESEARCH>
+```
+
+Claude Opus 4.6 Extended: https://claude.ai/chat/e81ad777-6227-402e-90a1-383a94b3df58
