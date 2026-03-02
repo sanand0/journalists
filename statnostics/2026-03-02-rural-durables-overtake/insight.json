@@ -1,0 +1,46 @@
+{
+  "headline": "Rural households now allocate a higher share of spending to durable goods than urban households, and Sikkim is a standout outlier.",
+  "story": "EAC-PM's comparative analysis of NSS 2011-12 and HCES 2023-24 finds that rural durable-goods share rose from 11.9% to 13.1% of MPCE, while urban rose from 12.0% to 12.5%. That means rural India moved from slightly below urban to above urban on this measure. The same report notes Sikkim's rural durable spend at Rs 1,448 per person per month, the highest among states.",
+  "surprise": "Durable-goods intensity is typically expected to be higher in cities, but the rural share has overtaken urban at the all-India level.",
+  "data": [
+    {
+      "metric": "Durables share of MPCE",
+      "geography": "Rural India",
+      "year": "2011-12",
+      "value": 11.9,
+      "unit": "%"
+    },
+    {
+      "metric": "Durables share of MPCE",
+      "geography": "Urban India",
+      "year": "2011-12",
+      "value": 12.0,
+      "unit": "%"
+    },
+    {
+      "metric": "Durables share of MPCE",
+      "geography": "Rural India",
+      "year": "2023-24",
+      "value": 13.1,
+      "unit": "%"
+    },
+    {
+      "metric": "Durables share of MPCE",
+      "geography": "Urban India",
+      "year": "2023-24",
+      "value": 12.5,
+      "unit": "%"
+    },
+    {
+      "metric": "Durable-goods spend",
+      "geography": "Sikkim (rural)",
+      "year": "2023-24",
+      "value": 1448,
+      "unit": "INR per person per month"
+    }
+  ],
+  "sources": [
+    "https://eacpm.gov.in/wp-content/uploads/2025/11/Final_Durables-Consumption-Paper.pdf",
+    "https://www.mospi.gov.in/sites/default/files/publication_reports/Final_Report_HCES_2023-24L.pdf"
+  ]
+}

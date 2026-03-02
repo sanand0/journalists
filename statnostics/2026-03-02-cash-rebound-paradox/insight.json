@@ -1,0 +1,40 @@
+{
+  "headline": "Cash in circulation swung from a 20.2% contraction to a 37.7% surge within one year after demonetisation, and cash intensity almost returned to pre-shock levels by 2019-20.",
+  "story": "RBI data show that currency in circulation growth fell to -20.2% in 2016-17, then jumped to +37.7% in 2017-18. Over the same period, the currency-GDP ratio dropped from 12.1% (2015-16) to 8.7% (2016-17), then climbed back to 12.0% by 2019-20. The pattern is a sharp collapse followed by an unusually fast re-cashification.",
+  "surprise": "The policy shock was designed to compress cash dependence, but the medium-term data show a near-complete rebound in cash intensity.",
+  "data": [
+    {
+      "metric": "Growth in currency in circulation",
+      "year": "2016-17",
+      "value": -20.2,
+      "unit": "%"
+    },
+    {
+      "metric": "Growth in currency in circulation",
+      "year": "2017-18",
+      "value": 37.7,
+      "unit": "%"
+    },
+    {
+      "metric": "Currency-GDP ratio",
+      "year": "2015-16",
+      "value": 12.1,
+      "unit": "%"
+    },
+    {
+      "metric": "Currency-GDP ratio",
+      "year": "2016-17",
+      "value": 8.7,
+      "unit": "%"
+    },
+    {
+      "metric": "Currency-GDP ratio",
+      "year": "2019-20",
+      "value": 12.0,
+      "unit": "%"
+    }
+  ],
+  "sources": [
+    "https://rbi.org.in/scripts/AnnualReportPublications.aspx?Id=1222"
+  ]
+}

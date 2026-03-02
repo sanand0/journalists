@@ -1,0 +1,52 @@
+{
+  "headline": "Rural consumption grew faster than urban consumption from 2011-12 to 2023-24, cutting the urban spending premium from 84% to 70%.",
+  "story": "MoSPI's HCES 2023-24 shows all-India rural MPCE rising from Rs 1,430 in 2011-12 to Rs 4,122 in 2023-24 (about +188%), while urban MPCE rose from Rs 2,630 to Rs 6,996 (about +166%). The urban-rural difference narrowed from 84% to 70%. This indicates a sizeable catch-up in nominal household consumption outside cities.",
+  "surprise": "Urban India still spends more per person, but the long gap narrowed because rural spending rose faster over the period.",
+  "data": [
+    {
+      "metric": "Average MPCE",
+      "geography": "Rural India",
+      "year": "2011-12",
+      "value": 1430,
+      "unit": "INR per person per month"
+    },
+    {
+      "metric": "Average MPCE",
+      "geography": "Rural India",
+      "year": "2023-24",
+      "value": 4122,
+      "unit": "INR per person per month"
+    },
+    {
+      "metric": "Average MPCE",
+      "geography": "Urban India",
+      "year": "2011-12",
+      "value": 2630,
+      "unit": "INR per person per month"
+    },
+    {
+      "metric": "Average MPCE",
+      "geography": "Urban India",
+      "year": "2023-24",
+      "value": 6996,
+      "unit": "INR per person per month"
+    },
+    {
+      "metric": "Urban-rural MPCE difference",
+      "geography": "India",
+      "year": "2011-12",
+      "value": 84,
+      "unit": "%"
+    },
+    {
+      "metric": "Urban-rural MPCE difference",
+      "geography": "India",
+      "year": "2023-24",
+      "value": 70,
+      "unit": "%"
+    }
+  ],
+  "sources": [
+    "https://www.mospi.gov.in/sites/default/files/publication_reports/Final_Report_HCES_2023-24L.pdf"
+  ]
+}

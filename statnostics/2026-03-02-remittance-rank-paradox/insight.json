@@ -1,0 +1,52 @@
+{
+  "headline": "India is the world's largest remittance recipient in dollars, but only a mid-ranked country by remittance dependence on GDP.",
+  "story": "World Bank 2024 data put India at about USD 137.7 billion in remittances, ahead of Mexico (USD 67.6 billion) and the Philippines (USD 40.3 billion). But India's remittances are only about 3.52% of GDP, ranking 66th among countries with 2024 values. So India is #1 by size but far from the top by dependence.",
+  "surprise": "The largest remittance economy is not among the most remittance-dependent economies; small economies dominate that ranking.",
+  "data": [
+    {
+      "metric": "Personal remittances received",
+      "geography": "India",
+      "year": 2024,
+      "value": 137674533895.686,
+      "unit": "current US$",
+      "rank": 1
+    },
+    {
+      "metric": "Personal remittances received",
+      "geography": "Mexico",
+      "year": 2024,
+      "value": 67637913797,
+      "unit": "current US$",
+      "rank": 2
+    },
+    {
+      "metric": "Personal remittances received",
+      "geography": "Philippines",
+      "year": 2024,
+      "value": 40279405932.4327,
+      "unit": "current US$",
+      "rank": 3
+    },
+    {
+      "metric": "Personal remittances, received",
+      "geography": "India",
+      "year": 2024,
+      "value": 3.52118550357421,
+      "unit": "% of GDP",
+      "rank": 66
+    },
+    {
+      "metric": "Personal remittances, received",
+      "geography": "Tajikistan",
+      "year": 2024,
+      "value": 47.8852110026872,
+      "unit": "% of GDP",
+      "rank": 1
+    }
+  ],
+  "sources": [
+    "https://api.worldbank.org/v2/country/all/indicator/BX.TRF.PWKR.CD.DT?date=2024&format=json&per_page=20000",
+    "https://api.worldbank.org/v2/country/all/indicator/BX.TRF.PWKR.DT.GD.ZS?date=2024&format=json&per_page=20000",
+    "https://api.worldbank.org/v2/country?format=json&per_page=400"
+  ]
+}

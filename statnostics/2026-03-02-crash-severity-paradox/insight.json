@@ -1,0 +1,47 @@
+{
+  "headline": "Tamil Nadu recorded the most road accidents, but Uttar Pradesh recorded over 3x more deaths in nearly one-third fewer crashes.",
+  "story": "In 2022, Tamil Nadu reported 64,105 accidents (the highest in India), while Uttar Pradesh reported 42,568 accidents. Yet Uttar Pradesh recorded 41,746 road deaths versus Tamil Nadu's 12,261. That translates to about 98 deaths per 100 accidents in Uttar Pradesh compared with about 19 in Tamil Nadu, pointing to a major crash-severity and post-crash-survival gap.",
+  "surprise": "The state with the highest accident volume is not the state with the highest death toll; the fatality intensity differs dramatically between two large states.",
+  "data": [
+    {
+      "metric": "Road accidents",
+      "geography": "Tamil Nadu",
+      "year": 2022,
+      "value": 64105
+    },
+    {
+      "metric": "Road accidents",
+      "geography": "Uttar Pradesh",
+      "year": 2022,
+      "value": 42568
+    },
+    {
+      "metric": "Road deaths",
+      "geography": "Tamil Nadu",
+      "year": 2022,
+      "value": 12261
+    },
+    {
+      "metric": "Road deaths",
+      "geography": "Uttar Pradesh",
+      "year": 2022,
+      "value": 41746
+    },
+    {
+      "metric": "Deaths per 100 accidents",
+      "geography": "Tamil Nadu",
+      "year": 2022,
+      "value": 19.1
+    },
+    {
+      "metric": "Deaths per 100 accidents",
+      "geography": "Uttar Pradesh",
+      "year": 2022,
+      "value": 98.1
+    }
+  ],
+  "sources": [
+    "https://morth.nic.in/sites/default/files/RA_Uploading.pdf",
+    "https://morth.nic.in/road-accident-in-india"
+  ]
+}

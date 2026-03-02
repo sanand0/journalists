@@ -1,6 +1,142 @@
 # Prompts
 
-## 1 Mar 2026
+## Statnostics, 2 Mar 2026
+
+### Find stories via ChatGPT
+
+Used https://chatgpt.com/c/69a5244f-0a24-8398-a70e-dfa54ac68d69 to find a bunch of data stories copy-pasted into:
+
+- [Crash severity paradox](2026-03-02-crash-severity-paradox/insight.md)
+- [Anaemia outlier](2026-03-02-anaemia-outlier/insight.md)
+- [Banking fraud whiplash](2026-03-02-banking-fraud-whiplash/insight.md)
+- [Suicide geography](2026-03-02-suicide-geography/insight.md)
+- [India's hidden gold superpower](2026-03-02-india-s-hidden-gold-superpower/insight.md)
+
+### Find stories via Codex
+
+````markdown
+You are a research assistant finding publicly available data for Indian data journalism.
+
+Extensively search the following authoritative sources and extract 5 SURPRISING comparative insights - e.g. an extreme outlier, an unexpected ranking, or a dramatic change over time - that has not yet been widely reported in the media. These insights should be of interest to a general audience and have the potential to be developed into a compelling data-driven story.
+
+**Primary Indian sources to search:**
+
+- NCRB (ncrb.gov.in) - crime, violations, accidents
+- MOSPI / data.gov.in - economic, demographic indicators
+- RBI (rbi.org.in) - financial, banking, reserves data
+- EAC-PM reports - household surveys, consumption
+- NFHS (rchiips.org) - health, nutrition, gender
+- World Gold Council, IMF, World Bank - for India vs. world comparisons
+- SEBI, NSE/BSE - financial markets
+- MoRTH - road transport, vehicle ownership
+
+**For each insight found, create a folder:**
+
+Save the insight under `statnostics/${date:yyyy-mm-dd}-insight-slug/insight.json` e.g. `statnostics/2026-03-02-road-safety-paradox/insight.json` with:
+
+```jsonc
+{
+  "headline": "...", // One-sentence insight
+  "story": "...", // A few sentences explaining the insight in more detail
+  "surprise": "...", // Why this is surprising or counter-intuitive
+  "data": [
+    // Top data points needed to visualize the insight
+  ],
+  "sources": [
+    // Include citations links
+  ],
+}
+```
+
+**Filter criteria - only return data where:**
+
+- There is a clear #1 that stands far above others (outlier story), OR
+- There is a dramatic before/after change (transformation story), OR
+- India's position vs. the world is unexpected (global comparison story)
+````
+
+This generated:
+
+- [Crash severity paradox](2026-03-02-crash-severity-paradox/insight.json)
+- [Rural consumption catchup](2026-03-02-rural-consumption-catchup/insight.json)
+- [Rural durables overtake](2026-03-02-rural-durables-overtake/insight.json)
+- [Cash rebound paradox](2026-03-02-cash-rebound-paradox/insight.json)
+- [Remittance rank paradox](2026-03-02-remittance-rank-paradox/insight.json)
+
+### Visualize using Gemini Pro
+
+**Sketchnotes** worked well:
+
+```markdown
+Summarize this as a visually rich, intricately detailed, colorful, and funny, sketchnote.
+Think about the most important points, structure it logically so that the sketchnote is easy to follow, then draw it.
+```
+
+- [Sketchnote - India's hidden gold superpower](https://gemini.google.com/u/2/app/c07bc6a82f6c6dcf) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/sketchnote.avif)
+- [Sketchnote - Suicide geography](https://gemini.google.com/u/2/app/aaa45a7cb3608bc7) - [Image](statnostics/2026-03-02-suicide-geography/sketchnote.avif)
+- [Sketchnote - Suicide geography 2](https://gemini.google.com/u/2/app/6425216f8a12fe2c) - [sketchnote2](statnostics/2026-03-02-suicide-geography/sketchnote2.avif)
+- [Sketchnote - Anaemia outlier](https://gemini.google.com/u/2/app/55b1d04dd6a038ac) - [Image](statnostics/2026-03-02-anaemia-outlier/sketchnote.avif)
+- [Sketchnote - Crash severity paradox](https://gemini.google.com/u/2/app/b1da3c954ea10e8e) - [Image](statnostics/2026-03-02-crash-severity-paradox/sketchnote.avif)
+- [Sketchnote - Banking fraud whiplash](https://gemini.google.com/u/2/app/6c5ad23238ff2db2) - [Image](statnostics/2026-03-02-banking-fraud-whiplash/sketchnote.avif)
+
+**Comics** did not, because Gemini couldn't always create a funny picture to go with the point. Gold worked well, the rest didn't.
+
+```markdown
+Draw this as a single-panel simple black and white line drawing comic strip with minimal shading, in RK Laxman's style, featuring the iconic "common man".
+Think about the most important point, how best to convey it in the simplest, humorous yet impactful way in a single panel, then draw it.
+```
+
+**Funny Infographics** worked OK:
+
+```markdown
+Draw this as a visually rich, intricately detailed, colorful, and funny, infographic poster.
+Think about the most important points, structure it logically so that the infographic is easy to understand, then draw it.
+```
+
+- [Funny Infographic - India's hidden gold superpower](https://gemini.google.com/u/2/app/8696754025e73a86) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/funny-infographic.avif)
+- [Funny Infographic - Suicide geography](https://gemini.google.com/u/2/app/679d778c6214315d) - [Image](statnostics/2026-03-02-suicide-geography/funny-infographic.avif)
+- [Funny Infographic - Anaemia outlier](https://gemini.google.com/u/2/app/f34906f0d24aaf39) - [Image](statnostics/2026-03-02-anaemia-outlier/funny-infographic.avif)
+- [Funny Infographic - Crash severity paradox](https://gemini.google.com/u/2/app/a8997ac01fb80387) - [Image](statnostics/2026-03-02-crash-severity-paradox/funny-infographic.avif)
+- [Funny Infographic - Banking fraud whiplash](https://gemini.google.com/u/2/app/88c097add1c70d40) - [Image](statnostics/2026-03-02-banking-fraud-whiplash/funny-infographic.avif)
+
+**Infographics** worked OK:
+
+```markdown
+Draw this as a professional, visually appealing, informative, colorful, infographic poster.
+Think about the most important points, structure it logically so that the infographic is easy to understand, then draw it.
+```
+
+- [Infographic - India's hidden gold superpower](https://gemini.google.com/u/2/app/5cd69b1b818fd6d0) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/infographic.avif)
+- [Infographic - Suicide geography](https://gemini.google.com/u/2/app/bd84d0cdce0e0c42) - [Image](statnostics/2026-03-02-suicide-geography/infographic.avif)
+- [Infographic - Anaemia outlier](https://gemini.google.com/u/2/app/27b7c25e30151293) - [Image](statnostics/2026-03-02-anaemia-outlier/infographic.avif)
+- [Infographic - Crash severity paradox](https://gemini.google.com/u/2/app/6a5647fb472fd303) - [Image](statnostics/2026-03-02-crash-severity-paradox/infographic.avif)
+- [Infographic - Banking fraud whiplash](https://gemini.google.com/u/2/app/aded2d46c6776b99) - [Image](statnostics/2026-03-02-banking-fraud-whiplash/infographic.avif)
+
+**Feedback**
+
+> These are nice in their own way but won’t work for us. A, ours have a square aspect ratio. B, the new ones have too much info packed into it. It needs to be sparse, with a sharp takeaway and maybe a smaller secondary message. These ones are too elaborate — if you see what I mean. Basically, from the data, one will need to distill the most important point and play that up. Something short and sharp.
+
+**Revisions**: [Chat](https://gemini.google.com/u/2/app/b1da3c954ea10e8e)
+
+- [Version 2a](https://gemini.google.com/u/2/app/968651555b6976a4) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/v2a.avif): Create a square (1:1), minimalist visual summary. Ruthlessly distill the data into ONE main headline insight (the 'Paradox') and one smaller secondary footnote. Keep the design sparse and uncluttered: use bold typography, simple iconography, and ample negative space. Aim for a 'poster-style' look that is instantly readable rather than a detailed infographic.
+  - **Feedback**: This works well.
+- [Version 2b](https://gemini.google.com/u/2/app/33670759b2be4535) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/v2b.avif): Create a square (1:1), high-impact minimalist graphic in the style of Swiss international design or a vintage propaganda poster. The composition must have extreme negative space and a rigid grid layout. The primary goal is a single, clear, and 'funny' visual comparison between the 'top crash state' and the 'top fatality state,' which are the only key data points. Use bold, sans-serif typography, large simple geometric icons, and a limited, high-contrast color palette to deliver the one main takeaway instantly. Include only one small, distinct secondary message.
+- [Version 2c](https://gemini.google.com/u/2/app/6ffedf993807bbd9) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/v2c.avif): Generate a square (1:1) minimalist poster in a clean, Neo-Vector style, similar to a modern mobile app's start screen or a tech blog header. Focus the entire image on a single, creative, and slightly humorous metaphor that illustrates the 'Paradox,' making the high-fatality point the massive focal point. Keep all lines crisp and the flat colors bright but muted. Use substantial white space around a central illustrative element. Avoid complex charts; use clear scale and position to show the hierarchy of the two core numbers. The design must feature a clear main headline and one subtle, smaller footnote.
+  - **Feedback**: This could work, too, but with a headline.
+- [Version 2d](https://gemini.google.com/u/2/app/666f195803867b9c) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/v2d.avif): Create a square (1:1), tactile typographic poster in a distressed letterpress or screen-print style, using simple, bold, and slightly playful fonts. The image's dominant feature must be the main paradox headline, with a creative typographic 'clash' and 'skull' icon incorporated into the main title. The primary two pieces of data should be huge, and the secondary message is small. Emphasize a textured paper background and a single accent color for emphasis. This is not an infographic; it is a conceptual graphic where typography and negative space are the primary tools to convey the sharp, simple message.
+  - **Feedback**: Too radical.
+
+**Version 2a iterations**
+
+- [Statnostics V2a - India's hidden gold superpower](https://gemini.google.com/u/2/app/968651555b6976a4) - [Image](statnostics/2026-03-02-india-s-hidden-gold-superpower/v2a.avif)
+- [Statnostics V2a - Suicide geography](https://gemini.google.com/u/2/app/e7d9d0ba96ce4fa9) - [Image](statnostics/2026-03-02-suicide-geography/v2a.avif)
+- [Statnostics V2a - Anaemia outlier](https://gemini.google.com/u/2/app/0b2c30b826552837) - [Image](statnostics/2026-03-02-anaemia-outlier/v2a.avif)
+- [Statnostics V2a - Crash severity paradox](https://gemini.google.com/u/2/app/bbdd93d7b71beaa7) - [Image](statnostics/2026-03-02-crash-severity-paradox/v2a.avif)
+- [Statnostics V2a - Banking fraud whiplash](https://gemini.google.com/u/2/app/0d2d4740f71d82ab) - [Image](statnostics/2026-03-02-banking-fraud-whiplash/v2a.avif)
+
+## West Bengal's Voter Roll Revision, 1 Mar 2026
+
+posts/2026-03-02-west-bengal-s-voter-roll-revision.md
 
 ### Research
 
