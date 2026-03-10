@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hack of the Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --title-font: 'Barlow Condensed', sans-serif;
+      --body-font: 'Barlow', sans-serif;
+      --gold: #f0c040;
+      --gold-dim: #a8851a;
+      --card-bg: #131824;
+      --panel-bg: #1c2436;
+      --panel-border: #2a3550;
+      --text: #e8edf5;
+      --text-muted: #7a8baa;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #090d14;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      width: 800px;
+      background: var(--card-bg);
+      font-family: var(--body-font);
+    }
+
+    /* ===== HEADER ===== */
+    .card-header {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--panel-border);
+    }
+
+    .badge {
+      background: var(--gold);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 36px 12px 18px;
+      flex-shrink: 0;
+      clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 50%, calc(100% - 24px) 100%, 0 100%);
+    }
+
+    .badge-hack {
+      font-family: var(--title-font);
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--card-bg);
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .badge-ofthe {
+      font-family: var(--title-font);
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(19,24,36,0.75);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .card-title {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 14px 22px;
+      font-family: var(--title-font);
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text);
+      text-transform: uppercase;
+      line-height: 1.2;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== BODY ===== */
+    .card-body {
+      padding: 16px 22px 0;
+    }
+
+    .section {
+      font-size: 19px;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 11px;
+    }
+
+    .section-label {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-size: 15px;
+      letter-spacing: 0.8px;
+    }
+
+    .steps-heading {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--gold);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .steps-label {
+      font-family: var(--title-font);
+      font-size: 15px;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--gold);
+      letter-spacing: 1px;
+      margin: 4px 0 8px;
+    }
+
+    /* ===== STEPS ===== */
+    .steps {
+      counter-reset: step-counter;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .step {
+      counter-increment: step-counter;
+      display: flex;
+      align-items: center;
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border);
+      border-left: 3px solid var(--gold);
+      padding: 14px 16px 14px 0;
+    }
+
+    .step::before {
+      content: counter(step-counter);
+      font-family: var(--title-font);
+      font-size: 42px;
+      font-weight: 800;
+      font-style: italic;
+      color: var(--gold);
+      line-height: 1;
+      min-width: 58px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .step-content {
+      font-size: 19px;
+      color: var(--text);
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    .step-content strong { font-weight: 600; color: #fff; }
+
+    /* ===== NOTE ===== */
+    .card-note {
+      padding: 10px 22px 14px;
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      border-top: 1px solid var(--panel-border);
+    }
+
+    .note-label {
+      font-weight: 700;
+      color: var(--gold-dim);
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    .note-text { font-weight: 600; color: var(--text); }
+
+    /* ===== FOOTER ===== */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      padding: 12px 22px 16px;
+      gap: 16px;
+      border-top: 1px solid var(--panel-border);
+    }
+
+    .disclaimer {
+      flex: 1;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+      font-style: italic;
+    }
+
+    .tip-line { display: block; margin-top: 3px; font-style: normal; }
+    .tip-name { font-weight: 700; color: var(--text); }
+
+    .qr-block { flex-shrink: 0; text-align: center; }
+
+    .qr-label {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    #qr-code canvas, #qr-code img { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <header class="card-header">
+    <div class="badge">
+      <span class="badge-hack">HACK</span>
+      <span class="badge-ofthe">OF THE DAY</span>
+    </div>
+    <h1 class="card-title">{{title}}</h1>
+  </header>
+
+  <div class="card-body">
+
+    <p class="section">
+      <strong class="section-label">What it solves:</strong> {{what_it_solves}}
+    </p>
+
+    {{#what_to_do}}
+    <p class="section">
+      <strong class="section-label">What to do:</strong> {{what_to_do}}
+    </p>
+    <p class="steps-label">Steps:</p>
+    {{/what_to_do}}
+    {{^what_to_do}}
+    <p class="steps-heading">What to do (Quick Steps):</p>
+    {{/what_to_do}}
+
+    <div class="steps">
+      {{#steps}}
+      <div class="step">
+        <div class="step-content">{{#bold_title}}<strong>{{bold_title}}</strong> {{/bold_title}}{{{text}}}</div>
+      </div>
+      {{/steps}}
+    </div>
+
+  </div>
+
+  {{#note}}
+  <div class="card-note">
+    <span class="note-label">{{note_label}}:</span>
+    <strong class="note-text"> {{note}}</strong>
+  </div>
+  {{/note}}
+
+  <footer class="card-footer">
+    <div class="disclaimer">
+      <em>Hacks are based on verified public sources. Readers are advised to follow official websites &amp; updated rules</em>
+      <span class="tip-line">Tip from <strong class="tip-name">{{tip_name}}</strong>{{tip_domain}}</span>
+    </div>
+    <div class="qr-block">
+      <div class="qr-label">Scan for<br>more hacks</div>
+      <div id="qr-code" data-url="{{qr_url}}"></div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+  var qrEl = document.getElementById('qr-code');
+  var url = qrEl.getAttribute('data-url') || 'https://timesinternet.com';
+  new QRCode(qrEl, {
+    text: url,
+    width: 80, height: 80,
+    colorDark: '#f0c040',
+    colorLight: '#1c2436',
+    correctLevel: QRCode.CorrectLevel.M
+  });
+</script>
+</body>
+</html>
