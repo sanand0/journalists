@@ -1,5 +1,100 @@
 # Prompts
 
+## Hack of the day gallery, 10 Mar 2026 (GitHub Copilot - Sonnet 4.6 high)
+
+<!-- cards.json created by https://chatgpt.com/c/69aef234-93f8-839b-932d-cb41c0ed8f2f -->
+
+Create a beautiful hackoftheday/index.html gallery that loads hackoftheday/cards.json and renders a card for each entry by applying mustache templating to hackoftheday/template.html.
+
+The home page should show a beautiful thumbnail gallery of all the cards, showing miniature versions of the cards in a grid. Clicking on a card should open the card in a popup with 800px width, showing the fully rendered card. The miniature version is exactly the same as the full version, just scaled down.
+
+---
+
+The hacks are typically taller. Increase the size of thCe cards so that the entire hack card is visible on the gallery.
+On the popup, add arrow buttons to navigate to the previous and next cards without closing the popup. Allow left and right arrow keys to also navigate between cards when the popup is open.
+
+---
+
+Add an inline SVG favicon (check skills on how).
+Ensure that .thumb-footer is always at the bottom - right now there's a bit of spacing even below .thumb-footer.
+
+---
+
+Modify so that clicking on the .thumb-footer does not open the popup. Add a tiny "Download" button that downloads the HTML as `hack-of-the-day-${number}.html` when clicked, e.g. `hack-of-the-day-001.html`.
+
+---
+
+Replace fonts with the closest Google Fonts.
+
+---
+
+Include a "Download All" button that downloads a ZIP of all the cards as individual HTML files named `hack-of-the-day-${number}.html`.
+
+---
+
+Vertically center the step elements.
+
+---
+
+Update README.md.
+
+---
+
+Briefly (in one line) document "Hack of the Day" in the root ./README.md and link to hackoftheday/README.md. It'll be deployed as a static page at https://sanand0.github.io/journalists/hackoftheday/. Give people a sense of what it is and how it was built.
+
+## Hack of the day, 10 Mar 2026 (Claude Code - Sonnet 4.6) - Manually edited
+
+Create a template.html that can be combined (e.g. via mustache) with a JSON that, when run, produces the EXACT visual output as the cards in *.avif.
+
+Inspect these cards. Create an appropriate JSON schema to capture these cards.
+
+Then generate HTML (use SVG if required) to create a fluid layout that will render the same cards/folders as the .avif. Keep in mind that the images may look slightly different - but the template must render the same size, font, colors every time, and avoid overlapping or cut-off text. The template should be flexible enough to handle slightly different lengths of text and different numbers of points (e.g. 3-5) without breaking the layout.
+
+Test even small details, e.g.
+
+- The steps are supposed to look like folders, overlapping / stacked.
+- The name in the email ID should be in bold, and the domain in regular font.
+- The number in the steps must be larger, and in a different font - look carefully.
+- The text in the steps must be close to the number - look carefully.
+
+These are examples. Using this as a reference, carefully identify more such, test and fix them all.
+
+Test by generating a few variations beyond the existing cards, e.g. with different text lengths and number of points, and ensure the layout still works.
+
+DO NOT COMMIT.
+
+---
+
+Document this project in README.md.
+
+## Hack of the day, 10 Mar 2026 (Codex - gpt-5.4 xhigh) - Dropped
+
+Create a hack-of-the-day/template.html that can be combined (e.g. via mustache) with a JSON that, when run, produces the EXACT visual output as the cards in hack-of-the-day/*.avif.
+
+Inspect these cards. Create an appropriate JSON schema to capture these cards.
+
+Then generate HTML (use SVG if required) to create a fluid layout that will render the same cards as the .avif. Keep in mind that the images may look slightly different - but the template must render the same size, font, colors every time, and avoid overlapping or cut-off text. The template should be flexible enough to handle slightly different lengths of text and different numbers of points (e.g. 3-5) without breaking the layout.
+
+Test by generating a few variations beyond the existing cards, e.g. with different text lengths and number of points, and ensure the layout still works.
+
+Commit as you go.
+
+---
+
+Not sure why some files vanished. It might be a conflict between sub-agents committing, so feel free to resolve it yourself.
+
+But I took a quick look at the output, and it needs some work. For example:
+
+- The fonts are much smaller
+- The steps are supposed to look like folders, overlapping / stacked. Right now, they look like rounded cards with a gap between them.
+- Hack of the day is not horizontally / vertically centered.
+- The QR code formatting is off.
+- The name in the email ID should be in bold, and the domain in regular font.
+- The number in the steps must be larger, and in a different font - look carefully.
+- The text in the steps must be closer to the number - look carefully.
+
+These are examples. Using this as a reference, carefully identify more such issues, fix them all, and continue.
+
 ## Statnostics, 2 Mar 2026
 
 ### Find stories via ChatGPT
@@ -44,7 +139,7 @@ Save the insight under `statnostics/${date:yyyy-mm-dd}-insight-slug/insight.json
   ],
   "sources": [
     // Include citations links
-  ],
+  ]
 }
 ```
 

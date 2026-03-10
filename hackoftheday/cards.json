@@ -1,0 +1,1628 @@
+[
+  {
+    "title": "CHECK HOW MANY SIM CARDS ARE ISSUED IN YOUR NAME",
+    "what_it_solves": "Helps you detect unauthorized or forgotten mobile numbers linked to your identity, reducing the risk of fraud, spam, and misuse of your documents.",
+    "what_to_do": "Use the Sanchar Saathi portal to view mobile connections issued in your name and report any number you do not recognize.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://sancharsaathi.gov.in"
+      },
+      {
+        "bold_title": "Open",
+        "text": "the \"Know Your Mobile Connections\" section."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "your identity using your mobile number and OTP."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the list of mobile numbers issued in your name."
+      },
+      {
+        "bold_title": "Report",
+        "text": "any number that is unknown, unused, or not required."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not ignore unknown numbers in your name. They can be misused for spam, fraud, or account creation without your knowledge.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "REPORT SCAM CALLS, SMS, OR WHATSAPP MESSAGES",
+    "what_it_solves": "Helps you flag suspicious communications such as fake KYC alerts, bank fraud, impersonation, and phishing attempts before they cause financial loss.",
+    "what_to_do": "Use the Chakshu reporting option on Sanchar Saathi to report scam calls, SMS, and WhatsApp messages quickly.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://sancharsaathi.gov.in"
+      },
+      {
+        "bold_title": "Select",
+        "text": "the \"Chakshu\" option for reporting suspected fraud communication."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "whether the scam came by call, SMS, or WhatsApp."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the number, message details, and a short description of the fraud."
+      },
+      {
+        "bold_title": "Submit",
+        "text": "the complaint and keep a screenshot or record for reference."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Reporting helps investigation, but if you have already lost money, also contact your bank immediately and use the cybercrime helpline without delay.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "LOCK YOUR AADHAAR BIOMETRICS WHEN NOT IN USE",
+    "what_it_solves": "Protects your fingerprint and iris data from being used for unauthorized Aadhaar-based authentication.",
+    "what_to_do": "Use UIDAI's biometric lock feature so your biometrics stay blocked unless you temporarily unlock them for a genuine transaction.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the myAadhaar or UIDAI portal."
+      },
+      {
+        "bold_title": "Log in",
+        "text": "using your Aadhaar number and OTP."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the biometric lock/unlock section."
+      },
+      {
+        "bold_title": "Enable",
+        "text": "biometric lock to secure fingerprint and iris authentication."
+      },
+      {
+        "bold_title": "Unlock",
+        "text": "temporarily only when you need to complete a genuine Aadhaar-based service."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "If your biometrics are locked, authentication using fingerprint or iris will fail until you unlock them. Keep this in mind before visiting service centres.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "CHECK YOUR AADHAAR AUTHENTICATION HISTORY",
+    "what_it_solves": "Helps you detect whether your Aadhaar has been used recently for authentication in places or services you do not recognize.",
+    "what_to_do": "Review your Aadhaar authentication history online to spot unusual activity early.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the UIDAI or myAadhaar portal."
+      },
+      {
+        "bold_title": "Log in",
+        "text": "using your Aadhaar number and OTP."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the \"Authentication History\" section."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the date range you want to review."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the authentication records and note any entry that seems unfamiliar."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "If you see suspicious entries, act quickly. Lock your biometrics and contact UIDAI support or the relevant service provider for clarification.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "USE VIRTUAL ID OR MASKED AADHAAR INSTEAD",
+    "what_it_solves": "Reduces privacy risk by helping you avoid sharing your full Aadhaar number when a safer alternative is accepted.",
+    "what_to_do": "Generate a Virtual ID or download a Masked Aadhaar copy before sharing identity proof for routine verification.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the myAadhaar or UIDAI portal."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "either \"Generate VID\" or \"Download Aadhaar\" with masking enabled."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "your request using OTP."
+      },
+      {
+        "bold_title": "Save",
+        "text": "the Virtual ID or masked PDF for future use."
+      },
+      {
+        "bold_title": "Share",
+        "text": "this safer version where full Aadhaar disclosure is not necessary."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Some services may still require full Aadhaar as per their rules, but for many routine checks, a VID or masked copy is the safer option.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "STORE ISSUED DOCUMENTS IN DIGILOCKER",
+    "what_it_solves": "Helps you keep official digital copies of important documents in one place, reducing paperwork and making them easier to access when needed.",
+    "what_to_do": "Use DigiLocker to fetch and store issuer-provided documents such as driving licence, vehicle RC, marksheets, and certificates.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://www.digilocker.gov.in or open the DigiLocker app."
+      },
+      {
+        "bold_title": "Sign in",
+        "text": "using your mobile number or Aadhaar-linked login."
+      },
+      {
+        "bold_title": "Search",
+        "text": "for the issuing authority, such as transport department, CBSE, or university."
+      },
+      {
+        "bold_title": "Fetch",
+        "text": "the required document by entering the requested details."
+      },
+      {
+        "bold_title": "Store",
+        "text": "the issued copy in your DigiLocker account for future access."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Issued documents are generally more useful than uploaded scans because they come directly from the source authority and are easier to verify.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "CHECK AIS BEFORE FILING YOUR TAX RETURN",
+    "what_it_solves": "Helps you spot reported income, investments, and financial transactions before filing taxes, reducing the chance of errors or notices later.",
+    "what_to_do": "Review your Annual Information Statement on the income tax portal before finalizing your return.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the Income Tax e-filing portal and log in."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the Annual Information Statement or AIS section."
+      },
+      {
+        "bold_title": "Review",
+        "text": "reported salary, interest, securities, tax deducted, and other transactions."
+      },
+      {
+        "bold_title": "Match",
+        "text": "the entries with your own records and Form 26AS."
+      },
+      {
+        "bold_title": "Give feedback",
+        "text": "on incorrect entries before filing if anything looks wrong."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not assume every entry is automatically correct. Even genuine taxpayers can face trouble later if they file without checking mismatches first.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "FILE YOUR EPFO E-NOMINATION NOW",
+    "what_it_solves": "Makes it easier for your family to claim EPF, pension, and insurance benefits if something unexpected happens to you.",
+    "what_to_do": "Complete your e-nomination on the EPFO member portal instead of leaving it pending for later.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the EPFO member portal and log in with your UAN."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the \"E-Nomination\" option under your profile or manage section."
+      },
+      {
+        "bold_title": "Add",
+        "text": "your nominee details, relation, and share percentage."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "the nomination using OTP or the required authentication step."
+      },
+      {
+        "bold_title": "Save",
+        "text": "the final submission and keep a record of the completed nomination."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Many people delay this until it is too late. Missing or outdated nomination details can make family claims slower and more difficult.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "VERIFY A USED PHONE'S IMEI BEFORE BUYING",
+    "what_it_solves": "Helps you avoid buying a stolen, fake, cloned, or blocked mobile phone in the second-hand market.",
+    "what_to_do": "Check the handset's IMEI on the official CEIR system before making payment.",
+    "steps": [
+      {
+        "bold_title": "Find",
+        "text": "the phone's 15-digit IMEI by dialing *#06# or checking the box."
+      },
+      {
+        "bold_title": "Visit",
+        "text": "the CEIR or Sanchar Saathi platform."
+      },
+      {
+        "bold_title": "Use",
+        "text": "the IMEI verification or \"Know Your Mobile\" option."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the IMEI number and submit the request."
+      },
+      {
+        "bold_title": "Match",
+        "text": "the result with the device brand, model, and seller's claims before paying."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "If the IMEI status looks suspicious or does not match the handset, walk away. A cheap second-hand deal can become an expensive mistake.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "USE ESANJEEVANI FOR AN OFFICIAL TELECONSULT",
+    "what_it_solves": "Helps you access a doctor remotely for basic consultation without immediately traveling to a clinic or hospital.",
+    "what_to_do": "Use the eSanjeevani telemedicine service to register, get a token, and consult a doctor online.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://esanjeevani.mohfw.gov.in"
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the patient consultation option and register with your details."
+      },
+      {
+        "bold_title": "Select",
+        "text": "your state, facility, or available consultation service."
+      },
+      {
+        "bold_title": "Get",
+        "text": "a token or queue number and wait for your turn."
+      },
+      {
+        "bold_title": "Consult",
+        "text": "the doctor online and note the advice or prescription shared."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Teleconsultation is useful for many routine issues, but emergencies, severe symptoms, or urgent distress still need immediate in-person medical care.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "SEARCH FOR FORGOTTEN MONEY IN OLD BANK ACCOUNTS",
+    "what_it_solves": "Helps you find unclaimed deposits lying in old savings accounts, fixed deposits, or dormant bank accounts that you or your family may have forgotten.",
+    "what_to_do": "Use the RBI's UDGAM portal to search for unclaimed bank deposits across participating banks in one place.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://udgam.rbi.org.in"
+      },
+      {
+        "bold_title": "Register",
+        "text": "using your mobile number and the required details."
+      },
+      {
+        "bold_title": "Search",
+        "text": "using name, bank, account details, or other available identifiers."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the search results for matching unclaimed deposits."
+      },
+      {
+        "bold_title": "Contact",
+        "text": "the concerned bank branch with the required documents to start the claim process."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Search carefully using spelling variations and old details. Family members may also find deposits linked to deceased relatives if they have the relevant documents.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "ESCALATE BANK OR UPI COMPLAINTS TO RBI CMS",
+    "what_it_solves": "Helps you take unresolved complaints about banks, cards, UPI, loans, or NBFCs beyond customer care and branch-level follow-up.",
+    "what_to_do": "Use RBI's Complaint Management System if the regulated entity does not resolve your complaint within the required time.",
+    "steps": [
+      {
+        "bold_title": "First complain",
+        "text": "to your bank, card issuer, NBFC, or payment service provider directly."
+      },
+      {
+        "bold_title": "Wait",
+        "text": "for the prescribed response period or check if the reply is unsatisfactory."
+      },
+      {
+        "bold_title": "Visit",
+        "text": "https://cms.rbi.org.in"
+      },
+      {
+        "bold_title": "File",
+        "text": "your complaint with transaction details, reference number, and supporting documents."
+      },
+      {
+        "bold_title": "Track",
+        "text": "the complaint status online and use the appeal option if needed."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Keep screenshots, complaint IDs, emails, and bank replies ready before filing. Missing details can slow down or weaken your case.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "CHECK IF A NUMBER OR WEBSITE IS ALREADY FLAGGED",
+    "what_it_solves": "Helps you identify whether a phone number, email ID, website, or payment trail has already been reported as suspicious before you trust it.",
+    "what_to_do": "Use the cybercrime suspect-check feature before sending money, clicking links, or sharing personal information.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://cybercrime.gov.in"
+      },
+      {
+        "bold_title": "Open",
+        "text": "the suspect search or repository section if available."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the phone number, email ID, website, or other identifier you want to check."
+      },
+      {
+        "bold_title": "Review",
+        "text": "whether the entry has been flagged as suspicious or linked to complaints."
+      },
+      {
+        "bold_title": "Avoid",
+        "text": "making payments or sharing details if the result looks risky."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "A clean result does not guarantee safety. Scammers keep changing numbers and domains, so use this as a warning signal, not a final guarantee.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "VERIFY SCHEMES AND FINANCIAL ENTITIES ON SACHET",
+    "what_it_solves": "Helps you avoid fake deposit schemes, unauthorized lenders, and suspicious financial operators who promise high returns or instant loans.",
+    "what_to_do": "Use the Sachet portal to check registered entities and report suspicious money-collection or deposit schemes.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://sachet.rbi.org.in"
+      },
+      {
+        "bold_title": "Search",
+        "text": "for the company, scheme, or financial entity you want to verify."
+      },
+      {
+        "bold_title": "Check",
+        "text": "whether the entity appears in the regulator-linked records or warning information."
+      },
+      {
+        "bold_title": "Review",
+        "text": "complaint and information options if the scheme looks suspicious."
+      },
+      {
+        "bold_title": "Report",
+        "text": "the entity or offer if you suspect unauthorized deposit-taking or fraud."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not rely on registration claims in ads or WhatsApp messages alone. Many fake schemes use official-sounding names to appear legitimate.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "CHECK IF YOUR AADHAAR IS SEEDED TO YOUR BANK",
+    "what_it_solves": "Helps you confirm whether your bank account is correctly linked for Aadhaar-based subsidy and direct benefit transfers.",
+    "what_to_do": "Use the UIDAI service to check your Aadhaar-bank linking status instead of relying only on verbal confirmation from a branch.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the UIDAI or myAadhaar portal."
+      },
+      {
+        "bold_title": "Log in",
+        "text": "or open the Aadhaar-bank seeding status service."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "your request using OTP."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the bank name shown as linked in the NPCI mapper."
+      },
+      {
+        "bold_title": "Follow up",
+        "text": "with your bank if the status is missing, incorrect, or not updated."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is especially useful if subsidies or DBT credits are delayed. A bank account being open does not always mean it is correctly mapped for Aadhaar payments.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "USE DIGITAL RC AND DL INSTEAD OF PAPER COPIES",
+    "what_it_solves": "Makes it easier to carry and show valid vehicle documents without worrying about losing physical copies during travel.",
+    "what_to_do": "Use DigiLocker or mParivahan to store and show your driving licence and registration certificate digitally when needed.",
+    "steps": [
+      {
+        "bold_title": "Install",
+        "text": "the DigiLocker or mParivahan app on your phone."
+      },
+      {
+        "bold_title": "Sign in",
+        "text": "using your registered mobile number and required verification."
+      },
+      {
+        "bold_title": "Fetch",
+        "text": "your driving licence and vehicle registration details from the official source."
+      },
+      {
+        "bold_title": "Save",
+        "text": "the digital documents in the app for easy access."
+      },
+      {
+        "bold_title": "Show",
+        "text": "the digital record during checks instead of carrying paper copies."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Make sure the documents are fetched from the official issuer-linked records, not just uploaded as scans. Issued digital records are more useful for verification.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "REPORT SPAM CALLS AND SMS TO 1909",
+    "what_it_solves": "Helps you do more than just block spam by reporting unsolicited commercial calls and messages through the telecom complaint system.",
+    "what_to_do": "Use 1909 or the related complaint channels to report spam calls and SMS that violate your communication preferences.",
+    "steps": [
+      {
+        "bold_title": "Note",
+        "text": "the sender number, message content, and time of the spam call or SMS."
+      },
+      {
+        "bold_title": "Use",
+        "text": "1909, the complaint app, IVRS, or the telecom complaint portal."
+      },
+      {
+        "bold_title": "Submit",
+        "text": "the spam details in the required format."
+      },
+      {
+        "bold_title": "Register",
+        "text": "your communication preferences if you have not already done so."
+      },
+      {
+        "bold_title": "Track",
+        "text": "the complaint response from your telecom operator if required."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Blocking a number stops only that sender. Reporting through the official channel is more useful because it helps create an enforcement trail.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "ESCALATE INSURANCE GRIEVANCES THROUGH BIMA BHAROSA",
+    "what_it_solves": "Helps policyholders push back when insurers delay, deny, or mishandle claims, service requests, or policy-related complaints.",
+    "what_to_do": "Use Bima Bharosa after first complaining to the insurer if the issue remains unresolved or the response is not satisfactory.",
+    "steps": [
+      {
+        "bold_title": "First complain",
+        "text": "to the insurer and keep the complaint number or acknowledgement."
+      },
+      {
+        "bold_title": "Wait",
+        "text": "for the insurer's response within the prescribed period."
+      },
+      {
+        "bold_title": "Visit",
+        "text": "the Bima Bharosa grievance platform."
+      },
+      {
+        "bold_title": "File",
+        "text": "your complaint with policy details, issue summary, and supporting documents."
+      },
+      {
+        "bold_title": "Track",
+        "text": "the grievance online and save all updates for future reference."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Claim disputes are easier to pursue when you keep every email, claim form, hospital paper, and insurer reply. Missing records can hurt your case.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "CHECK IF A COMPANY IS REAL BEFORE PAYING",
+    "what_it_solves": "Helps you verify whether a company or LLP actually exists and is active before paying deposits, fees, advances, or joining charges.",
+    "what_to_do": "Use the MCA master data search to check the legal status of a company before trusting it with money or documents.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "the MCA master data search page."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the company or LLP name you want to verify."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the legal name, CIN or LLPIN, and current status shown in the records."
+      },
+      {
+        "bold_title": "Match",
+        "text": "the details against the name used in emails, websites, invoices, or offer letters."
+      },
+      {
+        "bold_title": "Avoid",
+        "text": "sending money if the details do not match or the status looks suspicious."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Registration alone does not prove trustworthiness, but it is a useful first filter against fake employers, vendors, and advance-fee scams.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "GET FREE GOVERNMENT-BACKED LEGAL ADVICE FIRST",
+    "what_it_solves": "Helps you get basic legal guidance on everyday disputes without immediately spending money on a private lawyer.",
+    "what_to_do": "Use the Tele-Law service through CSCs or the official system to seek legal advice on common personal and civil issues.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://www.tele-law.in or approach a nearby Common Services Centre."
+      },
+      {
+        "bold_title": "Register",
+        "text": "your issue with the required personal and contact details."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the suitable consultation mode if options are available."
+      },
+      {
+        "bold_title": "Connect",
+        "text": "with the assigned legal expert through phone or video consultation."
+      },
+      {
+        "bold_title": "Note",
+        "text": "the advice clearly before deciding your next formal legal step."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is useful for first-level guidance, not a substitute for full legal representation in complex or urgent court matters.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday"
+  },
+  {
+    "title": "DOWNLOAD MAPS BEFORE YOU LOSE SIGNAL",
+    "what_it_solves": "Helps you navigate in airports, road trips, unfamiliar cities, and patchy-network areas without depending entirely on mobile data.",
+    "what_to_do": "Use Google Maps offline maps before a trip so your phone can still guide you when the connection is slow or unavailable.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Google Maps app on your phone."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "your profile picture and open “Offline maps.”"
+      },
+      {
+        "bold_title": "Select",
+        "text": "“Select your own map” and frame the area you need."
+      },
+      {
+        "bold_title": "Download",
+        "text": "the map before you travel."
+      },
+      {
+        "bold_title": "Update",
+        "text": "saved maps when Google warns that they are about to expire."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Offline maps are most useful for driving. If you are offline, features like live traffic, alternate routes, transit, bicycling, and walking directions may be limited.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Maps Help",
+    "primary_source_url": "https://support.google.com/maps/answer/6291838"
+  },
+  {
+    "title": "TRACK FLIGHT PRICES INSTEAD OF CHECKING MANUALLY",
+    "what_it_solves": "Helps you avoid repeatedly rechecking fares and makes it easier to catch price drops for trips you are not ready to book yet.",
+    "what_to_do": "Use Google Flights price tracking for a route, date range, or even a specific flight and let the alerts come to you.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Flights in your browser."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "your departure airport, destination, and travel dates."
+      },
+      {
+        "bold_title": "Set",
+        "text": "the stops, cabin class, and ticket count you want."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "“Track prices” for the route or for a specific flight."
+      },
+      {
+        "bold_title": "Review",
+        "text": "tracked flights later and keep email alerts enabled if you want updates."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This works best when you are flexible and not in a rush. Price tracking is a monitoring habit, not a guarantee that fares will keep falling.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Travel Help",
+    "primary_source_url": "https://support.google.com/travel/answer/6235879"
+  },
+  {
+    "title": "READ THE TRANSCRIPT BEFORE WATCHING THE WHOLE VIDEO",
+    "what_it_solves": "Helps you decide quickly whether a long YouTube video is worth your time and jump straight to the exact part you need.",
+    "what_to_do": "Use YouTube’s transcript view to scan the full text, search mentally for useful moments, and jump directly to them.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the YouTube video in your browser."
+      },
+      {
+        "bold_title": "Expand",
+        "text": "the description area below the video."
+      },
+      {
+        "bold_title": "Click",
+        "text": "“Show transcript” if the option appears."
+      },
+      {
+        "bold_title": "Scan",
+        "text": "the transcript to find the segment that matters."
+      },
+      {
+        "bold_title": "Jump",
+        "text": "to that moment by clicking the matching transcript line."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This works only for videos that have captions. It is especially useful for lectures, interviews, tutorials, podcasts, and news explainers.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "YouTube Help",
+    "primary_source_url": "https://support.google.com/youtube/answer/15930243"
+  },
+  {
+    "title": "DICTATE YOUR FIRST DRAFT INSTEAD OF TYPING IT",
+    "what_it_solves": "Helps you get ideas out faster when typing is slowing you down, especially for notes, rough drafts, outlines, and meeting summaries.",
+    "what_to_do": "Use Google Docs voice typing to speak your draft first and edit it later instead of fighting a blank page.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "a document in Google Docs on your computer."
+      },
+      {
+        "bold_title": "Check",
+        "text": "that your microphone is on and working."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Tools and then “Voice typing.”"
+      },
+      {
+        "bold_title": "Click",
+        "text": "the microphone and speak clearly at a normal pace."
+      },
+      {
+        "bold_title": "Edit",
+        "text": "the draft after dictation instead of stopping to perfect each sentence."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is best for first drafts, not final polish. You still need to review punctuation, names, and technical terms carefully.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Docs Editors Help",
+    "primary_source_url": "https://support.google.com/docs/answer/4492226"
+  },
+  {
+    "title": "OPEN LONG ARTICLES IN READING MODE",
+    "what_it_solves": "Helps you focus on the actual text by stripping away clutter like sidebars, moving elements, and distracting images or videos.",
+    "what_to_do": "Use Chrome’s Reading mode when an article feels visually noisy or when you want a cleaner reading experience.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the article in Chrome on your computer."
+      },
+      {
+        "bold_title": "Right-click",
+        "text": "the page if it contains text you want to read."
+      },
+      {
+        "bold_title": "Select",
+        "text": "“Open in reading mode.”"
+      },
+      {
+        "bold_title": "Adjust",
+        "text": "font, spacing, color, or read-aloud options if useful."
+      },
+      {
+        "bold_title": "Read",
+        "text": "the clean version instead of the full cluttered webpage."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is not available on every page. It works best on text-heavy articles, essays, explainers, and documentation pages.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Chrome Help",
+    "primary_source_url": "https://support.google.com/chrome/answer/14218344"
+  },
+  {
+    "title": "CHECK WHICH OF YOUR PASSWORDS ARE ALREADY EXPOSED",
+    "what_it_solves": "Helps you spot saved passwords that are weak, reused, or already exposed in a data breach before an attacker does.",
+    "what_to_do": "Run Google Password Manager Checkup and change the worst offenders first instead of waiting until an account gets hijacked.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Chrome on your computer."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Passwords and autofill and then Google Password Manager."
+      },
+      {
+        "bold_title": "Select",
+        "text": "“Checkup” from the left panel."
+      },
+      {
+        "bold_title": "Review",
+        "text": "the list of compromised, weak, or easy-to-guess passwords."
+      },
+      {
+        "bold_title": "Change",
+        "text": "the most sensitive accounts first, especially email, banking, and shopping logins."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not start with low-value accounts. Fix your email and identity-linked accounts first, because those are often the recovery path into everything else.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Chrome Help",
+    "primary_source_url": "https://support.google.com/chrome/answer/95606"
+  },
+  {
+    "title": "HIDE YOUR REAL EMAIL WHEN YOU SIGN UP",
+    "what_it_solves": "Helps you reduce spam, protect your real inbox, and limit the damage if a site leaks or misuses your email address.",
+    "what_to_do": "Use Apple’s Hide My Email to generate a random forwarding address instead of sharing your personal email everywhere.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Settings on your iPhone and go to your Apple account."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "iCloud and then “Hide My Email.”"
+      },
+      {
+        "bold_title": "Generate",
+        "text": "a new random address when signing up for a service or newsletter."
+      },
+      {
+        "bold_title": "Label",
+        "text": "the address so you remember where you used it."
+      },
+      {
+        "bold_title": "Disable",
+        "text": "that specific relay address later if the source becomes noisy or untrustworthy."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is an iCloud+ feature. It is most useful for newsletters, shopping sites, trials, event registrations, and services you do not fully trust yet.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Apple Support",
+    "primary_source_url": "https://support.apple.com/guide/iphone/create-and-manage-hide-my-email-addresses-iphcb02e76f7/ios"
+  },
+  {
+    "title": "SET UP MEDICAL ID BEFORE YOU EVER NEED IT",
+    "what_it_solves": "Helps emergency responders and bystanders access critical health information and emergency contacts from your phone without your passcode.",
+    "what_to_do": "Fill out Medical ID on your iPhone and allow it to be shown from the lock screen during emergencies.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Health app on your iPhone."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "your profile picture and then “Medical ID.”"
+      },
+      {
+        "bold_title": "Add",
+        "text": "important details such as allergies, medical conditions, medications, and blood type if relevant."
+      },
+      {
+        "bold_title": "Include",
+        "text": "at least one emergency contact."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "“Show When Locked” so helpers can see it without your passcode."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Keep this accurate. Wrong or stale emergency information can be almost as unhelpful as having none at all.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Apple Support",
+    "primary_source_url": "https://support.apple.com/en-sg/105072"
+  },
+  {
+    "title": "TURN ON EMERGENCY SOS BEFORE A CRISIS",
+    "what_it_solves": "Helps your phone call for help faster, alert trusted contacts, and share your location when you may not have time to explain everything.",
+    "what_to_do": "Set up Android Emergency SOS in advance instead of trying to find it for the first time during a real emergency.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Settings on your Android phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Safety and emergency and then “Emergency SOS.”"
+      },
+      {
+        "bold_title": "Choose",
+        "text": "what actions your phone should trigger, such as calling for help or alerting emergency contacts."
+      },
+      {
+        "bold_title": "Add",
+        "text": "the right emergency contacts now, not later."
+      },
+      {
+        "bold_title": "Test",
+        "text": "that you know the trigger method before you actually need it."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Emergency SOS is available on Android 12 and later. Location sharing needs an internet connection, and some features may not work in airplane mode or Battery Saver.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Android Help",
+    "primary_source_url": "https://support.google.com/android/answer/9319337"
+  },
+  {
+    "title": "SHARE WI-FI WITHOUT READING OUT THE PASSWORD",
+    "what_it_solves": "Helps guests get online quickly without you spelling out a long password, and reduces mistakes when the password is complex.",
+    "what_to_do": "Use iPhone’s built-in Wi-Fi password sharing instead of dictating or messaging the password manually.",
+    "steps": [
+      {
+        "bold_title": "Check",
+        "text": "that both devices have Wi-Fi and Bluetooth turned on."
+      },
+      {
+        "bold_title": "Make sure",
+        "text": "both people have each other saved in Contacts."
+      },
+      {
+        "bold_title": "Keep",
+        "text": "the devices close to each other."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "the guest device to join the Wi-Fi network."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "“Share Password” on your iPhone when the prompt appears."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is easiest inside the Apple ecosystem. It is ideal at home, in small offices, and when older family members or guests keep mistyping long passwords.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Apple Support",
+    "primary_source_url": "https://support.apple.com/en-sg/102635"
+  },
+  {
+    "title": "MAKE YOUR IPHONE LISTEN FOR IMPORTANT SOUNDS",
+    "what_it_solves": "Helps you catch doorbells, alarms, appliances, or other important sounds that you might otherwise miss in a noisy home or while multitasking.",
+    "what_to_do": "Turn on Sound Recognition so your iPhone can notify you when it hears specific sounds around you.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Settings on your iPhone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Accessibility and then Sound & Name Recognition."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "“Sound Recognition.”"
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the sounds you want your phone to listen for, such as alarms, appliances, or doorbells."
+      },
+      {
+        "bold_title": "Add",
+        "text": "it to Control Center if you want to toggle it quickly."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is helpful for accessibility, busy households, deep work, and noisy environments. Your phone may need a moment to download the sound set first.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Apple Support",
+    "primary_source_url": "https://support.apple.com/en-sg/guide/iphone/iphf2dc33312/ios"
+  },
+  {
+    "title": "LEARN HANDS-ONLY CPR BEFORE YOU ARE THE ONLY ADULT THERE",
+    "what_it_solves": "Gives you a simple first-response method if a teen or adult collapses and you need to act before trained help arrives.",
+    "what_to_do": "Learn the two-step Hands-Only CPR approach now so you are not trying to improvise under panic.",
+    "steps": [
+      {
+        "bold_title": "Learn",
+        "text": "the basic rule: call emergency services first."
+      },
+      {
+        "bold_title": "Position",
+        "text": "your hands in the center of the chest."
+      },
+      {
+        "bold_title": "Push",
+        "text": "hard and fast without stopping unnecessarily."
+      },
+      {
+        "bold_title": "Keep going",
+        "text": "until trained help or an AED arrives, or the person starts responding."
+      },
+      {
+        "bold_title": "Watch",
+        "text": "a short official training video now, before you ever need the skill."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This is for sudden collapse in a teen or adult. A short official training session is far better than relying only on memory in a real emergency.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "American Heart Association",
+    "primary_source_url": "https://cpr.heart.org/en/cpr-courses-and-kits/hands-only-cpr"
+  },
+  {
+    "title": "USE YOUR CAMERA TO ACT ON TEXT, NOT JUST PHOTOGRAPH IT",
+    "what_it_solves": "Helps you turn printed text into action immediately instead of retyping numbers, URLs, addresses, or prices by hand.",
+    "what_to_do": "Use iPhone Live Text to copy, call, translate, visit, or convert information straight from what your camera sees.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Camera on your iPhone."
+      },
+      {
+        "bold_title": "Point",
+        "text": "it at text such as a sign, receipt, notice, menu, label, or poster."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the Live Text control when the text is recognized."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the exact text you need."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the action you want, such as copy, call, translate, visit a website, or convert a currency."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is most useful when the text contains something actionable, not just readable. Think phone numbers, Wi-Fi details, links, addresses, and prices.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Apple Support",
+    "primary_source_url": "https://support.apple.com/en-sg/guide/iphone/iphcf0b71b0e/ios"
+  },
+  {
+    "title": "LOCK YOUR PHONE FAST IF IT GETS SNATCHED",
+    "what_it_solves": "Helps protect your data if your phone is stolen in a market, metro, cab, or crowded street by locking it quickly and making it harder for a thief to keep using it.",
+    "what_to_do": "Turn on Android theft protection features in advance, including Theft Detection Lock, Offline Device Lock, and Remote Lock.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Settings on your Android phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Google, then All services, then Theft protection."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Theft Detection Lock and Offline Device Lock."
+      },
+      {
+        "bold_title": "Enable",
+        "text": "Remote Lock with a verified phone number."
+      },
+      {
+        "bold_title": "Use",
+        "text": "Remote Lock immediately if your phone goes missing."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Set this up before anything goes wrong. After a theft, speed matters more than perfection.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Android Help",
+    "primary_source_url": "https://support.google.com/android/answer/15146908"
+  },
+  {
+    "title": "HIDE SENSITIVE APPS INSIDE PRIVATE SPACE",
+    "what_it_solves": "Lets you keep selected apps and their data out of sight, which is useful for banking, private notes, work apps, or anything you do not want casually visible on your phone.",
+    "what_to_do": "Use Android Private Space to keep sensitive apps separate from the rest of your phone.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Settings on your Android device."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Security & privacy, then Private space."
+      },
+      {
+        "bold_title": "Set up",
+        "text": "your private space lock."
+      },
+      {
+        "bold_title": "Add",
+        "text": "the apps you want to keep private inside that space."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "the option to hide Private Space when it is locked."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is stronger than just hiding an icon. It creates a separate, lockable area for private apps.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Android Help",
+    "primary_source_url": "https://support.google.com/android/answer/15341885"
+  },
+  {
+    "title": "MOVE PRIVATE PHOTOS INTO A LOCKED FOLDER",
+    "what_it_solves": "Helps you keep personal photos and videos away from your main gallery, search results, and casual browsing on your phone.",
+    "what_to_do": "Use Google Photos Locked Folder for sensitive images instead of leaving them in the normal gallery.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Photos on your Android phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Collections, then Locked."
+      },
+      {
+        "bold_title": "Set up",
+        "text": "Locked Folder using your device screen lock."
+      },
+      {
+        "bold_title": "Move",
+        "text": "private photos and videos into the folder."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Locked Folder backup if you want those items backed up too."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not assume every private photo is automatically backed up. Check the Locked Folder backup setting deliberately.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Photos Help",
+    "primary_source_url": "https://support.google.com/photos/answer/10694388"
+  },
+  {
+    "title": "HIDE DOCUMENTS AND FILES IN A SAFE FOLDER",
+    "what_it_solves": "Lets you protect PDFs, IDs, screenshots, and other files with a separate PIN so they are not lying around in normal storage.",
+    "what_to_do": "Use Files by Google Safe Folder to lock away sensitive files on your Android phone.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Files by Google."
+      },
+      {
+        "bold_title": "Set up",
+        "text": "Safe Folder with a PIN or pattern."
+      },
+      {
+        "bold_title": "Find",
+        "text": "the file you want to protect."
+      },
+      {
+        "bold_title": "Move",
+        "text": "the file into Safe Folder."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Safe Folder only when you need to access those files."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not forget the Safe Folder PIN. If you lose it, access to those files may be gone.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Files by Google Help",
+    "primary_source_url": "https://support.google.com/files/answer/9935264"
+  },
+  {
+    "title": "FREE UP SPACE WITHOUT DELETING YOUR APPS",
+    "what_it_solves": "Helps you recover space on a full phone without fully uninstalling apps and losing your setup.",
+    "what_to_do": "Archive apps you rarely use instead of deleting them completely.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the app’s page in a supported app store or Android settings flow."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the option to archive the app if available."
+      },
+      {
+        "bold_title": "Keep",
+        "text": "the app icon on your phone for easy return later."
+      },
+      {
+        "bold_title": "Restore",
+        "text": "the app whenever you need it again."
+      },
+      {
+        "bold_title": "Repeat",
+        "text": "this for shopping, travel, event, or festival apps you use only occasionally."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Archiving is a smart middle path: more space than keeping the app, less pain than uninstalling and setting it up all over again.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Android Help",
+    "primary_source_url": "https://support.google.com/android/answer/15523443"
+  },
+  {
+    "title": "RECOVER MISSED ALERTS WITH NOTIFICATION HISTORY",
+    "what_it_solves": "Helps you find OTPs, delivery alerts, payment confirmations, and other notifications you accidentally dismissed too quickly.",
+    "what_to_do": "Turn on Notification History so swiped-away alerts do not vanish forever.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Settings on your Android phone."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Notifications, then Notification history."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Use notification history."
+      },
+      {
+        "bold_title": "Reopen",
+        "text": "this page whenever you lose an important alert."
+      },
+      {
+        "bold_title": "Check",
+        "text": "recently dismissed notifications before asking someone to resend an OTP or message."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is one of those settings people usually discover only after they need it badly.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Android Help",
+    "primary_source_url": "https://support.google.com/android/answer/9079661"
+  },
+  {
+    "title": "LET PLAY PROTECT CHECK RISKY APPS BEFORE YOU INSTALL",
+    "what_it_solves": "Helps reduce the chance of installing malware from APK links, forwarded files, and unofficial download sources.",
+    "what_to_do": "Turn on Google Play Protect, especially if you sometimes install apps from browsers, chat apps, or other high-risk sources.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Play Store on your Android phone."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "your profile icon, then Play Protect."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Play Protect settings."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Scan apps with Play Protect."
+      },
+      {
+        "bold_title": "Also turn on",
+        "text": "Improve harmful app detection if you install apps from outside Google Play."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This is especially important if you ever sideload APKs for cracked apps, betting tools, modded games, or forwarded “utility” apps.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Play Help",
+    "primary_source_url": "https://support.google.com/googleplay/answer/2812853"
+  },
+  {
+    "title": "SEARCH ANYTHING ON YOUR SCREEN WITHOUT SWITCHING APPS",
+    "what_it_solves": "Helps you identify products, decode memes, translate text, find song names, or look up information from any app without taking screenshots and opening another app.",
+    "what_to_do": "Use Circle to Search directly on your Android screen whenever something catches your eye.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the app, reel, image, article, or chat you are looking at."
+      },
+      {
+        "bold_title": "Start",
+        "text": "Circle to Search by long-pressing the Home button or navigation handle."
+      },
+      {
+        "bold_title": "Circle",
+        "text": "highlight, scribble, or tap the exact text, image, or object you want to search."
+      },
+      {
+        "bold_title": "Refine",
+        "text": "the result by zooming, moving the selection, or searching the entire screen."
+      },
+      {
+        "bold_title": "Use",
+        "text": "it for shopping checks, translation, homework, places, or even music search."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This feels magical the first time you use it well. It is especially useful when something is visible on screen but hard to describe in words.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Search Help",
+    "primary_source_url": "https://support.google.com/websearch/answer/14508957"
+  },
+  {
+    "title": "ASK GEMINI TO READ THE PDF YOU ARE ALREADY VIEWING",
+    "what_it_solves": "Helps you make sense of long PDFs like fee notices, bills, manuals, school circulars, contracts, and government forms without reading every page yourself.",
+    "what_to_do": "Use Files by Google with Gemini to ask questions about a PDF directly from your phone.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Files by Google on your Android phone."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the PDF you want help with."
+      },
+      {
+        "bold_title": "Start",
+        "text": "Gemini by pressing and holding the Power button or using the Gemini trigger."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Ask about PDF."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "questions like “What is the due date?”, “Summarize this”, or “What documents are required?”"
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is one of the strongest everyday AI uses on Android because it turns a confusing document into a conversation.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Files by Google Help",
+    "primary_source_url": "https://support.google.com/files/answer/15880481"
+  },
+  {
+    "title": "SHOW GEMINI YOUR SCREEN OR CAMERA FOR LIVE HELP",
+    "what_it_solves": "Lets you get real-time help with forms, settings, bills, broken appliances, error messages, labels, and confusing screens by showing them instead of describing them poorly.",
+    "what_to_do": "Use Gemini Live with screen sharing or video streaming when you need live visual help on your Android phone.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Gemini app and start a Live conversation."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "screen sharing to show what is on your phone."
+      },
+      {
+        "bold_title": "Or tap",
+        "text": "video streaming to show Gemini something through your camera."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "clear questions such as “What does this setting do?” or “Explain this bill in simple words.”"
+      },
+      {
+        "bold_title": "Follow up",
+        "text": "with smaller questions until the task is clear enough to act on."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not share highly sensitive personal or financial information casually. This works best for interpretation, troubleshooting, and guidance.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Gemini Apps Help",
+    "primary_source_url": "https://support.google.com/gemini/answer/15274899"
+  },
+  {
+    "title": "TURN STUDY MATERIAL INTO A PODCAST OR QUIZ",
+    "what_it_solves": "Helps students, job seekers, and professionals learn from PDFs, websites, notes, and slides while commuting, walking, or doing chores.",
+    "what_to_do": "Use the NotebookLM mobile app to generate Audio Overviews, flashcards, and quizzes from your own study material.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the NotebookLM mobile app."
+      },
+      {
+        "bold_title": "Create",
+        "text": "a notebook and add sources such as PDFs, websites, or notes."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "the Studio panel."
+      },
+      {
+        "bold_title": "Generate",
+        "text": "an Audio Overview, quiz, or flashcards from the sources."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "a preferred language and customize the output if needed."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is one of the best AI study hacks right now. It turns passive documents into active revision material.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "NotebookLM Help",
+    "primary_source_url": "https://support.google.com/notebooklm/answer/16296687"
+  },
+  {
+    "title": "READ WHATSAPP VOICE NOTES AS TEXT",
+    "what_it_solves": "Helps you catch up on long voice notes when you are in a meeting, on public transport, around other people, or simply not in the mood to listen.",
+    "what_to_do": "Turn on WhatsApp voice message transcripts and read voice notes as text when needed.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp on your phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Settings, then Chats."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Voice Message Transcripts."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the language that matches most voice notes you receive."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Transcribe on a voice note when you want the text version."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is brilliant for family groups, school groups, and work chats where people love sending 3-minute voice messages.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/241617298315321"
+  },
+  {
+    "title": "SUMMARIZE HUNDREDS OF UNREAD WHATSAPP MESSAGES",
+    "what_it_solves": "Helps you catch up on overloaded chats without reading every unread message one by one.",
+    "what_to_do": "Use WhatsApp’s message summaries with Meta AI to get a quick catch-up on unread messages when the feature is available to you.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the individual or group chat you have not caught up on."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the unread message indicator above your unread messages."
+      },
+      {
+        "bold_title": "Enable",
+        "text": "message summaries if prompted."
+      },
+      {
+        "bold_title": "Read",
+        "text": "the summary to understand the main points before diving in."
+      },
+      {
+        "bold_title": "Use",
+        "text": "this for noisy groups, family planning chats, school announcements, or event threads."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Availability may vary, and this is optional. It is most useful for catching up fast, not for replacing careful reading of critical details.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/876471037953289"
+  },
+  {
+    "title": "ENCRYPT YOUR WHATSAPP BACKUP TOO",
+    "what_it_solves": "Protects your cloud backup so your chats and media are not just secure in transit but also protected when stored.",
+    "what_to_do": "Turn on end-to-end encrypted backup in WhatsApp instead of assuming normal cloud backup is equally private.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp and go to Settings."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Chats, then Chat Backup."
+      },
+      {
+        "bold_title": "Open",
+        "text": "End-to-end encrypted backup."
+      },
+      {
+        "bold_title": "Turn it on",
+        "text": "and create a passkey, password, or 64-digit encryption key."
+      },
+      {
+        "bold_title": "Store",
+        "text": "that recovery method safely so you do not lose access later."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "If you forget the password or lose the encryption key, recovery can become very difficult. Set it up only after deciding where you will store the recovery method.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/490592613091019"
+  },
+  {
+    "title": "LET GOOGLE MESSAGES FLAG SPAM BEFORE YOU TAP",
+    "what_it_solves": "Helps reduce the risk of fake bank alerts, scam prize messages, phishing links, and other malicious SMS traps.",
+    "what_to_do": "Keep spam protection on in Google Messages and report suspicious threads instead of just deleting them.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Messages on your Android phone."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "your profile picture or initials."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Messages settings, then Spam protection."
+      },
+      {
+        "bold_title": "Keep",
+        "text": "Enable spam protection turned on."
+      },
+      {
+        "bold_title": "Report",
+        "text": "suspicious messages as spam when they slip through."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not click first and think later. Spam filters help, but your own hesitation is still the strongest protection.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Messages Help",
+    "primary_source_url": "https://support.google.com/messages/answer/9327903"
+  },
+  {
+    "title": "TURN ON LIVE TRANSCRIBE FOR REAL-WORLD SPEECH",
+    "what_it_solves": "Helps you follow spoken conversations, announcements, counters, lectures, and noisy environments by turning speech into live text on your phone.",
+    "what_to_do": "Use Live Transcribe on Android when hearing, accents, noise, or context make spoken words hard to catch.",
+    "steps": [
+      {
+        "bold_title": "Install or open",
+        "text": "Live Transcribe on your Android device."
+      },
+      {
+        "bold_title": "Turn it on",
+        "text": "from Accessibility settings or the app shortcut."
+      },
+      {
+        "bold_title": "Hold",
+        "text": "your phone near the person or sound you want to capture."
+      },
+      {
+        "bold_title": "Read",
+        "text": "the live text on screen as the speech happens."
+      },
+      {
+        "bold_title": "Use",
+        "text": "it in classrooms, service counters, meetings, or family conversations when clarity matters."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is an accessibility feature, but it is useful far beyond accessibility. It can rescue many everyday situations.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Android Accessibility Help",
+    "primary_source_url": "https://support.google.com/accessibility/android/answer/9158064"
+  }
+]

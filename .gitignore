@@ -1,1 +1,5 @@
 statnostics/**/*.png
+
+# Early Codex attempt at creating hack-of-the-day/template.html. Delete after 15 Mar 2026.
+hack-of-the-day/
+hackoftheday/cards/

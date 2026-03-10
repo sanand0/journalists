@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hack of the Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --title-font: 'Barlow Condensed', sans-serif;
+      --body-font: 'Archivo Narrow', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #6a7a8a;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    /* =========================================
+       CARD
+    ========================================= */
+    .card {
+      width: 800px;
+      background: #d2ddf2;
+      font-family: var(--body-font);
+    }
+
+    /* =========================================
+       HEADER
+    ========================================= */
+    .card-header {
+      display: flex;
+      align-items: stretch;
+    }
+
+    /* Red badge: pentagon arrow-right shape */
+    .badge {
+      background: #ec1b22;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 36px 12px 20px;
+      flex-shrink: 0;
+      /* Arrow-right chevron using clip-path */
+      clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 50%, calc(100% - 24px) 100%, 0 100%);
+    }
+
+    .badge-hack {
+      font-family: var(--title-font);
+      font-size: 52px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .badge-ofthe {
+      font-family: var(--title-font);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    /* Title area */
+    .card-title {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 14px 22px;
+      font-family: var(--title-font);
+      font-size: 30px;
+      font-weight: 1000;
+      color: #0e1628;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    /* =========================================
+       BODY (WHAT IT SOLVES / WHAT TO DO)
+    ========================================= */
+    .card-body {
+      padding: 13px 22px 0;
+    }
+
+    .section {
+      margin-bottom: 9px;
+      font-size: 22px;
+      color: #0e1628;
+      line-height: 1.45;
+    }
+
+    .section-label {
+      font-weight: 1000;
+      text-transform: uppercase;
+      color: #ec1b22;
+    }
+
+    /* Heading when what_to_do is absent */
+    .steps-heading {
+      font-size: 22px;
+      font-weight: 1000;
+      text-transform: uppercase;
+      color: #ec1b22;
+      margin-bottom: 7px;
+    }
+
+    /* "STEPS:" label in red italic (shown when what_to_do has text) */
+    .steps-label {
+      font-family: var(--title-font);
+      font-size: 17px;
+      font-weight: 1000;
+      font-style: italic;
+      color: #ec1b22;
+      margin: 4px 0 3px;
+    }
+
+    /* =========================================
+       STEP CARDS — FOLDER / STACKED EFFECT
+    ========================================= */
+    .steps {
+      counter-reset: step-counter;
+      padding-bottom: 20px;
+    }
+
+    .step {
+      counter-increment: step-counter;
+      position: relative;
+      background: #fff;
+      border: 1.5px solid #b0bfce;
+      display: flex;
+      align-items: center;
+      margin-top: -10px;          /* overlap = folder stacking */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+      padding: 20px 16px 20px 0;  /* extra bottom padding ensures number fits */
+    }
+
+    .step:first-child {
+      margin-top: 0;
+    }
+
+    /* Stacking order: first step on top (front of stack) */
+    .step:nth-child(1) { z-index: 15; }
+    .step:nth-child(2) { z-index: 14; }
+    .step:nth-child(3) { z-index: 13; }
+    .step:nth-child(4) { z-index: 12; }
+    .step:nth-child(5) { z-index: 11; }
+
+    /* Large serif italic number via CSS counter — acts as flex item */
+    .step::before {
+      content: counter(step-counter);
+      font-size: 46px;
+      font-style: italic;
+      line-height: 0.85;
+      min-width: 56px;
+      padding: 0 5px 0 10px;
+      flex-shrink: 0;
+      color: #396ce1;
+      display: block;             /* participates as flex item */
+    }
+
+    .step-content {
+      font-size: 22px;
+      color: #0e1628;
+      line-height: 1.45;
+      padding-top: 0;
+      flex: 1;
+    }
+
+    .step-content strong {
+      font-weight: 700;
+    }
+
+    /* =========================================
+       NOTE / CAREFUL SECTION
+    ========================================= */
+    .card-note {
+      padding: 9px 22px 11px;
+      font-size: 22px;
+      color: #0e1628;
+      line-height: 1.5;
+    }
+
+    .note-label {
+      color: #ec1b22;
+      font-weight: 1000;
+    }
+
+    .note-text {
+      font-weight: 1000;
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      padding: 9px 22px 14px;
+      gap: 14px;
+    }
+
+    .disclaimer {
+      flex: 1;
+      font-size: 16px;
+      color: #3a4558;
+      line-height: 1.55;
+      font-style: italic;
+    }
+
+    .tip-line {
+      font-style: normal;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .tip-name {
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .qr-block {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .qr-label {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      color: #0e1628;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    #qr-code canvas,
+    #qr-code img {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- ===== HEADER ===== -->
+  <header class="card-header">
+    <div class="badge">
+      <span class="badge-hack">HACK</span>
+      <span class="badge-ofthe">OF THE DAY</span>
+    </div>
+    <h1 class="card-title">{{title}}</h1>
+  </header>
+
+  <!-- ===== BODY ===== -->
+  <div class="card-body">
+
+    <!-- WHAT IT SOLVES -->
+    <p class="section">
+      <strong class="section-label">WHAT IT SOLVES:</strong> {{what_it_solves}}
+    </p>
+
+    <!-- WHAT TO DO — two variants:
+         (a) has intro text  → show "WHAT TO DO:" + text + red "STEPS:"
+         (b) no intro text   → show "WHAT TO DO (QUICK STEPS):" directly  -->
+    {{#what_to_do}}
+    <p class="section">
+      <strong class="section-label">WHAT TO DO:</strong> {{what_to_do}}
+    </p>
+    <p class="steps-label">STEPS:</p>
+    {{/what_to_do}}
+    {{^what_to_do}}
+    <p class="steps-heading">
+      <strong>WHAT TO DO (QUICK STEPS):</strong>
+    </p>
+    {{/what_to_do}}
+
+    <!-- STEP CARDS (overlapping folder effect) -->
+    <div class="steps">
+      {{#steps}}
+      <div class="step">
+        <div class="step-content">{{#bold_title}}<strong>{{bold_title}}</strong> {{/bold_title}}{{{text}}}</div>
+      </div>
+      {{/steps}}
+    </div>
+
+  </div><!-- /card-body -->
+
+  <!-- ===== NOTE / CAREFUL ===== -->
+  {{#note}}
+  <div class="card-note">
+    <span class="note-label">{{note_label}}:</span>
+    <strong class="note-text">{{note}}</strong>
+  </div>
+  {{/note}}
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="card-footer">
+    <div class="disclaimer">
+      <em>Hacks are based on verified public sources. Readers are advised to follow official websites &amp; updated rules</em>
+      <span class="tip-line">Tip from <strong class="tip-name">{{tip_name}}</strong>{{tip_domain}}</span>
+    </div>
+    <div class="qr-block">
+      <div class="qr-label">Scan for<br>more hacks</div>
+      <div id="qr-code" data-url="{{qr_url}}"></div>
+    </div>
+  </footer>
+
+</div><!-- /card -->
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+  var qrEl = document.getElementById('qr-code');
+  var url = qrEl.getAttribute('data-url') || 'https://timesinternet.com';
+  new QRCode(qrEl, {
+    text: url,
+    width: 80,
+    height: 80,
+    correctLevel: QRCode.CorrectLevel.M
+  });
+</script>
+</body>
+</html>
