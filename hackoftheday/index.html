@@ -80,6 +80,117 @@
       border: 1px solid #1e2d4a;
     }
 
+    /* ===== TEMPLATE PICKER ===== */
+    .template-picker {
+      background: #0a1020;
+      border-bottom: 1px solid #1a2540;
+      padding: 28px 40px 32px;
+    }
+
+    .picker-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #3a4c70;
+      margin-bottom: 18px;
+    }
+
+    .picker-row {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: thin;
+      scrollbar-color: #1e2d4a transparent;
+    }
+
+    .picker-row::-webkit-scrollbar { height: 4px; }
+    .picker-row::-webkit-scrollbar-track { background: transparent; }
+    .picker-row::-webkit-scrollbar-thumb { background: #1e2d4a; border-radius: 2px; }
+
+    .picker-card {
+      flex-shrink: 0;
+      width: 210px;
+      background: #111827;
+      border: 1.5px solid #1e2d4a;
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      cursor: default;
+    }
+
+    .picker-card.active {
+      border-color: #ec1b22;
+      box-shadow: 0 0 0 1px #ec1b22, 0 8px 32px rgba(236,27,34,0.2);
+    }
+
+    .picker-swatch {
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .picker-name {
+      font-size: 14px;
+      font-weight: 800;
+      color: #e8edf5;
+      line-height: 1.2;
+    }
+
+    .picker-subtitle {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #3a4c70;
+      margin-top: -4px;
+    }
+
+    .picker-desc {
+      font-size: 12.5px;
+      color: #5a6e96;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .picker-btn {
+      width: 100%;
+      padding: 7px 0;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      border: 1.5px solid #2a3d5e;
+      background: transparent;
+      color: #5a6e96;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .picker-btn:hover {
+      background: #1a2540;
+      color: #c8d8f0;
+      border-color: #3a4c70;
+    }
+
+    .picker-card.active .picker-btn {
+      background: #ec1b22;
+      color: #fff;
+      border-color: #ec1b22;
+      cursor: default;
+    }
+
+    .picker-card.active .picker-btn:hover {
+      background: #b8141a;
+      border-color: #b8141a;
+    }
+
     /* ===== MAIN / GALLERY ===== */
     main {
       max-width: 1320px;
@@ -112,10 +223,8 @@
       box-shadow: 0 20px 56px rgba(0,0,0,0.75), 0 0 0 2px #ec1b22;
     }
 
-    /* Scaled-down card iframe container */
     .thumb-scaler {
-      width: 280px;   /* = 800 * 0.35 */
-      /* height set by JS after iframe loads to match actual card height */
+      width: 280px;
       overflow: hidden;
       position: relative;
       transition: height 0.2s ease;
@@ -123,7 +232,6 @@
 
     .thumb-iframe {
       width: 800px;
-      /* height set by JS */
       border: none;
       transform: scale(0.35);
       transform-origin: top left;
@@ -134,7 +242,6 @@
       pointer-events: none;
     }
 
-    /* Footer bar */
     .thumb-footer {
       padding: 9px 14px;
       background: #0e1628;
@@ -202,7 +309,6 @@
       gap: 12px;
     }
 
-    /* Top bar: counter on left, close on right */
     .modal-topbar {
       display: flex;
       align-items: center;
@@ -235,7 +341,6 @@
     }
     .modal-close:hover { background: #b8141a; transform: scale(1.1); }
 
-    /* Card + prev/next laid out as a row */
     .modal-body {
       display: flex;
       align-items: center;
@@ -343,6 +448,12 @@
   </button>
 </header>
 
+<!-- Template picker -->
+<section class="template-picker">
+  <p class="picker-label">Choose a card style</p>
+  <div class="picker-row" id="picker-row"></div>
+</section>
+
 <main>
   <div class="gallery-grid" id="gallery">
     <div class="status">
@@ -371,11 +482,144 @@
 <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script>
+/* ============================================================
+   TEMPLATE CATALOGUE
+   Each entry describes one card style.
+   'id'    – used as the ?template= URL parameter value
+   'file'  – the Mustache template file to load
+   'bg'    – card background colour (for .thumb background)
+   ============================================================ */
+const TEMPLATES = [
+  {
+    id: 'original',
+    file: 'template.html',
+    name: 'Classic Blue',
+    subtitle: 'The original',
+    desc: 'Crisp steel-blue card, bold red pentagon badge, and stacked folder-style steps. The benchmark every other variant is measured against.',
+    swatchFrom: '#d2ddf2',
+    swatchTo:   '#396ce1',
+    bg: '#d2ddf2',
+  },
+  {
+    id: 'broadsheet',
+    file: 'template-broadsheet.html',
+    name: 'Broadsheet Heritage',
+    subtitle: 'Time-tested authority',
+    desc: 'Cream paper, serif type, double-rule borders. The unmistakable voice of a newspaper that has printed the news for generations.',
+    swatchFrom: '#f5f0e6',
+    swatchTo:   '#8b0000',
+    bg: '#f5f0e6',
+  },
+  {
+    id: 'saffron',
+    file: 'template-saffron.html',
+    name: 'Saffron Signal',
+    subtitle: 'Warmth and confidence',
+    desc: "India's amber-gold anchors a bold header. Clean, distinct steps without stacking — modern enough to feel fresh, warm enough to feel home.",
+    swatchFrom: '#fffcf5',
+    swatchTo:   '#e07b00',
+    bg: '#fffcf5',
+  },
+  {
+    id: 'noir',
+    file: 'template-noir.html',
+    name: 'Night Ink',
+    subtitle: 'Premium drama',
+    desc: 'Deep-navy field, luminous white step panels, gold numerals. Reserved for the story that demands to be noticed across the page.',
+    swatchFrom: '#131824',
+    swatchTo:   '#f0c040',
+    bg: '#131824',
+  },
+  {
+    id: 'magazine',
+    file: 'template-magazine.html',
+    name: 'Bold Folio',
+    subtitle: 'Editorial power',
+    desc: 'Ghost numerals tower behind each step like silent headlines. White space breathes; the red masthead commands. Magazine energy in a newspaper format.',
+    swatchFrom: '#ffffff',
+    swatchTo:   '#ec1b22',
+    bg: '#ffffff',
+  },
+  {
+    id: 'minimal',
+    file: 'template-minimal.html',
+    name: 'Signal Strip',
+    subtitle: 'Clarity above all',
+    desc: 'A single red rule runs the left edge of every step — no boxes, no shadows, nothing in the way of the words. Serene, purposeful, uncompromising.',
+    swatchFrom: '#ffffff',
+    swatchTo:   '#ec1b22',
+    bg: '#ffffff',
+  },
+];
+
+/* ============================================================
+   URL PARAMETER HELPERS
+   ============================================================ */
+function getTemplateId() {
+  const p = new URLSearchParams(window.location.search).get('template');
+  return TEMPLATES.find(t => t.id === p) ? p : 'original';
+}
+
+function setTemplateId(id) {
+  const url = new URL(window.location.href);
+  url.searchParams.set('template', id);
+  window.location.href = url.toString();
+}
+
+/* ============================================================
+   BUILD TEMPLATE PICKER
+   ============================================================ */
+const activeId = getTemplateId();
+const activeTpl = TEMPLATES.find(t => t.id === activeId);
+
+const pickerRow = document.getElementById('picker-row');
+
+TEMPLATES.forEach(tpl => {
+  const isActive = tpl.id === activeId;
+
+  const card = document.createElement('div');
+  card.className = 'picker-card' + (isActive ? ' active' : '');
+
+  const swatch = document.createElement('div');
+  swatch.className = 'picker-swatch';
+  swatch.style.background = `linear-gradient(90deg, ${tpl.swatchFrom} 0%, ${tpl.swatchTo} 100%)`;
+
+  const name = document.createElement('div');
+  name.className = 'picker-name';
+  name.textContent = tpl.name;
+
+  const sub = document.createElement('div');
+  sub.className = 'picker-subtitle';
+  sub.textContent = tpl.subtitle;
+
+  const desc = document.createElement('p');
+  desc.className = 'picker-desc';
+  desc.textContent = tpl.desc;
+
+  const btn = document.createElement('button');
+  btn.className = 'picker-btn';
+  btn.textContent = isActive ? 'Active' : 'Apply';
+  btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  if (!isActive) {
+    btn.addEventListener('click', () => setTemplateId(tpl.id));
+  }
+
+  card.appendChild(swatch);
+  card.appendChild(name);
+  card.appendChild(sub);
+  card.appendChild(desc);
+  card.appendChild(btn);
+  pickerRow.appendChild(card);
+});
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
 (async () => {
-  const CARD_WIDTH    = 800;
-  const CARD_H_INIT   = 1000; // generous initial iframe height; auto-shrinks after load
-  const SCALE         = 0.35;
-  const THUMB_W       = Math.round(CARD_WIDTH * SCALE); // 280
+  const CARD_WIDTH  = 800;
+  const CARD_H_INIT = 1000;
+  const SCALE       = 0.35;
+  const THUMB_W     = Math.round(CARD_WIDTH * SCALE); // 280
 
   const gallery       = document.getElementById('gallery');
   const countEl       = document.getElementById('count');
@@ -389,7 +633,7 @@
   const modalNext     = document.getElementById('modal-next');
 
   let currentIndex = -1;
-  let renderedFull = [];   // full HTML per card (original template)
+  let renderedFull = [];
 
   /* ---- Modal helpers ---- */
   function openModal(index) {
@@ -425,29 +669,27 @@
     }
   });
 
-  /* ---- Load data ---- */
+  /* ---- Load data + selected template ---- */
   let cards, template;
   try {
     [cards, template] = await Promise.all([
       fetch('cards.json').then(r => r.json()),
-      fetch('template.html').then(r => r.text()),
+      fetch(activeTpl.file).then(r => r.text()),
     ]);
   } catch (err) {
     gallery.innerHTML = `<div class="status"><p style="color:#ef4444">Failed to load: ${err.message}</p></div>`;
     return;
   }
 
-  /* Thumbnail variant: remove body padding/centering so the card fills
-     the iframe from the top-left corner, giving the cleanest scaled view. */
+  /* Thumbnail variant: remove body padding/centering */
   const thumbTpl = template.replace(
     '</head>',
-    '<style>body{padding:0!important;display:block!important;background:#d2ddf2!important}</style></head>'
+    `<style>body{padding:0!important;display:block!important;background:${activeTpl.bg}!important}</style></head>`
   );
 
   countEl.textContent = `${cards.length} cards`;
   gallery.innerHTML = '';
 
-  /* Enable Download All now that renderedFull will be populated */
   dlAllBtn.disabled = false;
   dlAllBtn.addEventListener('click', async () => {
     const label = dlAllBtn.innerHTML;
@@ -477,11 +719,11 @@
 
     const thumb = document.createElement('div');
     thumb.className = 'thumb';
+    thumb.style.background = activeTpl.bg;
     thumb.setAttribute('role', 'button');
     thumb.setAttribute('tabindex', '0');
     thumb.setAttribute('aria-label', `Card ${i + 1}: ${card.title}`);
 
-    /* Scaled iframe — initial height is generous; auto-shrinks on load */
     const scaler = document.createElement('div');
     scaler.className = 'thumb-scaler';
     scaler.style.cssText = `width:${THUMB_W}px;height:${Math.round(CARD_H_INIT * SCALE)}px`;
@@ -492,8 +734,6 @@
     iframe.srcdoc = thumbHtml;
     iframe.title  = card.title;
 
-    /* After the iframe and its scripts (QR code, fonts) settle,
-       measure the actual rendered card height and trim the scaler. */
     iframe.addEventListener('load', () => {
       setTimeout(() => {
         try {
@@ -502,14 +742,13 @@
           const h = Math.ceil(cardEl.getBoundingClientRect().height);
           iframe.style.height = h + 'px';
           scaler.style.height = Math.ceil(h * SCALE) + 'px';
-        } catch (_) { /* cross-origin guard — won't happen with srcdoc */ }
-      }, 400); // allow fonts + QR canvas to render
+        } catch (_) {}
+      }, 400);
     });
 
     scaler.appendChild(iframe);
     thumb.appendChild(scaler);
 
-    /* Footer bar */
     const footer = document.createElement('div');
     footer.className = 'thumb-footer';
 
@@ -540,7 +779,6 @@
 
     footer.appendChild(numSpan);
     footer.appendChild(dlBtn);
-    /* Prevent clicks anywhere on the footer from bubbling up to the thumb */
     footer.addEventListener('click', e => e.stopPropagation());
     thumb.appendChild(footer);
 
