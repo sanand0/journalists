@@ -62,7 +62,7 @@
     }
     .page-title p {
       font-size: 13px;
-      color: #5a6e96;
+      color: #8baac8;
       margin-top: 3px;
     }
 
@@ -73,7 +73,7 @@
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #3a4c70;
+      color: #7a90b0;
       background: #151e33;
       padding: 6px 14px;
       border-radius: 20px;
@@ -92,7 +92,7 @@
       font-weight: 800;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #3a4c70;
+      color: #7a90b0;
       margin-bottom: 18px;
     }
 
@@ -147,13 +147,13 @@
       font-weight: 600;
       letter-spacing: 1px;
       text-transform: uppercase;
-      color: #3a4c70;
+      color: #7a90b0;
       margin-top: -4px;
     }
 
     .picker-desc {
       font-size: 12.5px;
-      color: #5a6e96;
+      color: #8baac8;
       line-height: 1.55;
       flex: 1;
     }
@@ -168,7 +168,7 @@
       border-radius: 6px;
       border: 1.5px solid #2a3d5e;
       background: transparent;
-      color: #5a6e96;
+      color: #8baac8;
       cursor: pointer;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
@@ -176,7 +176,7 @@
     .picker-btn:hover {
       background: #1a2540;
       color: #c8d8f0;
-      border-color: #3a4c70;
+      border-color: #7a90b0;
     }
 
     .picker-card.active .picker-btn {
@@ -259,7 +259,7 @@
     .dl-btn {
       font-size: 11px;
       font-weight: 700;
-      color: #5a6e96;
+      color: #8baac8;
       background: none;
       border: 1px solid #1e2d4a;
       border-radius: 4px;
@@ -273,7 +273,7 @@
     }
     .dl-btn:hover {
       color: #c8d8f0;
-      border-color: #3a4c70;
+      border-color: #7a90b0;
       background: #151e33;
     }
     .dl-btn svg {
@@ -318,7 +318,7 @@
     .modal-counter {
       font-size: 13px;
       font-weight: 700;
-      color: #5a6e96;
+      color: #8baac8;
       letter-spacing: 1.5px;
     }
 
@@ -384,7 +384,7 @@
       grid-column: 1 / -1;
       text-align: center;
       padding: 80px 24px;
-      color: #3a4c70;
+      color: #7a90b0;
     }
     .spinner {
       width: 40px;
@@ -405,7 +405,7 @@
       gap: 6px;
       background: #1a2540;
       border: 1px solid #2a3d5e;
-      color: #7a8faf;
+      color: #9ab5cc;
       border-radius: 20px;
       padding: 7px 16px;
       font-size: 12px;
@@ -418,7 +418,7 @@
     .dl-all-btn:hover:not(:disabled) {
       background: #243050;
       color: #c8d8f0;
-      border-color: #3a4c70;
+      border-color: #7a90b0;
     }
     .dl-all-btn:disabled { opacity: 0.35; cursor: not-allowed; }
     .dl-all-btn svg { width: 12px; height: 12px; flex-shrink: 0; }
@@ -435,7 +435,7 @@
       font-weight: 800;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #3a4c70;
+      color: #7a90b0;
     }
     .format-btns {
       display: flex;
@@ -452,7 +452,7 @@
       text-transform: uppercase;
       border: none;
       background: transparent;
-      color: #5a6e96;
+      color: #8baac8;
       cursor: pointer;
       transition: background 0.15s, color 0.15s;
     }
@@ -470,18 +470,24 @@
     }
 
     /* ===== SORT BAR ===== */
-    .sort-bar {
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px 24px;
+      margin-bottom: 32px;
+    }
+    .control-group {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 32px;
     }
     .sort-bar-label {
       font-size: 10px;
       font-weight: 800;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #3a4c70;
+      color: #7a90b0;
       flex-shrink: 0;
     }
     .sort-btns {
@@ -494,21 +500,61 @@
       letter-spacing: 0.5px;
       padding: 5px 14px;
       border-radius: 20px;
-      border: 1.5px solid #1e2d4a;
+      border: 1.5px solid #2a3d5e;
       background: transparent;
-      color: #5a6e96;
+      color: #8baac8;
       cursor: pointer;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
     }
     .sort-btn:hover:not(.active) {
       background: #1a2540;
       color: #c8d8f0;
-      border-color: #3a4c70;
+      border-color: #7a90b0;
     }
     .sort-btn.active {
       background: #1a2540;
       color: #c8d8f0;
-      border-color: #3a4c70;
+      border-color: #7a90b0;
+    }
+    .filter-btns {
+      display: flex;
+      gap: 6px;
+    }
+    .filter-btn {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1.5px solid #3a4c70;
+      background: transparent;
+      color: #8baac8;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .filter-btn:hover:not(.active) {
+      background: #232e46;
+      color: #c8d8f0;
+    }
+    .filter-btn.active {
+      background: #1a2540;
+      color: #c8d8f0;
+      border-color: #7a90b0;
+    }
+    .filter-btn.filter-accepted.active {
+      background: #1a4030;
+      color: #7ee8a2;
+      border-color: #2e7d52;
+    }
+    .filter-btn.filter-rejected.active {
+      background: #3d1a1a;
+      color: #f0a0a0;
+      border-color: #8a3030;
+    }
+    .filter-btn.filter-pending.active {
+      background: #2e2a14;
+      color: #e8d07a;
+      border-color: #7a6a20;
     }
 
     /* ===== STATUS PILL + TOOLTIP ===== */
@@ -571,12 +617,12 @@
     .status-wrap:hover .status-tooltip { opacity: 1; }
     .tooltip-row { margin-bottom: 3px; }
     .tooltip-row:last-child { margin-bottom: 0; }
-    .tooltip-label { color: #5a6e96; font-size: 10px; }
+    .tooltip-label { color: #8baac8; font-size: 10px; }
 
     /* ===== THUMB META (created date) ===== */
     .thumb-meta {
       font-size: 10px;
-      color: #3a4c70;
+      color: #7a90b0;
       letter-spacing: 0.3px;
       white-space: nowrap;
     }
@@ -633,12 +679,23 @@
 </section>
 
 <main>
-  <div class="sort-bar">
-    <span class="sort-bar-label">Sort by</span>
-    <div class="sort-btns">
-      <button class="sort-btn active" data-sort="created">Created</button>
-      <button class="sort-btn" data-sort="reviewed">Reviewed</button>
-      <button class="sort-btn" data-sort="index">Index</button>
+  <div class="controls-bar">
+    <div class="control-group">
+      <span class="sort-bar-label">Sort by</span>
+      <div class="sort-btns">
+        <button class="sort-btn" data-sort="created">Created</button>
+        <button class="sort-btn" data-sort="reviewed">Reviewed</button>
+        <button class="sort-btn active" data-sort="index">Index ↓</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="sort-bar-label">Filter</span>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn filter-accepted" data-filter="Accepted">Accepted</button>
+        <button class="filter-btn filter-rejected" data-filter="Rejected">Rejected</button>
+        <button class="filter-btn filter-pending" data-filter="pending">Pending</button>
+      </div>
     </div>
   </div>
   <div class="gallery-grid" id="gallery">
@@ -854,7 +911,7 @@ TEMPLATES.forEach(tpl => {
   function fmtDate(iso) {
     if (!iso) return '';
     const d = new Date(iso);
-    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Singapore' });
+    return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Singapore' });
   }
 
   /* ---- Utility: render SVG in a hidden iframe and serialize the laid-out DOM ----
@@ -997,21 +1054,39 @@ TEMPLATES.forEach(tpl => {
   countEl.textContent = `${cards.length} cards`;
 
   /* ---- Sort helpers ---- */
-  function sortFn(key) {
+  function sortFn(key, dir) {
+    const mul = dir === 'asc' ? 1 : -1;
     return (a, b) => {
-      if (key === 'index') return a._idx - b._idx;
+      if (key === 'index') return mul * (a._idx - b._idx);
       const da = key === 'reviewed' ? (a.reviewed || '') : (a.created || '');
       const db = key === 'reviewed' ? (b.reviewed || '') : (b.created || '');
-      if (da < db) return 1;   // descending: latest first
-      if (da > db) return -1;
+      if (da < db) return mul;
+      if (da > db) return -mul;
       return a._idx - b._idx;  // tiebreak: lowest index first
     };
   }
 
-  /* ---- Render gallery for given sort key ---- */
-  function renderGallery(sortKey) {
-    sortedCards = [...cards].sort(sortFn(sortKey));
+  /* ---- Render gallery using module-level sort/filter state ---- */
+  function renderGallery() {
+    const allSorted = [...cards].sort(sortFn(activeSortKey, activeSortDir));
+    if (activeFilter === 'all') {
+      sortedCards = allSorted;
+    } else if (activeFilter === 'pending') {
+      sortedCards = allSorted.filter(c => !c.status);
+    } else {
+      sortedCards = allSorted.filter(c => c.status === activeFilter);
+    }
     gallery.innerHTML = '';
+
+    /* Track scalers so we can normalise all to the tallest after load */
+    const scalers = [];
+    let pending = sortedCards.length;
+    function normalizeHeights() {
+      if (pending > 0) return;
+      const maxH = Math.max(0, ...scalers.map(s => s._contentH || 0));
+      if (maxH === 0) return;
+      scalers.forEach(s => { s.style.height = Math.ceil(maxH * SCALE) + 'px'; });
+    }
 
     sortedCards.forEach((card, si) => {
       const n   = card._idx + 1;     // original 1-based position (for aria-label)
@@ -1027,6 +1102,7 @@ TEMPLATES.forEach(tpl => {
       const scaler = document.createElement('div');
       scaler.className = 'thumb-scaler';
       scaler.style.cssText = `width:${THUMB_W}px;height:${Math.round(CARD_H_INIT * SCALE)}px`;
+      scalers.push(scaler);
 
       const iframe = document.createElement('iframe');
       iframe.className = 'thumb-iframe';
@@ -1038,11 +1114,15 @@ TEMPLATES.forEach(tpl => {
         setTimeout(() => {
           try {
             const cardEl = iframe.contentDocument?.querySelector('.card');
-            if (!cardEl) return;
-            const h = Math.ceil(cardEl.getBoundingClientRect().height);
-            iframe.style.height = h + 'px';
-            scaler.style.height = Math.ceil(h * SCALE) + 'px';
+            if (cardEl) {
+              const h = Math.ceil(cardEl.getBoundingClientRect().height);
+              iframe.style.height = h + 'px';
+              scaler._contentH = h;
+              scaler.style.height = Math.ceil(h * SCALE) + 'px';
+            }
           } catch (_) {}
+          pending--;
+          normalizeHeights();
         }, 400);
       });
 
@@ -1151,19 +1231,77 @@ TEMPLATES.forEach(tpl => {
     });
   }
 
-  /* ---- Sort button wiring ---- */
-  const sortBtns = document.querySelectorAll('.sort-btn');
-  let activeSortKey = 'created';
+  /* ---- URL hash helpers ---- */
+  function readHash() {
+    const params = new URLSearchParams(location.hash.slice(1));
+    return {
+      sort:   params.get('sort')   || 'index',
+      dir:    params.get('dir')    || 'desc',
+      filter: params.get('filter') || 'all',
+    };
+  }
+  function writeHash() {
+    const params = new URLSearchParams();
+    params.set('sort', activeSortKey);
+    params.set('dir',  activeSortDir);
+    if (activeFilter !== 'all') params.set('filter', activeFilter);
+    history.replaceState(null, '', '#' + params.toString());
+  }
+
+  /* ---- Sort & filter state (initialised from hash) ---- */
+  const SORT_LABELS = { created: 'Created', reviewed: 'Reviewed', index: 'Index' };
+  let { sort: activeSortKey, dir: activeSortDir, filter: activeFilter } = readHash();
+
+  const sortBtns   = document.querySelectorAll('.sort-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
+  function syncSortBtnLabels() {
+    sortBtns.forEach(btn => {
+      const base   = SORT_LABELS[btn.dataset.sort] || btn.dataset.sort;
+      const active = btn.dataset.sort === activeSortKey;
+      btn.classList.toggle('active', active);
+      btn.textContent = active ? `${base} ${activeSortDir === 'asc' ? '↑' : '↓'}` : base;
+    });
+  }
+  function syncFilterBtns() {
+    filterBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === activeFilter));
+  }
+
   sortBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      if (btn.dataset.sort === activeSortKey) return;
-      activeSortKey = btn.dataset.sort;
-      sortBtns.forEach(b => b.classList.toggle('active', b === btn));
-      renderGallery(activeSortKey);
+      if (btn.dataset.sort === activeSortKey) {
+        activeSortDir = activeSortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        activeSortKey = btn.dataset.sort;
+        activeSortDir = 'desc';
+      }
+      syncSortBtnLabels();
+      writeHash();
+      renderGallery();
     });
   });
 
-  /* ---- Download All ---- */
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeFilter = btn.dataset.filter;
+      syncFilterBtns();
+      writeHash();
+      renderGallery();
+    });
+  });
+
+  window.addEventListener('hashchange', () => {
+    ({ sort: activeSortKey, dir: activeSortDir, filter: activeFilter } = readHash());
+    syncSortBtnLabels();
+    syncFilterBtns();
+    renderGallery();
+  });
+
+  syncSortBtnLabels();
+  syncFilterBtns();
+
+  /* ---- Initial render ---- */
+  renderGallery();
   dlAllBtn.disabled = false;
   dlAllBtn.addEventListener('click', async () => {
     const label = dlAllBtn.innerHTML;
@@ -1210,8 +1348,6 @@ TEMPLATES.forEach(tpl => {
     }
   });
 
-  /* ---- Initial render ---- */
-  renderGallery(activeSortKey);
 })();
 </script>
 </body>

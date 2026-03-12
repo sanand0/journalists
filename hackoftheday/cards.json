@@ -1827,6 +1827,7 @@
   },
   {
     "index": "050",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "SEND GMAIL WITH AN EXPIRY DATE AND PASSCODE",
     "what_it_solves": "Helps you share sensitive details like IDs, offers, contracts, and account information with more control than a normal email.",
     "what_to_do": "Use Gmail Confidential Mode to add an expiry date and, when needed, a passcode before sending.",
@@ -1862,6 +1863,7 @@
   },
   {
     "index": "051",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "TURN PAPER DOCUMENTS INTO SEARCHABLE PDFS",
     "what_it_solves": "Lets you turn bills, receipts, letters, and forms into neat PDFs you can store, forward, and search later.",
     "what_to_do": "Use the Google Drive app as a pocket scanner instead of hunting for a printer-scanner or taking messy photos.",
@@ -1897,6 +1899,7 @@
   },
   {
     "index": "052",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "USE PLUS CODES AS A PRECISE DIGITAL ADDRESS",
     "what_it_solves": "Helps you share an exact location even when a normal street address is unclear, incomplete, or points to the wrong entrance.",
     "what_to_do": "Use Google Maps Plus Codes when you need delivery, pickup, or directions to a very specific spot.",
@@ -1932,6 +1935,7 @@
   },
   {
     "index": "053",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "SAVE EXACTLY WHERE YOU PARKED",
     "what_it_solves": "Helps you find your car again in malls, airports, stadiums, basements, and unfamiliar streets without relying on memory.",
     "what_to_do": "Save your parking location in Google Maps instead of taking a random photo and hoping you remember the floor.",
@@ -1967,6 +1971,7 @@
   },
   {
     "index": "054",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "TRANSLATE SIGNS AND DOCUMENTS WITH YOUR CAMERA",
     "what_it_solves": "Helps you understand menus, medicine labels, forms, posters, notices, and signboards without typing anything manually.",
     "what_to_do": "Use the Google Translate camera feature when text is visible but not in a language you can read comfortably.",
@@ -2002,6 +2007,7 @@
   },
   {
     "index": "055",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "USE GOOGLE TRANSLATE AS A LIVE INTERPRETER",
     "what_it_solves": "Helps two people speak across languages during travel, shopping, family conversations, and quick help-seeking situations.",
     "what_to_do": "Use Google Translate conversation mode instead of taking turns typing short lines back and forth.",
@@ -2037,6 +2043,7 @@
   },
   {
     "index": "056",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "DOWNLOAD LANGUAGES BEFORE YOU LOSE SIGNAL",
     "what_it_solves": "Keeps translation working when mobile data is slow, expensive, or unavailable during travel and patchy-network situations.",
     "what_to_do": "Download the languages you need in Google Translate before the trip, not after you are already stuck offline.",
@@ -2072,6 +2079,7 @@
   },
   {
     "index": "057",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "COPY TEXT OUT OF ANY PHOTO OR SCREENSHOT",
     "what_it_solves": "Saves you from retyping phone numbers, addresses, bill amounts, tracking IDs, URLs, or notes captured in images.",
     "what_to_do": "Use Google Lens on a photo or screenshot whenever text is trapped inside an image.",
@@ -2107,6 +2115,7 @@
   },
   {
     "index": "058",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "SWAP PASSWORDS FOR PASSKEYS WHERE POSSIBLE",
     "what_it_solves": "Makes sign-in both easier and harder to phish by replacing passwords with your device unlock, such as your PIN, face, or fingerprint.",
     "what_to_do": "Use Google Password Manager to create passkeys for sites and apps that support them.",
@@ -2142,6 +2151,7 @@
   },
   {
     "index": "059",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "RUN CHROME'S HIDDEN SAFETY CHECK",
     "what_it_solves": "Helps you catch unsafe settings, risky passwords, and browser security problems without manually hunting through menus.",
     "what_to_do": "Run Chrome Safety Check on your phone once in a while instead of assuming the browser is already set up safely.",
@@ -2177,6 +2187,7 @@
   },
   {
     "index": "060",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "SHARE PHOTOS WITHOUT SHARING YOUR LOCATION",
     "what_it_solves": "Helps you send photos without accidentally revealing where you live, work, study, or regularly visit.",
     "what_to_do": "Check Google Photos location-sharing settings before you share images from home, travel, school, or private events.",
@@ -2212,6 +2223,7 @@
   },
   {
     "index": "061",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "LOCK A SINGLE WHATSAPP CHAT",
     "what_it_solves": "Lets you protect one private conversation without locking your entire phone or hiding the whole app.",
     "what_to_do": "Use WhatsApp Chat Lock for chats that contain sensitive family, financial, or work information.",
@@ -2247,6 +2259,7 @@
   },
   {
     "index": "062",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "SILENCE UNKNOWN WHATSAPP CALLS",
     "what_it_solves": "Cuts down random scam, spam, and nuisance calls on WhatsApp without blocking legitimate people forever.",
     "what_to_do": "Turn on Silence Unknown Callers so unknown numbers stop breaking your concentration and sleep.",
@@ -2282,6 +2295,7 @@
   },
   {
     "index": "063",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "KEEP ONE MESSAGE EVEN IN DISAPPEARING CHATS",
     "what_it_solves": "Lets you use disappearing messages for privacy while still preserving a truly important line, such as an address, OTP backup, or meeting detail.",
     "what_to_do": "Use WhatsApp's kept messages feature instead of turning off disappearing messages for the entire chat.",
@@ -2317,6 +2331,7 @@
   },
   {
     "index": "064",
+    "created": "2026-03-12T09:30:00+08:00",
     "title": "HIDE YOUR IP ADDRESS ON WHATSAPP CALLS",
     "what_it_solves": "Adds an extra privacy layer to WhatsApp calls by routing them in a way that helps hide your IP address from the other caller.",
     "what_to_do": "Turn on WhatsApp's IP-protection setting if you want extra privacy on voice and video calls.",

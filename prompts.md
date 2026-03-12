@@ -1,6 +1,20 @@
 # Prompts
 
-## Hack of the day, fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
+## Hack of the day, UI fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 medium)
+
+For the newly added cards in cards.json, set the created date to 12 Mar 2026 at 9:30 am SGT.
+
+index.html should show the created date like "Thu, 12 Mar 2026" in each card. Change default sort order to descending order of index. Allow sorting by ascending / descending order of created, reviewed, or index. Make it easy to filter by status (accepted, rejected, pending). Ensure that sorting and filtering are bookmarkable via URL hash parameters.
+
+---
+
+The color contrast (blue on blue) makes a lot of content barely visible. Review the foreground-background color contrast across elements and ensure contrast while preserving aesthetics.
+
+---
+
+In index.html, when shrinking the cards at the end, make sure all cards have the same height.
+
+## Hack of the day, SVG fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
 
 I could not load the generated SVGs on Gnome nor on VS Code's image viewer. But they render on Chrome. Get them to work on these as well. Keep in mind that they'll finally be opened by Adobe Illustrator and similar tools - so tool compatibility is important. Update SVG templates accordingly and test if you can.
 

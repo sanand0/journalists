@@ -26,6 +26,7 @@ python3 -m http.server
 ```
 
 The gallery:
+
 - Renders every card in `cards.json` as a scaled-down thumbnail using Mustache + `<iframe srcdoc>`
 - Each thumbnail auto-sizes to the card's actual rendered height
 - **Click a thumbnail** to open the full 800 px card in a popup
@@ -48,34 +49,34 @@ index.html?template=minimal      Signal Strip
 
 ## Template variations
 
-| Template | File | Aesthetic | Key details |
-|---|---|---|---|
-| **Classic Blue** | `template.html` | Original | Steel-blue card, red pentagon badge, stacked folder steps, blue step numbers |
-| **Broadsheet Heritage** | `template-broadsheet.html` | Traditional newspaper | Cream paper, Playfair Display serif, double-rule borders, italic step numbers |
-| **Saffron Signal** | `template-saffron.html` | Warm Indian tones | Amber/saffron header, white card, left-bordered step tiles (no overlap), Nunito Sans |
-| **Night Ink** | `template-noir.html` | Premium dark | Deep-navy background, gold accents, dark-panel step cards, Barlow Condensed |
-| **Bold Folio** | `template-magazine.html` | Editorial magazine | Full-width red header, ghost step numerals, white card, Inter/Barlow Condensed |
-| **Signal Strip** | `template-minimal.html` | Minimal / clean | White card, red left-rule on each step, IBM Plex Sans, no shadow boxes |
+| Template                | File                       | Aesthetic             | Key details                                                                          |
+| ----------------------- | -------------------------- | --------------------- | ------------------------------------------------------------------------------------ |
+| **Classic Blue**        | `template.html`            | Original              | Steel-blue card, red pentagon badge, stacked folder steps, blue step numbers         |
+| **Broadsheet Heritage** | `template-broadsheet.html` | Traditional newspaper | Cream paper, Playfair Display serif, double-rule borders, italic step numbers        |
+| **Saffron Signal**      | `template-saffron.html`    | Warm Indian tones     | Amber/saffron header, white card, left-bordered step tiles (no overlap), Nunito Sans |
+| **Night Ink**           | `template-noir.html`       | Premium dark          | Deep-navy background, gold accents, dark-panel step cards, Barlow Condensed          |
+| **Bold Folio**          | `template-magazine.html`   | Editorial magazine    | Full-width red header, ghost step numerals, white card, Inter/Barlow Condensed       |
+| **Signal Strip**        | `template-minimal.html`    | Minimal / clean       | White card, red left-rule on each step, IBM Plex Sans, no shadow boxes               |
 
 ## JSON schema
 
 ```jsonc
 {
-  "title": "CARD TITLE IN UPPERCASE",       // shown in header
+  "title": "CARD TITLE IN UPPERCASE", // shown in header
   "what_it_solves": "One-sentence description",
-  "what_to_do": "Intro sentence or null",   // null → "WHAT TO DO (QUICK STEPS):"
-                                            // non-null → "WHAT TO DO: …" + red "STEPS:"
+  "what_to_do": "Intro sentence or null", // null → "WHAT TO DO (QUICK STEPS):"
+  // non-null → "WHAT TO DO: …" + red "STEPS:"
   "steps": [
     {
       "bold_title": "Optional bold prefix", // null to omit
       "text": "Step body (HTML allowed)"
     }
   ],
-  "note_label": "NOTE",   // use "NOTE", "CAREFUL", or null to hide the section
-  "note": "Note text",    // null hides the note section entirely
+  "note_label": "NOTE", // use "NOTE", "CAREFUL", or null to hide the section
+  "note": "Note text", // null hides the note section entirely
   "tip_name": "firstname.lastname",
   "tip_domain": "@domain.com",
-  "qr_url": "https://…"  // URL encoded in the QR code
+  "qr_url": "https://…" // URL encoded in the QR code
 }
 ```
 
@@ -93,5 +94,5 @@ Supports 3–5 steps without layout issues.
 | Title font         | [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) |
 | Body font          | [Archivo Narrow](https://fonts.google.com/specimen/Archivo+Narrow)     |
 | Step numbering     | CSS `counter-reset` / `::before` — no JS needed                        |
-| Step stacking      | `margin-top: -10px` + decreasing `z-index` + `box-shadow`             |
-| QR code            | [qrcodejs](https://github.com/davidshimjs/qrcodejs) (CDN, 80 × 80 px) |
+| Step stacking      | `margin-top: -10px` + decreasing `z-index` + `box-shadow`              |
+| QR code            | [qrcodejs](https://github.com/davidshimjs/qrcodejs) (CDN, 80 × 80 px)  |
