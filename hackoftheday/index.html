@@ -15,29 +15,33 @@
       color: #e8edf5;
     }
 
-    /* ===== PAGE HEADER ===== */
+    /* ===== PAGE HEADER – single row ===== */
     .page-header {
       background: #0e1628;
-      padding: 24px 48px;
+      padding: 0 32px;
+      height: 54px;
       display: flex;
       align-items: center;
-      gap: 20px;
-      border-bottom: 3px solid #ec1b22;
+      gap: 14px;
+      border-bottom: 2px solid #ec1b22;
       box-shadow: 0 4px 24px rgba(0,0,0,0.5);
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 200;
+      overflow: visible;
     }
 
     .page-badge {
       background: #ec1b22;
-      padding: 10px 28px 10px 16px;
-      clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
+      padding: 6px 22px 6px 12px;
+      clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
       flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
     }
     .page-badge .b-hack {
       display: block;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 900;
       color: #fff;
       line-height: 1;
@@ -46,45 +50,51 @@
     }
     .page-badge .b-ofthe {
       display: block;
-      font-size: 8px;
+      font-size: 6px;
       font-weight: 700;
       color: rgba(255,255,255,0.85);
-      letter-spacing: 2.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
+    .page-title {
+      flex-shrink: 0;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
     .page-title h1 {
-      font-size: 22px;
+      font-size: 16px;
       font-weight: 800;
       color: #fff;
-      letter-spacing: -0.3px;
     }
     .page-title p {
-      font-size: 13px;
+      font-size: 11px;
       color: #8baac8;
-      margin-top: 3px;
     }
 
-    .page-header-spacer { flex: 1; }
+    .page-header-spacer { flex: 1; min-width: 0; }
 
     .page-count {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: #7a90b0;
       background: #151e33;
-      padding: 6px 14px;
+      padding: 4px 10px;
       border-radius: 20px;
       border: 1px solid #1e2d4a;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     /* ===== TEMPLATE PICKER ===== */
     .template-picker {
       background: #0a1020;
       border-bottom: 1px solid #1a2540;
-      padding: 28px 40px 32px;
+      padding: 20px 32px 24px;
     }
 
     .picker-label {
@@ -193,9 +203,9 @@
 
     /* ===== MAIN / GALLERY ===== */
     main {
-      max-width: 1320px;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 52px 40px 80px;
+      padding: 36px 32px 80px;
     }
 
     .gallery-grid {
@@ -290,7 +300,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
+      padding: 20px;
     }
     .modal.hidden { display: none; }
 
@@ -306,7 +316,7 @@
       z-index: 1;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .modal-topbar {
@@ -326,10 +336,10 @@
       background: #ec1b22;
       border: none;
       color: #fff;
-      width: 38px;
-      height: 38px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
-      font-size: 16px;
+      font-size: 15px;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -351,10 +361,10 @@
       background: rgba(255,255,255,0.07);
       border: 1px solid rgba(255,255,255,0.12);
       color: #fff;
-      width: 52px;
-      height: 52px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      font-size: 26px;
+      font-size: 24px;
       line-height: 1;
       cursor: pointer;
       display: flex;
@@ -370,13 +380,109 @@
     }
     .nav-btn:disabled { opacity: 0.2; cursor: not-allowed; pointer-events: none; }
 
+    /* Card wrapper – sized by JS on resize/open */
+    .modal-card {
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 28px 90px rgba(0,0,0,0.8);
+      flex-shrink: 0;
+    }
     .modal-iframe {
       width: 800px;
       height: min(88vh, 900px);
       border: none;
-      border-radius: 4px;
-      box-shadow: 0 28px 90px rgba(0,0,0,0.8);
       display: block;
+      transform-origin: top left;
+    }
+
+    /* Bottom nav – shown only on narrow screens */
+    .modal-foot { display: none; }
+    .modal-foot .nav-btn {
+      flex: 1;
+      border-radius: 0;
+      width: auto;
+      height: 48px;
+      font-size: 22px;
+      border: none;
+      border-right: 1px solid #1a2540;
+      background: #0e1628;
+      box-shadow: none;
+    }
+    .modal-foot .nav-btn:last-child { border-right: none; }
+
+    /* ===== RESPONSIVE BREAKPOINTS ===== */
+
+    /* Tablet */
+    @media (max-width: 1080px) {
+      main { padding: 28px 24px 60px; }
+      .template-picker { padding: 16px 24px 20px; }
+    }
+
+    /* Header controls collapse */
+    @media (max-width: 900px) {
+      .page-header { padding: 0 16px; gap: 10px; }
+      .page-title p { display: none; }
+      .ctrl-divider { display: none; }
+      .controls-bar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 14px 16px;
+        background: #0a1020;
+        border-bottom: 2px solid #1a2540;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.55);
+        z-index: 199;
+      }
+      .controls-bar.open { display: flex; }
+      .control-group { flex-wrap: wrap; }
+      #controls-toggle { display: flex; }
+
+      /* Modal: full-screen on narrow viewports */
+      .modal { padding: 0; }
+      .modal-container {
+        width: 100%;
+        height: 100dvh;
+        gap: 0;
+        border-radius: 0;
+      }
+      .modal-topbar {
+        padding: 10px 14px;
+        flex-shrink: 0;
+        border-bottom: 1px solid #1a2540;
+      }
+      .modal-body {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 12px 0 0;
+        gap: 0;
+      }
+      .nav-btn.side-nav { display: none; }
+      .modal-foot {
+        display: flex;
+        flex-shrink: 0;
+        border-top: 1px solid #1a2540;
+      }
+    }
+
+    /* Mobile-specific */
+    @media (max-width: 540px) {
+      .page-badge .b-ofthe { display: none; }
+      .page-badge { padding: 5px 18px 5px 10px; }
+      .page-badge .b-hack { font-size: 17px; }
+      .page-title h1 { font-size: 14px; }
+      .page-count { display: none; }
+      .dl-all-btn span { display: none; } /* icon only */
+      main { padding: 16px 10px 60px; }
+      .template-picker { padding: 12px 10px 16px; }
+      .gallery-grid { gap: 12px; }
     }
 
     /* ===== LOADING / ERROR ===== */
@@ -469,42 +575,47 @@
       cursor: not-allowed;
     }
 
-    /* ===== SORT BAR ===== */
+    /* ===== CONTROLS BAR (sort + filter) ===== */
     .controls-bar {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
-      gap: 16px 24px;
-      margin-bottom: 32px;
+      gap: 6px 14px;
+      flex-wrap: nowrap;
+      flex-shrink: 1;
+      min-width: 0;
     }
     .control-group {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .ctrl-divider {
+      width: 1px;
+      height: 20px;
+      background: #1e2d4a;
+      flex-shrink: 0;
     }
     .sort-bar-label {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 800;
-      letter-spacing: 2.5px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: #7a90b0;
       flex-shrink: 0;
     }
-    .sort-btns {
-      display: flex;
-      gap: 6px;
-    }
+    .sort-btns { display: flex; gap: 4px; }
     .sort-btn {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      padding: 5px 14px;
+      padding: 4px 10px;
       border-radius: 20px;
       border: 1.5px solid #2a3d5e;
       background: transparent;
       color: #8baac8;
       cursor: pointer;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
+      white-space: nowrap;
     }
     .sort-btn:hover:not(.active) {
       background: #1a2540;
@@ -516,105 +627,72 @@
       color: #c8d8f0;
       border-color: #7a90b0;
     }
-    .filter-btns {
-      display: flex;
-      gap: 6px;
-    }
+    .filter-btns { display: flex; gap: 4px; }
     .filter-btn {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      padding: 5px 14px;
+      padding: 4px 10px;
       border-radius: 20px;
       border: 1.5px solid #3a4c70;
       background: transparent;
       color: #8baac8;
       cursor: pointer;
       transition: background 0.15s, color 0.15s, border-color 0.15s;
+      white-space: nowrap;
     }
-    .filter-btn:hover:not(.active) {
-      background: #232e46;
-      color: #c8d8f0;
+    .filter-btn:hover:not(.active) { background: #232e46; color: #c8d8f0; }
+    .filter-btn.active { background: #1a2540; color: #c8d8f0; border-color: #7a90b0; }
+    .filter-btn.filter-accepted.active { background: #1a4030; color: #7ee8a2; border-color: #2e7d52; }
+    .filter-btn.filter-rejected.active { background: #3d1a1a; color: #f0a0a0; border-color: #8a3030; }
+    .filter-btn.filter-pending.active  { background: #2e2a14; color: #e8d07a; border-color: #7a6a20; }
+
+    /* Controls toggle – mobile only */
+    #controls-toggle {
+      display: none;
+      align-items: center;
+      gap: 5px;
+      background: transparent;
+      border: 1.5px solid #2a3d5e;
+      border-radius: 8px;
+      color: #8baac8;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.15s, color 0.15s;
     }
-    .filter-btn.active {
+    #controls-toggle:hover, #controls-toggle.open {
       background: #1a2540;
       color: #c8d8f0;
       border-color: #7a90b0;
     }
-    .filter-btn.filter-accepted.active {
-      background: #1a4030;
-      color: #7ee8a2;
-      border-color: #2e7d52;
-    }
-    .filter-btn.filter-rejected.active {
-      background: #3d1a1a;
-      color: #f0a0a0;
-      border-color: #8a3030;
-    }
-    .filter-btn.filter-pending.active {
-      background: #2e2a14;
-      color: #e8d07a;
-      border-color: #7a6a20;
-    }
 
-    /* ===== STATUS PILL + TOOLTIP ===== */
-    .status-wrap {
-      position: relative;
-      display: inline-flex;
-    }
-    .status-pill {
-      font-size: 9px;
-      font-weight: 800;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      padding: 2px 7px;
-      border-radius: 10px;
-      line-height: 1.5;
-      white-space: nowrap;
+    /* ===== STATUS DOT + GLOBAL TOOLTIP ===== */
+    .status-dot {
+      font-size: 12px;
+      line-height: 1;
       cursor: default;
+      flex-shrink: 0;
     }
-    .status-pill.accepted {
-      background: rgba(34,197,94,0.15);
-      color: #22c55e;
-      border: 1px solid rgba(34,197,94,0.25);
-    }
-    .status-pill.rejected {
-      background: rgba(239,68,68,0.15);
-      color: #f87171;
-      border: 1px solid rgba(239,68,68,0.25);
-    }
-    .status-tooltip {
-      position: absolute;
-      bottom: calc(100% + 6px);
-      left: 50%;
-      transform: translateX(-50%);
+    #status-tip {
+      position: fixed;
+      display: none;
+      z-index: 9999;
+      pointer-events: none;
       background: #0e1628;
       border: 1px solid #2a3d5e;
       border-radius: 6px;
       padding: 7px 10px;
-      min-width: 200px;
+      min-width: 180px;
       max-width: 260px;
       font-size: 11px;
       color: #c8d8f0;
       line-height: 1.5;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.15s;
-      z-index: 50;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.7);
       white-space: normal;
-      text-align: left;
     }
-    .status-tooltip::after {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 5px solid transparent;
-      border-top-color: #2a3d5e;
-    }
-    .status-wrap:hover .status-tooltip { opacity: 1; }
     .tooltip-row { margin-bottom: 3px; }
     .tooltip-row:last-child { margin-bottom: 0; }
     .tooltip-label { color: #8baac8; font-size: 10px; }
@@ -650,20 +728,53 @@
   </div>
   <div class="page-title">
     <h1>Gallery</h1>
-    <p>Click any card to view it in full</p>
+  </div>
+  <div class="page-header-spacer"></div>
+    <div class="controls-bar" id="controls-bar">
+    <div class="control-group">
+      <span class="sort-bar-label">Sort</span>
+      <div class="sort-btns">
+        <button class="sort-btn" data-sort="created">Created</button>
+        <button class="sort-btn" data-sort="reviewed">Reviewed</button>
+        <button class="sort-btn active" data-sort="index">Index ↓</button>
+      </div>
+    </div>
+    <div class="ctrl-divider"></div>
+    <div class="control-group">
+      <span class="sort-bar-label">Filter</span>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn filter-accepted" data-filter="Accepted">🟢 Accepted</button>
+        <button class="filter-btn filter-rejected" data-filter="Rejected">🔴 Rejected</button>
+        <button class="filter-btn filter-pending" data-filter="pending">🟡 Pending</button>
+      </div>
+    </div>
   </div>
   <div class="page-header-spacer"></div>
   <div class="page-count" id="count"></div>
-  <button class="dl-all-btn" id="dl-all" disabled title="Download all cards as a ZIP">
+  <button class="dl-all-btn" id="dl-all" disabled title="Save all cards as a ZIP">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
          stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
       <polyline points="7 10 12 15 17 10"/>
       <line x1="12" y1="15" x2="12" y2="3"/>
     </svg>
-    Download All
+    <span>Save All</span>
+  </button>
+  <button id="controls-toggle" aria-expanded="false" aria-controls="controls-bar"
+          title="Sort &amp; Filter options">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+         stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+      <line x1="4" y1="6" x2="20" y2="6"/>
+      <line x1="8" y1="12" x2="20" y2="12"/>
+      <line x1="12" y1="18" x2="20" y2="18"/>
+    </svg>
+    Sort &amp; Filter
   </button>
 </header>
+
+<!-- Global floating tooltip for status dots -->
+<div id="status-tip"></div>
 
 <!-- Template picker -->
 <section class="template-picker">
@@ -679,25 +790,6 @@
 </section>
 
 <main>
-  <div class="controls-bar">
-    <div class="control-group">
-      <span class="sort-bar-label">Sort by</span>
-      <div class="sort-btns">
-        <button class="sort-btn" data-sort="created">Created</button>
-        <button class="sort-btn" data-sort="reviewed">Reviewed</button>
-        <button class="sort-btn active" data-sort="index">Index ↓</button>
-      </div>
-    </div>
-    <div class="control-group">
-      <span class="sort-bar-label">Filter</span>
-      <div class="filter-btns">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn filter-accepted" data-filter="Accepted">Accepted</button>
-        <button class="filter-btn filter-rejected" data-filter="Rejected">Rejected</button>
-        <button class="filter-btn filter-pending" data-filter="pending">Pending</button>
-      </div>
-    </div>
-  </div>
   <div class="gallery-grid" id="gallery">
     <div class="status">
       <div class="spinner"></div>
@@ -715,9 +807,15 @@
       <button class="modal-close" id="modal-close" title="Close (Esc)" aria-label="Close">✕</button>
     </div>
     <div class="modal-body">
-      <button class="nav-btn" id="modal-prev" title="Previous (←)" aria-label="Previous card">&#8249;</button>
-      <iframe id="modal-iframe" class="modal-iframe" title="Full card"></iframe>
-      <button class="nav-btn" id="modal-next" title="Next (→)" aria-label="Next card">&#8250;</button>
+      <button class="nav-btn side-nav" id="modal-prev" title="Previous (←)" aria-label="Previous card">&#8249;</button>
+      <div class="modal-card" id="modal-card">
+        <iframe id="modal-iframe" class="modal-iframe" title="Full card"></iframe>
+      </div>
+      <button class="nav-btn side-nav" id="modal-next" title="Next (→)" aria-label="Next card">&#8250;</button>
+    </div>
+    <div class="modal-foot">
+      <button class="nav-btn" id="modal-prev-f" aria-label="Previous card">&#8249; Prev</button>
+      <button class="nav-btn" id="modal-next-f" aria-label="Next card">Next &#8250;</button>
     </div>
   </div>
 </div>
@@ -896,16 +994,65 @@ TEMPLATES.forEach(tpl => {
   const countEl       = document.getElementById('count');
   const dlAllBtn      = document.getElementById('dl-all');
   const modal         = document.getElementById('modal');
+  const modalCard     = document.getElementById('modal-card');
   const modalIframe   = document.getElementById('modal-iframe');
   const modalClose    = document.getElementById('modal-close');
   const modalBackdrop = document.getElementById('modal-backdrop');
   const modalCounter  = document.getElementById('modal-counter');
   const modalPrev     = document.getElementById('modal-prev');
   const modalNext     = document.getElementById('modal-next');
+  const modalPrevF    = document.getElementById('modal-prev-f');
+  const modalNextF    = document.getElementById('modal-next-f');
+  const controlsBar   = document.getElementById('controls-bar');
+  const ctrlToggle    = document.getElementById('controls-toggle');
 
   let currentSortedIdx = -1;
   let sortedCards      = [];
   let currentFormat    = 'html';
+
+  /* ---- Controls toggle (mobile) ---- */
+  ctrlToggle.addEventListener('click', () => {
+    const open = controlsBar.classList.toggle('open');
+    ctrlToggle.classList.toggle('open', open);
+    ctrlToggle.setAttribute('aria-expanded', open);
+  });
+  // Close controls panel when clicking outside
+  document.addEventListener('click', e => {
+    if (!controlsBar.contains(e.target) && !ctrlToggle.contains(e.target)) {
+      controlsBar.classList.remove('open');
+      ctrlToggle.classList.remove('open');
+      ctrlToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* ---- Modal iframe scaling for narrow screens ---- */
+  function updateModalIframeSize() {
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const CARD_W = 800;
+    // Available width: subtract side nav buttons on desktop, or full-width on mobile
+    const sideNavW = vw < 900 ? 0 : 48 + 16 + 16; // 2 nav buttons + gap each side
+    const padding  = vw < 900 ? 0 : 40; // modal padding
+    const available = Math.min(vw - sideNavW - padding * 2, CARD_W);
+    const scale = available / CARD_W;
+    if (scale < 0.999) {
+      const iframeH = Math.round(Math.min(vh * (vw < 900 ? 0.78 : 0.88), 900) / scale);
+      modalIframe.style.width  = CARD_W + 'px';
+      modalIframe.style.height = iframeH + 'px';
+      modalIframe.style.transform = `scale(${scale.toFixed(4)})`;
+      modalCard.style.width  = available + 'px';
+      modalCard.style.height = Math.round(iframeH * scale) + 'px';
+    } else {
+      modalIframe.style.width  = CARD_W + 'px';
+      modalIframe.style.height = '';
+      modalIframe.style.transform = '';
+      modalCard.style.width  = '';
+      modalCard.style.height = '';
+    }
+  }
+  window.addEventListener('resize', () => {
+    if (!modal.classList.contains('hidden')) updateModalIframeSize();
+  });
 
   /* ---- Utility: format ISO date string for display ---- */
   function fmtDate(iso) {
@@ -913,6 +1060,24 @@ TEMPLATES.forEach(tpl => {
     const d = new Date(iso);
     return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Singapore' });
   }
+
+  /* ---- Global floating tooltip for status dots (escapes overflow:hidden) ---- */
+  const statusTip = document.getElementById('status-tip');
+  function showStatusTip(e, html) {
+    statusTip.innerHTML = html;
+    statusTip.style.display = 'block';
+    positionStatusTip(e);
+  }
+  function positionStatusTip(e) {
+    const W = 240, OFFSET = 14;
+    let x = e.clientX + OFFSET;
+    let y = e.clientY - OFFSET;
+    if (x + W > window.innerWidth - 8) x = e.clientX - W - OFFSET;
+    if (y < 8) y = e.clientY + OFFSET;
+    statusTip.style.left = x + 'px';
+    statusTip.style.top  = y + 'px';
+  }
+  function hideStatusTip() { statusTip.style.display = 'none'; }
 
   /* ---- Utility: render SVG in a hidden iframe and serialize the laid-out DOM ----
      This ensures foreignObject heights are JS-computed and the file is standalone
@@ -990,9 +1155,14 @@ TEMPLATES.forEach(tpl => {
       : card._renderedFull;
     modalIframe.srcdoc = content;
     modalCounter.textContent = `${sortedIdx + 1} / ${sortedCards.length}`;
-    modalPrev.disabled = sortedIdx === 0;
-    modalNext.disabled = sortedIdx === sortedCards.length - 1;
+    const atStart = sortedIdx === 0;
+    const atEnd   = sortedIdx === sortedCards.length - 1;
+    modalPrev.disabled  = atStart;
+    modalNext.disabled  = atEnd;
+    modalPrevF.disabled = atStart;
+    modalNextF.disabled = atEnd;
     modal.classList.remove('hidden');
+    updateModalIframeSize();
     modalClose.focus();
   }
 
@@ -1004,8 +1174,10 @@ TEMPLATES.forEach(tpl => {
 
   modalClose.addEventListener('click', closeModal);
   modalBackdrop.addEventListener('click', closeModal);
-  modalPrev.addEventListener('click', () => openModal(currentSortedIdx - 1));
-  modalNext.addEventListener('click', () => openModal(currentSortedIdx + 1));
+  modalPrev.addEventListener('click',  () => openModal(currentSortedIdx - 1));
+  modalNext.addEventListener('click',  () => openModal(currentSortedIdx + 1));
+  modalPrevF.addEventListener('click', () => openModal(currentSortedIdx - 1));
+  modalNextF.addEventListener('click', () => openModal(currentSortedIdx + 1));
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeModal(); return; }
@@ -1144,30 +1316,26 @@ TEMPLATES.forEach(tpl => {
       numSpan.textContent = `#${idx}`;
       left.appendChild(numSpan);
 
-      /* Status pill + tooltip */
-      if (card.status) {
-        const wrap = document.createElement('span');
-        wrap.className = 'status-wrap';
-
-        const pill = document.createElement('span');
-        pill.className = `status-pill ${card.status === 'Accepted' ? 'accepted' : 'rejected'}`;
-        pill.textContent = card.status;
-
-        const tip = document.createElement('div');
-        tip.className = 'status-tooltip';
-        let tipHtml = '';
-        if (card.reviewed) {
-          tipHtml += `<div class="tooltip-row"><span class="tooltip-label">Reviewed: </span>${fmtDate(card.reviewed)}</div>`;
-        }
-        if (card.reason) {
-          tipHtml += `<div class="tooltip-row"><span class="tooltip-label">Reason: </span>${card.reason}</div>`;
-        }
-        tip.innerHTML = tipHtml;
-
-        wrap.appendChild(pill);
-        wrap.appendChild(tip);
-        left.appendChild(wrap);
+      /* Status emoji dot — shown for all cards */
+      const statusEmoji = card.status === 'Accepted' ? '🟢'
+                        : card.status === 'Rejected' ? '🔴'
+                        : '🟡';
+      const dot = document.createElement('span');
+      dot.className = 'status-dot';
+      dot.textContent = statusEmoji;
+      dot.title = card.status || 'Pending';
+      // Build tooltip content
+      let tipHtml = `<div class="tooltip-row"><span class="tooltip-label">Status: </span>${card.status || 'Pending'}</div>`;
+      if (card.reviewed) {
+        tipHtml += `<div class="tooltip-row"><span class="tooltip-label">Reviewed: </span>${fmtDate(card.reviewed)}</div>`;
       }
+      if (card.reason) {
+        tipHtml += `<div class="tooltip-row"><span class="tooltip-label">Reason: </span>${card.reason}</div>`;
+      }
+      dot.addEventListener('mouseenter', e => showStatusTip(e, tipHtml));
+      dot.addEventListener('mousemove',  e => positionStatusTip(e));
+      dot.addEventListener('mouseleave', hideStatusTip);
+      left.appendChild(dot);
 
       row.appendChild(left);
 
@@ -1184,13 +1352,13 @@ TEMPLATES.forEach(tpl => {
 
       const dlBtn = document.createElement('button');
       dlBtn.className = 'dl-btn';
-      dlBtn.title = `Download hack-of-the-day-${idx}`;
+      dlBtn.title = `Save hack-of-the-day-${idx}`;
       dlBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
            stroke-linecap="round" stroke-linejoin="round">
          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
          <polyline points="7 10 12 15 17 10"/>
          <line x1="12" y1="15" x2="12" y2="3"/>
-       </svg> Download`;
+       </svg> Save`;
       dlBtn.addEventListener('click', async e => {
         e.stopPropagation();
         const isSvg = currentFormat === 'svg' && card._renderedSvg;

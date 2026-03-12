@@ -14,6 +14,18 @@ The color contrast (blue on blue) makes a lot of content barely visible. Review 
 
 In index.html, when shrinking the cards at the end, make sure all cards have the same height.
 
+---
+
+"Rejected" and "Accepted" pills are too large. Just mark it with 🔴 or 🟢 or 🟡 (pending). Rename "Download" to "Save" in the buttons to save space. Move the sort and filters to the .page-header. The tooltip on "Rejected" is getting cropped by the card - make sure it doesn't.
+
+---
+
+Make the .page-header more compact - one line.
+
+Make the app more responsive. On mobile, clicking on a card should expand it in a way that does not exceed the viewport width. The close button should still be visible on the screen. The sort and filter options should be easily accessible on mobile as well, but collapsed.
+
+Think about any other responsive features that would be important and implement them. It should look good and work well on mobile, tablet, and desktop.
+
 ## Hack of the day, SVG fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
 
 I could not load the generated SVGs on Gnome nor on VS Code's image viewer. But they render on Chrome. Get them to work on these as well. Keep in mind that they'll finally be opened by Adobe Illustrator and similar tools - so tool compatibility is important. Update SVG templates accordingly and test if you can.
