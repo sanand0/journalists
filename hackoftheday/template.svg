@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg-card" class="card"
+     width="800" height="1800" viewBox="0 0 800 1800"
+     style="display:block;overflow:visible">
+<style type="text/css"><![CDATA[
+  @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap");
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --title-font: 'Barlow Condensed', sans-serif;
+    --body-font: 'Archivo Narrow', sans-serif;
+  }
+  .card-header { display: flex; align-items: stretch; }
+  .badge {
+    background: #ec1b22;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 12px 36px 12px 20px;
+    flex-shrink: 0;
+    clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 50%, calc(100% - 24px) 100%, 0 100%);
+  }
+  .badge-hack {
+    font-family: var(--title-font); font-size: 52px; font-weight: 700;
+    color: #fff; line-height: 1; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .badge-ofthe {
+    font-family: var(--title-font); font-size: 13.5px; font-weight: 600;
+    color: #fff; letter-spacing: 1.5px; text-transform: uppercase; line-height: 1;
+  }
+  .card-title {
+    flex: 1; display: flex; align-items: center; padding: 14px 22px;
+    font-family: var(--title-font); font-size: 30px; font-weight: 1000;
+    color: #0e1628; text-transform: uppercase; line-height: 1.2;
+  }
+  .card-body { padding: 13px 22px 0; font-family: var(--body-font); }
+  .section { margin-bottom: 9px; font-size: 22px; color: #0e1628; line-height: 1.45; }
+  .section-label { font-weight: 1000; text-transform: uppercase; color: #ec1b22; }
+  .steps-heading { font-size: 22px; font-weight: 1000; text-transform: uppercase; color: #ec1b22; margin-bottom: 7px; }
+  .steps-label {
+    font-family: var(--title-font); font-size: 17px; font-weight: 1000;
+    font-style: italic; color: #ec1b22; margin: 4px 0 3px;
+  }
+  .steps { counter-reset: step-counter; padding-bottom: 20px; }
+  .step {
+    counter-increment: step-counter;
+    position: relative; background: #fff; border: 1.5px solid #b0bfce;
+    display: flex; align-items: center;
+    margin-top: -10px; box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+    padding: 20px 16px 20px 0;
+  }
+  .step:first-child { margin-top: 0; }
+  .step:nth-child(1) { z-index: 15; }
+  .step:nth-child(2) { z-index: 14; }
+  .step:nth-child(3) { z-index: 13; }
+  .step:nth-child(4) { z-index: 12; }
+  .step:nth-child(5) { z-index: 11; }
+  .step::before {
+    content: counter(step-counter);
+    font-size: 46px; font-style: italic; line-height: 0.85;
+    min-width: 56px; padding: 0 5px 0 10px; flex-shrink: 0;
+    color: #396ce1; display: block;
+  }
+  .step-content { font-size: 22px; color: #0e1628; line-height: 1.45; flex: 1; font-family: var(--body-font); }
+  .step-content strong { font-weight: 700; }
+  .card-note { padding: 9px 22px 11px; font-size: 22px; color: #0e1628; line-height: 1.5; font-family: var(--body-font); }
+  .note-label { color: #ec1b22; font-weight: 1000; }
+  .note-text  { font-weight: 1000; }
+  .card-footer { display: flex; align-items: center; padding: 9px 22px 14px; gap: 14px; }
+  .disclaimer { flex: 1; font-size: 16px; color: #3a4558; line-height: 1.55; font-style: italic; font-family: var(--body-font); }
+  .tip-line { font-style: normal; display: block; margin-top: 2px; }
+  .tip-name  { font-weight: 700; font-style: normal; }
+  .qr-block  { flex-shrink: 0; text-align: center; }
+  .qr-label  { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: #0e1628; margin-bottom: 4px; line-height: 1.4; font-family: var(--body-font); }
+  #qr-code canvas, #qr-code img { display: block; }
+]]></style>
+<!-- Card background — height updated by layout script -->
+  <rect id="card-bg" x="0" y="0" width="800" height="1800" fill="#d2ddf2"/>
+
+  <!-- ===== HEADER: badge (CSS clip-path) + title ===== -->
+  <foreignObject id="fo-header" x="0" y="0" width="800" height="320" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-header">
+      <div class="badge">
+        <span class="badge-hack">HACK</span>
+        <span class="badge-ofthe">OF THE DAY</span>
+      </div>
+      <h1 class="card-title">{{title}}</h1>
+    </div>
+  </foreignObject>
+
+  <!-- ===== BODY: what-it-solves + steps ===== -->
+  <foreignObject id="fo-body" x="0" y="320" width="800" height="1100" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-body">
+
+      <p class="section">
+        <strong class="section-label">WHAT IT SOLVES:</strong> {{what_it_solves}}
+      </p>
+
+      {{#what_to_do}}
+      <p class="section">
+        <strong class="section-label">WHAT TO DO:</strong> {{what_to_do}}
+      </p>
+      <p class="steps-label">STEPS:</p>
+      {{/what_to_do}}
+      {{^what_to_do}}
+      <p class="steps-heading"><strong>WHAT TO DO (QUICK STEPS):</strong></p>
+      {{/what_to_do}}
+
+      <div class="steps">
+        {{#steps}}
+        <div class="step">
+          <div class="step-content">{{#bold_title}}<strong>{{bold_title}}</strong> {{/bold_title}}{{{text}}}</div>
+        </div>
+        {{/steps}}
+      </div>
+
+    </div>
+  </foreignObject>
+
+  <!-- ===== NOTE (conditional) ===== -->
+  {{#note}}
+  <foreignObject id="fo-note" x="0" y="1420" width="800" height="200" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-note">
+      <span class="note-label">{{note_label}}:</span>
+      <strong class="note-text"> {{note}}</strong>
+    </div>
+  </foreignObject>
+  {{/note}}
+
+  <!-- ===== FOOTER ===== -->
+  <foreignObject id="fo-footer" x="0" y="1620" width="800" height="155" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-footer">
+      <div class="disclaimer">
+        <em>Hacks are based on verified public sources. Readers are advised to follow official websites &amp; updated rules</em>
+        <span class="tip-line">Tip from <strong class="tip-name">{{tip_name}}</strong>{{tip_domain}}</span>
+      </div>
+      <div class="qr-block">
+        <div class="qr-label">Scan for<br/>more hacks</div>
+        <div id="qr-code" data-url="{{qr_url}}"></div>
+      </div>
+    </div>
+  </foreignObject>
+<script type="text/javascript" href="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" xlink:href="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script type="text/javascript"><![CDATA[
+(function () {
+  "use strict";
+
+  /* ---- Layout: measure each section and stack vertically ---- */
+  function layout() {
+    var svg = document.getElementById("svg-card");
+    var bg  = document.getElementById("card-bg");
+    if (!svg || !bg) return;
+
+    /* Collect foreignObjects in document order */
+    var fos = Array.from(svg.querySelectorAll("foreignObject[id^=\"fo-\"]"));
+    var y = 0;
+
+    fos.forEach(function (fo) {
+      fo.setAttribute("y", y);
+      /* Open to full height so getBoundingClientRect measures true content */
+      fo.setAttribute("height", "9999");
+      var div = fo.firstElementChild;
+      var h = div ? Math.ceil(div.getBoundingClientRect().height) : 0;
+      /* Clamp to actual content height */
+      fo.setAttribute("height", Math.max(h, 1));
+      y += h;
+    });
+
+    bg.setAttribute("height", y);
+    svg.setAttribute("height", y);
+    svg.setAttribute("viewBox", "0 0 800 " + y);
+  }
+
+  /* ---- QR Code ---- */
+  function initQR() {
+    var qrEl = document.getElementById("qr-code");
+    if (!qrEl || typeof QRCode === "undefined") return;
+    var url = qrEl.getAttribute("data-url") || "https://timesinternet.com";
+    new QRCode(qrEl, { text: url, width: 80, height: 80, correctLevel: QRCode.CorrectLevel.M });
+  }
+
+  /* Run layout as soon as fonts are ready (may fire before external QR script) */
+  if (document.fonts) {
+    document.fonts.ready.then(layout);
+  }
+
+  /* After full page load: init QR code then re-run layout so footer height is correct */
+  window.addEventListener("load", function () {
+    initQR();
+    /* Short delay lets QR canvas paint before we measure */
+    setTimeout(layout, 150);
+  });
+})();
+]]></script>
+</svg>

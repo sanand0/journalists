@@ -1,6 +1,57 @@
 # Prompts
 
-## Hack of the day gallery, 10 Mar 2026 (GitHub Copilot - Sonnet 4.6 high)
+## Hack of the day, fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
+
+I could not load the generated SVGs on Gnome nor on VS Code's image viewer. But they render on Chrome. Get them to work on these as well. Keep in mind that they'll finally be opened by Adobe Illustrator and similar tools - so tool compatibility is important. Update SVG templates accordingly and test if you can.
+
+## Hack of the day, feedback, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
+
+Update config.json with optional "status" and "reason" fields.
+
+1) Hacks #4, 8, 10, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 38, 43, 44, 46, 47. Mark them as "Accepted"
+2) Hacks #27, 28, 30, 31, 33 - iphone specific and 29, 34, 35,37, 39, 40, 41, 42, 48, 49  - Android specific. Mark them as "Rejected" with reason: "Hacks must be platform agnostic".
+3) Hack #9: Mark as "Rejected". Reason: "Duplicate of similar one via Sanchar Sathi portal instead of CEIR"
+4) Hack #32: Mark as "Rejected". Reason: "Not a tech hack"
+
+Include an ISO "created" date for all existing hacks, setting it to 10 Mar 2026 at around 12 noon SGT.
+Include an ISO "reviewed" date for all existing hacks, setting it to 11 Mar 2026 10:45 pm SGT.
+
+Modify index.html to include the new created field and status field (if present). Hovering over the status should show the reviewed date and reason if present.
+
+Sort the hacks (by default) by created date (latest first), then by index number (lowest first). Allow sorting by reviewed date as well as by index.
+
+## Hack of the day, convert to SVG, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
+
+Create a template.svg that achieves the same outcome as the hack-of-the-day/template.html, but using SVG instead of HTML/CSS. The same JSON should be able to be used with both the HTML and SVG templates to produce the same visual output. (Handle text wrapping thoughtfully!)
+
+Modify index.html to allow switching between the HTML and SVG templates for rendering the cards. The gallery should show the same thumbnails, but clicking on a card should open the popup with the version rendered using the currently selected template (HTML or SVG).
+
+Later on, I will ask you to extend this to the other template-* but for now, just get this far so I can test it.
+
+IMPORTANT: Because Claude will almost certainly stall when generating large file at one shot, generate changes in chunks rather than creating single massive files.
+
+---
+
+When the format is SVG, the "Download" button should download the SVG.
+Download All should include the SVG files.
+Update the other templates similarly.
+Commit (including prompts.md) which I'm modifying.
+
+---
+
+I've added new cards to cards.json. Now, add an "index" field to "cards.json" starting with "001", in order. Use this index in the filename when downloading, e.g. `hack-of-the-day-001.html` or `hack-of-the-day-001.svg`, as well as everywhere we are using the index. This will be a unique reference for the hacks. This will make it easier to keep track of the cards and ensure they are ordered correctly.
+
+Commit all files (including prompts.md which I'm modifying) and push.
+
+### New templates (Github Copilot - claude-sonnet-4.6 high)
+
+Add 2 new HTML + SVG templates. This time, get more creative. Draw inspiration from similar properties other, innovative, publications have created (e.g. the New York Times' "The Daily" newsletter, or the "Wait But Why" blog). The templates should be visually distinct from each other and from the existing template. They should be designed to make the content more engaging and easier to consume, while still maintaining a consistent overall aesthetic for the Hack of the Day series.
+
+## Hack of the day redesign, 10 Mar 2026 (Github Copilot - claude-sonnet-4.6 high)
+
+Create a hackoftheday/redesign.md that suggest 10 different ways the SAME cards in hackof
+
+## Hack of the day gallery, 10 Mar 2026 (GitHub Copilot - claude-sonnet-4.6 high)
 
 <!-- cards.json created by https://chatgpt.com/c/69aef234-93f8-839b-932d-cb41c0ed8f2f -->
 

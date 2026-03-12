@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg-card" class="card"
+     width="800" height="1800" viewBox="0 0 800 1800"
+     style="display:block;overflow:visible">
+<style type="text/css"><![CDATA[
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --title-font: 'IBM Plex Sans Condensed', sans-serif; --body-font: 'IBM Plex Sans', sans-serif; --red: #ec1b22; --dark: #101828; --mid: #344054; --line: #d0d5dd; }
+  .card-header { padding: 20px 32px 18px; border-bottom: 2px solid var(--dark); }
+  .badge { font-family: var(--title-font); font-size: 10px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--red); display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .badge::before { content: ''; display: block; width: 20px; height: 2px; background: var(--red); flex-shrink: 0; }
+  .card-title { font-family: var(--title-font); font-size: 34px; font-weight: 700; color: var(--dark); line-height: 1.1; text-transform: uppercase; letter-spacing: 0.3px; }
+  .card-body { padding: 20px 32px 0; font-family: var(--body-font); }
+  .section { font-size: 18px; color: var(--dark); line-height: 1.55; margin-bottom: 16px; }
+  .section-label { font-weight: 600; text-transform: uppercase; color: var(--red); font-size: 12px; letter-spacing: 1px; display: block; margin-bottom: 3px; }
+  .steps-heading { font-family: var(--title-font); font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--red); letter-spacing: 2px; margin-bottom: 16px; }
+  .steps-label { font-family: var(--title-font); font-size: 12px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 2px; margin: 0 0 16px; }
+  .steps { counter-reset: step-counter; padding-bottom: 24px; display: flex; flex-direction: column; }
+  .step { counter-increment: step-counter; display: flex; align-items: flex-start; padding: 12px 0 12px 18px; border-left: 3px solid var(--red); gap: 14px; margin-bottom: 10px; position: relative; }
+  .step::before { content: counter(step-counter); font-family: var(--title-font); font-size: 13px; font-weight: 700; color: #fff; background: var(--red); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; line-height: 1; }
+  .step-content { font-size: 19px; color: var(--dark); line-height: 1.5; flex: 1; padding-top: 1px; }
+  .step-content strong { font-weight: 600; }
+  .card-note { margin: 0 32px 20px; padding: 12px 16px; font-size: 16px; color: var(--dark); line-height: 1.5; background: #fef2f2; border-left: 3px solid var(--red); font-family: var(--body-font); }
+  .note-label { font-weight: 700; color: var(--red); text-transform: uppercase; font-size: 11px; letter-spacing: 1px; }
+  .note-text { font-weight: 500; }
+  .card-footer { display: flex; align-items: center; padding: 14px 32px 18px; gap: 16px; border-top: 1px solid var(--line); }
+  .disclaimer { flex: 1; font-size: 13px; color: var(--mid); line-height: 1.55; font-style: italic; font-family: var(--body-font); }
+  .tip-line { display: block; margin-top: 3px; font-style: normal; }
+  .tip-name { font-weight: 600; }
+  .qr-block { flex-shrink: 0; text-align: center; }
+  .qr-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--mid); margin-bottom: 4px; line-height: 1.4; font-family: var(--body-font); }
+  #qr-code canvas, #qr-code img { display: block; }
+]]></style>
+<rect id="card-bg" x="0" y="0" width="800" height="1800" fill="#ffffff"/>
+
+  <foreignObject id="fo-header" x="0" y="0" width="800" height="320" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-header">
+      <span class="badge">Hack of the Day</span>
+      <h1 class="card-title">{{title}}</h1>
+    </div>
+  </foreignObject>
+
+  <foreignObject id="fo-body" x="0" y="320" width="800" height="1100" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-body">
+      <div class="section">
+        <span class="section-label">What it solves</span>
+        {{what_it_solves}}
+      </div>
+      {{#what_to_do}}
+      <div class="section">
+        <span class="section-label">What to do</span>
+        {{what_to_do}}
+      </div>
+      <p class="steps-label">Steps</p>
+      {{/what_to_do}}
+      {{^what_to_do}}
+      <p class="steps-heading">What to do — Quick Steps</p>
+      {{/what_to_do}}
+      <div class="steps">
+        {{#steps}}
+        <div class="step">
+          <div class="step-content">{{#bold_title}}<strong>{{bold_title}}</strong> {{/bold_title}}{{{text}}}</div>
+        </div>
+        {{/steps}}
+      </div>
+    </div>
+  </foreignObject>
+
+  {{#note}}
+  <foreignObject id="fo-note" x="0" y="1420" width="800" height="200" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-note">
+      <span class="note-label">{{note_label}}:</span>
+      <strong class="note-text"> {{note}}</strong>
+    </div>
+  </foreignObject>
+  {{/note}}
+
+  <foreignObject id="fo-footer" x="0" y="1620" width="800" height="155" overflow="visible">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card-footer">
+      <div class="disclaimer">
+        <em>Hacks are based on verified public sources. Readers are advised to follow official websites &amp; updated rules</em>
+        <span class="tip-line">Tip from <strong class="tip-name">{{tip_name}}</strong>{{tip_domain}}</span>
+      </div>
+      <div class="qr-block">
+        <div class="qr-label">Scan for<br/>more hacks</div>
+        <div id="qr-code" data-url="{{qr_url}}"></div>
+      </div>
+    </div>
+  </foreignObject>
+<script type="text/javascript" href="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" xlink:href="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script type="text/javascript"><![CDATA[
+(function () {
+  "use strict";
+  function layout() {
+    var svg = document.getElementById("svg-card");
+    var bg  = document.getElementById("card-bg");
+    if (!svg || !bg) return;
+    var fos = Array.from(svg.querySelectorAll("foreignObject[id^=\"fo-\"]"));
+    var y = 0;
+    fos.forEach(function (fo) {
+      fo.setAttribute("y", y);
+      fo.setAttribute("height", "9999");
+      var div = fo.firstElementChild;
+      var h = div ? Math.ceil(div.getBoundingClientRect().height) : 0;
+      fo.setAttribute("height", Math.max(h, 1));
+      y += h;
+    });
+    bg.setAttribute("height", y);
+    svg.setAttribute("height", y);
+    svg.setAttribute("viewBox", "0 0 800 " + y);
+  }
+  function initQR() {
+    var qrEl = document.getElementById("qr-code");
+    if (!qrEl || typeof QRCode === "undefined") return;
+    var url = qrEl.getAttribute("data-url") || "https://timesinternet.com";
+    new QRCode(qrEl, { text: url, width: 80, height: 80, correctLevel: QRCode.CorrectLevel.M });
+  }
+  if (document.fonts) { document.fonts.ready.then(layout); }
+  window.addEventListener("load", function () { initQR(); setTimeout(layout, 150); });
+})();
+]]></script>
+</svg>

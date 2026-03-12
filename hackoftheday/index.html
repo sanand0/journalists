@@ -422,6 +422,177 @@
     }
     .dl-all-btn:disabled { opacity: 0.35; cursor: not-allowed; }
     .dl-all-btn svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+    /* ===== FORMAT TOGGLE (HTML / SVG) ===== */
+    .format-toggle {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .format-toggle-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #3a4c70;
+    }
+    .format-btns {
+      display: flex;
+      background: #111827;
+      border: 1.5px solid #1e2d4a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .format-btn {
+      padding: 7px 22px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      border: none;
+      background: transparent;
+      color: #5a6e96;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .format-btn.active {
+      background: #ec1b22;
+      color: #fff;
+    }
+    .format-btn:hover:not(.active):not(:disabled) {
+      background: #1a2540;
+      color: #c8d8f0;
+    }
+    .format-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    /* ===== SORT BAR ===== */
+    .sort-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .sort-bar-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #3a4c70;
+      flex-shrink: 0;
+    }
+    .sort-btns {
+      display: flex;
+      gap: 6px;
+    }
+    .sort-btn {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1.5px solid #1e2d4a;
+      background: transparent;
+      color: #5a6e96;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .sort-btn:hover:not(.active) {
+      background: #1a2540;
+      color: #c8d8f0;
+      border-color: #3a4c70;
+    }
+    .sort-btn.active {
+      background: #1a2540;
+      color: #c8d8f0;
+      border-color: #3a4c70;
+    }
+
+    /* ===== STATUS PILL + TOOLTIP ===== */
+    .status-wrap {
+      position: relative;
+      display: inline-flex;
+    }
+    .status-pill {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 10px;
+      line-height: 1.5;
+      white-space: nowrap;
+      cursor: default;
+    }
+    .status-pill.accepted {
+      background: rgba(34,197,94,0.15);
+      color: #22c55e;
+      border: 1px solid rgba(34,197,94,0.25);
+    }
+    .status-pill.rejected {
+      background: rgba(239,68,68,0.15);
+      color: #f87171;
+      border: 1px solid rgba(239,68,68,0.25);
+    }
+    .status-tooltip {
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0e1628;
+      border: 1px solid #2a3d5e;
+      border-radius: 6px;
+      padding: 7px 10px;
+      min-width: 200px;
+      max-width: 260px;
+      font-size: 11px;
+      color: #c8d8f0;
+      line-height: 1.5;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s;
+      z-index: 50;
+      white-space: normal;
+      text-align: left;
+    }
+    .status-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: #2a3d5e;
+    }
+    .status-wrap:hover .status-tooltip { opacity: 1; }
+    .tooltip-row { margin-bottom: 3px; }
+    .tooltip-row:last-child { margin-bottom: 0; }
+    .tooltip-label { color: #5a6e96; font-size: 10px; }
+
+    /* ===== THUMB META (created date) ===== */
+    .thumb-meta {
+      font-size: 10px;
+      color: #3a4c70;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+    .thumb-footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 6px;
+    }
+    .thumb-footer-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
   </style>
 </head>
 <body>
@@ -452,9 +623,24 @@
 <section class="template-picker">
   <p class="picker-label">Choose a card style</p>
   <div class="picker-row" id="picker-row"></div>
+  <div class="format-toggle">
+    <span class="format-toggle-label">Popup format</span>
+    <div class="format-btns">
+      <button class="format-btn active" id="btn-html" data-format="html">HTML</button>
+      <button class="format-btn" id="btn-svg" data-format="svg">SVG</button>
+    </div>
+  </div>
 </section>
 
 <main>
+  <div class="sort-bar">
+    <span class="sort-bar-label">Sort by</span>
+    <div class="sort-btns">
+      <button class="sort-btn active" data-sort="created">Created</button>
+      <button class="sort-btn" data-sort="reviewed">Reviewed</button>
+      <button class="sort-btn" data-sort="index">Index</button>
+    </div>
+  </div>
   <div class="gallery-grid" id="gallery">
     <div class="status">
       <div class="spinner"></div>
@@ -493,6 +679,7 @@ const TEMPLATES = [
   {
     id: 'original',
     file: 'template.html',
+    svgFile: 'template.svg',
     name: 'Classic Blue',
     subtitle: 'The original',
     desc: 'Crisp steel-blue card, bold red pentagon badge, and stacked folder-style steps. The benchmark every other variant is measured against.',
@@ -503,6 +690,7 @@ const TEMPLATES = [
   {
     id: 'broadsheet',
     file: 'template-broadsheet.html',
+    svgFile: 'template-broadsheet.svg',
     name: 'Broadsheet Heritage',
     subtitle: 'Time-tested authority',
     desc: 'Cream paper, serif type, double-rule borders. The unmistakable voice of a newspaper that has printed the news for generations.',
@@ -513,6 +701,7 @@ const TEMPLATES = [
   {
     id: 'saffron',
     file: 'template-saffron.html',
+    svgFile: 'template-saffron.svg',
     name: 'Saffron Signal',
     subtitle: 'Warmth and confidence',
     desc: "India's amber-gold anchors a bold header. Clean, distinct steps without stacking — modern enough to feel fresh, warm enough to feel home.",
@@ -523,6 +712,7 @@ const TEMPLATES = [
   {
     id: 'noir',
     file: 'template-noir.html',
+    svgFile: 'template-noir.svg',
     name: 'Night Ink',
     subtitle: 'Premium drama',
     desc: 'Deep-navy field, luminous white step panels, gold numerals. Reserved for the story that demands to be noticed across the page.',
@@ -533,6 +723,7 @@ const TEMPLATES = [
   {
     id: 'magazine',
     file: 'template-magazine.html',
+    svgFile: 'template-magazine.svg',
     name: 'Bold Folio',
     subtitle: 'Editorial power',
     desc: 'Ghost numerals tower behind each step like silent headlines. White space breathes; the red masthead commands. Magazine energy in a newspaper format.',
@@ -543,11 +734,34 @@ const TEMPLATES = [
   {
     id: 'minimal',
     file: 'template-minimal.html',
+    svgFile: 'template-minimal.svg',
     name: 'Signal Strip',
     subtitle: 'Clarity above all',
     desc: 'A single red rule runs the left edge of every step — no boxes, no shadows, nothing in the way of the words. Serene, purposeful, uncompromising.',
     swatchFrom: '#ffffff',
     swatchTo:   '#ec1b22',
+    bg: '#ffffff',
+  },
+  {
+    id: 'chronicle',
+    file: 'template-chronicle.html',
+    svgFile: 'template-chronicle.svg',
+    name: 'Chronicle',
+    subtitle: 'Editorial briefing',
+    desc: 'Premium newsletter meets editorial design. Dark navy masthead, Fraunces serif title, teal-accented timeline steps with connecting line — inspired by The Atlantic and morning briefings.',
+    swatchFrom: '#1c2b3a',
+    swatchTo:   '#2ec4b6',
+    bg: '#fafaf8',
+  },
+  {
+    id: 'nova',
+    file: 'template-nova.html',
+    svgFile: 'template-nova.svg',
+    name: 'Nova',
+    subtitle: 'Bold & vibrant',
+    desc: 'Vivid purple header, heavy Space Grotesk type, and bold two-digit step numbers. A modern, high-energy card inspired by digital product design and contemporary editorial.',
+    swatchFrom: '#7c3aed',
+    swatchTo:   '#a78bfa',
     bg: '#ffffff',
   },
 ];
@@ -632,16 +846,95 @@ TEMPLATES.forEach(tpl => {
   const modalPrev     = document.getElementById('modal-prev');
   const modalNext     = document.getElementById('modal-next');
 
-  let currentIndex = -1;
-  let renderedFull = [];
+  let currentSortedIdx = -1;
+  let sortedCards      = [];
+  let currentFormat    = 'html';
 
-  /* ---- Modal helpers ---- */
-  function openModal(index) {
-    currentIndex = index;
-    modalIframe.srcdoc = renderedFull[index];
-    modalCounter.textContent = `${index + 1} / ${renderedFull.length}`;
-    modalPrev.disabled = index === 0;
-    modalNext.disabled = index === renderedFull.length - 1;
+  /* ---- Utility: format ISO date string for display ---- */
+  function fmtDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Singapore' });
+  }
+
+  /* ---- Utility: render SVG in a hidden iframe and serialize the laid-out DOM ----
+     This ensures foreignObject heights are JS-computed and the file is standalone
+     valid SVG XML that opens in GNOME, VS Code, and Illustrator.             */
+  function serializeSvg(svgContent) {
+    return new Promise(resolve => {
+      const iframe = document.createElement('iframe');
+      // Must be on-screen and correctly sized for getBoundingClientRect to work
+      iframe.style.cssText = (
+        'position:fixed;width:800px;height:1800px;' +
+        'top:-2000px;left:-2000px;border:none;opacity:0;pointer-events:none'
+      );
+      iframe.srcdoc = svgContent;
+      document.body.appendChild(iframe);
+
+      function cleanup(result) {
+        try { document.body.removeChild(iframe); } catch (_) {}
+        resolve(result);
+      }
+
+      iframe.addEventListener('load', () => {
+        // Wait for fonts (document.fonts.ready) + JS layout setTimeout(150ms)
+        setTimeout(() => {
+          try {
+            const doc   = iframe.contentDocument;
+            const svgEl = doc.getElementById('svg-card');
+            if (!svgEl) { cleanup(svgContent); return; }
+
+            // Ensure standalone namespace declarations
+            svgEl.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+            svgEl.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
+
+            let svgStr = new XMLSerializer().serializeToString(svgEl);
+
+            // XMLSerializer escapes & in text nodes as &amp; which breaks CSS @import URLs.
+            // Re-wrap each <style> block in CDATA so the URL ampersands are literal.
+            svgStr = svgStr.replace(
+              /<style([^>]*)>([\s\S]*?)<\/style>/g,
+              (_, attrs, css) => {
+                const raw = css.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+                return `<style${attrs}><![CDATA[\n${raw}\n]]></style>`;
+              }
+            );
+
+            cleanup('<?xml version="1.0" encoding="UTF-8"?>\n' + svgStr);
+          } catch (e) {
+            console.warn('SVG serialization failed, using raw content:', e);
+            cleanup(svgContent);
+          }
+        }, 900); // > 150ms JS layout delay + font load time
+      });
+
+      iframe.addEventListener('error', () => cleanup(svgContent));
+    });
+  }
+
+  /* ---- Format toggle ---- */
+  const btnHtml = document.getElementById('btn-html');
+  const btnSvg  = document.getElementById('btn-svg');
+  [btnHtml, btnSvg].forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.disabled || btn.classList.contains('active')) return;
+      currentFormat = btn.dataset.format;
+      btnHtml.classList.toggle('active', currentFormat === 'html');
+      btnSvg.classList.toggle('active',  currentFormat === 'svg');
+    });
+  });
+
+  /* ---- Modal helpers (navigate within sorted order) ---- */
+  function openModal(sortedIdx) {
+    currentSortedIdx = sortedIdx;
+    const card    = sortedCards[sortedIdx];
+    const content = (currentFormat === 'svg' && card._renderedSvg)
+      ? card._renderedSvg
+      : card._renderedFull;
+    modalIframe.srcdoc = content;
+    modalCounter.textContent = `${sortedIdx + 1} / ${sortedCards.length}`;
+    modalPrev.disabled = sortedIdx === 0;
+    modalNext.disabled = sortedIdx === sortedCards.length - 1;
     modal.classList.remove('hidden');
     modalClose.focus();
   }
@@ -649,37 +942,43 @@ TEMPLATES.forEach(tpl => {
   function closeModal() {
     modal.classList.add('hidden');
     modalIframe.srcdoc = '';
-    currentIndex = -1;
+    currentSortedIdx = -1;
   }
 
   modalClose.addEventListener('click', closeModal);
   modalBackdrop.addEventListener('click', closeModal);
-  modalPrev.addEventListener('click', () => openModal(currentIndex - 1));
-  modalNext.addEventListener('click', () => openModal(currentIndex + 1));
+  modalPrev.addEventListener('click', () => openModal(currentSortedIdx - 1));
+  modalNext.addEventListener('click', () => openModal(currentSortedIdx + 1));
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeModal(); return; }
     if (modal.classList.contains('hidden')) return;
-    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+    if (e.key === 'ArrowLeft' && currentSortedIdx > 0) {
       e.preventDefault();
-      openModal(currentIndex - 1);
-    } else if (e.key === 'ArrowRight' && currentIndex < renderedFull.length - 1) {
+      openModal(currentSortedIdx - 1);
+    } else if (e.key === 'ArrowRight' && currentSortedIdx < sortedCards.length - 1) {
       e.preventDefault();
-      openModal(currentIndex + 1);
+      openModal(currentSortedIdx + 1);
     }
   });
 
   /* ---- Load data + selected template ---- */
-  let cards, template;
+  let cards, template, svgTemplate;
   try {
-    [cards, template] = await Promise.all([
+    [cards, template, svgTemplate] = await Promise.all([
       fetch('cards.json').then(r => r.json()),
       fetch(activeTpl.file).then(r => r.text()),
+      activeTpl.svgFile
+        ? fetch(activeTpl.svgFile).then(r => r.text()).catch(() => null)
+        : Promise.resolve(null),
     ]);
   } catch (err) {
     gallery.innerHTML = `<div class="status"><p style="color:#ef4444">Failed to load: ${err.message}</p></div>`;
     return;
   }
+
+  /* Disable SVG button when no SVG template is available */
+  if (!svgTemplate) btnSvg.disabled = true;
 
   /* Thumbnail variant: remove body padding/centering */
   const thumbTpl = template.replace(
@@ -687,19 +986,218 @@ TEMPLATES.forEach(tpl => {
     `<style>body{padding:0!important;display:block!important;background:${activeTpl.bg}!important}</style></head>`
   );
 
-  countEl.textContent = `${cards.length} cards`;
-  gallery.innerHTML = '';
+  /* Pre-render all content and tag each card with its original index */
+  cards.forEach((card, i) => {
+    card._idx          = i;
+    card._thumbHtml    = Mustache.render(thumbTpl, card);
+    card._renderedFull = Mustache.render(template, card);
+    card._renderedSvg  = svgTemplate ? Mustache.render(svgTemplate, card) : null;
+  });
 
+  countEl.textContent = `${cards.length} cards`;
+
+  /* ---- Sort helpers ---- */
+  function sortFn(key) {
+    return (a, b) => {
+      if (key === 'index') return a._idx - b._idx;
+      const da = key === 'reviewed' ? (a.reviewed || '') : (a.created || '');
+      const db = key === 'reviewed' ? (b.reviewed || '') : (b.created || '');
+      if (da < db) return 1;   // descending: latest first
+      if (da > db) return -1;
+      return a._idx - b._idx;  // tiebreak: lowest index first
+    };
+  }
+
+  /* ---- Render gallery for given sort key ---- */
+  function renderGallery(sortKey) {
+    sortedCards = [...cards].sort(sortFn(sortKey));
+    gallery.innerHTML = '';
+
+    sortedCards.forEach((card, si) => {
+      const n   = card._idx + 1;     // original 1-based position (for aria-label)
+      const idx = card.index || String(n).padStart(3, '0');  // stable unique reference
+
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+      thumb.style.background = activeTpl.bg;
+      thumb.setAttribute('role', 'button');
+      thumb.setAttribute('tabindex', '0');
+      thumb.setAttribute('aria-label', `Card ${idx}: ${card.title}`);
+
+      const scaler = document.createElement('div');
+      scaler.className = 'thumb-scaler';
+      scaler.style.cssText = `width:${THUMB_W}px;height:${Math.round(CARD_H_INIT * SCALE)}px`;
+
+      const iframe = document.createElement('iframe');
+      iframe.className = 'thumb-iframe';
+      iframe.style.cssText = `width:${CARD_WIDTH}px;height:${CARD_H_INIT}px;transform:scale(${SCALE})`;
+      iframe.srcdoc = card._thumbHtml;
+      iframe.title  = card.title;
+
+      iframe.addEventListener('load', () => {
+        setTimeout(() => {
+          try {
+            const cardEl = iframe.contentDocument?.querySelector('.card');
+            if (!cardEl) return;
+            const h = Math.ceil(cardEl.getBoundingClientRect().height);
+            iframe.style.height = h + 'px';
+            scaler.style.height = Math.ceil(h * SCALE) + 'px';
+          } catch (_) {}
+        }, 400);
+      });
+
+      scaler.appendChild(iframe);
+      thumb.appendChild(scaler);
+
+      /* ---- Footer ---- */
+      const footer = document.createElement('div');
+      footer.className = 'thumb-footer';
+
+      const row = document.createElement('div');
+      row.className = 'thumb-footer-row';
+
+      const left = document.createElement('div');
+      left.className = 'thumb-footer-left';
+
+      const numSpan = document.createElement('span');
+      numSpan.className = 'thumb-num';
+      numSpan.textContent = `#${idx}`;
+      left.appendChild(numSpan);
+
+      /* Status pill + tooltip */
+      if (card.status) {
+        const wrap = document.createElement('span');
+        wrap.className = 'status-wrap';
+
+        const pill = document.createElement('span');
+        pill.className = `status-pill ${card.status === 'Accepted' ? 'accepted' : 'rejected'}`;
+        pill.textContent = card.status;
+
+        const tip = document.createElement('div');
+        tip.className = 'status-tooltip';
+        let tipHtml = '';
+        if (card.reviewed) {
+          tipHtml += `<div class="tooltip-row"><span class="tooltip-label">Reviewed: </span>${fmtDate(card.reviewed)}</div>`;
+        }
+        if (card.reason) {
+          tipHtml += `<div class="tooltip-row"><span class="tooltip-label">Reason: </span>${card.reason}</div>`;
+        }
+        tip.innerHTML = tipHtml;
+
+        wrap.appendChild(pill);
+        wrap.appendChild(tip);
+        left.appendChild(wrap);
+      }
+
+      row.appendChild(left);
+
+      /* Right side: created date + download button */
+      const right = document.createElement('div');
+      right.style.cssText = 'display:flex;align-items:center;gap:6px;flex-shrink:0';
+
+      if (card.created) {
+        const meta = document.createElement('span');
+        meta.className = 'thumb-meta';
+        meta.textContent = fmtDate(card.created);
+        right.appendChild(meta);
+      }
+
+      const dlBtn = document.createElement('button');
+      dlBtn.className = 'dl-btn';
+      dlBtn.title = `Download hack-of-the-day-${idx}`;
+      dlBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round">
+         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+         <polyline points="7 10 12 15 17 10"/>
+         <line x1="12" y1="15" x2="12" y2="3"/>
+       </svg> Download`;
+      dlBtn.addEventListener('click', async e => {
+        e.stopPropagation();
+        const isSvg = currentFormat === 'svg' && card._renderedSvg;
+        const fname  = `hack-of-the-day-${idx}.${isSvg ? 'svg' : 'html'}`;
+
+        if (isSvg) {
+          // Use cached standalone SVG or generate by serializing the rendered DOM
+          if (!card._standaloneSvg) {
+            const origLabel = dlBtn.innerHTML;
+            dlBtn.textContent = '…';
+            dlBtn.disabled = true;
+            card._standaloneSvg = await serializeSvg(card._renderedSvg);
+            dlBtn.innerHTML = origLabel;
+            dlBtn.disabled = false;
+          }
+          const blob = new Blob([card._standaloneSvg], { type: 'image/svg+xml' });
+          const url  = URL.createObjectURL(blob);
+          Object.assign(document.createElement('a'), { href: url, download: fname }).click();
+          URL.revokeObjectURL(url);
+        } else {
+          const blob = new Blob([card._renderedFull], { type: 'text/html' });
+          const url  = URL.createObjectURL(blob);
+          Object.assign(document.createElement('a'), { href: url, download: fname }).click();
+          URL.revokeObjectURL(url);
+        }
+      });
+      right.appendChild(dlBtn);
+      row.appendChild(right);
+
+      footer.appendChild(row);
+      footer.addEventListener('click', e => e.stopPropagation());
+      thumb.appendChild(footer);
+
+      thumb.addEventListener('click', () => openModal(si));
+      thumb.addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && openModal(si));
+
+      gallery.appendChild(thumb);
+    });
+  }
+
+  /* ---- Sort button wiring ---- */
+  const sortBtns = document.querySelectorAll('.sort-btn');
+  let activeSortKey = 'created';
+  sortBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.sort === activeSortKey) return;
+      activeSortKey = btn.dataset.sort;
+      sortBtns.forEach(b => b.classList.toggle('active', b === btn));
+      renderGallery(activeSortKey);
+    });
+  });
+
+  /* ---- Download All ---- */
   dlAllBtn.disabled = false;
   dlAllBtn.addEventListener('click', async () => {
     const label = dlAllBtn.innerHTML;
     dlAllBtn.disabled = true;
-    dlAllBtn.textContent = 'Zipping…';
+    const isSvgDl = currentFormat === 'svg' && cards.some(c => c._renderedSvg);
+    const ext  = isSvgDl ? 'svg' : 'html';
+    const mime = isSvgDl ? 'image/svg+xml' : 'text/html';
+    const ordered = [...cards].sort((a, b) => a._idx - b._idx);
     try {
       const zip = new JSZip();
-      renderedFull.forEach((html, i) => {
-        zip.file(`hack-of-the-day-${String(i + 1).padStart(3, '0')}.html`, html);
-      });
+      if (isSvgDl) {
+        // Serialize each card's SVG via DOM (correct JS-computed heights).
+        // Process in small batches to avoid browser overload.
+        const BATCH = 4;
+        for (let i = 0; i < ordered.length; i += BATCH) {
+          const batch = ordered.slice(i, i + BATCH);
+          dlAllBtn.textContent = `Rendering ${Math.min(i + BATCH, ordered.length)} / ${ordered.length}…`;
+          await Promise.all(batch.map(async card => {
+            if (!card._standaloneSvg) {
+              card._standaloneSvg = await serializeSvg(card._renderedSvg);
+            }
+          }));
+        }
+        ordered.forEach(card => {
+          const idx = card.index || String(card._idx + 1).padStart(3, '0');
+          zip.file(`hack-of-the-day-${idx}.${ext}`, card._standaloneSvg);
+        });
+      } else {
+        ordered.forEach(card => {
+          const idx = card.index || String(card._idx + 1).padStart(3, '0');
+          zip.file(`hack-of-the-day-${idx}.${ext}`, card._renderedFull);
+        });
+      }
+      dlAllBtn.textContent = 'Zipping…';
       const blob = await zip.generateAsync({ type: 'blob' });
       const url  = URL.createObjectURL(blob);
       Object.assign(document.createElement('a'), {
@@ -712,81 +1210,8 @@ TEMPLATES.forEach(tpl => {
     }
   });
 
-  cards.forEach((card, i) => {
-    const thumbHtml = Mustache.render(thumbTpl, card);
-    const fullHtml  = Mustache.render(template,  card);
-    renderedFull.push(fullHtml);
-
-    const thumb = document.createElement('div');
-    thumb.className = 'thumb';
-    thumb.style.background = activeTpl.bg;
-    thumb.setAttribute('role', 'button');
-    thumb.setAttribute('tabindex', '0');
-    thumb.setAttribute('aria-label', `Card ${i + 1}: ${card.title}`);
-
-    const scaler = document.createElement('div');
-    scaler.className = 'thumb-scaler';
-    scaler.style.cssText = `width:${THUMB_W}px;height:${Math.round(CARD_H_INIT * SCALE)}px`;
-
-    const iframe = document.createElement('iframe');
-    iframe.className = 'thumb-iframe';
-    iframe.style.cssText = `width:${CARD_WIDTH}px;height:${CARD_H_INIT}px;transform:scale(${SCALE})`;
-    iframe.srcdoc = thumbHtml;
-    iframe.title  = card.title;
-
-    iframe.addEventListener('load', () => {
-      setTimeout(() => {
-        try {
-          const cardEl = iframe.contentDocument?.querySelector('.card');
-          if (!cardEl) return;
-          const h = Math.ceil(cardEl.getBoundingClientRect().height);
-          iframe.style.height = h + 'px';
-          scaler.style.height = Math.ceil(h * SCALE) + 'px';
-        } catch (_) {}
-      }, 400);
-    });
-
-    scaler.appendChild(iframe);
-    thumb.appendChild(scaler);
-
-    const footer = document.createElement('div');
-    footer.className = 'thumb-footer';
-
-    const numSpan = document.createElement('span');
-    numSpan.className = 'thumb-num';
-    numSpan.textContent = `#${String(i + 1).padStart(2, '0')}`;
-
-    const dlBtn = document.createElement('button');
-    dlBtn.className = 'dl-btn';
-    dlBtn.title = `Download hack-of-the-day-${String(i + 1).padStart(3, '0')}.html`;
-    dlBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-         stroke-linecap="round" stroke-linejoin="round">
-       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-       <polyline points="7 10 12 15 17 10"/>
-       <line x1="12" y1="15" x2="12" y2="3"/>
-     </svg> Download`;
-    dlBtn.addEventListener('click', e => {
-      e.stopPropagation();
-      const blob = new Blob([fullHtml], { type: 'text/html' });
-      const url  = URL.createObjectURL(blob);
-      const a    = Object.assign(document.createElement('a'), {
-        href: url,
-        download: `hack-of-the-day-${String(i + 1).padStart(3, '0')}.html`,
-      });
-      a.click();
-      URL.revokeObjectURL(url);
-    });
-
-    footer.appendChild(numSpan);
-    footer.appendChild(dlBtn);
-    footer.addEventListener('click', e => e.stopPropagation());
-    thumb.appendChild(footer);
-
-    thumb.addEventListener('click', () => openModal(i));
-    thumb.addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && openModal(i));
-
-    gallery.appendChild(thumb);
-  });
+  /* ---- Initial render ---- */
+  renderGallery(activeSortKey);
 })();
 </script>
 </body>
