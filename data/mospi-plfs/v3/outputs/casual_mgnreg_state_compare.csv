@@ -1,0 +1,14 @@
+sex,state,other_rows,mgnreg_rows,other_hourly,mgnreg_hourly,mgnreg_minus_other
+female,Andhra Pradesh,1563,599,47.31,57.29,9.98
+female,Chhattisgarh,1119,297,28.98,38.73,9.75
+female,Telangana,1160,408,47.63,49.97,2.33
+female,Tamil Nadu,2024,1159,47.07,37.12,-9.95
+female,Tripura,182,230,58.17,44.43,-13.74
+female,Rajasthan,613,534,47.84,33.27,-14.58
+female,Meghalaya,829,376,52.7,36.99,-15.7
+female,Kerala,290,601,63.13,43.85,-19.28
+male,Chhattisgarh,1977,214,40.35,39.75,-0.6
+male,Andhra Pradesh,2672,377,75.56,60.86,-14.7
+male,Meghalaya,2529,204,59.34,38.93,-20.4
+male,Rajasthan,2379,123,55.56,32.18,-23.38
+male,Telangana,1028,373,74.97,50.44,-24.52

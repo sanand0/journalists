@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" id="svg-card" width="800" height="{{_totalH}}" viewBox="0 0 800 {{_totalH}}">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg-card"
+     width="800" height="{{_totalH}}" viewBox="0 0 800 {{_totalH}}">
   <defs>
     <style><![CDATA[
       @font-face {
@@ -15,55 +16,48 @@
       text { font-family: 'PoynterAgate', 'Arial Narrow', Arial, sans-serif; }
     ]]></style>
   </defs>
-  <rect width="800" height="{{_totalH}}" fill="white"/>
-  <!-- Red header -->
-  <rect width="800" height="{{_headerH}}" fill="#ec1b22"/>
-  <text x="28" y="18" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="2">HACK OF THE DAY — {{index}}</text>
+  <rect width="800" height="{{_totalH}}" fill="#faf6f0"/>
+  <!-- Header: full bleed photo-style -->
+  <rect width="800" height="{{_headerH}}" fill="#c0392b"/>
+  <text x="400" y="30" font-size="11" font-weight="700" fill="rgba(255,255,255,0.7)" text-anchor="middle" letter-spacing="3">HACK OF THE DAY</text>
   <text x="400" y="{{_titleY}}" font-size="40" font-weight="700" fill="white" text-anchor="middle">
-    {{#_titleLines}}<tspan x="400" dy="{{dy}}">{{text}}</tspan>{{/_titleLines}}
+    {{#_titleLines}}<tspan x="400" dy="{{dy}}">{{{text}}}</tspan>{{/_titleLines}}
   </text>
-  <!-- Solve bar -->
-  <rect x="0" y="{{_headerH}}" width="800" height="4" fill="#0e1628"/>
-
+  <text x="400" y="{{_indexY}}" font-size="12" fill="rgba(255,255,255,0.8)" text-anchor="middle" letter-spacing="2">No. {{index}}</text>
   <!-- WHAT IT SOLVES -->
-  <text x="28" y="{{_solvesBodyY}}" font-size="18" fill="#0e1628">
-    <tspan font-weight="700" fill="#ec1b22">{{_solvesLabel}} </tspan><tspan>{{_solvesLine1}}</tspan>
-    {{#_solvesRest}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_solvesRest}}
+  <text x="28" y="{{_solvesBodyY}}" font-size="18" fill="#2c1810">
+    <tspan font-weight="700" fill="#c0392b">{{{_solvesLabel}}} </tspan><tspan>{{{_solvesLine1}}}</tspan>
+    {{#_solvesRest}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_solvesRest}}
   </text>
-  <!-- WHAT TO DO -->
   {{#_hasTodo}}
-  <text x="28" y="{{_todoBodyY}}" font-size="18" fill="#0e1628">
-    <tspan font-weight="700" fill="#ec1b22">WHAT TO DO: </tspan><tspan>{{_todoLine1}}</tspan>
-    {{#_todoRest}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_todoRest}}
+  <text x="28" y="{{_todoBodyY}}" font-size="18" fill="#2c1810">
+    <tspan font-weight="700" fill="#c0392b">WHAT TO DO: </tspan><tspan>{{{_todoLine1}}}</tspan>
+    {{#_todoRest}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_todoRest}}
   </text>
   {{/_hasTodo}}
-  {{#_stepsLabelY}}<text x="28" y="{{_stepsLabelY}}" font-size="13" font-weight="700"
-        fill="#ec1b22" letter-spacing="1">STEPS:</text>{{/_stepsLabelY}}
+  {{#_stepsLabelY}}<text x="28" y="{{_stepsLabelY}}" font-size="16" font-weight="700"
+        font-style="italic" fill="#c0392b" letter-spacing="1">STEPS:</text>{{/_stepsLabelY}}
+  <!-- Steps: magazine minimal style -->
   {{#_steps}}
-  <!-- Ghost step number watermark -->
-  <text x="760" y="{{_numY}}" font-size="110" font-weight="700" fill="#ec1b22" opacity="0.06"
-        text-anchor="end">{{_num}}</text>
-  <line x1="28" y1="{{_y}}" x2="772" y2="{{_y}}" stroke="#ec1b22" stroke-width="2"/>
-  <text x="46" y="{{_textY}}" font-size="20" font-weight="700" fill="#ec1b22">{{_num}}.</text>
-  <text x="82" y="{{_textY}}" font-size="18" fill="#0e1628">
-    {{#_tspans}}<tspan x="82" dy="{{dy}}" font-weight="{{#bold}}700{{/bold}}{{^bold}}400{{/bold}}">{{text}}</tspan>{{/_tspans}}
-  </text>
+  <line x1="28" y1="{{_y}}" x2="772" y2="{{_y}}" stroke="#e8ddd0" stroke-width="1"/>
+  <text x="24" y="{{_numY}}" font-size="24" font-weight="700" fill="#c0392b"
+        font-style="italic" text-anchor="left">{{_num}}</text>
+  <text x="60" y="{{_textY}}" font-size="18" fill="#2c1810">{{#_hasBoldTitle}}<tspan x="60" font-weight="700">{{{_boldTitle}}} </tspan><tspan font-weight="400">{{{_firstLineRest}}}</tspan>{{/_hasBoldTitle}}{{^_hasBoldTitle}}<tspan x="60">{{{_firstLine}}}</tspan>{{/_hasBoldTitle}}{{#_restLines}}<tspan x="60" dy="{{dy}}">{{{text}}}</tspan>{{/_restLines}}</text>
   {{/_steps}}
   {{#_hasNote}}
-  <line x1="28" y1="{{_noteTextY}}" x2="778" y2="{{_noteTextY}}" stroke="#ec1b22" stroke-width="1" opacity="0.5"/>
-  <text x="28" y="{{_noteTextY}}" font-size="17" fill="#2a3040">
-    <tspan dy="4" font-weight="700" fill="#ec1b22">{{_noteLabel}} </tspan><tspan>{{_noteLine1}}</tspan>
-    {{#_noteRestLines}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_noteRestLines}}
+  <text x="28" y="{{_noteTextY}}" font-size="17" fill="#5a3a2a">
+    <tspan dy="4" font-weight="700" fill="#c0392b">{{{_noteLabel}}} </tspan><tspan>{{{_noteLine1}}}</tspan>
+    {{#_noteRestLines}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_noteRestLines}}
   </text>
   {{/_hasNote}}
-
   <!-- Footer -->
-  <rect x="0" y="{{_footerY}}" width="800" height="100" fill="#0e1628"/>
-  <text x="28" y="{{_footerTipY}}" font-size="14" font-weight="700" fill="white">
-    {{#_tipLines}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_tipLines}}
+  <rect x="0" y="{{_footerY}}" width="800" height="{{_footerH}}" fill="#2c1810"/>
+  <text x="28" y="{{_footerTipY}}" font-size="14" font-weight="700" fill="#f5e6d8">
+    {{#_tipLines}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_tipLines}}
   </text>
-  <text x="28" y="{{_footerDiscY}}" font-size="13" font-weight="400" fill="#7a8aaa" font-style="italic">
-    {{#_discLines}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_discLines}}
+  <text x="28" y="{{_footerDiscY}}" font-size="12" font-weight="400" fill="#a07860" font-style="italic">
+    {{#_discLines}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_discLines}}
   </text>
-  <text x="778" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="white" text-anchor="end">Times Internet</text>
+  <text x="{{_qrLabelX}}" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#f5e6d8" text-anchor="end">Times Internet</text>
+  {{#_hasQr}}<g transform="translate({{_qrX}},{{_qrY}})">{{{_qrCode}}}</g>{{/_hasQr}}
 </svg>

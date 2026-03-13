@@ -1,0 +1,18 @@
+sex,sector,workers_count,n,weighted_m,median_monthly_earnings,no_social_security_pct,no_contract_pct
+female,rural,20 and above,329,0.816,20000.0,31.6,29.5
+female,rural,6 and above but less than 10,234,0.621,13550.0,50.1,37.5
+female,rural,less than 6,254,0.61,9400.0,68.3,52.8
+female,rural,10 and above but less than 20,268,0.527,15100.0,38.5,39.0
+female,urban,20 and above,2003,3.597,34000.0,9.7,18.2
+female,urban,10 and above but less than 20,633,0.893,25000.0,35.0,32.3
+female,urban,6 and above but less than 10,484,0.825,18000.0,42.9,45.6
+female,urban,less than 6,403,0.642,12000.0,67.4,66.8
+male,rural,20 and above,1059,3.41,25000.0,12.5,21.7
+male,rural,6 and above but less than 10,607,1.723,25000.0,36.1,36.0
+male,rural,less than 6,618,1.631,14700.0,67.2,66.3
+male,rural,10 and above but less than 20,619,1.549,26000.0,23.1,30.8
+male,urban,20 and above,4967,9.689,38500.0,6.7,16.9
+male,urban,10 and above but less than 20,1283,1.802,32000.0,24.9,27.0
+male,urban,6 and above but less than 10,913,1.485,25000.0,43.4,47.4
+male,urban,less than 6,924,1.439,15000.0,74.1,79.1
+male,urban,not known,158,0.152,33500.0,16.4,24.3

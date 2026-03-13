@@ -1,0 +1,15 @@
+technical_education,age_band,sex,sector,sample_n,total_m,seeker_pct,regular_salaried_pct
+diploma or certificate (below graduate level) in engineering/technology,15-24,male,rural,227,0.745,19.7,35.0
+diploma or certificate (below graduate level) in engineering/technology,15-24,male,urban,220,0.327,19.6,42.0
+diploma or certificate (below graduate level) in engineering/technology,25-34,male,urban,424,0.766,10.2,62.1
+diploma or certificate (below graduate level) in engineering/technology,25-34,male,rural,328,0.995,7.9,48.1
+diploma or certificate (below graduate level) in engineering/technology,35+,male,urban,539,0.986,1.6,55.9
+diploma or certificate (below graduate level) in engineering/technology,35+,male,rural,194,0.718,1.1,39.6
+technical degree in engineering/technology,15-24,male,rural,80,0.311,36.8,42.1
+technical degree in engineering/technology,15-24,male,urban,260,0.633,32.2,44.2
+technical degree in engineering/technology,15-24,female,urban,112,0.285,27.2,30.7
+technical degree in engineering/technology,25-34,male,rural,183,0.582,15.5,58.1
+technical degree in engineering/technology,25-34,male,urban,863,1.977,10.1,76.6
+technical degree in engineering/technology,25-34,female,urban,325,0.847,4.5,52.0
+technical degree in engineering/technology,35+,female,urban,110,0.247,1.5,52.2
+technical degree in engineering/technology,35+,male,urban,629,1.406,1.2,68.9

@@ -1,0 +1,7 @@
+sex,status_group,person_day_rows,avg_day_hours,avg_day_wage,weighted_ratio_hourly,median_person_day_hourly
+female,mgnreg,4477,6.31,257.22,41.19,41.63
+female,other_casual,21539,7.09,301.88,41.66,50.0
+female,other_public_works,979,6.37,248.18,39.72,39.17
+male,mgnreg,1719,5.64,245.2,45.17,42.33
+male,other_casual,79342,7.81,464.71,57.02,55.56
+male,other_public_works,546,6.55,255.14,41.41,39.32

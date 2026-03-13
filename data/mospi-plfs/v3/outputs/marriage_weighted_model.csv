@@ -1,0 +1,3 @@
+outcome,married_effect,married_effect_points,std_error,std_error_points,sample_n,weighted_total_m,controls
+domestic_only,0.2752,27.52,0.0098,0.98,31716,76.368,state + sector + education band + social group + household type + religion
+regular_salaried,-0.1665,-16.65,0.0052,0.52,31716,76.368,state + sector + education band + social group + household type + religion

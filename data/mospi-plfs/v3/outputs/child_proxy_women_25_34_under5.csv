@@ -1,0 +1,13 @@
+marital_status,edu_band,has_child_0_5,sample_n,total_m,domestic_only_pct,regular_salaried_pct
+currently married,below_secondary,1,7943,22.308,44.3,2.1
+currently married,below_secondary,0,5576,15.34,34.0,5.9
+never married,below_secondary,1,172,0.232,32.0,12.7
+never married,below_secondary,0,827,1.229,31.1,14.7
+currently married,graduate+,1,3625,8.726,60.5,11.4
+currently married,graduate+,0,1934,4.492,47.9,21.9
+never married,graduate+,1,200,0.352,30.4,22.9
+never married,graduate+,0,2116,3.765,14.0,39.7
+currently married,secondary_to_hs,1,5426,11.822,58.1,2.4
+currently married,secondary_to_hs,0,3147,7.055,47.0,7.9
+never married,secondary_to_hs,1,101,0.162,54.2,10.4
+never married,secondary_to_hs,0,649,0.886,37.1,16.6

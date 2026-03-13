@@ -6,6 +6,20 @@ Modify the hackoftheday/ HTML and SVG to use the Poytner Agate One font from ass
 
 Modify the SVG rendering to native SVG elements: text and tspan (not foreignObject, div), rect, clipPath, defs > style, named fonts, styles scoped via CSS classes on SVG elements, static pre-positioned elements. No JavaScript, div, @import, QR code library, etc. Use robust libraries for conversion if required.
 
+---
+
+The SVGs have a number of issues.
+
+- There's a line across the "NOTE" at the bottom that looks like a strikeout
+  - For template=broadsheet, there's also a line through the title
+- STEPS: is too small and too close to the "What to do" section
+- The QR code is missing
+
+There may be potentually other issues. Also, it doesn't quite look like the HTML.
+
+Take screenshots of the SVG. Fix issues.
+Compare with screenshots of the HTML. Align.
+
 ## Hack of the day, UI fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 medium)
 
 For the newly added cards in cards.json, set the created date to 12 Mar 2026 at 9:30 am SGT.

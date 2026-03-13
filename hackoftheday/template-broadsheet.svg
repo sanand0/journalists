@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" id="svg-card" width="800" height="{{_totalH}}" viewBox="0 0 800 {{_totalH}}">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg-card"
+     width="800" height="{{_totalH}}" viewBox="0 0 800 {{_totalH}}">
   <defs>
     <style><![CDATA[
       @font-face {
@@ -17,55 +18,50 @@
   </defs>
   <rect width="800" height="{{_totalH}}" fill="#f5f0e6"/>
   <!-- Masthead -->
-  <rect width="800" height="{{_headerH}}" fill="#f5f0e6"/>
-  <rect x="28" y="{{_headerH}}" width="744" height="3" fill="#2a1f0e"/>
+  <rect width="800" height="{{_mastheadH}}" fill="#f5f0e6"/>
   <line x1="28" y1="10" x2="772" y2="10" stroke="#2a1f0e" stroke-width="0.5"/>
-  <!-- Hack label -->
   <text x="400" y="28" font-size="11" font-weight="700" fill="#8b0000" text-anchor="middle" letter-spacing="2">HACK OF THE DAY</text>
   <text x="400" y="40" font-size="10" fill="#7a6840" text-anchor="middle">— {{index}} —</text>
-  <line x1="28" y1="46" x2="772" y2="46" stroke="#2a1f0e" stroke-width="0.5"/>
+  <line x1="28" y1="{{_mastheadH}}" x2="772" y2="{{_mastheadH}}" stroke="#2a1f0e" stroke-width="0.5"/>
   <!-- Title -->
   <text x="400" y="{{_titleY}}" font-size="30" font-weight="700" fill="#2a1f0e" text-anchor="middle">
-    {{#_titleLines}}<tspan x="400" dy="{{dy}}">{{text}}</tspan>{{/_titleLines}}
+    {{#_titleLines}}<tspan x="400" dy="{{dy}}">{{{text}}}</tspan>{{/_titleLines}}
   </text>
-
+  <rect x="28" y="{{_headerH}}" width="744" height="3" fill="#2a1f0e"/>
   <!-- WHAT IT SOLVES -->
   <text x="28" y="{{_solvesBodyY}}" font-size="18" fill="#2a1f0e">
-    <tspan font-weight="700" fill="#8b0000">{{_solvesLabel}} </tspan><tspan>{{_solvesLine1}}</tspan>
-    {{#_solvesRest}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_solvesRest}}
+    <tspan font-weight="700" fill="#8b0000">{{{_solvesLabel}}} </tspan><tspan>{{{_solvesLine1}}}</tspan>
+    {{#_solvesRest}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_solvesRest}}
   </text>
-  <!-- WHAT TO DO -->
   {{#_hasTodo}}
   <text x="28" y="{{_todoBodyY}}" font-size="18" fill="#2a1f0e">
-    <tspan font-weight="700" fill="#8b0000">WHAT TO DO: </tspan><tspan>{{_todoLine1}}</tspan>
-    {{#_todoRest}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_todoRest}}
+    <tspan font-weight="700" fill="#8b0000">WHAT TO DO: </tspan><tspan>{{{_todoLine1}}}</tspan>
+    {{#_todoRest}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_todoRest}}
   </text>
   {{/_hasTodo}}
-  {{#_stepsLabelY}}<text x="28" y="{{_stepsLabelY}}" font-size="13" font-weight="700"
-        fill="#8b0000" letter-spacing="1">STEPS:</text>{{/_stepsLabelY}}
+  {{#_stepsLabelY}}<text x="28" y="{{_stepsLabelY}}" font-size="16" font-weight="700"
+        font-style="italic" fill="#8b0000" letter-spacing="1">STEPS:</text>{{/_stepsLabelY}}
+  <!-- Steps: newspaper style -->
   {{#_steps}}
   <line x1="28" y1="{{_y}}" x2="772" y2="{{_y}}" stroke="#c8b99a" stroke-width="1"/>
-  <text x="38" y="{{_numY}}" font-size="36" font-weight="700" fill="#c0aa82"
+  <text x="34" y="{{_numY}}" font-size="36" font-weight="700" fill="#c0aa82"
         font-style="italic" text-anchor="middle">{{_num}}</text>
-  <text x="72" y="{{_textY}}" font-size="18" fill="#2a1f0e">
-    {{#_tspans}}<tspan x="72" dy="{{dy}}" font-weight="{{#bold}}700{{/bold}}{{^bold}}400{{/bold}}">{{text}}</tspan>{{/_tspans}}
-  </text>
+  <text x="68" y="{{_textY}}" font-size="18" fill="#2a1f0e">{{#_hasBoldTitle}}<tspan x="68" font-weight="700">{{{_boldTitle}}} </tspan><tspan font-weight="400">{{{_firstLineRest}}}</tspan>{{/_hasBoldTitle}}{{^_hasBoldTitle}}<tspan x="68">{{{_firstLine}}}</tspan>{{/_hasBoldTitle}}{{#_restLines}}<tspan x="68" dy="{{dy}}">{{{text}}}</tspan>{{/_restLines}}</text>
   {{/_steps}}
   {{#_hasNote}}
-  <line x1="28" y1="{{_noteTextY}}" x2="778" y2="{{_noteTextY}}" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
   <text x="28" y="{{_noteTextY}}" font-size="17" fill="#4a3a20">
-    <tspan dy="4" font-weight="700" fill="#8b0000">{{_noteLabel}} </tspan><tspan>{{_noteLine1}}</tspan>
-    {{#_noteRestLines}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_noteRestLines}}
+    <tspan dy="4" font-weight="700" fill="#8b0000">{{{_noteLabel}}} </tspan><tspan>{{{_noteLine1}}}</tspan>
+    {{#_noteRestLines}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_noteRestLines}}
   </text>
   {{/_hasNote}}
-
   <!-- Footer -->
-  <rect x="0" y="{{_footerY}}" width="800" height="100" fill="#2a1f0e"/>
+  <rect x="0" y="{{_footerY}}" width="800" height="{{_footerH}}" fill="#2a1f0e"/>
   <text x="28" y="{{_footerTipY}}" font-size="14" font-weight="700" fill="#f5f0e6">
-    {{#_tipLines}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_tipLines}}
+    {{#_tipLines}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_tipLines}}
   </text>
-  <text x="28" y="{{_footerDiscY}}" font-size="13" font-weight="400" fill="#c8b99a" font-style="italic">
-    {{#_discLines}}<tspan x="28" dy="{{dy}}">{{text}}</tspan>{{/_discLines}}
+  <text x="28" y="{{_footerDiscY}}" font-size="12" font-weight="400" fill="#c8b99a" font-style="italic">
+    {{#_discLines}}<tspan x="28" dy="{{dy}}">{{{text}}}</tspan>{{/_discLines}}
   </text>
-  <text x="778" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#f5f0e6" text-anchor="end">Times Internet</text>
+  <text x="{{_qrLabelX}}" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#f5f0e6" text-anchor="end">Times Internet</text>
+  {{#_hasQr}}<g transform="translate({{_qrX}},{{_qrY}})">{{{_qrCode}}}</g>{{/_hasQr}}
 </svg>

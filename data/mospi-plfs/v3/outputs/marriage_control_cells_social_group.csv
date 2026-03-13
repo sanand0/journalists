@@ -1,0 +1,18 @@
+sector,edu_band,social_group,married_n,never_married_n,domestic_married_pct,domestic_never_married_pct,salaried_married_pct,salaried_never_married_pct,domestic_gap_pts,salaried_gap_pts
+urban,graduate+,scheduled caste,350,192,61.7,14.6,12.9,36.5,47.1,-23.6
+urban,graduate+,other backward class,1596,502,63.2,16.7,16.9,39.6,46.4,-22.8
+urban,graduate+,others,1504,689,54.3,10.2,19.1,42.5,44.1,-23.4
+urban,secondary_to_hs,others,1069,117,70.2,27.4,5.5,20.5,42.8,-15.0
+urban,graduate+,scheduled tribe,184,285,39.7,1.8,25.0,37.2,37.9,-12.2
+urban,secondary_to_hs,other backward class,1568,111,70.6,34.2,5.6,27.9,36.4,-22.3
+rural,graduate+,other backward class,832,203,48.1,14.8,13.6,31.0,33.3,-17.5
+rural,graduate+,others,520,135,41.3,13.3,12.7,25.2,28.0,-12.5
+rural,graduate+,scheduled tribe,223,195,28.7,3.6,25.6,40.0,25.1,-14.4
+urban,below_secondary,scheduled tribe,419,100,43.7,19.0,8.4,12.0,24.7,-3.6
+urban,below_secondary,others,1094,117,66.0,41.9,9.7,21.4,24.1,-11.7
+rural,graduate+,scheduled caste,350,115,41.4,17.4,12.3,26.1,24.0,-13.8
+urban,below_secondary,other backward class,1813,128,61.8,38.3,9.0,19.5,23.5,-10.5
+rural,below_secondary,other backward class,3795,162,37.7,21.6,1.9,6.8,16.0,-4.9
+rural,secondary_to_hs,scheduled tribe,743,154,22.1,14.3,8.9,14.9,7.8,-6.1
+rural,below_secondary,scheduled tribe,1910,250,20.2,14.4,2.5,7.6,5.8,-5.1
+rural,below_secondary,others,1546,104,37.5,33.7,1.2,10.6,3.9,-9.4

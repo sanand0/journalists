@@ -822,6 +822,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
 <script>
 /* ============================================================
    TEMPLATE CATALOGUE
@@ -1079,6 +1080,32 @@ function _tspans(lines, firstDy = '0') {
    ============================================================ */
 
 /**
+ * Generate a QR code SVG fragment (native rects) for a URL.
+ * Returns a <g> element string ready for {{{_qrCode}}} triple-mustache.
+ */
+function _genQrCode(url, size = 64) {
+  try {
+    const qr = qrcode(0, 'M');
+    qr.addData(url);
+    qr.make();
+    const n    = qr.getModuleCount();
+    const cell = size / n;
+    const rects = [];
+    for (let r = 0; r < n; r++) {
+      for (let c = 0; c < n; c++) {
+        if (qr.isDark(r, c)) {
+          const cx = Math.round(c * cell * 10) / 10;
+          const cy = Math.round(r * cell * 10) / 10;
+          const cs = Math.ceil(cell * 10) / 10;
+          rects.push(`<rect x="${cx}" y="${cy}" width="${cs}" height="${cs}"/>`);
+        }
+      }
+    }
+    return `<g fill="#000000">${rects.join('')}</g>`;
+  } catch (e) { return ''; }
+}
+
+/**
  * Classic Blue layout (template.svg)
  * Card width: 800px, bg: #d2ddf2
  */
@@ -1122,9 +1149,9 @@ function _layoutClassic(card) {
       card.what_to_do.slice(todoLine1.length).trim(), BODY_SIZE, W - PAD * 2, false);
     todoHasContent = true;
     todoY = y;
-    y += BODY_LH + (todoRest.length * BODY_LH) + 6;
+    y += BODY_LH + (todoRest.length * BODY_LH) + 20;
     stepsLabelY = y;
-    y += 22;
+    y += 28;
   } else {
     stepsHeadingY = y;
     y += 28;
@@ -1161,13 +1188,21 @@ function _layoutClassic(card) {
     });
 
     stepsData.push({
-      _num:   i + 1,
-      _y:     stepY,
-      _h:     STEP_H,
-      _z:     15 - i,
-      _textY: textY,
-      _tspans: tspans,
-      _numY:  stepY + STEP_H / 2 + 16,
+      _num:           i + 1,
+      _y:             stepY,
+      _h:             STEP_H,
+      _z:             15 - i,
+      _yBottom:       stepY + STEP_H,
+      _numMidY:       Math.round(stepY + STEP_H / 2),
+      _numY:          Math.round(stepY + STEP_H / 2 + 46 * 0.35),
+      _textY:         textY,
+      _hasBoldTitle:  !!s.bold_title,
+      _boldTitle:     s.bold_title ? _esc(s.bold_title) : '',
+      _firstLine:     _esc(fullLines[0] || ''),
+      _firstLineRest: s.bold_title
+        ? _esc((fullLines[0] || '').slice(boldT.trimEnd().length).trimStart())
+        : _esc(fullLines[0] || ''),
+      _restLines:     fullLines.slice(1).map(ln => ({ dy: `${BODY_LH}`, text: _esc(ln) })),
     });
 
     prevStepBottom = stepY + STEP_H;
@@ -1189,16 +1224,20 @@ function _layoutClassic(card) {
   }
 
   // ── Footer ────────────────────────────────────────────────
-  const FOOTER_H  = 78;
+  const QR_SIZE   = 64;
+  const tipUrl    = card.tip_domain ? `https://${card.tip_domain}` : '';
+  const FOOTER_H  = 100;
   const footerY   = y;
   const totalH    = footerY + FOOTER_H;
 
   const tipText   = 'Tip from ' + (card.tip_name || '') + (card.tip_domain || '');
-  const tipLines  = _wrap(tipText, FOOT_SIZE, W - PAD * 2 - 120, true);
-  const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 120, false);
-  // Compute separate y positions for tip and disclaimer inside footer
-  const footerTipY  = footerY + FOOT_SIZE + 8;
+  const tipLines  = _wrap(tipText, FOOT_SIZE, W - PAD * 2 - 90, true);
+  const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 90, false);
+  const footerTipY  = footerY + FOOT_SIZE + 10;
   const footerDiscY = footerTipY + tipLines.length * 18 + 6;
+  const _qrX = 800 - 14 - QR_SIZE;
+  const _qrY = footerY + Math.round((FOOTER_H - QR_SIZE) / 2);
+  const _qrCode = tipUrl ? _genQrCode(tipUrl, QR_SIZE) : '';
 
   // ── Return augmented data ─────────────────────────────────
   return {
@@ -1206,6 +1245,14 @@ function _layoutClassic(card) {
     _totalH: totalH,
     _headerH: HEADER_H,
     _badgeW:  BADGE_W,
+
+    // Badge geometry for chevron arrow
+    _badgeArrowX:   BADGE_W,
+    _badgeTipX:     BADGE_W + 20,
+    _headerHalf:    Math.round(HEADER_H / 2),
+    _badgeTopY:     Math.round(HEADER_H * 0.20),
+    _badgeMidY:     Math.round(HEADER_H * 0.37),
+    _badgeNumY:     Math.round(HEADER_H * 0.72),
 
     _titleLines: _tspans(titleLines),
     _titleY:     Math.round(HEADER_H / 2 - (titleLines.length * TITLE_LH) / 2 + TITLE_SIZE * 0.82),
@@ -1232,11 +1279,16 @@ function _layoutClassic(card) {
     _noteRestLines: noteRestLines.map(t => ({ dy: `${NOTE_LH}`, text: _esc(t) })),
 
     _footerY:     footerY,
+    _footerH:     FOOTER_H,
     _footerTipY:  footerTipY,
     _footerDiscY: footerDiscY,
     _tipLines:    tipLines.map((t, i)  => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
     _discLines:   discLines.map((t, i) => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
-    _headerHBadgeNumY: Math.round(HEADER_H * 0.78),
+    _hasQr:    !!tipUrl,
+    _qrCode:   _qrCode,
+    _qrX:      _qrX,
+    _qrY:      _qrY,
+    _qrLabelX: _qrX - 6,
   };
 }
 
@@ -1285,38 +1337,47 @@ function _layoutGeneric(card, C) {
     todoLine1  = _wrap(card.what_to_do, BODY_SIZE, W - PAD * 2 - labW, false)[0] || '';
     todoRest   = _wrap(card.what_to_do.slice(todoLine1.length).trim(), BODY_SIZE, W - PAD * 2, false);
     todoBodyY  = y + BODY_SIZE + 2;
-    y += BODY_LH + todoRest.length * BODY_LH + 6;
+    y += BODY_LH + todoRest.length * BODY_LH + 20;
     stepsLabelY = y;
-    y += 22;
+    y += 28;
   }
 
   // ── Steps ──────────────────────────────────────────────────
   const stepsData = [];
+  const NUM_FS = C.numFontSize || 28;
   let prevBottom = y;
   for (let i = 0; i < (card.steps || []).length; i++) {
-    const s      = card.steps[i];
-    const stepY  = i === 0 ? prevBottom : prevBottom - STEP_OVL;
-    const boldT  = s.bold_title ? s.bold_title + ' ' : '';
-    const full   = boldT + (s.text || '');
-    const lines  = _wrap(full, BODY_SIZE, STEP_TW, false);
-    const STEP_H = Math.max(C.minStepH || 54, lines.length * BODY_LH + STEP_PAD * 2);
-    const textY  = stepY + STEP_PAD + Math.round(BODY_SIZE * 0.85);
+    const s       = card.steps[i];
+    const stepY   = i === 0 ? prevBottom : prevBottom - STEP_OVL;
+    const boldT   = s.bold_title ? s.bold_title + ' ' : '';
+    const full    = boldT + (s.text || '');
+    const lines   = _wrap(full, BODY_SIZE, STEP_TW, false);
+    const STEP_H  = Math.max(C.minStepH || 54, lines.length * BODY_LH + STEP_PAD * 2);
+    const textY   = stepY + STEP_PAD + Math.round(BODY_SIZE * 0.85);
+    const first   = lines[0] || '';
     stepsData.push({
-      _num:   i + 1,
-      _numPad: String(i + 1).padStart(2, '0'),
-      _y:     stepY,
-      _h:     STEP_H,
-      _numY:  Math.round(stepY + STEP_H / 2 + 10),
-      _textY: textY,
-      _tspans: lines.map((ln, li) => ({
-        dy:   li === 0 ? '0' : `${BODY_LH}`,
-        text: _esc(ln),
-        bold: li === 0 && !!boldT,
-      })),
+      _num:           i + 1,
+      _numPad:        String(i + 1).padStart(2, '0'),
+      _y:             stepY,
+      _h:             STEP_H,
+      _yBottom:       stepY + STEP_H,
+      _numMidY:       Math.round(stepY + STEP_H / 2),
+      _numY:          Math.round(stepY + STEP_H / 2 + NUM_FS * 0.35),
+      _textY:         textY,
+      _hasBoldTitle:  !!s.bold_title,
+      _boldTitle:     s.bold_title ? _esc(s.bold_title) : '',
+      _firstLine:     _esc(first),
+      _firstLineRest: s.bold_title
+        ? _esc(first.slice(boldT.trimEnd().length).trimStart())
+        : _esc(first),
+      _restLines:     lines.slice(1).map(ln => ({ dy: `${BODY_LH}`, text: _esc(ln) })),
     });
     prevBottom = stepY + STEP_H + (C.stepGap || 0);
   }
   y = prevBottom + 14;
+
+  // ── STEPS label spacing (updated after step iteration) ─────
+  if (stepsLabelY) { /* already set above */ }
 
   // ── Note ───────────────────────────────────────────────────
   let hasNote = false, noteTextY = 0, noteLine1 = '', noteRestLines = [];
@@ -1331,23 +1392,44 @@ function _layoutGeneric(card, C) {
   }
 
   // ── Footer ─────────────────────────────────────────────────
-  const FOOTER_H  = C.footerH || 78;
+  const QR_SIZE   = 64;
+  const tipUrl    = card.tip_domain ? `https://${card.tip_domain}` : '';
+  const FOOTER_H  = C.footerH || 90;
   const footerY   = y;
   const totalH    = footerY + FOOTER_H;
   const tipText   = 'Tip from ' + (card.tip_name || '') + (card.tip_domain || '');
-  const tipLines  = _wrap(tipText, FOOT_SIZE, W - PAD * 2 - 120, true);
-  const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 120, false);
-  const footerTipY  = footerY + FOOT_SIZE + 8;
+  const tipLines  = _wrap(tipText, FOOT_SIZE, W - PAD * 2 - 90, true);
+  const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 90, false);
+  const footerTipY  = footerY + FOOT_SIZE + 10;
   const footerDiscY = footerTipY + tipLines.length * 18 + 6;
+  const _qrX = 800 - 14 - QR_SIZE;
+  const _qrY = footerY + Math.round((FOOTER_H - QR_SIZE) / 2);
+  const _qrCode = tipUrl ? _genQrCode(tipUrl, QR_SIZE) : '';
+
+  // Badge text positions (for templates with a left-side badge)
+  const BW = C.badgeW || 0;
+  const _badgeTopY  = Math.round(HEADER_H * 0.20);
+  const _badgeMidY  = Math.round(HEADER_H * 0.37);
+  const _badgeNumY  = Math.round(HEADER_H * 0.72);
+  // Masthead height (broadsheet-specific, fixed separator line position)
+  const _mastheadH  = C.mastheadH || 46;
+  // Index label Y (magazine-specific: "No. {{index}}" at bottom of header)
+  const _indexY     = HEADER_H - 16;
+  // Title Y: support C.titleY override (broadsheet uses this)
+  const _titleY     = C.titleY != null
+    ? C.titleY
+    : Math.round(HEADER_H / 2 - (titleLines.length * TITLE_LH) / 2 + Math.round(TITLE_SIZE * 0.82));
 
   return {
     ...card,
     _totalH: totalH, _headerH: HEADER_H,
-    _badgeW:  C.badgeW || 0,
-    _titleX:  (C.badgeW || 0) + PAD,
-    _titleY:  Math.round(HEADER_H / 2 - (titleLines.length * TITLE_LH) / 2 + Math.round(TITLE_SIZE * 0.82)),
+    _badgeW:  BW,
+    _titleX:  BW + PAD,
+    _titleY:  _titleY,
     _titleLines: _tspans(titleLines),
-    _headerHBadgeNumY: Math.round(HEADER_H * 0.78),
+    // Badge text positions
+    _badgeTopY, _badgeMidY, _badgeNumY,
+    _mastheadH, _indexY,
     _solvesBodyY: solvesBodyY, _solvesLabel: _esc(LABEL_SOLVES),
     _solvesLine1: _esc(solvesFirst),
     _solvesRest:  solvesRest.map(t => ({ dy: `${BODY_LH}`, text: _esc(t) })),
@@ -1359,59 +1441,84 @@ function _layoutGeneric(card, C) {
     _hasNote: hasNote, _noteTextY: noteTextY,
     _noteLabel: _esc(NOTE_LABEL), _noteLine1: _esc(noteLine1),
     _noteRestLines: noteRestLines.map(t => ({ dy: `${NOTE_LH}`, text: _esc(t) })),
-    _footerY: footerY, _footerTipY: footerTipY, _footerDiscY: footerDiscY,
+    _footerY: footerY, _footerH: FOOTER_H,
+    _footerTipY: footerTipY, _footerDiscY: footerDiscY,
     _tipLines:  tipLines.map((t, i)  => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
     _discLines: discLines.map((t, i) => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
+    _hasQr:    !!tipUrl,
+    _qrCode:   _qrCode,
+    _qrX:      _qrX,
+    _qrY:      _qrY,
+    _qrLabelX: _qrX - 6,
   };
 }
 
 function _layoutBroadsheet(card) {
+  // Custom header: fixed masthead at 46px, then title below separator
+  const PAD = 28, TITLE_SIZE = 30, TITLE_LH = Math.round(TITLE_SIZE * 1.22);
+  const MASTHEAD_H = 46;
+  const titleLines = _wrap(card.title, TITLE_SIZE, 800 - PAD * 2, true);
+  const HEADER_H   = MASTHEAD_H + titleLines.length * TITLE_LH + 28;
+  const titleY     = MASTHEAD_H + 14 + Math.round(TITLE_SIZE * 0.85);
   return _layoutGeneric(card, {
     pad: 28, titleSize: 30, bodySize: 18, footSize: 13,
-    badgeW: 0, numW: 48, stepPad: 12, stepGap: 8,
-    minHeaderH: 100, headerPadV: 40, bodyTopPad: 16,
+    badgeW: 0, numW: 48, stepPad: 12, stepGap: 8, numFontSize: 36,
+    headerH: HEADER_H, titleY: titleY, mastheadH: MASTHEAD_H,
+    bodyTopPad: 16,
   });
 }
 function _layoutSaffron(card) {
   return _layoutGeneric(card, {
-    pad: 24, titleSize: 28, bodySize: 19, footSize: 14,
+    pad: 24, titleSize: 28, bodySize: 19, footSize: 14, numFontSize: 28,
     badgeW: 148, numW: 58, stepPad: 14, stepGap: 8,
     minHeaderH: 90, headerPadV: 30, bodyTopPad: 16,
   });
 }
 function _layoutNoir(card) {
   return _layoutGeneric(card, {
-    pad: 22, titleSize: 30, bodySize: 19, footSize: 13,
-    badgeW: 152, numW: 58, stepPad: 14, stepGap: 8,
+    pad: 22, titleSize: 30, bodySize: 19, footSize: 13, numFontSize: 30,
+    badgeW: 152, numW: 68, stepPad: 14, stepGap: 8,
     minHeaderH: 90, headerPadV: 30, bodyTopPad: 16,
   });
 }
 function _layoutMagazine(card) {
   return _layoutGeneric(card, {
-    pad: 28, titleSize: 40, bodySize: 18, footSize: 13,
+    pad: 28, titleSize: 40, bodySize: 18, footSize: 13, numFontSize: 24,
     badgeW: 0, numW: 36, stepPad: 12, stepGap: 4,
     minHeaderH: 110, headerPadV: 36, bodyTopPad: 14,
   });
 }
 function _layoutMinimal(card) {
   return _layoutGeneric(card, {
-    pad: 32, titleSize: 34, bodySize: 19, footSize: 13,
+    pad: 32, titleSize: 34, bodySize: 19, footSize: 13, numFontSize: 22,
     badgeW: 0, numW: 32, stepPad: 14, stepGap: 12,
     minHeaderH: 100, headerPadV: 36, bodyTopPad: 16,
   });
 }
 function _layoutChronicle(card) {
+  const MASTHEAD_H = 52; // separator at y=44, +8px gap
+  const TITLE_SIZE = 34, TITLE_LH = Math.round(TITLE_SIZE * 1.22);
+  const titleLines = _wrap(card.title, TITLE_SIZE, 800 - 32 * 2, true);
+  const HEADER_H   = Math.max(100, MASTHEAD_H + titleLines.length * TITLE_LH + 28);
+  const titleY     = MASTHEAD_H + 14 + Math.round(TITLE_SIZE * 0.85);
   return _layoutGeneric(card, {
-    pad: 32, titleSize: 34, bodySize: 17, footSize: 13,
-    badgeW: 0, numW: 52, stepPad: 16, stepGap: 6,
-    minHeaderH: 100, headerPadV: 40, bodyTopPad: 18,
+    pad: 32, titleSize: TITLE_SIZE, bodySize: 17, footSize: 13, numFontSize: 18,
+    badgeW: 0, numW: 56, stepPad: 16, stepGap: 6,
+    headerH: HEADER_H, titleY: titleY, mastheadH: MASTHEAD_H,
+    bodyTopPad: 18,
   });
 }
 function _layoutNova(card) {
+  const MASTHEAD_H = 36; // "HACK OF THE DAY" text at y=28
+  const TITLE_SIZE = 38, TITLE_LH = Math.round(TITLE_SIZE * 1.22);
+  const titleLines = _wrap(card.title, TITLE_SIZE, 800 - 32 * 2, true);
+  const HEADER_H   = Math.max(110, MASTHEAD_H + titleLines.length * TITLE_LH + 28);
+  const titleY     = MASTHEAD_H + 14 + Math.round(TITLE_SIZE * 0.85);
   return _layoutGeneric(card, {
-    pad: 32, titleSize: 38, bodySize: 18, footSize: 13,
-    badgeW: 0, numW: 60, stepPad: 14, stepGap: 0,
-    minHeaderH: 110, headerPadV: 40, bodyTopPad: 18,
+    pad: 32, titleSize: TITLE_SIZE, bodySize: 18, footSize: 13, numFontSize: 30,
+    badgeW: 0, numW: 62, stepPad: 14, stepGap: 0,
+    headerH: HEADER_H, titleY: titleY, mastheadH: MASTHEAD_H,
+    bodyTopPad: 18,
   });
 }
 
