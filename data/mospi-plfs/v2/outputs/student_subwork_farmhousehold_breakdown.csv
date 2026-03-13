@@ -1,0 +1,9 @@
+sex,social_group,n,total_m,raw_subwork_pct,weighted_subwork_pct
+male,scheduled tribe,398,0.464,15.1,23.7
+female,scheduled tribe,346,0.436,12.7,22.4
+male,scheduled caste,262,0.727,14.9,16.5
+male,other backward class,927,3.279,13.8,11.7
+male,others,458,1.499,10.9,10.0
+female,other backward class,689,2.48,7.5,7.5
+female,others,352,1.257,7.7,3.7
+female,scheduled caste,183,0.564,6.6,3.6

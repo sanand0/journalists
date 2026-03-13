@@ -1,0 +1,2 @@
+rows,distinct_person_ids,weight_sum,min_survey_date,max_survey_date,max_age,age_100_plus,max_week_hours,week_hours_gt_112
+415549,415549,964260005421,2024-01-03,2024-12-31,112,48,126,3

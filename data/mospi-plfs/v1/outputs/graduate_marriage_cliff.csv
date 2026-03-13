@@ -1,0 +1,16 @@
+age_band,sex,marital_status,total_m,domestic_pct,regular_pct,student_pct,search_pct
+15-24,female,currently married,2.321,60.9,4.2,4.5,5.9
+15-24,female,divorced/separated,0.014,42.3,30.2,,2.3
+15-24,female,never married,6.603,14.2,14.6,38.7,19.5
+15-24,female,widowed,0.001,,,,
+15-24,male,currently married,0.634,0.3,21.3,9.1,11.4
+15-24,male,never married,8.197,0.1,22.8,27.8,27.6
+15-24,transgender,never married,0.003,,,100.0,
+25-34,female,currently married,9.993,57.5,13.7,0.8,3.6
+25-34,female,divorced/separated,0.06,28.5,57.7,3.1,3.8
+25-34,female,never married,2.692,17.2,36.3,11.3,15.9
+25-34,female,widowed,0.052,28.8,35.6,0.2,6.3
+25-34,male,currently married,8.4,0.1,48.1,0.5,3.8
+25-34,male,divorced/separated,0.027,,28.6,,3.4
+25-34,male,never married,7.13,0.1,43.5,6.3,19.6
+25-34,male,widowed,0.017,,55.2,,13.3

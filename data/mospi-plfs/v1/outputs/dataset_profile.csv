@@ -1,0 +1,2 @@
+rows,distinct_person_ids,distinct_households,min_survey_date,max_survey_date,min_age,max_age,age_100_plus,unequal_weights,weight_p50,weight_p90,weight_p99,weight_sum_raw
+415549,415549,101957,2024-01-03,2024-12-31,0,112,48,0,1348013.0,5273090.0,16221648.080000054,964260005421

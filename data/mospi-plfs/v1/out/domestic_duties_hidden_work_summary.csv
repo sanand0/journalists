@@ -1,0 +1,3 @@
+sector,n,wt,n_had_week_work,wt_had_week_work,pct_had_week_work,avg_week_hours_if_worked,median_week_hours_if_worked,avg_work_status_cells_if_worked,median_work_status_cells_if_worked,p90_work_status_cells_if_worked
+rural,26149,80837198087,3468,9922798117,12.3,20.5,18.0,5.35,7.0,7.0
+urban,32054,55373931938,1015,1636702499,3.0,21.0,19.0,5.45,7.0,7.0

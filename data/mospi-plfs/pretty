@@ -1,0 +1,49 @@
+sex     age_band  social_group          sample_n  weighted_pop  raw_unpaid_family_share_pct  weighted_unpaid_family_share_pct
+female  15-17     other backward class  1218      3995424774    67.7                         70.0
+male    15-17     other backward class  1342      4465745220    77.5                         82.5
+female  15-17     others                523       1542535898    50.0                         59.5
+male    15-17     others                589       1654322162    73.9                         79.8
+female  15-17     scheduled caste       349       1030412794    81.8                         76.4
+male    15-17     scheduled caste       384       1101382122    75.0                         86.3
+female  15-17     scheduled tribe       621       1133921636    81.1                         86.2
+male    15-17     scheduled tribe       771       1099127603    85.7                         92.1
+female  18-24     other backward class  2556      8406540412    69.1                         72.6
+male    18-24     other backward class  2571      8804570378    59.3                         60.0
+female  18-24     others                1015      3097854346    64.1                         73.2
+male    18-24     others                1080      3219302926    54.4                         60.1
+female  18-24     scheduled caste       740       2388370638    63.0                         60.9
+male    18-24     scheduled caste       771       2261799915    53.1                         57.7
+female  18-24     scheduled tribe       1320      2368412765    71.2                         76.2
+male    18-24     scheduled tribe       1380      2281857758    60.1                         62.0
+female  25-34     other backward class  2677      9599076714    58.0                         56.0
+male    25-34     other backward class  2504      8563596696    38.7                         39.0
+female  25-34     others                1287      4133131654    55.7                         57.8
+male    25-34     others                1221      3873630145    37.9                         40.8
+female  25-34     scheduled caste       760       2609558147    58.0                         58.0
+male    25-34     scheduled caste       734       2444910909    34.2                         33.5
+female  25-34     scheduled tribe       1449      2804566897    62.6                         74.0
+male    25-34     scheduled tribe       1439      2649433449    37.0                         36.6
+female  35-44     other backward class  2964      9715773194    54.4                         51.2
+male    35-44     other backward class  2336      8140722333    10.5                         12.0
+female  35-44     others                1454      4252109514    48.7                         52.9
+male    35-44     others                1271      3731213055    13.0                         16.9
+female  35-44     scheduled caste       817       2514427550    51.8                         49.1
+male    35-44     scheduled caste       651       2134343930    7.8                          6.6
+female  35-44     scheduled tribe       1471      2474232280    60.2                         66.7
+male    35-44     scheduled tribe       1283      2212493713    9.2                          10.1
+female  45-59     other backward class  3339      10852960658   54.6                         54.0
+male    45-59     other backward class  3289      10645604285   2.2                          2.7
+female  45-59     others                1918      5321608037    49.7                         50.7
+male    45-59     others                1818      5404344970    3.7                          5.8
+female  45-59     scheduled caste       983       2954111082    52.2                         52.4
+male    45-59     scheduled caste       948       2797278496    1.4                          2.2
+female  45-59     scheduled tribe       1588      2665066755    54.2                         59.9
+male    45-59     scheduled tribe       1578      2761563726    2.4                          2.8
+female  60+       other backward class  2140      6854907313    50.2                         53.9
+male    60+       other backward class  2407      8102445774    5.8                          4.6
+female  60+       others                1477      4147038441    46.6                         43.8
+male    60+       others                1541      4373430309    4.2                          3.9
+female  60+       scheduled caste       609       1884822096    47.8                         50.5
+male    60+       scheduled caste       689       2187204664    4.1                          2.8
+female  60+       scheduled tribe       868       1618402623    50.4                         50.3
+male    60+       scheduled tribe       957       1730884673    6.9                          9.1

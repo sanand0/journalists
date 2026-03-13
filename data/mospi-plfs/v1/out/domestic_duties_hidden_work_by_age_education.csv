@@ -1,0 +1,70 @@
+sector,age_band,education,n,wt,n_had_week_work,pct_had_week_work
+rural,25-44,not literate,1920,7659810524,547,28.6
+rural,45-59,not literate,2520,7752760507,658,23.7
+rural,25-44,primary,1632,5045492603,303,17.2
+rural,15-24,not literate,257,1046034376,34,16.0
+rural,25-44,literate: below primary,425,1316252508,97,15.6
+rural,15-24,postgraduate and above,32,148665096,2,14.6
+rural,45-59,primary,761,2094675166,115,13.7
+rural,45-59,middle,858,2051605281,106,13.5
+urban,15-24,diploma/certificate course,36,56160428,4,12.4
+rural,25-44,middle,3218,7911517310,439,11.7
+rural,45-59,literate: below primary,499,1155459388,83,10.4
+rural,25-44,diploma/certificate course,83,199959914,8,10.4
+urban,60+,diploma/certificate course,25,44124991,3,10.3
+rural,60+,not literate,2828,9129023683,266,8.8
+rural,15-24,middle,1878,5728773124,147,8.7
+rural,25-44,secondary,1665,4810833625,172,8.3
+rural,45-59,graduate,63,224547861,5,8.2
+rural,15-24,primary,510,1702168143,52,7.8
+urban,45-59,diploma/certificate course,52,85475090,5,7.4
+urban,25-44,literate: below primary,343,609775446,19,6.8
+urban,25-44,not literate,1324,2511303089,85,6.7
+rural,25-44,higher secondary,1363,4689921798,94,6.1
+rural,15-24,secondary,1063,2605325251,70,6.0
+rural,45-59,secondary,278,1153745178,27,5.8
+rural,45-59,higher secondary,115,536067747,8,5.7
+rural,15-24,literate: below primary,102,421602434,6,5.7
+rural,25-44,graduate,961,3821430048,62,5.2
+rural,15-24,higher secondary,1017,2972730563,59,4.9
+rural,15-24,graduate,438,1455030055,22,4.9
+urban,25-44,middle,3182,5094473073,134,4.8
+urban,45-59,not literate,1999,3314822663,109,4.8
+urban,25-44,primary,1492,2645043897,78,4.7
+rural,60+,literate: below primary,348,940251623,23,4.7
+urban,15-24,literate: below primary,58,138158738,1,4.3
+urban,45-59,primary,1159,1823601464,45,4.1
+rural,60+,secondary,92,286453747,5,4.1
+rural,60+,middle,330,859974262,19,3.6
+urban,15-24,middle,781,1387911506,19,3.4
+urban,25-44,secondary,2117,3370125598,80,3.1
+urban,15-24,higher secondary,837,1233387429,19,3.0
+urban,45-59,secondary,1245,2058307288,39,2.9
+urban,45-59,literate: below primary,534,925934817,20,2.8
+urban,45-59,middle,1819,2723120030,64,2.7
+rural,60+,primary,458,1319480143,18,2.7
+urban,45-59,postgraduate and above,261,573159117,6,2.7
+urban,60+,middle,849,1303925930,25,2.6
+urban,60+,not literate,1830,3121395444,44,2.3
+rural,25-44,postgraduate and above,189,759611716,13,2.3
+urban,15-24,secondary,706,1029395617,17,2.1
+urban,45-59,higher secondary,750,1423719996,15,2.0
+rural,60+,higher secondary,25,114392401,2,2.0
+urban,25-44,graduate,2718,5306878600,50,1.8
+urban,15-24,graduate,525,929681147,13,1.8
+urban,25-44,higher secondary,2226,3789354237,50,1.7
+urban,45-59,graduate,862,1647708590,18,1.7
+urban,15-24,not literate,154,383539534,3,1.5
+urban,60+,primary,794,1268532399,13,1.3
+urban,60+,secondary,639,1193228236,8,1.2
+urban,60+,literate: below primary,413,686344020,4,1.0
+urban,25-44,postgraduate and above,990,2058636554,14,0.9
+urban,25-44,diploma/certificate course,126,244197177,2,0.9
+urban,15-24,primary,308,678842634,3,0.3
+urban,60+,postgraduate and above,109,204200116,1,0.3
+urban,60+,graduate,356,653608458,1,0.2
+urban,60+,higher secondary,271,535295916,0,0.0
+rural,<15,primary,35,215874022,0,0.0
+urban,15-24,postgraduate and above,55,121831919,0,0.0
+rural,<15,not literate,31,120911620,0,0.0
+rural,15-24,diploma/certificate course,25,76773664,0,0.0

@@ -1,0 +1,7 @@
+sex,funding_source,trained_m,regular_pct,domestic_pct,student_pct,search_pct
+female,own funding,1.421,18.8,23.5,26.1,11.5
+female,govt,0.326,29.9,11.8,15.3,9.8
+female,others,0.052,66.2,7.6,6.3,4.2
+male,own funding,1.537,37.2,0.0,23.7,14.1
+male,govt,0.353,40.8,0.0,26.9,9.2
+male,others,0.073,52.1,0.0,11.3,22.0

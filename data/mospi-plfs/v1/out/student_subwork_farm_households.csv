@@ -1,0 +1,8 @@
+sex,age_band,social_group,sample_n,weighted_pop,raw_subwork_pct,weighted_subwork_pct
+male,18-24,scheduled tribe,459,535838952,26.4,34.0
+female,18-24,scheduled tribe,367,469791968,18.0,28.4
+male,18-24,scheduled caste,298,836240918,25.2,27.4
+male,18-24,other backward class,1049,3647806454,23.7,20.6
+male,18-24,others,501,1643980874,18.0,17.5
+female,18-24,other backward class,720,2586850878,12.5,12.3
+female,18-24,others,366,1277310201,11.2,5.5

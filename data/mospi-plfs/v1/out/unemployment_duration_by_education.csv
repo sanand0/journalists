@@ -1,0 +1,22 @@
+sex,sector,education,n,wt,pct_jobless_3y_plus,pct_jobless_1y_plus
+female,urban,middle,105,105646530,34.4,64.8
+female,rural,secondary,114,147741909,34.3,83.0
+female,urban,postgraduate and above,451,552142886,27.2,71.0
+female,rural,postgraduate and above,205,555831202,24.8,68.5
+female,urban,higher secondary,205,172794890,21.5,59.7
+female,urban,graduate,948,1134148092,21.1,60.2
+male,urban,postgraduate and above,278,413407303,20.4,64.4
+female,rural,higher secondary,192,259545393,19.1,53.4
+male,urban,graduate,1298,1992322641,17.7,57.4
+female,rural,graduate,608,1404557635,17.6,65.1
+male,rural,postgraduate and above,174,514224700,16.5,65.0
+male,rural,higher secondary,476,1169142360,15.2,52.1
+male,urban,middle,329,463762772,14.3,47.9
+male,rural,secondary,301,605274751,13.9,48.2
+male,urban,higher secondary,424,536231891,13.1,55.4
+male,urban,diploma/certificate course,146,203156508,11.5,46.2
+female,rural,middle,153,194185575,10.9,44.5
+male,rural,diploma/certificate course,145,384927241,10.3,45.6
+male,rural,graduate,905,2547135855,10.2,55.8
+male,urban,secondary,240,360697909,8.3,38.8
+male,rural,middle,406,960051561,7.4,44.4

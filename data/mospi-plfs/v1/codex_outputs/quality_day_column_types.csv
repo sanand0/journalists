@@ -1,0 +1,71 @@
+column_name,column_type
+Day 1 - Activity 1 - Hours,VARCHAR
+Day 1 - Activity 1 - Industry,VARCHAR
+Day 1 - Activity 1 - Status,VARCHAR
+Day 1 - Activity 1 - Wage,VARCHAR
+Day 1 - Activity 2 - Hours,VARCHAR
+Day 1 - Activity 2 - Industry,VARCHAR
+Day 1 - Activity 2 - Status,VARCHAR
+Day 1 - Activity 2 - Wage,VARCHAR
+Day 1 - Additional Work Hours,BIGINT
+Day 1 - Total Hours,BIGINT
+Day 2 - Activity 1 - Hours,VARCHAR
+Day 2 - Activity 1 - Industry,VARCHAR
+Day 2 - Activity 1 - Status,VARCHAR
+Day 2 - Activity 1 - Wage,VARCHAR
+Day 2 - Activity 2 - Hours,VARCHAR
+Day 2 - Activity 2 - Industry,VARCHAR
+Day 2 - Activity 2 - Status,VARCHAR
+Day 2 - Activity 2 - Wage,VARCHAR
+Day 2 - Additional Work Hours,BIGINT
+Day 2 - Total Hours,BIGINT
+Day 3 - Activity 1 - Hours,VARCHAR
+Day 3 - Activity 1 - Industry,VARCHAR
+Day 3 - Activity 1 - Status,VARCHAR
+Day 3 - Activity 1 - Wage,VARCHAR
+Day 3 - Activity 2 - Hours,VARCHAR
+Day 3 - Activity 2 - Industry,VARCHAR
+Day 3 - Activity 2 - Status,VARCHAR
+Day 3 - Activity 2 - Wage,VARCHAR
+Day 3 - Additional Work Hours,BIGINT
+Day 3 - Total Hours,BIGINT
+Day 4 - Activity 1 - Hours,VARCHAR
+Day 4 - Activity 1 - Industry,VARCHAR
+Day 4 - Activity 1 - Status,VARCHAR
+Day 4 - Activity 1 - Wage,VARCHAR
+Day 4 - Activity 2 - Hours,VARCHAR
+Day 4 - Activity 2 - Industry,VARCHAR
+Day 4 - Activity 2 - Status,VARCHAR
+Day 4 - Activity 2 - Wage,VARCHAR
+Day 4 - Additional Work Hours,BIGINT
+Day 4 - Total Hours,BIGINT
+Day 5 - Activity 1 - Hours,VARCHAR
+Day 5 - Activity 1 - Industry,VARCHAR
+Day 5 - Activity 1 - Status,VARCHAR
+Day 5 - Activity 1 - Wage,VARCHAR
+Day 5 - Activity 2 - Hours,VARCHAR
+Day 5 - Activity 2 - Industry,VARCHAR
+Day 5 - Activity 2 - Status,VARCHAR
+Day 5 - Activity 2 - Wage,VARCHAR
+Day 5 - Additional Work Hours,BIGINT
+Day 5 - Total Hours,BIGINT
+Day 6 - Activity 1 - Hours,VARCHAR
+Day 6 - Activity 1 - Industry,VARCHAR
+Day 6 - Activity 1 - Status,VARCHAR
+Day 6 - Activity 1 - Wage,VARCHAR
+Day 6 - Activity 2 - Hours,VARCHAR
+Day 6 - Activity 2 - Industry,VARCHAR
+Day 6 - Activity 2 - Status,VARCHAR
+Day 6 - Activity 2 - Wage,VARCHAR
+Day 6 - Additional Work Hours,BIGINT
+Day 6 - Total Hours,BIGINT
+Day 7 - Activity 1 - Hours,VARCHAR
+Day 7 - Activity 1 - Industry,VARCHAR
+Day 7 - Activity 1 - Status,VARCHAR
+Day 7 - Activity 1 - Wage,VARCHAR
+Day 7 - Activity 2 - Hours,VARCHAR
+Day 7 - Activity 2 - Industry,VARCHAR
+Day 7 - Activity 2 - Status,VARCHAR
+Day 7 - Activity 2 - Wage,VARCHAR
+Day 7 - Additional Work Hours,VARCHAR
+Day 7 - Total Hours,VARCHAR

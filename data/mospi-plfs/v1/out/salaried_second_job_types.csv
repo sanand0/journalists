@@ -1,0 +1,17 @@
+sex,sector,contract_type,second_status,cells,wt
+female,rural,no written job contract,worked in h.h. enterprise (self-employed): own account worker,428,818678941
+female,rural,no written job contract,worked as helper in h.h. enterprise (unpaid family worker),205,241229115
+female,rural,no written job contract,worked as regular salaried/wage employee,54,225461131
+female,rural,written job contract: more than 3 years,worked as helper in h.h. enterprise (unpaid family worker),481,846526626
+female,rural,written job contract: more than 3 years,worked in h.h. enterprise (self-employed): own account worker,671,790558000
+female,urban,no written job contract,worked in h.h. enterprise (self-employed): own account worker,255,409175940
+male,rural,no written job contract,worked in h.h. enterprise (self-employed): own account worker,870,1817424584
+male,rural,no written job contract,worked as helper in h.h. enterprise (unpaid family worker),439,1104544137
+male,rural,written job contract: for 1 year or less,worked in h.h. enterprise (self-employed): own account worker,109,276158344
+male,rural,written job contract: more than 3 years,worked in h.h. enterprise (self-employed): own account worker,953,1411659019
+male,rural,written job contract: more than 3 years,worked as helper in h.h. enterprise (unpaid family worker),504,737004128
+male,rural,written job contract: more than 3 years,worked in h.h. enterprise (self-employed): employer,107,295808544
+male,urban,no written job contract,worked in h.h. enterprise (self-employed): own account worker,452,639794250
+male,urban,no written job contract,worked as regular salaried/wage employee,160,318486854
+male,urban,no written job contract,worked as helper in h.h. enterprise (unpaid family worker),164,313332840
+male,urban,written job contract: more than 3 years,worked in h.h. enterprise (self-employed): own account worker,280,200463624

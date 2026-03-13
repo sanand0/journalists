@@ -1,0 +1,22 @@
+sex,sector,workers_count,regular_m,strict_formal_share_pct
+female,rural,less than 6,3.559,13.8
+female,rural,20 and above,2.761,47.3
+female,rural,6 and above but less than 10,1.465,29.6
+female,rural,10 and above but less than 20,0.945,33.2
+female,rural,not known,0.065,49.6
+female,urban,20 and above,5.639,63.0
+female,urban,less than 6,4.964,4.7
+female,urban,6 and above but less than 10,1.737,25.6
+female,urban,10 and above but less than 20,1.628,36.5
+female,urban,not known,0.086,34.5
+male,rural,20 and above,10.976,52.1
+male,rural,less than 6,10.805,6.4
+male,rural,6 and above but less than 10,4.989,27.1
+male,rural,10 and above but less than 20,3.543,42.5
+male,rural,not known,0.452,46.3
+male,urban,20 and above,18.766,64.6
+male,urban,less than 6,10.28,3.4
+male,urban,6 and above but less than 10,4.923,19.2
+male,urban,10 and above but less than 20,4.352,39.9
+male,urban,not known,0.323,46.6
+transgender,urban,not known,0.0,

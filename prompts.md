@@ -1,5 +1,11 @@
 # Prompts
 
+## Hack of the day, SVG alignment (Github Copilot - claude-sonnet-4.6 high)
+
+Modify the hackoftheday/ HTML and SVG to use the Poytner Agate One font from assets/*.otf. Use the bold condensed / condensed versions.
+
+Modify the SVG rendering to native SVG elements: text and tspan (not foreignObject, div), rect, clipPath, defs > style, named fonts, styles scoped via CSS classes on SVG elements, static pre-positioned elements. No JavaScript, div, @import, QR code library, etc. Use robust libraries for conversion if required.
+
 ## Hack of the day, UI fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 medium)
 
 For the newly added cards in cards.json, set the created date to 12 Mar 2026 at 9:30 am SGT.

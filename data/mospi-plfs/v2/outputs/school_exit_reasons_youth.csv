@@ -1,0 +1,7 @@
+sex,age_band,marital_status,n,total_m,raw_domestic_chore_pct,weighted_domestic_chore_pct,weighted_income_pct
+female,18-24,currently married,8402,21.11,71.8,72.7,13.8
+female,15-17,never married,1210,3.482,55.7,55.7,18.5
+female,18-24,never married,7283,15.449,38.8,44.8,28.2
+male,15-17,never married,1297,3.643,4.2,3.8,66.7
+male,18-24,never married,13390,30.585,1.7,1.7,76.0
+male,18-24,currently married,2438,6.156,1.6,1.5,88.6

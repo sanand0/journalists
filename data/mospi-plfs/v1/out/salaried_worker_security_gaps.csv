@@ -1,0 +1,84 @@
+sex,age_band,marital_status,education_band,sector,social_group,religion,sample_n,weighted_pop,raw_no_paid_leave_pct,weighted_no_paid_leave_pct,raw_no_social_security_pct,weighted_no_social_security_pct
+male,35-44,currently married,below_secondary,urban,other backward class,Islam,122,229154432,79.5,80.3,86.9,88.2
+male,45-59,currently married,below_secondary,urban,others,Islam,133,175193063,67.7,74.3,73.7,87.3
+male,18-24,never married,secondary_to_hs,rural,other backward class,Hinduism,161,457206147,76.4,77.1,80.1,84.9
+female,45-59,widowed,below_secondary,urban,other backward class,Hinduism,137,237297087,70.1,69.8,79.6,84.9
+male,25-34,currently married,below_secondary,rural,scheduled caste,Hinduism,168,548920851,71.4,73.3,76.8,83.4
+female,45-59,currently married,below_secondary,urban,other backward class,Hinduism,178,291916285,70.8,77.3,79.2,81.8
+female,35-44,currently married,below_secondary,urban,other backward class,Hinduism,192,349226762,70.3,73.7,78.6,80.3
+male,18-24,never married,below_secondary,urban,others,Hinduism,129,280658651,62.0,71.0,72.9,79.9
+male,60+,currently married,below_secondary,urban,other backward class,Hinduism,131,223168966,74.0,76.9,80.9,79.1
+male,45-59,currently married,below_secondary,urban,other backward class,Islam,144,268897486,75.0,72.4,81.3,78.2
+female,45-59,currently married,below_secondary,urban,scheduled caste,Hinduism,140,251250153,65.7,68.1,72.9,77.0
+male,18-24,never married,below_secondary,urban,scheduled caste,Hinduism,141,310587407,71.6,69.4,78.0,76.7
+male,18-24,never married,secondary_to_hs,urban,other backward class,Hinduism,273,433858028,64.5,65.5,69.6,75.8
+female,35-44,currently married,below_secondary,urban,scheduled caste,Hinduism,177,296728328,69.5,68.8,74.6,75.7
+male,18-24,never married,below_secondary,urban,other backward class,Hinduism,197,394599388,66.5,65.5,72.6,74.5
+male,35-44,currently married,below_secondary,rural,scheduled caste,Hinduism,220,690665945,66.8,73.4,71.8,74.0
+male,25-34,currently married,secondary_to_hs,rural,other backward class,Hinduism,217,615249857,62.7,72.8,66.8,73.4
+male,25-34,currently married,below_secondary,urban,scheduled caste,Hinduism,221,460718513,69.2,67.7,72.4,71.5
+male,18-24,never married,secondary_to_hs,urban,scheduled caste,Hinduism,160,232245310,58.8,61.0,68.1,70.3
+male,45-59,currently married,below_secondary,rural,scheduled caste,Hinduism,246,576582825,61.0,65.8,63.4,70.0
+male,35-44,currently married,secondary_to_hs,rural,scheduled caste,Hinduism,129,290498029,50.4,60.1,54.3,68.6
+male,25-34,currently married,below_secondary,urban,other backward class,Hinduism,356,763375592,62.6,64.1,67.1,68.5
+male,35-44,currently married,below_secondary,urban,other backward class,Hinduism,560,1138970577,63.4,62.1,68.9,68.2
+male,35-44,currently married,below_secondary,rural,others,Hinduism,162,386140550,61.7,61.3,63.6,67.8
+male,25-34,never married,secondary_to_hs,rural,other backward class,Hinduism,121,277663670,60.3,64.0,61.2,67.4
+male,18-24,never married,secondary_to_hs,urban,others,Hinduism,188,338031708,62.8,60.4,68.1,66.3
+male,25-34,currently married,below_secondary,urban,others,Hinduism,212,411534365,60.4,64.4,66.0,66.2
+male,35-44,currently married,below_secondary,urban,scheduled caste,Hinduism,342,658423671,60.2,60.5,62.3,64.9
+male,35-44,currently married,below_secondary,urban,others,Hinduism,396,685709012,54.5,52.5,60.9,63.0
+male,25-34,currently married,below_secondary,rural,other backward class,Hinduism,255,832126464,70.6,63.8,67.8,62.4
+male,45-59,currently married,below_secondary,urban,other backward class,Hinduism,638,1112227174,57.7,59.1,59.4,62.1
+male,45-59,currently married,below_secondary,rural,other backward class,Hinduism,364,1022238976,57.1,60.1,59.1,62.1
+male,45-59,currently married,below_secondary,rural,others,Hinduism,201,351187994,55.7,53.8,57.7,61.0
+male,25-34,currently married,secondary_to_hs,rural,scheduled caste,Hinduism,145,406284630,59.3,62.1,62.8,60.0
+male,25-34,never married,secondary_to_hs,urban,other backward class,Hinduism,161,285656228,54.7,46.1,60.2,58.8
+male,25-34,never married,secondary_to_hs,urban,others,Hinduism,200,317947037,51.0,54.8,57.0,58.7
+male,35-44,currently married,secondary_to_hs,rural,other backward class,Hinduism,254,630778417,51.6,54.9,58.3,58.1
+male,25-34,never married,below_secondary,urban,other backward class,Hinduism,193,372049013,59.1,54.4,58.5,57.9
+male,35-44,currently married,below_secondary,rural,other backward class,Hinduism,393,1146551664,62.3,53.5,64.6,56.9
+male,35-44,currently married,secondary_to_hs,rural,others,Hinduism,142,318976279,50.7,51.3,52.1,56.8
+male,45-59,currently married,below_secondary,urban,others,Hinduism,480,865528395,47.9,49.7,55.0,56.0
+male,25-34,currently married,secondary_to_hs,urban,scheduled caste,Hinduism,174,289996855,55.2,55.8,55.2,55.1
+male,25-34,never married,below_secondary,urban,others,Hinduism,125,228540391,52.0,50.5,57.6,54.3
+male,45-59,currently married,secondary_to_hs,rural,others,Hinduism,130,449316105,37.7,48.0,39.2,53.6
+male,45-59,currently married,below_secondary,urban,scheduled caste,Hinduism,389,633064826,47.8,53.8,49.9,52.8
+male,25-34,currently married,secondary_to_hs,urban,others,Hinduism,247,394399608,47.8,50.0,53.0,52.3
+male,25-34,currently married,secondary_to_hs,urban,other backward class,Hinduism,365,652319199,52.6,51.5,54.0,52.0
+male,35-44,currently married,secondary_to_hs,urban,other backward class,Hinduism,468,884998368,46.8,46.5,51.1,51.7
+male,35-44,currently married,secondary_to_hs,urban,scheduled caste,Hinduism,228,336715916,43.0,44.3,50.4,50.5
+male,35-44,currently married,secondary_to_hs,urban,others,Hinduism,420,716996567,42.4,37.3,49.8,45.7
+male,45-59,currently married,secondary_to_hs,urban,other backward class,Hinduism,465,747463685,41.1,40.6,41.5,42.4
+male,45-59,currently married,secondary_to_hs,urban,others,Hinduism,498,790651195,37.6,42.1,38.6,41.7
+male,45-59,currently married,secondary_to_hs,rural,other backward class,Hinduism,200,590105804,35.5,37.4,36.5,39.0
+male,18-24,never married,graduate+,urban,other backward class,Hinduism,178,343412977,33.7,33.6,33.7,36.8
+male,45-59,currently married,secondary_to_hs,urban,scheduled caste,Hinduism,185,301764224,29.7,28.2,34.1,35.3
+female,35-44,currently married,graduate+,urban,other backward class,Hinduism,174,323185359,20.7,29.8,21.8,30.6
+male,25-34,currently married,graduate+,rural,other backward class,Hinduism,187,746657761,25.7,28.6,33.2,29.9
+male,25-34,never married,graduate+,rural,other backward class,Hinduism,160,389706177,22.5,21.7,28.1,27.3
+male,35-44,currently married,graduate+,rural,other backward class,Hinduism,198,673929205,15.2,16.9,22.2,23.9
+male,18-24,never married,graduate+,urban,others,Hinduism,171,375666979,25.1,29.3,31.0,23.6
+male,25-34,currently married,graduate+,urban,scheduled caste,Hinduism,151,271224974,27.2,24.0,28.5,22.9
+female,25-34,never married,graduate+,urban,other backward class,Hinduism,160,297288492,18.8,12.7,30.0,21.4
+male,35-44,currently married,graduate+,urban,scheduled caste,Hinduism,205,355888091,18.5,18.5,21.5,20.9
+male,25-34,currently married,graduate+,urban,other backward class,Hinduism,543,1129282959,20.6,18.6,22.5,20.5
+male,45-59,currently married,graduate+,urban,scheduled caste,Hinduism,155,235263957,14.8,16.7,16.1,18.8
+male,45-59,currently married,graduate+,rural,others,Hinduism,127,493928883,13.4,15.6,15.7,17.8
+female,35-44,currently married,graduate+,urban,others,Hinduism,222,417689054,8.6,9.6,15.8,17.2
+female,25-34,never married,graduate+,urban,others,Hinduism,224,456293335,19.2,13.7,23.7,15.8
+female,25-34,currently married,graduate+,urban,other backward class,Hinduism,205,425769992,15.1,11.3,21.5,15.8
+male,25-34,never married,graduate+,urban,others,Hinduism,484,940730509,17.6,14.3,21.9,15.4
+female,25-34,currently married,graduate+,urban,others,Hinduism,233,581573852,13.3,11.1,20.2,15.3
+male,25-34,never married,graduate+,urban,other backward class,Hinduism,450,902742145,19.6,20.2,20.9,14.8
+male,45-59,currently married,graduate+,urban,other backward class,Hinduism,487,937470053,14.0,12.8,17.7,14.8
+male,45-59,currently married,graduate+,urban,others,Hinduism,753,1497131696,11.7,10.9,13.8,14.5
+male,25-34,currently married,graduate+,urban,others,Hinduism,450,992744106,15.3,14.7,15.6,14.4
+male,35-44,currently married,graduate+,urban,others,Hinduism,753,1697785408,12.9,10.3,14.9,13.3
+female,45-59,currently married,graduate+,urban,others,Hinduism,200,362222865,10.0,10.9,13.5,12.1
+male,45-59,currently married,graduate+,rural,other backward class,Hinduism,134,483129935,9.0,9.5,14.2,11.6
+male,35-44,currently married,graduate+,urban,other backward class,Hinduism,608,1234565700,13.7,10.9,15.3,11.5
+male,35-44,currently married,graduate+,urban,scheduled tribe,Christianity,199,27025188,3.5,2.7,6.5,8.6
+female,45-59,currently married,graduate+,urban,other backward class,Hinduism,129,226014471,7.0,7.3,7.8,6.4
+male,35-44,currently married,graduate+,rural,scheduled tribe,Christianity,127,51799062,3.9,1.7,3.1,3.5
+male,45-59,currently married,graduate+,urban,scheduled tribe,Christianity,188,23391429,3.7,3.8,1.6,2.7

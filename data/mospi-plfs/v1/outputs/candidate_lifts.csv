@@ -1,0 +1,1141 @@
+outcome,baseline_rate,lift,rate,weighted_yes,weighted_yes_m,weighted_n,weighted_n_m,sample_n,group_size,group_1,value_1,group_2,value_2
+casual_other,0.073559,9.35,0.687734,4983001454,4.983,7245537119,7.246,2357,2,age_band,35-44,Household Type,casual labour in agriculture
+casual_other,0.073559,8.87,0.652797,5442710432,5.443,8337522376,8.338,2566,2,age_band,45-59,Household Type,casual labour in agriculture
+casual_other,0.073559,8.8,0.647289,12092802031,12.093,18682219964,18.682,5826,2,life_stage,working_age,Household Type,casual labour in agriculture
+casual_other,0.073559,7.79,0.573367,13363999969,13.364,23307953484,23.308,7096,2,Marital Status,currently married,Household Type,casual labour in agriculture
+casual_other,0.073559,7.59,0.558578,8953696913,8.954,16029450670,16.029,5476,2,age_band,35-44,Household Type,casual labour in non-agriculture
+casual_other,0.073559,7.36,0.541636,2628549870,2.629,4852984352,4.853,2730,2,age_band,35-44,Household Type,casual labour
+casual_other,0.073559,7.23,0.532109,3271841291,3.272,6148812719,6.149,1858,2,age_band,25-34,Household Type,casual labour in agriculture
+casual_other,0.073559,7.07,0.520191,20183697729,20.184,38800588746,38.801,13166,2,life_stage,working_age,Household Type,casual labour in non-agriculture
+casual_other,0.073559,7.07,0.520329,6347803964,6.348,12199590813,12.2,6813,2,life_stage,working_age,Household Type,casual labour
+casual_other,0.073559,7.03,0.516779,8085247012,8.085,15645477166,15.645,8770,2,Sex,male,Household Type,casual labour
+casual_other,0.073559,6.96,0.511783,2424631789,2.425,4737613121,4.738,2709,2,age_band,45-59,Household Type,casual labour
+casual_other,0.073559,6.84,0.502779,334957573,0.335,666211813,0.666,287,2,Household Religion,Buddhism,Household Type,casual labour in agriculture
+casual_other,0.073559,6.73,0.495291,6731010327,6.731,13590013627,13.59,4855,2,age_band,45-59,Household Type,casual labour in non-agriculture
+casual_other,0.073559,6.63,0.487656,10875819428,10.876,22302245476,22.302,7125,2,Sex,male,Household Type,casual labour in agriculture
+casual_other,0.073559,6.44,0.474039,8857135438,8.857,18684420399,18.684,5746,2,age_band,25-34,Household Type,casual labour in non-agriculture
+casual_other,0.073559,6.42,0.472,26504884641,26.505,56154435662,56.154,18353,2,Sex,male,Household Type,casual labour in non-agriculture
+casual_other,0.073559,6.42,0.471943,1835231284,1.835,3888675402,3.889,1135,2,Marital Status,widowed,Household Type,casual labour in agriculture
+casual_other,0.073559,6.35,0.466828,2496599446,2.497,5348005763,5.348,2817,2,age_band,25-34,Household Type,casual labour
+casual_other,0.073559,6.26,0.460281,23980435199,23.98,52099586290,52.1,17131,2,Marital Status,currently married,Household Type,casual labour in non-agriculture
+casual_other,0.073559,6.2,0.456226,6879011225,6.879,15078091389,15.078,8284,2,Marital Status,currently married,Household Type,casual labour
+casual_other,0.073559,5.87,0.43174,7674191443,7.674,17775021639,17.775,4709,2,General Education Level,not literate,Household Type,casual labour in agriculture
+casual_other,0.073559,5.84,0.429379,3232110463,3.232,7527402063,7.527,2505,2,General Education Level,middle,Household Type,casual labour in agriculture
+casual_other,0.073559,5.64,0.414908,2430007013,2.43,5856730321,5.857,3440,2,General Education Level,middle,Household Type,casual labour
+casual_other,0.073559,5.46,0.401328,7989965494,7.99,19908810651,19.909,6935,2,General Education Level,middle,Household Type,casual labour in non-agriculture
+casual_other,0.073559,5.37,0.394805,395880451,0.396,1002723963,1.003,888,2,Household Religion,Christianity,Household Type,casual labour in agriculture
+casual_other,0.073559,5.25,0.386408,2820436147,2.82,7299118928,7.299,2360,2,General Education Level,primary,Household Type,casual labour in agriculture
+casual_other,0.073559,5.2,0.382676,6497946676,6.498,16980274160,16.98,5024,2,Household Social Group,scheduled caste,Household Type,casual labour in agriculture
+casual_other,0.073559,5.19,0.381932,15367647296,15.368,40236636358,40.237,11790,2,Household Religion,Hinduism,Household Type,casual labour in agriculture
+casual_other,0.073559,5.19,0.381856,3635521940,3.636,9520662973,9.521,3240,2,Household Social Group,scheduled tribe,Household Type,casual labour in agriculture
+casual_other,0.073559,5.17,0.380175,17603544777,17.604,46303820260,46.304,14478,1,Household Type,casual labour in agriculture,,
+casual_other,0.073559,5.17,0.380175,17603544777,17.604,46303820260,46.304,14478,2,Household Type,casual labour in agriculture,Sector,rural
+casual_other,0.073559,5.17,0.380393,17543217365,17.543,46118658600,46.119,14412,2,Technical Education Level,no technical education,Household Type,casual labour in agriculture
+casual_other,0.073559,5.14,0.378032,5842121436,5.842,15454020817,15.454,4810,2,Household Social Group,other backward class,Household Type,casual labour in agriculture
+casual_other,0.073559,5.09,0.37434,1627954725,1.628,4348862310,4.349,1404,2,Household Social Group,others,Household Type,casual labour in agriculture
+casual_other,0.073559,4.85,0.356961,1975567168,1.976,5534410477,5.534,1528,2,age_band,60+,Household Type,casual labour in agriculture
+casual_other,0.073559,4.85,0.356961,1975567168,1.976,5534410477,5.534,1528,2,life_stage,senior,Household Type,casual labour in agriculture
+casual_other,0.073559,4.78,0.351772,1045985880,1.046,2973473601,2.973,1960,2,General Education Level,secondary,Household Type,casual labour
+casual_other,0.073559,4.77,0.351032,1833929263,1.834,5224391068,5.224,2796,2,General Education Level,primary,Household Type,casual labour
+casual_other,0.073559,4.77,0.35096,1194246594,1.194,3402800591,3.403,891,2,Household Religion,Islam,Household Type,casual labour in agriculture
+casual_other,0.073559,4.71,0.346808,1173624265,1.174,3384078172,3.384,1526,2,General Education Level,secondary,Household Type,casual labour in agriculture
+casual_other,0.073559,4.7,0.345855,2876695132,2.877,8317626017,8.318,3855,2,General Education Level,secondary,Household Type,casual labour in non-agriculture
+casual_other,0.073559,4.54,0.333662,6171397584,6.171,18495963872,18.496,6001,2,General Education Level,primary,Household Type,casual labour in non-agriculture
+casual_other,0.073559,4.44,0.326326,498552362,0.499,1527774679,1.528,858,2,Household Religion,Sikhism,Household Type,casual labour in non-agriculture
+casual_other,0.073559,4.42,0.325027,3528877547,3.529,10857179909,10.857,3753,2,life_stage,youth,Household Type,casual labour in agriculture
+casual_other,0.073559,4.33,0.318286,295200457,0.295,927469076,0.927,556,2,Household Religion,Sikhism,Household Type,casual labour in agriculture
+casual_other,0.073559,4.31,0.31712,517537312,0.518,1631990579,1.632,1371,2,Household Social Group,scheduled tribe,Household Type,casual labour
+casual_other,0.073559,4.3,0.316138,1666132193,1.666,5270260608,5.27,3104,2,Household Social Group,others,Household Type,casual labour
+casual_other,0.073559,4.14,0.304389,6768530278,6.769,22236419215,22.236,11840,2,Household Religion,Hinduism,Household Type,casual labour
+casual_other,0.073559,4.14,0.304443,132548830,0.133,435380907,0.435,413,2,Marital Status,divorced/separated,Household Social Group,scheduled tribe
+casual_other,0.073559,4.13,0.304013,478461196,0.478,1573817314,1.574,576,2,General Education Level,graduate,Household Type,casual labour in non-agriculture
+casual_other,0.073559,4.12,0.303174,8596418131,8.596,28354704358,28.355,9689,2,life_stage,youth,Household Type,casual labour in non-agriculture
+casual_other,0.073559,4.11,0.30247,665204164,0.665,2199236550,2.199,905,2,General Education Level,higher secondary,Household Type,casual labour in agriculture
+casual_other,0.073559,4.06,0.298518,9165059464,9.165,30701816574,30.702,17017,1,Household Type,casual labour,,
+casual_other,0.073559,4.06,0.298518,9165059464,9.165,30701816574,30.702,17017,2,Household Type,casual labour,Sector,urban
+casual_other,0.073559,4.06,0.298863,9070269093,9.07,30349268240,30.349,16800,2,Technical Education Level,no technical education,Household Type,casual labour
+casual_other,0.073559,4.04,0.297266,2587491071,2.587,8704306310,8.704,4664,2,Household Social Group,scheduled caste,Household Type,casual labour
+casual_other,0.073559,3.96,0.291078,4393898888,4.394,15095259077,15.095,7878,2,Household Social Group,other backward class,Household Type,casual labour
+casual_other,0.073559,3.95,0.290339,1308828496,1.309,4507933164,4.508,1343,2,life_stage,youth,General Education Level,literate: below primary
+casual_other,0.073559,3.95,0.290712,639777998,0.64,2200724996,2.201,677,2,age_band,15-24,General Education Level,literate: below primary
+casual_other,0.073559,3.93,0.288944,2382463162,2.382,8245405449,8.245,4749,2,life_stage,youth,Household Type,casual labour
+casual_other,0.073559,3.87,0.284682,1961740040,1.962,6890983926,6.891,3641,2,Household Religion,Islam,Household Type,casual labour
+casual_other,0.073559,3.86,0.284298,1512106158,1.512,5318741575,5.319,2195,2,General Education Level,higher secondary,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.82,0.281327,98141893,0.098,348854007,0.349,277,2,Household Religion,Sikhism,Household Type,casual labour
+casual_other,0.073559,3.81,0.280312,6727725349,6.728,24000824293,24.001,7352,2,Sex,female,Household Type,casual labour in agriculture
+casual_other,0.073559,3.8,0.279488,251047714,0.251,898242894,0.898,1008,2,Household Religion,Christianity,Household Type,casual labour
+casual_other,0.073559,3.77,0.277057,2917666455,2.918,10530928057,10.531,4571,2,Household Social Group,others,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.76,0.276631,4110298265,4.11,14858397650,14.858,5885,2,Household Social Group,scheduled tribe,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.72,0.27363,24167320897,24.167,88321264782,88.321,27070,2,Household Religion,Hinduism,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.71,0.272735,29911124108,29.911,109671085048,109.671,35868,1,Household Type,casual labour in non-agriculture,,
+casual_other,0.073559,3.71,0.272735,29911124108,29.911,109671085048,109.671,35868,2,Household Type,casual labour in non-agriculture,Sector,rural
+casual_other,0.073559,3.71,0.272596,29749807777,29.75,109135351684,109.135,35633,2,Technical Education Level,no technical education,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.71,0.272918,10615304790,10.615,38895598132,38.896,12008,2,Household Social Group,scheduled caste,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.7,0.271944,621542563,0.622,2285555356,2.286,1613,2,Household Religion,Christianity,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.67,0.270299,12267854598,12.268,45386161209,45.386,13404,2,Household Social Group,other backward class,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.57,0.262675,4349753251,4.35,16559464725,16.559,5747,2,Household Religion,Islam,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.55,0.26107,1359875735,1.36,5208858834,5.209,1600,2,age_band,25-34,General Education Level,literate: below primary
+casual_other,0.073559,3.54,0.260275,1757681094,1.758,6753165602,6.753,2012,2,General Education Level,literate: below primary,Household Type,casual labour in agriculture
+casual_other,0.073559,3.5,0.257568,192174181,0.192,746111486,0.746,726,2,age_band,35-44,Household Religion,Buddhism
+casual_other,0.073559,3.35,0.246445,1924126401,1.924,7807527659,7.808,2798,2,age_band,15-24,Household Type,casual labour in agriculture
+casual_other,0.073559,3.33,0.244989,2266139226,2.266,9249978038,9.25,4462,2,General Education Level,not literate,Household Type,casual labour
+casual_other,0.073559,3.26,0.240024,1766179695,1.766,7358331336,7.358,3049,2,age_band,35-44,General Education Level,literate: below primary
+casual_other,0.073559,3.26,0.239996,479790713,0.48,1999162121,1.999,1373,2,General Education Level,higher secondary,Household Type,casual labour
+casual_other,0.073559,3.24,0.238148,6447796275,6.448,27074730492,27.075,10897,2,age_band,35-44,Household Social Group,scheduled caste
+casual_other,0.073559,3.24,0.238247,219205574,0.219,920077038,0.92,735,2,age_band,25-34,Household Religion,Buddhism
+casual_other,0.073559,3.18,0.233954,218518768,0.219,934026267,0.934,389,2,Marital Status,divorced/separated,General Education Level,not literate
+casual_other,0.073559,3.12,0.229417,83919961,0.084,365796721,0.366,336,2,Household Religion,others,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.1,0.228226,430129043,0.43,1884660976,1.885,978,2,Marital Status,widowed,Household Type,casual labour
+casual_other,0.073559,3.09,0.227285,426688313,0.427,1877330753,1.877,961,2,Sex,male,Marital Status,divorced/separated
+casual_other,0.073559,3.08,0.226605,2822110033,2.822,12453851267,12.454,9099,2,age_band,35-44,Household Social Group,scheduled tribe
+casual_other,0.073559,3.06,0.224825,4238273182,4.238,18851408408,18.851,6778,2,age_band,15-24,Household Type,casual labour in non-agriculture
+casual_other,0.073559,3.03,0.223212,184566889,0.185,826867276,0.827,386,2,Marital Status,divorced/separated,Household Social Group,scheduled caste
+casual_other,0.073559,3.01,0.221598,15677823134,15.678,70748866344,70.749,28204,2,life_stage,working_age,Household Social Group,scheduled caste
+casual_other,0.073559,2.98,0.219332,492054016,0.492,2243424201,2.243,1945,2,life_stage,working_age,Household Religion,Buddhism
+casual_other,0.073559,2.97,0.218256,6192487775,6.192,28372541450,28.373,11614,2,age_band,45-59,Household Social Group,scheduled caste
+casual_other,0.073559,2.93,0.215425,14650806908,14.651,68008725053,68.009,29892,2,Sex,male,age_band,35-44
+casual_other,0.073559,2.92,0.214583,182684975,0.183,851350591,0.851,288,2,General Education Level,graduate,Household Type,casual labour in agriculture
+casual_other,0.073559,2.91,0.214385,1180486021,1.18,5506393026,5.506,3306,2,age_band,15-24,Household Type,casual labour
+casual_other,0.073559,2.9,0.213282,133195921,0.133,624505085,0.625,295,2,Marital Status,divorced/separated,General Education Level,primary
+casual_other,0.073559,2.88,0.211873,3944531241,3.945,18617392162,18.617,6339,2,age_band,25-34,General Education Level,primary
+casual_other,0.073559,2.83,0.207875,7954560213,7.955,38266060539,38.266,10890,2,General Education Level,not literate,Household Type,casual labour in non-agriculture
+casual_other,0.073559,2.83,0.208175,4419845560,4.42,21231413188,21.231,9238,2,life_stage,working_age,General Education Level,literate: below primary
+casual_other,0.073559,2.8,0.205733,833088477,0.833,4049358016,4.049,2118,2,General Education Level,literate: below primary,Household Type,casual labour
+casual_other,0.073559,2.78,0.204828,15312771818,15.313,74759239033,74.759,32091,2,Sex,male,age_band,25-34
+casual_other,0.073559,2.77,0.203872,3025429408,3.025,14839841150,14.84,9578,2,age_band,25-34,Household Social Group,scheduled tribe
+casual_other,0.073559,2.76,0.203116,2030265801,2.03,9995588939,9.996,2795,2,life_stage,youth,General Education Level,not literate
+casual_other,0.073559,2.75,0.202193,5739933816,5.74,28388342939,28.388,9621,2,age_band,35-44,General Education Level,not literate
+casual_other,0.073559,2.75,0.202183,482168104,0.482,2384805521,2.385,1016,2,Marital Status,divorced/separated,Sector,rural
+casual_other,0.073559,2.74,0.201845,6541341611,6.541,32407700730,32.408,22808,2,life_stage,working_age,Household Social Group,scheduled tribe
+casual_other,0.073559,2.73,0.200614,3843025022,3.843,19156288724,19.156,6568,2,life_stage,youth,General Education Level,primary
+casual_other,0.073559,2.72,0.199751,544619122,0.545,2726488018,2.726,2117,2,Marital Status,currently married,Household Religion,Buddhism
+casual_other,0.073559,2.7,0.198872,150954467,0.151,759054943,0.759,512,2,General Education Level,graduate,Household Type,casual labour
+casual_other,0.073559,2.67,0.196255,872653256,0.873,4446521067,4.447,1885,2,age_band,35-44,Marital Status,widowed
+casual_other,0.073559,2.66,0.19541,18241387150,18.241,93349274116,93.349,35991,2,Marital Status,currently married,Household Social Group,scheduled caste
+casual_other,0.073559,2.65,0.195245,2794675798,2.795,14313668873,14.314,3675,2,age_band,25-34,General Education Level,not literate
+casual_other,0.073559,2.65,0.194575,208087072,0.208,1069444768,1.069,514,2,age_band,25-34,Marital Status,divorced/separated
+casual_other,0.073559,2.64,0.194268,35008716147,35.009,180208307883,180.208,79937,2,Sex,male,life_stage,working_age
+casual_other,0.073559,2.64,0.194217,104392064,0.104,537501711,0.538,590,2,General Education Level,primary,Household Religion,Buddhism
+casual_other,0.073559,2.63,0.19345,18644849195,18.645,96380590531,96.381,36948,2,Sex,male,Household Social Group,scheduled caste
+casual_other,0.073559,2.62,0.193054,6074483367,6.074,31465182354,31.465,11793,2,age_band,25-34,Household Social Group,scheduled caste
+casual_other,0.073559,2.6,0.191455,4164029216,4.164,21749435645,21.749,9097,2,age_band,35-44,General Education Level,primary
+casual_other,0.073559,2.56,0.188557,849261841,0.849,4504010715,4.504,1360,2,age_band,15-24,General Education Level,not literate
+casual_other,0.073559,2.55,0.18764,596111691,0.596,3176890013,3.177,2756,2,Household Religion,Buddhism,Sector,rural
+casual_other,0.073559,2.54,0.186726,1016712772,1.017,5444935830,5.445,1882,2,Marital Status,widowed,Household Type,casual labour in non-agriculture
+casual_other,0.073559,2.53,0.18594,5088951557,5.089,27368793448,27.369,11406,2,Marital Status,currently married,General Education Level,literate: below primary
+casual_other,0.073559,2.53,0.186213,2019040244,2.019,10842656553,10.843,3768,2,age_band,15-24,General Education Level,primary
+casual_other,0.073559,2.53,0.186282,117562117,0.118,631096105,0.631,289,1,General Education Level,literate without formal schooling: EGS/NFEC/AEC,,
+casual_other,0.073559,2.53,0.186282,117562117,0.118,631096105,0.631,289,2,General Education Level,literate without formal schooling: EGS/NFEC/AEC,Technical Education Level,no technical education
+casual_other,0.073559,2.51,0.184913,7987055290,7.987,43193572094,43.194,27554,2,Marital Status,currently married,Household Social Group,scheduled tribe
+casual_other,0.073559,2.47,0.18179,16551880035,16.552,91049335308,91.049,32449,2,life_stage,working_age,General Education Level,not literate
+casual_other,0.073559,2.45,0.180494,42571745909,42.572,235862865285,235.863,101291,2,Sex,male,Marital Status,currently married
+casual_other,0.073559,2.45,0.179896,2309303259,2.309,12836912638,12.837,9004,2,age_band,45-59,Household Social Group,scheduled tribe
+casual_other,0.073559,2.45,0.179889,108016215,0.108,600460989,0.6,515,2,General Education Level,secondary,Household Religion,Buddhism
+casual_other,0.073559,2.44,0.179649,426352482,0.426,2373258813,2.373,1322,2,age_band,60+,Household Type,casual labour
+casual_other,0.073559,2.44,0.179649,426352482,0.426,2373258813,2.373,1322,2,life_stage,senior,Household Type,casual labour
+casual_other,0.073559,2.44,0.179309,108927374,0.109,607484740,0.607,596,2,General Education Level,literate: below primary,Household Religion,Buddhism
+casual_other,0.073559,2.43,0.178905,1962840628,1.963,10971431186,10.971,5255,2,age_band,45-59,General Education Level,literate: below primary
+casual_other,0.073559,2.35,0.173136,16471109228,16.471,95133824816,95.134,34953,2,age_band,35-44,Sector,rural
+casual_other,0.073559,2.33,0.171753,15188736197,15.189,88433812675,88.434,40221,2,Sex,male,General Education Level,middle
+casual_other,0.073559,2.33,0.171091,12980447098,12.98,75868638816,75.869,34431,2,Sex,male,age_band,45-59
+casual_other,0.073559,2.33,0.1717,9198079872,9.198,53570668297,53.571,22754,2,life_stage,working_age,General Education Level,primary
+casual_other,0.073559,2.33,0.171481,539481462,0.539,3146010638,3.146,1664,2,life_stage,working_age,Marital Status,divorced/separated
+casual_other,0.073559,2.32,0.170848,9198274381,9.198,53838901720,53.839,20588,2,age_band,45-59,General Education Level,not literate
+casual_other,0.073559,2.29,0.16821,5642317461,5.642,33543393150,33.543,13352,2,General Education Level,middle,Household Social Group,scheduled caste
+casual_other,0.073559,2.29,0.168262,448038089,0.448,2662738761,2.663,2218,2,Sex,male,Household Religion,Buddhism
+casual_other,0.073559,2.27,0.16694,187073912,0.187,1120603991,1.121,468,2,age_band,25-34,Marital Status,widowed
+casual_other,0.073559,2.25,0.165794,650621005,0.651,3924265791,3.924,2087,2,Marital Status,divorced/separated,Technical Education Level,no technical education
+casual_other,0.073559,2.23,0.163772,5371814006,5.372,32800517485,32.801,14475,2,age_band,25-34,General Education Level,middle
+casual_other,0.073559,2.22,0.163281,7376327943,7.376,45175594235,45.176,30121,2,Sex,male,Household Social Group,scheduled tribe
+casual_other,0.073559,2.22,0.163368,163345251,0.163,999858887,1.0,569,2,age_band,45-59,Marital Status,divorced/separated
+casual_other,0.073559,2.21,0.162293,545392820,0.545,3360534242,3.361,1536,2,Marital Status,divorced/separated,Household Religion,Hinduism
+casual_other,0.073559,2.21,0.162372,167686595,0.168,1032727978,1.033,817,2,age_band,45-59,Household Religion,Buddhism
+casual_other,0.073559,2.21,0.162302,50225556,0.05,309457999,0.309,466,2,age_band,35-44,Household Religion,others
+casual_other,0.073559,2.19,0.161225,11198448550,11.198,69458403444,69.458,27953,2,Sex,male,General Education Level,primary
+casual_other,0.073559,2.18,0.160335,2641616615,2.642,16475570585,16.476,4950,2,General Education Level,literate: below primary,Household Type,casual labour in non-agriculture
+casual_other,0.073559,2.18,0.160324,652267049,0.652,4068427783,4.068,2179,1,Marital Status,divorced/separated,,
+casual_other,0.073559,2.16,0.159101,166983957,0.167,1049549638,1.05,875,2,General Education Level,middle,Household Religion,Buddhism
+casual_other,0.073559,2.14,0.157306,4970539032,4.971,31597800042,31.598,15681,2,age_band,35-44,General Education Level,middle
+casual_other,0.073559,2.13,0.156645,39130050428,39.13,249800686366,249.801,90869,2,life_stage,working_age,Sector,rural
+casual_other,0.073559,2.12,0.156076,4429324969,4.429,28379337775,28.379,10687,2,General Education Level,primary,Household Social Group,scheduled caste
+casual_other,0.073559,2.11,0.155043,10531999548,10.532,67929338019,67.929,28024,2,Marital Status,currently married,General Education Level,primary
+casual_other,0.073559,2.11,0.155157,21952702,0.022,141487008,0.141,266,2,Marital Status,divorced/separated,Household Religion,Christianity
+casual_other,0.073559,2.08,0.152698,1123342151,1.123,7356619149,7.357,2616,2,age_band,60+,Household Type,casual labour in non-agriculture
+casual_other,0.073559,2.08,0.152698,1123342151,1.123,7356619149,7.357,2616,2,life_stage,senior,Household Type,casual labour in non-agriculture
+casual_other,0.073559,2.07,0.152567,308333584,0.308,2020971439,2.021,1161,2,age_band,45-59,Marital Status,never married
+casual_other,0.073559,2.06,0.151644,225498166,0.225,1487025969,1.487,773,2,age_band,35-44,Marital Status,divorced/separated
+casual_other,0.073559,2.05,0.150954,17621650490,17.622,116735235718,116.735,40790,2,Marital Status,currently married,General Education Level,not literate
+casual_other,0.073559,2.04,0.1504,641464075,0.641,4265042787,4.265,2600,2,age_band,35-44,Marital Status,never married
+casual_other,0.073559,2.03,0.149552,2302308138,2.302,15394663847,15.395,12142,2,General Education Level,middle,Household Social Group,scheduled tribe
+casual_other,0.073559,2.03,0.149567,486871768,0.487,3255216924,3.255,4760,2,age_band,35-44,Household Religion,Christianity
+casual_other,0.073559,2.02,0.148713,645880545,0.646,4343131530,4.343,1689,2,Household Religion,Buddhism,Household Social Group,scheduled caste
+domestic_only,0.140326,3.97,0.557594,2256399768,2.256,4046673559,4.047,2133,2,age_band,45-59,Household Type,others
+domestic_only,0.140326,3.74,0.52517,4271278273,4.271,8133139096,8.133,4021,2,life_stage,working_age,Household Type,others
+domestic_only,0.140326,3.54,0.497022,1267931256,1.268,2551055990,2.551,1183,2,age_band,35-44,Household Type,others
+domestic_only,0.140326,3.31,0.464689,8628717479,8.629,18568816409,18.569,8437,2,Marital Status,currently married,Household Type,others
+domestic_only,0.140326,3.27,0.459564,523329762,0.523,1138753300,1.139,493,2,Sex,female,Household Religion,Jainism
+domestic_only,0.140326,3.17,0.445465,14045167426,14.045,31529244508,31.529,14894,2,Sex,female,General Education Level,graduate
+domestic_only,0.140326,3.16,0.444009,34596851970,34.597,77919312142,77.919,32412,2,Sex,female,age_band,25-34
+domestic_only,0.140326,3.08,0.432738,1369768785,1.37,3165351391,3.165,1498,2,age_band,25-34,Household Type,others
+domestic_only,0.140326,3.06,0.429062,106543790387,106.544,248318099075,248.318,105850,2,Sex,female,Marital Status,currently married
+domestic_only,0.140326,3.02,0.423427,12766497605,12.766,30150414196,30.15,11813,2,age_band,15-24,Marital Status,currently married
+domestic_only,0.140326,2.95,0.414163,10621572336,10.622,25645893566,25.646,11149,2,Sex,female,Household Type,others
+domestic_only,0.140326,2.88,0.403594,20829062501,20.829,51608963342,51.609,33922,2,Sex,female,Household Type,self-employed
+domestic_only,0.140326,2.85,0.400252,22279422632,22.279,55663518445,55.664,24406,2,Sex,female,age_band,60+
+domestic_only,0.140326,2.85,0.400252,22279422632,22.279,55663518445,55.664,24406,2,Sex,female,life_stage,senior
+domestic_only,0.140326,2.83,0.397818,55403593730,55.404,139268784368,139.269,86426,2,Sex,female,Sector,urban
+domestic_only,0.140326,2.76,0.38763,4001907785,4.002,10324040491,10.324,5024,2,Sex,female,General Education Level,postgraduate and above
+domestic_only,0.140326,2.62,0.367551,15238236495,15.238,41458854509,41.459,19351,2,Sex,female,General Education Level,higher secondary
+domestic_only,0.140326,2.6,0.365082,68110691917,68.111,186562648444,186.563,82890,2,Sex,female,life_stage,working_age
+domestic_only,0.140326,2.6,0.364706,27969053620,27.969,76689262282,76.689,34737,2,Sex,female,age_band,45-59
+domestic_only,0.140326,2.58,0.361466,16314523090,16.315,45134342870,45.134,22113,2,Sex,female,General Education Level,secondary
+domestic_only,0.140326,2.53,0.355462,30189350351,30.189,84929983033,84.93,32915,2,life_stage,youth,Marital Status,currently married
+domestic_only,0.140326,2.51,0.3528,26308101973,26.308,74569464943,74.569,35699,2,Sex,female,General Education Level,middle
+domestic_only,0.140326,2.49,0.349702,5265163842,5.265,15056133449,15.056,8246,2,Sex,female,Household Type,casual labour
+domestic_only,0.140326,2.48,0.347585,210750923,0.211,606328455,0.606,276,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+domestic_only,0.140326,2.47,0.346711,1957571356,1.958,5646118802,5.646,3624,2,Marital Status,widowed,Household Type,self-employed
+domestic_only,0.140326,2.45,0.344454,6385241776,6.385,18537306381,18.537,11391,2,Marital Status,widowed,Sector,urban
+domestic_only,0.140326,2.42,0.339787,24318152476,24.318,71568743932,71.569,32275,2,Sex,female,age_band,35-44
+domestic_only,0.140326,2.42,0.340194,5920738203,5.921,17404017007,17.404,7788,2,age_band,60+,Household Type,others
+domestic_only,0.140326,2.42,0.340194,5920738203,5.921,17404017007,17.404,7788,2,life_stage,senior,Household Type,others
+domestic_only,0.140326,2.4,0.33644,38977701978,38.978,115853511857,115.854,54080,2,Sex,female,Household Social Group,others
+domestic_only,0.140326,2.4,0.336373,429644639,0.43,1277286784,1.277,549,2,Marital Status,currently married,Household Religion,Jainism
+domestic_only,0.140326,2.39,0.335993,832623344,0.833,2478094565,2.478,1271,2,Sex,female,General Education Level,diploma/certificate course
+domestic_only,0.140326,2.38,0.333311,38585654441,38.586,115764779309,115.765,59968,2,Sex,female,Household Type,regular wage/salary earning
+domestic_only,0.140326,2.38,0.333893,459096545,0.459,1374980870,1.375,1020,2,Household Religion,Christianity,Household Type,others
+domestic_only,0.140326,2.36,0.331453,40206774693,40.207,121304688670,121.305,52610,2,Sex,female,life_stage,youth
+domestic_only,0.140326,2.33,0.327031,10744379245,10.744,32854363540,32.854,20859,2,age_band,60+,Sector,urban
+domestic_only,0.140326,2.33,0.327031,10744379245,10.744,32854363540,32.854,20859,2,life_stage,senior,Sector,urban
+domestic_only,0.140326,2.32,0.325301,46883156911,46.883,144122323778,144.122,87405,2,Marital Status,currently married,Sector,urban
+domestic_only,0.140326,2.31,0.324048,17810058333,17.81,54961170591,54.961,35231,2,Marital Status,currently married,Household Type,self-employed
+domestic_only,0.140326,2.29,0.320821,20168811828,20.169,62866327638,62.866,31179,2,Sex,female,Household Religion,Islam
+domestic_only,0.140326,2.28,0.319906,1001283931,1.001,3129926901,3.13,3215,2,age_band,60+,Household Religion,Christianity
+domestic_only,0.140326,2.28,0.319906,1001283931,1.001,3129926901,3.13,3215,2,life_stage,senior,Household Religion,Christianity
+domestic_only,0.140326,2.28,0.320616,223742086,0.224,697850159,0.698,374,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in medicine
+domestic_only,0.140326,2.27,0.318397,1791273564,1.791,5625910895,5.626,2682,2,General Education Level,middle,Household Type,others
+domestic_only,0.140326,2.25,0.316091,816093466,0.816,2581831573,2.582,2194,2,Sex,female,Household Religion,Buddhism
+domestic_only,0.140326,2.22,0.31102,1303675134,1.304,4191605713,4.192,2311,2,General Education Level,graduate,Household Type,others
+domestic_only,0.140326,2.19,0.307751,534708277,0.535,1737470476,1.737,944,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+domestic_only,0.140326,2.18,0.30571,311574838,0.312,1019183211,1.019,442,2,life_stage,working_age,Household Religion,Jainism
+domestic_only,0.140326,2.17,0.303887,14742517831,14.743,48513206943,48.513,30665,2,age_band,45-59,Sector,urban
+domestic_only,0.140326,2.17,0.304836,5002449264,5.002,16410318619,16.41,10573,2,age_band,25-34,Household Type,self-employed
+domestic_only,0.140326,2.14,0.300545,4168668779,4.169,13870352592,13.87,7100,2,Household Social Group,others,Household Type,others
+domestic_only,0.140326,2.13,0.299047,3357932235,3.358,11228789921,11.229,7430,2,age_band,60+,Household Type,self-employed
+domestic_only,0.140326,2.13,0.299047,3357932235,3.358,11228789921,11.229,7430,2,life_stage,senior,Household Type,self-employed
+domestic_only,0.140326,2.11,0.296063,367515955,0.368,1241344641,1.241,747,2,General Education Level,postgraduate and above,Household Type,others
+domestic_only,0.140326,2.1,0.294791,4442452199,4.442,15069844529,15.07,7700,2,Marital Status,widowed,Household Type,regular wage/salary earning
+domestic_only,0.140326,2.09,0.293981,4454659386,4.455,15152874115,15.153,7503,2,Marital Status,widowed,Household Social Group,others
+domestic_only,0.140326,2.09,0.293361,1321302268,1.321,4504010715,4.504,1360,2,age_band,15-24,General Education Level,not literate
+domestic_only,0.140326,2.09,0.29352,553185939,0.553,1884660976,1.885,978,2,Marital Status,widowed,Household Type,casual labour
+domestic_only,0.140326,2.08,0.291687,13072110098,13.072,44815500473,44.816,28984,2,life_stage,working_age,Household Type,self-employed
+domestic_only,0.140326,2.08,0.292339,5099712722,5.1,17444536317,17.445,11304,2,age_band,35-44,Household Type,self-employed
+domestic_only,0.140326,2.07,0.291012,690645623,0.691,2373258813,2.373,1322,2,age_band,60+,Household Type,casual labour
+domestic_only,0.140326,2.07,0.291012,690645623,0.691,2373258813,2.373,1322,2,life_stage,senior,Household Type,casual labour
+domestic_only,0.140326,2.07,0.290605,501193014,0.501,1724654645,1.725,646,2,Sex,female,Technical Education Level,technical degree in engineering/technology
+domestic_only,0.140326,2.06,0.289393,698287731,0.698,2412937722,2.413,1089,2,Sex,female,Technical Education Level,technical degree in other subjects
+domestic_only,0.140326,2.05,0.28831,5491858309,5.492,19048480226,19.048,12392,2,age_band,45-59,Household Type,self-employed
+domestic_only,0.140326,2.04,0.286449,2146215430,2.146,7492481265,7.492,3346,2,Marital Status,widowed,Household Type,others
+domestic_only,0.140326,2.03,0.284791,33315405331,33.315,116982042099,116.982,71964,2,life_stage,working_age,Sector,urban
+domestic_only,0.140326,2.03,0.285128,4299187180,4.299,15078091389,15.078,8284,2,Marital Status,currently married,Household Type,casual labour
+domestic_only,0.140326,2.03,0.284253,1647213486,1.647,5794878495,5.795,2749,2,Marital Status,widowed,Household Religion,Islam
+domestic_only,0.140326,2.03,0.284644,1522275135,1.522,5348005763,5.348,2817,2,age_band,25-34,Household Type,casual labour
+domestic_only,0.140326,2.02,0.284159,5556056846,5.556,19552664252,19.553,9683,2,age_band,25-34,Household Religion,Islam
+domestic_only,0.140326,2.01,0.282749,62644688407,62.645,221555984747,221.556,85764,2,Sex,female,Household Social Group,other backward class
+domestic_only,0.140326,2.01,0.282619,9380182333,9.38,33190159934,33.19,15907,2,age_band,60+,Household Social Group,others
+domestic_only,0.140326,2.01,0.282619,9380182333,9.38,33190159934,33.19,15907,2,life_stage,senior,Household Social Group,others
+domestic_only,0.140326,2.01,0.282378,6150494844,6.15,21781097115,21.781,11490,2,age_band,60+,Household Type,regular wage/salary earning
+domestic_only,0.140326,2.01,0.282378,6150494844,6.15,21781097115,21.781,11490,2,life_stage,senior,Household Type,regular wage/salary earning
+domestic_only,0.140326,2.01,0.281534,1568708707,1.569,5572013687,5.572,3052,2,Marital Status,widowed,General Education Level,middle
+domestic_only,0.140326,2.01,0.282173,1285482025,1.285,4555649651,4.556,2413,2,General Education Level,secondary,Household Type,others
+domestic_only,0.140326,2.0,0.281005,13656857306,13.657,48600109611,48.6,28618,2,age_band,25-34,Sector,urban
+domestic_only,0.140326,2.0,0.281051,3500376773,3.5,12454603104,12.455,4118,2,General Education Level,not literate,Household Type,others
+domestic_plus,0.048723,4.81,0.234483,598179991,0.598,2551055990,2.551,1183,2,age_band,35-44,Household Type,others
+domestic_plus,0.048723,4.57,0.222744,1569325359,1.569,7045422723,7.045,3944,2,Sex,female,Household Religion,Sikhism
+domestic_plus,0.048723,3.77,0.18375,436022528,0.436,2372913344,2.373,1255,2,age_band,35-44,Household Religion,Sikhism
+domestic_plus,0.048723,3.75,0.182548,1395818540,1.396,7646326871,7.646,4251,2,Marital Status,currently married,Household Religion,Sikhism
+domestic_plus,0.048723,3.72,0.181343,1474885966,1.475,8133139096,8.133,4021,2,life_stage,working_age,Household Type,others
+domestic_plus,0.048723,3.67,0.178836,415667897,0.416,2324297206,2.324,1341,2,age_band,25-34,Household Religion,Sikhism
+domestic_plus,0.048723,3.64,0.177193,1053926867,1.054,5947896889,5.948,3334,2,life_stage,working_age,Household Religion,Sikhism
+domestic_plus,0.048723,3.58,0.174535,552463066,0.552,3165351391,3.165,1498,2,age_band,25-34,Household Type,others
+domestic_plus,0.048723,3.41,0.165939,12929815042,12.93,77919312142,77.919,32412,2,Sex,female,age_band,25-34
+domestic_plus,0.048723,3.41,0.166248,5012451694,5.012,30150414196,30.15,11813,2,age_band,15-24,Marital Status,currently married
+domestic_plus,0.048723,3.25,0.15846,374541805,0.375,2363633538,2.364,1345,2,age_band,45-59,Household Religion,Sikhism
+domestic_plus,0.048723,3.24,0.158107,39260846444,39.261,248318099075,248.318,105850,2,Sex,female,Marital Status,currently married
+domestic_plus,0.048723,2.96,0.144416,10335671280,10.336,71568743932,71.569,32275,2,Sex,female,age_band,35-44
+domestic_plus,0.048723,2.95,0.143777,104650288,0.105,727864903,0.728,504,2,Household Religion,Sikhism,Household Type,others
+domestic_plus,0.048723,2.91,0.14184,26462040803,26.462,186562648444,186.563,82890,2,Sex,female,life_stage,working_age
+domestic_plus,0.048723,2.83,0.137823,294006568,0.294,2133219040,2.133,1140,2,General Education Level,secondary,Household Religion,Sikhism
+domestic_plus,0.048723,2.81,0.136896,2557817038,2.558,18684420399,18.684,5746,2,age_band,25-34,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.79,0.13601,1359504277,1.36,9995588939,9.996,2795,2,life_stage,youth,General Education Level,not literate
+domestic_plus,0.048723,2.76,0.134246,283601689,0.284,2112557272,2.113,1079,2,General Education Level,higher secondary,Household Religion,Sikhism
+domestic_plus,0.048723,2.74,0.133481,7143376113,7.143,53515864981,53.516,17514,2,Sex,female,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.73,0.13294,11290572220,11.291,84929983033,84.93,32915,2,life_stage,youth,Marital Status,currently married
+domestic_plus,0.048723,2.73,0.133207,539045554,0.539,4046673559,4.047,2133,2,age_band,45-59,Household Type,others
+domestic_plus,0.048723,2.68,0.130391,1866376111,1.866,14313668873,14.314,3675,2,age_band,25-34,General Education Level,not literate
+domestic_plus,0.048723,2.66,0.129739,9674560712,9.675,74569464943,74.569,35699,2,Sex,female,General Education Level,middle
+domestic_plus,0.048723,2.65,0.12901,9893694863,9.894,76689262282,76.689,34737,2,Sex,female,age_band,45-59
+domestic_plus,0.048723,2.58,0.125508,7939981151,7.94,63262867680,63.263,24005,2,Sex,female,Household Type,self-employed in non-agriculture
+domestic_plus,0.048723,2.58,0.125482,276151703,0.276,2200724996,2.201,677,2,age_band,15-24,General Education Level,literate: below primary
+domestic_plus,0.048723,2.54,0.123709,246695569,0.247,1994157918,1.994,1211,2,General Education Level,middle,Household Religion,Sikhism
+domestic_plus,0.048723,2.54,0.12364,188893844,0.189,1527774679,1.528,858,2,Household Religion,Sikhism,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.53,0.123332,555972385,0.556,4507933164,4.508,1343,2,life_stage,youth,General Education Level,literate: below primary
+domestic_plus,0.048723,2.47,0.120572,11414869971,11.415,94672704134,94.673,36257,2,Sex,female,Household Social Group,scheduled caste
+domestic_plus,0.048723,2.47,0.120556,265049135,0.265,2198563060,2.199,950,2,Household Religion,Sikhism,Household Type,self-employed in non-agriculture
+domestic_plus,0.048723,2.45,0.119568,6229467522,6.229,52099586290,52.1,17131,2,Marital Status,currently married,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.42,0.117996,41163353,0.041,348854007,0.349,277,2,Household Religion,Sikhism,Household Type,casual labour
+domestic_plus,0.048723,2.39,0.116399,1264947783,1.265,10867350817,10.867,5181,2,Household Religion,Sikhism,Sector,rural
+domestic_plus,0.048723,2.38,0.116053,14077722915,14.078,121304688670,121.305,52610,2,Sex,female,life_stage,youth
+domestic_plus,0.048723,2.38,0.115874,521899752,0.522,4504010715,4.504,1360,2,age_band,15-24,General Education Level,not literate
+domestic_plus,0.048723,2.35,0.11431,38744082133,38.744,338938889711,338.939,120073,2,Sex,female,Sector,rural
+domestic_plus,0.048723,2.34,0.113991,359986139,0.36,3158009398,3.158,1368,2,Household Religion,Sikhism,Household Type,self-employed in agriculture
+domestic_plus,0.048723,2.31,0.112745,2093545290,2.094,18568816409,18.569,8437,2,Marital Status,currently married,Household Type,others
+domestic_plus,0.048723,2.3,0.111962,3522892908,3.523,31465182354,31.465,11793,2,age_band,25-34,Household Social Group,scheduled caste
+domestic_plus,0.048723,2.28,0.110981,638245989,0.638,5750938123,5.751,3092,2,Household Religion,Sikhism,Household Social Group,others
+domestic_plus,0.048723,2.28,0.111244,605715809,0.606,5444935830,5.445,1882,2,Marital Status,widowed,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.26,0.110284,2053196405,2.053,18617392162,18.617,6339,2,age_band,25-34,General Education Level,primary
+domestic_plus,0.048723,2.25,0.109699,571404619,0.571,5208858834,5.209,1600,2,age_band,25-34,General Education Level,literate: below primary
+domestic_plus,0.048723,2.24,0.109344,1581807063,1.582,14466353246,14.466,8077,1,Household Religion,Sikhism,,
+domestic_plus,0.048723,2.24,0.109359,1545756191,1.546,14134755170,14.135,7921,2,Technical Education Level,no technical education,Household Religion,Sikhism
+domestic_plus,0.048723,2.23,0.108707,698184145,0.698,6422607883,6.423,3672,2,Household Religion,Sikhism,Household Social Group,scheduled caste
+domestic_plus,0.048723,2.22,0.108365,7020447083,7.02,64785135749,64.785,24437,2,Marital Status,currently married,Household Type,self-employed in non-agriculture
+domestic_plus,0.048723,2.21,0.107907,10073072423,10.073,93349274116,93.349,35991,2,Marital Status,currently married,Household Social Group,scheduled caste
+domestic_plus,0.048723,2.21,0.107592,2172152819,2.172,20188769980,20.189,7657,2,age_band,25-34,Household Type,self-employed in non-agriculture
+domestic_plus,0.048723,2.21,0.107777,2095071460,2.095,19439028778,19.439,7629,2,age_band,35-44,Household Type,self-employed in non-agriculture
+domestic_plus,0.048723,2.2,0.107156,244684531,0.245,2283438708,2.283,1290,2,Household Religion,Sikhism,Household Social Group,other backward class
+domestic_plus,0.048723,2.19,0.106683,13799669445,13.8,129352347459,129.352,44343,2,Sex,female,Household Type,self-employed in agriculture
+domestic_plus,0.048723,2.19,0.106502,3023408089,3.023,28388342939,28.388,9621,2,age_band,35-44,General Education Level,not literate
+domestic_plus,0.048723,2.19,0.106885,67454400,0.067,631096105,0.631,289,1,General Education Level,literate without formal schooling: EGS/NFEC/AEC,,
+domestic_plus,0.048723,2.19,0.106885,67454400,0.067,631096105,0.631,289,2,General Education Level,literate without formal schooling: EGS/NFEC/AEC,Technical Education Level,no technical education
+domestic_plus,0.048723,2.18,0.106306,4798069395,4.798,45134342870,45.134,22113,2,Sex,female,General Education Level,secondary
+domestic_plus,0.048723,2.14,0.10406,2668708067,2.669,25645893566,25.646,11149,2,Sex,female,Household Type,others
+domestic_plus,0.048723,2.13,0.103613,10784820150,10.785,104087266306,104.087,35891,2,age_band,25-34,Sector,rural
+domestic_plus,0.048723,2.11,0.102816,12395368376,12.395,120558658618,120.559,47591,2,age_band,25-34,Marital Status,currently married
+domestic_plus,0.048723,2.1,0.102407,9324077747,9.324,91049335308,91.049,32449,2,life_stage,working_age,General Education Level,not literate
+domestic_plus,0.048723,2.1,0.102459,1962734398,1.963,19156288724,19.156,6568,2,life_stage,youth,General Education Level,primary
+domestic_plus,0.048723,2.1,0.102271,231241850,0.231,2261080260,2.261,1291,2,General Education Level,primary,Household Religion,Sikhism
+domestic_plus,0.048723,2.08,0.101337,11829581774,11.83,116735235718,116.735,40790,2,Marital Status,currently married,General Education Level,not literate
+domestic_plus,0.048723,2.07,0.10071,3907612437,3.908,38800588746,38.801,13166,2,life_stage,working_age,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.05,0.099891,6620139521,6.62,66273527788,66.274,28446,2,Sex,female,General Education Level,primary
+domestic_plus,0.048723,2.05,0.099719,4134253406,4.134,41458854509,41.459,19351,2,Sex,female,General Education Level,higher secondary
+domestic_plus,0.048723,2.05,0.099673,560744059,0.561,5625828667,5.626,3195,2,Marital Status,widowed,Household Social Group,scheduled tribe
+domestic_plus,0.048723,2.03,0.099095,5515954117,5.516,55663518445,55.664,24406,2,Sex,female,age_band,60+
+domestic_plus,0.048723,2.03,0.099095,5515954117,5.516,55663518445,55.664,24406,2,Sex,female,life_stage,senior
+domestic_plus,0.048723,2.03,0.09882,4558116622,4.558,46125473341,46.125,30398,2,Sex,female,Household Social Group,scheduled tribe
+domestic_plus,0.048723,2.03,0.098711,3237786899,3.238,32800517485,32.801,14475,2,age_band,25-34,General Education Level,middle
+domestic_plus,0.048723,2.03,0.098705,401186207,0.401,4064502329,4.065,2337,2,Household Religion,Sikhism,Household Type,regular wage/salary earning
+domestic_plus,0.048723,2.01,0.09792,5271898072,5.272,53838901720,53.839,20588,2,age_band,45-59,General Education Level,not literate
+domestic_plus,0.048723,2.01,0.097743,4720711441,4.721,48296988211,48.297,18752,2,life_stage,working_age,Household Type,self-employed in non-agriculture
+domestic_plus,0.048723,2.01,0.097712,2770603657,2.771,28354704358,28.355,9689,2,life_stage,youth,Household Type,casual labour in non-agriculture
+domestic_plus,0.048723,2.0,0.097544,33170999458,33.171,340061704164,340.062,119740,2,Marital Status,currently married,Sector,rural
+domestic_plus,0.048723,2.0,0.097647,14685049270,14.685,150389807446,150.39,56017,2,Sex,female,General Education Level,not literate
+domestic_plus,0.048723,2.0,0.097556,6133004985,6.133,62866327638,62.866,31179,2,Sex,female,Household Religion,Islam
+mgnreg,0.002943,10.81,0.0318,123660178,0.124,3888675402,3.889,1135,2,Marital Status,widowed,Household Type,casual labour in agriculture
+mgnreg,0.002943,10.44,0.030718,4346214,0.004,141487008,0.141,266,2,Marital Status,divorced/separated,Household Religion,Christianity
+mgnreg,0.002943,9.95,0.029291,29371139,0.029,1002723963,1.003,888,2,Household Religion,Christianity,Household Type,casual labour in agriculture
+mgnreg,0.002943,9.54,0.028071,155358012,0.155,5534410477,5.534,1528,2,age_band,60+,Household Type,casual labour in agriculture
+mgnreg,0.002943,9.54,0.028071,155358012,0.155,5534410477,5.534,1528,2,life_stage,senior,Household Type,casual labour in agriculture
+mgnreg,0.002943,9.13,0.026869,146298097,0.146,5444935830,5.445,1882,2,Marital Status,widowed,Household Type,casual labour in non-agriculture
+mgnreg,0.002943,8.81,0.02592,216105486,0.216,8337522376,8.338,2566,2,age_band,45-59,Household Type,casual labour in agriculture
+mgnreg,0.002943,8.47,0.024921,21216573,0.021,851350591,0.851,288,2,General Education Level,graduate,Household Type,casual labour in agriculture
+mgnreg,0.002943,8.06,0.023727,174551379,0.175,7356619149,7.357,2616,2,age_band,60+,Household Type,casual labour in non-agriculture
+mgnreg,0.002943,8.06,0.023727,174551379,0.175,7356619149,7.357,2616,2,life_stage,senior,Household Type,casual labour in non-agriculture
+mgnreg,0.002943,7.49,0.022036,411681035,0.412,18682219964,18.682,5826,2,life_stage,working_age,Household Type,casual labour in agriculture
+regular_wage,0.093083,8.42,0.784123,3854657332,3.855,4915886531,4.916,1842,2,Technical Education Level,technical degree in engineering/technology,Household Type,regular wage/salary earning
+regular_wage,0.093083,8.35,0.777192,978384380,0.978,1258871311,1.259,460,2,age_band,35-44,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,8.16,0.759628,426528103,0.427,561496228,0.561,333,2,Technical Education Level,technical degree in medicine,Household Type,regular wage/salary earning
+regular_wage,0.093083,7.93,0.738272,2060719739,2.061,2791275584,2.791,1229,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Type,regular wage/salary earning
+regular_wage,0.093083,7.5,0.697818,3478011979,3.478,4984124334,4.984,2273,2,General Education Level,diploma/certificate course,Household Type,regular wage/salary earning
+regular_wage,0.093083,7.5,0.698081,657250972,0.657,941511507,0.942,423,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Household Type,regular wage/salary earning
+regular_wage,0.093083,7.41,0.690167,2193892522,2.194,3178786591,3.179,1295,2,life_stage,working_age,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,7.34,0.683063,1558602392,1.559,2281785368,2.282,1124,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Type,regular wage/salary earning
+regular_wage,0.093083,7.23,0.672883,1999327469,1.999,2971284968,2.971,1123,2,Technical Education Level,technical degree in engineering/technology,Household Social Group,others
+regular_wage,0.093083,7.15,0.665945,3442211964,3.442,5168909585,5.169,2065,2,Sex,male,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,7.13,0.663745,383349454,0.383,577555492,0.578,330,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Household Type,regular wage/salary earning
+regular_wage,0.093083,7.0,0.651781,2350527184,2.351,3606316091,3.606,1428,2,age_band,25-34,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,6.83,0.635516,2374559676,2.375,3736426492,3.736,1395,2,Marital Status,currently married,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,6.82,0.634845,593072795,0.593,934201480,0.934,375,2,General Education Level,postgraduate and above,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,6.81,0.634054,3420413288,3.42,5394515836,5.395,2299,2,Technical Education Level,technical degree in engineering/technology,Sector,urban
+regular_wage,0.093083,6.76,0.629323,795411589,0.795,1263915318,1.264,659,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Type,regular wage/salary earning
+regular_wage,0.093083,6.64,0.618528,1857166788,1.857,3002556638,3.003,1312,2,Technical Education Level,technical degree in other subjects,Household Type,regular wage/salary earning
+regular_wage,0.093083,6.61,0.615651,3857298516,3.857,6265402232,6.265,2376,2,Technical Education Level,technical degree in engineering/technology,Household Religion,Hinduism
+regular_wage,0.093083,6.59,0.613564,7618740768,7.619,12417184681,12.417,5955,2,General Education Level,postgraduate and above,Household Type,regular wage/salary earning
+regular_wage,0.093083,6.54,0.608624,448302229,0.448,736583399,0.737,344,2,life_stage,working_age,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,6.53,0.607754,4189588936,4.19,6893564230,6.894,2711,1,Technical Education Level,technical degree in engineering/technology,,
+regular_wage,0.093083,6.48,0.603507,3596516141,3.597,5959362750,5.959,2336,2,General Education Level,graduate,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,6.45,0.600457,801273479,0.801,1334438296,1.334,783,2,Marital Status,divorced/separated,Household Type,regular wage/salary earning
+regular_wage,0.093083,6.27,0.583857,1885630483,1.886,3229609254,3.23,1264,2,Technical Education Level,technical degree in engineering/technology,Household Social Group,other backward class
+regular_wage,0.093083,6.22,0.578709,21325557550,21.326,36850218571,36.85,19244,2,age_band,35-44,Household Type,regular wage/salary earning
+regular_wage,0.093083,6.15,0.572208,1777991054,1.778,3107244328,3.107,1279,2,Marital Status,never married,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,6.15,0.572832,460945765,0.461,804678182,0.805,377,2,age_band,45-59,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,6.12,0.569471,1984244400,1.984,3484361324,3.484,1303,2,life_stage,youth,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,6.12,0.570073,527053040,0.527,924536279,0.925,373,2,age_band,35-44,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,6.03,0.56172,19023819091,19.024,33867106816,33.867,17064,2,General Education Level,graduate,Household Type,regular wage/salary earning
+regular_wage,0.093083,6.01,0.559847,1375237238,1.375,2456450626,2.456,1042,2,life_stage,working_age,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,5.93,0.552174,694888029,0.695,1258459294,1.258,670,2,life_stage,working_age,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,5.91,0.550144,535371870,0.535,973149016,0.973,507,2,Sex,male,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,5.9,0.549484,366957249,0.367,667821395,0.668,321,2,age_band,25-34,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,5.85,0.544981,344798891,0.345,632680305,0.633,310,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Household Social Group,others
+regular_wage,0.093083,5.79,0.539378,417731014,0.418,774468301,0.774,380,2,age_band,45-59,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,5.77,0.536777,467701777,0.468,871314905,0.871,382,2,Marital Status,currently married,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,5.67,0.527767,1328453921,1.328,2517123001,2.517,1079,2,Sex,male,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,5.67,0.52785,618887903,0.619,1172468692,1.172,542,2,Sex,male,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,5.66,0.52721,24284175445,24.284,46061685303,46.062,22287,2,age_band,25-34,Household Type,regular wage/salary earning
+regular_wage,0.093083,5.65,0.525461,544681799,0.545,1036579455,1.037,549,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Sector,urban
+regular_wage,0.093083,5.61,0.521992,52168436937,52.168,99940984058,99.941,51936,2,life_stage,working_age,Household Type,regular wage/salary earning
+regular_wage,0.093083,5.6,0.52167,5789755014,5.79,11098498093,11.098,5124,2,Sex,male,General Education Level,postgraduate and above
+regular_wage,0.093083,5.56,0.517976,2027718324,2.028,3914698163,3.915,1854,2,age_band,45-59,General Education Level,postgraduate and above
+regular_wage,0.093083,5.56,0.517658,290357460,0.29,560905494,0.561,296,2,life_stage,working_age,Technical Education Level,technical degree in medicine
+regular_wage,0.093083,5.54,0.515904,1247232993,1.247,2417566911,2.418,1358,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Sector,urban
+regular_wage,0.093083,5.52,0.514148,2866076824,2.866,5574423337,5.574,2617,2,age_band,35-44,General Education Level,postgraduate and above
+regular_wage,0.093083,5.51,0.513109,769175648,0.769,1499048394,1.499,412,2,Technical Education Level,technical degree in engineering/technology,Sector,rural
+regular_wage,0.093083,5.51,0.513229,342225225,0.342,666808129,0.667,301,2,age_band,45-59,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,5.47,0.509456,729524202,0.73,1431967912,1.432,597,2,age_band,35-44,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,5.46,0.508283,293161612,0.293,576768028,0.577,298,2,age_band,35-44,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,5.43,0.505541,1623884673,1.624,3212170779,3.212,1408,2,life_stage,working_age,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,5.41,0.503516,688073915,0.688,1366538670,1.367,599,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Household Religion,Hinduism
+regular_wage,0.093083,5.37,0.499414,1004611666,1.005,2011581624,2.012,869,2,age_band,25-34,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,5.34,0.497106,254495987,0.254,511954939,0.512,284,2,Sex,female,Technical Education Level,technical degree in medicine
+regular_wage,0.093083,5.32,0.495159,867144448,0.867,1751244822,1.751,777,2,age_band,35-44,General Education Level,diploma/certificate course
+regular_wage,0.093083,5.29,0.49211,6746929955,6.747,13710202366,13.71,6432,2,life_stage,working_age,General Education Level,postgraduate and above
+regular_wage,0.093083,5.29,0.492612,2272668545,2.273,4613503339,4.614,2153,2,life_stage,working_age,General Education Level,diploma/certificate course
+regular_wage,0.093083,5.29,0.492074,739617636,0.74,1503061163,1.503,688,1,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,,
+regular_wage,0.093083,5.28,0.491239,1461207537,1.461,2974531977,2.975,1234,2,Marital Status,currently married,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,5.24,0.4873,1332248858,1.332,2733939401,2.734,1114,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Social Group,other backward class
+regular_wage,0.093083,5.21,0.484791,59482151295,59.482,122696598531,122.697,62241,2,Sex,male,Household Type,regular wage/salary earning
+regular_wage,0.093083,5.21,0.484913,344513806,0.345,710464512,0.71,357,2,age_band,25-34,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,5.2,0.484137,445296168,0.445,919772310,0.92,495,2,General Education Level,postgraduate and above,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,5.19,0.48265,416780992,0.417,863526173,0.864,328,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Sector,rural
+regular_wage,0.093083,5.18,0.482253,2187804104,2.188,4536634172,4.537,1932,2,Sex,male,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,5.16,0.480182,1179634245,1.18,2456640445,2.457,1216,2,life_stage,working_age,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,5.16,0.480243,673855508,0.674,1403156095,1.403,684,2,age_band,45-59,General Education Level,diploma/certificate course
+regular_wage,0.093083,5.12,0.476957,1322802102,1.323,2773422780,2.773,1304,2,Sex,male,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,5.09,0.473934,366154949,0.366,772586577,0.773,455,2,Technical Education Level,technical degree in medicine,Sector,urban
+regular_wage,0.093083,5.08,0.472602,488918125,0.489,1034523305,1.035,564,1,Technical Education Level,technical degree in medicine,,
+regular_wage,0.093083,5.07,0.472022,670197848,0.67,1419844573,1.42,726,2,Marital Status,currently married,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,5.07,0.471642,387130032,0.387,820812854,0.821,412,2,Technical Education Level,technical degree in medicine,Household Religion,Hinduism
+regular_wage,0.093083,5.06,0.471078,531320934,0.531,1127884186,1.128,527,2,General Education Level,graduate,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,5.06,0.470649,307551197,0.308,653462517,0.653,347,2,Marital Status,currently married,Technical Education Level,technical degree in medicine
+regular_wage,0.093083,5.06,0.471106,229324127,0.229,486778546,0.487,284,2,life_stage,working_age,Technical Education Level,diploma or certificate (below graduate level) in medicine
+regular_wage,0.093083,5.01,0.466112,451604920,0.452,968875462,0.969,482,2,age_band,35-44,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,4.99,0.464109,2023059103,2.023,4359020669,4.359,1839,2,General Education Level,diploma/certificate course,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,4.98,0.463606,395215813,0.395,852481972,0.852,437,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Social Group,others
+regular_wage,0.093083,4.97,0.462575,1199344506,1.199,2592755333,2.593,1163,2,General Education Level,postgraduate and above,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,4.96,0.461851,3394767187,3.395,7350359379,7.35,3205,2,Sex,male,General Education Level,diploma/certificate course
+regular_wage,0.093083,4.95,0.461155,166516844,0.167,361086124,0.361,251,2,Technical Education Level,technical degree in other subjects,Household Religion,Islam
+regular_wage,0.093083,4.94,0.460109,880061063,0.88,1912723708,1.913,1016,1,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,,
+regular_wage,0.093083,4.92,0.457739,2100345263,2.1,4588518595,4.589,1899,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Religion,Hinduism
+regular_wage,0.093083,4.91,0.457034,18588680260,18.589,40672382545,40.672,21787,2,age_band,45-59,Household Type,regular wage/salary earning
+regular_wage,0.093083,4.89,0.455062,2005211160,2.005,4406457549,4.406,2573,2,General Education Level,diploma/certificate course,Sector,urban
+regular_wage,0.093083,4.89,0.455321,771533941,0.772,1694484489,1.694,809,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Religion,Hinduism
+regular_wage,0.093083,4.87,0.453198,1575648565,1.576,3476734653,3.477,1593,2,age_band,25-34,General Education Level,diploma/certificate course
+regular_wage,0.093083,4.83,0.449493,2311725565,2.312,5142962627,5.143,2208,1,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,,
+regular_wage,0.093083,4.83,0.449144,897111358,0.897,1997379134,1.997,947,2,Technical Education Level,technical degree in other subjects,Household Social Group,others
+regular_wage,0.093083,4.82,0.448673,1229900549,1.23,2741192816,2.741,1499,2,Technical Education Level,technical degree in other subjects,Sector,urban
+regular_wage,0.093083,4.82,0.448596,234422138,0.234,522568366,0.523,280,2,Sex,male,Technical Education Level,technical degree in medicine
+regular_wage,0.093083,4.79,0.445929,54046917145,54.047,121200804034,121.201,61001,2,Marital Status,currently married,Household Type,regular wage/salary earning
+regular_wage,0.093083,4.79,0.445984,362310218,0.362,812383251,0.812,434,2,General Education Level,graduate,Technical Education Level,technical degree in medicine
+regular_wage,0.093083,4.77,0.4443,491866152,0.492,1107057945,1.107,533,2,General Education Level,graduate,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,4.74,0.441557,463280071,0.463,1049197535,1.049,688,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Sector,urban
+regular_wage,0.093083,4.7,0.437851,434764895,0.435,992951398,0.993,521,2,General Education Level,graduate,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,4.66,0.433349,747376972,0.747,1724654645,1.725,646,2,Sex,female,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,4.65,0.43283,270429570,0.27,624793793,0.625,300,2,Marital Status,never married,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,4.64,0.432175,584937929,0.585,1353473918,1.353,616,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Social Group,others
+regular_wage,0.093083,4.63,0.430647,813022351,0.813,1887908237,1.888,1182,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Sector,urban
+regular_wage,0.093083,4.59,0.427571,847574204,0.848,1982300370,1.982,814,2,Technical Education Level,technical degree in other subjects,Household Social Group,other backward class
+regular_wage,0.093083,4.56,0.424622,2093410673,2.093,4930060723,4.93,2168,1,Technical Education Level,technical degree in other subjects,,
+regular_wage,0.093083,4.55,0.42321,5787593122,5.788,13675467949,13.675,7783,2,General Education Level,postgraduate and above,Sector,urban
+regular_wage,0.093083,4.55,0.423225,3527008608,3.527,8333646087,8.334,3596,2,General Education Level,diploma/certificate course,Household Religion,Hinduism
+regular_wage,0.093083,4.55,0.423835,1472730755,1.473,3474774689,3.475,1540,2,Marital Status,currently married,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,4.53,0.421603,1775929174,1.776,4212330050,4.212,1732,2,Technical Education Level,technical degree in other subjects,Household Religion,Hinduism
+regular_wage,0.093083,4.53,0.421536,291084981,0.291,690534799,0.691,332,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Social Group,other backward class
+regular_wage,0.093083,4.53,0.421616,264339763,0.264,626968666,0.627,392,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Sector,urban
+regular_wage,0.093083,4.52,0.420551,2152367493,2.152,5117965765,5.118,2233,2,General Education Level,diploma/certificate course,Household Social Group,other backward class
+regular_wage,0.093083,4.51,0.419594,1515696817,1.516,3612298112,3.612,1669,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Religion,Hinduism
+regular_wage,0.093083,4.48,0.417456,288989138,0.289,692262769,0.692,305,2,life_stage,youth,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+regular_wage,0.093083,4.47,0.415977,2490309573,2.49,5986648302,5.987,2717,2,Marital Status,currently married,General Education Level,diploma/certificate course
+regular_wage,0.093083,4.47,0.416194,531117581,0.531,1276129005,1.276,543,2,Marital Status,never married,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,4.44,0.413099,1287548663,1.288,3116807038,3.117,1492,2,Marital Status,currently married,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,4.43,0.411927,634644986,0.635,1540672553,1.541,771,2,age_band,25-34,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,4.43,0.412088,475777705,0.476,1154553533,1.155,883,2,General Education Level,postgraduate and above,Household Religion,Islam
+regular_wage,0.093083,4.39,0.408397,5363838245,5.364,13133895937,13.134,6448,2,age_band,35-44,General Education Level,graduate
+regular_wage,0.093083,4.39,0.408889,4018748039,4.019,9828453944,9.828,4476,1,General Education Level,diploma/certificate course,,
+regular_wage,0.093083,4.39,0.408466,1470138589,1.47,3599169225,3.599,1615,2,Marital Status,never married,General Education Level,diploma/certificate course
+regular_wage,0.093083,4.39,0.4087,1035136108,1.035,2532754830,2.533,1204,2,General Education Level,diploma/certificate course,Household Social Group,others
+regular_wage,0.093083,4.39,0.408922,903036711,0.903,2208332911,2.208,1050,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Social Group,other backward class
+regular_wage,0.093083,4.38,0.407713,6343785043,6.344,15559429747,15.559,7132,2,Marital Status,currently married,General Education Level,postgraduate and above
+regular_wage,0.093083,4.38,0.407812,303329697,0.303,743797925,0.744,669,2,General Education Level,postgraduate and above,Household Religion,Christianity
+regular_wage,0.093083,4.37,0.406614,468081246,0.468,1151169627,1.151,596,1,Technical Education Level,diploma or certificate (below graduate level) in medicine,,
+regular_wage,0.093083,4.35,0.40485,870184508,0.87,2149399657,2.149,2753,2,General Education Level,graduate,Household Religion,Christianity
+regular_wage,0.093083,4.34,0.404327,1076538778,1.077,2662542461,2.663,1051,2,General Education Level,postgraduate and above,Household Social Group,scheduled caste
+regular_wage,0.093083,4.33,0.403212,7554553596,7.555,18735929730,18.736,8129,2,General Education Level,postgraduate and above,Household Religion,Hinduism
+regular_wage,0.093083,4.33,0.403133,3939317138,3.939,9771762683,9.772,4732,2,General Education Level,postgraduate and above,Household Social Group,others
+regular_wage,0.093083,4.32,0.402028,8612450457,8.612,21422538584,21.423,10148,1,General Education Level,postgraduate and above,,
+regular_wage,0.093083,4.31,0.401024,3331241165,3.331,8306828286,8.307,3563,2,General Education Level,postgraduate and above,Household Social Group,other backward class
+regular_wage,0.093083,4.31,0.400968,383152442,0.383,955568458,0.956,453,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Household Religion,Hinduism
+regular_wage,0.093083,4.3,0.400338,1805881196,1.806,4510893256,4.511,2248,1,Technical Education Level,diploma or certificate (below graduate level) in other subjects,,
+regular_wage,0.093083,4.28,0.398546,209523000,0.21,525718148,0.526,371,2,General Education Level,graduate,Household Religion,Buddhism
+regular_wage,0.093083,4.27,0.397743,173885740,0.174,437181350,0.437,266,2,General Education Level,diploma/certificate course,Household Social Group,scheduled tribe
+regular_wage,0.093083,4.26,0.39685,343007688,0.343,864326336,0.864,436,2,General Education Level,diploma/certificate course,Technical Education Level,diploma or certificate (below graduate level) in medicine
+regular_wage,0.093083,4.25,0.395903,831788024,0.832,2100988428,2.101,935,2,Marital Status,never married,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,4.24,0.394501,863510124,0.864,2188867907,2.189,669,2,Technical Education Level,technical degree in other subjects,Sector,rural
+regular_wage,0.093083,4.24,0.39426,169010779,0.169,428678731,0.429,282,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Religion,Islam
+regular_wage,0.093083,4.23,0.393393,478342274,0.478,1215938683,1.216,665,2,Marital Status,never married,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,4.2,0.390538,2025219637,2.025,5185713244,5.186,2632,2,Marital Status,never married,General Education Level,postgraduate and above
+regular_wage,0.093083,4.2,0.390583,1064492572,1.064,2725395716,2.725,850,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Sector,rural
+regular_wage,0.093083,4.2,0.390563,506535321,0.507,1296935199,1.297,648,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Social Group,others
+regular_wage,0.093083,4.19,0.390304,16683721520,16.684,42745460537,42.745,19979,2,Sex,male,General Education Level,graduate
+regular_wage,0.093083,4.18,0.389421,265353376,0.265,681405154,0.681,802,2,General Education Level,postgraduate and above,Household Social Group,scheduled tribe
+regular_wage,0.093083,4.16,0.387121,520975600,0.521,1345770155,1.346,482,2,age_band,15-24,Technical Education Level,technical degree in engineering/technology
+regular_wage,0.093083,4.14,0.385412,13309744618,13.31,34533833601,34.534,16849,2,life_stage,working_age,General Education Level,graduate
+regular_wage,0.093083,4.14,0.38583,235440850,0.235,610219079,0.61,286,2,life_stage,youth,Technical Education Level,diploma or certificate (below graduate level) in medicine
+regular_wage,0.093083,4.12,0.383843,287264396,0.287,748390195,0.748,380,2,Marital Status,currently married,Technical Education Level,diploma or certificate (below graduate level) in medicine
+regular_wage,0.093083,4.12,0.383339,268767416,0.269,701122819,0.701,324,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Social Group,scheduled caste
+regular_wage,0.093083,4.11,0.38252,894066167,0.894,2337305390,2.337,1005,2,General Education Level,graduate,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,4.11,0.382877,720876175,0.721,1882785506,1.883,837,2,age_band,25-34,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,4.08,0.379611,251347807,0.251,662119347,0.662,419,2,General Education Level,diploma/certificate course,Household Religion,Islam
+regular_wage,0.093083,4.07,0.378522,992858845,0.993,2622985019,2.623,1066,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Sector,rural
+regular_wage,0.093083,4.07,0.378766,923696297,0.924,2438701288,2.439,1045,2,life_stage,youth,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,4.06,0.377631,3737088880,3.737,9896151335,9.896,5047,2,age_band,45-59,General Education Level,graduate
+regular_wage,0.093083,4.06,0.377673,1701260440,1.701,4504590376,4.505,1981,2,life_stage,youth,General Education Level,diploma/certificate course
+regular_wage,0.093083,4.06,0.377673,657358698,0.657,1740551999,1.741,773,2,General Education Level,diploma/certificate course,Household Social Group,scheduled caste
+regular_wage,0.093083,4.06,0.377483,332137795,0.332,879875161,0.88,372,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Social Group,scheduled caste
+regular_wage,0.093083,4.06,0.377456,250895024,0.251,664700600,0.665,306,2,General Education Level,graduate,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,4.05,0.377028,3227095895,3.227,8559290704,8.559,4011,2,age_band,25-34,General Education Level,postgraduate and above
+regular_wage,0.093083,4.05,0.377035,263113718,0.263,697850159,0.698,374,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in medicine
+regular_wage,0.093083,4.02,0.373862,1150746476,1.151,3077998466,3.078,1558,2,General Education Level,diploma/certificate course,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,3.99,0.371364,2013536879,2.014,5421996395,5.422,1903,2,General Education Level,diploma/certificate course,Sector,rural
+regular_wage,0.093083,3.98,0.370146,732213592,0.732,1978173640,1.978,1691,2,Household Religion,Buddhism,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.94,0.3667,608280128,0.608,1658796833,1.659,841,2,life_stage,youth,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,3.94,0.366857,344689193,0.345,939574692,0.94,509,2,Sex,female,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,3.93,0.365364,5718821600,5.719,15652393833,15.652,7457,2,General Education Level,postgraduate and above,Technical Education Level,no technical education
+regular_wage,0.093083,3.92,0.364636,2824857335,2.825,7747070635,7.747,2365,2,General Education Level,postgraduate and above,Sector,rural
+regular_wage,0.093083,3.88,0.361424,9576111000,9.576,26495507498,26.496,14506,2,General Education Level,secondary,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.87,0.360391,208153080,0.208,577575503,0.578,302,1,Technical Education Level,diploma or certificate (graduate and above level) in medicine,,
+regular_wage,0.093083,3.84,0.357186,9729781517,9.73,27240104772,27.24,14594,2,General Education Level,higher secondary,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.83,0.356378,239015734,0.239,670680073,0.671,253,2,Technical Education Level,technical degree in other subjects,Household Social Group,scheduled caste
+regular_wage,0.093083,3.81,0.354348,45571111124,45.571,128605432445,128.605,77440,2,Household Type,regular wage/salary earning,Sector,urban
+regular_wage,0.093083,3.79,0.352435,14145249837,14.145,40135755890,40.136,23594,2,General Education Level,graduate,Sector,urban
+regular_wage,0.093083,3.75,0.34868,171225015,0.171,491066785,0.491,300,2,Marital Status,divorced/separated,General Education Level,secondary
+regular_wage,0.093083,3.74,0.347721,12803359151,12.803,36820742551,36.821,20636,2,General Education Level,middle,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.72,0.346049,468513893,0.469,1353895058,1.354,558,2,General Education Level,diploma/certificate course,Technical Education Level,no technical education
+regular_wage,0.093083,3.7,0.34471,857280464,0.857,2486958145,2.487,1080,2,age_band,15-24,General Education Level,diploma/certificate course
+regular_wage,0.093083,3.68,0.342223,576174147,0.576,1683622262,1.684,1163,2,Marital Status,divorced/separated,Sector,urban
+regular_wage,0.093083,3.67,0.341504,283933453,0.284,831420962,0.831,424,2,age_band,15-24,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,3.66,0.340657,180898302,0.181,531028295,0.531,268,2,life_stage,youth,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+regular_wage,0.093083,3.65,0.339961,21500215741,21.5,63243225506,63.243,32343,2,life_stage,youth,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.65,0.339775,190959477,0.191,562016999,0.562,281,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Household Social Group,other backward class
+regular_wage,0.093083,3.62,0.337026,9561743825,9.562,28370935771,28.371,12827,2,age_band,25-34,General Education Level,graduate
+regular_wage,0.093083,3.61,0.33644,500294307,0.5,1487025969,1.487,773,2,age_band,35-44,Marital Status,divorced/separated
+regular_wage,0.093083,3.6,0.334858,10025187863,10.025,29938668540,29.939,15936,2,age_band,25-34,Marital Status,never married
+regular_wage,0.093083,3.59,0.33421,24573168931,24.573,73526033270,73.526,37341,2,Household Social Group,others,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.58,0.333488,16207575668,16.208,48600109611,48.6,28618,2,age_band,25-34,Sector,urban
+regular_wage,0.093083,3.57,0.332339,1350793141,1.351,4064502329,4.065,2337,2,Household Religion,Sikhism,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.53,0.328924,425043604,0.425,1292225882,1.292,544,2,age_band,15-24,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,3.52,0.327769,43409160,0.043,132438459,0.132,261,2,General Education Level,graduate,Household Religion,others
+regular_wage,0.093083,3.51,0.326862,174672323,0.175,534391107,0.534,299,2,Marital Status,widowed,General Education Level,postgraduate and above
+regular_wage,0.093083,3.5,0.325808,1069279595,1.069,3281935067,3.282,3864,2,General Education Level,graduate,Household Social Group,scheduled tribe
+regular_wage,0.093083,3.46,0.321965,63738186827,63.738,197966044425,197.966,90501,2,Household Religion,Hinduism,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.45,0.321602,14296596114,14.297,44454302550,44.454,27217,2,age_band,35-44,Sector,urban
+regular_wage,0.093083,3.41,0.317646,75746890366,75.747,238463041295,238.463,122213,1,Household Type,regular wage/salary earning,,
+regular_wage,0.093083,3.41,0.317023,764956752,0.765,2412937722,2.413,1089,2,Sex,female,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,3.41,0.317589,198015145,0.198,623495115,0.623,347,2,General Education Level,diploma/certificate course,Household Religion,Christianity
+regular_wage,0.093083,3.38,0.31498,32300577650,32.301,102548022833,102.548,46212,2,Household Social Group,other backward class,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.35,0.31186,14354181252,14.354,46027586013,46.028,21349,2,Household Social Group,scheduled caste,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.35,0.312195,2264790778,2.265,7254416832,7.254,11213,2,Household Religion,Christianity,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.29,0.306192,438993928,0.439,1433722853,1.434,603,2,life_stage,youth,Technical Education Level,technical degree in other subjects
+regular_wage,0.093083,3.27,0.303931,22721626552,22.722,74759239033,74.759,32091,2,Sex,male,age_band,25-34
+regular_wage,0.093083,3.24,0.301811,4134772005,4.135,13699855581,13.7,8123,2,life_stage,working_age,Marital Status,never married
+regular_wage,0.093083,3.23,0.300771,14076829020,14.077,46802530159,46.803,21255,2,Marital Status,currently married,General Education Level,graduate
+regular_wage,0.093083,3.22,0.299387,8962971994,8.963,29937710321,29.938,13558,2,General Education Level,graduate,Household Social Group,others
+regular_wage,0.093083,3.17,0.295425,21943420008,21.943,74277524020,74.278,34874,1,General Education Level,graduate,,
+regular_wage,0.093083,3.17,0.295375,1790462081,1.79,6061661673,6.062,2776,2,life_stage,youth,General Education Level,postgraduate and above
+regular_wage,0.093083,3.16,0.294608,34463808698,34.464,116982042099,116.982,71964,2,life_stage,working_age,Sector,urban
+regular_wage,0.093083,3.16,0.294593,19203487502,19.203,65186475080,65.186,27399,2,General Education Level,graduate,Household Religion,Hinduism
+regular_wage,0.093083,3.12,0.290352,9114676788,9.115,31391858312,31.392,13270,2,General Education Level,graduate,Household Social Group,other backward class
+regular_wage,0.093083,3.11,0.289668,7413190678,7.413,25592011881,25.592,12489,2,Marital Status,never married,General Education Level,graduate
+regular_wage,0.093083,3.11,0.289312,2796491631,2.796,9666020320,9.666,4182,2,General Education Level,graduate,Household Social Group,scheduled caste
+regular_wage,0.093083,3.1,0.288103,63865417764,63.865,221675686829,221.676,114686,2,Technical Education Level,no technical education,Household Type,regular wage/salary earning
+regular_wage,0.093083,3.06,0.285128,1216083631,1.216,4265042787,4.265,2600,2,age_band,35-44,Marital Status,never married
+regular_wage,0.093083,3.06,0.284709,259121409,0.259,910127831,0.91,496,2,General Education Level,graduate,Household Religion,Sikhism
+regular_wage,0.093083,3.0,0.27963,7383659260,7.384,26405065257,26.405,15362,2,Household Religion,Islam,Household Type,regular wage/salary earning
+regular_wage,0.093083,2.99,0.278036,483079094,0.483,1737470476,1.737,944,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+regular_wage,0.093083,2.97,0.276197,4518962533,4.519,16361399179,16.361,17311,2,Household Social Group,scheduled tribe,Household Type,regular wage/salary earning
+regular_wage,0.093083,2.97,0.276822,103519954,0.104,373958351,0.374,902,2,Household Religion,others,Household Type,regular wage/salary earning
+regular_wage,0.093083,2.95,0.274681,30175779242,30.176,109857608850,109.858,44773,2,Household Type,regular wage/salary earning,Sector,rural
+regular_wage,0.093083,2.95,0.274992,865127779,0.865,3146010638,3.146,1664,2,life_stage,working_age,Marital Status,divorced/separated
+regular_wage,0.093083,2.94,0.27341,2822695443,2.823,10324040491,10.324,5024,2,Sex,female,General Education Level,postgraduate and above
+regular_wage,0.093083,2.93,0.272845,203572626,0.204,746111486,0.746,726,2,age_band,35-44,Household Religion,Buddhism
+regular_wage,0.093083,2.92,0.271485,225845961,0.226,831889849,0.832,464,2,Marital Status,divorced/separated,General Education Level,middle
+regular_wage,0.093083,2.9,0.269647,278472091,0.278,1032727978,1.033,817,2,age_band,45-59,Household Religion,Buddhism
+regular_wage,0.093083,2.87,0.267084,220842762,0.221,826867276,0.827,386,2,Marital Status,divorced/separated,Household Social Group,scheduled caste
+regular_wage,0.093083,2.85,0.265073,490856367,0.491,1851778920,1.852,847,2,Marital Status,divorced/separated,Household Social Group,other backward class
+regular_wage,0.093083,2.83,0.263459,591050406,0.591,2243424201,2.243,1945,2,life_stage,working_age,Household Religion,Buddhism
+regular_wage,0.093083,2.82,0.262265,1282349282,1.282,4889520948,4.89,3376,2,General Education Level,graduate,Household Religion,Islam
+regular_wage,0.093083,2.81,0.261362,17774879564,17.775,68008725053,68.009,29892,2,Sex,male,age_band,35-44
+regular_wage,0.093083,2.79,0.259915,37775696277,37.776,145338422522,145.338,88621,2,Sex,male,Sector,urban
+regular_wage,0.093083,2.78,0.258967,842993967,0.843,3255216924,3.255,4760,2,age_band,35-44,Household Religion,Christianity
+regular_wage,0.093083,2.73,0.254276,9309259664,9.309,36610913648,36.611,16699,2,age_band,25-34,Household Social Group,others
+regular_wage,0.093083,2.72,0.253087,12278071022,12.278,48513206943,48.513,30665,2,age_band,45-59,Sector,urban
+regular_wage,0.093083,2.72,0.253647,555765623,0.556,2191097030,2.191,1218,2,Sex,female,Marital Status,divorced/separated
+regular_wage,0.093083,2.71,0.251799,623980852,0.624,2478094565,2.478,1271,2,Sex,female,General Education Level,diploma/certificate course
+regular_wage,0.093083,2.69,0.250085,840420737,0.84,3360534242,3.361,1536,2,Marital Status,divorced/separated,Household Religion,Hinduism
+regular_wage,0.093083,2.68,0.249529,15070906906,15.071,60397524323,60.398,28749,2,General Education Level,graduate,Technical Education Level,no technical education
+regular_wage,0.093083,2.67,0.248972,35226263,0.035,141487008,0.141,266,2,Marital Status,divorced/separated,Household Religion,Christianity
+regular_wage,0.093083,2.62,0.244117,35182656430,35.183,144122323778,144.122,87405,2,Marital Status,currently married,Sector,urban
+regular_wage,0.093083,2.62,0.243744,664563898,0.665,2726488018,2.726,2117,2,Marital Status,currently married,Household Religion,Buddhism
+regular_wage,0.093083,2.62,0.243539,224074363,0.224,920077038,0.92,735,2,age_band,25-34,Household Religion,Buddhism
+regular_wage,0.093083,2.61,0.242776,43750281354,43.75,180208307883,180.208,79937,2,Sex,male,life_stage,working_age
+regular_wage,0.093083,2.61,0.243144,8422635246,8.423,34640508736,34.641,15355,2,life_stage,youth,General Education Level,graduate
+regular_wage,0.093083,2.61,0.243026,988733424,0.989,4068427783,4.068,2179,1,Marital Status,divorced/separated,,
+regular_wage,0.093083,2.6,0.241667,416500993,0.417,1723451835,1.723,726,2,age_band,15-24,General Education Level,postgraduate and above
+regular_wage,0.093083,2.57,0.239148,9470239423,9.47,39599923145,39.6,20961,2,age_band,15-24,Household Type,regular wage/salary earning
+regular_wage,0.093083,2.55,0.237589,1056444783,1.056,4446521067,4.447,1885,2,age_band,35-44,Marital Status,widowed
+regular_wage,0.093083,2.55,0.237194,226378301,0.226,954400680,0.954,533,2,Marital Status,divorced/separated,Household Social Group,others
+regular_wage,0.093083,2.54,0.23686,6455191677,6.455,27253149874,27.253,13831,2,General Education Level,primary,Household Type,regular wage/salary earning
+regular_wage,0.093083,2.49,0.231485,478636506,0.479,2067680321,2.068,1656,2,Household Religion,Buddhism,Sector,urban
+regular_wage,0.093083,2.49,0.231739,247831949,0.248,1069444768,1.069,514,2,age_band,25-34,Marital Status,divorced/separated
+regular_wage,0.093083,2.48,0.230629,432967801,0.433,1877330753,1.877,961,2,Sex,male,Marital Status,divorced/separated
+regular_wage,0.093083,2.47,0.229594,900987346,0.901,3924265791,3.924,2087,2,Marital Status,divorced/separated,Technical Education Level,no technical education
+regular_wage,0.093083,2.45,0.228406,7798170171,7.798,34141768130,34.142,11280,2,General Education Level,graduate,Sector,rural
+regular_wage,0.093083,2.45,0.22809,3437278927,3.437,15069844529,15.07,7700,2,Marital Status,widowed,Household Type,regular wage/salary earning
+regular_wage,0.093083,2.4,0.22373,1922416893,1.922,8592590643,8.593,11882,2,life_stage,working_age,Household Religion,Christianity
+regular_wage,0.093083,2.36,0.219801,743889450,0.744,3384381740,3.384,4591,2,age_band,25-34,Household Religion,Christianity
+regular_wage,0.093083,2.35,0.218466,154173347,0.154,705710115,0.706,517,2,General Education Level,higher secondary,Household Religion,Buddhism
+regular_wage,0.093083,2.34,0.217494,324489616,0.324,1491944520,1.492,779,2,Marital Status,widowed,General Education Level,higher secondary
+regular_wage,0.093083,2.33,0.216775,7699217202,7.699,35517016434,35.517,16687,2,age_band,35-44,Household Social Group,others
+regular_wage,0.093083,2.29,0.213179,2755994203,2.756,12928052184,12.928,6292,2,age_band,35-44,General Education Level,higher secondary
+regular_wage,0.093083,2.28,0.212264,2137944771,2.138,10072110308,10.072,4752,2,age_band,45-59,General Education Level,higher secondary
+regular_wage,0.093083,2.27,0.211343,211395984,0.211,1000250226,1.0,516,2,Technical Education Level,technical degree in engineering/technology,Household Type,self-employed
+regular_wage,0.093083,2.26,0.21021,6836453197,6.836,32522051977,32.522,15637,2,life_stage,working_age,General Education Level,higher secondary
+regular_wage,0.093083,2.24,0.208659,484984908,0.485,2324297206,2.324,1341,2,age_band,25-34,Household Religion,Sikhism
+regular_wage,0.093083,2.23,0.207218,15342036565,15.342,74038276160,74.038,46061,2,life_stage,youth,Sector,urban
+regular_wage,0.093083,2.23,0.207417,232432194,0.232,1120603991,1.121,468,2,age_band,25-34,Marital Status,widowed
+regular_wage,0.093083,2.2,0.204536,204507472,0.205,999858887,1.0,569,2,age_band,45-59,Marital Status,divorced/separated
+regular_wage,0.093083,2.2,0.20438,123921461,0.124,606328455,0.606,276,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+regular_wage,0.093083,2.19,0.203561,48012490641,48.012,235862865285,235.863,101291,2,Sex,male,Marital Status,currently married
+regular_wage,0.093083,2.18,0.202683,314999105,0.315,1554150412,1.554,907,2,Marital Status,widowed,General Education Level,graduate
+regular_wage,0.093083,2.17,0.202219,121424540,0.121,600460989,0.6,515,2,General Education Level,secondary,Household Religion,Buddhism
+regular_wage,0.093083,2.16,0.201013,19183743159,19.184,95435269647,95.435,45094,2,life_stage,working_age,Household Social Group,others
+regular_wage,0.093083,2.16,0.200842,534790512,0.535,2662738761,2.663,2218,2,Sex,male,Household Religion,Buddhism
+regular_wage,0.093083,2.15,0.200044,4270977089,4.271,21350201284,21.35,10187,2,age_band,25-34,General Education Level,higher secondary
+regular_wage,0.093083,2.11,0.196446,24711803033,24.712,125794378311,125.794,47553,2,age_band,25-34,Household Religion,Hinduism
+regular_wage,0.093083,2.1,0.195404,14824997769,14.825,75868638816,75.869,34431,2,Sex,male,age_band,45-59
+regular_wage,0.093083,2.1,0.195207,463210409,0.463,2372913344,2.373,1255,2,age_band,35-44,Household Religion,Sikhism
+regular_wage,0.093083,2.08,0.193839,43323876947,43.324,223504407569,223.504,125363,2,Household Religion,Hinduism,Sector,urban
+regular_wage,0.093083,2.08,0.1934,19874750961,19.875,102765006558,102.765,60414,2,Household Social Group,others,Sector,urban
+regular_wage,0.093083,2.08,0.193344,110178560,0.11,569856228,0.57,281,2,life_stage,youth,Marital Status,divorced/separated
+regular_wage,0.093083,2.07,0.192972,9784927838,9.785,50706550013,50.707,24064,2,Sex,male,General Education Level,higher secondary
+regular_wage,0.093083,2.06,0.191344,14281156452,14.281,74635949510,74.636,31494,2,age_band,25-34,life_stage,working_age
+regular_wage,0.093083,2.06,0.191658,8542651777,8.543,44572345116,44.572,26036,2,Household Social Group,scheduled caste,Sector,urban
+regular_wage,0.093083,2.05,0.191244,29200619840,29.201,152687375917,152.687,64509,1,age_band,25-34,,
+regular_wage,0.093083,2.05,0.191149,14919463388,14.919,78051426407,78.051,33015,2,age_band,25-34,life_stage,youth
+regular_wage,0.093083,2.05,0.191126,1421357181,1.421,7436765869,7.437,12706,2,Household Religion,Christianity,Sector,urban
+regular_wage,0.093083,2.03,0.188577,689022834,0.689,3653799445,3.654,4702,2,age_band,45-59,Household Religion,Christianity
+regular_wage,0.093083,2.01,0.187494,378920983,0.379,2020971439,2.021,1161,2,age_band,45-59,Marital Status,never married
+self_employed_own,0.146728,3.69,0.541074,23483988218,23.484,43402538009,43.403,15461,2,age_band,45-59,Household Type,self-employed in agriculture
+self_employed_own,0.146728,3.56,0.521871,10144663349,10.145,19439028778,19.439,7629,2,age_band,35-44,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,3.46,0.507686,9505626852,9.506,18723428126,18.723,7266,2,age_band,45-59,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,3.4,0.498306,24066664123,24.067,48296988211,48.297,18752,2,life_stage,working_age,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,3.27,0.479977,46036340337,46.036,95913717104,95.914,33335,2,life_stage,working_age,Household Type,self-employed in agriculture
+self_employed_own,0.146728,3.25,0.4764,16757506700,16.758,35175315569,35.175,12247,2,age_band,35-44,Household Type,self-employed in agriculture
+self_employed_own,0.146728,3.17,0.464861,35268374599,35.268,75868638816,75.869,34431,2,Sex,male,age_band,45-59
+self_employed_own,0.146728,3.17,0.465522,138672835,0.139,297886772,0.298,443,2,age_band,45-59,Household Religion,others
+self_employed_own,0.146728,3.11,0.455803,221818399,0.222,486654092,0.487,387,2,Marital Status,divorced/separated,Household Type,self-employed
+self_employed_own,0.146728,3.01,0.441804,531019204,0.531,1201933001,1.202,408,2,General Education Level,diploma/certificate course,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,3.0,0.439666,28483790207,28.484,64785135749,64.785,24437,2,Marital Status,currently married,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.88,0.421879,56608741532,56.609,134182469996,134.182,45528,2,Marital Status,currently married,Household Type,self-employed in agriculture
+self_employed_own,0.146728,2.83,0.41502,7905501816,7.906,19048480226,19.048,12392,2,age_band,45-59,Household Type,self-employed
+self_employed_own,0.146728,2.73,0.400942,72253036491,72.253,180208307883,180.208,79937,2,Sex,male,life_stage,working_age
+self_employed_own,0.146728,2.7,0.395754,25907491410,25.907,65463572105,65.464,24611,2,Sex,male,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.67,0.391511,17545781898,17.546,44815500473,44.816,28984,2,life_stage,working_age,Household Type,self-employed
+self_employed_own,0.146728,2.66,0.390184,7877341873,7.877,20188769980,20.189,7657,2,age_band,25-34,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.66,0.389773,6799401137,6.799,17444536317,17.445,11304,2,age_band,35-44,Household Type,self-employed
+self_employed_own,0.146728,2.62,0.38423,26130981317,26.131,68008725053,68.009,29892,2,Sex,male,age_band,35-44
+self_employed_own,0.146728,2.61,0.383687,90497532444,90.498,235862865285,235.863,101291,2,Sex,male,Marital Status,currently married
+self_employed_own,0.146728,2.53,0.370906,11460661627,11.461,30899135893,30.899,10688,2,age_band,60+,Household Type,self-employed in agriculture
+self_employed_own,0.146728,2.53,0.370906,11460661627,11.461,30899135893,30.899,10688,2,life_stage,senior,Household Type,self-employed in agriculture
+self_employed_own,0.146728,2.51,0.367779,38265732204,38.266,104045444646,104.045,38504,2,age_band,45-59,Sector,rural
+self_employed_own,0.146728,2.5,0.366944,9271083286,9.271,25265679979,25.266,13581,2,age_band,45-59,General Education Level,middle
+self_employed_own,0.146728,2.49,0.36467,279814980,0.28,767310646,0.767,1145,2,life_stage,working_age,Household Religion,others
+self_employed_own,0.146728,2.48,0.363316,8665378871,8.665,23850816244,23.851,10179,2,General Education Level,middle,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.45,0.359562,4615665476,4.616,12836912638,12.837,9004,2,age_band,45-59,Household Social Group,scheduled tribe
+self_employed_own,0.146728,2.44,0.358554,47042783776,47.043,131201482037,131.201,44726,2,Sex,male,Household Type,self-employed in agriculture
+self_employed_own,0.146728,2.44,0.357933,7701819396,7.702,21517472661,21.517,10118,2,age_band,45-59,General Education Level,primary
+self_employed_own,0.146728,2.41,0.352888,19395136982,19.395,54961170591,54.961,35231,2,Marital Status,currently married,Household Type,self-employed
+self_employed_own,0.146728,2.41,0.354013,19358614898,19.359,54683277030,54.683,35350,2,Sex,male,Household Type,self-employed
+self_employed_own,0.146728,2.38,0.349626,5388057958,5.388,15410911572,15.411,7148,2,age_band,45-59,General Education Level,secondary
+self_employed_own,0.146728,2.37,0.347092,321801498,0.322,927137192,0.927,1304,2,Marital Status,currently married,Household Religion,others
+self_employed_own,0.146728,2.37,0.347617,116025382,0.116,333773826,0.334,470,2,age_band,25-34,Household Religion,others
+self_employed_own,0.146728,2.35,0.344616,3471009972,3.471,10072110308,10.072,4752,2,age_band,45-59,General Education Level,higher secondary
+self_employed_own,0.146728,2.31,0.338331,23455303219,23.455,69326484711,69.326,28400,2,age_band,45-59,Household Social Group,other backward class
+self_employed_own,0.146728,2.29,0.335313,5527924861,5.528,16485865636,16.486,9042,2,age_band,45-59,Household Religion,Islam
+self_employed_own,0.146728,2.22,0.325155,81224026814,81.224,249800686366,249.801,90869,2,life_stage,working_age,Sector,rural
+self_employed_own,0.146728,2.21,0.324266,43293658838,43.294,133512869455,133.513,60244,2,age_band,45-59,Marital Status,currently married
+self_employed_own,0.146728,2.21,0.323952,30818821723,30.819,95133824816,95.134,34953,2,age_band,35-44,Sector,rural
+self_employed_own,0.146728,2.2,0.322394,23545871487,23.546,73034369751,73.034,36583,2,life_stage,working_age,General Education Level,middle
+self_employed_own,0.146728,2.2,0.322322,16892129330,16.892,52407542917,52.408,22944,2,Sex,male,age_band,60+
+self_employed_own,0.146728,2.2,0.322322,16892129330,16.892,52407542917,52.408,22944,2,Sex,male,life_stage,senior
+self_employed_own,0.146728,2.2,0.322886,4596689677,4.597,14236274024,14.236,5801,2,General Education Level,secondary,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.2,0.322388,434384006,0.434,1347395633,1.347,395,2,General Education Level,postgraduate and above,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.19,0.32158,2240524546,2.241,6967241547,6.967,2237,2,General Education Level,graduate,Household Type,self-employed in non-agriculture
+self_employed_own,0.146728,2.18,0.320045,5488016068,5.488,17147662350,17.148,8681,2,age_band,35-44,Household Religion,Islam
+self_employed_own,0.146728,2.18,0.3195,33060640,0.033,103476296,0.103,484,2,Household Religion,others,Household Social Group,other backward class
+self_employed_own,0.146728,2.17,0.318481,4093788617,4.094,12854099882,12.854,4671,2,Marital Status,widowed,Household Type,self-employed in agriculture
+self_employed_own,0.146728,2.16,0.317516,47283162041,47.283,148915684716,148.916,67373,2,age_band,45-59,Technical Education Level,no technical education
+self_employed_own,0.146728,2.16,0.317593,10035239518,10.035,31597800042,31.598,15681,2,age_band,35-44,General Education Level,middle
+self_employed_own,0.146728,2.15,0.316133,16935480016,16.935,53570668297,53.571,22754,2,life_stage,working_age,General Education Level,primary
+self_employed_own,0.146728,2.15,0.315102,3457120094,3.457,10971431186,10.971,5255,2,age_band,45-59,General Education Level,literate: below primary
+self_employed_own,0.146728,2.14,0.313496,47826502244,47.827,152558651589,152.559,69169,1,age_band,45-59,,
+self_employed_own,0.146728,2.14,0.313496,47826502244,47.827,152558651589,152.559,69169,2,age_band,45-59,life_stage,working_age
+self_employed_own,0.146728,2.14,0.313446,40205843492,40.206,128270567864,128.271,52612,2,age_band,45-59,Household Religion,Hinduism
+self_employed_own,0.146728,2.14,0.314487,6839905159,6.84,21749435645,21.749,9097,2,age_band,35-44,General Education Level,primary
+self_employed_own,0.146728,2.13,0.312557,2299899473,2.3,7358331336,7.358,3049,2,age_band,35-44,General Education Level,literate: below primary
+self_employed_own,0.146728,2.12,0.311769,13465299303,13.465,43190012539,43.19,22343,2,life_stage,working_age,Household Religion,Islam
+self_employed_own,0.146728,2.11,0.310266,13028062124,13.028,41989924515,41.99,20509,2,life_stage,working_age,General Education Level,secondary
+self_employed_own,0.146728,2.09,0.306177,5182117909,5.182,16925218264,16.925,8528,2,age_band,35-44,General Education Level,secondary
+self_employed_own,0.146728,2.09,0.306782,725121023,0.725,2363633538,2.364,1345,2,age_band,45-59,Household Religion,Sikhism
+self_employed_own,0.146728,2.07,0.30359,9838664416,9.839,32407700730,32.408,22808,2,life_stage,working_age,Household Social Group,scheduled tribe
+self_employed_own,0.146728,2.06,0.301756,50752633763,50.753,168190891744,168.191,66727,2,life_stage,working_age,Household Social Group,other backward class
+self_employed_own,0.146728,2.06,0.301741,6406391308,6.406,21231413188,21.231,9238,2,life_stage,working_age,General Education Level,literate: below primary
+self_employed_own,0.146728,2.06,0.302613,190977692,0.191,631096105,0.631,289,1,General Education Level,literate without formal schooling: EGS/NFEC/AEC,,
+self_employed_own,0.146728,2.06,0.302613,190977692,0.191,631096105,0.631,289,2,General Education Level,literate without formal schooling: EGS/NFEC/AEC,Technical Education Level,no technical education
+self_employed_own,0.146728,2.05,0.301277,19445186790,19.445,64542529173,64.543,25487,2,age_band,35-44,Household Social Group,other backward class
+self_employed_own,0.146728,2.05,0.300732,3887880449,3.888,12928052184,12.928,6292,2,age_band,35-44,General Education Level,higher secondary
+self_employed_own,0.146728,2.05,0.300315,356940639,0.357,1188552202,1.189,742,2,General Education Level,diploma/certificate course,Household Type,self-employed
+self_employed_own,0.146728,2.05,0.300129,214718422,0.215,715420184,0.715,279,2,Marital Status,divorced/separated,Household Type,self-employed in agriculture
+self_employed_own,0.146728,2.04,0.299473,12584669944,12.585,42022712790,42.023,20151,2,age_band,45-59,Household Social Group,others
+self_employed_own,0.146728,2.02,0.296229,3689188948,3.689,12453851267,12.454,9099,2,age_band,35-44,Household Social Group,scheduled tribe
+sought_work,0.017486,19.4,0.33926,456565653,0.457,1345770155,1.346,482,2,age_band,15-24,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,18.75,0.327807,204811731,0.205,624793793,0.625,300,2,Marital Status,never married,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,17.83,0.311855,537466783,0.537,1723451835,1.723,726,2,age_band,15-24,General Education Level,postgraduate and above
+sought_work,0.017486,17.16,0.299989,207670920,0.208,692262769,0.692,305,2,life_stage,youth,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,15.86,0.277343,397632394,0.398,1433722853,1.434,603,2,life_stage,youth,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,15.19,0.265666,1377668084,1.378,5185713244,5.186,2632,2,Marital Status,never married,General Education Level,postgraduate and above
+sought_work,0.017486,14.49,0.253462,215784624,0.216,851350591,0.851,288,2,General Education Level,graduate,Household Type,casual labour in agriculture
+sought_work,0.017486,13.98,0.244494,312006332,0.312,1276129005,1.276,543,2,Marital Status,never married,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,13.97,0.244313,185446657,0.185,759054943,0.759,512,2,General Education Level,graduate,Household Type,casual labour
+sought_work,0.017486,13.72,0.239974,745658641,0.746,3107244328,3.107,1279,2,Marital Status,never married,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,13.28,0.232208,1407567248,1.408,6061661673,6.062,2776,2,life_stage,youth,General Education Level,postgraduate and above
+sought_work,0.017486,12.38,0.21655,685458029,0.685,3165351391,3.165,1498,2,age_band,25-34,Household Type,others
+sought_work,0.017486,12.11,0.21179,3764227656,3.764,17773359294,17.773,7882,2,age_band,15-24,General Education Level,graduate
+sought_work,0.017486,12.1,0.211659,5416775646,5.417,25592011881,25.592,12489,2,Marital Status,never married,General Education Level,graduate
+sought_work,0.017486,12.08,0.21128,238299194,0.238,1127884186,1.128,527,2,General Education Level,graduate,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,11.63,0.203293,708346276,0.708,3484361324,3.484,1303,2,life_stage,youth,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,11.5,0.201164,301554043,0.302,1499048394,1.499,412,2,Technical Education Level,technical degree in engineering/technology,Sector,rural
+sought_work,0.017486,11.27,0.197086,104658305,0.105,531028295,0.531,268,2,life_stage,youth,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,11.23,0.196455,253863842,0.254,1292225882,1.292,544,2,age_band,15-24,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,11.16,0.195219,242333782,0.242,1241344641,1.241,747,2,General Education Level,postgraduate and above,Household Type,others
+sought_work,0.017486,11.02,0.192649,404753174,0.405,2100988428,2.101,935,2,Marital Status,never married,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,10.48,0.183268,152372730,0.152,831420962,0.831,424,2,age_band,15-24,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,10.32,0.180447,271222992,0.271,1503061163,1.503,688,1,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,,
+sought_work,0.017486,10.21,0.178539,380918716,0.381,2133536697,2.134,627,2,General Education Level,postgraduate and above,Household Type,self-employed in agriculture
+sought_work,0.017486,10.07,0.176082,214104325,0.214,1215938683,1.216,665,2,Marital Status,never married,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,9.93,0.173671,237327572,0.237,1366538670,1.367,599,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Household Religion,Hinduism
+sought_work,0.017486,9.85,0.172255,722023374,0.722,4191605713,4.192,2311,2,General Education Level,graduate,Household Type,others
+sought_work,0.017486,9.65,0.168743,411514093,0.412,2438701288,2.439,1045,2,life_stage,youth,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,9.56,0.167241,196084399,0.196,1172468692,1.172,542,2,Sex,male,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,9.47,0.165555,145667318,0.146,879875161,0.88,372,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Social Group,scheduled caste
+sought_work,0.017486,9.43,0.164866,112340554,0.112,681405154,0.681,802,2,General Education Level,postgraduate and above,Household Social Group,scheduled tribe
+sought_work,0.017486,9.39,0.164284,272513578,0.273,1658796833,1.659,841,2,life_stage,youth,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,9.37,0.163899,5677550217,5.678,34640508736,34.641,15355,2,life_stage,youth,General Education Level,graduate
+sought_work,0.017486,9.33,0.163142,307160941,0.307,1882785506,1.883,837,2,age_band,25-34,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,9.16,0.160231,160271477,0.16,1000250226,1.0,516,2,Technical Education Level,technical degree in engineering/technology,Household Type,self-employed
+sought_work,0.017486,8.91,0.15587,245310609,0.245,1573817314,1.574,576,2,General Education Level,graduate,Household Type,casual labour in non-agriculture
+sought_work,0.017486,8.71,0.152356,101271318,0.101,664700600,0.665,306,2,General Education Level,graduate,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,8.6,0.150399,541313207,0.541,3599169225,3.599,1615,2,Marital Status,never married,General Education Level,diploma/certificate course
+sought_work,0.017486,8.51,0.148794,370044022,0.37,2486958145,2.487,1080,2,age_band,15-24,General Education Level,diploma/certificate course
+sought_work,0.017486,8.49,0.148527,99189392,0.099,667821395,0.668,321,2,age_band,25-34,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,8.31,0.145345,150662037,0.151,1036579455,1.037,549,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Sector,urban
+sought_work,0.017486,8.1,0.141588,94960044,0.095,670680073,0.671,253,2,Technical Education Level,technical degree in other subjects,Household Social Group,scheduled caste
+sought_work,0.017486,8.03,0.140428,88846169,0.089,632680305,0.633,310,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Household Social Group,others
+sought_work,0.017486,7.98,0.139485,628322392,0.628,4504590376,4.505,1981,2,life_stage,youth,General Education Level,diploma/certificate course
+sought_work,0.017486,7.92,0.138462,303075634,0.303,2188867907,2.189,669,2,Technical Education Level,technical degree in other subjects,Sector,rural
+sought_work,0.017486,7.8,0.136365,1167185994,1.167,8559290704,8.559,4011,2,age_band,25-34,General Education Level,postgraduate and above
+sought_work,0.017486,7.64,0.133536,322213433,0.322,2412937722,2.413,1089,2,Sex,female,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,7.56,0.132203,1277880140,1.278,9666020320,9.666,4182,2,General Education Level,graduate,Household Social Group,scheduled caste
+sought_work,0.017486,7.32,0.128061,992095293,0.992,7747070635,7.747,2365,2,General Education Level,postgraduate and above,Sector,rural
+sought_work,0.017486,7.31,0.127893,762161637,0.762,5959362750,5.959,2336,2,General Education Level,graduate,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,7.23,0.126462,3786113171,3.786,29938668540,29.939,15936,2,age_band,25-34,Marital Status,never married
+sought_work,0.017486,7.16,0.125167,404240703,0.404,3229609254,3.23,1264,2,Technical Education Level,technical degree in engineering/technology,Household Social Group,other backward class
+sought_work,0.017486,7.16,0.125118,168583200,0.169,1347395633,1.347,395,2,General Education Level,postgraduate and above,Household Type,self-employed in non-agriculture
+sought_work,0.017486,7.15,0.124984,215554080,0.216,1724654645,1.725,646,2,Sex,female,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,7.13,0.124678,331960596,0.332,2662542461,2.663,1051,2,General Education Level,postgraduate and above,Household Social Group,scheduled caste
+sought_work,0.017486,7.13,0.124602,291233822,0.291,2337305390,2.337,1005,2,General Education Level,graduate,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,7.09,0.12404,53173267,0.053,428678731,0.429,282,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Religion,Islam
+sought_work,0.017486,6.98,0.122087,841616463,0.842,6893564230,6.894,2711,1,Technical Education Level,technical degree in engineering/technology,,
+sought_work,0.017486,6.93,0.121121,626062383,0.626,5168909585,5.169,2065,2,Sex,male,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,6.82,0.11923,52125189,0.052,437181350,0.437,266,2,General Education Level,diploma/certificate course,Household Social Group,scheduled tribe
+sought_work,0.017486,6.76,0.11825,740885031,0.741,6265402232,6.265,2376,2,Technical Education Level,technical degree in engineering/technology,Household Religion,Hinduism
+sought_work,0.017486,6.57,0.114869,60388654,0.06,525718148,0.526,371,2,General Education Level,graduate,Household Religion,Buddhism
+sought_work,0.017486,6.53,0.114109,480664089,0.481,4212330050,4.212,1732,2,Technical Education Level,technical degree in other subjects,Household Religion,Hinduism
+sought_work,0.017486,6.5,0.11374,197969840,0.198,1740551999,1.741,773,2,General Education Level,diploma/certificate course,Household Social Group,scheduled caste
+sought_work,0.017486,6.42,0.112184,105622592,0.106,941511507,0.942,423,2,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology,Household Type,regular wage/salary earning
+sought_work,0.017486,6.4,0.111908,965326327,0.965,8626048327,8.626,3951,2,life_stage,youth,Household Type,others
+sought_work,0.017486,6.32,0.110518,770006978,0.77,6967241547,6.967,2237,2,General Education Level,graduate,Household Type,self-employed in non-agriculture
+sought_work,0.017486,6.21,0.10851,215098598,0.215,1982300370,1.982,814,2,Technical Education Level,technical degree in other subjects,Household Social Group,other backward class
+sought_work,0.017486,6.2,0.108383,65715395,0.066,606328455,0.606,276,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,6.17,0.107863,354000035,0.354,3281935067,3.282,3864,2,General Education Level,graduate,Household Social Group,scheduled tribe
+sought_work,0.017486,6.11,0.106804,526551422,0.527,4930060723,4.93,2168,1,Technical Education Level,technical degree in other subjects,,
+sought_work,0.017486,6.05,0.10579,162988404,0.163,1540672553,1.541,771,2,age_band,25-34,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,5.99,0.104677,181872881,0.182,1737470476,1.737,944,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,5.88,0.102738,52597349,0.053,511954939,0.512,284,2,Sex,female,Technical Education Level,technical degree in medicine
+sought_work,0.017486,5.86,0.102458,72792496,0.073,710464512,0.71,357,2,age_band,25-34,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,5.81,0.101583,117282966,0.117,1154553533,1.155,883,2,General Education Level,postgraduate and above,Household Religion,Islam
+sought_work,0.017486,5.8,0.101415,3462491823,3.462,34141768130,34.142,11280,2,General Education Level,graduate,Sector,rural
+sought_work,0.017486,5.8,0.101386,1273446607,1.273,12560408725,12.56,3724,2,General Education Level,graduate,Household Type,self-employed in agriculture
+sought_work,0.017486,5.77,0.100963,364103300,0.364,3606316091,3.606,1428,2,age_band,25-34,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,5.76,0.100774,70655047,0.071,701122819,0.701,324,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Social Group,scheduled caste
+sought_work,0.017486,5.73,0.100113,540062420,0.54,5394515836,5.395,2299,2,Technical Education Level,technical degree in engineering/technology,Sector,urban
+sought_work,0.017486,5.72,0.099996,272529931,0.273,2725395716,2.725,850,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Sector,rural
+sought_work,0.017486,5.68,0.099298,93297957,0.093,939574692,0.94,509,2,Sex,female,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,5.65,0.098873,4226377397,4.226,42745460537,42.745,19979,2,Sex,male,General Education Level,graduate
+sought_work,0.017486,5.59,0.097767,1009351157,1.009,10324040491,10.324,5024,2,Sex,female,General Education Level,postgraduate and above
+sought_work,0.017486,5.47,0.095598,81495519,0.081,852481972,0.852,437,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Social Group,others
+sought_work,0.017486,5.44,0.095151,465243757,0.465,4889520948,4.89,3376,2,General Education Level,graduate,Household Religion,Islam
+sought_work,0.017486,5.38,0.0941,781676573,0.782,8306828286,8.307,3563,2,General Education Level,postgraduate and above,Household Social Group,other backward class
+sought_work,0.017486,5.38,0.094068,76418997,0.076,812383251,0.812,434,2,General Education Level,graduate,Technical Education Level,technical degree in medicine
+sought_work,0.017486,5.32,0.092977,2918728686,2.919,31391858312,31.392,13270,2,General Education Level,graduate,Household Social Group,other backward class
+sought_work,0.017486,5.28,0.092288,320862380,0.321,3476734653,3.477,1593,2,age_band,25-34,General Education Level,diploma/certificate course
+sought_work,0.017486,5.27,0.092157,56235899,0.056,610219079,0.61,286,2,life_stage,youth,Technical Education Level,diploma or certificate (below graduate level) in medicine
+sought_work,0.017486,5.24,0.091556,110043640,0.11,1201933001,1.202,408,2,General Education Level,diploma/certificate course,Household Type,self-employed in non-agriculture
+sought_work,0.017486,5.19,0.09076,235317600,0.235,2592755333,2.593,1163,2,General Education Level,postgraduate and above,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,5.18,0.090544,108040714,0.108,1193240235,1.193,434,2,General Education Level,diploma/certificate course,Household Type,self-employed in agriculture
+sought_work,0.017486,5.18,0.090539,56450886,0.056,623495115,0.623,347,2,General Education Level,diploma/certificate course,Household Religion,Christianity
+sought_work,0.017486,5.15,0.090092,1410149562,1.41,15652393833,15.652,7457,2,General Education Level,postgraduate and above,Technical Education Level,no technical education
+sought_work,0.017486,5.12,0.089492,81449017,0.081,910127831,0.91,496,2,General Education Level,graduate,Household Religion,Sikhism
+sought_work,0.017486,5.11,0.089313,179659642,0.18,2011581624,2.012,869,2,age_band,25-34,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,5.11,0.089354,66460961,0.066,743797925,0.744,669,2,General Education Level,postgraduate and above,Household Religion,Christianity
+sought_work,0.017486,5.1,0.089138,1909564332,1.91,21422538584,21.423,10148,1,General Education Level,postgraduate and above,,
+sought_work,0.017486,5.1,0.089238,265151251,0.265,2971284968,2.971,1123,2,Technical Education Level,technical degree in engineering/technology,Household Social Group,others
+sought_work,0.017486,5.09,0.089076,63347339,0.063,711158939,0.711,426,2,Technical Education Level,technical degree in other subjects,Household Type,self-employed
+sought_work,0.017486,5.08,0.088918,457301704,0.457,5142962627,5.143,2208,1,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,,
+sought_work,0.017486,5.07,0.088682,2515994243,2.516,28370935771,28.371,12827,2,age_band,25-34,General Education Level,graduate
+sought_work,0.017486,5.01,0.087646,6510137388,6.51,74277524020,74.278,34874,1,General Education Level,graduate,,
+sought_work,0.017486,5.0,0.087457,5701031091,5.701,65186475080,65.186,27399,2,General Education Level,graduate,Household Religion,Hinduism
+sought_work,0.017486,5.0,0.087412,1637750236,1.638,18735929730,18.736,8129,2,General Education Level,postgraduate and above,Household Religion,Hinduism
+sought_work,0.017486,4.99,0.087256,192689463,0.193,2208332911,2.208,1050,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Social Group,other backward class
+sought_work,0.017486,4.94,0.086316,391586309,0.392,4536634172,4.537,1932,2,Sex,male,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,4.93,0.08628,63552072,0.064,736583399,0.737,344,2,life_stage,working_age,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,4.92,0.086007,184862721,0.185,2149399657,2.149,2753,2,General Education Level,graduate,Household Religion,Christianity
+sought_work,0.017486,4.91,0.08589,394107257,0.394,4588518595,4.589,1899,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Religion,Hinduism
+sought_work,0.017486,4.87,0.08514,94255193,0.094,1107057945,1.107,533,2,General Education Level,graduate,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,4.86,0.085051,79454826,0.079,934201480,0.934,375,2,General Education Level,postgraduate and above,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,4.83,0.084478,194971282,0.195,2307944130,2.308,1204,2,age_band,15-24,Household Religion,Sikhism
+sought_work,0.017486,4.8,0.083873,454757531,0.455,5421996395,5.422,1903,2,General Education Level,diploma/certificate course,Sector,rural
+sought_work,0.017486,4.76,0.083183,113953446,0.114,1369916005,1.37,1074,2,life_stage,youth,Household Religion,Buddhism
+sought_work,0.017486,4.76,0.083227,82640145,0.083,992951398,0.993,521,2,General Education Level,graduate,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,4.73,0.082653,409092072,0.409,4949532269,4.95,7331,2,life_stage,youth,Household Religion,Christianity
+sought_work,0.017486,4.72,0.082586,50583374,0.051,612493792,0.612,364,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Type,self-employed
+sought_work,0.017486,4.7,0.082171,86214010,0.086,1049197535,1.049,688,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Sector,urban
+sought_work,0.017486,4.69,0.081949,56588898,0.057,690534799,0.691,332,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Social Group,other backward class
+sought_work,0.017486,4.66,0.081525,223475788,0.223,2741192816,2.741,1499,2,Technical Education Level,technical degree in other subjects,Sector,urban
+sought_work,0.017486,4.64,0.081111,900213175,0.9,11098498093,11.098,5124,2,Sex,male,General Education Level,postgraduate and above
+sought_work,0.017486,4.64,0.081139,212827564,0.213,2622985019,2.623,1066,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Sector,rural
+sought_work,0.017486,4.64,0.081179,204337989,0.204,2517123001,2.517,1079,2,Sex,male,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,4.64,0.081137,155192441,0.155,1912723708,1.913,1016,1,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,,
+sought_work,0.017486,4.64,0.081115,137447592,0.137,1694484489,1.694,809,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Religion,Hinduism
+sought_work,0.017486,4.64,0.081204,74255281,0.074,914423704,0.914,741,2,age_band,15-24,Household Religion,Buddhism
+sought_work,0.017486,4.57,0.07988,68978431,0.069,863526173,0.864,328,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Sector,rural
+sought_work,0.017486,4.56,0.079707,82458409,0.082,1034523305,1.035,564,1,Technical Education Level,technical degree in medicine,,
+sought_work,0.017486,4.55,0.079513,4802413861,4.802,60397524323,60.398,28749,2,General Education Level,graduate,Technical Education Level,no technical education
+sought_work,0.017486,4.55,0.079483,346469309,0.346,4359020669,4.359,1839,2,General Education Level,diploma/certificate course,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology
+sought_work,0.017486,4.55,0.079647,159084840,0.159,1997379134,1.997,947,2,Technical Education Level,technical degree in other subjects,Household Social Group,others
+sought_work,0.017486,4.51,0.078881,72552296,0.073,919772310,0.92,495,2,General Education Level,postgraduate and above,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,4.51,0.078901,28489950,0.028,361086124,0.361,251,2,Technical Education Level,technical degree in other subjects,Household Religion,Islam
+sought_work,0.017486,4.48,0.078324,51859926,0.052,662119347,0.662,419,2,General Education Level,diploma/certificate course,Household Religion,Islam
+sought_work,0.017486,4.39,0.07682,104005862,0.104,1353895058,1.354,558,2,General Education Level,diploma/certificate course,Technical Education Level,no technical education
+sought_work,0.017486,4.37,0.076429,184771773,0.185,2417566911,2.418,1358,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Sector,urban
+sought_work,0.017486,4.34,0.075933,3047645565,3.048,40135755890,40.136,23594,2,General Education Level,graduate,Sector,urban
+sought_work,0.017486,4.32,0.075467,255408625,0.255,3384381740,3.384,4591,2,age_band,25-34,Household Religion,Christianity
+sought_work,0.017486,4.32,0.075582,245544138,0.246,3248724803,3.249,5160,2,age_band,15-24,Household Religion,Christianity
+sought_work,0.017486,4.29,0.074998,256560252,0.257,3420891329,3.421,1811,2,life_stage,youth,Household Religion,Sikhism
+sought_work,0.017486,4.26,0.074416,520619645,0.521,6996106483,6.996,3158,2,age_band,15-24,Household Type,others
+sought_work,0.017486,4.26,0.074545,64952026,0.065,871314905,0.871,382,2,Marital Status,currently married,Technical Education Level,diploma or certificate (graduate and above level) in engineering/technology
+sought_work,0.017486,4.23,0.073932,543428959,0.543,7350359379,7.35,3205,2,Sex,male,General Education Level,diploma/certificate course
+sought_work,0.017486,4.22,0.073832,288849220,0.289,3912273574,3.912,2276,2,General Education Level,postgraduate and above,Household Type,self-employed
+sought_work,0.017486,4.2,0.073509,722477989,0.722,9828453944,9.828,4476,1,General Education Level,diploma/certificate course,,
+sought_work,0.017486,4.18,0.073008,98814562,0.099,1353473918,1.353,616,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Social Group,others
+sought_work,0.017486,4.16,0.072729,328071255,0.328,4510893256,4.511,2248,1,Technical Education Level,diploma or certificate (below graduate level) in other subjects,,
+sought_work,0.017486,4.14,0.072433,2283759991,2.284,31529244508,31.529,14894,2,Sex,female,General Education Level,graduate
+sought_work,0.017486,4.13,0.072253,179049030,0.179,2478094565,2.478,1271,2,Sex,female,General Education Level,diploma/certificate course
+sought_work,0.017486,4.13,0.072234,9566619,0.01,132438459,0.132,261,2,General Education Level,graduate,Household Religion,others
+sought_work,0.017486,4.09,0.071546,596239786,0.596,8333646087,8.334,3596,2,General Education Level,diploma/certificate course,Household Religion,Hinduism
+sought_work,0.017486,4.06,0.071014,959183602,0.959,13506938371,13.507,8162,2,General Education Level,graduate,Household Type,self-employed
+sought_work,0.017486,4.05,0.070844,8922004530,8.922,125939613769,125.94,55543,2,Sex,male,life_stage,youth
+sought_work,0.017486,4.03,0.070432,40679531,0.041,577575503,0.578,302,1,Technical Education Level,diploma or certificate (graduate and above level) in medicine,,
+sought_work,0.017486,4.0,0.070012,6126835641,6.127,87511318750,87.511,39066,2,Sex,male,age_band,15-24
+sought_work,0.017486,4.0,0.069955,683586609,0.684,9771762683,9.772,4732,2,General Education Level,postgraduate and above,Household Social Group,others
+sought_work,0.017486,3.97,0.069386,250643820,0.251,3612298112,3.612,1669,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Religion,Hinduism
+sought_work,0.017486,3.95,0.06902,11136832927,11.137,161357306738,161.357,74787,2,life_stage,youth,Marital Status,never married
+sought_work,0.017486,3.93,0.068779,378725631,0.379,5506393026,5.506,3306,2,age_band,15-24,Household Type,casual labour
+sought_work,0.017486,3.86,0.067413,52082677,0.052,772586577,0.773,455,2,Technical Education Level,technical degree in medicine,Sector,urban
+sought_work,0.017486,3.84,0.067089,917469039,0.917,13675467949,13.675,7783,2,General Education Level,postgraduate and above,Sector,urban
+sought_work,0.017486,3.82,0.066815,57750351,0.058,864326336,0.864,436,2,General Education Level,diploma/certificate course,Technical Education Level,diploma or certificate (below graduate level) in medicine
+sought_work,0.017486,3.81,0.066697,327876924,0.328,4915886531,4.916,1842,2,Technical Education Level,technical degree in engineering/technology,Household Type,regular wage/salary earning
+sought_work,0.017486,3.8,0.066532,181895669,0.182,2733939401,2.734,1114,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Social Group,other backward class
+sought_work,0.017486,3.75,0.065642,37406459,0.037,569856228,0.57,281,2,life_stage,youth,Marital Status,divorced/separated
+sought_work,0.017486,3.74,0.065454,1959528527,1.96,29937710321,29.938,13558,2,General Education Level,graduate,Household Social Group,others
+sought_work,0.017486,3.71,0.064796,4797391838,4.797,74038276160,74.038,46061,2,life_stage,youth,Sector,urban
+sought_work,0.017486,3.67,0.064248,328817495,0.329,5117965765,5.118,2233,2,General Education Level,diploma/certificate course,Household Social Group,other backward class
+sought_work,0.017486,3.66,0.063989,129494188,0.129,2023702392,2.024,1940,2,Marital Status,never married,Household Religion,Buddhism
+sought_work,0.017486,3.65,0.063791,58692219,0.059,920077038,0.92,735,2,age_band,25-34,Household Religion,Buddhism
+sought_work,0.017486,3.64,0.063585,177482951,0.177,2791275584,2.791,1229,2,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology,Household Type,regular wage/salary earning
+sought_work,0.017486,3.64,0.063602,61894484,0.062,973149016,0.973,507,2,Sex,male,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,3.62,0.063231,3126955835,3.127,49452699155,49.453,31525,2,age_band,15-24,Sector,urban
+sought_work,0.017486,3.61,0.063157,2138934937,2.139,33867106816,33.867,17064,2,General Education Level,graduate,Household Type,regular wage/salary earning
+sought_work,0.017486,3.61,0.063062,35408964,0.035,561496228,0.561,333,2,Technical Education Level,technical degree in medicine,Household Type,regular wage/salary earning
+sought_work,0.017486,3.54,0.061837,847161309,0.847,13699855581,13.7,8123,2,life_stage,working_age,Marital Status,never married
+sought_work,0.017486,3.54,0.061837,66131230,0.066,1069444768,1.069,514,2,age_band,25-34,Marital Status,divorced/separated
+sought_work,0.017486,3.51,0.061412,50407932,0.05,820812854,0.821,412,2,Technical Education Level,technical degree in medicine,Household Religion,Hinduism
+sought_work,0.017486,3.5,0.061222,1054358366,1.054,17221885213,17.222,7073,2,Marital Status,never married,Household Type,others
+sought_work,0.017486,3.5,0.061189,188338739,0.188,3077998466,3.078,1558,2,General Education Level,diploma/certificate course,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,3.49,0.061091,126315882,0.126,2067680321,2.068,1656,2,Household Religion,Buddhism,Sector,urban
+sought_work,0.017486,3.49,0.061043,115243691,0.115,1887908237,1.888,1182,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Sector,urban
+sought_work,0.017486,3.48,0.060805,211284607,0.211,3474774689,3.475,1540,2,Marital Status,currently married,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,3.47,0.060759,2406035210,2.406,39599923145,39.6,20961,2,age_band,15-24,Household Type,regular wage/salary earning
+sought_work,0.017486,3.47,0.060756,267720458,0.268,4406457549,4.406,2573,2,General Education Level,diploma/certificate course,Sector,urban
+sought_work,0.017486,3.43,0.060062,3798496266,3.798,63243225506,63.243,32343,2,life_stage,youth,Household Type,regular wage/salary earning
+sought_work,0.017486,3.39,0.059193,74814587,0.075,1263915318,1.264,659,2,Technical Education Level,diploma or certificate (graduate and above level) in other subjects,Household Type,regular wage/salary earning
+sought_work,0.017486,3.37,0.058983,486339282,0.486,8245405449,8.245,4749,2,life_stage,youth,Household Type,casual labour
+sought_work,0.017486,3.35,0.058571,1573590916,1.574,26866181264,26.866,17765,2,life_stage,youth,Household Type,self-employed
+sought_work,0.017486,3.35,0.058576,29374825,0.029,501480720,0.501,445,2,Household Religion,Buddhism,Household Type,self-employed
+sought_work,0.017486,3.31,0.057892,1087115233,1.087,18778346575,18.778,12480,2,age_band,15-24,Household Type,self-employed
+sought_work,0.017486,3.3,0.057698,8010294768,8.01,138832479553,138.832,63213,2,age_band,15-24,Marital Status,never married
+sought_work,0.017486,3.3,0.057742,3287102733,3.287,56927575467,56.928,26276,2,life_stage,youth,Household Social Group,others
+sought_work,0.017486,3.27,0.057143,29861060,0.03,522568366,0.523,280,2,Sex,male,Technical Education Level,technical degree in medicine
+sought_work,0.017486,3.25,0.056798,705275482,0.705,12417184681,12.417,5955,2,General Education Level,postgraduate and above,Household Type,regular wage/salary earning
+sought_work,0.017486,3.25,0.056879,67603894,0.068,1188552202,1.189,742,2,General Education Level,diploma/certificate course,Household Type,self-employed
+sought_work,0.017486,3.24,0.056684,143565465,0.144,2532754830,2.533,1204,2,General Education Level,diploma/certificate course,Household Social Group,others
+sought_work,0.017486,3.23,0.056523,1915697417,1.916,33892490241,33.892,13802,2,age_band,15-24,Household Social Group,scheduled caste
+sought_work,0.017486,3.22,0.056326,1006903743,1.007,17876292664,17.876,7859,2,Sex,male,Household Type,others
+sought_work,0.017486,3.2,0.056037,31493877,0.031,562016999,0.562,281,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Household Social Group,other backward class
+sought_work,0.017486,3.18,0.055636,64046835,0.064,1151169627,1.151,596,1,Technical Education Level,diploma or certificate (below graduate level) in medicine,,
+sought_work,0.017486,3.13,0.054667,38149576,0.038,697850159,0.698,374,2,Sex,female,Technical Education Level,diploma or certificate (below graduate level) in medicine
+sought_work,0.017486,3.1,0.054137,2068705955,2.069,38212202242,38.212,17833,2,age_band,15-24,Household Social Group,others
+sought_work,0.017486,3.09,0.053968,114010432,0.114,2112557272,2.113,1079,2,General Education Level,higher secondary,Household Religion,Sikhism
+sought_work,0.017486,3.08,0.053934,2699710261,2.7,50056078193,50.056,19902,2,life_stage,youth,Household Social Group,scheduled caste
+sought_work,0.017486,3.08,0.05389,268592649,0.269,4984124334,4.984,2273,2,General Education Level,diploma/certificate course,Household Type,regular wage/salary earning
+sought_work,0.017486,3.03,0.052928,1207481978,1.207,22813471827,22.813,8434,2,age_band,15-24,Household Type,self-employed in non-agriculture
+sought_work,0.017486,3.01,0.052714,146198374,0.146,2773422780,2.773,1304,2,Sex,male,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,3.0,0.052529,4099965183,4.1,78051426407,78.051,33015,2,age_band,25-34,life_stage,youth
+sought_work,0.017486,3.0,0.052489,569878173,0.57,10857179909,10.857,3753,2,life_stage,youth,Household Type,casual labour in agriculture
+sought_work,0.017486,2.98,0.052132,992025771,0.992,19029093766,19.029,11326,2,Household Type,others,Sector,urban
+sought_work,0.017486,2.96,0.051769,29858781,0.03,576768028,0.577,298,2,age_band,35-44,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,2.94,0.051491,10405726172,10.406,202089318902,202.089,79133,2,life_stage,youth,Household Religion,Hinduism
+sought_work,0.017486,2.93,0.051269,2491657104,2.492,48600109611,48.6,28618,2,age_band,25-34,Sector,urban
+sought_work,0.017486,2.92,0.050984,12606158325,12.606,247256184877,247.256,108160,1,life_stage,youth,,
+sought_work,0.017486,2.91,0.050932,1674030290,1.674,32867710500,32.868,12234,2,life_stage,youth,Household Type,self-employed in non-agriculture
+sought_work,0.017486,2.91,0.0509,397399370,0.397,7807527659,7.808,2798,2,age_band,15-24,Household Type,casual labour in agriculture
+sought_work,0.017486,2.89,0.050527,3777381386,3.777,74759239033,74.759,32091,2,Sex,male,age_band,25-34
+sought_work,0.017486,2.89,0.05056,134627900,0.135,2662738761,2.663,2218,2,Sex,male,Household Religion,Buddhism
+sought_work,0.017486,2.88,0.050378,6934437288,6.934,137649335717,137.649,54589,2,age_band,15-24,Household Religion,Hinduism
+sought_work,0.017486,2.87,0.050272,8506193142,8.506,169204758470,169.205,75145,1,age_band,15-24,,
+sought_work,0.017486,2.87,0.050272,8506193142,8.506,169204758470,169.205,75145,2,age_band,15-24,life_stage,youth
+sought_work,0.017486,2.84,0.049606,31101326,0.031,626968666,0.627,392,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Sector,urban
+sought_work,0.017486,2.81,0.049088,107955542,0.108,2199236550,2.199,905,2,General Education Level,higher secondary,Household Type,casual labour in agriculture
+sought_work,0.017486,2.8,0.048989,49122283,0.049,1002723963,1.003,888,2,Household Religion,Christianity,Household Type,casual labour in agriculture
+sought_work,0.017486,2.78,0.048624,3581924,0.004,73666464,0.074,272,2,Household Religion,Buddhism,Household Social Group,others
+sought_work,0.017486,2.77,0.048466,5611266341,5.611,115777481193,115.777,45358,2,life_stage,youth,Household Social Group,other backward class
+sought_work,0.017486,2.77,0.048483,394320466,0.394,8133139096,8.133,4021,2,life_stage,working_age,Household Type,others
+sought_work,0.017486,2.77,0.048482,110626473,0.111,2281785368,2.282,1124,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Type,regular wage/salary earning
+sought_work,0.017486,2.75,0.04807,1759890909,1.76,36610913648,36.611,16699,2,age_band,25-34,Household Social Group,others
+sought_work,0.017486,2.73,0.04778,3838103819,3.838,80327920288,80.328,31759,2,age_band,15-24,Household Social Group,other backward class
+sought_work,0.017486,2.73,0.047706,26255076,0.026,550353857,0.55,363,2,Technical Education Level,diploma or certificate (below graduate level) in other subjects,Household Type,self-employed
+sought_work,0.017486,2.67,0.046755,34884283,0.035,746111486,0.746,726,2,age_band,35-44,Household Religion,Buddhism
+sought_work,0.017486,2.66,0.046571,139832541,0.14,3002556638,3.003,1312,2,Technical Education Level,technical degree in other subjects,Household Type,regular wage/salary earning
+sought_work,0.017486,2.62,0.045759,64970465,0.065,1419844573,1.42,726,2,Marital Status,currently married,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,2.59,0.045264,90491021,0.09,1999162121,1.999,1373,2,General Education Level,higher secondary,Household Type,casual labour
+sought_work,0.017486,2.58,0.045081,7808766487,7.809,173217908717,173.218,62099,2,life_stage,youth,Sector,rural
+sought_work,0.017486,2.57,0.04492,5379237307,5.379,119752059315,119.752,43620,2,age_band,15-24,Sector,rural
+sought_work,0.017486,2.56,0.044801,32051797,0.032,715420184,0.715,279,2,Marital Status,divorced/separated,Household Type,self-employed in agriculture
+sought_work,0.017486,2.51,0.043942,41989115,0.042,955568458,0.956,453,2,Technical Education Level,diploma or certificate (below graduate level) in medicine,Household Religion,Hinduism
+sought_work,0.017486,2.5,0.043639,10278969919,10.279,235546924614,235.547,103072,2,life_stage,youth,Technical Education Level,no technical education
+sought_work,0.017486,2.5,0.043634,245636755,0.246,5629522037,5.63,3132,2,Marital Status,never married,Household Religion,Sikhism
+sought_work,0.017486,2.49,0.043492,7134111916,7.134,164031144494,164.031,72955,2,age_band,15-24,Technical Education Level,no technical education
+sought_work,0.017486,2.49,0.043462,45615692,0.046,1049549638,1.05,875,2,General Education Level,middle,Household Religion,Buddhism
+sought_work,0.017486,2.46,0.042939,6075326,0.006,141487008,0.141,266,2,Marital Status,divorced/separated,Household Religion,Christianity
+sought_work,0.017486,2.45,0.042831,263360925,0.263,6148812719,6.149,1858,2,age_band,25-34,Household Type,casual labour in agriculture
+sought_work,0.017486,2.42,0.042372,1034821862,1.035,24422489126,24.422,12752,2,age_band,15-24,Household Religion,Islam
+sought_work,0.017486,2.41,0.04214,1941017336,1.941,46061685303,46.062,22287,2,age_band,25-34,Household Type,regular wage/salary earning
+sought_work,0.017486,2.41,0.042133,84778806,0.085,2012148919,2.012,2977,2,General Education Level,higher secondary,Household Religion,Christianity
+sought_work,0.017486,2.4,0.04188,655235763,0.655,15645477166,15.645,8770,2,Sex,male,Household Type,casual labour
+sought_work,0.017486,2.4,0.042034,38985413,0.039,927469076,0.927,556,2,Household Religion,Sikhism,Household Type,casual labour in agriculture
+sought_work,0.017486,2.38,0.041676,683918802,0.684,16410318619,16.41,10573,2,age_band,25-34,Household Type,self-employed
+sought_work,0.017486,2.38,0.041619,106172449,0.106,2551055990,2.551,1183,2,age_band,35-44,Household Type,others
+sought_work,0.017486,2.36,0.041198,400273332,0.4,9715741314,9.716,15253,2,Marital Status,never married,Household Religion,Christianity
+sought_work,0.017486,2.36,0.04125,131124883,0.131,3178786591,3.179,1295,2,life_stage,working_age,Technical Education Level,technical degree in engineering/technology
+sought_work,0.017486,2.35,0.041154,1008078990,1.008,24495050024,24.495,16624,2,life_stage,youth,Household Social Group,scheduled tribe
+sought_work,0.017486,2.34,0.040935,771677344,0.772,18851408408,18.851,6778,2,age_band,15-24,Household Type,casual labour in non-agriculture
+sought_work,0.017486,2.34,0.040832,177337242,0.177,4343131530,4.343,1689,2,Household Religion,Buddhism,Household Social Group,scheduled caste
+sought_work,0.017486,2.34,0.04086,74826555,0.075,1831278941,1.831,739,2,Household Religion,Christianity,Household Social Group,scheduled caste
+sought_work,0.017486,2.33,0.040763,683685951,0.684,16772145699,16.772,11751,2,age_band,15-24,Household Social Group,scheduled tribe
+sought_work,0.017486,2.33,0.040657,55902900,0.056,1374980870,1.375,1020,2,Household Religion,Christianity,Household Type,others
+sought_work,0.017486,2.33,0.040713,33664146,0.034,826867276,0.827,386,2,Marital Status,divorced/separated,Household Social Group,scheduled caste
+sought_work,0.017486,2.32,0.040565,4879515515,4.88,120288336107,120.288,75098,2,Marital Status,never married,Sector,urban
+sought_work,0.017486,2.31,0.040389,1390122439,1.39,34418668825,34.419,17815,2,life_stage,youth,Household Religion,Islam
+sought_work,0.017486,2.3,0.040135,128919028,0.129,3212170779,3.212,1408,2,life_stage,working_age,Technical Education Level,technical degree in other subjects
+sought_work,0.017486,2.3,0.040156,50534136,0.051,1258459294,1.258,670,2,life_stage,working_age,Technical Education Level,diploma or certificate (graduate and above level) in other subjects
+sought_work,0.017486,2.26,0.039466,1696901193,1.697,42996176934,42.996,20657,2,Marital Status,never married,General Education Level,higher secondary
+sought_work,0.017486,2.26,0.0395,91808907,0.092,2324297206,2.324,1341,2,age_band,25-34,Household Religion,Sikhism
+sought_work,0.017486,2.23,0.038953,422349999,0.422,10842656553,10.843,3768,2,age_band,15-24,General Education Level,primary
+sought_work,0.017486,2.21,0.038688,536621219,0.537,13870352592,13.87,7100,2,Household Social Group,others,Household Type,others
+sought_work,0.017486,2.19,0.038335,181338846,0.181,4730319551,4.73,2528,2,General Education Level,higher secondary,Household Type,others
+sought_work,0.017486,2.17,0.037875,8957891676,8.958,236510947801,236.511,101671,2,Sex,male,Marital Status,never married
+sought_work,0.017486,2.16,0.037821,4757643180,4.758,125794378311,125.794,47553,2,age_band,25-34,Household Religion,Hinduism
+sought_work,0.017486,2.14,0.037379,196034487,0.196,5244570334,5.245,4412,1,Household Religion,Buddhism,,
+sought_work,0.017486,2.13,0.037258,2540804230,2.541,68195729564,68.196,23676,2,life_stage,youth,Household Type,self-employed in agriculture
+sought_work,0.017486,2.13,0.037166,18087101,0.018,486654092,0.487,387,2,Marital Status,divorced/separated,Household Type,self-employed
+sought_work,0.017486,2.12,0.037026,5653419210,5.653,152687375917,152.687,64509,1,age_band,25-34,,
+sought_work,0.017486,2.12,0.037033,81499255,0.081,2200724996,2.201,677,2,age_band,15-24,General Education Level,literate: below primary
+sought_work,0.017486,2.09,0.036507,529417053,0.529,14501947915,14.502,6680,2,General Education Level,higher secondary,Household Social Group,scheduled caste
+sought_work,0.017486,2.08,0.036413,113492006,0.113,3116807038,3.117,1492,2,Marital Status,currently married,Technical Education Level,diploma or certificate (below graduate level) in other subjects
+sought_work,0.017486,2.07,0.036262,3657305215,3.657,100857954436,100.858,52729,2,Marital Status,never married,Household Type,regular wage/salary earning
+sought_work,0.017486,2.07,0.036137,495447637,0.495,13710202366,13.71,6432,2,life_stage,working_age,General Education Level,postgraduate and above
+sought_work,0.017486,2.05,0.035896,32243477,0.032,898242894,0.898,1008,2,Household Religion,Christianity,Household Type,casual labour
+sought_work,0.017486,2.03,0.03556,1737138731,1.737,48851581347,48.852,17230,2,age_band,15-24,Household Type,self-employed in agriculture
+sought_work,0.017486,2.02,0.035355,236911273,0.237,6700981828,6.701,2478,2,Household Social Group,scheduled caste,Household Type,others
+sought_work,0.017486,2.01,0.03517,1106639266,1.107,31465182354,31.465,11793,2,age_band,25-34,Household Social Group,scheduled caste
+sought_work,0.017486,2.01,0.035186,997692841,0.998,28354704358,28.355,9689,2,life_stage,youth,Household Type,casual labour in non-agriculture
+sought_work,0.017486,2.0,0.035029,3291087319,3.291,93951913145,93.952,44074,2,Marital Status,never married,Household Social Group,others
+subsidiary_work,0.12907,3.88,0.501069,155059895,0.155,309457999,0.309,466,2,age_band,35-44,Household Religion,others
+subsidiary_work,0.12907,3.63,0.46816,5830389512,5.83,12453851267,12.454,9099,2,age_band,35-44,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,3.62,0.466741,358135463,0.358,767310646,0.767,1145,2,life_stage,working_age,Household Religion,others
+subsidiary_work,0.12907,3.54,0.457365,152656461,0.153,333773826,0.334,470,2,age_band,25-34,Household Religion,others
+subsidiary_work,0.12907,3.45,0.445586,14440402676,14.44,32407700730,32.408,22808,2,life_stage,working_age,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,3.45,0.445661,413188600,0.413,927137192,0.927,1304,2,Marital Status,currently married,Household Religion,others
+subsidiary_work,0.12907,3.38,0.435921,6469001352,6.469,14839841150,14.84,9578,2,age_band,25-34,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,3.36,0.433442,129116614,0.129,297886772,0.298,443,2,age_band,45-59,Household Religion,others
+subsidiary_work,0.12907,3.34,0.430921,18613024222,18.613,43193572094,43.194,27554,2,Marital Status,currently married,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,3.28,0.423969,5442452585,5.442,12836912638,12.837,9004,2,age_band,45-59,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,3.26,0.420839,88524612,0.089,210352434,0.21,326,2,General Education Level,secondary,Household Religion,others
+subsidiary_work,0.12907,3.22,0.415697,272439095,0.272,655378527,0.655,725,2,Household Religion,others,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,3.05,0.394107,130690909,0.131,331613053,0.332,387,2,Household Religion,others,Household Type,self-employed in non-agriculture
+subsidiary_work,0.12907,2.96,0.381488,6115043159,6.115,16029450670,16.029,5476,2,age_band,35-44,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.86,0.369148,12984911660,12.985,35175315569,35.175,12247,2,age_band,35-44,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.84,0.366717,2657064407,2.657,7245537119,7.246,2357,2,age_band,35-44,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.77,0.357639,13876615484,13.877,38800588746,38.801,13166,2,life_stage,working_age,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.75,0.354374,580927553,0.581,1639307038,1.639,1945,2,Household Religion,others,Sector,rural
+subsidiary_work,0.12907,2.73,0.352644,128996169,0.129,365796721,0.366,336,2,Household Religion,others,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.72,0.351466,2930356495,2.93,8337522376,8.338,2566,2,age_band,45-59,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.71,0.349432,4748780956,4.749,13590013627,13.59,4855,2,age_band,45-59,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.7,0.348495,6510667808,6.511,18682219964,18.682,5826,2,life_stage,working_age,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.69,0.347483,151287589,0.151,435380907,0.435,413,2,Marital Status,divorced/separated,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.67,0.344898,33080459961,33.08,95913717104,95.914,33335,2,life_stage,working_age,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.66,0.34391,573043993,0.573,1666262549,1.666,2125,2,Household Religion,others,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.61,0.33642,9550398635,9.55,28388342939,28.388,9621,2,age_band,35-44,General Education Level,not literate
+subsidiary_work,0.12907,2.55,0.329593,14305191762,14.305,43402538009,43.403,15461,2,age_band,45-59,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.53,0.326733,142841659,0.143,437181350,0.437,266,2,General Education Level,diploma/certificate course,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.52,0.324757,16919720405,16.92,52099586290,52.1,17131,2,Marital Status,currently married,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.51,0.323925,30816246500,30.816,95133824816,95.134,34953,2,age_band,35-44,Sector,rural
+subsidiary_work,0.12907,2.51,0.324607,7565919531,7.566,23307953484,23.308,7096,2,Marital Status,currently married,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.51,0.323603,4808229468,4.808,14858397650,14.858,5885,2,Household Social Group,scheduled tribe,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.48,0.320587,119113742,0.119,371548530,0.372,423,2,General Education Level,primary,Household Religion,others
+subsidiary_work,0.12907,2.46,0.317421,4886587273,4.887,15394663847,15.395,12142,2,General Education Level,middle,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.45,0.316368,11313758266,11.314,35761358936,35.761,19764,2,Household Social Group,scheduled tribe,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.42,0.312278,7649276532,7.649,24495050024,24.495,16624,2,life_stage,youth,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.41,0.310764,28294855253,28.295,91049335308,91.049,32449,2,life_stage,working_age,General Education Level,not literate
+subsidiary_work,0.12907,2.41,0.310746,167705700,0.168,539687824,0.54,816,2,life_stage,youth,Household Religion,others
+subsidiary_work,0.12907,2.38,0.307055,2259411162,2.259,7358331336,7.358,3049,2,age_band,35-44,General Education Level,literate: below primary
+subsidiary_work,0.12907,2.37,0.305741,76374434896,76.374,249800686366,249.801,90869,2,life_stage,working_age,Sector,rural
+subsidiary_work,0.12907,2.37,0.305819,171754219,0.172,561619693,0.562,605,2,General Education Level,not literate,Household Religion,others
+subsidiary_work,0.12907,2.36,0.304272,31658097037,31.658,104045444646,104.045,38504,2,age_band,45-59,Sector,rural
+subsidiary_work,0.12907,2.35,0.303225,40687454411,40.687,134182469996,134.182,45528,2,Marital Status,currently married,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.34,0.301774,4319491747,4.319,14313668873,14.314,3675,2,age_band,25-34,General Education Level,not literate
+subsidiary_work,0.12907,2.33,0.301286,6552789985,6.553,21749435645,21.749,9097,2,age_band,35-44,General Education Level,primary
+subsidiary_work,0.12907,2.33,0.300943,1850443336,1.85,6148812719,6.149,1858,2,age_band,25-34,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.3,0.296663,15971983629,15.972,53838901720,53.839,20588,2,age_band,45-59,General Education Level,not literate
+subsidiary_work,0.12907,2.3,0.297062,5774588552,5.775,19439028778,19.439,7629,2,age_band,35-44,Household Type,self-employed in non-agriculture
+subsidiary_work,0.12907,2.29,0.296023,318255623,0.318,1075105823,1.075,1512,2,Sex,female,Household Religion,others
+subsidiary_work,0.12907,2.29,0.296131,211857978,0.212,715420184,0.715,279,2,Marital Status,divorced/separated,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.27,0.293004,5486045060,5.486,18723428126,18.723,7266,2,age_band,45-59,Household Type,self-employed in non-agriculture
+subsidiary_work,0.12907,2.25,0.28984,10631320958,10.631,36680011743,36.68,12073,2,age_band,25-34,Household Type,self-employed in agriculture
+subsidiary_work,0.12907,2.25,0.290725,5432033677,5.432,18684420399,18.684,5746,2,age_band,25-34,Household Type,casual labour in non-agriculture
+subsidiary_work,0.12907,2.22,0.286119,1900881346,1.901,6643672434,6.644,6406,2,General Education Level,secondary,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.22,0.286158,1709554027,1.71,5974154041,5.974,5630,2,General Education Level,higher secondary,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.21,0.285139,23242984595,23.243,81514553306,81.515,44803,2,Household Social Group,scheduled tribe,Sector,rural
+subsidiary_work,0.12907,2.2,0.28424,13727948857,13.728,48296988211,48.297,18752,2,life_stage,working_age,Household Type,self-employed in non-agriculture
+subsidiary_work,0.12907,2.2,0.284084,1479754474,1.48,5208858834,5.209,1600,2,age_band,25-34,General Education Level,literate: below primary
+subsidiary_work,0.12907,2.18,0.281964,593936827,0.594,2106426493,2.106,2993,2,Technical Education Level,no technical education,Household Religion,others
+subsidiary_work,0.12907,2.17,0.280703,594458940,0.594,2117754113,2.118,3017,1,Household Religion,others,,
+subsidiary_work,0.12907,2.17,0.279437,97176072,0.097,347756449,0.348,587,2,General Education Level,middle,Household Religion,others
+subsidiary_work,0.12907,2.13,0.275298,3836985764,3.837,13937586500,13.938,8655,2,General Education Level,primary,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.12,0.273426,8621573739,8.622,31531708723,31.532,14276,2,General Education Level,not literate,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.1,0.270811,92092491745,92.092,340061704164,340.062,119740,2,Marital Status,currently married,Sector,rural
+subsidiary_work,0.12907,2.1,0.271431,31685505368,31.686,116735235718,116.735,40790,2,Marital Status,currently married,General Education Level,not literate
+subsidiary_work,0.12907,2.1,0.270686,14500835958,14.501,53570668297,53.571,22754,2,life_stage,working_age,General Education Level,primary
+subsidiary_work,0.12907,2.09,0.270026,20783561846,20.784,76968725109,76.969,29107,2,Household Religion,Hinduism,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.09,0.269627,5724571330,5.725,21231413188,21.231,9238,2,life_stage,working_age,General Education Level,literate: below primary
+subsidiary_work,0.12907,2.07,0.266906,12057651177,12.058,45175594235,45.176,30121,2,Sex,male,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.05,0.264972,2081817095,2.082,7856744219,7.857,6243,2,Household Social Group,scheduled tribe,Household Type,self-employed in non-agriculture
+subsidiary_work,0.12907,2.05,0.264906,276203317,0.276,1042648290,1.043,1505,2,Sex,male,Household Religion,others
+subsidiary_work,0.12907,2.03,0.261532,23878189264,23.878,91301232371,91.301,60520,1,Household Social Group,scheduled tribe,,
+subsidiary_work,0.12907,2.03,0.26138,23569701285,23.57,90174172382,90.174,59638,2,Technical Education Level,no technical education,Household Social Group,scheduled tribe
+subsidiary_work,0.12907,2.02,0.260085,7041731200,7.042,27074730492,27.075,10897,2,age_band,35-44,Household Social Group,scheduled caste
+subsidiary_work,0.12907,2.02,0.260689,2481928126,2.482,9520662973,9.521,3240,2,Household Social Group,scheduled tribe,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.02,0.260721,261430715,0.261,1002723963,1.003,888,2,Household Religion,Christianity,Household Type,casual labour in agriculture
+subsidiary_work,0.12907,2.01,0.25923,4347835759,4.348,16772145699,16.772,11751,2,age_band,15-24,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,4.95,0.312822,223799204,0.224,715420184,0.715,279,2,Marital Status,divorced/separated,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,4.74,0.299335,10979614516,10.98,36680011743,36.68,12073,2,age_band,25-34,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.75,0.237253,8345433091,8.345,35175315569,35.175,12247,2,age_band,35-44,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.59,0.226963,21768821744,21.769,95913717104,95.914,33335,2,life_stage,working_age,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.53,0.222842,146045551,0.146,655378527,0.655,725,2,Household Religion,others,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.49,0.220458,2769044531,2.769,12560408725,12.56,3724,2,General Education Level,graduate,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.47,0.219586,14974857776,14.975,68195729564,68.196,23676,2,life_stage,youth,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.39,0.214292,255702006,0.256,1193240235,1.193,434,2,General Education Level,diploma/certificate course,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.38,0.213726,28678293625,28.678,134182469996,134.182,45528,2,Marital Status,currently married,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.14,0.19854,2946303862,2.946,14839841150,14.84,9578,2,age_band,25-34,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,3.13,0.19805,7082542666,7.083,35761358936,35.761,19764,2,Household Social Group,scheduled tribe,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,3.09,0.195242,60419093,0.06,309457999,0.309,466,2,age_band,35-44,Household Religion,others
+unpaid_helper,0.0632,3.01,0.190356,9299169036,9.299,48851581347,48.852,17230,2,age_band,15-24,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.99,0.18872,8536377859,8.536,45232945963,45.233,16870,2,General Education Level,middle,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.96,0.187073,8119462877,8.119,43402538009,43.403,15461,2,age_band,45-59,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.92,0.184389,23851194824,23.851,129352347459,129.352,44343,2,Sex,female,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.89,0.182953,117660198,0.118,643118729,0.643,908,2,Household Religion,Buddhism,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.78,0.175994,4309495864,4.309,24486590364,24.487,8152,2,General Education Level,higher secondary,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.71,0.171132,2131248688,2.131,12453851267,12.454,9099,2,age_band,35-44,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.69,0.170141,7348987663,7.349,43193572094,43.194,27554,2,Marital Status,currently married,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.67,0.16866,4131342167,4.131,24495050024,24.495,16624,2,life_stage,youth,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.66,0.168002,4573398516,4.573,27222295700,27.222,10324,2,General Education Level,secondary,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.6,0.164197,60076372,0.06,365879873,0.366,582,2,age_band,15-24,Household Religion,others
+unpaid_helper,0.0632,2.59,0.163906,125766446,0.126,767310646,0.767,1145,2,life_stage,working_age,Household Religion,others
+unpaid_helper,0.0632,2.58,0.162741,26284096,0.026,161508311,0.162,273,2,General Education Level,higher secondary,Household Religion,others
+unpaid_helper,0.0632,2.55,0.160919,5215001234,5.215,32407700730,32.408,22808,2,life_stage,working_age,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.53,0.159989,53399985,0.053,333773826,0.334,470,2,age_band,25-34,Household Religion,others
+unpaid_helper,0.0632,2.51,0.158775,85688679,0.086,539687824,0.54,816,2,life_stage,youth,Household Religion,others
+unpaid_helper,0.0632,2.51,0.15836,58838558,0.059,371548530,0.372,423,2,General Education Level,primary,Household Religion,others
+unpaid_helper,0.0632,2.48,0.156757,36123361612,36.123,230441640909,230.442,71003,2,Household Religion,Hinduism,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.45,0.155047,88354717,0.088,569856228,0.57,281,2,life_stage,youth,Marital Status,divorced/separated
+unpaid_helper,0.0632,2.44,0.15449,12019966630,12.02,77804400936,77.804,24922,2,General Education Level,not literate,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.44,0.154189,7112030240,7.112,46125473341,46.125,30398,2,Sex,female,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.41,0.152581,39755874060,39.756,260555936628,260.556,89071,1,Household Type,self-employed in agriculture,,
+unpaid_helper,0.0632,2.41,0.152581,39755874060,39.756,260555936628,260.556,89071,2,Household Type,self-employed in agriculture,Sector,rural
+unpaid_helper,0.0632,2.41,0.152163,39242858856,39.243,257899797429,257.9,88186,2,Technical Education Level,no technical education,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.41,0.152194,20016288048,20.016,131518566196,131.519,38832,2,Household Social Group,other backward class,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.39,0.150893,2530798464,2.531,16772145699,16.772,11751,2,age_band,15-24,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.37,0.149657,160897459,0.161,1075105823,1.075,1512,2,Sex,female,Household Religion,others
+unpaid_helper,0.0632,2.3,0.14555,2083350221,2.083,14313668873,14.314,3675,2,age_band,25-34,General Education Level,not literate
+unpaid_helper,0.0632,2.29,0.145038,2232816801,2.233,15394663847,15.395,12142,2,General Education Level,middle,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.28,0.143881,14976214449,14.976,104087266306,104.087,35891,2,age_band,25-34,Sector,rural
+unpaid_helper,0.0632,2.24,0.141861,302666649,0.303,2133536697,2.134,627,2,General Education Level,postgraduate and above,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.23,0.141091,10820130691,10.82,76689262282,76.689,34737,2,Sex,female,age_band,45-59
+unpaid_helper,0.0632,2.22,0.140414,3986111055,3.986,28388342939,28.388,9621,2,age_band,35-44,General Education Level,not literate
+unpaid_helper,0.0632,2.22,0.140404,706208725,0.706,5029841721,5.03,7145,2,Household Religion,Christianity,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.22,0.140567,130325214,0.13,927137192,0.927,1304,2,Marital Status,currently married,Household Religion,others
+unpaid_helper,0.0632,2.2,0.139088,5062530039,5.063,36397963429,36.398,11227,2,Household Social Group,scheduled caste,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.19,0.138517,12611881093,12.612,91049335308,91.049,32449,2,life_stage,working_age,General Education Level,not literate
+unpaid_helper,0.0632,2.19,0.138107,226399260,0.226,1639307038,1.639,1945,2,Household Religion,others,Sector,rural
+unpaid_helper,0.0632,2.14,0.13539,1737992387,1.738,12836912638,12.837,9004,2,age_band,45-59,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.14,0.13517,225228023,0.225,1666262549,1.666,2125,2,Household Religion,others,Household Social Group,scheduled tribe
+unpaid_helper,0.0632,2.13,0.134747,25138820150,25.139,186562648444,186.563,82890,2,Sex,female,life_stage,working_age
+unpaid_helper,0.0632,2.12,0.134205,9604873125,9.605,71568743932,71.569,32275,2,Sex,female,age_band,35-44
+unpaid_helper,0.0632,2.12,0.134219,7226216525,7.226,53838901720,53.839,20588,2,age_band,45-59,General Education Level,not literate
+unpaid_helper,0.0632,2.12,0.133721,133754785,0.134,1000250226,1.0,516,2,Technical Education Level,technical degree in engineering/technology,Household Type,self-employed
+unpaid_helper,0.0632,2.12,0.134206,75372832,0.075,561619693,0.562,605,2,General Education Level,not literate,Household Religion,others
+unpaid_helper,0.0632,2.11,0.133523,7594513307,7.595,56878048067,56.878,19248,2,Household Social Group,others,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.11,0.133464,28074527,0.028,210352434,0.21,326,2,General Education Level,secondary,Household Religion,others
+unpaid_helper,0.0632,2.09,0.131915,15399095554,15.399,116735235718,116.735,40790,2,Marital Status,currently married,General Education Level,not literate
+unpaid_helper,0.0632,2.09,0.132067,43795211,0.044,331613053,0.332,387,2,Household Religion,others,Household Type,self-employed in non-agriculture
+unpaid_helper,0.0632,2.08,0.131489,5121115988,5.121,38947132728,38.947,13251,2,General Education Level,primary,Household Type,self-employed in agriculture
+unpaid_helper,0.0632,2.06,0.129894,32255000401,32.255,248318099075,248.318,105850,2,Sex,female,Marital Status,currently married
+unpaid_helper,0.0632,2.04,0.128858,1397163454,1.397,10842656553,10.843,3768,2,age_band,15-24,General Education Level,primary
+unpaid_helper,0.0632,2.02,0.127428,84701522,0.085,664700600,0.665,306,2,General Education Level,graduate,Technical Education Level,diploma or certificate (below graduate level) in engineering/technology

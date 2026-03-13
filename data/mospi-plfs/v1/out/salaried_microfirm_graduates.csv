@@ -1,0 +1,41 @@
+sex,sector,education,workers_count,n,wt,pct_no_contract,pct_no_social_security,median_earnings
+female,rural,graduate,10 and above but less than 20,184,324795017,35.5,38.1,15000.0
+female,rural,graduate,20 and above,217,523095726,28.7,31.6,18000.0
+female,rural,graduate,6 and above but less than 10,164,388115387,39.1,54.0,13000.0
+female,rural,graduate,less than 6,204,487504688,55.6,72.4,9000.0
+female,rural,graduate,not known,5,3947608,54.6,54.6,9000.0
+female,urban,graduate,10 and above but less than 20,363,516069161,32.7,36.3,22100.0
+female,urban,graduate,20 and above,1215,2236222338,19.4,8.6,30000.0
+female,urban,graduate,6 and above but less than 10,324,497295057,51.0,49.8,15250.0
+female,urban,graduate,less than 6,305,481221891,69.1,71.3,12000.0
+female,urban,graduate,not known,33,23702191,31.9,44.4,22000.0
+male,rural,graduate,10 and above but less than 20,459,1012279558,32.8,23.4,25000.0
+male,rural,graduate,20 and above,818,2528025832,21.3,11.9,24000.0
+male,rural,graduate,6 and above but less than 10,468,1297147189,38.4,39.4,24000.0
+male,rural,graduate,less than 6,527,1366560053,69.0,71.4,13500.0
+male,rural,graduate,not known,36,77451320,34.8,31.0,28500.0
+male,urban,graduate,10 and above but less than 20,888,1217692219,29.5,28.7,28525.0
+male,urban,graduate,20 and above,3646,7120070319,17.5,7.0,35000.0
+male,urban,graduate,6 and above but less than 10,685,1102515991,51.2,47.6,21000.0
+male,urban,graduate,less than 6,778,1177707393,82.2,78.7,15000.0
+male,urban,graduate,not known,110,98202275,25.8,18.6,30000.0
+female,rural,postgraduate and above,10 and above but less than 20,84,202668838,44.8,39.0,21000.0
+female,rural,postgraduate and above,20 and above,112,292994176,30.9,31.6,21725.0
+female,rural,postgraduate and above,6 and above but less than 10,70,232680276,34.8,43.6,15000.0
+female,rural,postgraduate and above,less than 6,50,122857116,41.8,51.9,10000.0
+female,rural,postgraduate and above,not known,1,3073485,100.0,0.0,8000.0
+female,urban,postgraduate and above,10 and above but less than 20,270,377306266,31.7,33.3,26726.0
+female,urban,postgraduate and above,20 and above,788,1360935705,16.3,11.6,35000.0
+female,urban,postgraduate and above,6 and above but less than 10,160,327801186,37.3,32.4,25000.0
+female,urban,postgraduate and above,less than 6,98,161149143,59.9,55.6,18000.0
+female,urban,postgraduate and above,not known,28,28587866,42.5,44.5,20000.0
+male,rural,postgraduate and above,10 and above but less than 20,160,536846833,26.9,22.4,33500.0
+male,rural,postgraduate and above,20 and above,241,881894147,22.6,14.2,31000.0
+male,rural,postgraduate and above,6 and above but less than 10,139,425395694,28.8,25.9,32800.0
+male,rural,postgraduate and above,less than 6,91,264421166,52.1,45.6,19300.0
+male,rural,postgraduate and above,not known,18,38673667,38.7,42.8,14500.0
+male,urban,postgraduate and above,10 and above but less than 20,395,584241233,21.6,16.9,40000.0
+male,urban,postgraduate and above,20 and above,1321,2569019201,15.3,6.0,48000.0
+male,urban,postgraduate and above,6 and above but less than 10,228,382833062,36.7,31.1,32000.0
+male,urban,postgraduate and above,less than 6,146,260871729,65.0,53.2,21000.0
+male,urban,postgraduate and above,not known,48,53505974,21.5,12.3,35825.0

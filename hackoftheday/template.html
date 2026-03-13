@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Hack of the Day</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'PoynterAgate';
+      src: url('../assets/PAOBDCN.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'PoynterAgate';
+      src: url('../assets/PAOCN_.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
     :root {
-      --title-font: 'Barlow Condensed', sans-serif;
-      --body-font: 'Archivo Narrow', sans-serif;
+      --title-font: 'PoynterAgate', sans-serif;
+      --body-font: 'PoynterAgate', sans-serif;
     }
 
     *, *::before, *::after {

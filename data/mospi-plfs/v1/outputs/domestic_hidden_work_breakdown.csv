@@ -1,0 +1,25 @@
+Sex,Sector,cws_status,n,w,median_week_hours,p90_week_hours,avg_week_hours,total_n,total_w,pct_of_hidden_workers
+female,rural,worked as helper in h.h. enterprise (unpaid family worker),1452,4701661530,16.0,35.0,19.066804407713498,3439,9875233053,47.61063870357653
+female,rural,worked in h.h. enterprise (self-employed): own account worker,1650,4231174491,20.0,35.0,20.695151515151515,3439,9875233053,42.84632543142473
+female,rural,worked as casual wage labour: in other types of work,113,466854916,24.0,49.0,27.451327433628318,3439,9875233053,4.727533147768842
+female,rural,worked as casual wage labour in MGNREG works,183,398132607,24.0,40.0,24.628415300546447,3439,9875233053,4.031627454898912
+female,rural,worked as regular salaried/wage employee,28,52842707,41.0,58.10000000000001,41.17857142857143,3439,9875233053,0.5351033916505585
+female,rural,worked as casual wage labour in public works other than MGNREG works,8,14223135,24.0,40.0,24.5,3439,9875233053,0.14402834772268133
+female,rural,worked in h.h. enterprise (self-employed): employer,5,10343667,30.0,34.6,26.4,3439,9875233053,0.10474352295774624
+female,urban,worked in h.h. enterprise (self-employed): own account worker,549,880777350,17.0,32.0,18.619307832422585,1000,1610583489,54.68684833885069
+female,urban,worked as helper in h.h. enterprise (unpaid family worker),268,398038943,18.0,36.0,19.94402985074627,1000,1610583489,24.713958991789962
+female,urban,worked as regular salaried/wage employee,100,195875468,35.0,54.0,33.67,1000,1610583489,12.161770522161364
+female,urban,worked as casual wage labour: in other types of work,41,73025507,21.0,46.0,25.048780487804876,1000,1610583489,4.534102547229081
+female,urban,worked as casual wage labour in MGNREG works,33,47865163,32.0,48.0,32.09090909090909,1000,1610583489,2.9719144227486862
+female,urban,worked in h.h. enterprise (self-employed): employer,6,9266040,27.0,31.0,21.166666666666668,1000,1610583489,0.5753219291819028
+female,urban,worked as casual wage labour in public works other than MGNREG works,3,5735018,24.0,24.0,21.333333333333332,1000,1610583489,0.35608324803831387
+male,rural,worked in h.h. enterprise (self-employed): own account worker,22,51902643,11.5,23.800000000000004,12.454545454545455,46,103186370,50.2999020122522
+male,rural,worked as helper in h.h. enterprise (unpaid family worker),11,21496455,21.0,29.0,20.363636363636363,46,103186370,20.832649699761703
+male,rural,worked as casual wage labour in MGNREG works,7,13912727,48.0,48.0,38.857142857142854,46,103186370,13.483105375254503
+male,rural,worked as casual wage labour: in other types of work,4,8412651,24.0,29.6,26.0,46,103186370,8.152870383947027
+male,rural,worked in h.h. enterprise (self-employed): employer,2,7461894,15.5,16.7,15.5,46,103186370,7.231472528784567
+male,urban,worked in h.h. enterprise (self-employed): own account worker,11,17429373,10.0,28.0,17.0,18,31377918,55.54662039718505
+male,urban,worked as helper in h.h. enterprise (unpaid family worker),2,5963751,20.0,26.4,20.0,18,31377918,19.006203662078537
+male,urban,worked as casual wage labour: in other types of work,3,4638319,12.0,18.4,12.666666666666666,18,31377918,14.782112057275437
+male,urban,worked as casual wage labour in MGNREG works,1,2016991,48.0,48.0,48.0,18,31377918,6.428058738632691
+male,urban,worked as regular salaried/wage employee,1,1329484,14.0,14.0,14.0,18,31377918,4.2370051448282835

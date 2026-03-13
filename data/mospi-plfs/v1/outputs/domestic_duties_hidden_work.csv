@@ -1,0 +1,12 @@
+sex,principal_status,total_m,subsidiary_pct
+female,attended domestic duties only,136.211,13.4
+male,attended domestic duties only,3.0,9.9
+male,"rentiers, pensioners, remittance recipients, etc.",19.249,4.3
+female,"rentiers, pensioners, remittance recipients, etc.",18.302,4.3
+male,attended educational institution,132.083,3.1
+female,attended educational institution,116.483,1.9
+male,not able to work due to disability,6.041,1.0
+female,not able to work due to disability,3.269,0.1
+transgender,attended educational institution,0.007,
+transgender,"rentiers, pensioners, remittance recipients, etc.",0.005,
+transgender,attended domestic duties only,0.002,

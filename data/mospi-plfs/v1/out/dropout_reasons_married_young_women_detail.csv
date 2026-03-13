@@ -1,0 +1,25 @@
+sector,social_group,religion,household_type,sample_n,weighted_pop,raw_domestic_chore_share_pct,weighted_domestic_chore_share_pct,raw_income_share_pct,weighted_income_share_pct
+urban,other backward class,Islam,self-employed,184,280710838,82.1,84.1,8.7,9.3
+urban,other backward class,Islam,regular wage/salary earning,141,230850178,78.0,83.7,6.4,3.3
+urban,scheduled caste,Hinduism,self-employed,165,269923297,77.0,83.1,4.2,2.8
+rural,scheduled caste,Hinduism,self-employed in agriculture,299,1010558702,78.9,82.5,9.4,8.4
+urban,other backward class,Hinduism,self-employed,349,572743690,79.4,80.4,8.3,8.4
+rural,scheduled caste,Hinduism,self-employed in non-agriculture,241,631417769,78.4,78.5,7.1,5.3
+urban,scheduled caste,Hinduism,casual labour,127,216530003,74.0,77.2,6.3,6.7
+rural,other backward class,Hinduism,casual labour in non-agriculture,257,851987292,75.9,76.9,11.7,12.6
+rural,other backward class,Hinduism,self-employed in agriculture,846,2633184225,76.8,76.6,14.3,14.4
+rural,scheduled caste,Hinduism,casual labour in non-agriculture,329,1115075674,72.3,74.9,9.7,9.6
+rural,other backward class,Hinduism,self-employed in non-agriculture,388,1262886875,77.1,74.4,12.6,14.4
+urban,others,Hinduism,self-employed,144,234253630,75.0,74.3,12.5,14.5
+urban,other backward class,Hinduism,regular wage/salary earning,387,685228915,73.9,73.8,12.1,14.7
+rural,scheduled caste,Hinduism,regular wage/salary earning,205,564107859,74.6,73.6,7.8,6.0
+rural,others,Hinduism,regular wage/salary earning,135,444136042,69.6,73.3,7.4,8.6
+urban,scheduled caste,Hinduism,regular wage/salary earning,235,414366870,73.6,72.5,11.9,15.1
+rural,others,Islam,self-employed in non-agriculture,125,252753854,68.8,72.2,11.2,13.1
+rural,other backward class,Islam,self-employed in non-agriculture,139,379333683,72.7,71.1,7.9,4.6
+urban,others,Hinduism,regular wage/salary earning,254,424898432,69.3,70.2,13.4,16.2
+rural,other backward class,Hinduism,regular wage/salary earning,321,1031653811,70.4,66.4,19.6,24.3
+rural,others,Hinduism,self-employed in agriculture,236,708917741,62.7,63.7,19.9,17.9
+rural,scheduled tribe,Hinduism,casual labour in non-agriculture,126,362895256,64.3,62.3,17.5,19.0
+rural,scheduled tribe,Hinduism,regular wage/salary earning,127,281401292,62.2,58.2,26.0,24.9
+rural,scheduled tribe,Hinduism,self-employed in agriculture,350,916414200,56.9,55.4,30.3,33.6
