@@ -1,5 +1,52 @@
 # Prompts
 
+## MOSPI Statoistics, 13 Mar 2026 (GitHub Copilot - claude-sonnet-4.6 high)
+
+Read data/mospi-plfs/README.md and the insights in data/mospi-plfs/v3/insights.md (and any related files).
+
+Render them as consistent SVGs in the format described by statoistics-svg/statoistics-format.md.
+Make sure the text, chart, etc. are easy to understand for a lay audience reading an Indian national newspaper.
+Use the data and insights as the source of truth.
+But use your judgement on content, style, design elements, annotations, etc. to make the story clearer and more compelling.
+
+You will be saving them as 2026-03-13-mospi-plfs-v3/*.svg (named descriptively, e.g. 01-marriage-labor-market-cliff.svg, etc.)
+
+To start with, generate one SVG, view the output, fix any errors you find, and pause to check with me for feedback.
+
+---
+
+1. Headline is OK. Shorten and simplify the rest of the content
+2. Slope-chart is clear enough
+3. Cut the controlled-model callout - too complex & verbose
+4. Use a print-friendly color palette
+
+Update statoistics-svg/statoistics-format.md to incorporate the above feedback, as well as the following MANDATORY guidelines for print:
+
+- Match the title bar font, colors, size, and other formatting exactly. This is a brand guideline. Especially the word "Statoistics"
+- Use a white background, since this is for print. Ensure contrast is good against the background.
+- Use larger fonts overall to ensure readability on print.
+
+Regenerate the SVG, test it visually by converting it into an image and viewing it, and pause to check with me for feedback.
+
+---
+
+1. STATOISTICS" with dark "TOI" looks fine but "A slice of life in numbers" is a bit small. Check with the original.
+2. Data colours are good
+3. Headline and deck text are good
+
+Update statoistics-svg/statoistics-format.md to incorporate the above correction (#1), as well as the following MANDATORY guidelines for print:
+
+- Use the SAME font used in the statnostics/statoistics-svg/*.svg images
+- Use a slightly larger font for the subtitle and footnote. See statnostics/statoistics-svg/*.svg images
+
+Regenerate the SVG, test it visually by converting it into an image and viewing it, and pause to check with me for feedback.
+
+---
+
+OK, generate the rest. But generate them under statnostics/2026-03-13-mospi-plfs-v3/ -- including moving the current image under that directory.
+
+<!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
+
 ## Hack of the day, SVG alignment (Github Copilot - claude-sonnet-4.6 high)
 
 Modify the hackoftheday/ HTML and SVG to use the Poytner Agate One font from assets/*.otf. Use the bold condensed / condensed versions.
@@ -28,6 +75,18 @@ There are still a few issues with the SVG templates. For example:
 - Shadows would help where we're using them in the HTML.
 
 Similarly, think about other ways to align the SVG with the HTML. Where possible, standardize the code across templates.
+
+### Improve SVG (Github Copilot - claude-sonnet-4.6 high)
+
+Increase the font sizes of all text in the hackoftheday HTML and SVG by about 2 points (and make the headline larger as well, though that’s negotiable).
+
+In the SVG:
+
+- A blue band appears behind the headline. See temp/2026-03-13-hack-of-the-day-svg-output.png
+- The 'Hack of the Day' formatting is lost, and the series number shows up
+- The SVG also loses the shadow effect after each point.
+
+Fix these and verify by converting the SVG to PNG and visually comparing it with temp/2026-03-13-hack-of-the-day-svg-output.png.
 
 ## Hack of the day, UI fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 medium)
 

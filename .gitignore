@@ -1,4 +1,10 @@
+# Ignore temporary files - typically to pass info to coding agents
+temp/
+
 statnostics/**/*.png
+
+# Skip samples of original statoistics SVGs that are used for analysis
+statnostics/statoistics-svg/*.svg
 
 # Early Codex attempt at creating hack-of-the-day/template.html. Delete after 15 Mar 2026.
 hack-of-the-day/

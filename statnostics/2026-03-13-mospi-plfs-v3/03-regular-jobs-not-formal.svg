@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .mast-bg  { fill: #ed1c24; }
+      .wm-wh    { font-family: PoynterAgateOne-BoldCondensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 19px; font-weight: bold; fill: #ffffff; }
+      .wm-dk    { font-family: PoynterAgateOne-BoldCondensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 19px; font-weight: bold; fill: #231f20; }
+      .tagline  { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 15px; fill: #ffffff; }
+      .border   { fill: none; stroke: #231f20; stroke-width: 0.8; }
+      .sep      { stroke: #231f20; stroke-width: 0.6; fill: none; }
+      .hl       { font-family: PoynterOSDisplay-Bold, 'Poynter OS Display', Georgia, 'Times New Roman', serif;
+                  font-size: 28px; font-weight: bold; fill: #231f20; }
+      .deck     { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 15px; fill: #231f20; }
+      .note     { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 10.5px; fill: #6b7280; }
+      .source   { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 10px; fill: #9ca3af; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="480" fill="#ffffff"/>
+
+  <!-- Masthead -->
+  <rect class="mast-bg" width="480" height="29"/>
+  <text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+  <text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+  <!-- Border -->
+  <rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+  <!-- Headline -->
+  <text x="240" y="67" text-anchor="middle" class="hl">Only 1 in 3 regular salaried</text>
+  <text x="240" y="100" text-anchor="middle" class="hl">jobs is truly formal</text>
+
+  <!-- Deck -->
+  <text x="240" y="122" text-anchor="middle" class="deck">Most 'regular salaried' workers lack a written contract,</text>
+  <text x="240" y="140" text-anchor="middle" class="deck">paid leave, or social security — or all three.</text>
+
+  <!-- Separator after deck -->
+  <line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+  <!-- Row of 10 squares: each 32×32, gap=8, total=392px, start x=44 -->
+  <text x="240" y="178"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">10 regular salaried workers:</text>
+
+  <!-- Squares 1–3: formal (dark navy) -->
+  <rect x="44"  y="185" width="32" height="32" fill="#1d3461"/>
+  <rect x="84"  y="185" width="32" height="32" fill="#1d3461"/>
+  <rect x="124" y="185" width="32" height="32" fill="#1d3461"/>
+
+  <!-- Squares 4–10: not formal (light grey) -->
+  <rect x="164" y="185" width="32" height="32" fill="#e5e7eb"/>
+  <rect x="204" y="185" width="32" height="32" fill="#e5e7eb"/>
+  <rect x="244" y="185" width="32" height="32" fill="#e5e7eb"/>
+  <rect x="284" y="185" width="32" height="32" fill="#e5e7eb"/>
+  <rect x="324" y="185" width="32" height="32" fill="#e5e7eb"/>
+  <rect x="364" y="185" width="32" height="32" fill="#e5e7eb"/>
+  <rect x="404" y="185" width="32" height="32" fill="#e5e7eb"/>
+
+  <!-- Label below squares -->
+  <text x="240" y="232"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;font-weight:bold;fill:#1d3461;">Just 3 have a written contract, paid leave AND social security</text>
+
+  <!-- Thin separator -->
+  <line class="sep" x1="30" y1="248" x2="450" y2="248"/>
+
+  <!-- Earnings contrast: left block -->
+  <text x="127" y="270"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;font-weight:bold;fill:#1d3461;">Strictly formal job</text>
+  <text x="127" y="320"
+    text-anchor="middle"
+    style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:42px;font-weight:bold;fill:#1d3461;">&#x20B9;32,000</text>
+  <text x="127" y="338"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">median monthly pay</text>
+
+  <!-- Divider line -->
+  <line x1="240" y1="255" x2="240" y2="355" stroke="#e5e7eb" stroke-width="1.2"/>
+
+  <!-- Earnings contrast: right block -->
+  <text x="352" y="270"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;font-weight:bold;fill:#c1121f;">Not strictly formal</text>
+  <text x="352" y="320"
+    text-anchor="middle"
+    style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:42px;font-weight:bold;fill:#c1121f;">&#x20B9;12,000</text>
+  <text x="352" y="338"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">median monthly pay</text>
+
+  <!-- Small note below earnings -->
+  <text x="240" y="372"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;font-style:italic;">'Strictly formal' = written contract + paid leave + any social security</text>
+
+  <!-- Top-5 nonformal jobs -->
+  <text x="240" y="392"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Biggest nonformal regular jobs: shop salespersons, cleaners, drivers, cooks, teachers</text>
+
+  <!-- Bottom separator -->
+  <line class="sep" x1="30" y1="410" x2="450" y2="410"/>
+
+  <!-- Note -->
+  <text x="240" y="425"
+    text-anchor="middle"
+    class="note">All regular salaried workers, weighted | PLFS 2024</text>
+
+  <!-- Source -->
+  <text x="240" y="440"
+    text-anchor="middle"
+    class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+
+</svg>

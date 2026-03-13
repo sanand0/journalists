@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .mast-bg  { fill: #ed1c24; }
+      .wm-wh    { font-family: PoynterAgateOne-BoldCondensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 19px; font-weight: bold; fill: #ffffff; }
+      .wm-dk    { font-family: PoynterAgateOne-BoldCondensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 19px; font-weight: bold; fill: #231f20; }
+      .tagline  { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 15px; fill: #ffffff; }
+      .border   { fill: none; stroke: #231f20; stroke-width: 0.8; }
+      .sep      { stroke: #231f20; stroke-width: 0.6; fill: none; }
+      .hl       { font-family: PoynterOSDisplay-Bold, 'Poynter OS Display', Georgia, 'Times New Roman', serif;
+                  font-size: 28px; font-weight: bold; fill: #231f20; }
+      .deck     { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 15px; fill: #231f20; }
+      .note     { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 10.5px; fill: #6b7280; }
+      .source   { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 10px; fill: #9ca3af; }
+      .cat-lbl  { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 12px; fill: #231f20; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="480" fill="#ffffff"/>
+
+  <!-- Masthead -->
+  <rect class="mast-bg" width="480" height="29"/>
+  <text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+  <text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+  <!-- Border -->
+  <rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+  <!-- Headline -->
+  <text x="240" y="67" text-anchor="middle" class="hl">More graduates farm the land</text>
+  <text x="240" y="100" text-anchor="middle" class="hl">than write the code</text>
+
+  <!-- Deck -->
+  <text x="240" y="122" text-anchor="middle" class="deck">Among all graduate workers in India, farming and sales dwarf</text>
+  <text x="240" y="140" text-anchor="middle" class="deck">software and engineering combined.</text>
+
+  <!-- Separator after deck -->
+  <line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+  <!--
+    Chart: horizontal bars
+    x_label=35, bar_start=220, bar_end=430, max_width=210px
+    Scale: 210px / 14% = 15px per %
+    Row height=26px, gap=8px → row pitch=34px
+    Rows start y=168
+
+    Row 1: Farm & animal work  13.5% → 202.5px  #92400e  y=168, label y=181
+    Row 2: Teaching            13.4% → 201px     #1a5e6e  y=202, label y=215
+    Row 3: Sales work          10.9% → 163.5px   #c1121f  y=236, label y=249
+    Row 4: Software & eng       6.9% → 103.5px   #1d3461  y=270, label y=283
+    Row 5: Healthcare           2.4% → 36px       #374151  y=304, label y=317
+  -->
+
+  <!-- Row 1: Farm & animal work -->
+  <text x="215" y="181" text-anchor="end" class="cat-lbl">Farm &amp; animal work</text>
+  <rect x="220" y="168" width="203" height="24" fill="#92400e"/>
+  <text x="429" y="181"
+    text-anchor="start"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#92400e;">13.5%</text>
+
+  <!-- Row 2: Teaching -->
+  <text x="215" y="215" text-anchor="end" class="cat-lbl">Teaching</text>
+  <rect x="220" y="202" width="201" height="24" fill="#1a5e6e"/>
+  <text x="427" y="215"
+    text-anchor="start"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#1a5e6e;">13.4%</text>
+
+  <!-- Row 3: Sales work -->
+  <text x="215" y="249" text-anchor="end" class="cat-lbl">Sales work</text>
+  <rect x="220" y="236" width="164" height="24" fill="#c1121f"/>
+  <text x="390" y="249"
+    text-anchor="start"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#c1121f;">10.9%</text>
+
+  <!-- Row 4: Software & engineering -->
+  <text x="215" y="283" text-anchor="end" class="cat-lbl">Software &amp; engineering</text>
+  <rect x="220" y="270" width="104" height="24" fill="#1d3461"/>
+  <text x="330" y="283"
+    text-anchor="start"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#1d3461;">6.9%</text>
+
+  <!-- Row 5: Healthcare -->
+  <text x="215" y="317" text-anchor="end" class="cat-lbl">Healthcare</text>
+  <rect x="220" y="304" width="36" height="24" fill="#374151"/>
+  <text x="262" y="317"
+    text-anchor="start"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#374151;">2.4%</text>
+
+  <!-- Callout note -->
+  <text x="240" y="358"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">The single biggest occupation among graduate workers:</text>
+  <text x="240" y="378"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:16px;font-weight:bold;fill:#92400e;">Market Gardeners &amp; Crop Growers</text>
+
+  <!-- Bottom separator -->
+  <line class="sep" x1="30" y1="410" x2="450" y2="410"/>
+
+  <!-- Note -->
+  <text x="240" y="426"
+    text-anchor="middle"
+    class="note">Graduate workers = those with a bachelor's degree or above, with a principal occupation | PLFS 2024</text>
+
+  <!-- Source -->
+  <text x="240" y="441"
+    text-anchor="middle"
+    class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+
+</svg>

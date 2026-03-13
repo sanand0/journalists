@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <style>
+    .font-headline { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,serif; font-size: 28px; fill: #231f20; }
+    .font-deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size: 15px; fill: #231f20; }
+    .font-note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size: 10.5px; fill: #6b7280; }
+    .font-source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size: 10px; fill: #9ca3af; }
+    .font-agate    { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; }
+    .font-bold-cond{ font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-weight: bold; }
+  </style>
+
+  <!-- White background -->
+  <rect width="480" height="480" fill="#ffffff"/>
+
+  <!-- Red masthead -->
+  <rect fill="#ed1c24" width="480" height="29"/>
+
+  <!-- Wordmark -->
+  <text transform="translate(6 21) scale(1 1.11)" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:19px;font-weight:bold;fill:#ffffff">STA<tspan style="fill:#231f20">TOI</tspan>STICS</text>
+
+  <!-- Tagline -->
+  <text transform="translate(128 22) scale(1 1.11)" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:15px;fill:#ffffff">A slice of life in numbers</text>
+
+  <!-- Border -->
+  <rect fill="none" stroke="#231f20" stroke-width="0.8" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+  <!-- Headline -->
+  <text class="font-headline" text-anchor="middle" x="240" y="68">MGNREG does not pay</text>
+  <text class="font-headline" text-anchor="middle" x="240" y="100">more than other casual work</text>
+
+  <!-- Deck -->
+  <text class="font-deck" text-anchor="middle" x="240" y="124">In the PLFS diary data, rural men earn ₹57 per hour in other casual</text>
+  <text class="font-deck" text-anchor="middle" x="240" y="141">work — a quarter more than MGNREG's ₹45 per hour.</text>
+
+  <!-- Separator after deck -->
+  <line x1="30" y1="152" x2="450" y2="152" stroke="#231f20" stroke-width="0.6"/>
+
+  <!-- Scope note -->
+  <text x="35" y="172" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#6b7280">Rural men, per-hour wage from PLFS 7-day diary</text>
+
+  <!-- BAR 1: Other casual work ₹57.02/hr -->
+  <!-- label above bar -->
+  <text x="35" y="196" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:13px;fill:#231f20">Other casual work</text>
+  <rect x="35" y="202" height="28" width="370" fill="#1d3461"/>
+  <text x="413" y="221" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#1d3461">₹57/hr</text>
+
+  <!-- BAR 2: MGNREG ₹45.17/hr -->
+  <text x="35" y="252" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:13px;fill:#231f20">MGNREG</text>
+  <rect x="35" y="258" height="28" width="293" fill="#c1121f"/>
+  <text x="336" y="277" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#c1121f">₹45/hr</text>
+
+  <!-- BAR 3: Other public works ₹41.41/hr -->
+  <text x="35" y="308" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:13px;fill:#231f20">Other public works</text>
+  <rect x="35" y="314" height="28" width="268" fill="#92400e"/>
+  <text x="311" y="333" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:bold;fill:#92400e">₹41/hr</text>
+
+  <!-- Women's note -->
+  <text text-anchor="middle" x="240" y="360" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#374151">For rural women, MGNREG (₹41/hr) nearly matches other casual</text>
+  <text text-anchor="middle" x="240" y="376" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#374151">work (₹42/hr) — though state figures show wide variation.</text>
+
+  <!-- Bottom separator -->
+  <line x1="30" y1="426" x2="450" y2="426" stroke="#231f20" stroke-width="0.6"/>
+
+  <!-- Note -->
+  <text class="font-note" text-anchor="middle" x="240" y="440">Person-day average hourly wages from 7-day work diary | PLFS 2024</text>
+
+  <!-- Source -->
+  <text class="font-source" text-anchor="middle" x="240" y="456">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+</svg>

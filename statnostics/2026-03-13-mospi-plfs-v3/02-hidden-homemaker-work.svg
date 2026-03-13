@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .mast-bg  { fill: #ed1c24; }
+      .wm-wh    { font-family: PoynterAgateOne-BoldCondensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 19px; font-weight: bold; fill: #ffffff; }
+      .wm-dk    { font-family: PoynterAgateOne-BoldCondensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 19px; font-weight: bold; fill: #231f20; }
+      .tagline  { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 15px; fill: #ffffff; }
+      .border   { fill: none; stroke: #231f20; stroke-width: 0.8; }
+      .sep      { stroke: #231f20; stroke-width: 0.6; fill: none; }
+      .hl       { font-family: PoynterOSDisplay-Bold, 'Poynter OS Display', Georgia, 'Times New Roman', serif;
+                  font-size: 28px; font-weight: bold; fill: #231f20; }
+      .deck     { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 15px; fill: #231f20; }
+      .note     { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 10.5px; fill: #6b7280; }
+      .source   { font-family: PoynterAgateOne-Condensed, 'Poynter Agate One', 'Arial Narrow', Arial, sans-serif;
+                  font-size: 10px; fill: #9ca3af; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="480" fill="#ffffff"/>
+
+  <!-- Masthead -->
+  <rect class="mast-bg" width="480" height="29"/>
+  <text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+  <text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+  <!-- Border -->
+  <rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+  <!-- Headline -->
+  <text x="240" y="67" text-anchor="middle" class="hl">India's 'homemakers' hide</text>
+  <text x="240" y="100" text-anchor="middle" class="hl">a vast pool of unpaid work</text>
+
+  <!-- Deck -->
+  <text x="240" y="122" text-anchor="middle" class="deck">8.4% of women classified as 'domestic duties only'</text>
+  <text x="240" y="140" text-anchor="middle" class="deck">still show up as workers in the same survey's current-week data.</text>
+
+  <!-- Separator after deck -->
+  <line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+  <!-- Big central stat -->
+  <text x="240" y="258"
+    text-anchor="middle"
+    style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:88px;font-weight:bold;fill:#c1121f;">8.4%</text>
+
+  <!-- Label below big stat -->
+  <text x="240" y="282"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:13px;fill:#6b7280;">of 'homemakers' appear as workers week-to-week</text>
+
+  <!-- Composition bar label -->
+  <text x="240" y="308"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">What that work looks like:</text>
+
+  <!-- Stacked bar segments (y=318, height=28, total width=402px, x=39 to x=441) -->
+  <!-- Segment 1: own-account 44.5% → 179px -->
+  <rect x="39" y="318" width="179" height="28" fill="#92400e"/>
+  <!-- Segment 2: unpaid family 44.4% → 178px -->
+  <rect x="218" y="318" width="178" height="28" fill="#1a5e6e"/>
+  <!-- Segment 3: casual/MGNREG 8.6% → 34px -->
+  <rect x="396" y="318" width="34" height="28" fill="#9ca3af"/>
+  <!-- Segment 4: regular salaried 2.2% → 9px -->
+  <rect x="430" y="318" width="11" height="28" fill="#1d3461"/>
+
+  <!-- Bar segment labels below (y=360) -->
+  <text x="128" y="360"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#92400e;">44.5% own-account</text>
+  <text x="307" y="360"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#1a5e6e;">44.4% unpaid family</text>
+  <text x="436" y="360"
+    text-anchor="end"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;fill:#1d3461;">2.2% formal</text>
+
+  <!-- Annotation -->
+  <text x="240" y="387"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#374151;font-style:italic;">Rural women are 86% of hidden workers despite being</text>
+  <text x="240" y="402"
+    text-anchor="middle"
+    style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#374151;font-style:italic;">59% of the homemaker group</text>
+
+  <!-- Bottom separator -->
+  <line class="sep" x1="30" y1="420" x2="450" y2="420"/>
+
+  <!-- Note -->
+  <text x="240" y="434"
+    text-anchor="middle"
+    class="note">Women whose principal status was 'attended domestic duties only', n=58,203 | PLFS 2024</text>
+
+  <!-- Source -->
+  <text x="240" y="449"
+    text-anchor="middle"
+    class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+
+</svg>
