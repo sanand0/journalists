@@ -17,6 +17,9 @@
       }
       text { font-family: 'PoynterAgate', 'Arial Narrow', Arial, sans-serif; }
     ]]></style>
+    <filter id="step-shadow" x="-2%" y="-4%" width="104%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="rgba(0,0,0,0.16)"/>
+    </filter>
   </defs>
   <!-- Background -->
   <rect width="800" height="{{_totalH}}" fill="#d2ddf2"/>
@@ -50,7 +53,7 @@
   <!-- Steps: white cards with large italic blue number -->
   {{#_steps}}
   <rect x="2" y="{{_y}}" width="796" height="{{_h}}" rx="5" fill="#c0ceea" opacity="0.5"/>
-  <rect x="0" y="{{_y}}" width="796" height="{{_h}}" rx="5" fill="white"/>
+  <rect x="0" y="{{_y}}" width="796" height="{{_h}}" rx="5" fill="white" filter="url(#step-shadow)"/>
   <line x1="54" y1="{{_y}}" x2="54" y2="{{_yBottom}}" stroke="#d0daea" stroke-width="1"/>
   <text x="27" y="{{_numY}}" font-size="46" font-weight="700" fill="#396ce1" font-style="italic" text-anchor="middle">{{_num}}</text>
   <text x="70" y="{{_textY}}" font-size="20" fill="#1a2a50">{{#_hasBoldTitle}}<tspan x="70" font-weight="700">{{{_boldTitle}}} </tspan><tspan font-weight="400">{{{_firstLineRest}}}</tspan>{{/_hasBoldTitle}}{{^_hasBoldTitle}}<tspan x="70">{{{_firstLine}}}</tspan>{{/_hasBoldTitle}}{{#_restLines}}<tspan x="70" dy="{{dy}}">{{{text}}}</tspan>{{/_restLines}}</text>
@@ -64,12 +67,14 @@
   <!-- Footer: card background + QR code -->
   <rect x="0" y="{{_footerY}}" width="800" height="{{_footerH}}" fill="#d2ddf2"/>
   <line x1="22" y1="{{_footerY}}" x2="778" y2="{{_footerY}}" stroke="#b0bcd8" stroke-width="1"/>
-  <text x="22" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#1a2a50">
-    {{#_tipLines}}<tspan x="22" dy="{{dy}}">{{{text}}}</tspan>{{/_tipLines}}
-  </text>
   <text x="22" y="{{_footerDiscY}}" font-size="12" font-weight="400" fill="#4a5a80" font-style="italic">
     {{#_discLines}}<tspan x="22" dy="{{dy}}">{{{text}}}</tspan>{{/_discLines}}
   </text>
-  <text x="{{_qrLabelX}}" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#1a2a50" text-anchor="end">Times Internet</text>
+  <text x="22" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#1a2a50">
+    {{#_tipLines}}<tspan x="22" dy="{{dy}}">{{{text}}}</tspan>{{/_tipLines}}
+  </text>
+  {{#_hasQr}}<text x="{{_qrCenterX}}" y="{{_qrScanY1}}" font-size="9" font-weight="700" fill="#1a2a50" text-anchor="middle" letter-spacing="0.5">SCAN FOR</text>{{/_hasQr}}
+  {{#_hasQr}}<text x="{{_qrCenterX}}" y="{{_qrScanY2}}" font-size="9" font-weight="700" fill="#1a2a50" text-anchor="middle" letter-spacing="0.5">MORE HACKS</text>{{/_hasQr}}
+  {{#_hasQr}}<rect x="{{_qrX}}" y="{{_qrY}}" width="64" height="64" fill="white"/>{{/_hasQr}}
   {{#_hasQr}}<g transform="translate({{_qrX}},{{_qrY}})">{{{_qrCode}}}</g>{{/_hasQr}}
 </svg>

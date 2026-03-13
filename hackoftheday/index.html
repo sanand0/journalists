@@ -1233,10 +1233,14 @@ function _layoutClassic(card) {
   const tipText   = 'Tip from ' + (card.tip_name || '') + (card.tip_domain || '');
   const tipLines  = _wrap(tipText, FOOT_SIZE, W - PAD * 2 - 90, true);
   const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 90, false);
-  const footerTipY  = footerY + FOOT_SIZE + 10;
-  const footerDiscY = footerTipY + tipLines.length * 18 + 6;
-  const _qrX = 800 - 14 - QR_SIZE;
-  const _qrY = footerY + Math.round((FOOTER_H - QR_SIZE) / 2);
+  // Disclaimer first (top), tip below — matches HTML layout
+  const footerDiscY = footerY + FOOT_SIZE + 10;
+  const footerTipY  = footerDiscY + discLines.length * 18 + 4;
+  const _qrX        = 800 - 14 - QR_SIZE;
+  const _qrCenterX  = _qrX + QR_SIZE / 2;
+  const _qrScanY1   = footerY + 12;   // "SCAN FOR" baseline
+  const _qrScanY2   = footerY + 23;   // "MORE HACKS" baseline
+  const _qrY        = footerY + 28;   // QR starts after labels
   const _qrCode = tipUrl ? _genQrCode(tipUrl, QR_SIZE) : '';
 
   // ── Return augmented data ─────────────────────────────────
@@ -1280,15 +1284,17 @@ function _layoutClassic(card) {
 
     _footerY:     footerY,
     _footerH:     FOOTER_H,
-    _footerTipY:  footerTipY,
     _footerDiscY: footerDiscY,
+    _footerTipY:  footerTipY,
     _tipLines:    tipLines.map((t, i)  => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
     _discLines:   discLines.map((t, i) => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
-    _hasQr:    !!tipUrl,
-    _qrCode:   _qrCode,
-    _qrX:      _qrX,
-    _qrY:      _qrY,
-    _qrLabelX: _qrX - 6,
+    _hasQr:      !!tipUrl,
+    _qrCode:     _qrCode,
+    _qrX:        _qrX,
+    _qrY:        _qrY,
+    _qrCenterX:  _qrCenterX,
+    _qrScanY1:   _qrScanY1,
+    _qrScanY2:   _qrScanY2,
   };
 }
 
@@ -1394,16 +1400,20 @@ function _layoutGeneric(card, C) {
   // ── Footer ─────────────────────────────────────────────────
   const QR_SIZE   = 64;
   const tipUrl    = card.tip_domain ? `https://${card.tip_domain}` : '';
-  const FOOTER_H  = C.footerH || 90;
+  const FOOTER_H  = C.footerH || 100;
   const footerY   = y;
   const totalH    = footerY + FOOTER_H;
   const tipText   = 'Tip from ' + (card.tip_name || '') + (card.tip_domain || '');
   const tipLines  = _wrap(tipText, FOOT_SIZE, W - PAD * 2 - 90, true);
   const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 90, false);
-  const footerTipY  = footerY + FOOT_SIZE + 10;
-  const footerDiscY = footerTipY + tipLines.length * 18 + 6;
-  const _qrX = 800 - 14 - QR_SIZE;
-  const _qrY = footerY + Math.round((FOOTER_H - QR_SIZE) / 2);
+  // Disclaimer first (top), tip below — matches HTML layout
+  const footerDiscY = footerY + FOOT_SIZE + 10;
+  const footerTipY  = footerDiscY + discLines.length * 18 + 4;
+  const _qrX        = 800 - 14 - QR_SIZE;
+  const _qrCenterX  = _qrX + QR_SIZE / 2;
+  const _qrScanY1   = footerY + 12;   // "SCAN FOR" baseline
+  const _qrScanY2   = footerY + 23;   // "MORE HACKS" baseline
+  const _qrY        = footerY + 28;   // QR starts after labels
   const _qrCode = tipUrl ? _genQrCode(tipUrl, QR_SIZE) : '';
 
   // Badge text positions (for templates with a left-side badge)
@@ -1442,14 +1452,16 @@ function _layoutGeneric(card, C) {
     _noteLabel: _esc(NOTE_LABEL), _noteLine1: _esc(noteLine1),
     _noteRestLines: noteRestLines.map(t => ({ dy: `${NOTE_LH}`, text: _esc(t) })),
     _footerY: footerY, _footerH: FOOTER_H,
-    _footerTipY: footerTipY, _footerDiscY: footerDiscY,
+    _footerDiscY: footerDiscY, _footerTipY: footerTipY,
     _tipLines:  tipLines.map((t, i)  => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
     _discLines: discLines.map((t, i) => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
     _hasQr:    !!tipUrl,
     _qrCode:   _qrCode,
     _qrX:      _qrX,
     _qrY:      _qrY,
-    _qrLabelX: _qrX - 6,
+    _qrCenterX: _qrCenterX,
+    _qrScanY1:  _qrScanY1,
+    _qrScanY2:  _qrScanY2,
   };
 }
 

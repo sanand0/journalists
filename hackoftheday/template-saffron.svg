@@ -54,13 +54,16 @@
   </text>
   {{/_hasNote}}
   <!-- Footer -->
-  <rect x="0" y="{{_footerY}}" width="800" height="{{_footerH}}" fill="#2d1a00"/>
-  <text x="24" y="{{_footerTipY}}" font-size="14" font-weight="700" fill="#f5e6c8">
-    {{#_tipLines}}<tspan x="24" dy="{{dy}}">{{{text}}}</tspan>{{/_tipLines}}
-  </text>
-  <text x="24" y="{{_footerDiscY}}" font-size="12" font-weight="400" fill="#c8a070" font-style="italic">
+  <rect x="0" y="{{_footerY}}" width="800" height="{{_footerH}}" fill="#fffcf5"/>
+  <line x1="24" y1="{{_footerY}}" x2="776" y2="{{_footerY}}" stroke="#e0c890" stroke-width="1"/>
+  <text x="24" y="{{_footerDiscY}}" font-size="12" font-weight="400" fill="#8a5020" font-style="italic">
     {{#_discLines}}<tspan x="24" dy="{{dy}}">{{{text}}}</tspan>{{/_discLines}}
   </text>
-  <text x="{{_qrLabelX}}" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#f5e6c8" text-anchor="end">Times Internet</text>
+  <text x="24" y="{{_footerTipY}}" font-size="13" font-weight="700" fill="#7a3800">
+    {{#_tipLines}}<tspan x="24" dy="{{dy}}">{{{text}}}</tspan>{{/_tipLines}}
+  </text>
+  {{#_hasQr}}<text x="{{_qrCenterX}}" y="{{_qrScanY1}}" font-size="9" font-weight="700" fill="#7a3800" text-anchor="middle" letter-spacing="0.5">SCAN FOR</text>{{/_hasQr}}
+  {{#_hasQr}}<text x="{{_qrCenterX}}" y="{{_qrScanY2}}" font-size="9" font-weight="700" fill="#7a3800" text-anchor="middle" letter-spacing="0.5">MORE HACKS</text>{{/_hasQr}}
+  {{#_hasQr}}<rect x="{{_qrX}}" y="{{_qrY}}" width="64" height="64" fill="white"/>{{/_hasQr}}
   {{#_hasQr}}<g transform="translate({{_qrX}},{{_qrY}})">{{{_qrCode}}}</g>{{/_hasQr}}
 </svg>

@@ -20,6 +20,15 @@ There may be potentually other issues. Also, it doesn't quite look like the HTML
 Take screenshots of the SVG. Fix issues.
 Compare with screenshots of the HTML. Align.
 
+---
+
+There are still a few issues with the SVG templates. For example:
+
+- broadsheet: to the left of the QR code, it says "Times Internet, not "Scan for more hacks" above the QR code. Also the contrast against the background is not good - maybe a white background would help? Same for the original template. Maybe others?
+- Shadows would help where we're using them in the HTML.
+
+Similarly, think about other ways to align the SVG with the HTML. Where possible, standardize the code across templates.
+
 ## Hack of the day, UI fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 medium)
 
 For the newly added cards in cards.json, set the created date to 12 Mar 2026 at 9:30 am SGT.
