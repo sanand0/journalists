@@ -1112,12 +1112,13 @@ function _genQrCode(url, size = 64) {
 function _layoutClassic(card) {
   // ── Measurements ──────────────────────────────────────────
   const W = 800, PAD = 22, BADGE_W = 162;
-  const TITLE_SIZE = 28, TITLE_LH = 34, TITLE_MAX_W = W - BADGE_W - PAD * 2;
-  const BODY_SIZE  = 20, BODY_LH  = 28;
+  const TITLE_SIZE = 32, TITLE_LH = 40, TITLE_MAX_W = W - BADGE_W - PAD * 2;
+  const BODY_SIZE  = 22, BODY_LH  = 31;
   const STEP_NUM_W = 54; // number column width
-  const STEP_TEXT_W = W - PAD - STEP_NUM_W - PAD; // text column
-  const NOTE_SIZE  = 19, NOTE_LH = 27;
-  const FOOT_SIZE  = 14;
+  const STEP_TEXT_W = W - PAD - STEP_NUM_W - PAD - 5; // -5: small safety buffer
+  const NOTE_SIZE  = 21, NOTE_LH = 30;
+  const FOOT_SIZE  = 16;
+  const FOOT_LH    = Math.round(FOOT_SIZE * 1.4); // ≈22
 
   // ── Header ────────────────────────────────────────────────
   const titleLines = _wrap(card.title, TITLE_SIZE, TITLE_MAX_W, true);
@@ -1126,11 +1127,13 @@ function _layoutClassic(card) {
   // ── Body top ──────────────────────────────────────────────
   let y = HEADER_H + 14;
 
+  const LABEL_MARGIN = 5; // small safety buffer for label+content lines
+
   // "WHAT IT SOLVES:" label + text
   const LABEL_SOLVES = 'WHAT IT SOLVES:';
   const solvesText   = card.what_it_solves || '';
   const labelSolvesW = _measure(LABEL_SOLVES + ' ', BODY_SIZE, true);
-  const line1SolvesW = W - PAD * 2 - labelSolvesW;
+  const line1SolvesW = W - PAD * 2 - labelSolvesW - LABEL_MARGIN;
   const solvesFirst  = _wrap(solvesText, BODY_SIZE, line1SolvesW, false)[0] || '';
   const solvesRest   = _wrap(
     solvesText.slice(solvesFirst.length).trim(), BODY_SIZE, W - PAD * 2, false);
@@ -1143,7 +1146,7 @@ function _layoutClassic(card) {
   if (card.what_to_do) {
     const LABEL_TODO = 'WHAT TO DO:';
     const labelTodoW = _measure(LABEL_TODO + ' ', BODY_SIZE, true);
-    const line1TodoW = W - PAD * 2 - labelTodoW;
+    const line1TodoW = W - PAD * 2 - labelTodoW - LABEL_MARGIN;
     todoLine1 = _wrap(card.what_to_do, BODY_SIZE, line1TodoW, false)[0] || '';
     todoRest  = _wrap(
       card.what_to_do.slice(todoLine1.length).trim(), BODY_SIZE, W - PAD * 2, false);
@@ -1151,10 +1154,10 @@ function _layoutClassic(card) {
     todoY = y;
     y += BODY_LH + (todoRest.length * BODY_LH) + 20;
     stepsLabelY = y;
-    y += 28;
+    y += 30;
   } else {
     stepsHeadingY = y;
-    y += 28;
+    y += 30;
   }
 
   // ── Steps ─────────────────────────────────────────────────
@@ -1216,7 +1219,7 @@ function _layoutClassic(card) {
   if (card.note) {
     hasNote = true;
     const noteLabelW = _measure(NOTE_LABEL + ' ', NOTE_SIZE, true);
-    const noteLine1W = W - PAD * 2 - noteLabelW;
+    const noteLine1W = W - PAD * 2 - noteLabelW - LABEL_MARGIN;
     noteLine1 = _wrap(card.note, NOTE_SIZE, noteLine1W, false)[0] || '';
     noteRestLines = _wrap(card.note.slice(noteLine1.length).trim(), NOTE_SIZE, W - PAD * 2, false);
     noteY = y;
@@ -1226,7 +1229,7 @@ function _layoutClassic(card) {
   // ── Footer ────────────────────────────────────────────────
   const QR_SIZE   = 64;
   const tipUrl    = card.tip_domain ? `https://${card.tip_domain}` : '';
-  const FOOTER_H  = 100;
+  const FOOTER_H  = 110;
   const footerY   = y;
   const totalH    = footerY + FOOTER_H;
 
@@ -1235,7 +1238,7 @@ function _layoutClassic(card) {
   const discLines = _wrap('Hacks are based on verified public sources. Readers are advised to follow official websites & updated rules.', FOOT_SIZE, W - PAD * 2 - 90, false);
   // Disclaimer first (top), tip below — matches HTML layout
   const footerDiscY = footerY + FOOT_SIZE + 10;
-  const footerTipY  = footerDiscY + discLines.length * 18 + 4;
+  const footerTipY  = footerDiscY + discLines.length * FOOT_LH + 4;
   const _qrX        = 800 - 14 - QR_SIZE;
   const _qrCenterX  = _qrX + QR_SIZE / 2;
   const _qrScanY1   = footerY + 12;   // "SCAN FOR" baseline
@@ -1254,9 +1257,10 @@ function _layoutClassic(card) {
     _badgeArrowX:   BADGE_W,
     _badgeTipX:     BADGE_W + 20,
     _headerHalf:    Math.round(HEADER_H / 2),
-    _badgeTopY:     Math.round(HEADER_H * 0.20),
-    _badgeMidY:     Math.round(HEADER_H * 0.37),
-    _badgeNumY:     Math.round(HEADER_H * 0.72),
+    // Badge text positions: "HACK" (large) centred in badge, "OF THE DAY" below
+    _badgeX:        Math.round(BADGE_W * 0.47),
+    _badgeHackY:    Math.round(HEADER_H / 2 + 0.25 * 54 - (4 + 16) / 2),
+    _badgeOftheDayY: Math.round(HEADER_H / 2 + 0.25 * 54 - (4 + 16) / 2 + 0.25 * 54 + 4 + 0.75 * 16),
 
     _titleLines: _tspans(titleLines),
     _titleY:     Math.round(HEADER_H / 2 - (titleLines.length * TITLE_LH) / 2 + TITLE_SIZE * 0.82),
@@ -1274,7 +1278,7 @@ function _layoutClassic(card) {
 
     _stepsLabelY:   stepsLabelY,
 
-    _steps: stepsData,
+    _steps: [...stepsData].reverse(),
 
     _hasNote:       hasNote,
     _noteTextY:     noteY + NOTE_SIZE + 4,
@@ -1286,8 +1290,8 @@ function _layoutClassic(card) {
     _footerH:     FOOTER_H,
     _footerDiscY: footerDiscY,
     _footerTipY:  footerTipY,
-    _tipLines:    tipLines.map((t, i)  => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
-    _discLines:   discLines.map((t, i) => ({ dy: i === 0 ? '0' : '18', text: _esc(t) })),
+    _tipLines:    tipLines.map((t, i)  => ({ dy: i === 0 ? '0' : `${FOOT_LH}`, text: _esc(t) })),
+    _discLines:   discLines.map((t, i) => ({ dy: i === 0 ? '0' : `${FOOT_LH}`, text: _esc(t) })),
     _hasQr:      !!tipUrl,
     _qrCode:     _qrCode,
     _qrX:        _qrX,
