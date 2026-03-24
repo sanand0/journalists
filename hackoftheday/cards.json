@@ -32,7 +32,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "002",
@@ -67,7 +69,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "003",
@@ -102,7 +106,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "004",
@@ -173,7 +179,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "006",
@@ -208,7 +216,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "007",
@@ -243,7 +253,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "008",
@@ -387,7 +399,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "012",
@@ -422,7 +436,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "013",
@@ -529,7 +545,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "016",
@@ -600,7 +618,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "018",
@@ -935,7 +955,9 @@
     "primary_source_name": "Google Chrome Help",
     "primary_source_url": "https://support.google.com/chrome/answer/95606",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "027",
@@ -1323,7 +1345,9 @@
     "primary_source_name": "Google Photos Help",
     "primary_source_url": "https://support.google.com/photos/answer/10694388",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "037",
@@ -1669,7 +1693,9 @@
     "primary_source_name": "WhatsApp Help Center",
     "primary_source_url": "https://faq.whatsapp.com/241617298315321",
     "created": "2026-03-10T12:00:00+08:00",
-    "reviewed": "2026-03-11T22:45:00+08:00"
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "046",
@@ -1859,7 +1885,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Gmail Help",
-    "primary_source_url": "https://support.google.com/mail/answer/7674059"
+    "primary_source_url": "https://support.google.com/mail/answer/7674059",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "051",
@@ -1895,7 +1923,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Drive Help",
-    "primary_source_url": "https://support.google.com/drive/answer/3145835"
+    "primary_source_url": "https://support.google.com/drive/answer/3145835",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "052",
@@ -1931,7 +1961,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Maps Help",
-    "primary_source_url": "https://support.google.com/maps/answer/7047426"
+    "primary_source_url": "https://support.google.com/maps/answer/7047426",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "053",
@@ -1967,7 +1999,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Maps Help",
-    "primary_source_url": "https://support.google.com/maps/answer/7257797"
+    "primary_source_url": "https://support.google.com/maps/answer/7257797",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "054",
@@ -2003,7 +2037,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Translate Help",
-    "primary_source_url": "https://support.google.com/translate/answer/6142478"
+    "primary_source_url": "https://support.google.com/translate/answer/6142478",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "055",
@@ -2039,7 +2075,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Translate Help",
-    "primary_source_url": "https://support.google.com/translate/answer/6142474"
+    "primary_source_url": "https://support.google.com/translate/answer/6142474",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "056",
@@ -2075,7 +2113,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Translate Help",
-    "primary_source_url": "https://support.google.com/translate/answer/6142473"
+    "primary_source_url": "https://support.google.com/translate/answer/6142473",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "057",
@@ -2111,7 +2151,10 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Lens Help",
-    "primary_source_url": "https://support.google.com/photos/answer/7539151"
+    "primary_source_url": "https://support.google.com/photos/answer/7539151",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "058",
@@ -2147,7 +2190,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Password Manager Help",
-    "primary_source_url": "https://support.google.com/accounts/answer/6197437"
+    "primary_source_url": "https://support.google.com/accounts/answer/6197437",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "059",
@@ -2183,7 +2228,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Chrome Help",
-    "primary_source_url": "https://support.google.com/chrome/answer/10468685"
+    "primary_source_url": "https://support.google.com/chrome/answer/10468685",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "060",
@@ -2219,7 +2266,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "Google Photos Help",
-    "primary_source_url": "https://support.google.com/photos/answer/11190100"
+    "primary_source_url": "https://support.google.com/photos/answer/11190100",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "061",
@@ -2255,7 +2304,10 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "WhatsApp Help Center",
-    "primary_source_url": "https://faq.whatsapp.com/764072925284841"
+    "primary_source_url": "https://faq.whatsapp.com/764072925284841",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Rejected",
+    "reason": "Published earlier"
   },
   {
     "index": "062",
@@ -2291,7 +2343,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "WhatsApp Help Center",
-    "primary_source_url": "https://faq.whatsapp.com/1238612517047244"
+    "primary_source_url": "https://faq.whatsapp.com/1238612517047244",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "063",
@@ -2327,7 +2381,9 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "WhatsApp Help Center",
-    "primary_source_url": "https://faq.whatsapp.com/728928448599090"
+    "primary_source_url": "https://faq.whatsapp.com/728928448599090",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   },
   {
     "index": "064",
@@ -2363,6 +2419,8 @@
     "tip_domain": "@timesinternet.com",
     "qr_url": "https://timesinternet.com/hackoftheday",
     "primary_source_name": "WhatsApp Help Center",
-    "primary_source_url": "https://faq.whatsapp.com/2635108359972899"
+    "primary_source_url": "https://faq.whatsapp.com/2635108359972899",
+    "reviewed": "2026-03-23T22:13:00+08:00",
+    "status": "Accepted"
   }
 ]

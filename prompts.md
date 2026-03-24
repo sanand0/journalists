@@ -1,5 +1,15 @@
 # Prompts
 
+## Hack of the day, feedback, 23 Mar 2026 (Github Copilot - gpt-5.4 medium)
+
+Update hackoftheday/cards.json marking the following as rejected, with reason that they have been published earlier: 61, 57, 45, 36, 26, 17, 15, 12, 11, 7, 6, 5, 3, 2, 1.
+Mark the rest as status: Accepted.
+The review date for all changes is 10:13 pm SGT on 23 Mar 2026.
+
+---
+
+No no - only items that did NOT have a status should have been marked as accepted! Think about the best way to correct things (revert and redo? edit from here?) and make the change and verify.
+
 ## MOSPI Statoistics, 13 Mar 2026 (GitHub Copilot - claude-sonnet-4.6 high)
 
 Read data/mospi-plfs/README.md and the insights in data/mospi-plfs/v3/insights.md (and any related files).
@@ -87,6 +97,8 @@ In the SVG:
 - The SVG also loses the shadow effect after each point.
 
 Fix these and verify by converting the SVG to PNG and visually comparing it with temp/2026-03-13-hack-of-the-day-svg-output.png.
+
+<!-- #TODO Resume and fix via copilot --resume=1365910e-bcba-4ea0-a132-b63e7c4399a6 -->
 
 ## Hack of the day, UI fixes, 12 Mar 2026 (Github Copilot - claude-sonnet-4.6 medium)
 
