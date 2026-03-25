@@ -10,6 +10,8 @@ The review date for all changes is 10:13 pm SGT on 23 Mar 2026.
 
 No no - only items that did NOT have a status should have been marked as accepted! Think about the best way to correct things (revert and redo? edit from here?) and make the change and verify.
 
+<!-- copilot --resume=8f64fc0b-8e3b-462b-8bde-68805890fdfb -->
+
 ## MOSPI Statoistics, 13 Mar 2026 (GitHub Copilot - claude-sonnet-4.6 high)
 
 Read data/mospi-plfs/README.md and the insights in data/mospi-plfs/v3/insights.md (and any related files).
@@ -54,6 +56,20 @@ Regenerate the SVG, test it visually by converting it into an image and viewing 
 ---
 
 OK, generate the rest. But generate them under statnostics/2026-03-13-mospi-plfs-v3/ -- including moving the current image under that directory.
+
+---
+
+<!-- 25 Mar 2026: Add citations -->
+
+Add citations as corresponding .md files alongside the SVGs, and named the same as the basename of the SVG.
+Each should contain enough detail for a journalist to EASILY verify the facts. Think about what HOW they would verify and what to check.
+For example, providing text to search for (via copy-paste) is helpful. Citing actual numbers to verify against is helpful.
+In fact, make this a comprehensive verification checklist & SOP.
+Do this for all the SVGs.
+
+---
+
+Modify the SOP .md files to point to the original source for someone who does not have the data/ folder but will be able to verify it by downloading the source. Guide them on how to verify with respect to the original MOSPI PLFS v3 data.
 
 <!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
 
