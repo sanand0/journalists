@@ -71,6 +71,12 @@ Do this for all the SVGs.
 
 Modify the SOP .md files to point to the original source for someone who does not have the data/ folder but will be able to verify it by downloading the source. Guide them on how to verify with respect to the original MOSPI PLFS v3 data.
 
+---
+
+Create an elegant gallery page statnostics/2026-03-13-mospi-plfs-v3/index.html that shows all the SVGs in cards.
+Clicking on the image opens a popup with the full size SVG.
+The card also has a "Verify" button that opens the corresponding SOP .md file in a new window popup (rendered as HTML) for easy verification.
+
 <!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
 
 ## Hack of the day, SVG alignment (Github Copilot - claude-sonnet-4.6 high)
