@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2" fill="none" stroke="#231f20" stroke-width="0.8"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Teaching and nursing: not as stable</text>
+<text x="240" y="100" text-anchor="middle" class="hl">as families believe</text>
+
+<!-- Deck -->
+<text x="240" y="122" text-anchor="middle" class="deck">Young primary teachers earn a median &#x20B9;12,175/month &#x2014; less than a third</text>
+<text x="240" y="140" text-anchor="middle" class="deck">of a software developer&#x2019;s &#x20B9;42,500. Most also lack basic protections.</text>
+
+<!-- Separator after deck -->
+<line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+<!-- TOP CHART: Median monthly salary -->
+<!-- Section title -->
+<text x="240" y="170" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#231f20;">MEDIAN MONTHLY SALARY</text>
+
+<!-- Bar rows: x_start=180, max_width=260px (for ₹42,500), scale=260/42500=0.006118px/₹ -->
+<!-- Row centers: y=184,208,232,256 -->
+
+<!-- Software ₹42,500 → 260px, navy -->
+<rect x="180" y="174" width="260" height="20" fill="#1d3461"/>
+<text x="175" y="189" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Software Developers</text>
+<text x="444" y="189" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#1d3461;">&#x20B9;42,500</text>
+
+<!-- Secondary ₹16,000 → 98px, crimson -->
+<rect x="180" y="198" width="98" height="20" fill="#c1121f"/>
+<text x="175" y="213" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Secondary Teachers</text>
+<text x="282" y="213" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">&#x20B9;16,000</text>
+
+<!-- Primary ₹12,175 → 74px, crimson -->
+<rect x="180" y="222" width="74" height="20" fill="#c1121f"/>
+<text x="175" y="237" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Primary Teachers</text>
+<text x="258" y="237" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">&#x20B9;12,175</text>
+
+<!-- Nursing ₹10,000 → 61px, crimson -->
+<rect x="180" y="246" width="61" height="20" fill="#c1121f"/>
+<text x="175" y="261" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Nursing Assoc. Prof.</text>
+<text x="245" y="261" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">&#x20B9;10,000</text>
+
+<!-- Separator between charts -->
+<line class="sep" x1="30" y1="274" x2="450" y2="274"/>
+
+<!-- BOTTOM CHART: % with strictly formal job -->
+<!-- Section title -->
+<text x="240" y="286" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#231f20;">% WITH STRICTLY FORMAL JOB</text>
+
+<!-- Bar rows: x_start=180, max_width=260px (for 76.6%), scale=260/76.6=3.394px/% -->
+<!-- Row centers: y=300,325,350,375 -->
+
+<!-- Software 76.6% → 260px, navy -->
+<rect x="180" y="290" width="260" height="20" fill="#1d3461"/>
+<text x="175" y="305" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Software Developers</text>
+<text x="444" y="305" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#1d3461;">76.6%</text>
+
+<!-- Secondary 38.0% → 129px, crimson -->
+<rect x="180" y="315" width="129" height="20" fill="#c1121f"/>
+<text x="175" y="330" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Secondary Teachers</text>
+<text x="313" y="330" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">38.0%</text>
+
+<!-- Primary 42.2% → 143px, crimson -->
+<rect x="180" y="340" width="143" height="20" fill="#c1121f"/>
+<text x="175" y="355" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Primary Teachers</text>
+<text x="327" y="355" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">42.2%</text>
+
+<!-- Nursing 35.7% → 121px, crimson -->
+<rect x="180" y="365" width="121" height="20" fill="#c1121f"/>
+<text x="175" y="380" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Nursing Assoc. Prof.</text>
+<text x="305" y="380" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">35.7%</text>
+
+<!-- Footer -->
+<line class="sep" x1="30" y1="408" x2="450" y2="408"/>
+
+<!-- Note and Source -->
+<text x="240" y="419" text-anchor="middle" class="note">Regular salaried workers aged 21&#x2013;34 | PLFS 2024</text>
+<text x="240" y="431" text-anchor="middle" class="note">&#x2018;Strictly formal&#x2019; = written contract + paid leave + social security</text>
+<text x="240" y="446" text-anchor="middle" class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+</svg>

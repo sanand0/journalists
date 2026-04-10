@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2" fill="none" stroke="#231f20" stroke-width="0.8"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Half of married educated women</text>
+<text x="240" y="100" text-anchor="middle" class="hl" textLength="440" lengthAdjust="spacingAndGlyphs">have been searching for work for 3+ years</text>
+
+<!-- Deck -->
+<text x="240" y="122" text-anchor="middle" class="deck">Among urban graduate women aged 25&#x2013;34 who are currently married</text>
+<text x="240" y="140" text-anchor="middle" class="deck">and looking for work, 1 in 2 has been searching for over 3 years.</text>
+
+<!-- Separator after deck -->
+<line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+<!-- Big stat section -->
+<text x="240" y="213" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:52px;font-weight:bold;fill:#c1121f;">50.2%</text>
+<text x="240" y="230" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#6b7280;">urban married grad women, 25&#x2013;34, searching 3+ years</text>
+
+<!-- Light separator -->
+<line x1="30" y1="244" x2="450" y2="244" stroke="#e5e7eb" stroke-width="0.8" fill="none"/>
+
+<!-- Chart title -->
+<text x="240" y="256" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#6b7280;">How other groups compare &#x2014; % searching 3+ years</text>
+
+<!-- Tick lines at x=200+4.88*n for n=10,20,30,40,50 -->
+<!-- x=249, x=297, x=346, x=395, x=444 -->
+<line x1="249" y1="262" x2="249" y2="385" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="297" y1="262" x2="297" y2="385" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="346" y1="262" x2="346" y2="385" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="395" y1="262" x2="395" y2="385" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="444" y1="262" x2="444" y2="385" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+
+<!-- Bar chart rows: bar x_start=200, row centers: y=275,308,341,374 -->
+<!-- Row 1: Urban married 50.2% → 245px, crimson -->
+<rect x="200" y="264" width="245" height="22" fill="#c1121f"/>
+<text x="30" y="279" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Urban married grad women</text>
+<text x="450" y="279" text-anchor="start" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#c1121f;">50.2%</text>
+
+<!-- Row 2: Rural married 38.8% → 189px, navy -->
+<rect x="200" y="297" width="189" height="22" fill="#1d3461"/>
+<text x="30" y="312" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Rural married grad women</text>
+<text x="394" y="312" text-anchor="start" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#1d3461;">38.8%</text>
+
+<!-- Row 3: Urban men 31.3% → 153px, teal -->
+<rect x="200" y="330" width="153" height="22" fill="#1a5e6e"/>
+<text x="30" y="345" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Urban graduate men</text>
+<text x="358" y="345" text-anchor="start" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#1a5e6e;">31.3%</text>
+
+<!-- Row 4: Urban never-married 29.6% → 144px, navy -->
+<rect x="200" y="363" width="144" height="22" fill="#1d3461"/>
+<text x="30" y="378" text-anchor="start" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#374151;">Urban never-married grad women</text>
+<text x="349" y="378" text-anchor="start" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#1d3461;">29.6%</text>
+
+<!-- Footer -->
+<line class="sep" x1="30" y1="408" x2="450" y2="408"/>
+
+<!-- Note and Source -->
+<text x="240" y="425" text-anchor="middle" class="note">Graduate job-seekers aged 25&#x2013;34 | PLFS 2024</text>
+<text x="240" y="440" text-anchor="middle" class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+</svg>

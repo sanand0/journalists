@@ -23,4 +23,15 @@ Make sure that it's responsive.
 
 Document updates and corrections in notes-v1.md in a new section.
 
+--- #TODO
+
+
+In the same way, convert "originals/NRI Money.svg" into HTML.
+
+---
+
+Create a SKILL.md that explains how to convert a flap like this into HTML. The skill should be general enough that it can be applied to any flap, but specific enough that it gives clear guidance on how to do it.
+
+Test and run it with sub-agents on a few new flaps, review the output, fix any issues, and share a robust, flexible, and re-usable skill for converting flaps into HTML that can be published on the Times of India website.
+
 <!-- claude --resume 551d8fcd-5b7a-4541-8b52-c4b782a719aa -->

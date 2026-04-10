@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2" fill="none" stroke="#231f20" stroke-width="0.8"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Engineering degree or diploma?</text>
+<text x="240" y="100" text-anchor="middle" class="hl">Two very different futures</text>
+
+<!-- Deck -->
+<text x="240" y="122" text-anchor="middle" class="deck">Young people with an engineering degree earn nearly double those</text>
+<text x="240" y="140" text-anchor="middle" class="deck">with a below-graduate diploma, and twice as many hold formal jobs.</text>
+
+<!-- Separator after deck -->
+<line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+<!-- Column backgrounds -->
+<rect x="32" y="162" width="204" height="240" fill="#f0f4ff" rx="2"/>
+<rect x="244" y="162" width="204" height="240" fill="#fff8f0" rx="2"/>
+
+<!-- Vertical divider -->
+<line x1="240" y1="162" x2="240" y2="402" stroke="#e5e7eb" stroke-width="0.8" fill="none"/>
+
+<!-- Column headers -->
+<text x="134" y="174" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#1d3461;">ENGINEERING</text>
+<text x="134" y="187" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#1d3461;">DEGREE</text>
+<text x="346" y="174" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#92400e;">BELOW-GRAD</text>
+<text x="346" y="187" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#92400e;">DIPLOMA</text>
+
+<!-- Sub-separator after header -->
+<line x1="32" y1="198" x2="236" y2="198" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="244" y1="198" x2="448" y2="198" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+
+<!-- Horizontal block separators: 4 blocks of ~51px from y=198 to y=402 -->
+<line x1="32" y1="249" x2="236" y2="249" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="244" y1="249" x2="448" y2="249" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="32" y1="300" x2="236" y2="300" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="244" y1="300" x2="448" y2="300" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="32" y1="351" x2="236" y2="351" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+<line x1="244" y1="351" x2="448" y2="351" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+
+<!-- BLOCK 1: SALARIED JOBS (y=198–249) -->
+<text x="134" y="213" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">SALARIED JOBS</text>
+<text x="346" y="213" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">SALARIED JOBS</text>
+<text x="134" y="241" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:24px;font-weight:bold;fill:#1d3461;">59.4%</text>
+<text x="346" y="241" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:24px;font-weight:bold;fill:#92400e;">47.4%</text>
+
+<!-- BLOCK 2: STRICTLY FORMAL (y=249–300) -->
+<text x="134" y="264" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">STRICTLY FORMAL</text>
+<text x="346" y="264" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">STRICTLY FORMAL</text>
+<text x="134" y="292" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:24px;font-weight:bold;fill:#1d3461;">43.2%</text>
+<text x="346" y="292" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:24px;font-weight:bold;fill:#92400e;">23.3%</text>
+
+<!-- BLOCK 3: MEDIAN SALARY (y=300–351) -->
+<text x="134" y="315" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">MEDIAN SALARY</text>
+<text x="346" y="315" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">MEDIAN SALARY</text>
+<text x="134" y="343" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:22px;font-weight:bold;fill:#1d3461;">&#x20B9;35,475</text>
+<text x="346" y="343" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:22px;font-weight:bold;fill:#92400e;">&#x20B9;18,000</text>
+
+<!-- BLOCK 4: MICRO-FIRM SHARE (y=351–402) -->
+<text x="134" y="366" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">MICRO-FIRM SHARE</text>
+<text x="346" y="366" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">MICRO-FIRM SHARE</text>
+<text x="134" y="394" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:24px;font-weight:bold;fill:#1d3461;">4.1%</text>
+<text x="346" y="394" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:24px;font-weight:bold;fill:#92400e;">14.9%</text>
+
+<!-- Footer -->
+<line class="sep" x1="30" y1="408" x2="450" y2="408"/>
+
+<!-- Note and Source -->
+<text x="240" y="425" text-anchor="middle" class="note">Regular salaried workers aged 21&#x2013;34 with technical education | PLFS 2024</text>
+<text x="240" y="440" text-anchor="middle" class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+</svg>

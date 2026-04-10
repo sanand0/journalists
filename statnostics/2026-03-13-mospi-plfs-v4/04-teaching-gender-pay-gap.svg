@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2" fill="none" stroke="#231f20" stroke-width="0.8"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Same classroom, half the pay:</text>
+<text x="240" y="100" text-anchor="middle" class="hl">women teachers earn far less</text>
+
+<!-- Deck -->
+<text x="240" y="122" text-anchor="middle" class="deck">Among young primary school teachers, men earn a median &#x20B9;20,000/month &#x2014;</text>
+<text x="240" y="140" text-anchor="middle" class="deck">double the &#x20B9;10,000 for women in the same role.</text>
+
+<!-- Separator after deck -->
+<line class="sep" x1="30" y1="153" x2="450" y2="153"/>
+
+<!-- Legend -->
+<rect x="30" y="157" width="12" height="8" fill="#c1121f"/>
+<text x="46" y="164" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">Women</text>
+<rect x="90" y="157" width="12" height="8" fill="#1d3461"/>
+<text x="106" y="164" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#1d3461;">Men</text>
+
+<!-- Chart title -->
+<text x="240" y="175" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#231f20;">Median monthly salary (&#x20B9;)</text>
+
+<!-- GROUP 1: Primary School Teachers -->
+<!-- Bar x_start=200, scale=200px/20000=0.01px/₹ -->
+<text x="190" y="209" text-anchor="end" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#231f20;">Primary School</text>
+<!-- Women ₹10,000 → 100px -->
+<rect x="200" y="194" width="100" height="18" fill="#c1121f"/>
+<text x="304" y="207" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.5px;fill:#c1121f;">&#x20B9;10,000</text>
+<!-- Men ₹20,000 → 200px -->
+<rect x="200" y="216" width="200" height="18" fill="#1d3461"/>
+<text x="404" y="230" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.5px;fill:#1d3461;">&#x20B9;20,000</text>
+
+<!-- Group separator -->
+<line x1="30" y1="242" x2="450" y2="242" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+
+<!-- GROUP 2: Secondary Education Teachers -->
+<text x="190" y="273" text-anchor="end" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#231f20;">Secondary Educ.</text>
+<!-- Women ₹15,000 → 150px -->
+<rect x="200" y="258" width="150" height="18" fill="#c1121f"/>
+<text x="354" y="271" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.5px;fill:#c1121f;">&#x20B9;15,000</text>
+<!-- Men ₹18,000 → 180px -->
+<rect x="200" y="280" width="180" height="18" fill="#1d3461"/>
+<text x="384" y="294" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.5px;fill:#1d3461;">&#x20B9;18,000</text>
+
+<!-- Group separator -->
+<line x1="30" y1="306" x2="450" y2="306" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+
+<!-- GROUP 3: Other Teaching -->
+<text x="190" y="337" text-anchor="end" style="font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#231f20;">Other Teaching</text>
+<!-- Women ₹6,000 → 60px -->
+<rect x="200" y="322" width="60" height="18" fill="#c1121f"/>
+<text x="264" y="335" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.5px;fill:#c1121f;">&#x20B9;6,000</text>
+<!-- Men ₹12,000 → 120px -->
+<rect x="200" y="344" width="120" height="18" fill="#1d3461"/>
+<text x="324" y="358" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.5px;fill:#1d3461;">&#x20B9;12,000</text>
+
+<!-- Annotation separator -->
+<line x1="30" y1="368" x2="450" y2="368" stroke="#e5e7eb" stroke-width="0.6" fill="none"/>
+
+<!-- Annotation -->
+<text x="240" y="384" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-style:italic;fill:#374151;">Only 36% of women primary teachers have a written contract,</text>
+<text x="240" y="398" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-style:italic;fill:#374151;">vs 54% of men &#x2014; an 18-point gap in job security</text>
+
+<!-- Footer -->
+<line class="sep" x1="30" y1="408" x2="450" y2="408"/>
+
+<!-- Note and Source -->
+<text x="240" y="425" text-anchor="middle" class="note">Regular salaried workers aged 21&#x2013;34 | Teaching occupations | PLFS 2024</text>
+<text x="240" y="440" text-anchor="middle" class="source">Source: Periodic Labour Force Survey 2024, Ministry of Statistics &amp; Programme Implementation</text>
+</svg>

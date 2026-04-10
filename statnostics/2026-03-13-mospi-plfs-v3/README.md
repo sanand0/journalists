@@ -4,10 +4,19 @@ This folder contains the final SVG cards for the PLFS v3 package, plus a matchin
 
 ## What is in this folder
 
+- [`index.html`](index.html) — **gallery page**: view all cards with image popup and one-click Verify panel
 - `*.svg` — the finished print-ready Statoistics cards
 - `*.md` — the fact-checking and verification SOP for the matching card
+- [`../2026-03-13-mospi-plfs-v4/`](../2026-03-13-mospi-plfs-v4/) — companion v4 cards (PLFS 2024)
 
 Each SOP is named to match its SVG basename, so reviewers can open the card and its verification note side by side.
+
+> **Tip:** Open `index.html` via a local HTTP server to enable the in-page Verify panel:
+> ```bash
+> cd statnostics/2026-03-13-mospi-plfs-v3
+> python3 -m http.server 8000
+> # then open http://localhost:8000
+> ```
 
 ## Recommended workflow
 
