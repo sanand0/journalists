@@ -1,0 +1,5 @@
+sex,regular_m,written_contract_pct,paid_leave_pct,any_social_security_pct,strict_formal_pct,median_monthly_earnings_strict_formal,median_monthly_earnings_other_regular
+male,69.408,44.0,52.0,46.5,35.7,32500.0,12500.0
+female,22.85,44.7,53.7,41.9,32.5,28000.0,8000.0
+transgender,0.0,,,,,,5000.0
+all,92.259,44.2,52.4,45.4,34.9,32000.0,12000.0

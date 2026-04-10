@@ -1,0 +1,5 @@
+child_proxy,outcome,child_effect,child_effect_points,std_error,std_error_points,sample_n,weighted_total_m,controls
+has_child_0_5,domestic_only,0.1298,12.98,0.0134,1.34,5559,13.217,state + sector + social group + household type + religion
+has_child_0_5,regular_salaried,-0.0863,-8.63,0.0097,0.97,5559,13.217,state + sector + social group + household type + religion
+has_child_0_2,domestic_only,0.1321,13.21,0.013,1.3,5559,13.217,state + sector + social group + household type + religion
+has_child_0_2,regular_salaried,-0.074,-7.4,0.0094,0.94,5559,13.217,state + sector + social group + household type + religion

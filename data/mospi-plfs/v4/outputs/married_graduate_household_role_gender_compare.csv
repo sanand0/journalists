@@ -1,0 +1,7 @@
+sex,relationship_to_head,sample_n,weighted_m,domestic_only_pct,regular_salaried_pct
+female,spouse of head,2134,5.358,59.3,15.9
+female,spouse of married child,2813,6.61,55.5,12.1
+female,self,188,0.422,46.1,32.5
+female,married child,263,0.432,40.1,28.9
+male,self,1591,3.847,0.1,63.8
+male,married child,2422,6.105,0.0,41.6

@@ -1,0 +1,5 @@
+sex,sector,sample_n,weighted_m,le_6m_pct,m6_to_1y_pct,y1_to_2_pct,y2_to_3_pct,y3plus_pct
+female,rural,381,0.835,2.6,6.7,26.9,15.4,34.2
+female,urban,699,0.772,3.1,14.6,26.0,15.4,37.4
+male,rural,512,1.259,4.2,11.2,26.0,18.9,22.9
+male,urban,813,1.144,5.3,16.3,22.2,19.8,31.3

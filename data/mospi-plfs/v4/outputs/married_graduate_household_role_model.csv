@@ -1,0 +1,3 @@
+outcome,spouse_role_effect,spouse_role_effect_points,spouse_role_std_error_points,child_u5_effect,child_u5_effect_points,child_u5_std_error_points,sample_n,weighted_total_m,controls
+domestic_only,0.1868,18.68,2.79,0.1246,12.46,1.36,5398,12.822,child under 5 + state + sector + social group + household type + religion
+regular_salaried,-0.176,-17.6,2.0,-0.0769,-7.69,0.98,5398,12.822,child under 5 + state + sector + social group + household type + religion

@@ -1,0 +1,13 @@
+sex,occupation,sample_n,weighted_m,strict_formal_pct,median_salary
+female,Medical Doctors,43,0.078,43.2,45000.0
+male,Medical Doctors,36,0.06,44.4,49824.0
+female,Nursing and Midwifery Associate Professionals,244,0.472,36.1,10000.0
+male,Nursing and Midwifery Associate Professionals,37,0.068,32.7,12000.0
+female,Other Teaching Professionals,61,0.101,5.2,6000.0
+male,Other Teaching Professionals,93,0.161,11.9,12000.0
+female,Primary School and Early Childhood Teachers,458,0.807,36.3,10000.0
+male,Primary School and Early Childhood Teachers,270,0.423,53.5,20000.0
+female,Secondary Education Teachers,269,0.415,28.9,15000.0
+male,Secondary Education Teachers,260,0.462,46.3,18000.0
+female,Software and Application Developers and Analysts,230,0.697,76.7,40000.0
+male,Software and Application Developers and Analysts,502,1.483,76.5,45000.0

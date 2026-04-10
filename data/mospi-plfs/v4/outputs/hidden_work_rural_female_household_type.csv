@@ -1,0 +1,7 @@
+household_type,n,total_m,raw_working_pct,weighted_working_pct
+self-employed in agriculture,8353,27.651,19.0,19.4
+casual labour in agriculture,1172,3.94,9.6,13.1
+casual labour in non-agriculture,3934,12.591,12.3,10.9
+self-employed in non-agriculture,5944,17.266,13.5,10.2
+regular wage/salary earning,5177,14.275,8.7,6.1
+others,1569,5.115,0.1,0.0

@@ -1,0 +1,13 @@
+sex,sector,status,positive_rows,weighted_rows_m,avg_hours,avg_daily_wage,avg_hourly_wage,median_hourly_unweighted,weighted_median_hourly
+male,rural,worked as casual wage labour: in other types of work,78757,241.478,7.82,465.19,59.58,55.56,50.0
+female,rural,worked as casual wage labour: in other types of work,21258,67.49,7.11,302.42,43.24,50.0,43.75
+male,urban,worked as casual wage labour: in other types of work,29531,50.053,8.04,551.63,68.8,62.5,62.5
+female,rural,worked as casual wage labour in MGNREG works,4120,10.827,6.31,259.05,43.28,41.63,41.63
+female,urban,worked as casual wage labour: in other types of work,3968,7.472,6.84,361.75,54.0,50.0,50.0
+male,rural,worked as casual wage labour in MGNREG works,1500,3.825,5.67,246.29,46.8,42.86,50.0
+female,rural,worked as casual wage labour in public works other than MGNREG works,886,2.276,6.56,251.16,40.1,37.88,39.17
+male,rural,worked as casual wage labour in public works other than MGNREG works,463,1.087,7.0,262.84,39.0,36.67,39.75
+female,urban,worked as casual wage labour in MGNREG works,273,0.375,7.55,328.13,43.56,43.25,43.25
+female,urban,worked as casual wage labour in public works other than MGNREG works,32,0.059,7.22,294.0,41.86,42.86,37.5
+male,urban,worked as casual wage labour in MGNREG works,26,0.039,6.81,306.31,45.38,43.25,43.25
+male,urban,worked as casual wage labour in public works other than MGNREG works,24,0.025,7.75,321.33,41.73,43.75,37.5

@@ -1,0 +1,5 @@
+sex,has_child_0_2,sample_n,total_m,worked_any_pct,domestic_only_pct,regular_salaried_pct
+female,1,2178,5.245,17.3,64.1,9.7
+female,0,3381,7.973,28.7,51.0,18.5
+male,1,1796,4.474,94.8,0.1,49.1
+male,0,2431,5.978,92.9,0.1,50.9

@@ -22,3 +22,5 @@ Fix all design and code consistency issues - align even small things like actual
 Make sure that it's responsive.
 
 Document updates and corrections in notes-v1.md in a new section.
+
+<!-- claude --resume 551d8fcd-5b7a-4541-8b52-c4b782a719aa -->

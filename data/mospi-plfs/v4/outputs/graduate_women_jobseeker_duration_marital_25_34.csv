@@ -1,0 +1,5 @@
+sector,marital_status,sample_n,weighted_m,y1_to_2_pct,y2_to_3_pct,y3plus_pct
+rural,currently married,164,0.423,25.7,12.7,38.8
+rural,never married,214,0.394,29.5,15.2,30.8
+urban,currently married,251,0.283,19.5,14.3,50.2
+urban,never married,442,0.477,29.3,16.4,29.6

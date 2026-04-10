@@ -1,0 +1,13 @@
+age_group,occupation_bucket,weighted_m,share_pct
+age_21_34,other,14.328,53.1
+age_21_34,farm_and_animal_work,3.909,14.5
+age_21_34,sales_work,3.141,11.6
+age_21_34,software_and_engineering,2.616,9.7
+age_21_34,teaching,2.452,9.1
+age_21_34,health,0.56,2.1
+all_graduates,other,28.036,52.8
+all_graduates,farm_and_animal_work,7.189,13.5
+all_graduates,teaching,7.101,13.4
+all_graduates,sales_work,5.792,10.9
+all_graduates,software_and_engineering,3.68,6.9
+all_graduates,health,1.292,2.4

@@ -38,3 +38,13 @@ Now you'll have even more insights. Catalog ALL insights that you find interesti
 ## Document
 
 Create a README.md that clearly explains what the dataset is, how it was analyzed, what the files are, etc. at enough detail for a layman to understand, and enough for them to create a detailed report / data story from the insights you found.
+
+## New analyses - v4
+
+Broaden the analysis with even more new insights. Search online for ideas others have thought of / done on such datasets, or even on this dataset but haven't implemented. Use the follow-up ideas in v3/notes.md (or past notes.md) as well.
+
+Keep in mind that the analysis must ALSO be SIMPLE enough for a lay audience to understand quickly and easily. With that in mind, find the big, useful, surprising insights that are unlikely to be well known, and are strongly supported by the data. Use the data analysis skill.
+
+Now you'll have even more insights. Catalog ALL insights that you find interesting in v4/insights.md. Write reproducible scripts to create intermediate / final outputs the analyses you perform -- all under v4/ . As you explore the data, if you find anything interesting, any anomalies or outliers, data quality issues, ideas for further analysis, etc., document them in v4/notes.md.
+
+<!-- codex --yolo resume 019ce167-ea13-7641-bab0-606fac7440aa -->
