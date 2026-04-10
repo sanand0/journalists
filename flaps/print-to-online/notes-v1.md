@@ -242,3 +242,56 @@ Questions 1–16 from the previous section still apply. Additionally:
 19. **Is there a maximum file size for CMS paste?** The HTML files are 28–37KB — small, but worth confirming.
 
 *Updated: 2026-04-10*
+
+---
+
+## v3 — Three New Conversions + SKILL.md (2026-04-10)
+
+### New Files Produced
+
+#### 4. `output/nri-money.html`
+**Source:** `originals/NRI money.svg` (SVG only — no PDF available)
+**Story:** NRI Cash In Indian Banks Is Rising (Richa Gandhi)
+**Extraction method:** `rsvg-convert -w 1200` for visual rendering; partial Python ElementTree for numbers
+**Design:** Standard TOI white layout, breaking bar ("TIMES SPECIAL · ECONOMY"), vertical bar chart for 7-year inflows, stacked deposit composition bar (NRE/FCNR(B)/NRO), definition cards, dark callout box for 52× growth stat
+**Key charts:** Vertical bar (2019–2025 NRI inflows), stacked bar (deposit type breakdown), two stat comparison cards (rupee terms vs dollar terms)
+
+#### 5. `output/japan-growth.html`
+**Source:** `originals/Flap-Japan growth.pdf`
+**Story:** Is Japan the Future of Every Country? (Chandrima Banerjee)
+**Design:** Standard TOI white layout, 3-card problem grid, multiple horizontal bar charts (wages, inflation, interest rates), country ageing data list, country comparison table
+**Bug fixed:** Original agent used `opacity: 0` on section containers (`.animate-in` class). Elements below the viewport remained invisible. Fix: removed `opacity: 0` from CSS entirely; bars animate via CSS `@keyframes barGrow` with `animated` class set directly in HTML — no JavaScript needed for horizontal bars.
+
+#### 6. `output/inactive-firms.html`
+**Source:** `originals/Inactive_Firm-R2.pdf`
+**Story:** India has 383 Govt-Run Firms That Do Nothing (data analysis)
+**Design:** Standard TOI white layout, large "18%" percentage callout, state data table (2007 vs 2023), ₹5,700 Cr stat card, numbered closure steps with red circles, Finance Commission timeline
+
+---
+
+### Bug Found and Fixed: `opacity: 0` on Section Containers
+
+**Pattern to avoid:** Using `opacity: 0` in CSS on any element, then revealing it via IntersectionObserver.
+
+**Root cause:** IntersectionObserver fires based on viewport intersection. In full-page screenshots, below-fold elements are never "intersected" — they stay invisible. In browsers, fast scrollers may also miss the trigger.
+
+**Fix applied to japan-growth.html:** Removed `.animate-in { opacity: 0 }` entirely. Bars already had the `animated` class in their HTML, so CSS `@keyframes barGrow` runs on page load without any JavaScript. The page is always fully visible.
+
+**Rule for future conversions:** Never hide section containers with `opacity: 0`. If IntersectionObserver is used, only animate properties that start at 0 (like `height: 0` for vertical bars, `width: 0` for horizontal bars). These don't affect readability if the observer doesn't fire.
+
+---
+
+### SKILL.md Created
+
+`SKILL.md` documents the full conversion process:
+- Content extraction (PDF vs SVG-only)
+- Visual reference workflow
+- TOI design system (exact values for all properties)
+- HTML structure patterns (badge, section, stat cards)
+- Chart patterns (horizontal bar, vertical bar, SVG line, stacked, table, bullet list)
+- Responsive breakpoints
+- Quality checklist (25 items)
+- Common pitfalls table (10 pitfalls with fixes)
+- Full example workflow with bash commands
+
+*Updated: 2026-04-10*

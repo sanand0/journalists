@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India has 383 govt-run firms that do nothing — zilch — Times of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 32px 0 24px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ed1c24;
+  border: 1px solid #ed1c24;
+  padding: 2px 8px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.byline {
+  font-size: 12px;
+  color: #595959;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 28px;
+}
+
+/* ── SECTION ── */
+.section {
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* ── BIG STAT CALLOUT ── */
+.big-stat-box {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 32px 20px;
+  margin-bottom: 16px;
+}
+
+.big-stat-number {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ed1c24;
+  letter-spacing: -2px;
+}
+
+.big-stat-label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin-top: 10px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-stat-sub {
+  font-size: 13px;
+  color: #595959;
+  margin-top: 6px;
+}
+
+/* ── EXAMPLE CARDS ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.example-card {
+  background: #f6f6f6;
+  border-top: 3px solid #ed1c24;
+  padding: 16px 18px;
+}
+
+.example-card .card-state {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 6px;
+}
+
+.example-card .card-text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+/* ── BAR COMPARISON ── */
+.comparison-wrap {
+  background: #f6f6f6;
+  padding: 20px 20px 16px;
+  margin-bottom: 16px;
+}
+
+.comparison-group {
+  margin-bottom: 24px;
+}
+
+.comparison-group:last-child {
+  margin-bottom: 0;
+}
+
+.comparison-group-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 52px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.bar-year {
+  font-size: 12px;
+  font-weight: 600;
+  color: #595959;
+  text-align: right;
+}
+
+.bar-track {
+  background: #e5e7eb;
+  height: 18px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  width: 0;
+  transition: width 1s ease;
+}
+
+.bar-fill.green { background: #16a34a; }
+.bar-fill.red   { background: #ed1c24; }
+.bar-fill.muted { background: #9ca3af; }
+
+.bar-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.comparison-change {
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.change-good { color: #16a34a; }
+.change-bad  { color: #ed1c24; }
+
+.central-note {
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  border-left: 3px solid #e0e0e0;
+  padding-left: 12px;
+  margin-top: 16px;
+}
+
+/* ── MONEY CALLOUT ── */
+.money-callout {
+  border-left: 4px solid #ed1c24;
+  padding: 24px 20px;
+  background: #f6f6f6;
+  margin-bottom: 16px;
+}
+
+.money-amount {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ed1c24;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.money-desc {
+  font-size: 15px;
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+.money-note {
+  font-size: 13px;
+  color: #595959;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+/* ── CLOSURE STEPS ── */
+.steps-list {
+  list-style: none;
+  margin-top: 4px;
+}
+
+.steps-list li {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #1a1a1a;
+  counter-increment: step-counter;
+}
+
+.steps-list {
+  counter-reset: step-counter;
+}
+
+.steps-list li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background: #ed1c24;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  /* Use text-align + padding fallback for older browsers */
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 0;
+}
+
+/* Override: no flex on li itself */
+.steps-list li {
+  display: block;
+}
+
+.closure-note {
+  font-size: 13px;
+  line-height: 22px;
+  color: #595959;
+  font-style: italic;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 14px;
+  margin-top: 4px;
+}
+
+/* ── GLOBAL EXAMPLES ── */
+.global-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.global-card {
+  background: #f6f6f6;
+  padding: 16px;
+}
+
+.global-card .gc-country {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #595959;
+  margin-bottom: 8px;
+}
+
+.global-card .gc-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1a1a1a;
+}
+
+.global-note {
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* ── TIMELINE ── */
+.timeline {
+  position: relative;
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 56px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 84px;
+  margin-bottom: 28px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 56px;
+  background: #ed1c24;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding: 3px 4px;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  background: #ed1c24;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  outline: 2px solid #ed1c24;
+}
+
+.timeline-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.timeline-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+/* ── SOURCE / FOOTER ── */
+.source-line {
+  font-size: 11px;
+  color: #595959;
+  margin-top: 8px;
+}
+
+.footer {
+  font-size: 11px;
+  color: #595959;
+  line-height: 18px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 480px) {
+  h1 { font-size: 22px; line-height: 30px; }
+  .big-stat-number { font-size: 48px; }
+  .money-amount { font-size: 36px; }
+  .global-cards { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 38px 1fr 44px; }
+  .timeline::before { left: 46px; }
+  .timeline-item { padding-left: 70px; }
+  .timeline-badge { width: 44px; font-size: 9px; }
+  .timeline-dot { left: 40px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="badge">Times Special</div>
+    <h1>India has 383 govt-run firms that do nothing — zilch. So, why do they exist?</h1>
+    <p class="intro">Across India, these companies drag on because they haven't been officially shut down — some haven't produced anything for decades, and some have actually gone 'missing'. Why do they still cost taxpayers money?</p>
+    <p class="byline">By Chandrima Banerjee</p>
+    <hr class="divider">
+  </div>
+
+  <!-- KEY STAT: 18% -->
+  <div class="section">
+    <div class="big-stat-box">
+      <div class="big-stat-number">18%</div>
+      <div class="big-stat-label">of all public-sector units in India are inactive</div>
+      <div class="big-stat-sub">383 PSUs — owned by state govts or the Centre — sit idle, based on CAG report data</div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: HOW IT WORKS -->
+  <div class="section" data-observe>
+    <h2>How It Works</h2>
+    <p class="section-desc">In India, govts set up and operate firms for three primary reasons — to make things more affordable, to develop infrastructure in a planned manner, and to protect strategic interests. But what happens when the firms stop doing what they were meant to do?</p>
+    <div class="cards-grid">
+      <div class="example-card">
+        <div class="card-state">Bihar</div>
+        <div class="card-text">The Bihar State Forest Development Corporation Limited has been lying inactive for more than 20 years. No work, no output. Bihar has 39 such inactive state-run units, with almost <strong>₹790 crore</strong> of state money tied up.</div>
+      </div>
+      <div class="example-card">
+        <div class="card-state">Assam</div>
+        <div class="card-text">Assam has 11 inactive companies. Three of them were <strong>'untraceable'</strong> when the CAG asked. But they account for almost <strong>₹12 crore</strong> in capital employed.</div>
+      </div>
+      <div class="example-card">
+        <div class="card-state">West Bengal</div>
+        <div class="card-text">West Bengal has 19 inactive state-run firms with outstanding loans running to more than <strong>₹1,100 crore</strong>. But together they had almost <strong>1,500 employees</strong>.</div>
+      </div>
+    </div>
+    <div class="source-line">Source: CAG audit report</div>
+  </div>
+
+  <!-- SECTION 2: THE TREND -->
+  <div class="section" data-observe>
+    <h2>The Trend — Two Sets of States</h2>
+    <p class="section-desc">12 states managed to reduce the number of inactive state-run firms over two decades. But 14 states had MORE inactive PSEs in 2023.</p>
+
+    <div class="comparison-wrap">
+      <!-- States that improved -->
+      <div class="comparison-group">
+        <div class="comparison-group-label">States that improved (12 states)</div>
+        <div class="bar-row">
+          <div class="bar-year">2007</div>
+          <div class="bar-track"><div class="bar-fill muted" data-w="98.3%"></div></div>
+          <div class="bar-value">172</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-year">2023</div>
+          <div class="bar-track"><div class="bar-fill green" data-w="69.7%"></div></div>
+          <div class="bar-value">122</div>
+        </div>
+        <div class="comparison-change change-good">&#8595; &minus;50 inactive PSUs — improvement</div>
+      </div>
+
+      <!-- States that worsened -->
+      <div class="comparison-group">
+        <div class="comparison-group-label">States that worsened (14 states)</div>
+        <div class="bar-row">
+          <div class="bar-year">2007</div>
+          <div class="bar-track"><div class="bar-fill muted" data-w="76%"></div></div>
+          <div class="bar-value">133</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-year">2023</div>
+          <div class="bar-track"><div class="bar-fill red" data-w="100%"></div></div>
+          <div class="bar-value">175</div>
+        </div>
+        <div class="comparison-change change-bad">&#8593; +42 inactive PSUs — getting worse</div>
+      </div>
+    </div>
+
+    <div class="central-note">
+      When it comes to central PSUs, <strong>11 were added to the inactive list in three years</strong>, taking the total to 75.
+    </div>
+
+    <div class="source-line">Source: CAG audit report; bars scaled to max of 175</div>
+  </div>
+
+  <!-- SECTION 3: EXPENSIVE -->
+  <div class="section">
+    <h2>This Is Expensive — Taxpayers Pay</h2>
+    <div class="money-callout">
+      <div class="money-amount">₹5,700 Cr</div>
+      <div class="money-desc">at least, is tied up in inactive govt firms as investments across 18 states/UTs for which CAG audit report data is available</div>
+      <div class="money-note">Maharashtra and UP account for almost half (50%) of this money, invested across 60 inactive firms.</div>
+    </div>
+    <div class="source-line">Source: CAG audit report</div>
+  </div>
+
+  <!-- SECTION 4: WHY CLOSING TAKES YEARS -->
+  <div class="section">
+    <h2>Why Does Closing Them Take Years?</h2>
+    <p class="section-desc">The CAG repeats this point over and over — inactive PSUs do not contribute to economic growth, and those investments need to be squared off fast.</p>
+
+    <ol class="steps-list">
+      <li>Govt decides to shut down (after considering revival vs closure)</li>
+      <li>Process can involve courts, tribunals, and liquidators</li>
+      <li>Must figure out: what to do with assets, how to pay employees' dues, how to repay loans</li>
+      <li>All while the govt keeps an eye on money needed — closing a company can be quite expensive</li>
+      <li>Centre said it's coming up with a plan for "champion" central PSEs</li>
+    </ol>
+
+    <p class="closure-note">While closure guidelines were issued in 2021, actual implementation has been slow, a parliamentary panel said.</p>
+  </div>
+
+  <!-- SECTION 5: OTHER COUNTRIES -->
+  <div class="section">
+    <h2>What Do Other Countries Do?</h2>
+    <p class="section-desc">Globally, 126 of the largest 500 companies by revenue are state-owned. So, they can work. But figuring out how to wind up inactive ones is something prudent govts routinely do.</p>
+
+    <div class="global-cards">
+      <div class="global-card">
+        <div class="gc-country">Sweden</div>
+        <div class="gc-text">An updated state ownership policy from 2025 requires state-owned enterprises to operate on commercial principles and make money — ensuring economic value for taxpayers.</div>
+      </div>
+      <div class="global-card">
+        <div class="gc-country">Norway</div>
+        <div class="gc-text">The govt's goal as an owner is 'the highest possible return over time', with clear expectations of dividend payments.</div>
+      </div>
+    </div>
+
+    <p class="global-note">India's challenge is that it has never demanded this of its state-run firms — not with explicit expectations anyway.</p>
+  </div>
+
+  <!-- SECTION 6: FINANCE COMMISSION HISTORY -->
+  <div class="section">
+    <h2>A Recurring Theme in Finance Commission Reports</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-badge">2010–15</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">13th Finance Commission</div>
+        <div class="timeline-text">Set a March 2011 deadline for each state to draw up a roadmap to close inactive govt firms.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-badge">2015–20</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">14th Finance Commission</div>
+        <div class="timeline-text">"Most of the states have not reported on the action taken on these recommendations."</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-badge">16th FC</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">16th Finance Commission</div>
+        <div class="timeline-text">Recommended that inactive PSEs be considered for immediate closure to reduce fiscal strain.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Source: Comptroller and Auditor General of India (CAG) audit report on state and central public-sector enterprises; Finance Commission reports
+  </div>
+
+</div>
+
+<script>
+// Animate bars from 0 → target width on scroll via IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.bar-fill[data-w]').forEach(bar => {
+        bar.style.width = bar.dataset.w;
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('[data-observe]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

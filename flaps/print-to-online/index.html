@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flaps to Online — Times of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 42px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 16px;
+  line-height: 28px;
+  color: #595959;
+  max-width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-inner {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.card:hover .card-inner {
+  border-color: #ed1c24;
+  box-shadow: 0 2px 8px rgba(237, 28, 36, 0.1);
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ed1c24;
+}
+
+.card-link::after {
+  content: ' →';
+}
+
+footer {
+  padding: 32px 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #595959;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 28px; line-height: 36px; }
+  .grid { grid-template-columns: 1fr; }
+  header { padding: 32px 0 24px; margin-bottom: 32px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Flaps to Online</h1>
+    <p class="tagline">Converting Times of India print flaps into responsive, CMS-ready HTML. Each flap is a self-contained story with charts, data, and design that matches TOI's online look and feel.</p>
+  </header>
+
+  <div class="grid">
+    <a href="output/green-power.html" target="_blank" class="card">
+      <div class="card-inner">
+        <h2>Green Power</h2>
+        <p>India's energy transition: how quickly did India close its electrification gap compared to China and the world? Historical trajectory, renewable capacity, and future outlook.</p>
+        <span class="card-link">View</span>
+      </div>
+    </a>
+
+    <a href="output/us-university-funding.html" target="_blank" class="card">
+      <div class="card-inner">
+        <h2>US University Funding</h2>
+        <p>Trump's cuts to US universities: which states face the deepest cuts? How does federal funding compare to private? Staggered bar animations show the impact state by state.</p>
+        <span class="card-link">View</span>
+      </div>
+    </a>
+
+    <a href="output/iran-oil-travel.html" target="_blank" class="card">
+      <div class="card-inner">
+        <h2>Iran Oil & Travel</h2>
+        <p>Gulf war impact on India: how does geopolitical tension ripple through oil imports and travel patterns? Bullet points, flow data, and economic tremors.</p>
+        <span class="card-link">View</span>
+      </div>
+    </a>
+
+    <a href="output/nri-money.html" target="_blank" class="card">
+      <div class="card-inner">
+        <h2>NRI Cash in Banks</h2>
+        <p>NRI deposits rising in Indian banks. What's driving the surge? Weak rupee vs. India-linked income streams. Vertical bar chart, deposit type breakdown, and growth callout.</p>
+        <span class="card-link">View</span>
+      </div>
+    </a>
+
+    <a href="output/japan-growth.html" target="_blank" class="card">
+      <div class="card-inner">
+        <h2>Japan's Stagnation</h2>
+        <p>Is Japan the future of every country? Wages that didn't grow, inflation that didn't move, interest rates that went negative — and what it means for ageing societies worldwide.</p>
+        <span class="card-link">View</span>
+      </div>
+    </a>
+
+    <a href="output/inactive-firms.html" target="_blank" class="card">
+      <div class="card-inner">
+        <h2>Inactive PSUs</h2>
+        <p>383 government-run firms doing nothing: 18% of all Indian PSUs are inactive. Where are they? How much capital is locked up? Timeline of the closure process.</p>
+        <span class="card-link">View</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer>
+Built with Rethink Sans, responsive HTML, and pure CSS animations. No external dependencies.
+</footer>
+
+</body>
+</html>

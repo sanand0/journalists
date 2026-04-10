@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is Japan the future of every country? — Times of India</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ed1c24;
+  border: 1.5px solid #ed1c24;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 28px 0 0;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.byline {
+  font-size: 13px;
+  font-weight: 600;
+  color: #595959;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+/* ── Section headers ── */
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* ── Chart animations ── */
+@keyframes barGrow {
+  from { width: 0; }
+  to   { width: var(--w); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* animate-in is a no-op marker class — sections are always visible */
+
+/* ── Chart ── */
+.chart {
+  background: #f6f6f6;
+  padding: 14px 16px;
+  border-radius: 2px;
+}
+
+.chart-label {
+  font-size: 12px;
+  color: #595959;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.chart-note {
+  font-size: 12px;
+  color: #595959;
+  margin-top: 8px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+/* ── Bar rows ── */
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.bar-row:last-child {
+  margin-bottom: 0;
+}
+
+.bar-label {
+  font-size: 12px;
+  color: #595959;
+  flex: 0 0 160px;
+  text-align: right;
+  line-height: 16px;
+}
+
+.bar-label.highlight {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+.bar-track {
+  flex: 1;
+  background: #e5e7eb;
+  height: 18px;
+  border-radius: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #374151;
+  width: 0;
+  border-radius: 1px;
+}
+
+.bar-fill.animated {
+  animation: barGrow 0.8s ease forwards;
+  animation-delay: calc(var(--i, 0) * 0.12s);
+}
+
+.bar-fill.highlight {
+  background: #ed1c24;
+}
+
+.bar-value {
+  font-size: 12px;
+  color: #595959;
+  flex: 0 0 60px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.bar-value.highlight {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+/* ── GDP timeline ── */
+.gdp-chart {
+  background: #f6f6f6;
+  padding: 14px 16px 18px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.gdp-country-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-top: 14px;
+  color: #595959;
+}
+
+.gdp-country-label:first-child {
+  margin-top: 0;
+}
+
+.gdp-country-label.red {
+  color: #ed1c24;
+}
+
+.gdp-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.gdp-bar-row:last-child {
+  margin-bottom: 0;
+}
+
+.gdp-year {
+  font-size: 12px;
+  color: #595959;
+  flex: 0 0 36px;
+  text-align: right;
+}
+
+.gdp-track {
+  flex: 1;
+  background: #e5e7eb;
+  height: 20px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.gdp-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 1px;
+  background: #374151;
+}
+
+.gdp-fill.animated {
+  animation: barGrow 0.9s ease forwards;
+  animation-delay: calc(var(--i, 0) * 0.1s);
+}
+
+.gdp-fill.japan {
+  background: #ed1c24;
+}
+
+.gdp-val {
+  font-size: 12px;
+  color: #595959;
+  flex: 0 0 68px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.gdp-val.japan {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+/* ── 3-column problem cards ── */
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.problem-card {
+  background: #f6f6f6;
+  border-radius: 2px;
+  padding: 14px 12px 12px;
+}
+
+.problem-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ed1c24;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.problem-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.problem-body {
+  font-size: 13px;
+  line-height: 20px;
+  color: #595959;
+}
+
+/* ── Why-it-matters callout ── */
+.why-matters {
+  background: #fff8f8;
+  border-left: 3px solid #ed1c24;
+  padding: 10px 12px;
+  margin-top: 10px;
+  border-radius: 0 2px 2px 0;
+}
+
+.why-matters-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 4px;
+}
+
+.why-matters-text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #1a1a1a;
+}
+
+/* ── Big stat row ── */
+.big-stat-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.big-stat-num {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  color: #ed1c24;
+  flex: 0 0 auto;
+}
+
+.big-stat-label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #595959;
+}
+
+/* ── Ageing projection ── */
+.ageing-list {
+  background: #f6f6f6;
+  border-radius: 2px;
+  padding: 16px 20px;
+}
+
+.ageing-row {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ageing-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ageing-row:first-child {
+  padding-top: 0;
+}
+
+.ageing-pct {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  color: #ed1c24;
+  flex: 0 0 80px;
+  text-align: right;
+}
+
+.ageing-timeframe {
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+
+.ageing-timeframe span {
+  display: block;
+  font-size: 12px;
+  color: #595959;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* ── Household assets stacked bar ── */
+.stacked-wrap {
+  background: #f6f6f6;
+  padding: 14px 16px;
+  border-radius: 2px;
+}
+
+.stacked-label-row {
+  display: flex;
+  gap: 0;
+  margin-bottom: 5px;
+  align-items: flex-end;
+}
+
+.stacked-year-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #595959;
+  flex: 0 0 44px;
+}
+
+.stacked-bar {
+  flex: 1;
+  height: 26px;
+  border-radius: 1px;
+  display: flex;
+  overflow: hidden;
+}
+
+.stacked-segment {
+  height: 100%;
+  transition: width 0.8s ease;
+}
+
+.stacked-segment.cash    { background: #ed1c24; }
+.stacked-segment.equity  { background: #374151; }
+.stacked-segment.pension { background: #9ca3af; }
+.stacked-segment.other   { background: #d1d5db; }
+
+.stacked-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.stacked-bar-row:last-child {
+  margin-bottom: 0;
+}
+
+.stacked-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #595959;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.legend-dot.cash    { background: #ed1c24; }
+.legend-dot.equity  { background: #374151; }
+.legend-dot.pension { background: #9ca3af; }
+.legend-dot.other   { background: #d1d5db; }
+
+/* ── Japan vs US comparison ── */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.compare-col {
+  background: #f6f6f6;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.compare-col-header {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.compare-col-header.japan-hdr {
+  background: #ed1c24;
+}
+
+.compare-col-header.us-hdr {
+  background: #374151;
+}
+
+.compare-stat {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.compare-stat:last-child {
+  border-bottom: none;
+}
+
+.compare-stat-num {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 3px;
+}
+
+.compare-stat-num.red {
+  color: #ed1c24;
+}
+
+.compare-stat-label {
+  font-size: 12px;
+  line-height: 17px;
+  color: #595959;
+}
+
+/* ── Inline highlight ── */
+.inline-stat {
+  display: inline-block;
+  font-weight: 700;
+  color: #ed1c24;
+}
+
+/* ── Job-change data inline ── */
+.data-pill-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.data-pill {
+  background: #f6f6f6;
+  border-radius: 2px;
+  padding: 12px 14px;
+  flex: 1;
+  text-align: center;
+}
+
+.data-pill-num {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #ed1c24;
+  margin-bottom: 4px;
+}
+
+.data-pill-label {
+  font-size: 12px;
+  color: #595959;
+  line-height: 17px;
+}
+
+/* ── Footer ── */
+.footer {
+  font-size: 12px;
+  color: #595959;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+  margin-top: 24px;
+  line-height: 18px;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 28px 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  h1 { font-size: 22px; line-height: 30px; }
+  h2 { font-size: 17px; line-height: 24px; }
+
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bar-label {
+    flex: 0 0 110px;
+    font-size: 11px;
+  }
+
+  .bar-value {
+    flex: 0 0 50px;
+    font-size: 11px;
+  }
+
+  .ageing-pct {
+    font-size: 32px;
+    flex: 0 0 60px;
+  }
+
+  .data-pill-row {
+    flex-wrap: wrap;
+  }
+
+  .data-pill {
+    flex: 0 0 calc(50% - 6px);
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">Times Special</div>
+    <h1>Is Japan the future of every country?</h1>
+    <p class="intro">Imagine a country that, for three decades, has barely grown economically, where interest rates are stuck at zero, prices are frozen, and wages barely budge. Yet, this nation is a global economic powerhouse, maintains a high quality of life, excellent education, and remarkably low unemployment. What if this seemingly stagnant economy isn't a cautionary tale, but a glimpse into humanity's future — a world where ceaseless growth isn't the only measure of success, and where an ageing society can still thrive?</p>
+    <div class="byline">By Chandrima Banerjee</div>
+  </div>
+
+  <!-- GDP context -->
+  <div class="section animate-in">
+    <h2>The Growth Gap: Japan vs The US</h2>
+    <p class="section-desc">Japan surged close to the US in 1995 after a 5× jump in 15 years — then stalled. The US has since pulled far ahead.</p>
+    <div class="chart-label">GDP (USD billion) — 1980 to 2030 projection</div>
+    <div class="gdp-chart">
+
+      <div class="gdp-country-label red">Japan</div>
+
+      <div class="gdp-bar-row">
+        <div class="gdp-year">1980</div>
+        <div class="gdp-track">
+          <div class="gdp-fill japan animated" style="--w: 3.0%; --i: 0"></div>
+        </div>
+        <div class="gdp-val japan">$1,129bn</div>
+      </div>
+
+      <div class="gdp-bar-row">
+        <div class="gdp-year">1995</div>
+        <div class="gdp-track">
+          <div class="gdp-fill japan animated" style="--w: 14.4%; --i: 1"></div>
+        </div>
+        <div class="gdp-val japan">~$5,350bn</div>
+      </div>
+
+      <div class="gdp-bar-row">
+        <div class="gdp-year">2030</div>
+        <div class="gdp-track">
+          <div class="gdp-fill japan animated" style="--w: 13.4%; --i: 2"></div>
+        </div>
+        <div class="gdp-val japan">$4,995bn</div>
+      </div>
+
+      <div class="gdp-country-label">United States</div>
+
+      <div class="gdp-bar-row">
+        <div class="gdp-year">1980</div>
+        <div class="gdp-track">
+          <div class="gdp-fill animated" style="--w: 7.7%; --i: 3"></div>
+        </div>
+        <div class="gdp-val">$2,857bn</div>
+      </div>
+
+      <div class="gdp-bar-row">
+        <div class="gdp-year">2030</div>
+        <div class="gdp-track">
+          <div class="gdp-fill animated" style="--w: 100%; --i: 4"></div>
+        </div>
+        <div class="gdp-val">$37,153bn</div>
+      </div>
+
+    </div>
+    <p class="chart-note">Source: IMF World Economic Outlook. 2030 figures are projections.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section: For Decades In Japan -->
+  <div class="section">
+    <h2>For Decades In Japan…</h2>
+    <p class="section-desc">Three economic conditions that have defined Japan's era of stagnation — and are now starting to slowly shift.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card animate-in">
+        <div class="problem-num">01</div>
+        <div class="problem-title">Wages haven't grown</div>
+        <div class="problem-body">Deflation left lasting habits — workers stopped expecting raises, companies avoided offering them. It was only recently that wage negotiations led to slightly stronger pay hikes.</div>
+      </div>
+      <div class="problem-card animate-in">
+        <div class="problem-num">02</div>
+        <div class="problem-title">Neither has cost of living</div>
+        <div class="problem-body">Low interest rates usually nudge prices up by encouraging borrowing. In Japan, they could not lift inflation to the 2% target. It's only now, since 2022, that inflation is above target.</div>
+      </div>
+      <div class="problem-card animate-in">
+        <div class="problem-num">03</div>
+        <div class="problem-title">Or the cost of borrowing</div>
+        <div class="problem-body">After a real estate and stock market bubble burst, the Bank of Japan slashed rates in 1991, introduced zero interest rate policy in 1999, negative rates in 2016 — reversed only in 2024.</div>
+      </div>
+    </div>
+
+    <!-- Wages chart -->
+    <div class="animate-in">
+      <h3>Average Annual Wages (US$) — Japan vs G7 Average</h3>
+      <div class="chart-label">Japan's wages barely moved in over 30 years</div>
+      <div class="chart">
+
+        <div class="bar-row">
+          <div class="bar-label highlight">Japan 1990</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 90.5%; --i: 0"></div>
+          </div>
+          <div class="bar-value highlight">$46,694</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label highlight">Japan 2023</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 90.7%; --i: 1"></div>
+          </div>
+          <div class="bar-value highlight">$46,792</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">G7 Average 1990</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 52%; --i: 2"></div>
+          </div>
+          <div class="bar-value">~$31,000</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">G7 Average 2023</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 100%; --i: 3"></div>
+          </div>
+          <div class="bar-value">~$51,600</div>
+        </div>
+
+      </div>
+      <p class="chart-note">Japan 1990→2023 change: <strong>+0.2% in 33 years</strong>. G7 peers roughly doubled in real terms. Source: OECD.</p>
+    </div>
+
+    <!-- Inflation chart -->
+    <div class="animate-in" style="margin-top: 20px;">
+      <h3>Annual Inflation (%) — Japan vs G7 Average</h3>
+      <div class="chart-label">Japan finally crossed its 2% inflation target after 2022</div>
+      <div class="chart">
+
+        <div class="bar-row">
+          <div class="bar-label highlight">Japan 1980</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 100%; --i: 0"></div>
+          </div>
+          <div class="bar-value highlight">7.8%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">G7 Average 1980</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 100%; --i: 1"></div>
+          </div>
+          <div class="bar-value">~7.7%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label highlight">Japan 2024</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 34.6%; --i: 2"></div>
+          </div>
+          <div class="bar-value highlight">2.7%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">G7 Average 2024</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 37.7%; --i: 3"></div>
+          </div>
+          <div class="bar-value">~2.9%</div>
+        </div>
+
+      </div>
+      <p class="chart-note">Japan and the G7 started at similar inflation levels in 1980. Japan's diverged for decades, only closing the gap after 2022. Source: IMF.</p>
+    </div>
+
+    <!-- Interest rates chart -->
+    <div class="animate-in" style="margin-top: 20px;">
+      <h3>Central Bank Policy Rate (%)</h3>
+      <div class="chart-label">Japan held rates near zero for a generation</div>
+      <div class="chart">
+
+        <div class="bar-row">
+          <div class="bar-label">US 1980</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 100%; --i: 0"></div>
+          </div>
+          <div class="bar-value">~13%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label highlight">Japan 1980</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 25.4%; --i: 1"></div>
+          </div>
+          <div class="bar-value highlight">3.3%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">US 2025</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 33.8%; --i: 2"></div>
+          </div>
+          <div class="bar-value">4.4%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">UK 2025</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 35.4%; --i: 3"></div>
+          </div>
+          <div class="bar-value">4.6%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label highlight">Japan 2025</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 3.8%; --i: 4"></div>
+          </div>
+          <div class="bar-value highlight">0.5%</div>
+        </div>
+
+      </div>
+      <p class="chart-note">Zero interest rate policy: 1999. Negative rate policy: 2016. Rate reversal began: 2024. Source: Bank of Japan, US Fed, Bank of England.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section: And, At The Same Time -->
+  <div class="section">
+    <h2>And, At The Same Time…</h2>
+    <p class="section-desc">Three structural features of Japanese society that compound its economic stagnation — and mirror trends now emerging worldwide.</p>
+
+    <!-- 1. Ageing -->
+    <div class="animate-in" style="margin-bottom: 24px;">
+      <h3>1. It's Ageing Really Fast</h3>
+      <p class="section-desc" style="margin-bottom: 12px;">Japan's fertility rate hasn't been above replacement level since 1974. Today it stands at 1.21 — one of the world's lowest. Life expectancy is close to 85. Median age: 49.</p>
+
+      <div class="data-pill-row">
+        <div class="data-pill">
+          <div class="data-pill-num">1.21</div>
+          <div class="data-pill-label">Fertility rate today (replacement level is 2.1)</div>
+        </div>
+        <div class="data-pill">
+          <div class="data-pill-num">6</div>
+          <div class="data-pill-label">Births per thousand — a quarter of the 1950s rate</div>
+        </div>
+        <div class="data-pill">
+          <div class="data-pill-num">49</div>
+          <div class="data-pill-label">Median age in years</div>
+        </div>
+      </div>
+
+      <div class="chart-label">Working-age population (% of total)</div>
+      <div class="chart">
+        <div class="bar-row">
+          <div class="bar-label">1950</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 100%; --i: 0"></div>
+          </div>
+          <div class="bar-value">60%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label highlight">2025</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 98.3%; --i: 1"></div>
+          </div>
+          <div class="bar-value highlight">59%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">2100 (projected)</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 85%; --i: 2"></div>
+          </div>
+          <div class="bar-value">51%</div>
+        </div>
+      </div>
+      <p class="chart-note">Source: UN World Population Prospects.</p>
+    </div>
+
+    <!-- 2. Job switching -->
+    <div class="animate-in" style="margin-bottom: 24px;">
+      <h3>2. People Rarely Switch Jobs</h3>
+      <p class="section-desc" style="margin-bottom: 12px;">In early 2025, just 17% of Japanese workers said they wanted to change jobs. Of those, 63% weren't even looking. Fewer than 5% actually changed jobs.</p>
+
+      <div class="chart-label">Share who changed jobs (%)</div>
+      <div class="chart">
+        <div class="bar-row">
+          <div class="bar-label">1984</div>
+          <div class="bar-track">
+            <div class="bar-fill animated" style="--w: 60.4%; --i: 0"></div>
+          </div>
+          <div class="bar-value">2.9%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label highlight">2025</div>
+          <div class="bar-track">
+            <div class="bar-fill highlight animated" style="--w: 100%; --i: 1"></div>
+          </div>
+          <div class="bar-value highlight">4.8%</div>
+        </div>
+      </div>
+      <p class="chart-note">Source: Japan Ministry of Health, Labour and Welfare.</p>
+
+      <div class="why-matters">
+        <div class="why-matters-label">Why That Matters</div>
+        <div class="why-matters-text">When people don't change jobs, wages stagnate. Job mobility is a key driver of pay growth — workers earn more by moving to employers who value their skills more highly.</div>
+      </div>
+    </div>
+
+    <!-- 3. Household savings -->
+    <div class="animate-in" style="margin-bottom: 0;">
+      <h3>3. People Save a Lot — In Cash</h3>
+      <p class="section-desc" style="margin-bottom: 12px;">Of the nearly $15 trillion that Japanese households hold in financial assets, half sits in cash or deposits — a share that has actually grown since the 1990s.</p>
+
+      <div class="chart-label">Japanese household financial assets — composition (%)</div>
+      <div class="stacked-wrap">
+
+        <div class="stacked-bar-row">
+          <div class="gdp-year">1994</div>
+          <div class="stacked-bar">
+            <div class="stacked-segment cash"    style="width: 49%"></div>
+            <div class="stacked-segment equity"  style="width: 16%"></div>
+            <div class="stacked-segment pension" style="width: 26%"></div>
+            <div class="stacked-segment other"   style="width: 9%"></div>
+          </div>
+        </div>
+
+        <div class="stacked-bar-row" style="margin-bottom: 0;">
+          <div class="gdp-year">2023</div>
+          <div class="stacked-bar">
+            <div class="stacked-segment cash"    style="width: 53%"></div>
+            <div class="stacked-segment equity"  style="width: 13%"></div>
+            <div class="stacked-segment pension" style="width: 28%"></div>
+            <div class="stacked-segment other"   style="width: 6%"></div>
+          </div>
+        </div>
+
+        <div class="stacked-legend">
+          <div class="legend-item"><div class="legend-dot cash"></div> Cash &amp; deposits</div>
+          <div class="legend-item"><div class="legend-dot equity"></div> Equity &amp; investment funds</div>
+          <div class="legend-item"><div class="legend-dot pension"></div> Insurance &amp; pension</div>
+          <div class="legend-item"><div class="legend-dot other"></div> Others</div>
+        </div>
+      </div>
+      <p class="chart-note">Source: Bank of Japan Flow of Funds.</p>
+
+      <div class="why-matters">
+        <div class="why-matters-label">Why That Matters</div>
+        <div class="why-matters-text">That much idle capital means less flows into productive investment. Savings parked in low-yield deposits dampen economic dynamism and compound the stagnation cycle.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section: Is This Where We Are All Headed? -->
+  <div class="section animate-in">
+    <h2>Is This Where We Are All Headed?</h2>
+    <p class="section-desc">UN projections show the share of countries with fertility rates below replacement level is going off a cliff — from 55% today, expected to rise to 94% by end of this century.</p>
+    <p class="section-desc" style="margin-bottom: 20px;">Like in Japan, job transitions are slow in ageing societies. Greece (52%) and Italy (48%) have higher shares of workers in jobs for 10+ years than Japan (46%).</p>
+
+    <div class="chart-label">Share of countries whose median age is above 40</div>
+    <div class="ageing-list animate-in">
+
+      <div class="ageing-row">
+        <div class="ageing-pct">23%</div>
+        <div class="ageing-timeframe">
+          Right now
+          <span>About 1 in 4 countries already has a median age above 40</span>
+        </div>
+      </div>
+
+      <div class="ageing-row">
+        <div class="ageing-pct">38%</div>
+        <div class="ageing-timeframe">
+          In a decade
+          <span>By the mid-2030s, more than a third of countries will cross this threshold</span>
+        </div>
+      </div>
+
+      <div class="ageing-row">
+        <div class="ageing-pct">61%</div>
+        <div class="ageing-timeframe">
+          In half a century
+          <span>By 2075, nearly two-thirds of countries will be ageing at Japan's current pace</span>
+        </div>
+      </div>
+
+      <div class="ageing-row">
+        <div class="ageing-pct">73%</div>
+        <div class="ageing-timeframe">
+          By end of the century
+          <span>By 2100, almost three-quarters of the world's countries will be as old as Japan is today</span>
+        </div>
+      </div>
+
+    </div>
+    <p class="chart-note">Source: UN World Population Prospects 2024.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Section: Educated, Employed, And Living Longer -->
+  <div class="section animate-in">
+    <h2>Educated, Employed, And Living Longer</h2>
+    <p class="section-desc">Japan has not fallen short on the basics despite five decades of population crisis. Compared with the United States, it delivers more on key quality-of-life measures.</p>
+
+    <div class="compare-grid">
+
+      <div class="compare-col">
+        <div class="compare-col-header japan-hdr">Japan</div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num red">+2 yrs</div>
+          <div class="compare-stat-label">longer life expectancy for a 65-year-old</div>
+        </div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num red">26 hrs</div>
+          <div class="compare-stat-label">per week at minimum wage for a jobless couple with 2 children to exit poverty</div>
+        </div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num red">69%</div>
+          <div class="compare-stat-label">of prior income replaced by unemployment benefits</div>
+        </div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num red">Low</div>
+          <div class="compare-stat-label">youth unemployment — even as the population ages rapidly</div>
+        </div>
+
+      </div>
+
+      <div class="compare-col">
+        <div class="compare-col-header us-hdr">United States</div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num">Shorter</div>
+          <div class="compare-stat-label">life expectancy for a 65-year-old versus Japan</div>
+        </div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num">80 hrs</div>
+          <div class="compare-stat-label">per week at minimum wage needed to exit poverty — 3× Japan's requirement</div>
+        </div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num">36%</div>
+          <div class="compare-stat-label">of prior income replaced by unemployment benefits — nearly half of Japan's</div>
+        </div>
+
+        <div class="compare-stat">
+          <div class="compare-stat-num">Higher</div>
+          <div class="compare-stat-label">youth unemployment and weaker social safety net</div>
+        </div>
+
+      </div>
+
+    </div>
+    <p class="chart-note" style="margin-top: 12px;">Source: OECD, Japan Ministry of Health, Labour and Welfare, US Bureau of Labor Statistics.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Sources: IMF World Economic Outlook, OECD Employment Outlook, Bank of Japan, UN World Population Prospects 2024, Japan Ministry of Health Labour and Welfare | Graphic: Times of India Data
+  </div>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // Bar fills animate via CSS (animated class already set in HTML)
+  // No IntersectionObserver needed — CSS animation-delay handles staggering
+
+  // Stacked bars: animate width on scroll
+  var stackedObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var segments = entry.target.querySelectorAll('.stacked-segment');
+        segments.forEach(function (seg, i) {
+          seg.style.transition = 'width 0.8s ease ' + (i * 0.08) + 's';
+          // width already set inline, just trigger a reflow
+          void seg.offsetWidth;
+        });
+        stackedObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.stacked-wrap').forEach(function (el) {
+    stackedObserver.observe(el);
+  });
+})();
+</script>
+</body>
+</html>

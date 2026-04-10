@@ -77,6 +77,10 @@ Create an elegant gallery page statnostics/2026-03-13-mospi-plfs-v3/index.html t
 Clicking on the image opens a popup with the full size SVG.
 The card also has a "Verify" button that opens the corresponding SOP .md file in a new window popup (rendered as HTML) for easy verification.
 
+--- <!-- 10 Apr 2026 -->
+
+Now, there is a data/mospi-plfs/v4/insights.md. Go through it, find the insights that are interesting, and create SVGs for them as well, following the same format and style as the v3 SVGs. Save them under statnostics/2026-03-13-mospi-plfs-v4/. Create corresponding SOP .md files for each new SVG as well, and link them from the gallery page.
+
 <!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
 
 ## Hack of the day, SVG alignment (Github Copilot - claude-sonnet-4.6 high)

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NRI Cash In Indian Banks Is Rising — Times of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  min-height: 100vh;
+}
+
+/* ── Breaking news bar ── */
+.breaking-bar {
+  background: #ed1c24;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px;
+  margin: 0 -16px;
+}
+
+/* ── Wrapper ── */
+.wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  border: 1.5px solid #ed1c24;
+  color: #ed1c24;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin: 18px 0 14px;
+}
+
+/* ── Hero ── */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.subhead {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 28px;
+  border-left: 3px solid #ed1c24;
+  padding-left: 12px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.byline {
+  font-size: 12px;
+  color: #595959;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 28px;
+}
+
+/* ── Section headings ── */
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 6px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+section {
+  margin-bottom: 36px;
+}
+
+/* ── Vertical bar chart ── */
+.vchart-wrap {
+  background: #f6f6f6;
+  padding: 20px 16px 12px;
+  border-radius: 2px;
+  margin: 14px 0;
+}
+
+.vchart-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.vchart {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 160px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .vchart { gap: 5px; }
+}
+
+.vchart-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.vchart-bar-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+
+.vchart-val {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.vchart-val.red { color: #ed1c24; }
+
+.vchart-bar {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.7s cubic-bezier(0.34, 1.26, 0.64, 1);
+}
+
+.vchart-bar.animated { transform: scaleY(1); }
+
+.vchart-year {
+  font-size: 11px;
+  color: #595959;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.vchart-caption {
+  font-size: 12px;
+  color: #595959;
+  margin-top: 10px;
+}
+
+/* ── Comparison cards ── */
+.compare-cards {
+  display: flex;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+@media (max-width: 480px) {
+  .compare-cards { flex-direction: column; }
+}
+
+.compare-card {
+  flex: 1;
+  background: #f6f6f6;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.compare-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.compare-card-subtitle {
+  font-size: 12px;
+  color: #595959;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.compare-bar-track {
+  background: #e0e0e0;
+  height: 20px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.compare-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  width: 0;
+  transition: width 0.9s ease;
+}
+
+.compare-pct {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ed1c24;
+  line-height: 1.1;
+}
+
+.compare-pct-label {
+  font-size: 12px;
+  color: #595959;
+  margin-top: 2px;
+}
+
+.fx-note {
+  font-size: 13px;
+  color: #595959;
+  background: #f6f6f6;
+  padding: 10px 14px;
+  border-radius: 2px;
+  border-left: 3px solid #ed1c24;
+  margin-top: 14px;
+  line-height: 20px;
+}
+
+/* ── Definition cards ── */
+.def-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 14px 0;
+}
+
+@media (max-width: 480px) {
+  .def-cards { grid-template-columns: 1fr; }
+}
+
+.def-card {
+  background: #f6f6f6;
+  padding: 16px;
+  border-top: 3px solid #ed1c24;
+  border-radius: 0 0 2px 2px;
+}
+
+.def-card-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.def-card-abbr {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 8px;
+}
+
+.def-card-desc {
+  font-size: 13px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+
+/* ── Stacked bar ── */
+.stacked-bar-wrap {
+  margin: 14px 0;
+}
+
+.stacked-bar {
+  display: flex;
+  height: 36px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.stacked-seg {
+  height: 100%;
+  width: 0;
+  transition: width 0.9s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.stacked-seg span {
+  padding: 0 6px;
+}
+
+.bar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+
+.bar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #1a1a1a;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Stat cards (3-up) ── */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 14px 0;
+}
+
+@media (max-width: 480px) {
+  .stat-cards { grid-template-columns: 1fr; }
+}
+
+.stat-card {
+  background: #f6f6f6;
+  padding: 16px;
+  border-top: 3px solid #ed1c24;
+  border-radius: 0 0 2px 2px;
+}
+
+.stat-card-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #595959;
+  margin-bottom: 6px;
+}
+
+.stat-card-big {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ed1c24;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-card-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 18px;
+}
+
+/* ── Growth callout ── */
+.growth-box {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 14px 0;
+}
+
+.growth-num {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ed1c24;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.growth-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #e0e0e0;
+}
+
+.growth-text strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* ── Footer ── */
+.footer {
+  font-size: 12px;
+  color: #595959;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 16px;
+  margin-top: 8px;
+  line-height: 18px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- Breaking bar -->
+  <div class="breaking-bar">TIMES SPECIAL · ECONOMY</div>
+
+  <!-- Hero -->
+  <div class="badge">TIMES SPECIAL</div>
+  <h1>NRI Cash In Indian Banks Is Rising. And It's Not Just Due To Falling ₹</h1>
+  <p class="subhead">A weak rupee inflates the value of money sent to India, but NRI deposits are also swelling, thanks to earnings from domestic assets</p>
+  <p class="byline">By Richa Gandhi</p>
+
+  <!-- Section 1: Bar Chart -->
+  <section>
+    <h2>NRIs Put $16.2 Bn In Indian Banks In 2025</h2>
+    <p class="section-desc">Net inflows into NRI deposits hit a record high in 2025, nearly doubling the 2023 figure and driven by both a weakening rupee and growing India-linked income streams.</p>
+
+    <div class="vchart-wrap">
+      <div class="vchart-title">NRI Deposits — Net Inflow ($ bn)</div>
+      <div class="vchart" id="vchart">
+        <!-- 2019: 4.3 → 26.5% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val">4.3</div>
+            <div class="vchart-bar" style="height: 26.5%; background: #374151;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2019</div>
+        </div>
+        <!-- 2020: 5.2 → 32.1% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val">5.2</div>
+            <div class="vchart-bar" style="height: 32.1%; background: #374151;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2020</div>
+        </div>
+        <!-- 2021: 3.2 → 19.8% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val">3.2</div>
+            <div class="vchart-bar" style="height: 19.8%; background: #374151;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2021</div>
+        </div>
+        <!-- 2022: 5.7 → 35.2% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val">5.7</div>
+            <div class="vchart-bar" style="height: 35.2%; background: #374151;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2022</div>
+        </div>
+        <!-- 2023: 7.4 → 45.7% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val">7.4</div>
+            <div class="vchart-bar" style="height: 45.7%; background: #374151;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2023</div>
+        </div>
+        <!-- 2024: 14.7 → 90.7% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val red">14.7</div>
+            <div class="vchart-bar" style="height: 90.7%; background: #ed1c24;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2024</div>
+        </div>
+        <!-- 2025: 16.2 → 100% -->
+        <div class="vchart-col">
+          <div class="vchart-bar-wrap">
+            <div class="vchart-val red">16.2</div>
+            <div class="vchart-bar" style="height: 100%; background: #ed1c24;" data-animate="true"></div>
+          </div>
+          <div class="vchart-year">2025</div>
+        </div>
+      </div>
+      <p class="vchart-caption">Source: RBI &nbsp;·&nbsp; 2021 dip as NRIs repatriated funds &nbsp;·&nbsp; Values in US$ billion</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Weak Rupee -->
+  <section>
+    <h2>Weak Rupee Magnifies Deposits</h2>
+    <p class="section-desc">A steadily weakening rupee explains much of the divergence between rupee and dollar growth. The same deposit base appears larger in rupee terms, while the underlying foreign-currency value has grown far more modestly.</p>
+
+    <div class="compare-cards" id="compare-cards">
+      <div class="compare-card">
+        <div class="compare-card-title">In Rupee Terms</div>
+        <div class="compare-card-subtitle">Outstanding balances show a steep, unmistakable rise — 99% growth since 2005</div>
+        <div class="compare-bar-track">
+          <div class="compare-bar-fill" data-w="99" style="background: #374151;"></div>
+        </div>
+        <div class="compare-pct">99%</div>
+        <div class="compare-pct-label">growth in ₹ terms</div>
+      </div>
+      <div class="compare-card">
+        <div class="compare-card-title">In Dollar Terms</div>
+        <div class="compare-card-subtitle">Convert that growth to dollars, and the size nearly halves — rupee depreciation masks the real picture</div>
+        <div class="compare-bar-track">
+          <div class="compare-bar-fill" data-w="50" style="background: #9ca3af;"></div>
+        </div>
+        <div class="compare-pct" style="color: #595959;">~50%</div>
+        <div class="compare-pct-label">growth in $ terms</div>
+      </div>
+    </div>
+
+    <div class="fx-note">
+      Exchange rate: <strong>₹44.2 per dollar in 2006</strong> &rarr; <strong>₹87 per dollar in 2025</strong> — the rupee has lost nearly half its value against the dollar over two decades.
+    </div>
+  </section>
+
+  <!-- Section 3: Types of NRI Deposits -->
+  <section>
+    <h2>Types Of NRI Deposits</h2>
+
+    <div class="def-cards">
+      <div class="def-card">
+        <div class="def-card-abbr">NRE</div>
+        <div class="def-card-name">Non-Resident External</div>
+        <div class="def-card-desc">Rupee-denominated deposits of overseas earnings, fully repatriable and tax-free in India. Mainly for parking foreign income in India.</div>
+      </div>
+      <div class="def-card">
+        <div class="def-card-abbr">NRO</div>
+        <div class="def-card-name">Non-Resident Ordinary</div>
+        <div class="def-card-desc">Rupee deposits of India-sourced income — rent, dividends etc. — taxable. Used for managing Indian earnings and local expenses.</div>
+      </div>
+      <div class="def-card">
+        <div class="def-card-abbr">FCNR(B)</div>
+        <div class="def-card-name">Foreign Currency Non-Resident — Banks</div>
+        <div class="def-card-desc">Foreign currency deposits, fully repatriable and tax-free. For holding overseas savings in India while avoiding rupee depreciation.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Indian Assets Are Bringing In Money, Too -->
+  <section>
+    <h2>Indian Assets Are Bringing In Money, Too</h2>
+    <p class="section-desc">Earlier surges were driven by foreign-currency deposits, amplified by RBI's swap window (2013–16) before demonetisation. Today's growth is driven far more by rupee NRO and NRE balances, reflecting ongoing remittances and India-linked income rather than one-off incentives.</p>
+
+    <!-- Stacked bar: 2025 outstanding composition -->
+    <div class="stacked-bar-wrap">
+      <div class="section-label">2025 Outstanding Balance — Deposit Mix</div>
+      <div class="stacked-bar" id="deposit-bar">
+        <div class="stacked-seg" data-w="61" style="background: #0ea5e9;"><span>NRE 61%</span></div>
+        <div class="stacked-seg" data-w="36" style="background: #fbbf24;"><span>FCNR(B) 36%</span></div>
+        <div class="stacked-seg" data-w="3"  style="background: #94a3b8;"><span></span></div>
+      </div>
+      <div class="bar-legend">
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#0ea5e9"></span>NRE — 61%</div>
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#fbbf24"></span>FCNR(B) — 36%</div>
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#94a3b8"></span>NRO — 3%</div>
+      </div>
+    </div>
+
+    <!-- Stat cards -->
+    <div class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-card-label">NRE</div>
+        <div class="stat-card-big">61%</div>
+        <div class="stat-card-value">₹9.84 lakh cr outstanding</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-label">FCNR(B)</div>
+        <div class="stat-card-big">36%</div>
+        <div class="stat-card-value">₹5.83 lakh cr outstanding</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-label">NRO</div>
+        <div class="stat-card-big">3%</div>
+        <div class="stat-card-value">₹0.48 lakh cr outstanding</div>
+      </div>
+    </div>
+
+    <!-- 52x growth callout -->
+    <div class="growth-box">
+      <div class="growth-num">52x</div>
+      <div class="growth-text">
+        <strong>Total NRI deposit base has grown 52 times since 2006</strong> — a combination of growing diaspora wealth, higher remittances, attractive interest rates, and India's expanding role in global portfolios.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    Source: RBI, IMF
+  </div>
+
+</div><!-- .wrapper -->
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── Vertical bar chart animation ── */
+  var vchartEl = document.getElementById('vchart');
+  var vchartObserver = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var bars = entry.target.querySelectorAll('.vchart-bar[data-animate]');
+      bars.forEach(function (bar, i) {
+        setTimeout(function () {
+          bar.classList.add('animated');
+        }, i * 80);
+      });
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.2 });
+  if (vchartEl) vchartObserver.observe(vchartEl);
+
+  /* ── Comparison bar fills ── */
+  var compareEl = document.getElementById('compare-cards');
+  var compareObserver = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var fills = entry.target.querySelectorAll('.compare-bar-fill[data-w]');
+      fills.forEach(function (el) {
+        el.style.width = el.getAttribute('data-w') + '%';
+      });
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.2 });
+  if (compareEl) compareObserver.observe(compareEl);
+
+  /* ── Stacked deposit bar ── */
+  var depositBar = document.getElementById('deposit-bar');
+  var depositObserver = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var segs = entry.target.querySelectorAll('.stacked-seg[data-w]');
+      segs.forEach(function (el) {
+        el.style.width = el.getAttribute('data-w') + '%';
+      });
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.2 });
+  if (depositBar) depositObserver.observe(depositBar);
+
+})();
+</script>
+</body>
+</html>
