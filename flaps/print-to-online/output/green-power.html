@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How India Bridged Energy Gap With Green Power — Times of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 32px 0 24px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ed1c24;
+  border: 1px solid #ed1c24;
+  padding: 2px 8px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.byline {
+  font-size: 12px;
+  color: #595959;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 28px;
+}
+
+/* ── STAT STRIP ── */
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.stat-card {
+  background: #f6f6f6;
+  border-top: 3px solid #ed1c24;
+  padding: 16px;
+}
+
+.stat-card .stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.stat-card .stat-label {
+  font-size: 12px;
+  color: #595959;
+  line-height: 16px;
+}
+
+/* ── SECTION ── */
+.section {
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* ── GROWTH VIZ ── */
+.growth-viz {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.growth-box {
+  flex: 1;
+  background: #f6f6f6;
+  padding: 16px;
+  text-align: center;
+}
+
+.growth-box .g-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.growth-box .g-year {
+  font-size: 12px;
+  color: #595959;
+  margin-top: 2px;
+}
+
+.growth-arrow {
+  font-size: 28px;
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.growth-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #595959;
+  border: 1px solid #e0e0e0;
+  padding: 2px 8px;
+  margin-top: 8px;
+}
+
+/* ── BAR CHART ── */
+.bar-chart {
+  margin-bottom: 8px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 160px 1fr 60px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.bar-label {
+  font-size: 13px;
+  color: #1a1a1a;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar-label.highlight {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+.bar-track {
+  background: #e5e7eb;
+  height: 16px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #374151;
+  border-radius: 2px;
+  width: 0;
+  transition: width 1s ease;
+}
+
+.bar-fill.highlight {
+  background: #ed1c24;
+}
+
+.bar-value {
+  font-size: 12px;
+  color: #595959;
+  white-space: nowrap;
+}
+
+.bar-value.highlight {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+.source-line {
+  font-size: 11px;
+  color: #595959;
+  margin-top: 8px;
+}
+
+/* ── SVG CHARTS ── */
+.chart-wrap {
+  background: #f6f6f6;
+  padding: 16px 4px 8px;
+  margin-bottom: 8px;
+}
+
+/* ── TRANSMISSION SECTION ── */
+.transmission-box {
+  background: #f6f6f6;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+.transmission-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tx-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.tx-stat .tx-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.tx-stat .tx-year {
+  font-size: 12px;
+  color: #595959;
+  margin-top: 2px;
+}
+
+.tx-arrow {
+  font-size: 32px;
+  color: #1a1a1a;
+  flex-shrink: 0;
+}
+
+.tx-desc {
+  font-size: 13px;
+  color: #595959;
+  line-height: 20px;
+}
+
+/* ── STACKED BAR ── */
+.stacked-bar {
+  display: flex;
+  height: 40px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.stacked-segment {
+  height: 100%;
+}
+
+.stacked-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #1a1a1a;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── CALLOUT CARDS ── */
+.callout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.callout-card {
+  background: #f6f6f6;
+  padding: 16px;
+}
+
+.callout-card .callout-value {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.callout-card .callout-trend {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.callout-card .callout-sub {
+  font-size: 12px;
+  color: #595959;
+  line-height: 18px;
+}
+
+.green-text { color: #16a34a; }
+.muted-text { color: #595959; }
+
+/* ── FOOTER ── */
+.footer {
+  font-size: 11px;
+  color: #595959;
+  line-height: 18px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 480px) {
+  h1 { font-size: 24px; line-height: 30px; }
+
+  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+
+  .bar-row { grid-template-columns: 120px 1fr 50px; }
+  .bar-label { font-size: 12px; }
+
+  .callout-grid { grid-template-columns: 1fr; }
+
+  .growth-viz { flex-direction: column; }
+  .growth-box { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="badge">Times Special</div>
+    <h1>How India Bridged Energy Gap With Green Power</h1>
+    <p class="intro">India may have arrived late to universal electrification, but it has got here in the latest fashion, finds <strong>Atul Thakur</strong>. The country has doubled down on green energy in recent years as it hooks the last remaining habitations to the power grid</p>
+    <p class="byline">By Atul Thakur</p>
+    <hr class="divider">
+  </div>
+
+  <!-- STAT STRIP -->
+  <div class="stat-strip">
+    <div class="stat-card">
+      <div class="stat-value">1,618 TWh</div>
+      <div class="stat-label">Current annual electricity production</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">96%</div>
+      <div class="stat-label">Households with electricity (2022)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">1,331 kWh</div>
+      <div class="stat-label">Per capita annual consumption</div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <div class="section" data-observe>
+    <h2>Power Generation Up 2.5 Times In 20 Years</h2>
+    <p class="section-desc">India now produces over 1,600 terawatt hours of electricity. Between 2008–09 and 2022–23, generation grew at 5.7% annually</p>
+    <div class="growth-viz">
+      <div class="growth-box">
+        <div class="g-value">671 TWh</div>
+        <div class="g-year">2006–07</div>
+      </div>
+      <div class="growth-arrow">→</div>
+      <div class="growth-box">
+        <div class="g-value">1,618 TWh</div>
+        <div class="g-year">2022–23</div>
+      </div>
+    </div>
+    <div><span class="growth-badge">+5.7% per year</span></div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section" data-observe>
+    <h2>India Now Third Largest Power Producer</h2>
+    <p class="section-desc">Ranked by annual electricity generation, India trails only China and the United States</p>
+    <div class="bar-chart">
+      <div class="bar-row">
+        <div class="bar-label">China</div>
+        <div class="bar-track"><div class="bar-fill" data-w="100%"></div></div>
+        <div class="bar-value">10,073 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">US</div>
+        <div class="bar-track"><div class="bar-fill" data-w="43.6%"></div></div>
+        <div class="bar-value">4,387 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label highlight">India</div>
+        <div class="bar-track"><div class="bar-fill highlight" data-w="16.1%"></div></div>
+        <div class="bar-value highlight">1,618 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Russia</div>
+        <div class="bar-track"><div class="bar-fill" data-w="12.0%"></div></div>
+        <div class="bar-value">1,211 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Japan</div>
+        <div class="bar-track"><div class="bar-fill" data-w="10.1%"></div></div>
+        <div class="bar-value">1,022 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Brazil</div>
+        <div class="bar-track"><div class="bar-fill" data-w="7.4%"></div></div>
+        <div class="bar-value">745 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Canada</div>
+        <div class="bar-track"><div class="bar-fill" data-w="6.2%"></div></div>
+        <div class="bar-value">627 TWh</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">South Korea</div>
+        <div class="bar-track"><div class="bar-fill" data-w="6.2%"></div></div>
+        <div class="bar-value">622 TWh</div>
+      </div>
+    </div>
+    <div class="source-line">Source: Our World in Data, ember-energy.org</div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section" data-observe>
+    <h2>Households Covered</h2>
+    <p class="section-desc">In 2002, less than 50% of Indian households had electricity. By 2022, the country was within easy reach of 100% electrification</p>
+    <div class="chart-wrap">
+      <svg viewBox="0 0 560 150" width="100%" role="img" aria-label="Household electrification chart">
+        <!-- Area fill -->
+        <path id="area1" d="M40,99 L123,88 L207,74 L290,63 L373,51 L457,24 L540,15 L540,130 L40,130 Z" fill="#dcfce7" />
+        <!-- Line -->
+        <path id="line1" d="M40,99 L123,88 L207,74 L290,63 L373,51 L457,24 L540,15" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Dots -->
+        <circle cx="40"  cy="99" r="4" fill="#16a34a"/>
+        <circle cx="123" cy="88" r="4" fill="#16a34a"/>
+        <circle cx="207" cy="74" r="4" fill="#16a34a"/>
+        <circle cx="290" cy="63" r="4" fill="#16a34a"/>
+        <circle cx="373" cy="51" r="4" fill="#16a34a"/>
+        <circle cx="457" cy="24" r="4" fill="#16a34a"/>
+        <circle cx="540" cy="15" r="4" fill="#16a34a"/>
+        <!-- Year labels -->
+        <text x="40"  y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">1992</text>
+        <text x="123" y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">1997</text>
+        <text x="207" y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">2002</text>
+        <text x="290" y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">2007</text>
+        <text x="373" y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">2012</text>
+        <text x="457" y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">2017</text>
+        <text x="540" y="146" text-anchor="middle" font-size="11" fill="#595959" font-family="'Rethink Sans', sans-serif">2022</text>
+        <!-- Value labels -->
+        <text x="40"  y="93"  text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">26%</text>
+        <text x="123" y="82"  text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">35%</text>
+        <text x="207" y="68"  text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">47%</text>
+        <text x="290" y="57"  text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">56%</text>
+        <text x="373" y="45"  text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">66%</text>
+        <text x="457" y="18"  text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">88%</text>
+        <text x="540" y="9"   text-anchor="middle" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">96%</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section" data-observe>
+    <h2>Per Capita Use Has Risen 70-Fold</h2>
+    <p class="section-desc">In 1950, per capita annual electricity was 18 units. Today it is 1,331 units — a 70-fold rise</p>
+    <div class="chart-wrap">
+      <svg viewBox="0 0 560 150" width="100%" role="img" aria-label="Per capita electricity consumption chart">
+        <!-- Area fill -->
+        <path id="area2" d="M40,128 L115,126 L204,119 L280,110 L327,100 L396,82 L465,54 L533,22 L540,16 L540,130 L40,130 Z" fill="#fef9c3" />
+        <!-- Line -->
+        <path id="line2" d="M40,128 L115,126 L204,119 L280,110 L327,100 L396,82 L465,54 L533,22 L540,16" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Start label -->
+        <text x="40" y="20" text-anchor="start" font-size="12" fill="#595959" font-family="'Rethink Sans', sans-serif">18 kWh (1950)</text>
+        <!-- End label -->
+        <text x="350" y="12" text-anchor="start" font-size="13" font-weight="bold" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif">1,331 kWh (2023)</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section" data-observe>
+    <h2>3x Growth in Transmission Lines</h2>
+    <div class="transmission-box">
+      <div class="transmission-grid">
+        <div class="tx-stat">
+          <div class="tx-value">0.03 mn CKM</div>
+          <div class="tx-year">1950</div>
+        </div>
+        <div class="tx-arrow">→</div>
+        <div class="tx-stat">
+          <div class="tx-value">14.4 mn CKM</div>
+          <div class="tx-year">2023</div>
+        </div>
+      </div>
+      <div class="tx-desc">In 1950, length of transmission lines was 29,271 circuit km. Today it is 14.4 million — a 500-fold jump</div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section" data-observe>
+    <h2>Green Sources Now Over 40% Of Power Capacity</h2>
+    <p class="section-desc">Since 2011, rapid growth in renewable sources' share of installed capacity</p>
+    <div class="stacked-bar">
+      <div class="stacked-segment" style="width:57%;   background:#6b7280;" title="Thermal 57%"></div>
+      <div class="stacked-segment" style="width:30.1%; background:#16a34a;" title="Renewables 30.1%"></div>
+      <div class="stacked-segment" style="width:11.3%; background:#0ea5e9;" title="Hydro 11.3%"></div>
+      <div class="stacked-segment" style="width:1.6%;  background:#f59e0b;" title="Nuclear 1.6%"></div>
+    </div>
+    <div class="stacked-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#6b7280;"></div>Thermal 57%</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#16a34a;"></div>Renewables 30.1%</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#0ea5e9;"></div>Hydro 11.3%</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f59e0b;"></div>Nuclear 1.6%</div>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="section" data-observe>
+    <h2>Globally, Renewables Beat Coal For First Time</h2>
+    <div class="callout-grid">
+      <div class="callout-card">
+        <div class="callout-value green-text">Renewables: 34.3%</div>
+        <div class="callout-trend green-text">&#8593; Rising</div>
+        <div class="callout-sub">of global electricity in H1-2025 — first time ever ahead of coal</div>
+      </div>
+      <div class="callout-card">
+        <div class="callout-value muted-text">Coal: 33.1%</div>
+        <div class="callout-trend muted-text">&#8595; Declining</div>
+        <div class="callout-sub">dropped below renewables for the first time in electricity history</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Source: The Council on Energy, Environment and Water (CEEW), Central Electricity Authority, Our World in Data, ember-energy.org
+  </div>
+
+</div>
+
+<script>
+// Bar chart animation via IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Animate bars
+      entry.target.querySelectorAll('.bar-fill[data-w]').forEach(bar => {
+        bar.style.width = bar.dataset.w;
+      });
+      // Animate SVG lines
+      entry.target.querySelectorAll('path[id^="line"]').forEach(path => {
+        const len = path.getTotalLength();
+        path.style.strokeDasharray = len;
+        path.style.strokeDashoffset = len;
+        path.style.transition = 'stroke-dashoffset 1.5s ease';
+        // Force reflow
+        path.getBoundingClientRect();
+        path.style.strokeDashoffset = 0;
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('[data-observe]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

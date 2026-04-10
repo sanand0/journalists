@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oil To Travel: Pain Points For India Amid War In Gulf — Times of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  min-height: 100vh;
+}
+
+/* ── Breaking news bar ── */
+.breaking-bar {
+  background: #ed1c24;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px;
+  margin: 0 -16px;
+}
+
+/* ── Wrapper ── */
+.wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  border: 1.5px solid #ed1c24;
+  color: #ed1c24;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin: 18px 0 14px;
+}
+
+/* ── Hero ── */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.subhead {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 28px;
+  border-left: 3px solid #ed1c24;
+  padding-left: 12px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.byline {
+  font-size: 12px;
+  color: #595959;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 28px;
+}
+
+/* ── Section headings ── */
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 6px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+section {
+  margin-bottom: 36px;
+}
+
+/* ── News list ── */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+.news-list li {
+  padding: 10px 12px 10px 28px;
+  position: relative;
+  background: #f6f6f6;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  border-radius: 2px;
+}
+.news-list li::before {
+  content: '●';
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #ed1c24;
+  font-size: 8px;
+}
+.news-list li strong {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* ── Stat panels ── */
+.stat-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+@media (max-width: 480px) {
+  .stat-panels { grid-template-columns: 1fr; }
+}
+.stat-panel {
+  background: #f6f6f6;
+  padding: 16px;
+  border-radius: 2px;
+}
+.stat-panel-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #595959;
+  margin-bottom: 10px;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 3px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-row .stat-name { color: #1a1a1a; }
+.stat-row .stat-pct { font-weight: 600; color: #1a1a1a; }
+.stat-row .stat-pct.highlight { color: #ed1c24; font-weight: 700; }
+
+/* ── Stacked bar ── */
+.stacked-bar-wrap {
+  margin: 14px 0;
+}
+.stacked-bar {
+  display: flex;
+  height: 32px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.stacked-seg {
+  height: 100%;
+  transition: width 0.8s ease;
+}
+.bar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 8px;
+}
+.bar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #1a1a1a;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Table ── */
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 14px;
+  font-size: 13px;
+}
+.data-table th {
+  background: #1a1a1a;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 12px;
+  text-align: left;
+}
+.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.data-table tr.row-alt td { background: #f6f6f6; }
+.data-table tr.row-gulf td {
+  background: #fef2f2;
+  font-weight: 700;
+  border-left: 3px solid #ed1c24;
+}
+.data-table tr.row-total td {
+  font-weight: 700;
+  background: #ffffff;
+  border-top: 2px solid #1a1a1a;
+}
+
+/* ── Horizontal bar chart ── */
+.bar-chart {
+  margin-top: 14px;
+}
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  gap: 8px;
+}
+.bar-label {
+  font-size: 12px;
+  color: #1a1a1a;
+  width: 110px;
+  flex-shrink: 0;
+  line-height: 16px;
+}
+.bar-track {
+  flex: 1;
+  background: #f0f0f0;
+  height: 18px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+  transition: width 0.9s ease;
+}
+.bar-fill.gulf { background: #ed1c24; }
+.bar-fill.other { background: #9ca3af; }
+.bar-val {
+  font-size: 12px;
+  color: #595959;
+  width: 36px;
+  flex-shrink: 0;
+  text-align: right;
+}
+.bar-note {
+  font-size: 11px;
+  color: #595959;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ── LNG callout ── */
+.lng-box {
+  background: #f6f6f6;
+  padding: 12px 16px;
+  border-radius: 2px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #1a1a1a;
+  line-height: 20px;
+}
+.lng-box strong { font-weight: 700; color: #1a1a1a; }
+
+/* ── Stat cards ── */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 14px 0;
+}
+@media (max-width: 480px) {
+  .stat-cards { grid-template-columns: 1fr; }
+}
+.stat-card {
+  background: #f6f6f6;
+  padding: 16px;
+  border-top: 3px solid #ed1c24;
+  border-radius: 0 0 2px 2px;
+}
+.stat-card-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #595959;
+  margin-bottom: 6px;
+}
+.stat-card-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+.stat-card-change {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ed1c24;
+}
+
+/* ── SVG chart wrapper ── */
+.chart-wrap {
+  background: #f6f6f6;
+  padding: 16px 8px 8px;
+  border-radius: 2px;
+  margin: 14px 0;
+  overflow-x: auto;
+}
+.chart-caption {
+  font-size: 12px;
+  color: #595959;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ── Footer ── */
+.footer {
+  font-size: 12px;
+  color: #595959;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 16px;
+  margin-top: 8px;
+  line-height: 18px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- Breaking bar -->
+  <div class="breaking-bar">BREAKING COVERAGE · TIMES SPECIAL</div>
+
+  <!-- Hero -->
+  <div class="badge">TIMES SPECIAL</div>
+  <h1>Oil To Travel: Pain Points For India Amid War In Gulf</h1>
+  <p class="subhead">As the region contends with the fallout of the Iran conflict, India is bracing for impact. At stake: energy security, market stability, and the safety of the large Indian diaspora</p>
+  <p class="byline">By Saurabh Sinha</p>
+
+  <!-- Section 1: Airfares -->
+  <section>
+    <div class="section-label">What's happening on the ground</div>
+    <h2>Airfares Zoom, Indians Stranded</h2>
+    <ul class="news-list">
+      <li><strong>Dubai and Doha</strong> are the two biggest choke-points for India-linked international travel. Emirates temporarily suspended operations; Qatar Airways suspended flights after Qatar closed its airspace.</li>
+      <li><strong>Abu Dhabi</strong> has restarted limited operations after days of disruption, with flights running under tight oversight.</li>
+      <li>Dubai/Doha/Abu Dhabi are major transit gateways to <strong>Europe and the US</strong> — closures cascade into missed connections, stranded transits, and rebookings.</li>
+      <li>Indians are being pushed into <strong>"land-bridge" travel</strong> — seeking Saudi visas to drive to Jeddah, or Oman visas to drive to Muscat just to access flights home.</li>
+      <li><strong>Airfares spiking</strong> — one-way fares to Ireland quoted up to Rs 4 lakh.</li>
+      <li>About <strong>7,000 Indians stranded</strong> in Dubai since Feb 28 were flown home in the last three days, with more flights planned.</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Who Flies India? -->
+  <section>
+    <h2>A Quarter Of All Outbound Passengers Head To Gulf</h2>
+    <p class="section-desc">A quarter of all passengers headed out of India are bound for the UAE, with a further 20% going to Saudi Arabia, Qatar, Kuwait, Oman, and Bahrain</p>
+
+    <div class="stat-panels">
+      <div class="stat-panel">
+        <div class="stat-panel-title">Inbound to India<br><span style="font-weight:400;letter-spacing:0;text-transform:none;font-size:11px;">% of foreign nationals flying in</span></div>
+        <div class="stat-row"><span class="stat-name">Asia-Pacific</span><span class="stat-pct">43.0%</span></div>
+        <div class="stat-row"><span class="stat-name">Europe</span><span class="stat-pct">26.7%</span></div>
+        <div class="stat-row"><span class="stat-name">N. America</span><span class="stat-pct">23.1%</span></div>
+        <div class="stat-row"><span class="stat-name">Africa</span><span class="stat-pct">3.4%</span></div>
+        <div class="stat-row"><span class="stat-name">West Asia</span><span class="stat-pct">3.0%</span></div>
+        <div class="stat-row"><span class="stat-name">S. America</span><span class="stat-pct">0.6%</span></div>
+      </div>
+      <div class="stat-panel">
+        <div class="stat-panel-title">Outbound from India<br><span style="font-weight:400;letter-spacing:0;text-transform:none;font-size:11px;">% of Indians flying out</span></div>
+        <div class="stat-row"><span class="stat-name">West Asia</span><span class="stat-pct highlight">47.5%</span></div>
+        <div class="stat-row"><span class="stat-name">Asia-Pacific</span><span class="stat-pct">27.2%</span></div>
+        <div class="stat-row"><span class="stat-name">Europe</span><span class="stat-pct">12.6%</span></div>
+        <div class="stat-row"><span class="stat-name">N. America</span><span class="stat-pct">10.0%</span></div>
+        <div class="stat-row"><span class="stat-name">Africa</span><span class="stat-pct">2.0%</span></div>
+        <div class="stat-row"><span class="stat-name">S. America</span><span class="stat-pct">0.1%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Gulf Rules Remittances -->
+  <section>
+    <h2>Gulf Rules Remittances</h2>
+    <p class="section-desc">Just six Gulf countries account for close to 40% of total remittances coming to India — much bigger than any other region</p>
+
+    <div class="stacked-bar-wrap">
+      <div class="stacked-bar" id="remit-bar">
+        <div class="stacked-seg" data-w="37.9" style="background:#1d4ed8; width:0%"></div>
+        <div class="stacked-seg" data-w="27.7" style="background:#374151; width:0%"></div>
+        <div class="stacked-seg" data-w="10.8" style="background:#6b7280; width:0%"></div>
+        <div class="stacked-seg" data-w="23.6" style="background:#d1d5db; width:0%"></div>
+      </div>
+      <div class="bar-legend">
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#1d4ed8"></span>Gulf 37.9%</div>
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#374151"></span>US 27.7%</div>
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#6b7280"></span>UK 10.8%</div>
+        <div class="bar-legend-item"><span class="legend-dot" style="background:#d1d5db; border:1px solid #ccc"></span>Others 23.6%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Home To A Fourth Of NRIs -->
+  <section>
+    <h2>Home To A Fourth Of NRIs</h2>
+    <p class="section-desc">Gulf countries together host close to 90 lakh Indians — the biggest expat group. Total overseas Indians: 35.4 million</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Country / Region</th>
+          <th>Overseas Indians</th>
+          <th>% Share</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-gulf">
+          <td>Gulf Total</td>
+          <td>8.9 million</td>
+          <td>25.1%</td>
+        </tr>
+        <tr>
+          <td>US</td>
+          <td>5.4 million</td>
+          <td>15.3%</td>
+        </tr>
+        <tr class="row-alt">
+          <td>Malaysia</td>
+          <td>2.9 million</td>
+          <td>8.2%</td>
+        </tr>
+        <tr>
+          <td>Canada</td>
+          <td>2.9 million</td>
+          <td>8.1%</td>
+        </tr>
+        <tr class="row-alt">
+          <td>Myanmar</td>
+          <td>2.0 million</td>
+          <td>5.7%</td>
+        </tr>
+        <tr class="row-total">
+          <td>Total</td>
+          <td>35.4 million</td>
+          <td>100%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 5: Oil & Gas -->
+  <section>
+    <h2>Source Of 50% Of Oil, 80% Of Gas</h2>
+    <p class="section-desc">The energy-rich region has an outsized role in India's oil and gas imports. With oil flows clogged due to blockade in Strait of Hormuz, everything from domestic prices to LPG supplies is in balance</p>
+
+    <div class="bar-chart" id="oil-chart">
+      <!-- Russia -->
+      <div class="bar-row">
+        <div class="bar-label">Russia</div>
+        <div class="bar-track"><div class="bar-fill other" data-w="100" style="width:0%"></div></div>
+        <div class="bar-val">30.4%</div>
+      </div>
+      <!-- Iraq -->
+      <div class="bar-row">
+        <div class="bar-label">Iraq</div>
+        <div class="bar-track"><div class="bar-fill other" data-w="58.6" style="width:0%"></div></div>
+        <div class="bar-val">17.8%</div>
+      </div>
+      <!-- Saudi Arabia -->
+      <div class="bar-row">
+        <div class="bar-label">Saudi Arabia</div>
+        <div class="bar-track"><div class="bar-fill gulf" data-w="46.7" style="width:0%"></div></div>
+        <div class="bar-val">14.2%</div>
+      </div>
+      <!-- UAE -->
+      <div class="bar-row">
+        <div class="bar-label">UAE</div>
+        <div class="bar-track"><div class="bar-fill gulf" data-w="37.5" style="width:0%"></div></div>
+        <div class="bar-val">11.4%</div>
+      </div>
+      <!-- US -->
+      <div class="bar-row">
+        <div class="bar-label">US</div>
+        <div class="bar-track"><div class="bar-fill other" data-w="25.3" style="width:0%"></div></div>
+        <div class="bar-val">7.7%</div>
+      </div>
+      <!-- Kuwait -->
+      <div class="bar-row">
+        <div class="bar-label">Kuwait</div>
+        <div class="bar-track"><div class="bar-fill gulf" data-w="11.2" style="width:0%"></div></div>
+        <div class="bar-val">3.4%</div>
+      </div>
+      <!-- Nigeria -->
+      <div class="bar-row">
+        <div class="bar-label">Nigeria</div>
+        <div class="bar-track"><div class="bar-fill other" data-w="10.5" style="width:0%"></div></div>
+        <div class="bar-val">3.2%</div>
+      </div>
+      <!-- Angola -->
+      <div class="bar-row">
+        <div class="bar-label">Angola</div>
+        <div class="bar-track"><div class="bar-fill other" data-w="8.2" style="width:0%"></div></div>
+        <div class="bar-val">2.5%</div>
+      </div>
+      <!-- Brazil -->
+      <div class="bar-row">
+        <div class="bar-label">Brazil</div>
+        <div class="bar-track"><div class="bar-fill other" data-w="4.6" style="width:0%"></div></div>
+        <div class="bar-val">1.4%</div>
+      </div>
+      <!-- Qatar -->
+      <div class="bar-row">
+        <div class="bar-label">Qatar</div>
+        <div class="bar-track"><div class="bar-fill gulf" data-w="4.3" style="width:0%"></div></div>
+        <div class="bar-val">1.3%</div>
+      </div>
+    </div>
+    <p class="bar-note">*Imports from Russia have fallen but are expected to rise again</p>
+    <div style="display:flex;gap:12px;margin-top:10px;font-size:12px;">
+      <span style="display:flex;align-items:center;gap:5px;"><span style="width:12px;height:12px;background:#ed1c24;border-radius:2px;display:inline-block"></span>Gulf countries</span>
+      <span style="display:flex;align-items:center;gap:5px;"><span style="width:12px;height:12px;background:#9ca3af;border-radius:2px;display:inline-block"></span>Other countries</span>
+    </div>
+
+    <div class="lng-box">
+      LNG Imports: <strong>UAE 81.3%</strong> · US 13.8% · Egypt 4.8%
+    </div>
+  </section>
+
+  <!-- Section 6: Markets -->
+  <section>
+    <h2>₹14 Lakh Cr Wiped Off Markets</h2>
+    <p class="section-desc">The Nifty50 has lost over 700 points since the start of the war. The Rupee slid to an all-time low on March 4.</p>
+
+    <div class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-card-label">Nifty 50</div>
+        <div class="stat-card-value">25,179 → 24,450</div>
+        <div class="stat-card-change">-729 pts (-2.9%)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-label">Sensex</div>
+        <div class="stat-card-value">81,287 → 78,999</div>
+        <div class="stat-card-change">-2,288 pts (-2.8%)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-label">Mkt Cap</div>
+        <div class="stat-card-value">₹497.3L cr → ₹483.5L cr</div>
+        <div class="stat-card-change">-₹13.8L cr</div>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <svg viewBox="0 0 560 120" width="100%" xmlns="http://www.w3.org/2000/svg" aria-label="Nifty 50 chart Feb 27 to Mar 6">
+        <!-- Area fill -->
+        <path d="M40,28 L180,52 L320,68 L460,81 L540,89 L540,110 L40,110 Z" fill="#fef2f2"/>
+        <!-- Line -->
+        <polyline points="40,28 180,52 320,68 460,81 540,89" fill="none" stroke="#ed1c24" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+        <!-- Data points -->
+        <circle cx="40" cy="28" r="3.5" fill="#ed1c24"/>
+        <circle cx="180" cy="52" r="3.5" fill="#ed1c24"/>
+        <circle cx="320" cy="68" r="3.5" fill="#ed1c24"/>
+        <circle cx="460" cy="81" r="3.5" fill="#ed1c24"/>
+        <circle cx="540" cy="89" r="3.5" fill="#ed1c24"/>
+        <!-- Value labels -->
+        <text x="40" y="22" font-size="11" fill="#1a1a1a" font-family="'Rethink Sans', sans-serif" font-weight="600" text-anchor="start">25,179</text>
+        <text x="540" y="104" font-size="11" fill="#ed1c24" font-family="'Rethink Sans', sans-serif" font-weight="600" text-anchor="end">24,450</text>
+        <!-- Date labels -->
+        <text x="40" y="118" font-size="10" fill="#595959" font-family="'Rethink Sans', sans-serif" text-anchor="middle">Feb 27</text>
+        <text x="180" y="118" font-size="10" fill="#595959" font-family="'Rethink Sans', sans-serif" text-anchor="middle">Mar 2</text>
+        <text x="320" y="118" font-size="10" fill="#595959" font-family="'Rethink Sans', sans-serif" text-anchor="middle">Mar 4</text>
+        <text x="460" y="118" font-size="10" fill="#595959" font-family="'Rethink Sans', sans-serif" text-anchor="middle">Mar 5</text>
+        <text x="540" y="118" font-size="10" fill="#595959" font-family="'Rethink Sans', sans-serif" text-anchor="middle">Mar 6</text>
+      </svg>
+      <p class="chart-caption">Nifty 50 — Feb 27 to Mar 6, 2025</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    Research: Richa Gandhi; Graphic: Akib Javed; Source: MEA, ministry of commerce, RBI, NSE, BSE
+  </div>
+
+</div><!-- .wrapper -->
+
+<script>
+// Animate bars when they scroll into view
+(function () {
+  function animateBars(entries, observer) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var container = entry.target;
+
+      // Horizontal bar fills
+      var fills = container.querySelectorAll('.bar-fill[data-w]');
+      fills.forEach(function (el) {
+        el.style.width = el.getAttribute('data-w') + '%';
+      });
+
+      // Stacked bar segments
+      var segs = container.querySelectorAll('.stacked-seg[data-w]');
+      segs.forEach(function (el) {
+        el.style.width = el.getAttribute('data-w') + '%';
+      });
+
+      observer.unobserve(container);
+    });
+  }
+
+  var io = new IntersectionObserver(animateBars, { threshold: 0.2 });
+
+  // Observe sections containing animated bars
+  ['oil-chart', 'remit-bar'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>

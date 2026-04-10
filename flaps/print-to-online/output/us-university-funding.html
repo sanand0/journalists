@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Which US univs will Trump's funding cuts hurt the most? — Times of India Data</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ed1c24;
+  border: 1.5px solid #ed1c24;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 28px 0 0;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.byline {
+  font-size: 13px;
+  font-weight: 600;
+  color: #595959;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+/* ── Big callout ── */
+.callout {
+  background: #f6f6f6;
+  border-left: 4px solid #ed1c24;
+  padding: 24px 20px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.callout-number {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.callout-subtitle {
+  font-size: 14px;
+  color: #595959;
+  line-height: 20px;
+}
+
+/* ── Section headers ── */
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.section {
+  margin-bottom: 36px;
+}
+
+/* ── Chart label ── */
+.chart-label {
+  font-size: 12px;
+  color: #595959;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* ── Bar chart ── */
+@keyframes barGrow {
+  from { width: 0; }
+  to   { width: var(--w); }
+}
+
+.chart {
+  background: #f6f6f6;
+  padding: 12px 14px;
+  border-radius: 2px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.bar-row:last-child {
+  margin-bottom: 0;
+}
+
+.bar-label {
+  font-size: 12px;
+  color: #595959;
+  flex: 0 0 180px;
+  text-align: right;
+  line-height: 16px;
+}
+
+.bar-label.highlight {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+.bar-track {
+  flex: 1;
+  background: #e5e7eb;
+  height: 18px;
+  border-radius: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #374151;
+  width: 0;
+  animation: barGrow 0.8s ease forwards;
+  animation-delay: calc(var(--i, 0) * 0.12s);
+  border-radius: 1px;
+}
+
+.bar-fill.highlight {
+  background: #ed1c24;
+}
+
+.bar-fill.green {
+  background: #16a34a;
+}
+
+.bar-value {
+  font-size: 12px;
+  color: #595959;
+  flex: 0 0 52px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.bar-value.highlight {
+  color: #ed1c24;
+  font-weight: 700;
+}
+
+/* ── Dependency two-column grid ── */
+.dep-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.dep-col {
+  background: #f6f6f6;
+  padding: 12px;
+  border-radius: 2px;
+}
+
+.dep-col-header {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+.dep-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+}
+
+.dep-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.dep-name {
+  font-size: 12px;
+  color: #1a1a1a;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.dep-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dep-track {
+  flex: 1;
+  background: #e5e7eb;
+  height: 14px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.dep-fill {
+  height: 100%;
+  border-radius: 1px;
+  width: 0;
+  animation: barGrow 0.8s ease forwards;
+  animation-delay: calc(var(--i, 0) * 0.12s);
+}
+
+.dep-fill.dark {
+  background: #374151;
+}
+
+.dep-fill.green {
+  background: #16a34a;
+}
+
+.dep-pct {
+  font-size: 12px;
+  color: #595959;
+  font-weight: 500;
+  flex: 0 0 36px;
+  text-align: right;
+}
+
+.dep-note {
+  font-size: 12px;
+  color: #595959;
+  font-style: italic;
+  margin-top: 10px;
+  line-height: 17px;
+}
+
+/* ── Footer ── */
+.footer {
+  font-size: 12px;
+  color: #595959;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+  margin-top: 12px;
+  line-height: 18px;
+}
+
+/* ── Chart note ── */
+.chart-note {
+  font-size: 12px;
+  color: #595959;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ── Responsive ── */
+@media (max-width: 500px) {
+  h1 { font-size: 22px; line-height: 30px; }
+  h2 { font-size: 17px; line-height: 24px; }
+  .callout-number { font-size: 36px; }
+
+  .bar-label {
+    flex: 0 0 120px;
+    font-size: 11px;
+  }
+
+  .bar-value {
+    flex: 0 0 44px;
+    font-size: 11px;
+  }
+
+  .dep-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">Times Data</div>
+    <h1>Which US univs will Trump's funding cuts hurt the most?</h1>
+    <p class="intro">Hundreds of millions of dollars are at stake for some of the most prestigious US universities in their face-off against President Donald Trump. Some have cut deals, a few are reportedly holding out. From Harvard to Johns Hopkins, the stakes are high even when the exposure is low, finds <strong>Richa Gandhi</strong></p>
+    <div class="byline">By Richa Gandhi</div>
+  </div>
+
+  <!-- Big callout -->
+  <div class="callout">
+    <div class="callout-number">$3.7 Billion</div>
+    <div class="callout-subtitle">Total federal funding US universities are set to lose under cuts proposed by Trump's govt</div>
+  </div>
+
+  <!-- Section 1: Top Targets -->
+  <div class="section">
+    <h2>Top Targets — The 10 Facing The Largest Cuts</h2>
+    <p class="section-desc">The 10 universities that face the biggest cuts together represent about a third of the total funds lined up for cancellation</p>
+    <div class="chart-label">Proposed Funding Cut — Grants targeted for cancellation ($ million)</div>
+    <div class="chart">
+
+      <div class="bar-row">
+        <div class="bar-label highlight">Johns Hopkins University</div>
+        <div class="bar-track">
+          <div class="bar-fill highlight" style="--w: 100%; --i: 0"></div>
+        </div>
+        <div class="bar-value highlight">$245mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Harvard University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 51.8%; --i: 1"></div>
+        </div>
+        <div class="bar-value">$127mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Arizona State University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 51.0%; --i: 2"></div>
+        </div>
+        <div class="bar-value">$125mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Texas A &amp; M University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 40.8%; --i: 3"></div>
+        </div>
+        <div class="bar-value">$100mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Columbia University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 40.8%; --i: 4"></div>
+        </div>
+        <div class="bar-value">$100mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">University of North Carolina</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 38.0%; --i: 5"></div>
+        </div>
+        <div class="bar-value">$93mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Tufts College</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 36.3%; --i: 6"></div>
+        </div>
+        <div class="bar-value">$89mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">University of California Berkeley</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 35.5%; --i: 7"></div>
+        </div>
+        <div class="bar-value">$87mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">South Dakota State University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 35.1%; --i: 8"></div>
+        </div>
+        <div class="bar-value">$86mn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Clemson University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 33.1%; --i: 9"></div>
+        </div>
+        <div class="bar-value">$81mn</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Section 2: Federal Funding -->
+  <div class="section">
+    <h2>For Some, Federal Funding Runs Into Billions</h2>
+    <p class="section-desc">In 2023, the top 10 recipients of federal funding accounted for 20% of the money given by the US govt</p>
+    <div class="chart-label">Funding in USD billion, 2023</div>
+    <div class="chart">
+
+      <div class="bar-row">
+        <div class="bar-label highlight">Johns Hopkins University</div>
+        <div class="bar-track">
+          <div class="bar-fill highlight" style="--w: 100%; --i: 0"></div>
+        </div>
+        <div class="bar-value highlight">$3.3Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">U. Washington, Seattle</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 36.4%; --i: 1"></div>
+        </div>
+        <div class="bar-value">$1.2Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Georgia Institute of Technology</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 33.3%; --i: 2"></div>
+        </div>
+        <div class="bar-value">$1.1Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">U. California, San Diego</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 33.3%; --i: 3"></div>
+        </div>
+        <div class="bar-value">$1.1Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">U. Michigan, Ann Arbor</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 30.3%; --i: 4"></div>
+        </div>
+        <div class="bar-value">$1.0Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Columbia University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 30.3%; --i: 5"></div>
+        </div>
+        <div class="bar-value">$1.0Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Duke University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 30.3%; --i: 6"></div>
+        </div>
+        <div class="bar-value">$1.0Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Stanford University</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 27.3%; --i: 7"></div>
+        </div>
+        <div class="bar-value">$0.9Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">University of Pennsylvania</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 27.3%; --i: 8"></div>
+        </div>
+        <div class="bar-value">$0.9Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">University of Pittsburgh</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 27.3%; --i: 9"></div>
+        </div>
+        <div class="bar-value">$0.9Bn</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Section 3: Federal Dependency -->
+  <div class="section">
+    <h2>Federal Dependency — A Tale Of Two Trends</h2>
+    <p class="section-desc">Columbia, Johns Hopkins Among Those Hooked To Federal Money — But Some Like Harvard Have Reduced Their Dependency</p>
+
+    <div class="dep-grid">
+
+      <!-- Left: More dependent -->
+      <div class="dep-col">
+        <div class="dep-col-header">More dependent on federal funds</div>
+
+        <div class="dep-row">
+          <div class="dep-name">Johns Hopkins</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill dark" style="--w: 87%; --i: 0"></div>
+            </div>
+            <div class="dep-pct">87%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">Columbia</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill dark" style="--w: 74%; --i: 1"></div>
+            </div>
+            <div class="dep-pct">74%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">Duke</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill dark" style="--w: 65%; --i: 2"></div>
+            </div>
+            <div class="dep-pct">65%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">Michigan State</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill dark" style="--w: 52%; --i: 3"></div>
+            </div>
+            <div class="dep-pct">52%</div>
+          </div>
+        </div>
+
+        <p class="dep-note">These universities' federal funding share has grown since 2010</p>
+      </div>
+
+      <!-- Right: Reducing dependency -->
+      <div class="dep-col">
+        <div class="dep-col-header">Reducing dependency</div>
+
+        <div class="dep-row">
+          <div class="dep-name">Boston University</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill green" style="--w: 56%; --i: 0"></div>
+            </div>
+            <div class="dep-pct">56%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">Harvard University</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill green" style="--w: 54%; --i: 1"></div>
+            </div>
+            <div class="dep-pct">54%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">U. Pennsylvania</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill green" style="--w: 53%; --i: 2"></div>
+            </div>
+            <div class="dep-pct">53%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">Yale University</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill green" style="--w: 48%; --i: 3"></div>
+            </div>
+            <div class="dep-pct">48%</div>
+          </div>
+        </div>
+
+        <div class="dep-row">
+          <div class="dep-name">New York University</div>
+          <div class="dep-bar-wrap">
+            <div class="dep-track">
+              <div class="dep-fill green" style="--w: 45%; --i: 4"></div>
+            </div>
+            <div class="dep-pct">45%</div>
+          </div>
+        </div>
+
+        <p class="dep-note">These universities have shifted to private donors and endowments</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Section 4: Federal Money In STEM -->
+  <div class="section">
+    <h2>Federal Money Now Mainly In STEM</h2>
+    <p class="section-desc">By 2023, most federal research spending concentrated in life sciences, engineering, and physical science research</p>
+    <div class="chart-label">Federal research funding by field (USD billion, 2023)</div>
+    <div class="chart">
+
+      <div class="bar-row">
+        <div class="bar-label highlight">Life sciences</div>
+        <div class="bar-track">
+          <div class="bar-fill highlight" style="--w: 100%; --i: 0"></div>
+        </div>
+        <div class="bar-value highlight">$33.9Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Engineering</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 32.2%; --i: 1"></div>
+        </div>
+        <div class="bar-value">$10.9Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Physical sciences</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 13.6%; --i: 2"></div>
+        </div>
+        <div class="bar-value">$4.6Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Geosciences*</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 8.0%; --i: 3"></div>
+        </div>
+        <div class="bar-value">$2.7Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Computer &amp; information sciences</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 7.1%; --i: 4"></div>
+        </div>
+        <div class="bar-value">$2.4Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Social sciences</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 3.5%; --i: 5"></div>
+        </div>
+        <div class="bar-value">$1.2Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Psychology</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 3.0%; --i: 6"></div>
+        </div>
+        <div class="bar-value">$1.0Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">Mathematics and statistics</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 2.1%; --i: 7"></div>
+        </div>
+        <div class="bar-value">$0.7Bn</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-label">All non-S&amp;E fields</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="--w: 5.0%; --i: 8"></div>
+        </div>
+        <div class="bar-value">$1.7Bn</div>
+      </div>
+
+    </div>
+    <p class="chart-note">*Atmospheric sciences, and ocean sciences</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Source: National Center for Science and Engineering Statistics, US Department of Health and Human Services; Graphic: Anil Panwar
+  </div>
+
+</div>
+</body>
+</html>
