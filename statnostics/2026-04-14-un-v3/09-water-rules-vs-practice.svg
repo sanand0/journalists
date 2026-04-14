@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:26px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.funnel-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; font-weight:bold; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Written water rules are common.</text>
+<text x="240" y="96" text-anchor="middle" class="hl" textLength="430" lengthAdjust="spacingAndGlyphs">Real community participation is not.</text>
+
+<!-- Deck -->
+<text x="240" y="116" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">87.5% of areas have clearly defined participation procedures in law.</text>
+<text x="240" y="132" text-anchor="middle" class="deck">Only 26.9% achieve high participation in practice.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="146" x2="450" y2="146"/>
+
+<!-- Funnel stage 1: 104 areas — full width rect, x=50, y=155, width=380, height=60 -->
+<rect x="50" y="155" width="380" height="60" fill="#e5e7eb"/>
+<text x="240" y="186" text-anchor="middle" class="funnel-lbl" style="fill:#231f20;">104 areas with data</text>
+<text x="240" y="201" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">all reporting areas (2025)</text>
+
+<!-- Gap 215–225 (white space) -->
+
+<!-- Funnel stage 2: 91 (87.5%) — trapezoid narrowing from 380 to 332 -->
+<!-- top: (50,225)–(430,225); bottom: (74,285)–(406,285) -->
+<polygon points="50,225 430,225 406,285 74,285" fill="#bfdbfe"/>
+<text x="240" y="256" text-anchor="middle" class="funnel-lbl" style="fill:#1d3461;">91 (87.5%) have clearly defined rules</text>
+<text x="240" y="271" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#1d3461;">participation procedures specified in law</text>
+
+<!-- Gap 285–295 (white space) -->
+
+<!-- Funnel stage 3: 28 (26.9%) — trapezoid narrowing from 332 to 102 -->
+<!-- top: (74,295)–(406,295); bottom: (189,355)–(291,355) -->
+<polygon points="74,295 406,295 291,355 189,355" fill="#1d3461"/>
+<text x="240" y="324" text-anchor="middle" class="funnel-lbl" style="fill:#ffffff;">28 (26.9%) have HIGH participation</text>
+<text x="240" y="340" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#93c5fd;">in practice, not just on paper</text>
+
+<!-- Separator at y=367 -->
+<line class="sep" x1="30" y1="367" x2="450" y2="367"/>
+
+<!-- Surprise callout -->
+<text x="240" y="381" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#1a5e6e;">Surprise: Nepal has no clearly defined rules &#x2014; yet scores HIGH on participation.</text>
+
+<!-- Regional peers -->
+<text x="240" y="395" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;fill:#6b7280;">Bangladesh: clear rules, LOW &#xB7; Indonesia: clear rules, HIGH</text>
+<text x="240" y="408" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;fill:#6b7280;">Pakistan: clear rules, LOW &#xB7; Viet Nam: clear rules, HIGH</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="412" x2="450" y2="412"/>
+
+<!-- Note -->
+<text x="240" y="424" text-anchor="middle" class="note">Participation score: 1=low, 2=moderate, 3=high. Procedure score: 10=clearly defined, 5=not.</text>
+
+<!-- Source -->
+<text x="240" y="437" text-anchor="middle" class="source">UN SDG Indicators ER_WAT_PRDU &amp; ER_WAT_PART, 2025 &#xB7; data.un.org</text>
+</svg>

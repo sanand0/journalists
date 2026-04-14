@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How AI Builds a Data Newsroom · Statoistics</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%23c1121f' width='64' height='64' rx='6'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='36' font-family='Georgia,serif' fill='white'%3ES%3C/text%3E%3C/svg%3E"/>
+<style>
+  :root {
+    --crimson: #c1121f;       /* on white/light backgrounds */
+    --crimson-hi: #f87171;    /* on dark backgrounds, for contrast */
+    --navy: #1d3461;
+    --teal: #1a5e6e;
+    --amber: #92400e;
+    --dark: #111827;
+    --mid: #374151;
+    --muted: #6b7280;
+    --light: #f9fafb;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--serif); background: #fff; color: var(--dark); line-height: 1.7; font-size: 18px; }
+
+  /* ── HERO ─────────────────────────────────────────── */
+  .hero {
+    background: var(--dark);
+    color: #fff;
+    padding: 6rem 2rem 5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(193,18,31,.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: .75rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--crimson-hi);
+  }
+  .hero h1 {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.15;
+    font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+  }
+  .hero h1 em { font-style: normal; color: #f87171; }
+  .hero-sub {
+    font-family: var(--sans);
+    font-size: 1.1rem;
+    color: #9ca3af;
+    max-width: 620px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+  .stat-trio {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+  .stat-trio .stat { text-align: center; }
+  .stat-trio .num {
+    font-family: var(--sans);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    display: block;
+    line-height: 1;
+  }
+  .stat-trio .num span { color: var(--crimson-hi); }
+  .stat-trio .label {
+    font-family: var(--sans);
+    font-size: .8rem;
+    color: #9ca3af;
+    margin-top: .4rem;
+    display: block;
+    letter-spacing: .05em;
+  }
+
+  /* ── PIPELINE ANIMATION ───────────────────────────── */
+  #pipeline-svg { width: 100%; max-width: 860px; margin: 0 auto; display: block; }
+  .pipe-node { cursor: pointer; }
+  .pipe-node rect { transition: fill .2s; }
+  .pipe-node:hover rect { filter: brightness(1.2); }
+  .pipe-dot { animation: flowDot 2.4s linear infinite; }
+  .pipe-dot:nth-child(2) { animation-delay: .8s; }
+  .pipe-dot:nth-child(3) { animation-delay: 1.6s; }
+  @keyframes flowDot {
+    0% { opacity: 0; offset-distance: 0%; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { opacity: 0; offset-distance: 100%; }
+  }
+  .flow-path { fill: none; stroke: rgba(255,255,255,.12); stroke-width: 1.5; }
+  .flow-path.active { stroke: rgba(193,18,31,.5); stroke-width: 2; }
+
+  /* ── NAV ──────────────────────────────────────────── */
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e5e7eb;
+    padding: .75rem 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-family: var(--sans);
+    font-size: .85rem;
+  }
+  .nav-bar a { color: var(--muted); text-decoration: none; transition: color .15s; }
+  .nav-bar a:hover { color: var(--crimson); }
+  .nav-bar .home { font-weight: 600; color: var(--crimson); }
+
+  /* ── SECTIONS ─────────────────────────────────────── */
+  .section { max-width: 860px; margin: 0 auto; padding: 5rem 2rem; }
+  .section.wide { max-width: 1140px; }
+  .section-label {
+    font-family: var(--sans);
+    font-size: .7rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: #e5e7eb; }
+  h2 { font-size: 1.9rem; line-height: 1.25; margin-bottom: 1.25rem; color: var(--dark); }
+  h3 { font-size: 1.25rem; margin: 2rem 0 .75rem; color: var(--navy); }
+  p { margin-bottom: 1.1rem; }
+  p + p { margin-top: -.2rem; }
+  .lede { font-size: 1.2rem; line-height: 1.65; color: var(--mid); }
+  strong { color: var(--dark); }
+
+  /* pull-quote */
+  .pullquote {
+    border-left: 4px solid var(--crimson);
+    padding: 1rem 1.5rem;
+    margin: 2.5rem 0;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--mid);
+    background: #fafafa;
+  }
+
+  /* ── TIMELINE ──────────────────────────────────────── */
+  .timeline { margin: 3rem 0; position: relative; }
+  .timeline::before {
+    content: ''; position: absolute; left: 22px; top: 0; bottom: 0;
+    width: 2px; background: #e5e7eb;
+  }
+  .tl-item {
+    display: flex; gap: 1.25rem; margin-bottom: 2rem; position: relative;
+    opacity: 0; transform: translateY(20px); transition: opacity .5s, transform .5s;
+  }
+  .tl-item.visible { opacity: 1; transform: none; }
+  .tl-dot {
+    flex-shrink: 0; width: 46px; height: 46px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--sans); font-size: .7rem; font-weight: 700;
+    z-index: 1; position: relative;
+  }
+  .tl-dot.human { background: var(--crimson); color: #fff; }
+  .tl-dot.ai { background: #e5e7eb; color: var(--muted); }
+  .tl-body { padding-top: .5rem; }
+  .tl-tag {
+    font-family: var(--sans); font-size: .65rem; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase;
+    padding: .15rem .5rem; border-radius: 99px; margin-bottom: .4rem; display: inline-block;
+  }
+  .tl-tag.human { background: #fee2e2; color: var(--crimson); }
+  .tl-tag.ai { background: #f3f4f6; color: var(--muted); }
+  .tl-body h4 { font-size: 1rem; margin-bottom: .3rem; }
+  .tl-body p { font-size: .9rem; color: var(--muted); margin: 0; }
+
+  /* ── PROMPT REVEAL ─────────────────────────────────── */
+  .prompt-reveal { margin: 2.5rem 0; }
+  .prompt-box {
+    background: var(--dark);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .prompt-label {
+    font-family: var(--sans);
+    font-size: .65rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--crimson-hi);
+    margin-bottom: .6rem;
+  }
+  .prompt-text {
+    font-family: var(--mono);
+    font-size: .9rem;
+    color: #e5e7eb;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+  .prompt-text .kw { color: #93c5fd; }
+  .word-count {
+    font-family: var(--sans);
+    font-size: .75rem;
+    color: #6b7280;
+    margin-top: .6rem;
+    text-align: right;
+  }
+  .output-arrow {
+    text-align: center;
+    color: var(--muted);
+    font-size: 1.5rem;
+    margin: .5rem 0;
+  }
+  .output-box {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .output-box summary {
+    padding: .9rem 1.25rem;
+    background: #f9fafb;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--navy);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+  .output-box summary::-webkit-details-marker { display: none; }
+  .output-box summary .chevron { transition: transform .2s; }
+  .output-box[open] summary .chevron { transform: rotate(180deg); }
+  .output-box-inner {
+    padding: 1.25rem;
+    font-family: var(--mono);
+    font-size: .82rem;
+    color: var(--mid);
+    line-height: 1.7;
+    max-height: 340px;
+    overflow-y: auto;
+    background: #fff;
+    white-space: pre-wrap;
+  }
+  .output-box-inner .hi { color: var(--crimson); font-weight: 600; }
+  .output-box-inner .comment { color: #9ca3af; }
+
+  /* ── INSIGHT MOSAIC ────────────────────────────────── */
+  .insight-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  @media (max-width: 600px) { .insight-row { grid-template-columns: 1fr; } }
+  .insight-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .insight-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.1); transform: translateY(-2px); }
+  .insight-card img { width: 100%; display: block; aspect-ratio: 1; object-fit: cover; }
+  .insight-card-body { padding: .75rem 1rem; }
+  .insight-card-body p { font-family: var(--sans); font-size: .82rem; color: var(--muted); margin: 0; }
+
+  /* ── NUMBERS BAR ───────────────────────────────────── */
+  .numbers-bar {
+    background: var(--dark);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .numbers-bar h2 { font-size: 1.4rem; color: #9ca3af; margin-bottom: 3rem; font-weight: 400; }
+  .nb-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .nb-item .big {
+    font-family: var(--sans);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--crimson-hi);
+    display: block;
+    line-height: 1;
+  }
+  .nb-item .desc {
+    font-family: var(--sans);
+    font-size: .85rem;
+    color: #9ca3af;
+    margin-top: .4rem;
+  }
+  .nb-item .small-note {
+    font-family: var(--sans);
+    font-size: .7rem;
+    color: #6b7280;
+    margin-top: .2rem;
+  }
+
+  /* ── PIPELINE STEPS ────────────────────────────────── */
+  .step-block {
+    border-left: 3px solid var(--crimson);
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+  }
+  .step-num {
+    font-family: var(--sans);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: .4rem;
+  }
+  .step-block h3 { margin-top: 0; }
+
+  /* ── TOOLTIP ───────────────────────────────────────── */
+  [data-tip] { position: relative; cursor: help; border-bottom: 1px dashed var(--muted); }
+  .tipbox {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark);
+    color: #e5e7eb;
+    font-family: var(--sans);
+    font-size: .78rem;
+    line-height: 1.5;
+    padding: .6rem .9rem;
+    border-radius: 6px;
+    width: 230px;
+    z-index: 200;
+    white-space: normal;
+    box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  }
+  .tipbox::after {
+    content: '';
+    position: absolute;
+    top: 100%; left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--dark);
+  }
+  [data-tip]:hover .tipbox { display: block; }
+
+  /* ── MODAL ─────────────────────────────────────────── */
+  #modal-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  #modal-overlay.open { display: flex; }
+  #modal-box {
+    background: #fff;
+    border-radius: 10px;
+    max-width: 560px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 2rem;
+  }
+  #modal-box h3 { margin-bottom: 1rem; }
+  #modal-box p { font-family: var(--sans); font-size: .9rem; color: var(--mid); }
+  #modal-close {
+    position: absolute; top: 1rem; right: 1rem;
+    background: none; border: none; cursor: pointer;
+    font-size: 1.5rem; color: var(--muted); line-height: 1;
+  }
+  #modal-img { width: 100%; border-radius: 6px; margin-bottom: 1rem; }
+
+  /* ── SCROLLED-IN ANIMATION ─────────────────────────── */
+  .fade-in {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: none; }
+
+  /* ── FOOTER ────────────────────────────────────────── */
+  footer {
+    background: var(--dark);
+    color: #6b7280;
+    text-align: center;
+    padding: 2.5rem;
+    font-family: var(--sans);
+    font-size: .85rem;
+  }
+  footer a { color: #9ca3af; }
+
+  /* ── ITERATIVE LOOP DIAGRAM ────────────────────────── */
+  .loop-anim svg { width: 100%; max-width: 500px; display: block; margin: 0 auto; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Statoistics · Behind the Numbers</div>
+  <h1>Four prompts.<br>One AI. <em>Ten publishable</em> data stories.</h1>
+  <p class="hero-sub">
+    A UN dataset too big for any single journalist to read in full.
+    An AI that read it, found the surprises, rendered them in brand format,
+    and wrote the verification guides — while the human wrote four short sentences.
+  </p>
+
+  <!-- Key stats -->
+  <div class="stat-trio">
+    <div class="stat">
+      <span class="num"><span>4</span></span>
+      <span class="label">human prompts</span>
+    </div>
+    <div class="stat">
+      <span class="num"><span id="counter-lines">0</span></span>
+      <span class="label">lines of code written by AI</span>
+    </div>
+    <div class="stat">
+      <span class="num"><span>10</span></span>
+      <span class="label">print-ready data cards</span>
+    </div>
+  </div>
+
+  <!-- Pipeline SVG -->
+  <svg id="pipeline-svg" viewBox="0 0 840 140" aria-label="Data pipeline: Prompt → Download → Analyze → Visualize → Publish">
+    <defs>
+      <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L6,3 z" fill="rgba(255,255,255,.3)"/>
+      </marker>
+    </defs>
+
+    <!-- Connector lines -->
+    <line x1="148" y1="70" x2="202" y2="70" stroke="rgba(255,255,255,.2)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <line x1="308" y1="70" x2="362" y2="70" stroke="rgba(255,255,255,.2)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <line x1="468" y1="70" x2="522" y2="70" stroke="rgba(255,255,255,.2)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <line x1="628" y1="70" x2="682" y2="70" stroke="rgba(255,255,255,.2)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+    <!-- Animated dots on each segment -->
+    <g class="dots-1">
+      <circle r="4" fill="#c1121f" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0s"><mpath href="#path1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin="0s"/></circle>
+      <circle r="4" fill="#c1121f" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin=".55s"><mpath href="#path1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin=".55s"/></circle>
+    </g>
+    <g class="dots-2">
+      <circle r="4" fill="#f87171" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin=".3s"><mpath href="#path2"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin=".3s"/></circle>
+      <circle r="4" fill="#f87171" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin=".85s"><mpath href="#path2"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin=".85s"/></circle>
+    </g>
+    <g class="dots-3">
+      <circle r="4" fill="#fbbf24" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin=".6s"><mpath href="#path3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin=".6s"/></circle>
+      <circle r="4" fill="#fbbf24" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin="1.15s"><mpath href="#path3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin="1.15s"/></circle>
+    </g>
+    <g class="dots-4">
+      <circle r="4" fill="#34d399" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin=".9s"><mpath href="#path4"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin=".9s"/></circle>
+      <circle r="4" fill="#34d399" opacity="0"><animateMotion dur="1.6s" repeatCount="indefinite" begin="1.45s"><mpath href="#path4"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="1.6s" repeatCount="indefinite" begin="1.45s"/></circle>
+    </g>
+    <!-- Motion paths (hidden) -->
+    <defs>
+      <path id="path1" d="M148,70 L202,70"/>
+      <path id="path2" d="M308,70 L362,70"/>
+      <path id="path3" d="M468,70 L522,70"/>
+      <path id="path4" d="M628,70 L682,70"/>
+    </defs>
+
+    <!-- Node: Prompt -->
+    <g class="pipe-node" data-desc="The human's 4-20 word instruction">
+      <rect x="10" y="36" width="138" height="68" rx="8" fill="#1f2937" stroke="rgba(193,18,31,.6)" stroke-width="1.5"/>
+      <text x="79" y="64" text-anchor="middle" font-family="system-ui" font-size="11" fill="#9ca3af">HUMAN PROMPT</text>
+      <text x="79" y="84" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#fff">✍️ 4 sentences</text>
+      <title>The human's instruction — typically 10–50 words. The entire editorial direction.</title>
+    </g>
+
+    <!-- Node: Download -->
+    <g class="pipe-node">
+      <rect x="210" y="36" width="138" height="68" rx="8" fill="#1f2937" stroke="rgba(248,113,113,.4)" stroke-width="1.5"/>
+      <text x="279" y="64" text-anchor="middle" font-family="system-ui" font-size="11" fill="#9ca3af">AI BUILDS</text>
+      <text x="279" y="82" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#f87171">⬇️ Downloader</text>
+      <text x="279" y="98" text-anchor="middle" font-family="system-ui" font-size="10" fill="#6b7280">803 lines · SQLite</text>
+      <title>AI wrote an 803-line Python script to download 15 UN dataflows, with SQLite-backed resume state and parallel async fetching.</title>
+    </g>
+
+    <!-- Node: Analyze -->
+    <g class="pipe-node">
+      <rect x="370" y="36" width="138" height="68" rx="8" fill="#1f2937" stroke="rgba(251,191,36,.4)" stroke-width="1.5"/>
+      <text x="439" y="64" text-anchor="middle" font-family="system-ui" font-size="11" fill="#9ca3af">AI MINES</text>
+      <text x="439" y="82" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#fbbf24">🔍 Insights</text>
+      <text x="439" y="98" text-anchor="middle" font-family="system-ui" font-size="10" fill="#6b7280">3 rounds · 20+ CSVs</text>
+      <title>1,126-line analysis pipeline run three times, iterating from 5 → 7 → 10 verified story leads.</title>
+    </g>
+
+    <!-- Node: Visualize -->
+    <g class="pipe-node">
+      <rect x="530" y="36" width="138" height="68" rx="8" fill="#1f2937" stroke="rgba(52,211,153,.4)" stroke-width="1.5"/>
+      <text x="599" y="64" text-anchor="middle" font-family="system-ui" font-size="11" fill="#9ca3af">AI RENDERS</text>
+      <text x="599" y="82" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#34d399">🎨 SVG Cards</text>
+      <text x="599" y="98" text-anchor="middle" font-family="system-ui" font-size="10" fill="#6b7280">480×480px · brand-exact</text>
+      <title>Print-ready SVG cards matching the Statoistics brand spec to the pixel — fonts, colors, masthead, footer.</title>
+    </g>
+
+    <!-- Node: Publish -->
+    <g class="pipe-node">
+      <rect x="690" y="36" width="138" height="68" rx="8" fill="#1f2937" stroke="rgba(52,211,153,.8)" stroke-width="1.5"/>
+      <text x="759" y="64" text-anchor="middle" font-family="system-ui" font-size="11" fill="#9ca3af">PUBLISHED</text>
+      <text x="759" y="82" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#fff">📰 10 cards</text>
+      <text x="759" y="98" text-anchor="middle" font-family="system-ui" font-size="10" fill="#6b7280">+ 10 verify SOPs</text>
+      <title>10 data cards with journalist verification guides, ready for publication.</title>
+    </g>
+  </svg>
+</section>
+
+<!-- NAV -->
+<nav class="nav-bar">
+  <a class="home" href="index.html">← Gallery</a>
+  <a href="#setup">The Setup</a>
+  <a href="#download">Download</a>
+  <a href="#analyze">Analyze</a>
+  <a href="#visualize">Visualize</a>
+  <a href="#verify">Verify</a>
+  <a href="#takeaway">So What?</a>
+</nav>
+
+<!-- ACT 0: SUMMARY -->
+<section class="section" id="setup">
+  <div class="section-label">The Setup</div>
+  <h2>A dataset too big to read. A deadline too short to wait.</h2>
+
+  <p class="lede fade-in">
+    The <span data-tip="United Nations SDG Harmonized Global Dataflow — 15 separate data streams
+    tracking everything from seed-sharing agreements to migration deaths, as reported by 195 countries.
+    <span class='tipbox'>UN SDG Global Dataflow: 15 streams, 195 countries, millions of data points per year.</span>">UN's
+    SDG dataflow</span> is one of the most comprehensive datasets ever assembled. It tracks 195 countries across 
+    indicators spanning remittances, refugee flows, biodiversity, parliamentary representation, water law, 
+    and a hundred things in between.
+    <span class="tipbox">UN SDG Global Dataflow: 15 streams, 195 countries, millions of data points per year.</span>
+  </p>
+
+  <p class="fade-in">
+    It is also, in its raw form, almost completely unreadable by a human on a deadline. The data is encoded 
+    in <span data-tip="Statistical Data and Metadata eXchange — the UN's XML-based format for publishing 
+    statistical data. Dense, technical, designed for machines not journalists."><span class="tipbox">SDMX: Statistical Data and Metadata eXchange. Dense XML format used by statistical agencies worldwide.</span>SDMX format</span>, 
+    spread across dozens of indicator codes, and arrives as compressed CSV slices you have to know how to ask for.
+  </p>
+
+  <p class="fade-in">
+    Someone at a news organisation would normally need a data journalist, an API expert, two weeks, and 
+    a research budget. Instead, here is what actually happened: one editor typed four short prompts 
+    into an AI coding assistant. What came back changed what a newsroom data workflow can look like.
+  </p>
+
+  <div class="pullquote fade-in">
+    "The human wrote roughly 200 words total. The AI wrote 1,929 lines of production code, ran the analysis 
+    three times, produced 10 publication-ready cards, and wrote the fact-checking guides."
+  </div>
+
+  <p class="fade-in">
+    This is not a demo. These are real cards, with real data, ready to print.
+    What follows is the story of how they were made — and what it means for the newsrooms
+    that haven't tried this yet.
+  </p>
+</section>
+
+<!-- NUMBERS BAR -->
+<div class="numbers-bar">
+  <h2>The full scope, in numbers</h2>
+  <div class="nb-grid">
+    <div class="nb-item fade-in">
+      <span class="big" data-count="15">0</span>
+      <div class="desc">UN dataflows cataloged</div>
+      <div class="small-note">discovered & inventoried by AI</div>
+    </div>
+    <div class="nb-item fade-in">
+      <span class="big" data-count="1929">0</span>
+      <div class="desc">lines of code written</div>
+      <div class="small-note">803 downloader + 1,126 analyzer</div>
+    </div>
+    <div class="nb-item fade-in">
+      <span class="big" data-count="3">0</span>
+      <div class="desc">rounds of analysis</div>
+      <div class="small-note">v1 → v2 → v3, each deeper</div>
+    </div>
+    <div class="nb-item fade-in">
+      <span class="big" data-count="20">0</span>
+      <div class="desc">output CSVs generated</div>
+      <div class="small-note">one per story angle explored</div>
+    </div>
+    <div class="nb-item fade-in">
+      <span class="big" data-count="10">0</span>
+      <div class="desc">published data cards</div>
+      <div class="small-note">with 10 journalist SOPs</div>
+    </div>
+  </div>
+</div>
+
+<!-- ACT 1: DOWNLOAD -->
+<section class="section" id="download">
+  <div class="section-label">Step 1 of 3 · Download</div>
+  <h2>The ten-word brief that produced 803 lines of production code</h2>
+
+  <p class="lede fade-in">
+    Imagine you hand a talented new analyst a single sentence and walk away. 
+    You come back an hour later to find a fully documented API client sitting on your desk, 
+    handling rate limits, resume-from-failure, parallel downloads, and compressed storage. That is, essentially, what happened.
+  </p>
+
+  <div class="prompt-reveal fade-in">
+    <div class="prompt-box">
+      <div class="prompt-label">Human prompt · ~12 words</div>
+      <div class="prompt-text"><span class="kw">Download</span> all data from https://data.un.org/ efficiently.
+It has an API. <span class="kw">Learn how to use that.</span>
+Write a Python script that downloads all data and saves it in an efficient structured format.
+Research the data available breadth-first, <span class="kw">plan, then execute.</span>
+Ensure that the script is <span class="kw">resumable</span>.</div>
+      <div class="word-count">~55 words · total human writing investment: ~2 minutes</div>
+    </div>
+    <div class="output-arrow">↓</div>
+    <details class="output-box">
+      <summary>AI produced: 803-line download_un_data.py <span class="chevron">▾</span></summary>
+      <div class="output-box-inner">
+<span class="comment"># What the AI built, unprompted:</span>
+<span class="hi">1.</span> Read the UN's SDMX REST API documentation
+<span class="hi">2.</span> Discovered 15 dataflows across 6 agencies
+<span class="hi">3.</span> Built SQLite state database to track download progress
+<span class="hi">4.</span> Implemented async parallel fetching (httpx + asyncio)
+<span class="hi">5.</span> Gzip-compressed CSV output for storage efficiency
+<span class="hi">6.</span> Exponential backoff retries (tenacity)
+<span class="hi">7.</span> Rich console progress logging
+<span class="hi">8.</span> --match flag to filter by dataflow name/ID
+<span class="hi">9.</span> --force flag to re-download existing files
+<span class="hi">10.</span> Year-range slicing (startPeriod / endPeriod)
+<span class="hi">11.</span> README.md documenting every flag and example
+
+<span class="comment"># Sample of key design decision (AI's own, unprompted):</span>
+def connect_db(path: Path) -> sqlite3.Connection:
+    <span class="comment">"""Open the state database and apply schema migrations."""</span>
+    conn.execute(<span class="hi">"PRAGMA journal_mode=WAL"</span>)  <span class="comment"># safe for concurrent writes</span>
+    conn.execute(<span class="hi">"PRAGMA busy_timeout=30000"</span>)
+
+<span class="comment"># Dataflows discovered automatically:</span>
+IAEG-SDGs  DF_SDG_GLH    SDG Harmonized Global Dataflow  ← primary source
+ESTAT      DF_SEEA_AEA   Air emission accounts
+WB         DF_UNDATA_WDI World Development Indicators
+UNSD       DF_UNDATA_ENERGY  Energy Statistics
+<span class="comment">... 11 more</span>
+      </div>
+    </details>
+  </div>
+
+  <p class="fade-in">
+    The AI didn't just execute the instruction — it made engineering choices. It chose 
+    <span data-tip="Write-Ahead Logging: a SQLite mode that makes concurrent reads and writes safe, 
+    preventing database corruption if the script is interrupted mid-download.
+    <span class='tipbox'>WAL mode: SQLite setting that prevents corruption on interrupted writes.</span>">WAL mode</span> 
+    for the SQLite database, knowing that parallel download jobs might write simultaneously.
+    It chose gzip compression for the CSV outputs. It built a proper <code>--force</code> flag.
+    These are decisions an experienced data engineer would make — not things the human specified.
+  </p>
+
+  <div class="step-block fade-in">
+    <div class="step-num">The result</div>
+    <h3>15 dataflows cataloged. The SDG slice alone covers 195 countries.</h3>
+    <p>
+      The AI's downloader fetched the UN's full catalog, probed each dataflow for recent years, 
+      and produced a structured inventory. The <strong>SDG Harmonized Global Dataflow</strong> 
+      (version 1.24) turned out to be the richest source — 2025 and 2026 data available, 
+      covering everything the analysis needed.
+    </p>
+  </div>
+</section>
+
+<!-- ACT 2: ANALYZE -->
+<section class="section" id="analyze">
+  <div class="section-label">Step 2 of 3 · Analyze</div>
+  <h2>Not "process the data." Find the stories.</h2>
+
+  <p class="lede fade-in">
+    Raw data isn't news. A country's remittance cost as a percentage of $200 isn't a headline. 
+    The fact that sending money from Johannesburg to Mumbai costs 8.5 times more than sending it 
+    from London — that's a headline.
+  </p>
+
+  <p class="fade-in">
+    The instruction to the AI was deceptively simple. What it had to do was anything but.
+  </p>
+
+  <div class="prompt-reveal fade-in">
+    <div class="prompt-box">
+      <div class="prompt-label">Human prompt · round 1</div>
+      <div class="prompt-text"><span class="kw">Analyze</span> this UN data for newsworthy insights.
+
+This is a dataset that people would have <span class="kw">already analyzed extensively</span>. So we need
+to find angles that are <span class="kw">obscure, niche, and surprising</span>. The more surprising,
+the better — but they also need to be <span class="kw">true and verifiable</span> from the data.
+
+Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a lay audience</span>.</div>
+      <div class="word-count">~60 words</div>
+    </div>
+    <div class="output-arrow">↓ Round 1: 5 story leads</div>
+    <div class="output-arrow">↓ Round 2: 7 story leads (after human feedback: "broaden for Indian readers")</div>
+    <div class="output-arrow">↓ Round 3: 10 verified story leads + 20 output CSVs</div>
+  </div>
+
+  <p class="fade-in">
+    The AI ran the analysis three times, each round deeper than the last. Between rounds, 
+    the human added two lines of direction — nudges, not rewrites. The AI went online between 
+    rounds to research what other journalists had already done with similar datasets, 
+    so it could find the angles that hadn't been covered yet.
+  </p>
+
+  <div class="timeline" id="analysis-timeline">
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">Round 1 · v1</span>
+        <h4>5 story leads from raw data exploration</h4>
+        <p>Remittance cost gap · Biodiversity Target 14 · Gender-balanced but old parliaments · 
+        Ukraine vs Afghanistan refugee rate · UN's 3% remittance benchmark nearly unmet</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot human">H</div>
+      <div class="tl-body">
+        <span class="tl-tag human">Human nudge</span>
+        <h4>"Broaden with more universal appeal. Audience: Times of India readers."</h4>
+        <p>~15 words. That's the entire editorial direction for round 2.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">Round 2 · v2</span>
+        <h4>7 story leads — India angles added, web research incorporated</h4>
+        <p>India remittance corridor spread (£3.82 vs $32.78) · India productivity rank (11th of 181) · 
+        Migration deaths concentration · Youth employment strategy gap · more</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot human">H</div>
+      <div class="tl-body">
+        <span class="tl-tag human">Human nudge</span>
+        <h4>"Broaden further. Use follow-up ideas from notes.md."</h4>
+        <p>~12 words. The AI had already been documenting its own research ideas in a notes file.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">Round 3 · v3</span>
+        <h4>10 verified story leads + 1,126-line pipeline + 20+ output CSVs</h4>
+        <p>Added: Seed SMTA crop diversity (India #2 globally) · Livestock backup gap · 
+        Water law vs actual participation · Biodiversity plan vs reality. 
+        Each lead supported by a reproducible CSV.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-block fade-in">
+    <div class="step-num">The editorial judgment at work</div>
+    <h3>The AI made choices a data editor would recognize.</h3>
+    <p>
+      Take the Ukraine finding. The AI didn't just report that Ukraine has 11,970 refugees 
+      per 100,000 people. It framed it against Afghanistan — a country synonymous with 
+      refugee crisis in public perception — and showed that Ukraine now <em>exceeds</em> that rate. 
+      That reframing is an editorial choice, not a calculation. The AI made it.
+    </p>
+    <p>
+      Or take the seed story. Among 15 dataflows and hundreds of indicators, the AI surfaced 
+      a little-known indicator — Standard Material Transfer Agreements — and noticed that India 
+      receives more crop genetic material than any country except Germany. A human analyst 
+      would need to know to look for it. The AI found it by exploration.
+    </p>
+  </div>
+</section>
+
+<!-- ACT 3: VISUALIZE -->
+<section class="section wide" id="visualize">
+  <div class="section-label">Step 3 of 3 · Visualize</div>
+  <h2>From insight to print-ready card — matching the brand spec to the pixel</h2>
+
+  <p class="lede fade-in">
+    A data insight is not a published card. Someone has to turn "India ranks 11th in worker 
+    productivity growth" into something a reader will stop and absorb. That means choosing 
+    the right chart type, placing text so it doesn't overflow, matching the masthead font 
+    exactly, and hitting a sub-second print deadline.
+  </p>
+
+  <div class="prompt-reveal fade-in">
+    <div class="prompt-box">
+      <div class="prompt-label">Human prompt</div>
+      <div class="prompt-text">Render them as consistent SVGs in the format described by
+<span class="kw">statoistics-format.md</span>.
+Make sure the text, chart, etc. are easy to understand for a lay audience.
+Use your judgement on content, style, design elements, annotations.
+
+Save them as <span class="kw">2026-04-14-un-v3/*.svg</span></div>
+      <div class="word-count">~40 words</div>
+    </div>
+    <div class="output-arrow">↓ after one round of human feedback on card #1</div>
+    <details class="output-box">
+      <summary>AI produced: 10 SVG cards — spec-compliant, pixel-exact <span class="chevron">▾</span></summary>
+      <div class="output-box-inner">
+<span class="comment"># The Statoistics brand spec the AI had to match:</span>
+Canvas: <span class="hi">480×480px</span>, white #ffffff
+Masthead: <span class="hi">#ed1c24</span> red, 29px tall
+Wordmark: <span class="hi">STA</span>[white] <span class="hi">TOI</span>[#231f20] <span class="hi">STICS</span>[white]
+Font: PoynterAgateOne-BoldCondensed 19px bold
+  transform="translate(6 21) scale(1 1.11)"   ← exact positioning
+Tagline: PoynterAgateOne-Condensed 15px white
+Headline: PoynterOSDisplay-Bold 28px #231f20 centered
+Deck: PoynterAgateOne-Condensed 15px #231f20 centered
+Border: stroke=#231f20 0.8px rect x=0.4 y=0.4
+Footer sep: y=412; Note: y=428; Source: y=443
+
+<span class="comment"># Chart types chosen by AI (not specified by human):</span>
+Card 01: Barbell/range chart   ← shows corridor spread vividly
+Card 02: Slope chart           ← shows rank surprise
+Card 03: Diverging bar         ← before/after comparison
+Card 04: Peer comparison bars  ← India in context
+Card 05: Scatter plot          ← two-axis outlier story
+Card 06: <span class="hi">Lollipop chart</span>        ← ranked gap data; dots beat bars here
+Card 07: <span class="hi">Proportional strip</span>    ← part-of-whole; shows concentration
+Card 08: <span class="hi">4-tier pipeline</span>       ← progression from nothing → operational
+Card 09: <span class="hi">Funnel</span>                ← progressive filter (rules → practice)
+Card 10: <span class="hi">Waffle/unit chart</span>     ← 195 squares, one per country
+
+<span class="comment"># Size of output:</span>
+Total: ~1,270 lines of SVG XML
+Largest: card 10 biodiversity waffle = 265 lines
+      </div>
+    </details>
+  </div>
+
+  <p class="fade-in">
+    The human gave feedback once — on the very first card. The tagline was too small. 
+    The colour palette needed to be more print-friendly. Three sentences of feedback, 
+    and the AI updated the brand spec file and regenerated everything correctly. 
+    Cards 2 through 10 went out without another round of corrections.
+  </p>
+
+  <p class="fade-in">
+    Notice what wasn't specified: the chart types. The human never said "use a lollipop chart." 
+    The AI chose it for card 06 because a lollipop shows ranked data with large gaps between items 
+    more clearly than a bar chart — fewer ink-to-insight wasted pixels. 
+    It chose a waffle chart for card 10 because 195 small squares make the minority of 
+    50 "achieved" countries <em>feel</em> like a minority in a way a percentage never can.
+  </p>
+
+  <!-- Card mosaic -->
+  <div class="insight-row fade-in">
+    <div class="insight-card" onclick="openModal('06-seed-crop-diversity','Lollipop chart: India ranks #2 globally for receiving crop genetic material — 12,095 seed-sharing agreements in 2025, behind only Germany (16,566). The lollipop format shows the large gaps between countries better than a bar chart.','India is the world\'s #2 destination for crop genetic material')">
+      <img src="2026-04-14-un-v3/06-seed-crop-diversity.svg" alt="Seed crop diversity card" loading="lazy">
+      <div class="insight-card-body"><p>Card 06 · Lollipop — ranked seed-sharing data</p></div>
+    </div>
+    <div class="insight-card" onclick="openModal('10-biodiversity-plans-vs-done','Waffle/unit chart: 195 small squares, one per country, coloured by biodiversity achievement status. Teal = achieved (50). Pink = insufficient (63). The minority of achieved countries is visible at a glance.','Nature is in the plan. But only 1 in 4 countries says it\'s achieved.')">
+      <img src="2026-04-14-un-v3/10-biodiversity-plans-vs-done.svg" alt="Biodiversity plans card" loading="lazy">
+      <div class="insight-card-body"><p>Card 10 · Waffle — 195 unit squares by status</p></div>
+    </div>
+    <div class="insight-card" onclick="openModal('07-migration-deaths-concentration','Proportional strip chart: the full strip represents 7,672 documented migration deaths. Each segment\'s width is proportional to its country\'s share. Iran, Libya, Yemen, Myanmar and Tunisia fill 56.8% of the strip.','Five migration routes account for over half of all documented deaths')">
+      <img src="2026-04-14-un-v3/07-migration-deaths-concentration.svg" alt="Migration deaths card" loading="lazy">
+      <div class="insight-card-body"><p>Card 07 · Proportional strip — part-of-whole</p></div>
+    </div>
+    <div class="insight-card" onclick="openModal('09-water-rules-vs-practice','Funnel chart: three stages narrow — 104 areas have data → 91 have clearly defined legal procedures (87.5%) → only 28 have high actual participation (26.9%). The funnel shape makes the bottleneck visceral.','Written water rules are common. Real community participation is not.')">
+      <img src="2026-04-14-un-v3/09-water-rules-vs-practice.svg" alt="Water rules card" loading="lazy">
+      <div class="insight-card-body"><p>Card 09 · Funnel — rules vs. practice filter</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACT 4: VERIFY -->
+<section class="section" id="verify">
+  <div class="section-label">The trust layer</div>
+  <h2>The AI wrote the fact-checking guide for its own output</h2>
+
+  <p class="lede fade-in">
+    There is an obvious problem with AI-generated data journalism: how does a human editor 
+    verify it? The same AI that wrote the insight also wrote the SOP — the 
+    Standard Operating Procedure that tells a journalist exactly how to check every number 
+    before it goes to print.
+  </p>
+
+  <p class="fade-in">
+    Each of the 10 cards has a matching verification guide. They follow the same seven-section 
+    structure: how to download the source data, what the card is claiming, the fastest way 
+    to verify it, which exact CSV rows contain the numbers, a card-text-to-source-value table, 
+    and common verification mistakes to avoid.
+  </p>
+
+  <div class="prompt-reveal fade-in">
+    <div class="prompt-box">
+      <div class="prompt-label">Human prompt (paraphrased)</div>
+      <div class="prompt-text"><span class="kw">Add citations</span> as corresponding .md files alongside the SVGs.
+Each should contain enough detail for a journalist to <span class="kw">EASILY verify the facts</span>.
+Think about <span class="kw">HOW they would verify</span> and what to check.
+Providing text to search for (via copy-paste) is helpful.
+Make this a <span class="kw">comprehensive verification checklist and SOP</span>.</div>
+    </div>
+    <div class="output-arrow">↓</div>
+    <details class="output-box">
+      <summary>Sample SOP structure (Card 06 · Seed Diversity) <span class="chevron">▾</span></summary>
+      <div class="output-box-inner">
+<span class="hi">## 1. If you do not have the data</span>
+git clone --depth 1 https://github.com/sanand0/journalists.git
+cd journalists/data/un
+uv run download_un_data.py download --match DF_SDG_GLH --latest-only
+uv run v3/analyze_un_data.py
+
+<span class="hi">## 2. What this card is saying</span>
+India received 12,095 SMTA agreements in 2025, ranking 2nd globally.
+66.7% of Southern Asia's total. 56 of 151 treaty members have no domestic framework.
+
+<span class="hi">## 3. Fastest way to verify</span>
+Open: data/un/v3/outputs/seed_smta_country_rank.csv
+Filter: rank_high_to_low == 2
+Confirm: area_code=356 (India), smta_count=12095
+
+<span class="hi">## 4. Exact rows to check</span>
+Germany: rank 1, smta_count=16566
+India:   rank 2, smta_count=12095   ← this is the published number
+China:   rank 10, smta_count=2334
+
+<span class="hi">## 5. Card text → source check</span>
+"#2 destination"     → rank_high_to_low == 2       ✓
+"12,095"             → smta_count == 12095          ✓
+"5× more than China" → 12095 / 2334 = 5.18×        ✓
+"66.7%"              → india_share_of_southern_asia ✓
+
+<span class="hi">## 6. Common mistakes</span>
+Do NOT use SI_RMT_COST_SC — contains negative values, unreliable.
+Do NOT confuse SMTA sending (source) with receiving (destination).
+India is in REF_AREA=356 as recipient, not sender.
+
+<span class="hi">## Pre-publication checklist</span>
+☐ Confirmed smta_count=12095 in seed_smta_country_rank.csv
+☐ Confirmed rank_high_to_low=2
+☐ Confirmed treaty_members=151, framework_members=95, gap=56
+☐ All numbers round as stated (no silent truncation)
+      </div>
+    </details>
+  </div>
+
+  <p class="fade-in">
+    This is the key trust mechanism. AI-generated journalism that cannot be verified by 
+    a human is a liability. AI-generated journalism that comes with a complete verification 
+    trail is an asset. The SOPs mean that a journalist who has never seen this dataset 
+    can reproduce every number in under ten minutes.
+  </p>
+
+  <p class="fade-in">
+    Try it: open any card in <a href="index.html">the gallery</a>, click "Verify," 
+    and follow the checklist. The numbers hold.
+  </p>
+</section>
+
+<!-- THE LOOP DIAGRAM -->
+<section class="section" id="loop">
+  <div class="section-label">The Full Loop</div>
+  <h2>What the human did vs. what the AI did</h2>
+
+  <div class="timeline" id="full-timeline">
+    <div class="tl-item">
+      <div class="tl-dot human">H</div>
+      <div class="tl-body">
+        <span class="tl-tag human">Human · ~55 words</span>
+        <h4>Prompt 1: "Download all data from data.un.org efficiently."</h4>
+        <p>Plus: be resumable, log progress, use sub-directories. That's it.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">AI · 803 lines · ~40 min</span>
+        <h4>Built production-grade async downloader with SQLite state tracking</h4>
+        <p>Discovered SDMX API · 15 dataflows cataloged · Resume-safe · Parallel · Compressed output · Full README</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot human">H</div>
+      <div class="tl-body">
+        <span class="tl-tag human">Human · ~60 words</span>
+        <h4>Prompt 2: "Find newsworthy insights — obscure, verifiable, simple for lay readers."</h4>
+        <p>Plus two short follow-up nudges over three rounds. Total human writing: ~120 words.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">AI · 1,126 lines · 3 rounds</span>
+        <h4>Ran analysis pipeline three times; surfaced 10 verified story leads</h4>
+        <p>20+ output CSVs · Web research for unexplored angles · Editorial framing for each insight · notes.md of caveats and follow-ups</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot human">H</div>
+      <div class="tl-body">
+        <span class="tl-tag human">Human · ~40 words + 3 sentences of feedback</span>
+        <h4>Prompt 3: "Render as SVGs following statoistics-format.md."</h4>
+        <p>Gave feedback on card #1: tagline too small, use print colours. ~3 sentences total.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">AI · ~1,270 lines SVG · pixel-exact</span>
+        <h4>10 brand-compliant SVG cards with appropriate chart types</h4>
+        <p>Chose chart types independently · Lollipop, waffle, funnel, proportional strip — each matched to the story's data shape · Rendered PNG for visual QA · Fixed own errors</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot human">H</div>
+      <div class="tl-body">
+        <span class="tl-tag human">Human · ~30 words</span>
+        <h4>Prompt 4: "Add verification SOPs for journalists."</h4>
+        <p>Specified the checklist format. That's all.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot ai">AI</div>
+      <div class="tl-body">
+        <span class="tl-tag ai">AI · 10 SOPs · ~4,000 words</span>
+        <h4>Wrote 7-section fact-checking guide for every card</h4>
+        <p>Exact CSV row filters · Copy-paste search strings · Pre-publication checklists · Common pitfall warnings · Reproducible data pipeline instructions</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAKEAWAY -->
+<section class="section" id="takeaway">
+  <div class="section-label">So What?</div>
+  <h2>A newsroom function just got automated. Not replaced — automated.</h2>
+
+  <p class="lede fade-in">
+    There is a difference between a tool that helps a journalist work faster and a system 
+    that can run an entire pipeline from raw data to published card with minimal human input. 
+    This is the second thing.
+  </p>
+
+  <p class="fade-in">
+    The human in this workflow didn't know SDMX format. Didn't write SQL. Didn't design a chart. 
+    Didn't calculate a percentage. Didn't pixel-check a font size. 
+    What the human did was something harder to automate: decided what <em>mattered</em>. 
+    "Find the surprising angles. Write for lay readers. Make it verifiable." 
+    Those are editorial judgments, and they guided everything.
+  </p>
+
+  <div class="pullquote fade-in">
+    "The workflow scales. Point it at any structured dataset — MOSPI, RBI, NFHS — write 
+    four prompts, and the machine produces the same pipeline: download, analyze, visualize, verify."
+  </div>
+
+  <p class="fade-in">
+    We tested exactly this. The same process produced 
+    <a href="index.html#grid-v3">7 cards from India's PLFS survey</a> and 
+    <a href="index.html#grid-v4">5 cards from PLFS v4</a> before the UN work began. 
+    The prompts were nearly identical. The outputs were equally publication-ready.
+  </p>
+
+  <p class="fade-in">
+    What changes when this becomes routine? Data stories that currently take a week of 
+    journalist-plus-designer time now take an afternoon — and the human spend that afternoon 
+    on the editorial judgment, not the plumbing. The machine handles the plumbing.
+  </p>
+
+  <h3 class="fade-in">What this is not</h3>
+
+  <p class="fade-in">
+    It is not autonomous journalism. Every card in this gallery was published because a human 
+    editor decided it was ready. The verification SOPs exist precisely because the AI's 
+    output needs a human check before it goes to print. The editorial voice — the decision 
+    to compare Ukraine to Afghanistan, to focus on India's seed-diversity rank — came from 
+    a person with journalistic judgment.
+  </p>
+
+  <p class="fade-in">
+    What AI automates is the distance between "I have a dataset" and "I have something 
+    a journalist can read and verify." That distance used to take weeks. Now it takes hours.
+  </p>
+
+  <p class="fade-in" style="margin-top: 3rem;">
+    → <a href="index.html">Browse all 27 Statoistics cards in the gallery</a>
+  </p>
+</section>
+
+<!-- MODAL -->
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div id="modal-box">
+    <button id="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+    <img id="modal-img" src="" alt="">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+    <p style="margin-top:1rem;font-family:var(--sans);font-size:.8rem;color:var(--muted)">
+      <a id="modal-link" href="" target="_blank">Open full card →</a>
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>
+    <a href="index.html">← All Statoistics cards</a> &nbsp;·&nbsp;
+    Data: <a href="https://data.un.org" target="_blank">data.un.org</a> &nbsp;·&nbsp;
+    Source: <a href="https://github.com/sanand0/journalists" target="_blank">github.com/sanand0/journalists</a>
+  </p>
+  <p style="margin-top:.75rem">
+    Download pipeline, analysis, visualization, and SOPs all generated by GitHub Copilot (Claude Sonnet 4.6 / GPT-5.4).
+  </p>
+</footer>
+
+<script>
+// ── Counter animation ──────────────────────────────────────
+function animateCount(el, target, duration = 1400) {
+  const start = performance.now();
+  const update = (now) => {
+    const t = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    el.textContent = Math.round(eased * target).toLocaleString();
+    if (t < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+// Hero counter
+setTimeout(() => animateCount(document.getElementById('counter-lines'), 1929), 400);
+
+// Numbers bar counters (on scroll into view)
+const bigNums = document.querySelectorAll('.big[data-count]');
+const bigObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCount(e.target, +e.target.dataset.count);
+      bigObs.unobserve(e.target);
+    }
+  });
+}, { threshold: .4 });
+bigNums.forEach(el => bigObs.observe(el));
+
+// ── Fade-in on scroll ─────────────────────────────────────
+const fadeObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      fadeObs.unobserve(e.target);
+    }
+  });
+}, { threshold: .12 });
+document.querySelectorAll('.fade-in').forEach(el => fadeObs.observe(el));
+
+// ── Timeline items ────────────────────────────────────────
+const tlObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 120);
+    }
+  });
+}, { threshold: .1, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.tl-item').forEach(el => tlObs.observe(el));
+
+// ── Modal ─────────────────────────────────────────────────
+const overlay = document.getElementById('modal-overlay');
+function openModal(slug, desc, title) {
+  document.getElementById('modal-img').src = `2026-04-14-un-v3/${slug}.svg`;
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-desc').textContent = desc;
+  document.getElementById('modal-link').href = `2026-04-14-un-v3/${slug}.svg`;
+  overlay.classList.add('open');
+  document.getElementById('modal-close').focus();
+}
+function closeModal() { overlay.classList.remove('open'); }
+overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:26px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.big-num  { font-family: GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif; font-size:36px; font-weight:bold; }
+.axis-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+.sub-lbl  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#6b7280; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Five migration routes account for</text>
+<text x="240" y="96" text-anchor="middle" class="hl">over half of all documented deaths</text>
+
+<!-- Deck -->
+<text x="240" y="116" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">Iran, Libya, Yemen, Myanmar and Tunisia recorded 4,360 deaths in 2025 &#x2014;</text>
+<text x="240" y="132" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">56.8% of 7,672 documented globally. These are minimum counts.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="146" x2="450" y2="146"/>
+
+<!-- Proportional strip: x=30, y=178, total width=420, height=52 -->
+<!-- Iran: x=30, w=76, fill=#7f1d1d -->
+<rect x="30" y="178" width="76" height="52" fill="#7f1d1d"/>
+<!-- Libya: x=106, w=62, fill=#c1121f -->
+<rect x="106" y="178" width="62" height="52" fill="#c1121f"/>
+<!-- Yemen: x=168, w=44, fill=#dc2626 -->
+<rect x="168" y="178" width="44" height="52" fill="#dc2626"/>
+<!-- Myanmar: x=212, w=31, fill=#f87171 -->
+<rect x="212" y="178" width="31" height="52" fill="#f87171"/>
+<!-- Tunisia: x=243, w=26, fill=#fca5a5 -->
+<rect x="243" y="178" width="26" height="52" fill="#fca5a5"/>
+<!-- Next 5: x=269, w=86, fill=#d1d5db -->
+<rect x="269" y="178" width="86" height="52" fill="#d1d5db"/>
+<!-- Other 72: x=355, w=95, fill=#f3f4f6 -->
+<rect x="355" y="178" width="95" height="52" fill="#f3f4f6"/>
+
+<!-- White dividers between segments -->
+<line x1="106" y1="178" x2="106" y2="230" stroke="#ffffff" stroke-width="1"/>
+<line x1="168" y1="178" x2="168" y2="230" stroke="#ffffff" stroke-width="1"/>
+<line x1="212" y1="178" x2="212" y2="230" stroke="#ffffff" stroke-width="1"/>
+<line x1="243" y1="178" x2="243" y2="230" stroke="#ffffff" stroke-width="1"/>
+<line x1="269" y1="178" x2="269" y2="230" stroke="#ffffff" stroke-width="1"/>
+<line x1="355" y1="178" x2="355" y2="230" stroke="#ffffff" stroke-width="1"/>
+
+<!-- Labels inside strip (y=204 = center of 178-230) -->
+<text x="68" y="207" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#ffffff;">Iran</text>
+<text x="137" y="207" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#ffffff;">Libya</text>
+<text x="190" y="207" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#ffffff;">Yemen</text>
+<text x="228" y="205" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:8px;fill:#ffffff;">Myan.</text>
+<text x="256" y="205" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:8px;fill:#6b7280;">Tun.</text>
+<text x="312" y="207" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#374151;">Next 5 areas</text>
+<text x="403" y="207" text-anchor="middle" style="font-family:'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#374151;">Other 72</text>
+
+<!-- Death count labels below top 5 (y=244) -->
+<text x="68" y="244" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7f1d1d;">1,387</text>
+<text x="137" y="244" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#c1121f;">1,125</text>
+<text x="190" y="244" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#dc2626;">809</text>
+<text x="228" y="244" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#f87171;">570</text>
+<text x="256" y="244" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#9ca3af;">469</text>
+
+<!-- Separator at y=258 -->
+<line x1="30" y1="258" x2="450" y2="258" stroke="#e5e7eb" stroke-width="0.6"/>
+
+<!-- Vertical divider between big-num columns -->
+<line x1="240" y1="265" x2="240" y2="345" stroke="#e5e7eb" stroke-width="0.8"/>
+
+<!-- Left big stat: 56.8% -->
+<text x="120" y="306" text-anchor="middle" class="big-num" style="fill:#c1121f;">56.8%</text>
+<text x="120" y="321" text-anchor="middle" class="sub-lbl">of all deaths</text>
+<text x="120" y="336" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#231f20;">in just 5 areas</text>
+
+<!-- Right big stat: 77.3% -->
+<text x="360" y="306" text-anchor="middle" class="big-num" style="fill:#92400e;">77.3%</text>
+<text x="360" y="321" text-anchor="middle" class="sub-lbl">in top 10 areas</text>
+<text x="360" y="336" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#231f20;">of 7,672 total (2025)</text>
+
+<!-- Separator at y=348 -->
+<line class="sep" x1="30" y1="348" x2="450" y2="348"/>
+
+<!-- India note -->
+<text x="240" y="368" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">India ranks 31st with 17 recorded deaths in 2025.</text>
+<text x="240" y="384" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#6b7280;">Transit corridor risk matters more than country of origin.</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="412" x2="450" y2="412"/>
+
+<!-- Note -->
+<text x="240" y="424" text-anchor="middle" class="note">Minimum documented counts in transit. Source: IOM Missing Migrants via UN SDG.</text>
+
+<!-- Source -->
+<text x="240" y="437" text-anchor="middle" class="source">UN SDG Indicator SM_DTH_MIGR, 2025 &#xB7; data.un.org</text>
+</svg>

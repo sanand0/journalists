@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.lbl      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#231f20; }
+.val      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#6b7280; }
+.axis-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">India&#x2019;s worker productivity grew at</text>
+<text x="240" y="97" text-anchor="middle" class="hl">3&#xD7; the global median in 2025</text>
+
+<!-- Deck -->
+<text x="240" y="118" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">Real GDP per employed person rose 5.12% &#x2014; ranking India 11th of 181</text>
+<text x="240" y="134" text-anchor="middle" class="deck">countries, and nearly three times the median of 1.71%.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="148" x2="450" y2="148"/>
+
+<!-- Scale header -->
+<text x="419" y="156" text-anchor="end" class="axis-lbl">Annual growth in real GDP per employed person &#x2192;</text>
+
+<!-- Scale brackets: bars start x=120, width=300, px_per_pct=300/7=42.857 -->
+<text x="120" y="164" text-anchor="middle" class="axis-lbl">0%</text>
+<text x="249" y="164" text-anchor="middle" class="axis-lbl">3%</text>
+<text x="377" y="164" text-anchor="middle" class="axis-lbl">6%</text>
+<text x="420" y="164" text-anchor="middle" class="axis-lbl">7%</text>
+
+<!-- Global median dashed line at x=120+(1.71/7)*300=193.3 -->
+<line x1="193.3" y1="167" x2="193.3" y2="405" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="3,2"/>
+<text x="193.3" y="164" text-anchor="middle" style="font-family:'Poynter Agate One Con','Arial Narrow',Arial,sans-serif;font-size:8px;fill:#6b7280;">&#x25BE;&#x202F;median&#x202F;1.71%</text>
+
+<!-- Bars: row_height=24, gap=3, start y=163. bar_h=14, bar_y=row_top+5, label_y=row_top+16 -->
+<!-- India bar_h=18, bar_y=row_top+3 -->
+<!-- px_per_pct=300/7=42.857. bars start at x=120 -->
+
+<!-- Row 0: Viet Nam — 5.74% — grey -->
+<text x="112" y="179" text-anchor="end" class="lbl">Viet Nam</text>
+<rect x="120" y="168" width="245.9" height="14" fill="#e5e7eb"/>
+<text x="369" y="179" class="val">5.74%</text>
+
+<!-- Row 1: Bhutan — 5.44% — grey -->
+<text x="112" y="206" text-anchor="end" class="lbl">Bhutan</text>
+<rect x="120" y="195" width="233.1" height="14" fill="#e5e7eb"/>
+<text x="357" y="206" class="val">5.44%</text>
+
+<!-- Row 2: India — 5.12% — navy (highlighted, taller bar) -->
+<text x="112" y="232" text-anchor="end" class="lbl" style="fill:#1d3461;font-weight:bold;">India</text>
+<rect x="120" y="220" width="219.4" height="18" fill="#1d3461"/>
+<text x="343" y="232" class="val" style="fill:#1d3461;font-weight:bold;">5.12%</text>
+
+<!-- Row 3: China — 4.90% — grey -->
+<text x="112" y="259" text-anchor="end" class="lbl">China</text>
+<rect x="120" y="249" width="210.0" height="14" fill="#e5e7eb"/>
+<text x="334" y="259" class="val">4.90%</text>
+
+<!-- Row 4: Nepal — 4.03% — grey -->
+<text x="112" y="286" text-anchor="end" class="lbl">Nepal</text>
+<rect x="120" y="276" width="172.7" height="14" fill="#e5e7eb"/>
+<text x="297" y="286" class="val">4.03%</text>
+
+<!-- Row 5: Sri Lanka — 3.99% — grey -->
+<text x="112" y="313" text-anchor="end" class="lbl">Sri Lanka</text>
+<rect x="120" y="303" width="171.0" height="14" fill="#e5e7eb"/>
+<text x="295" y="313" class="val">3.99%</text>
+
+<!-- Row 6: Indonesia — 3.43% — grey -->
+<text x="112" y="340" text-anchor="end" class="lbl">Indonesia</text>
+<rect x="120" y="330" width="147.0" height="14" fill="#e5e7eb"/>
+<text x="271" y="340" class="val">3.43%</text>
+
+<!-- Row 7: Bangladesh — 2.36% — grey -->
+<text x="112" y="367" text-anchor="end" class="lbl">Bangladesh</text>
+<rect x="120" y="357" width="101.1" height="14" fill="#e5e7eb"/>
+<text x="225" y="367" class="val">2.36%</text>
+
+<!-- Row 8: Pakistan — 0.26% — grey -->
+<text x="112" y="394" text-anchor="end" class="lbl">Pakistan</text>
+<rect x="120" y="384" width="11.1" height="14" fill="#e5e7eb"/>
+<text x="135" y="394" class="val">0.26%</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="415" x2="450" y2="415"/>
+
+<!-- Note -->
+<text x="240" y="428" text-anchor="middle" class="note">Real GDP per employed person, annual growth rate. Global median: 1.71% (181 reporting areas).</text>
+
+<!-- Source -->
+<text x="240" y="443" text-anchor="middle" class="source">UN SDG Indicator SL_EMP_PCAP, 2025 &#xB7; data.un.org</text>
+</svg>

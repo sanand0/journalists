@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:26px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.lbl      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#231f20; }
+.val      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#6b7280; }
+.axis-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">India is the world&#x2019;s #2 destination</text>
+<text x="240" y="96" text-anchor="middle" class="hl">for crop genetic material</text>
+
+<!-- Deck -->
+<text x="240" y="116" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">12,095 seed-sharing agreements flowed to India in 2025 &#x2014; 5&#xD7; more than China,</text>
+<text x="240" y="132" text-anchor="middle" class="deck">and 66.7% of all agreements heading to Southern Asia.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="146" x2="450" y2="146"/>
+
+<!-- Axis label -->
+<text x="430" y="158" text-anchor="end" class="axis-lbl">SMTA count &#x2192;</text>
+
+<!-- Lollipop chart: stems start x=162, scale 258px over 18000 SMTAs -->
+<!-- Row 1: Germany 16566, dot_x=399 -->
+<text x="158" y="166" text-anchor="end" class="lbl">Germany</text>
+<line x1="162" y1="162" x2="399" y2="162" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="399" cy="162" r="5" fill="#d1d5db"/>
+<text x="407" y="166" class="val">16,566</text>
+
+<!-- Row 2: India 12095, dot_x=335 — highlighted navy -->
+<text x="158" y="186" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;fill:#1d3461;">India</text>
+<line x1="162" y1="182" x2="335" y2="182" stroke="#1d3461" stroke-width="2"/>
+<circle cx="335" cy="182" r="7" fill="#1d3461"/>
+<text x="345" y="186" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;font-weight:bold;fill:#1d3461;">12,095</text>
+
+<!-- Row 3: Italy 8267, dot_x=281 -->
+<text x="158" y="206" text-anchor="end" class="lbl">Italy</text>
+<line x1="162" y1="202" x2="281" y2="202" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="281" cy="202" r="5" fill="#d1d5db"/>
+<text x="289" y="206" class="val">8,267</text>
+
+<!-- Row 4: France 4489, dot_x=226 -->
+<text x="158" y="226" text-anchor="end" class="lbl">France</text>
+<line x1="162" y1="222" x2="226" y2="222" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="226" cy="222" r="5" fill="#d1d5db"/>
+<text x="234" y="226" class="val">4,489</text>
+
+<!-- Row 5: Mexico 4234, dot_x=223 -->
+<text x="158" y="246" text-anchor="end" class="lbl">Mexico</text>
+<line x1="162" y1="242" x2="223" y2="242" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="223" cy="242" r="5" fill="#d1d5db"/>
+
+<!-- Row 6: Spain 3076, dot_x=206 -->
+<text x="158" y="266" text-anchor="end" class="lbl">Spain</text>
+<line x1="162" y1="262" x2="206" y2="262" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="206" cy="262" r="5" fill="#d1d5db"/>
+
+<!-- Row 7: Netherlands 2896, dot_x=204 -->
+<text x="158" y="286" text-anchor="end" class="lbl">Netherlands</text>
+<line x1="162" y1="282" x2="204" y2="282" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="204" cy="282" r="5" fill="#d1d5db"/>
+
+<!-- Row 8: USA 2829, dot_x=203 -->
+<text x="158" y="306" text-anchor="end" class="lbl">USA</text>
+<line x1="162" y1="302" x2="203" y2="302" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="203" cy="302" r="5" fill="#d1d5db"/>
+
+<!-- Row 9: Canada 2515, dot_x=198 -->
+<text x="158" y="326" text-anchor="end" class="lbl">Canada</text>
+<line x1="162" y1="322" x2="198" y2="322" stroke="#d1d5db" stroke-width="1.5"/>
+<circle cx="198" cy="322" r="5" fill="#d1d5db"/>
+
+<!-- Row 10: China 2334, dot_x=196 — crimson highlight -->
+<text x="158" y="346" text-anchor="end" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:11px;fill:#c1121f;">China</text>
+<line x1="162" y1="342" x2="196" y2="342" stroke="#c1121f" stroke-width="1.5"/>
+<circle cx="196" cy="342" r="5" fill="#c1121f"/>
+<text x="204" y="346" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#c1121f;">2,334</text>
+
+<!-- X-axis ticks at y=350, labels y=361 -->
+<line x1="162" y1="348" x2="162" y2="352" stroke="#9ca3af" stroke-width="0.8"/>
+<text x="162" y="361" text-anchor="middle" class="axis-lbl">0</text>
+<line x1="234" y1="348" x2="234" y2="352" stroke="#9ca3af" stroke-width="0.8"/>
+<text x="234" y="361" text-anchor="middle" class="axis-lbl">5k</text>
+<line x1="305" y1="348" x2="305" y2="352" stroke="#9ca3af" stroke-width="0.8"/>
+<text x="305" y="361" text-anchor="middle" class="axis-lbl">10k</text>
+<line x1="377" y1="348" x2="377" y2="352" stroke="#9ca3af" stroke-width="0.8"/>
+<text x="377" y="361" text-anchor="middle" class="axis-lbl">15k</text>
+
+<!-- Thin separator below axis -->
+<line x1="162" y1="365" x2="450" y2="365" stroke="#e5e7eb" stroke-width="0.6"/>
+
+<!-- Bottom callout: Treaty gap + India share -->
+<!-- Vertical divider -->
+<line x1="240" y1="370" x2="240" y2="408" stroke="#e5e7eb" stroke-width="0.8"/>
+
+<!-- Left: 56 of 151 treaty members -->
+<text x="120" y="384" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Arial Narrow',Arial,sans-serif;font-size:22px;font-weight:bold;fill:#c1121f;">56 of 151</text>
+<text x="120" y="397" text-anchor="middle" class="note">treaty members</text>
+<text x="120" y="408" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;fill:#c1121f;">lack domestic framework</text>
+
+<!-- Right: India's 66.7% share -->
+<text x="360" y="384" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Arial Narrow',Arial,sans-serif;font-size:22px;font-weight:bold;fill:#1d3461;">66.7%</text>
+<text x="360" y="397" text-anchor="middle" class="note">of Southern Asia&#x2019;s</text>
+<text x="360" y="408" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:10px;fill:#1d3461;">SMTAs went to India</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="412" x2="450" y2="412"/>
+
+<!-- Note -->
+<text x="240" y="424" text-anchor="middle" class="note" textLength="440" lengthAdjust="spacingAndGlyphs">SMTA = Standard Material Transfer Agreement. Crop genetic material sent under the UN Plant Treaty.</text>
+
+<!-- Source -->
+<text x="240" y="437" text-anchor="middle" class="source">UN SDG Indicator ER_CBD_SMTA, 2025 &#xB7; data.un.org</text>
+</svg>

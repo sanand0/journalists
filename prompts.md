@@ -21,7 +21,7 @@ Make sure the text, chart, etc. are easy to understand for a lay audience readin
 Use the data and insights as the source of truth.
 But use your judgement on content, style, design elements, annotations, etc. to make the story clearer and more compelling.
 
-You will be saving them as 2026-03-13-mospi-plfs-v3/*.svg (named descriptively, e.g. 01-marriage-labor-market-cliff.svg, etc.)
+You will be saving them as 2026-03-13-mospi-plfs-v3/\*.svg (named descriptively, e.g. 01-marriage-labor-market-cliff.svg, etc.)
 
 To start with, generate one SVG, view the output, fix any errors you find, and pause to check with me for feedback.
 
@@ -48,8 +48,8 @@ Regenerate the SVG, test it visually by converting it into an image and viewing 
 
 Update statoistics-svg/statoistics-format.md to incorporate the above correction (#1), as well as the following MANDATORY guidelines for print:
 
-- Use the SAME font used in the statnostics/statoistics-svg/*.svg images
-- Use a slightly larger font for the subtitle and footnote. See statnostics/statoistics-svg/*.svg images
+- Use the SAME font used in the statnostics/statoistics-svg/\*.svg images
+- Use a slightly larger font for the subtitle and footnote. See statnostics/statoistics-svg/\*.svg images
 
 Regenerate the SVG, test it visually by converting it into an image and viewing it, and pause to check with me for feedback.
 
@@ -83,9 +83,53 @@ Now, there is a data/mospi-plfs/v4/insights.md. Go through it, find the insights
 
 <!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
 
+### UN Statoistics, 14 Apr 2026 (GitHub Copilot - claude-sonnet-4.6 high)
+
+Read data/us/README.md and the insights in data/un/v3/insights.md (and any related files).
+Go through it, find the insights that are interesting, and create SVGs for them as well, following the same format and style.
+Save them under statnostics/2026-04-14-un-v3/.
+Create corresponding SOP .md files for each new SVG as well.
+Link them from the gallery page.
+Move the gallery page from statnostics/2026-03-13-mospi-plfs-v3/index.html to statnostics/index.html and update links accordingly.
+The UN v3 insights will form a new section at the top.
+
+---
+
+Generate SVGs and SOPs for the remaining data/un/v3/insights.md insights and link from the gallery.
+
+Use slightly more innovative visualizations - but make sure they're especially appropriate, not just fancy. Think about best practices in data visualization and apply them.
+
+---
+
+Create a narrative data story explaining how these Statoistics were created - specifically how AI automates the process of creating these.
+
+Generate this as statnostics/process.html and link it from the gallery.
+
+Make sure that the first page or so gives them a quick summary of the process - and the clear takeaway that AI can automate analysis and insight generation and visualization against a format - to the point of being able to automate a newsroom function. Then continue with the rest of the story explaining the details of the process.
+
+To understand the download process, read data/un/prompts.md and data/un/download_un_data.py.
+
+To understand the analytics process, read data/un/prompts.md and any other files under data/un/ (and if you want more details on how Copilot created these, you can find the session logs for session 86e60a6e-6405-4374-9f95-94782e973b19 in ~/.copilot/ - if you really want to go deep.)
+
+To understand the visualization process, the history of this conversation and related files that were generated will be helpful. So is ./prompts.md - especially the first 150 lines or so, which explain the Statoistics prompts (and if you want more details on how Copilot created these, you can find the session logs for session 5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 in ~/.copilot/ - if you really want to go deep.)
+
+Use the data-story skill. Use tooltips, popups, interactions, and animations as informative and engaging aids.
+
+---
+
+Use SVG images instead of PNG images. The PNGs will not be committed.
+
+Add `.output-box-inner { white-space: pre-wrap; }` to the CSS.
+
+Improve contrast: --crimson is too dark against the black background, so use something lighter.
+
+Increase the default font size for better readability. Increase the `.section { max-width }` correspondingly. Update `.section.wide` width accordingly.
+
+<!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
+
 ## Hack of the day, SVG alignment (Github Copilot - claude-sonnet-4.6 high)
 
-Modify the hackoftheday/ HTML and SVG to use the Poytner Agate One font from assets/*.otf. Use the bold condensed / condensed versions.
+Modify the hackoftheday/ HTML and SVG to use the Poytner Agate One font from assets/\*.otf. Use the bold condensed / condensed versions.
 
 Modify the SVG rendering to native SVG elements: text and tspan (not foreignObject, div), rect, clipPath, defs > style, named fonts, styles scoped via CSS classes on SVG elements, static pre-positioned elements. No JavaScript, div, @import, QR code library, etc. Use robust libraries for conversion if required.
 
@@ -160,10 +204,10 @@ I could not load the generated SVGs on Gnome nor on VS Code's image viewer. But 
 
 Update config.json with optional "status" and "reason" fields.
 
-1) Hacks #4, 8, 10, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 38, 43, 44, 46, 47. Mark them as "Accepted"
-2) Hacks #27, 28, 30, 31, 33 - iphone specific and 29, 34, 35,37, 39, 40, 41, 42, 48, 49  - Android specific. Mark them as "Rejected" with reason: "Hacks must be platform agnostic".
-3) Hack #9: Mark as "Rejected". Reason: "Duplicate of similar one via Sanchar Sathi portal instead of CEIR"
-4) Hack #32: Mark as "Rejected". Reason: "Not a tech hack"
+1. Hacks #4, 8, 10, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 38, 43, 44, 46, 47. Mark them as "Accepted"
+2. Hacks #27, 28, 30, 31, 33 - iphone specific and 29, 34, 35,37, 39, 40, 41, 42, 48, 49 - Android specific. Mark them as "Rejected" with reason: "Hacks must be platform agnostic".
+3. Hack #9: Mark as "Rejected". Reason: "Duplicate of similar one via Sanchar Sathi portal instead of CEIR"
+4. Hack #32: Mark as "Rejected". Reason: "Not a tech hack"
 
 Include an ISO "created" date for all existing hacks, setting it to 10 Mar 2026 at around 12 noon SGT.
 Include an ISO "reviewed" date for all existing hacks, setting it to 11 Mar 2026 10:45 pm SGT.
@@ -178,7 +222,7 @@ Create a template.svg that achieves the same outcome as the hack-of-the-day/temp
 
 Modify index.html to allow switching between the HTML and SVG templates for rendering the cards. The gallery should show the same thumbnails, but clicking on a card should open the popup with the version rendered using the currently selected template (HTML or SVG).
 
-Later on, I will ask you to extend this to the other template-* but for now, just get this far so I can test it.
+Later on, I will ask you to extend this to the other template-\* but for now, just get this far so I can test it.
 
 IMPORTANT: Because Claude will almost certainly stall when generating large file at one shot, generate changes in chunks rather than creating single massive files.
 
@@ -247,7 +291,7 @@ Briefly (in one line) document "Hack of the Day" in the root ./README.md and lin
 
 ## Hack of the day, 10 Mar 2026 (Claude Code - Sonnet 4.6) - Manually edited
 
-Create a template.html that can be combined (e.g. via mustache) with a JSON that, when run, produces the EXACT visual output as the cards in *.avif.
+Create a template.html that can be combined (e.g. via mustache) with a JSON that, when run, produces the EXACT visual output as the cards in \*.avif.
 
 Inspect these cards. Create an appropriate JSON schema to capture these cards.
 
@@ -272,7 +316,7 @@ Document this project in README.md.
 
 ## Hack of the day, 10 Mar 2026 (Codex - gpt-5.4 xhigh) - Dropped
 
-Create a hack-of-the-day/template.html that can be combined (e.g. via mustache) with a JSON that, when run, produces the EXACT visual output as the cards in hack-of-the-day/*.avif.
+Create a hack-of-the-day/template.html that can be combined (e.g. via mustache) with a JSON that, when run, produces the EXACT visual output as the cards in hack-of-the-day/\*.avif.
 
 Inspect these cards. Create an appropriate JSON schema to capture these cards.
 
@@ -342,7 +386,7 @@ Save the insight under `statnostics/${date:yyyy-mm-dd}-insight-slug/insight.json
   ],
   "sources": [
     // Include citations links
-  ]
+  ],
 }
 ```
 

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.lbl      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#231f20; }
+.val      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#6b7280; }
+.axis-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Sending $200 to India: $3.82</text>
+<text x="240" y="97" text-anchor="middle" class="hl" textLength="440" lengthAdjust="spacingAndGlyphs">from London, $32.78 from Johannesburg</text>
+
+<!-- Deck -->
+<text x="240" y="118" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">20 corridors connect to India. The cheapest costs 8.5&#xD7; less than the most expensive</text>
+<text x="240" y="134" text-anchor="middle" class="deck">&#x2014; and 15 of 20 corridors still miss the UN&#x2019;s 3% benchmark.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="148" x2="450" y2="148"/>
+
+<!-- Scale header -->
+<text x="444" y="160" text-anchor="end" class="axis-lbl">Cost of sending $200 (USD) &#x2192;</text>
+
+<!-- Scale brackets -->
+<text x="145" y="160" text-anchor="middle" class="axis-lbl">$0</text>
+<text x="230.7" y="160" text-anchor="middle" class="axis-lbl">$10</text>
+<text x="316.4" y="160" text-anchor="middle" class="axis-lbl">$20</text>
+<text x="402.1" y="160" text-anchor="middle" class="axis-lbl">$30</text>
+
+<!-- UN 3% target dashed line at x=145+(6/35)*300=196.4 -->
+<line x1="196.4" y1="163" x2="196.4" y2="408" stroke="#1a5e6e" stroke-width="0.8" stroke-dasharray="3,2"/>
+<text x="196.4" y="158" text-anchor="middle" style="font-family:'Poynter Agate One Con','Arial Narrow',Arial,sans-serif;font-size:8px;fill:#1a5e6e;">&#x25BE; 3% ($6)</text>
+
+<!-- Legend: teal=meets target, amber=above, crimson=well above -->
+<rect x="390" y="163" width="8" height="8" fill="#1a5e6e"/>
+<text x="400" y="171" class="axis-lbl" style="fill:#1a5e6e;">meets target</text>
+<rect x="390" y="175" width="8" height="8" fill="#92400e"/>
+<text x="400" y="183" class="axis-lbl" style="fill:#92400e;">above target</text>
+<rect x="390" y="187" width="8" height="8" fill="#c1121f"/>
+<text x="400" y="195" class="axis-lbl" style="fill:#c1121f;">well above</text>
+
+<!-- Bars: row_height=28, gap=3, start y=163. bar_y=row_top+5, bar_h=18, label_y=row_top+18 -->
+<!-- px_per_dollar = 300/35 = 8.571. bars start at x=145 -->
+
+<!-- Row 0: UK — $3.82 (1.91%) — teal -->
+<text x="140" y="181" text-anchor="end" class="lbl">UK</text>
+<rect x="145" y="168" width="32.7" height="18" fill="#1a5e6e"/>
+<text x="181" y="181" class="val">$3.82</text>
+
+<!-- Row 1: Singapore — $5.84 (2.92%) — teal -->
+<text x="140" y="212" text-anchor="end" class="lbl">Singapore</text>
+<rect x="145" y="199" width="50.1" height="18" fill="#1a5e6e"/>
+<text x="198" y="212" class="val">$5.84</text>
+
+<!-- Row 2: USA — $7.34 (3.67%) — amber -->
+<text x="140" y="243" text-anchor="end" class="lbl">USA</text>
+<rect x="145" y="230" width="62.9" height="18" fill="#92400e"/>
+<text x="211" y="243" class="val">$7.34</text>
+
+<!-- Row 3: UAE — $7.44 (3.72%) — amber -->
+<text x="140" y="274" text-anchor="end" class="lbl">UAE</text>
+<rect x="145" y="261" width="63.8" height="18" fill="#92400e"/>
+<text x="212" y="274" class="val">$7.44</text>
+
+<!-- Row 4: Saudi Arabia — $11.18 (5.59%) — crimson -->
+<text x="140" y="305" text-anchor="end" class="lbl">Saudi Arabia</text>
+<rect x="145" y="292" width="95.8" height="18" fill="#c1121f"/>
+<text x="244" y="305" class="val">$11.18</text>
+
+<!-- Row 5: Australia — $12.30 (6.15%) — crimson -->
+<text x="140" y="336" text-anchor="end" class="lbl">Australia</text>
+<rect x="145" y="323" width="105.4" height="18" fill="#c1121f"/>
+<text x="254" y="336" class="val">$12.30</text>
+
+<!-- Row 6: Japan — $17.44 (8.72%) — crimson -->
+<text x="140" y="367" text-anchor="end" class="lbl">Japan</text>
+<rect x="145" y="354" width="149.5" height="18" fill="#c1121f"/>
+<text x="298" y="367" class="val">$17.44</text>
+
+<!-- Row 7: South Africa — $32.78 (16.39%) — crimson -->
+<text x="140" y="398" text-anchor="end" class="lbl">South Africa</text>
+<rect x="145" y="385" width="281.0" height="18" fill="#c1121f"/>
+<text x="430" y="398" class="val">$32.78</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="415" x2="450" y2="415"/>
+
+<!-- Note (2 lines) -->
+<text x="240" y="428" text-anchor="middle" class="note">UN target: &#x2264;3% ($6 on a $200 send). Only 5 of 20 corridors into India meet it.</text>
+<text x="240" y="441" text-anchor="middle" class="note">India&#x2019;s average receiving cost: 5.3% ($10.60).</text>
+
+<!-- Source -->
+<text x="240" y="456" text-anchor="middle" class="source">UN SDG Indicator SI_RMT_COST_BC, 2025 &#xB7; data.un.org</text>
+</svg>

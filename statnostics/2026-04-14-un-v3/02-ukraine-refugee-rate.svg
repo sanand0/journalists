@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.lbl      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#231f20; }
+.val      { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#6b7280; }
+.axis-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl" textLength="440" lengthAdjust="spacingAndGlyphs">Ukraine sends out more refugees per capita</text>
+<text x="240" y="97" text-anchor="middle" class="hl">than Afghanistan</text>
+
+<!-- Deck -->
+<text x="240" y="118" text-anchor="middle" class="deck">Ukraine: 11,970 refugees per 100,000 people (&#x2248;12% of population).</text>
+<text x="240" y="134" text-anchor="middle" class="deck">Afghanistan: 9,820 per 100,000. Both are in the global top ten.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="148" x2="450" y2="148"/>
+
+<!-- Scale header -->
+<text x="419" y="160" text-anchor="end" class="axis-lbl">Refugees per 100,000 people &#x2192;</text>
+
+<!-- Scale brackets: bars start x=150, width=270, px_per_unit=270/25000=0.0108 -->
+<text x="150" y="160" text-anchor="middle" class="axis-lbl">0</text>
+<text x="258" y="160" text-anchor="middle" class="axis-lbl">10K</text>
+<text x="366" y="160" text-anchor="middle" class="axis-lbl">20K</text>
+<text x="420" y="160" text-anchor="middle" class="axis-lbl">25K</text>
+
+<!-- Bars: row_height=28, gap=3, start y=163. bar_y=row_top+5, bar_h=18, label_y=row_top+18 -->
+<!-- px_per_unit=270/25000=0.0108. bars start at x=150 -->
+
+<!-- Row 0: Western Sahara — 22,512 — grey -->
+<text x="145" y="181" text-anchor="end" class="lbl">W. Sahara</text>
+<rect x="150" y="168" width="243.1" height="18" fill="#e5e7eb"/>
+<text x="396" y="181" class="val">22,512</text>
+
+<!-- Row 1: Venezuela — 18,469 — grey -->
+<text x="145" y="212" text-anchor="end" class="lbl">Venezuela</text>
+<rect x="150" y="199" width="199.5" height="18" fill="#e5e7eb"/>
+<text x="353" y="212" class="val">18,469</text>
+
+<!-- Row 2: Syrian Arab Republic — 17,632 — grey -->
+<text x="145" y="243" text-anchor="end" class="lbl">Syria</text>
+<rect x="150" y="230" width="190.4" height="18" fill="#e5e7eb"/>
+<text x="344" y="243" class="val">17,632</text>
+
+<!-- Row 3: South Sudan — 16,352 — grey -->
+<text x="145" y="274" text-anchor="end" class="lbl">South Sudan</text>
+<rect x="150" y="261" width="176.6" height="18" fill="#e5e7eb"/>
+<text x="330" y="274" class="val">16,352</text>
+
+<!-- Row 4: Eritrea — 13,442 — grey -->
+<text x="145" y="305" text-anchor="end" class="lbl">Eritrea</text>
+<rect x="150" y="292" width="145.2" height="18" fill="#e5e7eb"/>
+<text x="299" y="305" class="val">13,442</text>
+
+<!-- Row 5: Ukraine — 11,970 — navy (highlighted) -->
+<text x="145" y="336" text-anchor="end" class="lbl" style="fill:#1d3461;font-weight:bold;">Ukraine</text>
+<rect x="150" y="323" width="129.3" height="18" fill="#1d3461"/>
+<text x="283" y="336" class="val" style="fill:#1d3461;font-weight:bold;">11,970</text>
+
+<!-- Row 6: Central African Republic — 11,025 — grey -->
+<text x="145" y="367" text-anchor="end" class="lbl">Cent. Af. Rep.</text>
+<rect x="150" y="354" width="119.1" height="18" fill="#e5e7eb"/>
+<text x="273" y="367" class="val">11,025</text>
+
+<!-- Row 7: Afghanistan — 9,820 — crimson (highlighted) -->
+<text x="145" y="398" text-anchor="end" class="lbl" style="fill:#c1121f;font-weight:bold;">Afghanistan</text>
+<rect x="150" y="385" width="106.2" height="18" fill="#c1121f"/>
+<text x="260" y="398" class="val" style="fill:#c1121f;font-weight:bold;">9,820</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="415" x2="450" y2="415"/>
+
+<!-- Note -->
+<text x="240" y="428" text-anchor="middle" class="note">Per 100,000 people. UNHCR 2025 refugee origin data via UN SDG.</text>
+
+<!-- Source -->
+<text x="240" y="443" text-anchor="middle" class="source">UN SDG Indicator SM_POP_REFG_OR, 2025 &#xB7; data.un.org</text>
+</svg>

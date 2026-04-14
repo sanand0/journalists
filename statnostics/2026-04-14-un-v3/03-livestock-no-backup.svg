@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.big-num  { font-family: GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif; font-size:36px; font-weight:bold; }
+.tbl-hdr  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; font-weight:bold; fill:#231f20; }
+.tbl-cell { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#231f20; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl" textLength="440" lengthAdjust="spacingAndGlyphs">In most countries: 25 local livestock breeds,</text>
+<text x="240" y="97" text-anchor="middle" class="hl">0 ready for recovery if lost</text>
+
+<!-- Deck -->
+<text x="240" y="118" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">The median reporting area has no stored genetic material sufficient to</text>
+<text x="240" y="134" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">rebuild even one local breed &#x2014; if disease or climate wiped it out.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="148" x2="450" y2="148"/>
+
+<!-- Vertical divider between two blocks -->
+<line x1="240" y1="158" x2="240" y2="290" stroke="#e5e7eb" stroke-width="0.8"/>
+
+<!-- LEFT BLOCK: crimson — 80 of 118 reporting areas have ZERO breeds backed up -->
+<!-- Big number "80" at x=120 -->
+<text x="120" y="218" text-anchor="middle" class="big-num" style="fill:#c1121f;">80</text>
+<text x="120" y="238" text-anchor="middle" style="font-family:'Poynter Agate One Con','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#6b7280;">of 118 reporting areas</text>
+<text x="120" y="256" text-anchor="middle" style="font-family:'Poynter Agate One Con','Arial Narrow',Arial,sans-serif;font-size:12px;font-weight:bold;fill:#c1121f;">have ZERO breeds backed up</text>
+
+<!-- RIGHT BLOCK: teal — 67.8% of all reporting areas -->
+<text x="360" y="218" text-anchor="middle" class="big-num" style="fill:#1a5e6e;">67.8%</text>
+<text x="360" y="238" text-anchor="middle" style="font-family:'Poynter Agate One Con','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#6b7280;">of all reporting areas</text>
+<text x="360" y="256" text-anchor="middle" style="font-family:'Poynter Agate One Con','Arial Narrow',Arial,sans-serif;font-size:12px;fill:#1a5e6e;">&#x2014; the majority</text>
+
+<!-- Separator before table -->
+<line class="sep" x1="30" y1="272" x2="450" y2="272"/>
+
+<!-- Table: Country | Local breeds | Backed up | Share -->
+<!-- Header row at y=288 -->
+<text x="40" y="288" class="tbl-hdr">Country</text>
+<text x="205" y="288" text-anchor="end" class="tbl-hdr">Local breeds</text>
+<text x="295" y="288" text-anchor="end" class="tbl-hdr">Backed up</text>
+<text x="385" y="288" text-anchor="end" class="tbl-hdr">Share</text>
+
+<!-- Header underline -->
+<line x1="30" y1="293" x2="450" y2="293" stroke="#e5e7eb" stroke-width="0.6"/>
+
+<!-- China: 872 | 96 | 11.0% -->
+<text x="40" y="311" class="tbl-cell">China</text>
+<text x="205" y="311" text-anchor="end" class="tbl-cell">872</text>
+<text x="295" y="311" text-anchor="end" class="tbl-cell">96</text>
+<text x="385" y="311" text-anchor="end" class="tbl-cell">11.0%</text>
+<line x1="30" y1="316" x2="450" y2="316" stroke="#e5e7eb" stroke-width="0.4"/>
+
+<!-- India: 297 | 44 | 14.8% — navy highlight -->
+<text x="40" y="334" class="tbl-cell" style="fill:#1d3461;font-weight:bold;">India</text>
+<text x="205" y="334" text-anchor="end" class="tbl-cell" style="fill:#1d3461;font-weight:bold;">297</text>
+<text x="295" y="334" text-anchor="end" class="tbl-cell" style="fill:#1d3461;font-weight:bold;">44</text>
+<text x="385" y="334" text-anchor="end" class="tbl-cell" style="fill:#1d3461;font-weight:bold;">14.8%</text>
+<line x1="30" y1="339" x2="450" y2="339" stroke="#e5e7eb" stroke-width="0.4"/>
+
+<!-- Indonesia: 173 | 9 | 5.2% -->
+<text x="40" y="357" class="tbl-cell">Indonesia</text>
+<text x="205" y="357" text-anchor="end" class="tbl-cell">173</text>
+<text x="295" y="357" text-anchor="end" class="tbl-cell">9</text>
+<text x="385" y="357" text-anchor="end" class="tbl-cell">5.2%</text>
+<line x1="30" y1="362" x2="450" y2="362" stroke="#e5e7eb" stroke-width="0.4"/>
+
+<!-- Sri Lanka: 20 | 0 | 0.0% -->
+<text x="40" y="380" class="tbl-cell">Sri Lanka</text>
+<text x="205" y="380" text-anchor="end" class="tbl-cell">20</text>
+<text x="295" y="380" text-anchor="end" class="tbl-cell">0</text>
+<text x="385" y="380" text-anchor="end" class="tbl-cell" style="fill:#c1121f;">0.0%</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="415" x2="450" y2="415"/>
+
+<!-- Note -->
+<text x="240" y="428" text-anchor="middle" class="note">&#x2018;Backed up&#x2019; means enough genetic material stored for full reconstitution if the breed is lost.</text>
+
+<!-- Source -->
+<text x="240" y="443" text-anchor="middle" class="source">UN SDG Indicator ER_GRF_ANIMRCNTN &#xB7; data.un.org</text>
+</svg>

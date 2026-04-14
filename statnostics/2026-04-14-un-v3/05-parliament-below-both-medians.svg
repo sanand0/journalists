@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs><style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#9ca3af; }
+.big-num  { font-family: GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif; font-size:36px; font-weight:bold; }
+.med-num  { font-family: GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif; font-size:28px; font-weight:bold; }
+.col-lbl  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:12px; font-weight:bold; fill:#1a5e6e; }
+.sub-lbl  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:11px; fill:#6b7280; }
+.rank-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; fill:#6b7280; }
+.bar-lbl  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:10px; }
+.axis-lbl { font-family: PoynterAgateOne-Condensed,'Poynter Agate One Con','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+</style></defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl" textLength="440" lengthAdjust="spacingAndGlyphs">India&#x2019;s parliament scores below the global</text>
+<text x="240" y="97" text-anchor="middle" class="hl">median on both women and youth</text>
+
+<!-- Deck -->
+<text x="240" y="118" text-anchor="middle" class="deck" textLength="440" lengthAdjust="spacingAndGlyphs">13.84% women (rank 151 of 156). Youth ratio: 0.32 (rank 138 of 156).</text>
+<text x="240" y="134" text-anchor="middle" class="deck">The global medians are 27.68% and 0.65 respectively.</text>
+
+<!-- Sep after deck -->
+<line class="sep" x1="30" y1="148" x2="450" y2="148"/>
+
+<!-- Vertical divider between two columns -->
+<line x1="240" y1="153" x2="240" y2="390" stroke="#e5e7eb" stroke-width="0.8"/>
+
+<!-- ===== LEFT COLUMN: Women in parliament (x_center=120) ===== -->
+<text x="120" y="175" text-anchor="middle" class="col-lbl">Women in parliament</text>
+
+<!-- India big number -->
+<text x="120" y="215" text-anchor="middle" class="big-num" style="fill:#c1121f;">13.84%</text>
+<text x="120" y="230" text-anchor="middle" class="sub-lbl">India</text>
+<text x="120" y="245" text-anchor="middle" class="rank-lbl">Rank 151 of 156</text>
+
+<!-- Down arrow -->
+<text x="120" y="266" text-anchor="middle" style="font-size:16px;fill:#c1121f;">&#x25BC;</text>
+
+<!-- Global median -->
+<text x="120" y="293" text-anchor="middle" class="med-num" style="fill:#231f20;">27.68%</text>
+<text x="120" y="310" text-anchor="middle" class="sub-lbl">Global median</text>
+
+<!-- ===== RIGHT COLUMN: Youth in parliament (x_center=360) ===== -->
+<text x="360" y="175" text-anchor="middle" class="col-lbl">Youth in parliament</text>
+
+<!-- India big number -->
+<text x="360" y="215" text-anchor="middle" class="big-num" style="fill:#c1121f;">0.32</text>
+<text x="360" y="230" text-anchor="middle" class="sub-lbl">India ratio</text>
+<text x="360" y="245" text-anchor="middle" class="rank-lbl">Rank 138 of 156</text>
+
+<!-- Down arrow -->
+<text x="360" y="266" text-anchor="middle" style="font-size:16px;fill:#c1121f;">&#x25BC;</text>
+
+<!-- Global median -->
+<text x="360" y="293" text-anchor="middle" class="med-num" style="fill:#231f20;">0.65</text>
+<text x="360" y="310" text-anchor="middle" class="sub-lbl">Global median</text>
+
+<!-- Separator before bar comparison -->
+<line class="sep" x1="30" y1="320" x2="450" y2="320"/>
+
+<!-- ===== BAR COMPARISON ===== -->
+<!-- LEFT bars: women, scale 0–50%, width=180, x_start=30 -->
+<!-- India: width=13.84/50*180=49.8 -->
+<!-- Median: width=27.68/50*180=99.6 -->
+
+<text x="30" y="335" class="bar-lbl" style="fill:#c1121f;">India</text>
+<rect x="30" y="338" width="49.8" height="13" fill="#c1121f"/>
+
+<text x="30" y="358" class="bar-lbl" style="fill:#6b7280;">Median</text>
+<rect x="30" y="361" width="99.6" height="13" fill="#e5e7eb" stroke="#9ca3af" stroke-width="0.4"/>
+
+<!-- Scale labels for left -->
+<text x="30" y="382" class="axis-lbl">0%</text>
+<text x="120" y="382" text-anchor="middle" class="axis-lbl">25%</text>
+<text x="210" y="382" text-anchor="end" class="axis-lbl">50%</text>
+
+<!-- RIGHT bars: youth ratio, scale 0–1.0, width=180, x_start=250 -->
+<!-- India: width=0.32*180=57.6 -->
+<!-- Median: width=0.65*180=117.0 -->
+
+<text x="250" y="335" class="bar-lbl" style="fill:#c1121f;">India</text>
+<rect x="250" y="338" width="57.6" height="13" fill="#c1121f"/>
+
+<text x="250" y="358" class="bar-lbl" style="fill:#6b7280;">Median</text>
+<rect x="250" y="361" width="117.0" height="13" fill="#e5e7eb" stroke="#9ca3af" stroke-width="0.4"/>
+
+<!-- Scale labels for right -->
+<text x="250" y="382" class="axis-lbl">0</text>
+<text x="340" y="382" text-anchor="middle" class="axis-lbl">0.5</text>
+<text x="430" y="382" text-anchor="end" class="axis-lbl">1.0</text>
+
+<!-- Footer sep -->
+<line class="sep" x1="30" y1="415" x2="450" y2="415"/>
+
+<!-- Note -->
+<text x="240" y="428" text-anchor="middle" class="note" textLength="440" lengthAdjust="spacingAndGlyphs">Youth ratio: MPs aged &lt;45 as share of those age-eligible &#xF7; that age-group&#x2019;s population share.</text>
+
+<!-- Source -->
+<text x="240" y="443" text-anchor="middle" class="source">UN SDG Indicators SG_GEN_PARL &amp; SG_PLT_RPTY, 2025 &#xB7; data.un.org</text>
+</svg>

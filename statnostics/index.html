@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statoistics · Data Cards Gallery</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      background: #f8f7f4;
+      color: #231f20;
+      min-height: 100vh;
+    }
+
+    /* ── Brand header ── */
+    .site-header {
+      background: #ed1c24;
+      padding: 14px 28px;
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      border-bottom: 2px solid #b01018;
+    }
+    .brand-wordmark {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #fff;
+      white-space: nowrap;
+    }
+    .brand-wordmark .toi { color: #231f20; }
+    .brand-tagline {
+      font-size: 14px;
+      color: rgba(255,255,255,0.88);
+    }
+    .header-desc {
+      margin-left: auto;
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+      text-align: right;
+    }
+
+    /* ── Main content ── */
+    main { max-width: 1120px; margin: 0 auto; padding: 32px 24px 60px; }
+
+    /* ── Section headers ── */
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 40px 0 18px;
+      border-left: 4px solid #ed1c24;
+      padding-left: 14px;
+    }
+    .section-header:first-child { margin-top: 8px; }
+    .section-title { font-size: 20px; font-weight: bold; color: #231f20; }
+    .section-badge {
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #1d3461;
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+    .section-badge.un  { background: #1a5e6e; }
+    .section-badge.v4  { background: #92400e; }
+    .section-desc { font-size: 13px; color: #6b7280; margin-top: 4px; margin-left: 18px; }
+
+    /* ── Card grid ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    /* ── Individual card ── */
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      transition: box-shadow 0.18s, transform 0.18s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transform: translateY(-2px);
+    }
+
+    /* Thumbnail */
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #f9fafb;
+      border-bottom: 1px solid #e5e7eb;
+      cursor: zoom-in;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.2s;
+    }
+    .card:hover .card-thumb img { transform: scale(1.02); }
+
+    /* Card body */
+    .card-body { padding: 13px 15px 14px; flex: 1; display: flex; flex-direction: column; }
+    .card-num {
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 5px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #231f20;
+      line-height: 1.42;
+      flex: 1;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    /* Buttons */
+    .card-actions { display: flex; gap: 8px; }
+    .btn {
+      border: none;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 6px 13px;
+      border-radius: 2px;
+      font-family: inherit;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: background 0.15s;
+    }
+    .btn-view { background: #1d3461; color: #fff; }
+    .btn-view:hover { background: #16284e; }
+    .btn-verify { background: #fff; color: #c1121f; border: 1.5px solid #c1121f; }
+    .btn-verify:hover { background: #fef2f2; }
+
+    /* ── Lightbox ── */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.78);
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox-inner {
+      position: relative;
+      background: #fff;
+      max-width: min(540px, 95vmin);
+      max-height: 95vmin;
+      overflow: auto;
+      border-radius: 3px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    #lightbox-inner img { display: block; width: 100%; height: auto; }
+    #lightbox-close {
+      position: absolute;
+      top: 10px; right: 14px;
+      background: rgba(0,0,0,0.55);
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      line-height: 1;
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+    #lightbox-close:hover { background: rgba(0,0,0,0.8); }
+
+    /* ── Verify sidebar ── */
+    #verify-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 600;
+    }
+    #verify-overlay.open { display: flex; }
+    #verify-scrim {
+      flex: 1;
+      background: rgba(0,0,0,0.45);
+      cursor: pointer;
+    }
+    #verify-panel {
+      width: min(700px, 96vw);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -6px 0 30px rgba(0,0,0,0.18);
+      overflow: hidden;
+    }
+    #verify-header {
+      background: #231f20;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      flex-shrink: 0;
+    }
+    #verify-header-title {
+      flex: 1;
+      font-size: 14px;
+      font-weight: bold;
+      color: rgba(255,255,255,0.9);
+    }
+    #verify-close {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.75);
+      font-size: 22px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0 2px;
+    }
+    #verify-close:hover { color: #fff; }
+    #verify-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 28px 28px 40px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #231f20;
+    }
+
+    /* Markdown styles inside verify panel */
+    #verify-body h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #231f20;
+      border-bottom: 2px solid #ed1c24;
+      padding-bottom: 9px;
+      margin-bottom: 18px;
+    }
+    #verify-body h2 {
+      font-size: 15px;
+      font-weight: bold;
+      color: #1d3461;
+      margin: 28px 0 9px;
+    }
+    #verify-body h3 {
+      font-size: 13px;
+      font-weight: bold;
+      color: #374151;
+      margin: 18px 0 6px;
+    }
+    #verify-body p { margin-bottom: 10px; }
+    #verify-body ul, #verify-body ol { margin: 8px 0 12px 22px; }
+    #verify-body li { margin-bottom: 5px; }
+    #verify-body code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-family: 'Courier New', monospace;
+    }
+    #verify-body pre {
+      background: #1f2937;
+      color: #e5e7eb;
+      padding: 16px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 12px;
+      margin: 12px 0;
+    }
+    #verify-body pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+    #verify-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 14px 0;
+    }
+    #verify-body th {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      padding: 7px 11px;
+      text-align: left;
+      font-weight: bold;
+    }
+    #verify-body td {
+      border: 1px solid #e5e7eb;
+      padding: 7px 11px;
+      vertical-align: top;
+    }
+    #verify-body blockquote {
+      border-left: 3px solid #ed1c24;
+      margin: 14px 0;
+      padding: 10px 18px;
+      background: #fef2f2;
+      color: #374151;
+      border-radius: 0 3px 3px 0;
+    }
+    #verify-body a { color: #1d3461; text-decoration: underline; }
+    #verify-body hr { border: none; border-top: 1px solid #e5e7eb; margin: 20px 0; }
+    .verify-loading { color: #6b7280; font-style: italic; }
+    .verify-error {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: 4px;
+      padding: 16px;
+      color: #c1121f;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 20px;
+    }
+    footer a { color: #6b7280; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <span class="brand-wordmark">STA<span class="toi">TOI</span>STICS</span>
+  <span class="brand-tagline">A slice of life in numbers</span>
+  <span class="header-desc">Data Journalism Cards Gallery &nbsp;·&nbsp; <a href="process.html" style="color:inherit;text-decoration:underline;font-size:12px">How AI built this →</a></span>
+</header>
+
+<main>
+
+  <!-- ── UN v3 Section ── -->
+  <div class="section-header" style="margin-top:8px">
+    <span class="section-title">UN Global Data · 2025</span>
+    <span class="section-badge un">UN</span>
+  </div>
+  <p class="section-desc">5 data cards from UN SDG indicators: remittances, refugees, livestock, productivity, and parliament</p>
+
+  <div class="card-grid" id="grid-un-v3"></div>
+
+  <!-- ── PLFS v3 Section ── -->
+  <div class="section-header" style="margin-top:52px">
+    <span class="section-title">PLFS Annual Survey 2022–23</span>
+    <span class="section-badge">v3</span>
+  </div>
+  <p class="section-desc">7 data cards on work, education, and gender from India's Periodic Labour Force Survey (v3 analysis)</p>
+
+  <div class="card-grid" id="grid-v3"></div>
+
+  <!-- ── PLFS v4 Section ── -->
+  <div class="section-header" style="margin-top:52px">
+    <span class="section-title">PLFS Annual Survey 2024</span>
+    <span class="section-badge v4">v4</span>
+  </div>
+  <p class="section-desc">5 new data cards on household roles, job-search duration, profession quality, and technical education</p>
+
+  <div class="card-grid" id="grid-v4"></div>
+
+</main>
+
+<footer>
+  <p>Statoistics · Data journalism for Indian newsrooms ·
+    Sources: <a href="https://mospi.gov.in/periodic-labour-force-survey-plfs-annual-report-" target="_blank">Periodic Labour Force Survey (MOSPI)</a>
+    &amp; <a href="https://data.un.org" target="_blank">UN Data SDG Harmonized Global Dataflow</a>
+  </p>
+</footer>
+
+<!-- ── Lightbox ── -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Full-size card viewer">
+  <div id="lightbox-inner">
+    <button id="lightbox-close" aria-label="Close">✕</button>
+    <img id="lightbox-img" src="" alt="Full-size data card">
+  </div>
+</div>
+
+<!-- ── Verify sidebar ── -->
+<div id="verify-overlay" role="dialog" aria-modal="true" aria-label="Verification SOP">
+  <div id="verify-scrim"></div>
+  <div id="verify-panel">
+    <div id="verify-header">
+      <span>📋</span>
+      <span id="verify-header-title">Verification SOP</span>
+      <button id="verify-close" aria-label="Close">✕</button>
+    </div>
+    <div id="verify-body">
+      <p class="verify-loading">Loading verification checklist…</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── Card data ────────────────────────────────────────────────────────────────
+
+const sections = [
+  {
+    gridId: "grid-un-v3",
+    base: "./2026-04-14-un-v3/",
+    cards: [
+      {
+        file: "01-remittance-cost-gap",
+        title: "Sending $200 to India: $3.82 from London, $32.78 from Johannesburg",
+        desc: "20 corridors, one destination. The cheapest costs 8.5× less than the most expensive — and 15 of 20 miss the UN's 3% benchmark."
+      },
+      {
+        file: "02-ukraine-refugee-rate",
+        title: "Ukraine sends out more refugees per capita than Afghanistan",
+        desc: "Ukraine: 11,970 refugees per 100,000 people (≈12% of population). Afghanistan: 9,820. Both are in the global top ten."
+      },
+      {
+        file: "03-livestock-no-backup",
+        title: "Most countries have zero livestock breeds ready for recovery",
+        desc: "The median reporting country has 25 local breeds and enough genetic backup to rebuild exactly none of them."
+      },
+      {
+        file: "04-india-productivity-growth",
+        title: "India's workers grew 3× more productive than the world median in 2025",
+        desc: "Real GDP per employed person rose 5.12% — ranking India 11th of 181 countries, nearly 3× the 1.71% global median."
+      },
+      {
+        file: "05-parliament-below-both-medians",
+        title: "India's parliament scores below the global median on women and on youth",
+        desc: "13.84% women (rank 151 of 156). Youth ratio: 0.32 (rank 138 of 156). Global medians: 27.68% and 0.65."
+      },
+      {
+        file: "06-seed-crop-diversity",
+        title: "India is the world's #2 destination for crop genetic material",
+        desc: "12,095 seed-sharing agreements flowed to India in 2025 — 5× more than China. But 56 of 151 treaty members have no domestic framework to use."
+      },
+      {
+        file: "07-migration-deaths-concentration",
+        title: "Five migration routes account for over half of all documented deaths",
+        desc: "Iran, Libya, Yemen, Myanmar and Tunisia recorded 4,360 of 7,672 deaths in 2025 — 56.8% of the global documented total."
+      },
+      {
+        file: "08-youth-strategy-gap",
+        title: "Only 39% of governments have a youth-jobs plan that's actually running",
+        desc: "185 reporting areas. 67 have a written plan sitting idle. India has a plan on paper — not yet operational."
+      },
+      {
+        file: "09-water-rules-vs-practice",
+        title: "Written water rules are common. Real community participation is not.",
+        desc: "87.5% of areas have clearly defined participation procedures in law. Only 26.9% achieve high participation in practice."
+      },
+      {
+        file: "10-biodiversity-plans-vs-done",
+        title: "Nature is in the plan. But only 1 in 4 countries says it's achieved.",
+        desc: "158 of 195 reporting areas say biodiversity is in their national framework. Only 50 (25.6%) say the target is actually achieved."
+      }
+    ]
+  },
+  {
+    gridId: "grid-v3",
+    base: "./2026-03-13-mospi-plfs-v3/",
+    cards: [
+      {
+        file: "01-marriage-labor-market-cliff",
+        title: "For India's women graduates, marriage ends the career",
+        desc: "Marriage is linked to a sharp exit from paid work, even among college-educated women aged 25–34."
+      },
+      {
+        file: "02-hidden-homemaker-work",
+        title: "India's 'homemakers' hide a vast pool of unpaid work",
+        desc: "8.4% of women classified as doing 'domestic duties only' still worked in the survey week — mostly as unpaid family workers."
+      },
+      {
+        file: "03-regular-jobs-not-formal",
+        title: "Only 1 in 3 regular salaried jobs is truly formal",
+        desc: "Most 'regular salaried' workers lack a written contract, paid leave, or social security — median pay reflects the gap."
+      },
+      {
+        file: "04-graduate-mismatch",
+        title: "More graduates farm the land than write the code",
+        desc: "Among all graduate workers, farming and sales jobs far outnumber software and engineering roles."
+      },
+      {
+        file: "05-microfirm-earnings-gap",
+        title: "The same degree, very different pay",
+        desc: "Employer size matters more than a graduate's education: urban graduates in large firms earn 2–3× those in micro-firms."
+      },
+      {
+        file: "06-mgnreg-pays-less",
+        title: "MGNREG does not pay more than other casual work",
+        desc: "In the PLFS diary data, rural men earn ₹57/hr in other casual work — a quarter more than MGNREG's ₹45/hr."
+      },
+      {
+        file: "07-school-dropout-gender-split",
+        title: "Why school stops: the answer splits cleanly by gender",
+        desc: "Among married 18–24-year-olds who left school, boys overwhelmingly cite income; girls cite domestic duties."
+      }
+    ]
+  },
+  {
+    gridId: "grid-v4",
+    base: "./2026-03-13-mospi-plfs-v4/",
+    cards: [
+      {
+        file: "01-household-wife-role-cliff",
+        title: "In a joint family, being 'the wife' costs more than the marriage itself",
+        desc: "Married graduate women listed as 'spouse of head' are far less likely to hold a regular job — even after controlling for children and social group."
+      },
+      {
+        file: "02-years-long-job-search",
+        title: "Half of married educated women have been searching for work for 3+ years",
+        desc: "50.2% of urban married graduate women aged 25–34 who are looking for work have been searching for more than 3 years."
+      },
+      {
+        file: "03-teaching-nursing-precarity",
+        title: "Teaching and nursing: not as stable as families believe",
+        desc: "Young primary teachers earn a median ₹12,175/month and only 42% have a fully formal job. Nurses are worse off still."
+      },
+      {
+        file: "04-teaching-gender-pay-gap",
+        title: "Same classroom, half the pay: women teachers earn far less",
+        desc: "Men primary school teachers earn a median ₹20,000/month — double the ₹10,000 for women in the same role."
+      },
+      {
+        file: "05-degree-vs-diploma",
+        title: "Engineering degree or diploma? Two very different futures",
+        desc: "Engineering degree holders earn nearly double those with a below-graduate diploma, and twice as many hold formal jobs."
+      }
+    ]
+  }
+];
+
+// ─── Build grids ───────────────────────────────────────────────────────────────
+
+sections.forEach(({ gridId, base, cards }) => {
+  const grid = document.getElementById(gridId);
+  cards.forEach((card, i) => {
+    const num = String(i + 1).padStart(2, "0");
+    const svgSrc = `${base}${card.file}.svg`;
+    const mdSrc  = `${base}${card.file}.md`;
+
+    const el = document.createElement("div");
+    el.className = "card";
+    el.innerHTML = `
+      <div class="card-thumb" data-svg="${svgSrc}" title="Click to view full size">
+        <img src="${svgSrc}" alt="${card.title}" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-num">Card ${num}</div>
+        <div class="card-title">${card.title}</div>
+        <div class="card-desc">${card.desc}</div>
+        <div class="card-actions">
+          <button class="btn btn-view" data-svg="${svgSrc}">View full size</button>
+          <button class="btn btn-verify" data-md="${mdSrc}" data-title="${card.title}">Verify</button>
+        </div>
+      </div>`;
+    grid.appendChild(el);
+  });
+});
+
+// ─── Lightbox ──────────────────────────────────────────────────────────────────
+
+const lightbox    = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
+
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightbox.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightboxImg.src = "";
+  document.body.style.overflow = "";
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeLightbox(); closeVerify(); }
+});
+
+document.addEventListener("click", e => {
+  const thumb = e.target.closest(".card-thumb");
+  if (thumb) openLightbox(thumb.dataset.svg);
+  const btnView = e.target.closest(".btn-view");
+  if (btnView) openLightbox(btnView.dataset.svg);
+});
+
+// ─── Verify sidebar ────────────────────────────────────────────────────────────
+
+const verifyOverlay = document.getElementById("verify-overlay");
+const verifyBody    = document.getElementById("verify-body");
+const verifyTitle   = document.getElementById("verify-header-title");
+const verifyClose   = document.getElementById("verify-close");
+const verifyScrim   = document.getElementById("verify-scrim");
+
+function openVerify(mdSrc, title) {
+  verifyTitle.textContent = title;
+  verifyBody.innerHTML = '<p class="verify-loading">Loading verification checklist…</p>';
+  verifyOverlay.classList.add("open");
+  document.body.style.overflow = "hidden";
+
+  fetch(mdSrc)
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.text();
+    })
+    .then(md => {
+      verifyBody.innerHTML = marked.parse(md);
+    })
+    .catch(err => {
+      verifyBody.innerHTML = `
+        <div class="verify-error">
+          <strong>Could not load the verification file.</strong><br><br>
+          If you opened this page via <code>file://</code>, your browser may block local file access.<br>
+          <strong>Fix:</strong> serve this folder via a local HTTP server:<br>
+          <pre><code>cd statnostics
+python3 -m http.server 8000</code></pre>
+          Then open <a href="http://localhost:8000">http://localhost:8000</a>.<br><br>
+          <em>Or open the file directly:</em> <a href="${mdSrc}" target="_blank">${mdSrc}</a><br>
+          <small style="color:#9ca3af">Error: ${err.message}</small>
+        </div>`;
+    });
+}
+
+function closeVerify() {
+  verifyOverlay.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+verifyClose.addEventListener("click", closeVerify);
+verifyScrim.addEventListener("click", closeVerify);
+
+document.addEventListener("click", e => {
+  const btn = e.target.closest(".btn-verify");
+  if (btn) openVerify(btn.dataset.md, btn.dataset.title);
+});
+</script>
+</body>
+</html>
