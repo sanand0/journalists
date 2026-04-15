@@ -125,6 +125,10 @@ Improve contrast: --crimson is too dark against the black background, so use som
 
 Increase the default font size for better readability. Increase the `.section { max-width }` correspondingly. Update `.section.wide` width accordingly.
 
+---
+
+There's an audio narrative at https://files.s-anand.net/images/2026-04-14-the-plumbing-behind-the-prose.opus that explains the process. Include this near the top of process.html, mentioning what it is.
+
 <!-- copilot --resume=5cf8e597-fd8c-4b14-ac5b-ff6139f507d4 -->
 
 ## Hack of the day, SVG alignment (Github Copilot - claude-sonnet-4.6 high)

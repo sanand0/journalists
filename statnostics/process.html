@@ -259,7 +259,37 @@
   .output-box-inner .hi { color: var(--crimson); font-weight: 600; }
   .output-box-inner .comment { color: #9ca3af; }
 
-  /* ── INSIGHT MOSAIC ────────────────────────────────── */
+  /* ── AUDIO SECTION ────────────────────────────────── */
+  .audio-section { padding-top: 1.5rem; padding-bottom: 0; }
+  .audio-card {
+    background: #1f2937;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+  .audio-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: .25rem;
+  }
+  .audio-icon { font-size: 1.75rem; flex-shrink: 0; line-height: 1; margin-top: .1rem; }
+  .audio-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: .25rem;
+  }
+  .audio-desc {
+    font-family: var(--sans);
+    font-size: .875rem;
+    color: #9ca3af;
+    line-height: 1.5;
+  }
+  audio { accent-color: var(--crimson-hi); }
+
+
   .insight-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -543,6 +573,23 @@
   <a href="#takeaway">So What?</a>
 </nav>
 
+<!-- AUDIO NARRATIVE -->
+<section class="section audio-section">
+  <div class="audio-card fade-in">
+    <div class="audio-meta">
+      <span class="audio-icon">🎙️</span>
+      <div>
+        <div class="audio-title">Listen: The Plumbing Behind the Prose</div>
+        <div class="audio-desc">A 3-minute audio walkthrough of how AI built this entire pipeline — from raw UN data to publication-ready cards. Same story you're about to read, in spoken form.</div>
+      </div>
+    </div>
+    <audio controls preload="metadata" style="width:100%;margin-top:.75rem;">
+      <source src="https://files.s-anand.net/images/2026-04-14-the-plumbing-behind-the-prose.opus" type="audio/ogg; codecs=opus">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</section>
+
 <!-- ACT 0: SUMMARY -->
 <section class="section" id="setup">
   <div class="section-label">The Setup</div>
@@ -552,27 +599,27 @@
     The <span data-tip="United Nations SDG Harmonized Global Dataflow — 15 separate data streams
     tracking everything from seed-sharing agreements to migration deaths, as reported by 195 countries.
     <span class='tipbox'>UN SDG Global Dataflow: 15 streams, 195 countries, millions of data points per year.</span>">UN's
-    SDG dataflow</span> is one of the most comprehensive datasets ever assembled. It tracks 195 countries across 
-    indicators spanning remittances, refugee flows, biodiversity, parliamentary representation, water law, 
+    SDG dataflow</span> is one of the most comprehensive datasets ever assembled. It tracks 195 countries across
+    indicators spanning remittances, refugee flows, biodiversity, parliamentary representation, water law,
     and a hundred things in between.
     <span class="tipbox">UN SDG Global Dataflow: 15 streams, 195 countries, millions of data points per year.</span>
   </p>
 
   <p class="fade-in">
-    It is also, in its raw form, almost completely unreadable by a human on a deadline. The data is encoded 
-    in <span data-tip="Statistical Data and Metadata eXchange — the UN's XML-based format for publishing 
-    statistical data. Dense, technical, designed for machines not journalists."><span class="tipbox">SDMX: Statistical Data and Metadata eXchange. Dense XML format used by statistical agencies worldwide.</span>SDMX format</span>, 
+    It is also, in its raw form, almost completely unreadable by a human on a deadline. The data is encoded
+    in <span data-tip="Statistical Data and Metadata eXchange — the UN's XML-based format for publishing
+    statistical data. Dense, technical, designed for machines not journalists."><span class="tipbox">SDMX: Statistical Data and Metadata eXchange. Dense XML format used by statistical agencies worldwide.</span>SDMX format</span>,
     spread across dozens of indicator codes, and arrives as compressed CSV slices you have to know how to ask for.
   </p>
 
   <p class="fade-in">
-    Someone at a news organisation would normally need a data journalist, an API expert, two weeks, and 
-    a research budget. Instead, here is what actually happened: one editor typed four short prompts 
+    Someone at a news organisation would normally need a data journalist, an API expert, two weeks, and
+    a research budget. Instead, here is what actually happened: one editor typed four short prompts
     into an AI coding assistant. What came back changed what a newsroom data workflow can look like.
   </p>
 
   <div class="pullquote fade-in">
-    "The human wrote roughly 200 words total. The AI wrote 1,929 lines of production code, ran the analysis 
+    "The human wrote roughly 200 words total. The AI wrote 1,929 lines of production code, ran the analysis
     three times, produced 10 publication-ready cards, and wrote the fact-checking guides."
   </div>
 
@@ -621,8 +668,8 @@
   <h2>The ten-word brief that produced 803 lines of production code</h2>
 
   <p class="lede fade-in">
-    Imagine you hand a talented new analyst a single sentence and walk away. 
-    You come back an hour later to find a fully documented API client sitting on your desk, 
+    Imagine you hand a talented new analyst a single sentence and walk away.
+    You come back an hour later to find a fully documented API client sitting on your desk,
     handling rate limits, resume-from-failure, parallel downloads, and compressed storage. That is, essentially, what happened.
   </p>
 
@@ -670,10 +717,10 @@ UNSD       DF_UNDATA_ENERGY  Energy Statistics
   </div>
 
   <p class="fade-in">
-    The AI didn't just execute the instruction — it made engineering choices. It chose 
-    <span data-tip="Write-Ahead Logging: a SQLite mode that makes concurrent reads and writes safe, 
+    The AI didn't just execute the instruction — it made engineering choices. It chose
+    <span data-tip="Write-Ahead Logging: a SQLite mode that makes concurrent reads and writes safe,
     preventing database corruption if the script is interrupted mid-download.
-    <span class='tipbox'>WAL mode: SQLite setting that prevents corruption on interrupted writes.</span>">WAL mode</span> 
+    <span class='tipbox'>WAL mode: SQLite setting that prevents corruption on interrupted writes.</span>">WAL mode</span>
     for the SQLite database, knowing that parallel download jobs might write simultaneously.
     It chose gzip compression for the CSV outputs. It built a proper <code>--force</code> flag.
     These are decisions an experienced data engineer would make — not things the human specified.
@@ -683,9 +730,9 @@ UNSD       DF_UNDATA_ENERGY  Energy Statistics
     <div class="step-num">The result</div>
     <h3>15 dataflows cataloged. The SDG slice alone covers 195 countries.</h3>
     <p>
-      The AI's downloader fetched the UN's full catalog, probed each dataflow for recent years, 
-      and produced a structured inventory. The <strong>SDG Harmonized Global Dataflow</strong> 
-      (version 1.24) turned out to be the richest source — 2025 and 2026 data available, 
+      The AI's downloader fetched the UN's full catalog, probed each dataflow for recent years,
+      and produced a structured inventory. The <strong>SDG Harmonized Global Dataflow</strong>
+      (version 1.24) turned out to be the richest source — 2025 and 2026 data available,
       covering everything the analysis needed.
     </p>
   </div>
@@ -697,8 +744,8 @@ UNSD       DF_UNDATA_ENERGY  Energy Statistics
   <h2>Not "process the data." Find the stories.</h2>
 
   <p class="lede fade-in">
-    Raw data isn't news. A country's remittance cost as a percentage of $200 isn't a headline. 
-    The fact that sending money from Johannesburg to Mumbai costs 8.5 times more than sending it 
+    Raw data isn't news. A country's remittance cost as a percentage of $200 isn't a headline.
+    The fact that sending money from Johannesburg to Mumbai costs 8.5 times more than sending it
     from London — that's a headline.
   </p>
 
@@ -724,9 +771,9 @@ Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a
   </div>
 
   <p class="fade-in">
-    The AI ran the analysis three times, each round deeper than the last. Between rounds, 
-    the human added two lines of direction — nudges, not rewrites. The AI went online between 
-    rounds to research what other journalists had already done with similar datasets, 
+    The AI ran the analysis three times, each round deeper than the last. Between rounds,
+    the human added two lines of direction — nudges, not rewrites. The AI went online between
+    rounds to research what other journalists had already done with similar datasets,
     so it could find the angles that hadn't been covered yet.
   </p>
 
@@ -736,7 +783,7 @@ Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a
       <div class="tl-body">
         <span class="tl-tag ai">Round 1 · v1</span>
         <h4>5 story leads from raw data exploration</h4>
-        <p>Remittance cost gap · Biodiversity Target 14 · Gender-balanced but old parliaments · 
+        <p>Remittance cost gap · Biodiversity Target 14 · Gender-balanced but old parliaments ·
         Ukraine vs Afghanistan refugee rate · UN's 3% remittance benchmark nearly unmet</p>
       </div>
     </div>
@@ -753,7 +800,7 @@ Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a
       <div class="tl-body">
         <span class="tl-tag ai">Round 2 · v2</span>
         <h4>7 story leads — India angles added, web research incorporated</h4>
-        <p>India remittance corridor spread (£3.82 vs $32.78) · India productivity rank (11th of 181) · 
+        <p>India remittance corridor spread (£3.82 vs $32.78) · India productivity rank (11th of 181) ·
         Migration deaths concentration · Youth employment strategy gap · more</p>
       </div>
     </div>
@@ -770,8 +817,8 @@ Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a
       <div class="tl-body">
         <span class="tl-tag ai">Round 3 · v3</span>
         <h4>10 verified story leads + 1,126-line pipeline + 20+ output CSVs</h4>
-        <p>Added: Seed SMTA crop diversity (India #2 globally) · Livestock backup gap · 
-        Water law vs actual participation · Biodiversity plan vs reality. 
+        <p>Added: Seed SMTA crop diversity (India #2 globally) · Livestock backup gap ·
+        Water law vs actual participation · Biodiversity plan vs reality.
         Each lead supported by a reproducible CSV.</p>
       </div>
     </div>
@@ -781,15 +828,15 @@ Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a
     <div class="step-num">The editorial judgment at work</div>
     <h3>The AI made choices a data editor would recognize.</h3>
     <p>
-      Take the Ukraine finding. The AI didn't just report that Ukraine has 11,970 refugees 
-      per 100,000 people. It framed it against Afghanistan — a country synonymous with 
-      refugee crisis in public perception — and showed that Ukraine now <em>exceeds</em> that rate. 
+      Take the Ukraine finding. The AI didn't just report that Ukraine has 11,970 refugees
+      per 100,000 people. It framed it against Afghanistan — a country synonymous with
+      refugee crisis in public perception — and showed that Ukraine now <em>exceeds</em> that rate.
       That reframing is an editorial choice, not a calculation. The AI made it.
     </p>
     <p>
-      Or take the seed story. Among 15 dataflows and hundreds of indicators, the AI surfaced 
-      a little-known indicator — Standard Material Transfer Agreements — and noticed that India 
-      receives more crop genetic material than any country except Germany. A human analyst 
+      Or take the seed story. Among 15 dataflows and hundreds of indicators, the AI surfaced
+      a little-known indicator — Standard Material Transfer Agreements — and noticed that India
+      receives more crop genetic material than any country except Germany. A human analyst
       would need to know to look for it. The AI found it by exploration.
     </p>
   </div>
@@ -801,9 +848,9 @@ Keep in mind that the analysis must ALSO be <span class="kw">SIMPLE enough for a
   <h2>From insight to print-ready card — matching the brand spec to the pixel</h2>
 
   <p class="lede fade-in">
-    A data insight is not a published card. Someone has to turn "India ranks 11th in worker 
-    productivity growth" into something a reader will stop and absorb. That means choosing 
-    the right chart type, placing text so it doesn't overflow, matching the masthead font 
+    A data insight is not a published card. Someone has to turn "India ranks 11th in worker
+    productivity growth" into something a reader will stop and absorb. That means choosing
+    the right chart type, placing text so it doesn't overflow, matching the masthead font
     exactly, and hitting a sub-second print deadline.
   </p>
 
@@ -854,17 +901,17 @@ Largest: card 10 biodiversity waffle = 265 lines
   </div>
 
   <p class="fade-in">
-    The human gave feedback once — on the very first card. The tagline was too small. 
-    The colour palette needed to be more print-friendly. Three sentences of feedback, 
-    and the AI updated the brand spec file and regenerated everything correctly. 
+    The human gave feedback once — on the very first card. The tagline was too small.
+    The colour palette needed to be more print-friendly. Three sentences of feedback,
+    and the AI updated the brand spec file and regenerated everything correctly.
     Cards 2 through 10 went out without another round of corrections.
   </p>
 
   <p class="fade-in">
-    Notice what wasn't specified: the chart types. The human never said "use a lollipop chart." 
-    The AI chose it for card 06 because a lollipop shows ranked data with large gaps between items 
-    more clearly than a bar chart — fewer ink-to-insight wasted pixels. 
-    It chose a waffle chart for card 10 because 195 small squares make the minority of 
+    Notice what wasn't specified: the chart types. The human never said "use a lollipop chart."
+    The AI chose it for card 06 because a lollipop shows ranked data with large gaps between items
+    more clearly than a bar chart — fewer ink-to-insight wasted pixels.
+    It chose a waffle chart for card 10 because 195 small squares make the minority of
     50 "achieved" countries <em>feel</em> like a minority in a way a percentage never can.
   </p>
 
@@ -895,16 +942,16 @@ Largest: card 10 biodiversity waffle = 265 lines
   <h2>The AI wrote the fact-checking guide for its own output</h2>
 
   <p class="lede fade-in">
-    There is an obvious problem with AI-generated data journalism: how does a human editor 
-    verify it? The same AI that wrote the insight also wrote the SOP — the 
-    Standard Operating Procedure that tells a journalist exactly how to check every number 
+    There is an obvious problem with AI-generated data journalism: how does a human editor
+    verify it? The same AI that wrote the insight also wrote the SOP — the
+    Standard Operating Procedure that tells a journalist exactly how to check every number
     before it goes to print.
   </p>
 
   <p class="fade-in">
-    Each of the 10 cards has a matching verification guide. They follow the same seven-section 
-    structure: how to download the source data, what the card is claiming, the fastest way 
-    to verify it, which exact CSV rows contain the numbers, a card-text-to-source-value table, 
+    Each of the 10 cards has a matching verification guide. They follow the same seven-section
+    structure: how to download the source data, what the card is claiming, the fastest way
+    to verify it, which exact CSV rows contain the numbers, a card-text-to-source-value table,
     and common verification mistakes to avoid.
   </p>
 
@@ -962,14 +1009,14 @@ India is in REF_AREA=356 as recipient, not sender.
   </div>
 
   <p class="fade-in">
-    This is the key trust mechanism. AI-generated journalism that cannot be verified by 
-    a human is a liability. AI-generated journalism that comes with a complete verification 
-    trail is an asset. The SOPs mean that a journalist who has never seen this dataset 
+    This is the key trust mechanism. AI-generated journalism that cannot be verified by
+    a human is a liability. AI-generated journalism that comes with a complete verification
+    trail is an asset. The SOPs mean that a journalist who has never seen this dataset
     can reproduce every number in under ten minutes.
   </p>
 
   <p class="fade-in">
-    Try it: open any card in <a href="index.html">the gallery</a>, click "Verify," 
+    Try it: open any card in <a href="index.html">the gallery</a>, click "Verify,"
     and follow the checklist. The numbers hold.
   </p>
 </section>
@@ -1053,49 +1100,49 @@ India is in REF_AREA=356 as recipient, not sender.
   <h2>A newsroom function just got automated. Not replaced — automated.</h2>
 
   <p class="lede fade-in">
-    There is a difference between a tool that helps a journalist work faster and a system 
-    that can run an entire pipeline from raw data to published card with minimal human input. 
+    There is a difference between a tool that helps a journalist work faster and a system
+    that can run an entire pipeline from raw data to published card with minimal human input.
     This is the second thing.
   </p>
 
   <p class="fade-in">
-    The human in this workflow didn't know SDMX format. Didn't write SQL. Didn't design a chart. 
-    Didn't calculate a percentage. Didn't pixel-check a font size. 
-    What the human did was something harder to automate: decided what <em>mattered</em>. 
-    "Find the surprising angles. Write for lay readers. Make it verifiable." 
+    The human in this workflow didn't know SDMX format. Didn't write SQL. Didn't design a chart.
+    Didn't calculate a percentage. Didn't pixel-check a font size.
+    What the human did was something harder to automate: decided what <em>mattered</em>.
+    "Find the surprising angles. Write for lay readers. Make it verifiable."
     Those are editorial judgments, and they guided everything.
   </p>
 
   <div class="pullquote fade-in">
-    "The workflow scales. Point it at any structured dataset — MOSPI, RBI, NFHS — write 
+    "The workflow scales. Point it at any structured dataset — MOSPI, RBI, NFHS — write
     four prompts, and the machine produces the same pipeline: download, analyze, visualize, verify."
   </div>
 
   <p class="fade-in">
-    We tested exactly this. The same process produced 
-    <a href="index.html#grid-v3">7 cards from India's PLFS survey</a> and 
-    <a href="index.html#grid-v4">5 cards from PLFS v4</a> before the UN work began. 
+    We tested exactly this. The same process produced
+    <a href="index.html#grid-v3">7 cards from India's PLFS survey</a> and
+    <a href="index.html#grid-v4">5 cards from PLFS v4</a> before the UN work began.
     The prompts were nearly identical. The outputs were equally publication-ready.
   </p>
 
   <p class="fade-in">
-    What changes when this becomes routine? Data stories that currently take a week of 
-    journalist-plus-designer time now take an afternoon — and the human spend that afternoon 
+    What changes when this becomes routine? Data stories that currently take a week of
+    journalist-plus-designer time now take an afternoon — and the human spend that afternoon
     on the editorial judgment, not the plumbing. The machine handles the plumbing.
   </p>
 
   <h3 class="fade-in">What this is not</h3>
 
   <p class="fade-in">
-    It is not autonomous journalism. Every card in this gallery was published because a human 
-    editor decided it was ready. The verification SOPs exist precisely because the AI's 
-    output needs a human check before it goes to print. The editorial voice — the decision 
-    to compare Ukraine to Afghanistan, to focus on India's seed-diversity rank — came from 
+    It is not autonomous journalism. Every card in this gallery was published because a human
+    editor decided it was ready. The verification SOPs exist precisely because the AI's
+    output needs a human check before it goes to print. The editorial voice — the decision
+    to compare Ukraine to Afghanistan, to focus on India's seed-diversity rank — came from
     a person with journalistic judgment.
   </p>
 
   <p class="fade-in">
-    What AI automates is the distance between "I have a dataset" and "I have something 
+    What AI automates is the distance between "I have a dataset" and "I have something
     a journalist can read and verify." That distance used to take weeks. Now it takes hours.
   </p>
 
