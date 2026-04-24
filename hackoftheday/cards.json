@@ -2422,5 +2422,1445 @@
     "primary_source_url": "https://faq.whatsapp.com/2635108359972899",
     "reviewed": "2026-03-23T22:13:00+08:00",
     "status": "Accepted"
+  },
+  {
+    "index": "065",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SCHEDULE GMAIL TO ARRIVE AT THE PERFECT TIME",
+    "what_it_solves": "Helps you send emails at a sensible hour instead of disturbing people late at night or forgetting to send them later.",
+    "what_to_do": "Use Gmail's schedule send option before sending work mails, reminders, applications, or follow-ups.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Gmail app and compose your email."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the three-dot menu before sending."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Schedule send."
+      },
+      {
+        "bold_title": "Pick",
+        "text": "a suggested time or set your own date and time."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the Scheduled folder if you want to change or cancel it later."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is very useful for job applications, client follow-ups, school emails, and polite late-night drafting.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Gmail Help",
+    "primary_source_url": "https://support.google.com/mail/answer/9214606"
+  },
+  {
+    "index": "066",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "FIND LOST EMAILS WITH GMAIL SEARCH CODES",
+    "what_it_solves": "Helps you find old bills, tickets, attachments, forms, and receipts without scrolling endlessly through your inbox.",
+    "what_to_do": "Use Gmail search operators like from:, has:attachment, filename:, older_than:, and after: to narrow results quickly.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Gmail and tap the search bar."
+      },
+      {
+        "bold_title": "Type",
+        "text": "from: followed by a sender name or email address."
+      },
+      {
+        "bold_title": "Add",
+        "text": "has:attachment or filename:pdf if you are looking for a document."
+      },
+      {
+        "bold_title": "Use",
+        "text": "after: or before: with a date if you remember the period."
+      },
+      {
+        "bold_title": "Combine",
+        "text": "two or three operators to find the exact email faster."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This turns Gmail into a mini search engine for your life. It is especially useful during tax filing, travel, reimbursements, and warranty claims.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Gmail Help",
+    "primary_source_url": "https://support.google.com/mail/answer/7190"
+  },
+  {
+    "index": "067",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "LET GMAIL ADD TRAVEL BOOKINGS TO CALENDAR",
+    "what_it_solves": "Helps you avoid manually copying flight, hotel, restaurant, and ticket details from email into your calendar.",
+    "what_to_do": "Turn on Events from Gmail in Google Calendar so supported bookings appear automatically.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Google Calendar app."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Menu and then Settings."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Events from Gmail."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Show events from Gmail."
+      },
+      {
+        "bold_title": "Check",
+        "text": "upcoming travel and booking emails to see if calendar entries were added."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Always verify the final time, address, and cancellation status. Automatic calendar entries are helpful, but they should not replace checking the original booking.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Calendar Help",
+    "primary_source_url": "https://support.google.com/calendar/answer/6084018"
+  },
+  {
+    "index": "068",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "STOP WEBSITES FROM SPAMMING YOUR PHONE",
+    "what_it_solves": "Helps you stop annoying news, shopping, astrology, betting, and fake-alert notifications that appear even when you are not browsing that site.",
+    "what_to_do": "Use Chrome site permissions to block notifications from websites that tricked you into allowing alerts.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Chrome on your phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "the website that keeps sending notifications."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the site information or lock icon near the address bar."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Permissions and select Notifications."
+      },
+      {
+        "bold_title": "Block",
+        "text": "notifications from that site."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Many people think these are app notifications. Often they are just website permissions that can be switched off in seconds.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Chrome Help",
+    "primary_source_url": "https://support.google.com/chrome/answer/95472"
+  },
+  {
+    "index": "069",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "LOCK INCOGNITO TABS WHEN YOU LEAVE CHROME",
+    "what_it_solves": "Keeps private browsing tabs from staying openly visible when someone else picks up your phone.",
+    "what_to_do": "Turn on Chrome's option to lock Incognito tabs when you leave the browser.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Chrome on your phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Settings."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Privacy and security."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Lock Incognito tabs when you leave Chrome."
+      },
+      {
+        "bold_title": "Test",
+        "text": "by opening an Incognito tab, leaving Chrome, and returning to it."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Incognito does not make you invisible online. This only protects the tabs from casual viewing on your phone.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Chrome Help",
+    "primary_source_url": "https://support.google.com/chrome/answer/95464"
+  },
+  {
+    "index": "070",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "FIND STEP-FREE ROUTES ON GOOGLE MAPS",
+    "what_it_solves": "Helps people using wheelchairs, senior citizens, parents with strollers, and travellers with heavy luggage avoid routes with difficult stairs.",
+    "what_to_do": "Use Google Maps' wheelchair-accessible transit route option when planning public transport trips.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Maps and search for your destination."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Directions."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the public transport option."
+      },
+      {
+        "bold_title": "Open",
+        "text": "route options."
+      },
+      {
+        "bold_title": "Select",
+        "text": "Wheelchair accessible before choosing your route."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is not only for wheelchair users. It is also a smart trick when travelling with elderly parents, luggage, children, or an injury.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Maps Help",
+    "primary_source_url": "https://support.google.com/maps/answer/6396990"
+  },
+  {
+    "index": "071",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "CHECK AIR QUALITY BEFORE OUTDOOR PLANS",
+    "what_it_solves": "Helps you avoid bad-air windows before morning walks, school runs, cycling, outdoor sports, or long commutes.",
+    "what_to_do": "Use Google's air quality information before deciding when to step out or whether to use a mask.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Maps or search for air quality near your location."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the air quality layer or result if available."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the AQI level and nearby monitoring points."
+      },
+      {
+        "bold_title": "Compare",
+        "text": "nearby areas if you are choosing where to walk, run, or commute."
+      },
+      {
+        "bold_title": "Plan",
+        "text": "outdoor activity for a cleaner window if the air is poor."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "AQI can vary within the same city. Treat it as a decision aid, not a perfect reading for your exact street.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Maps Help",
+    "primary_source_url": "https://support.google.com/maps/answer/11270845"
+  },
+  {
+    "index": "072",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "USE MAPS INCOGNITO FOR PRIVATE SEARCHES",
+    "what_it_solves": "Lets you search or navigate to sensitive places without those searches being saved to your Google Maps activity in the usual way.",
+    "what_to_do": "Turn on Incognito mode in Google Maps before searching for places you do not want mixed with normal recommendations.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Maps."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "your profile picture."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Turn on Incognito mode."
+      },
+      {
+        "bold_title": "Search",
+        "text": "or navigate as needed."
+      },
+      {
+        "bold_title": "Turn off",
+        "text": "Incognito mode when you want normal saved history and personalization again."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Some Maps features are not available in Incognito mode. Use it only when privacy matters more than personalization.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Maps Help",
+    "primary_source_url": "https://support.google.com/maps/answer/9430563"
+  },
+  {
+    "index": "073",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "CHECK CRISIS ALERTS BEFORE TAKING A ROUTE",
+    "what_it_solves": "Helps you spot active crisis information such as floods, wildfires, or earthquakes in areas you are searching or travelling through.",
+    "what_to_do": "Look for Google Maps crisis alerts before entering an affected area or choosing a route through one.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Maps before you travel."
+      },
+      {
+        "bold_title": "Search",
+        "text": "the area or destination you are heading to."
+      },
+      {
+        "bold_title": "Check",
+        "text": "whether a crisis alert appears in the map view."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the alert to read safety information and updates."
+      },
+      {
+        "bold_title": "Reroute",
+        "text": "if the planned route enters an affected area."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not depend only on one app during emergencies. Follow local authorities and official emergency instructions first.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Maps Help",
+    "primary_source_url": "https://support.google.com/maps/answer/9985621"
+  },
+  {
+    "index": "074",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "RESET A SHARED PHOTO ALBUM LINK",
+    "what_it_solves": "Helps you stop an old Google Photos album link from continuing to circulate after a wedding, school event, office party, or family function.",
+    "what_to_do": "Use Google Photos shared album controls to remove people, restrict access, or reset link sharing.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the shared album in Google Photos."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the sharing or options menu."
+      },
+      {
+        "bold_title": "Review",
+        "text": "who has access to the album."
+      },
+      {
+        "bold_title": "Remove",
+        "text": "people who should no longer see it."
+      },
+      {
+        "bold_title": "Reset",
+        "text": "link sharing if the old link has gone too far."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is useful after events where album links get forwarded widely. Resetting the link gives you a fresh start.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Photos Help",
+    "primary_source_url": "https://support.google.com/photos/answer/9789702"
+  },
+  {
+    "index": "075",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "STACK SIMILAR PHOTOS BEFORE CLEANING GALLERY",
+    "what_it_solves": "Helps you reduce gallery clutter from repeated selfies, burst shots, screenshots, and near-identical photos without losing track of them.",
+    "what_to_do": "Turn on Google Photos photo stacks so similar photos are grouped together in your main view.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Photos."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "the Photos view."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the photo stacks or organise option if shown."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Stack similar photos."
+      },
+      {
+        "bold_title": "Review",
+        "text": "each stack before deleting anything permanently."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Stacking does not save storage by itself. It helps you review similar photos faster before deciding what to delete.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Photos Help",
+    "primary_source_url": "https://support.google.com/photos/answer/14169846"
+  },
+  {
+    "index": "076",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "AUTO-SHARE FAMILY PHOTOS WITH ONE PERSON",
+    "what_it_solves": "Helps families avoid repeatedly asking each other to send photos of children, parents, pets, trips, or shared events.",
+    "what_to_do": "Use Google Photos Partner Sharing to automatically share selected photos with a trusted person.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Photos."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Photos settings and then Sharing."
+      },
+      {
+        "bold_title": "Select",
+        "text": "Partner Sharing."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "what to share, such as all photos, a date range, or selected people if available."
+      },
+      {
+        "bold_title": "Invite",
+        "text": "only a trusted partner and review the settings regularly."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This can share a lot of personal photos automatically. Set the scope carefully before inviting someone.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Photos Help",
+    "primary_source_url": "https://support.google.com/photos/answer/7378858"
+  },
+  {
+    "index": "077",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SHARE A YOUTUBE VIDEO FROM THE EXACT SECOND",
+    "what_it_solves": "Saves people from watching a long video just to find the one useful moment you wanted them to see.",
+    "what_to_do": "Use YouTube's share-at-timestamp option instead of sending the full video link without context.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the YouTube video."
+      },
+      {
+        "bold_title": "Move",
+        "text": "to the exact moment you want to share."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Share."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "the timestamp option if it appears."
+      },
+      {
+        "bold_title": "Send",
+        "text": "the link so the video opens at that moment."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is perfect for tutorials, interviews, recipes, speeches, lectures, product reviews, and news clips.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "YouTube Help",
+    "primary_source_url": "https://support.google.com/youtube/answer/57741"
+  },
+  {
+    "index": "078",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "LISTEN TO YOUTUBE VIDEOS IN ANOTHER LANGUAGE",
+    "what_it_solves": "Helps you follow selected videos in a language you understand better when the creator or YouTube provides alternate audio tracks.",
+    "what_to_do": "Use YouTube's Audio track setting on supported videos to switch between original and dubbed audio.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "a YouTube video."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the player settings icon."
+      },
+      {
+        "bold_title": "Select",
+        "text": "Audio track if the option appears."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "your preferred language."
+      },
+      {
+        "bold_title": "Set",
+        "text": "preferred languages in YouTube settings if you want this more often."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This works only on videos with additional audio tracks or auto-dubbed audio. Quality can vary, so switch back if the dub sounds confusing.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "YouTube Help",
+    "primary_source_url": "https://support.google.com/youtube/answer/13339776"
+  },
+  {
+    "index": "079",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "ASK GEMINI QUESTIONS ABOUT A YOUTUBE VIDEO",
+    "what_it_solves": "Helps you understand a long tutorial, lecture, review, or explainer without manually watching and rewatching every minute.",
+    "what_to_do": "Use Gemini to ask about YouTube videos, playlists, or channels and get quick answers from the content.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Gemini app or Gemini website."
+      },
+      {
+        "bold_title": "Paste",
+        "text": "a YouTube link or ask Gemini to find a video on a topic."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "for a summary, key steps, pros and cons, or study notes."
+      },
+      {
+        "bold_title": "Follow up",
+        "text": "with specific questions about the part you care about."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "important claims by opening the video or checking other sources."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This is excellent for learning, but do not treat AI summaries as final proof. Use them to navigate the video faster.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Gemini Apps Help",
+    "primary_source_url": "https://support.google.com/gemini/answer/16622858"
+  },
+  {
+    "index": "080",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "ASK AI TO FIND PHOTOS FROM YOUR GALLERY",
+    "what_it_solves": "Helps you find old photos and videos by describing them naturally instead of remembering dates, albums, or file names.",
+    "what_to_do": "Connect supported gallery apps to Gemini and ask for photos or videos using plain language.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Gemini on your phone."
+      },
+      {
+        "bold_title": "Connect",
+        "text": "a supported gallery app such as Google Photos if the option is available."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "for a photo in natural language, such as “photos from Goa with mom” or “videos of the school function.”"
+      },
+      {
+        "bold_title": "Review",
+        "text": "the search results shown from your gallery."
+      },
+      {
+        "bold_title": "Refine",
+        "text": "the request with names, places, dates, or objects if needed."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is useful for finding memories quickly, but check privacy and activity settings before connecting personal photo libraries.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Photos Help",
+    "primary_source_url": "https://support.google.com/photos/answer/15734842"
+  },
+  {
+    "index": "081",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "ADD A PIN TO YOUR WHATSAPP ACCOUNT",
+    "what_it_solves": "Makes it harder for someone to take over your WhatsApp account even if they somehow get your verification code.",
+    "what_to_do": "Turn on WhatsApp two-step verification and add a recovery email.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp Settings."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Account."
+      },
+      {
+        "bold_title": "Select",
+        "text": "Two-step verification."
+      },
+      {
+        "bold_title": "Set",
+        "text": "a six-digit PIN."
+      },
+      {
+        "bold_title": "Add",
+        "text": "an email address so you can reset the PIN if you forget it."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Never share your WhatsApp verification code or two-step PIN. If someone asks for it, assume it is a takeover attempt.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1920866721452534"
+  },
+  {
+    "index": "082",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SEND LINKS WITHOUT REVEALING EXTRA SIGNALS",
+    "what_it_solves": "Adds privacy when sharing links in WhatsApp by stopping automatic previews from being generated for links you send.",
+    "what_to_do": "Turn on WhatsApp's Disable link previews setting before sharing links where privacy matters.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp Settings."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Privacy."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Advanced."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Disable link previews."
+      },
+      {
+        "bold_title": "Share",
+        "text": "sensitive links only after checking the preview no longer appears."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is a small privacy setting most people miss. It is useful when sharing private documents, invite links, listings, or personal pages.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/445453537819972"
+  },
+  {
+    "index": "083",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "PAY SMALL UPI AMOUNTS WITHOUT ENTERING PIN",
+    "what_it_solves": "Makes small daily payments faster and reduces bank-statement clutter for tea, snacks, parking, photocopies, and local shopping.",
+    "what_to_do": "Use UPI Lite in a supported UPI app for low-value payments without entering your UPI PIN each time.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "a UPI app that supports UPI Lite."
+      },
+      {
+        "bold_title": "Find",
+        "text": "UPI Lite in payment settings or profile."
+      },
+      {
+        "bold_title": "Link",
+        "text": "your eligible bank account."
+      },
+      {
+        "bold_title": "Add",
+        "text": "a small balance to UPI Lite."
+      },
+      {
+        "bold_title": "Use",
+        "text": "it for small everyday payments where supported."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Keep only a sensible small balance. The convenience is the point, not storing too much money in a quick-payment wallet.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "NPCI / Google Pay Help",
+    "primary_source_url": "https://support.google.com/pay/india/answer/13327133"
+  },
+  {
+    "index": "084",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "LET FAMILY MAKE UPI PAYMENTS WITH LIMITS",
+    "what_it_solves": "Helps parents, senior citizens, students, or household members make controlled UPI payments without handing over full account access.",
+    "what_to_do": "Use UPI Circle in a supported app to delegate payments with limits and controls.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "a UPI app that supports UPI Circle."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the UPI Circle or delegated payments option."
+      },
+      {
+        "bold_title": "Add",
+        "text": "a trusted family member or secondary user."
+      },
+      {
+        "bold_title": "Set",
+        "text": "the monthly limit and approval mode."
+      },
+      {
+        "bold_title": "Review",
+        "text": "payments regularly and remove access when it is no longer needed."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Delegate only to someone you trust. Limits reduce risk, but they do not remove the need to monitor payments.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "NPCI UPI Circle / Google Pay Help",
+    "primary_source_url": "https://www.npci.org.in/product/upi-circle"
+  },
+  {
+    "index": "085",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "REMOVE YOUR PHONE NUMBER FROM GOOGLE SEARCH",
+    "what_it_solves": "Helps you reduce the chance of strangers finding your personal phone number, home address, or email address through Google Search.",
+    "what_to_do": "Use Google's “Results about you” tool to find and request removal of personal contact information from search results.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Search and go to the “Results about you” tool."
+      },
+      {
+        "bold_title": "Add",
+        "text": "the personal details you want Google to monitor, such as phone number, email, or address."
+      },
+      {
+        "bold_title": "Review",
+        "text": "the results Google finds that contain your personal information."
+      },
+      {
+        "bold_title": "Request",
+        "text": "removal for results that expose sensitive contact details."
+      },
+      {
+        "bold_title": "Check",
+        "text": "alerts later if Google finds new matching results."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This removes eligible results from Google Search, not necessarily from the original website. For full removal, also contact the site owner when possible.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Search Help",
+    "primary_source_url": "https://support.google.com/websearch/answer/12719076"
+  },
+  {
+    "index": "086",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SET A DIGITAL LEGACY PLAN FOR YOUR GOOGLE ACCOUNT",
+    "what_it_solves": "Helps your family access selected Google account data if you become inactive for a long time or something unexpected happens.",
+    "what_to_do": "Use Google's Inactive Account Manager to decide who should be notified and what data can be shared.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "Google Account settings."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Data & privacy and look for Inactive Account Manager or digital legacy settings."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "how long Google should wait before treating the account as inactive."
+      },
+      {
+        "bold_title": "Add",
+        "text": "trusted contacts who should be notified."
+      },
+      {
+        "bold_title": "Select",
+        "text": "which data, if any, those contacts can receive."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is especially important if your Gmail, Drive, Photos, or documents contain family records, business files, or financial references.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Account Help",
+    "primary_source_url": "https://support.google.com/accounts/answer/3036546"
+  },
+  {
+    "index": "087",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "AUTO-DELETE OLD GOOGLE ACTIVITY",
+    "what_it_solves": "Helps reduce how much old search, app, location, and YouTube activity stays saved in your Google account.",
+    "what_to_do": "Turn on auto-delete for Google activity instead of manually clearing history once in a while.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "your Google Account settings."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Data & privacy."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the history setting you want to manage, such as Web & App Activity or YouTube History."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Auto-delete."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "how long Google should keep that activity before deleting it automatically."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Deleting old activity can reduce personalization. If you rely heavily on history-based suggestions, choose a longer auto-delete window.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Account Help",
+    "primary_source_url": "https://support.google.com/accounts/answer/465"
+  },
+  {
+    "index": "088",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "FACT-CHECK VIRAL CLAIMS BEFORE FORWARDING",
+    "what_it_solves": "Helps you check whether a viral WhatsApp claim, health warning, political quote, or shocking image has already been reviewed by fact-checkers.",
+    "what_to_do": "Use Google Fact Check Explorer before forwarding claims that sound urgent, emotional, or too convenient.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://toolbox.google.com/factcheck/explorer"
+      },
+      {
+        "bold_title": "Paste",
+        "text": "the key claim, person name, image description, or phrase from the forward."
+      },
+      {
+        "bold_title": "Search",
+        "text": "for existing fact-checks from recognised fact-checking organisations."
+      },
+      {
+        "bold_title": "Read",
+        "text": "the rating, explanation, and original context."
+      },
+      {
+        "bold_title": "Forward",
+        "text": "only if the claim still looks reliable after checking."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is very useful for election claims, health rumours, celebrity deaths, communal rumours, and fake government notices.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Fact Check Explorer",
+    "primary_source_url": "https://toolbox.google.com/factcheck/explorer"
+  },
+  {
+    "index": "089",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SET GOOGLE ALERTS FOR YOUR NAME OR TOPIC",
+    "what_it_solves": "Helps you automatically track new web mentions of your name, business, exam, scheme, brand, court case, or important topic.",
+    "what_to_do": "Use Google Alerts to get email updates instead of repeatedly searching the same thing yourself.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://www.google.com/alerts"
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the exact name, phrase, company, topic, or keyword you want to monitor."
+      },
+      {
+        "bold_title": "Click",
+        "text": "Show options to choose frequency, source type, language, and region."
+      },
+      {
+        "bold_title": "Create",
+        "text": "the alert and choose the email account where updates should arrive."
+      },
+      {
+        "bold_title": "Edit",
+        "text": "the alert later if results are too broad or too noisy."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Use quotes around exact phrases, such as your full name or company name, to reduce irrelevant results.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Search Help",
+    "primary_source_url": "https://support.google.com/websearch/answer/4815696"
+  },
+  {
+    "index": "090",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "TRANSLATE FOREIGN-LANGUAGE EMAILS INSIDE GMAIL",
+    "what_it_solves": "Helps you understand travel confirmations, client emails, admission messages, product support replies, or foreign notices without copy-pasting into another app.",
+    "what_to_do": "Use Gmail's built-in message translation when an email arrives in a language you do not read comfortably.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the email in Gmail."
+      },
+      {
+        "bold_title": "Look for",
+        "text": "the translation banner at the top of the message."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Translate if the option appears."
+      },
+      {
+        "bold_title": "Use",
+        "text": "the more-options menu if you need to translate manually."
+      },
+      {
+        "bold_title": "Check",
+        "text": "important dates, amounts, names, and legal terms carefully before acting."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Machine translation is useful for understanding, but do not rely on it blindly for legal, visa, medical, or financial commitments.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Gmail Help",
+    "primary_source_url": "https://support.google.com/mail/answer/13846620"
+  },
+  {
+    "index": "091",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SNOOZE EMAILS UNTIL YOU CAN ACT",
+    "what_it_solves": "Stops important emails from getting buried when you cannot respond immediately but do not want to forget them.",
+    "what_to_do": "Use Gmail Snooze to make an email return to the top of your inbox at the right date and time.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the email in Gmail."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the more-options menu."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Snooze."
+      },
+      {
+        "bold_title": "Pick",
+        "text": "a suggested time or set your own date and time."
+      },
+      {
+        "bold_title": "Review",
+        "text": "the Snoozed folder if you want to change or cancel it."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is better than marking everything unread. Use it for bills, approvals, callbacks, renewals, school emails, and follow-ups.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Gmail Help",
+    "primary_source_url": "https://support.google.com/mail/answer/7622010"
+  },
+  {
+    "index": "092",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SAVE CRITICAL DRIVE FILES FOR OFFLINE USE",
+    "what_it_solves": "Helps you access tickets, IDs, prescriptions, admit cards, forms, hotel vouchers, and PDFs even when the internet fails.",
+    "what_to_do": "Make important Google Drive files available offline before travel, exams, appointments, or field visits.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Google Drive app."
+      },
+      {
+        "bold_title": "Find",
+        "text": "the document, PDF, image, or file you may need offline."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the more-options menu next to the file."
+      },
+      {
+        "bold_title": "Select",
+        "text": "Make available offline."
+      },
+      {
+        "bold_title": "Check",
+        "text": "the Offline section before leaving home or office."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do this while you still have good internet. Offline access is most useful only if you prepare before the network problem starts.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Google Drive Help",
+    "primary_source_url": "https://support.google.com/drive/answer/2375012"
+  },
+  {
+    "index": "093",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "TRANSLATE ENTIRE WEBSITES IN CHROME",
+    "what_it_solves": "Helps you read foreign-language product pages, university sites, travel pages, government notices, and support forums without leaving the browser.",
+    "what_to_do": "Use Chrome's built-in page translation instead of copying one paragraph at a time.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the webpage in Chrome."
+      },
+      {
+        "bold_title": "Look for",
+        "text": "the Translate option near the address bar or in the browser menu."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the language you want to read in."
+      },
+      {
+        "bold_title": "Switch",
+        "text": "between original and translated versions if something looks odd."
+      },
+      {
+        "bold_title": "Set",
+        "text": "automatic translation for languages you read often, if useful."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is especially useful for students, travellers, import buyers, researchers, and anyone comparing foreign product or service information.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Chrome Help",
+    "primary_source_url": "https://support.google.com/chrome/answer/173424"
+  },
+  {
+    "index": "094",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "ASK GEMINI ACROSS YOUR GOOGLE APPS",
+    "what_it_solves": "Helps you find details buried across Gmail, Calendar, Maps, YouTube, and Photos without opening each app separately.",
+    "what_to_do": "Use Gemini connected apps when you want AI help with your own Google information, where the feature is available.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Gemini app or Gemini website."
+      },
+      {
+        "bold_title": "Check",
+        "text": "that the relevant Google apps are connected or allowed."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "a specific question, such as “Find my hotel booking” or “What time is my next meeting?”"
+      },
+      {
+        "bold_title": "Follow up",
+        "text": "with an action, such as creating a calendar event or finding directions."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "important times, addresses, bookings, and amounts in the original app before acting."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This is powerful because it uses personal context. Review connected-app permissions and avoid using it on shared devices.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Gemini Apps Help",
+    "primary_source_url": "https://support.google.com/gemini/answer/13695044"
+  },
+  {
+    "index": "095",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "AUTO-TRANSLATE YOUTUBE CAPTIONS",
+    "what_it_solves": "Helps you learn from videos in other languages by reading subtitles in a language you understand.",
+    "what_to_do": "Use YouTube caption settings and Auto-translate when the video has captions but not in your preferred language.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the YouTube video."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the video settings or captions option."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "captions if they are available."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Auto-translate if your language is not listed."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the language you want to read."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is great for lectures, recipes, tutorials, product reviews, and explainers. Accuracy depends on the original audio and captions.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "YouTube Help",
+    "primary_source_url": "https://support.google.com/youtube/answer/100078"
+  },
+  {
+    "index": "096",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "MAKE YOUTUBE REMIND YOU TO STOP",
+    "what_it_solves": "Helps you control endless video watching, especially at night or during exam, work, or family time.",
+    "what_to_do": "Use YouTube's time watched, take-a-break, and bedtime reminder settings to interrupt mindless viewing.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the YouTube app."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "your profile picture."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Time watched or Time management."
+      },
+      {
+        "bold_title": "Set",
+        "text": "a take-a-break reminder for long viewing sessions."
+      },
+      {
+        "bold_title": "Add",
+        "text": "a bedtime reminder if late-night scrolling is the bigger problem."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "The reminder will not fix discipline by itself, but it creates a useful speed breaker before one video becomes one hour.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "YouTube Help",
+    "primary_source_url": "https://support.google.com/youtube/answer/9052667"
+  },
+  {
+    "index": "097",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "MESSAGE YOURSELF ON WHATSAPP",
+    "what_it_solves": "Turns WhatsApp into a quick personal inbox for notes, links, photos, addresses, voice notes, documents, and reminders you do not want to lose.",
+    "what_to_do": "Use WhatsApp's Message Yourself feature instead of sending reminders to random friends or groups.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp."
+      },
+      {
+        "bold_title": "Start",
+        "text": "a new chat."
+      },
+      {
+        "bold_title": "Select",
+        "text": "your own name or “Message yourself.”"
+      },
+      {
+        "bold_title": "Send",
+        "text": "notes, links, images, addresses, or documents to yourself."
+      },
+      {
+        "bold_title": "Search",
+        "text": "that chat later when you need the saved item."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is very handy for temporary information like parking spots, courier photos, shopping lists, UPI screenshots, and travel details.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1785465805163404"
+  },
+  {
+    "index": "098",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SEARCH WHATSAPP CHATS BY DATE",
+    "what_it_solves": "Helps you find old messages from a known day without scrolling through months of family, school, office, or society-group chats.",
+    "what_to_do": "Use WhatsApp's search-by-date option when you remember when something was discussed but not the exact words.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the WhatsApp chat you want to search."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the search option."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Search by date or the calendar icon if shown."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the date when the message was likely sent."
+      },
+      {
+        "bold_title": "Review",
+        "text": "messages from that day to find the detail you need."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is excellent for finding old addresses, fee notices, meeting decisions, school instructions, and payment discussions.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1131773267485499"
+  },
+  {
+    "index": "099",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "PIN ONE IMPORTANT WHATSAPP MESSAGE",
+    "what_it_solves": "Keeps one critical message visible inside a chat, such as an address, meeting link, payment detail, deadline, or event instruction.",
+    "what_to_do": "Pin a specific WhatsApp message instead of expecting everyone to scroll back and find it.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the WhatsApp chat or group."
+      },
+      {
+        "bold_title": "Press",
+        "text": "and hold the message you want to pin."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Pin from the menu."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "how long the message should remain pinned."
+      },
+      {
+        "bold_title": "Use",
+        "text": "it for information the whole group will need repeatedly."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is different from pinning a chat. It pins the exact message inside the conversation, which is far more useful for groups.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/294619079641794"
+  },
+  {
+    "index": "100",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "SEND SENSITIVE MEDIA AS VIEW ONCE",
+    "what_it_solves": "Adds privacy when sending photos, videos, or voice messages that should not stay permanently in the recipient's chat.",
+    "what_to_do": "Use WhatsApp View Once for temporary information such as IDs, codes, locations, or private media.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the WhatsApp chat."
+      },
+      {
+        "bold_title": "Attach",
+        "text": "the photo, video, or voice message you want to send."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "the View Once icon before sending."
+      },
+      {
+        "bold_title": "Send",
+        "text": "the message only after checking the recipient."
+      },
+      {
+        "bold_title": "Use",
+        "text": "View Once again each time you want the same protection."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "View Once reduces persistence, but it is not magic. The recipient may still remember, photograph, or otherwise capture sensitive information.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1077018839582332"
+  },
+  {
+    "index": "101",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "CREATE CUSTOM WHATSAPP LISTS FOR BUSY CHATS",
+    "what_it_solves": "Helps you separate noisy chats from important ones, so school, family, work, building, and customer chats do not all compete equally.",
+    "what_to_do": "Use WhatsApp Lists as custom filters for the chats you want to check together.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the WhatsApp Chats tab."
+      },
+      {
+        "bold_title": "Swipe",
+        "text": "down to view your chat lists if the feature is available."
+      },
+      {
+        "bold_title": "Create",
+        "text": "a new list for a group of chats, such as Family, School, Work, or Vendors."
+      },
+      {
+        "bold_title": "Add",
+        "text": "the chats or groups that belong in that list."
+      },
+      {
+        "bold_title": "Use",
+        "text": "the list when you want to check only that category."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is useful when your WhatsApp is both personal and professional. It makes the app feel less chaotic.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1470216183498937"
+  },
+  {
+    "index": "102",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "VERIFY GOLD JEWELLERY BEFORE PAYING",
+    "what_it_solves": "Helps you check whether hallmarked jewellery and BIS-marked products are genuine before you trust the seller's word.",
+    "what_to_do": "Use the BIS Care app to verify HUID, ISI mark, or licence details while buying jewellery or certified products.",
+    "steps": [
+      {
+        "bold_title": "Install",
+        "text": "the BIS Care app from the official app store."
+      },
+      {
+        "bold_title": "Find",
+        "text": "the HUID number on hallmarked gold jewellery or the licence number on a BIS-marked product."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Verify HUID or Verify Licence Details in the app."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the number exactly as printed."
+      },
+      {
+        "bold_title": "Match",
+        "text": "the purity, product, licence, and seller details before paying."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do this before purchase, especially for high-value jewellery. A hallmark symbol alone is not enough if the HUID or licence details do not match.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "Bureau of Indian Standards",
+    "primary_source_url": "https://www.bis.gov.in/bis-apps/?lang=en"
+  },
+  {
+    "index": "103",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "PRACTISE SPOKEN ENGLISH WITH AI VOICE",
+    "what_it_solves": "Gives students, job seekers, and professionals a patient speaking partner for interviews, presentations, customer calls, and everyday English practice.",
+    "what_to_do": "Use ChatGPT Voice Mode to practise aloud instead of only typing questions and reading answers.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the ChatGPT app or website where Voice Mode is available."
+      },
+      {
+        "bold_title": "Start",
+        "text": "a voice conversation."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "for a roleplay, such as job interview, client call, viva, sales pitch, or travel conversation."
+      },
+      {
+        "bold_title": "Speak",
+        "text": "naturally and ask for corrections after each answer."
+      },
+      {
+        "bold_title": "Repeat",
+        "text": "the same situation until you sound more confident."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This works best when you ask for gentle correction, shorter sentences, and a realistic Indian context rather than generic grammar lessons.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "OpenAI Help Center",
+    "primary_source_url": "https://help.openai.com/en/articles/8400625-voice-mode-faq"
+  },
+  {
+    "index": "104",
+    "created": "2026-04-24T08:00:00-04:00",
+    "title": "USE TEMPORARY CHAT FOR SENSITIVE AI QUESTIONS",
+    "what_it_solves": "Helps you ask one-off questions without adding them to your normal ChatGPT history or memory.",
+    "what_to_do": "Start a Temporary Chat when discussing sensitive drafts, personal dilemmas, private documents, or experimental prompts.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "ChatGPT."
+      },
+      {
+        "bold_title": "Start",
+        "text": "a new chat."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the Temporary Chat option if available."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "your one-off question without relying on saved memory or past context."
+      },
+      {
+        "bold_title": "Return",
+        "text": "to a normal chat when you want continuity across conversations."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Temporary Chat is useful for privacy hygiene, but you should still avoid sharing passwords, OTPs, bank PINs, or highly sensitive personal data.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesofindia",
+    "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
+    "primary_source_name": "OpenAI Help Center",
+    "primary_source_url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq"
   }
 ]
