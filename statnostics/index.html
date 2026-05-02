@@ -360,6 +360,15 @@
 
 <main>
 
+  <!-- ── Citizen Survey Section ── -->
+  <div class="section-header" style="margin-top:8px">
+    <span class="section-title">Citizen Survey 2022–23</span>
+    <span class="section-badge">Lancet</span>
+  </div>
+  <p class="section-desc">6 data cards on health-seeking behaviour, out-of-pocket spending, and primary care preferences from India's Citizen Survey 2022–23 (Lancet Citizens' Commission)</p>
+
+  <div class="card-grid" id="grid-citizen"></div>
+
   <!-- ── UN v3 Section ── -->
   <div class="section-header" style="margin-top:8px">
     <span class="section-title">UN Global Data · 2025</span>
@@ -423,6 +432,42 @@
 // ─── Card data ────────────────────────────────────────────────────────────────
 
 const sections = [
+  {
+    gridId: "grid-citizen",
+    base: "./2026-04-27-citizen-survey/",
+    cards: [
+      {
+        file: "01-quack-to-hospital-dream",
+        title: "1 in 7 Indians visits a quack or chemist — but wants a real hospital",
+        desc: "If everyone switched to their stated preference, government hospitals would gain a net +3,402 patients while traditional healers would shed 1,761."
+      },
+      {
+        file: "02-insurance-that-doesnt-absorb-shock",
+        title: "Your insurance card won't save you at a private hospital",
+        desc: "Even insured patients at private hospitals face a median bill of 1.43 months of food spend. Only 27% of respondents have any insurance at all."
+      },
+      {
+        file: "03-family-doctor-everyone-wants-nobody-has",
+        title: "9 in 10 Indians want a family doctor. Barely 1 in 35 has one.",
+        desc: "87.1% want a dedicated family doctor as their first point of care. In practice, only 2.8% of outpatient visits go to a community health worker."
+      },
+      {
+        file: "04-bigger-family-hungrier-per-person",
+        title: "Bigger family, smaller plate",
+        desc: "A 9+ member household spends 4× more on food than a 1–2 member household — yet each person gets 29% less food money per month."
+      },
+      {
+        file: "05-educated-waiting",
+        title: "Study more, wait longer: India's education-jobs paradox",
+        desc: "Among 25–34 year olds, those with higher education are 7× more likely to be actively seeking work than those with only primary schooling."
+      },
+      {
+        file: "06-private-hospital-food-shock",
+        title: "One private hospital stay can swallow months of food",
+        desc: "The median private hospital bill equals 2.3 months of the same household's food budget. At government hospitals the figure is just 0.16 months."
+      }
+    ]
+  },
   {
     gridId: "grid-un-v3",
     base: "./2026-04-14-un-v3/",
