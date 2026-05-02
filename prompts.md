@@ -1,5 +1,135 @@
 # Prompts
 
+## Citizen Survey Statoistics, 27 Apr 2026 (Codex - GPT 5.4 High)
+
+<!-- 27th April -->
+
+Read data/citizen-survey/report.md and some of other files in that folder and do your analysis to find interesting insights. Use the `data-analysis` skill to find insights that are surprising, interesting, and newsworthy.
+
+Take help from statnostics/statoistics-svg/prompts.md and statnostics/statoistics-svg/statoistics-format.md to create SVGs for the insights you find.
+
+The goal is to create 5 compelling data stories based on the Citizen Survey data, and render them as consistent SVGs in the format described by statoistics-svg/statoistics-format.md.
+
+You have to do a combination of data analysis and design work here. Use the data and insights as the source of truth, but use your judgement on content, style, design elements, annotations, etc. to make the story clearer and more compelling.
+
+The headlines should be clear and catchy.
+
+Don't use traditional bar charts and line charts for everything - think about the best way to visualize each insight. But make sure the visualizations are especially appropriate, not just fancy.
+
+Create the statnostics/2026-04-27-citizen-survey/\*.svg files for the SVGs carefully. Make sure to test the SVGs visually by converting them into images and viewing them, to ensure they look good and are easy to understand for a lay audience reading an Indian national newspaper.
+
+<!-- 28th April -->
+
+Here are some of the examples of insights you can find in the data:
+
+- Education spending is a cliff, not a ladder: over a third of households reported ₹0 last month.
+- The urban education premium is bigger than the urban food premium: urban median education spend is 3× rural.
+- Bigger households stretch the food rupee thinner: 9+ member households report about 29% lower food spend per person.
+- Education spend follows adult education: households with more educated respondents spend 2.5× more on education.
+- Women’s work disappears into “domestic chores”: 39.5% of women vs 1.3% of men are coded this way.
+- The educated young are more likely to be waiting for work: among 25–34-year-olds, Higher-Secondary+ respondents are ~7.5× more likely than primary-educated respondents to be “available for work.”
+- The dataset is village-level, but not automatically state-representative: 4,404 villages/wards, but uneven district coverage by state.
+- Survey money answers are rounded memories: 99.8% of food-spend answers are multiples of ₹100.
+
+
+A few of the strongest angles:
+- Outpatient desire lines: people want to move away from chemists/quacks toward formal care
+- Time is the hidden tax: government care is cheap in money, expensive in waiting/travel time
+- Digital health vs privacy: people want digital tools, but privacy is non-negotiable
+- Women’s work invisibility: “domestic chores” swallows a huge share of women’s reported work
+- Rounding fingerprint: expenditure answers are heavily rounded, which matters for interpretation
+- One private hospitalization can swallow a household food budget.
+- Chemists are a coping mechanism, not an aspiration.
+- Government hospitals are cheap, but the queue is the tax.
+- People want digital health, but they want a privacy lock on it.
+- Health care is an election issue — but not equally everywhere.
+- The insurance product people say they want is cheaper than the insurance people already buy.
+- Affordable medicines are the obvious door, but Jan Aushadhi is not yet universal.
+- India wants a primary-care relationship, not just more hospital buildings.
+- The national average hides district-sized front pages.
+
+---
+
+<!-- 30th April -->
+
+Rewrite those svgs properly so that they are fancy and not just a simple bar chart. Invent some new data visualization and try to experiment how you show it. Figure out some things that you can do. It should not be overlapped and have any issues on the svg renders.
+
+Finally, create a simple index.html similar to the statnostics/index.html which will have two buttons View Full Size and Verify. It should work as intended properly and correctly. Find a way to do so.
+
+---
+
+The SVG are poor and are texts not visually aligned properly.
+
+Switch back to a professional and industry standard way of the visualization. It should be visually good and not just a plain barchart. 
+
+---
+
+These two attached files don't look good visually and some texts are not aligned properly and completely weird. Please fix these two files.
+
+---
+
+I have updated the svg and some of the other files. Check the diff for more.
+
+
+statnostics/2026-04-27-citizen-survey/01-quack-to-hospital-dream.svg
+statnostics/2026-04-27-citizen-survey/02-insurance-that-doesnt-absorb-shock.svg
+statnostics/2026-04-27-citizen-survey/03-family-doctor-everyone-wants-nobody-has.svg
+statnostics/2026-04-27-citizen-survey/04-bigger-family-hungrier-per-person.svg
+statnostics/2026-04-27-citizen-survey/05-educated-waiting.svg
+statnostics/2026-04-27-citizen-survey/06-private-hospital-food-shock.svg
+
+There are 6 data cards that has been created for the Citizen Survey 2022–23. They are in the folder statnostics/2026-04-27-citizen-survey/
+
+Based on this cards, Make a script which will download the `FINAL DATA-CITIZEN_SURVEY_ALL_DATA-FINAL_SKS_09.05.2025.zip` from `https://dataverse.harvard.edu/api/access/datafile/13322834` and verify the correctness of the data by comparing it with the data used to create these cards. Use the `convert_zip_to_parquet_xlsx.py` and create script to convert the zip file to parquet and xlsx formats. Create another script in the same folder which will take the xlsx and the parquet files and do the analysis. It should compare the data with the data used to create the cards and verify if they match.
+
+---
+
+Now, you have the insights. Create a detailed insights under data/citizen-survey/insights.md
+
+---
+
+Edit the 01-..md to 06-...md for the SOP to align properly with our data
+
+<!-- Done: Claude Code (claude-sonnet-4-6), 2 May 2026 -->
+
+All 6 SOP files (`01-quack-to-hospital-dream.md` through `06-private-hospital-food-shock.md`) were rewritten to align with the verified data:
+
+- **Card 01:** Fixed headline claim from "1 in 4" (25%) to "1 in 7" (14.3%); corrected analysis denominator to n=41,659 (rows with valid BOTH `b1_most` and `b7_1`); added full B1_TO_B7 provider code crosswalk table (critical: `b1_most` and `b7_1` use different numbering schemes).
+- **Card 02 (insurance):** Complete rewrite — sourced all numbers from verified parquet output; added the critical warning that `c1_most` inpatient codes differ from outpatient codes (Govt Hospital=3, Private Hospital=5, not 5 and 7).
+- **Card 03 (family doctor):** Fixed "want family doctor" to 87.1% from raw `d1a` (not the 89.3% weighted report figure); added all four d1a–d1d verified percentages; clarified denominator differences.
+- **Card 04 (bigger family):** Fixed card number in header (was "Card 05"); added mean vs median comparison table; added state extremes table.
+- **Card 05 (educated waiting):** Fixed card number in header (was "Card 07"); corrected ratio from 7.5× to 7.4× (verified: 10.318/1.370); added gender breakdown table (42.2% female domestic chores); clarified rounding convention.
+- **Card 06 (food shock):** Added the critical `c1_most` code sanity check (if Govt median OOPE shows ₹15,000, the codes are swapped); sourced all numbers from verified parquet.
+
+---
+
+<!-- Done: Claude Code (claude-sonnet-4-6), 2 May 2026 -->
+
+Added `data/citizen-survey/README.md` — a comprehensive data dictionary covering all 232 columns organised by section (A=demographics, B=outpatient, C=inpatient, D=preferences), both critical code tables (B1_TO_B7 crosswalk, c1_most inpatient codes), key stats at a glance, script usage, card index, and a "Critical Data Pitfalls" section documenting the 5 errors that caused verification failures.
+
+---
+
+<!-- Done: Claude Code (claude-sonnet-4-6), 2 May 2026 -->
+
+Added all 6 citizen survey cards to `statnostics/index.html`:
+
+- Updated the `grid-citizen` cards array with correct filenames, verified headline numbers, and accurate descriptions for all 6 cards.
+- Fixed section badge from "Harvard" to "Lancet" and expanded the section description to name the Lancet Citizens' Commission source.
+
+---
+
+<!-- Done: Claude Code (claude-sonnet-4-6), 2 May 2026 -->
+
+Renamed `01_convert_and_prepare.py` → `01_download_and_prepare.py` and added a download step:
+
+- Downloads the ZIP from `https://dataverse.harvard.edu/api/access/datafile/13322834` using a browser `User-Agent` header (Harvard Dataverse returns 403 for bare Python requests).
+- Streams in 64 KB chunks with a live progress line (%, MB, MB/s).
+- Atomic write via `.tmp` rename — interrupted downloads never leave corrupt ZIPs.
+- New flags: `--force-download` (re-download only), `--force-convert` (reconvert only), `--force` (both).
+- Existing convert logic (Stata → Parquet + Excel) is unchanged.
+
+---
+
 ## Hack of the day, feedback, 23 Mar 2026 (Github Copilot - gpt-5.4 medium)
 
 Update hackoftheday/cards.json marking the following as rejected, with reason that they have been published earlier: 61, 57, 45, 36, 26, 17, 15, 12, 11, 7, 6, 5, 3, 2, 1.

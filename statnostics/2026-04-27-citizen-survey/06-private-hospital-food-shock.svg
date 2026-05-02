@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg{fill:#ed1c24;}
+.wm-wh{font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:18px;font-weight:bold;fill:#ffffff;letter-spacing:0.2px;}
+.wm-dk{font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:18px;font-weight:bold;fill:#231f20;letter-spacing:0.2px;}
+.tagline{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:14px;fill:#ffffff;}
+.border{fill:none;stroke:#231f20;stroke-width:0.8;}
+.sep{stroke:#231f20;stroke-width:0.6;fill:none;}
+.hl{font-family:PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif;font-size:25px;font-weight:bold;fill:#231f20;}
+.deck{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:13.2px;fill:#231f20;}
+.section{font-family:PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:0.8px;fill:#231f20;}
+.label{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:11.6px;fill:#231f20;}
+.small{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10px;fill:#6b7280;}
+.tiny{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;}
+.tiny-white{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#ffffff;}
+.axis{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9px;fill:#98a2b3;}
+.note{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:10.2px;fill:#6b7280;}
+.source{font-family:PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif;font-size:9.4px;fill:#9ca3af;}
+.value{font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:18px;fill:#231f20;}
+.value-big{font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:34px;fill:#231f20;}
+.value-huge{font-family:GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif;font-size:46px;fill:#231f20;}
+.guide{stroke:#d0d5dd;stroke-width:0.8;fill:none;}
+.guide-dash{stroke:#d0d5dd;stroke-width:0.8;fill:none;stroke-dasharray:2.5 3.5;}
+.panel-stroke{stroke:#e5e7eb;stroke-width:0.8;}
+</style>
+</defs>
+<rect width="480" height="480" fill="#ffffff"/>
+<rect class="mast-bg" width="480" height="29"/>
+<text x="6" y="21" class="wm-wh" text-anchor="start" textLength="31" lengthAdjust="spacingAndGlyphs">STA</text>
+<text x="37" y="21" class="wm-dk" text-anchor="start" textLength="27" lengthAdjust="spacingAndGlyphs">TOI</text>
+<text x="64" y="21" class="wm-wh" text-anchor="start" textLength="48" lengthAdjust="spacingAndGlyphs">STICS</text>
+<text x="125" y="21.5" class="tagline" text-anchor="start" textLength="134" lengthAdjust="spacingAndGlyphs">A slice of life in numbers</text>
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+<text x="240" y="66" class="hl" text-anchor="middle">One private hospital stay can swallow</text>
+<text x="240" y="96" class="hl" text-anchor="middle">months of food.</text>
+<text x="240" y="121" class="deck" text-anchor="middle">At the median, private-hospital out-of-pocket spend equals 2.3 months of food.</text>
+<text x="240" y="139" class="deck" text-anchor="middle">Even insured cases still absorb 1.4 months.</text>
+<line class="sep" x1="30" y1="154" x2="450" y2="154"/>
+<rect x="34" y="170" width="412" height="226" fill="#fbfcfe" rx="3" class="panel-stroke"/>
+<text x="50" y="188" class="section" text-anchor="start">MEDIAN BILL IN MONTHS OF FOOD</text>
+<text x="240" y="208" class="tiny" text-anchor="middle">household monthly food spend = 1.0 month</text>
+<rect x="158.0" y="218" width="54.66666666666666" height="126" fill="#f8fafc" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="185.33333333333331" y="214" class="axis" text-anchor="middle">1 month</text>
+<rect x="212.66666666666666" y="218" width="54.66666666666666" height="126" fill="#fff8f0" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="240.0" y="214" class="axis" text-anchor="middle">2 month</text>
+<rect x="267.3333333333333" y="218" width="54.666666666666686" height="126" fill="#fef2f2" stroke="#e5e7eb" stroke-width="0.6"/>
+<text x="294.66666666666663" y="214" class="axis" text-anchor="middle">3 month</text>
+<line x1="158" y1="344" x2="322" y2="344" class="guide" stroke="#98a2b3"/>
+<text x="158" y="356" class="axis" text-anchor="middle">0</text>
+<text x="212.66666666666666" y="356" class="axis" text-anchor="middle">1</text>
+<text x="267.3333333333333" y="356" class="axis" text-anchor="middle">2</text>
+<text x="322.0" y="356" class="axis" text-anchor="middle">3</text>
+<line x1="158" y1="242" x2="322" y2="242" class="guide"/>
+<text x="52" y="246" class="label" text-anchor="start">Govt hospital</text>
+<rect x="158" y="235" width="8.83076923076922" height="14" fill="#1d3461" rx="7"/>
+<circle cx="166.83076923076922" cy="242" r="5.5" fill="#1d3461" stroke="#ffffff" stroke-width="1.8"/>
+<text x="380" y="246" class="value" text-anchor="middle">0.16</text>
+<line x1="158" y1="274" x2="322" y2="274" class="guide"/>
+<text x="52" y="278" class="label" text-anchor="start">Private clinic</text>
+<rect x="158" y="267" width="74.71111111111111" height="14" fill="#92400e" rx="7"/>
+<circle cx="232.7111111111111" cy="274" r="5.5" fill="#92400e" stroke="#ffffff" stroke-width="1.8"/>
+<text x="380" y="278" class="value" text-anchor="middle">1.37</text>
+<line x1="158" y1="306" x2="322" y2="306" class="guide"/>
+<text x="52" y="310" class="label" text-anchor="start">Private hospital</text>
+<text x="52" y="323" class="small" text-anchor="start">insured</text>
+<rect x="158" y="299" width="78.35555555555555" height="14" fill="#c1121f" rx="7"/>
+<circle cx="236.35555555555555" cy="306" r="5.5" fill="#c1121f" stroke="#ffffff" stroke-width="1.8"/>
+<text x="380" y="310" class="value" text-anchor="middle">1.43</text>
+<line x1="158" y1="338" x2="322" y2="338" class="guide"/>
+<text x="52" y="342" class="label" text-anchor="start">Private hospital</text>
+<text x="52" y="355" class="small" text-anchor="start">uninsured</text>
+<rect x="158" y="331" width="145.77777777777777" height="14" fill="#7f1d1d" rx="7"/>
+<circle cx="303.77777777777777" cy="338" r="5.5" fill="#7f1d1d" stroke="#ffffff" stroke-width="1.8"/>
+<text x="380" y="342" class="value" text-anchor="middle">2.67</text>
+<rect x="52" y="364" width="176" height="24" fill="#fff7ed" rx="3" stroke="#f3c89d" stroke-width="0.8"/>
+<text x="140" y="381" class="value" text-anchor="middle" fill="#92400e">2.3 months</text>
+<rect x="240" y="364" width="188" height="24" fill="#fef2f2" rx="3" stroke="#fca5a5" stroke-width="0.8"/>
+<text x="334" y="381" class="value" text-anchor="middle" fill="#c1121f">43% over 3 months</text>
+<line class="sep" x1="30" y1="416" x2="450" y2="416"/>
+<text x="240" y="429" class="note" text-anchor="middle">Private-hospital median OOPE equals 2.32 months of food; govt-hospital median is 0.16.</text>
+<text x="240" y="442" class="note" text-anchor="middle">Even insured private-hospital cases still absorb 1.43 months; 43.2% exceed three months.</text>
+<text x="240" y="456" class="source" text-anchor="middle">Citizen Survey 2022-23 · inpatient expenditure tables</text>
+</svg>

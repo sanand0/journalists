@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:9.4px; fill:#9ca3af; }
+.ax       { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+.row-sz   { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:12px; font-weight:bold; }
+.row-sub  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:9px; fill:#9ca3af; }
+.bar-val  { font-family: GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif; font-size:13px; font-weight:bold; }
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">Bigger family, smaller plate:</text>
+<text x="240" y="96" text-anchor="middle" class="hl">the hunger hidden in household totals</text>
+
+<!-- Deck -->
+<text x="240" y="119" text-anchor="middle" class="deck">A family of 9+ spends 4&#xD7; more on food total than a couple.</text>
+<text x="240" y="136" text-anchor="middle" class="deck">But each person gets 29% less. Same pot. More mouths.</text>
+<line class="sep" x1="30" y1="149" x2="450" y2="149"/>
+
+<!-- ===== HORIZONTAL BAR CHART: per-capita food spend =====
+     Only ONE metric: per-person food spend.
+     Chart: bars from x=160 (axis) to max x=400 (for ₹1,250)
+     Bar height=28px, gap between rows=12px
+     Row tops: 168, 208, 248, 288, 328
+     Scale: ₹1,250 = 240px wide. 1Rs = 240/1250 = 0.192px
+     ₹1,250 → 240px   x right edge = 400
+     ₹1,000 → 192px   x right edge = 352
+     ₹889   → 171px   x right edge = 331
+
+     Left label zone: x=38 to x=155
+     Bar start: x=160
+     Value label: just inside or right of bar end
+-->
+
+<!-- Axis line -->
+<line x1="80" y1="162" x2="80" y2="370" stroke="#d1d5db" stroke-width="1.2"/>
+
+<!-- X-axis tick labels -->
+<text x="80" y="382" text-anchor="middle" class="ax">₹0</text>
+<text x="176" y="382" text-anchor="middle" class="ax">₹500</text>
+<text x="272" y="382" text-anchor="middle" class="ax">₹1,000</text>
+<text x="320" y="382" text-anchor="middle" class="ax">₹1,250</text>
+<!-- Tick marks -->
+<line x1="176" y1="370" x2="176" y2="374" stroke="#d1d5db" stroke-width="0.8"/>
+<line x1="272" y1="370" x2="272" y2="374" stroke="#d1d5db" stroke-width="0.8"/>
+<line x1="320" y1="370" x2="320" y2="374" stroke="#d1d5db" stroke-width="0.8"/>
+<!-- Grid -->
+<line x1="176" y1="162" x2="176" y2="370" stroke="#f3f4f6" stroke-width="0.8"/>
+<line x1="272" y1="162" x2="272" y2="370" stroke="#f3f4f6" stroke-width="0.8"/>
+<line x1="320" y1="162" x2="320" y2="370" stroke="#f3f4f6" stroke-width="0.8"/>
+
+<text x="200" y="393" text-anchor="middle" class="ax">Median food spend per person per month &#x2192;</text>
+
+<!-- ── ROW 1: 1–2 members  ₹1,250  bar=240px ── -->
+<text x="75" y="184" text-anchor="end" class="row-sz" style="fill:#1d3461;">1–2</text>
+<text x="75" y="196" text-anchor="end" class="row-sub">members</text>
+<rect x="80" y="168" width="240" height="28" rx="3" fill="#1d3461"/>
+<text x="313" y="187" text-anchor="end" class="bar-val" style="fill:#ffffff;">₹1,250</text>
+
+<!-- ── ROW 2: 3–4 members  ₹1,250  bar=240px ── -->
+<text x="75" y="224" text-anchor="end" class="row-sz" style="fill:#1d3461;">3–4</text>
+<text x="75" y="236" text-anchor="end" class="row-sub">members</text>
+<rect x="80" y="208" width="240" height="28" rx="3" fill="#1d3461"/>
+<text x="313" y="227" text-anchor="end" class="bar-val" style="fill:#ffffff;">₹1,250</text>
+
+<!-- ── ROW 3: 5–6 members  ₹1,000  bar=192px ── -->
+<text x="75" y="264" text-anchor="end" class="row-sz" style="fill:#374151;">5–6</text>
+<text x="75" y="276" text-anchor="end" class="row-sub">members</text>
+<rect x="80" y="248" width="192" height="28" rx="3" fill="#374151"/>
+<text x="265" y="267" text-anchor="end" class="bar-val" style="fill:#ffffff;">₹1,000</text>
+
+<!-- ── ROW 4: 7–8 members  ₹1,000  bar=192px ── -->
+<text x="75" y="304" text-anchor="end" class="row-sz" style="fill:#374151;">7–8</text>
+<text x="75" y="316" text-anchor="end" class="row-sub">members</text>
+<rect x="80" y="288" width="192" height="28" rx="3" fill="#374151"/>
+<text x="265" y="307" text-anchor="end" class="bar-val" style="fill:#ffffff;">₹1,000</text>
+
+<!-- ── ROW 5: 9+ members  ₹889  bar=171px — RED ── -->
+<text x="75" y="344" text-anchor="end" class="row-sz" style="fill:#c1121f;">9+</text>
+<text x="75" y="356" text-anchor="end" class="row-sub" style="fill:#c1121f;">members</text>
+<rect x="80" y="328" width="171" height="28" rx="3" fill="#c1121f"/>
+<text x="244" y="347" text-anchor="end" class="bar-val" style="fill:#ffffff;">₹889</text>
+
+<!-- Callout: drop arrow on right side of chart, inside 480px -->
+<!-- Arrow from row1 bar-end (x=400, y=182) to row5 bar-end (x=331, y=342) — vertical only at x=415 -->
+<line x1="335" y1="182" x2="335" y2="342" stroke="#c1121f" stroke-width="1.5"/>
+<polygon points="335,182 331,192 339,192" fill="#c1121f"/>
+<polygon points="335,342 331,332 339,332" fill="#c1121f"/>
+<!-- Bracket end caps -->
+<line x1="320" y1="182" x2="335" y2="182" stroke="#c1121f" stroke-width="1" stroke-opacity="0.6"/>
+<line x1="251" y1="342" x2="335" y2="342" stroke="#c1121f" stroke-width="1" stroke-opacity="0.6"/>
+<!-- Label beside arrow -->
+<text x="352" y="252" text-anchor="middle" class="bar-val" style="fill:#c1121f;font-size:16px;">&#x2212;29%</text>
+<text x="378" y="250" text-anchor="middle" class="ax" style="fill:#c1121f;font-size:9px;">per</text>
+<text x="398" y="250" text-anchor="middle" class="ax" style="fill:#c1121f;font-size:9px;">person</text>
+
+<!-- Total household callout boxes — small annotation right of value -->
+<text x="338" y="184" class="ax" style="fill:#9ca3af;font-size:8px;">total: ₹2,500</text>
+<text x="338" y="224" class="ax" style="fill:#9ca3af;font-size:8px;">total: ₹5,000</text>
+<text x="338" y="264" class="ax" style="fill:#9ca3af;font-size:8px;">total: ₹6,000</text>
+<text x="338" y="304" class="ax" style="fill:#9ca3af;font-size:8px;">total: ₹7,000</text>
+<text x="338" y="344" class="ax" style="fill:#c1121f;font-size:8px;">total: ₹10,000</text>
+
+<!-- Footer -->
+<line class="sep" x1="30" y1="400" x2="450" y2="400"/>
+<text x="240" y="413" text-anchor="middle" class="note">Median per-capita monthly food spend (a2g_food ÷ household size). Total household spend in grey.</text>
+<text x="240" y="426" text-anchor="middle" class="note">9+ member homes spend 4&#xD7; more in total, yet each person gets 29% less than in small homes.</text>
+<text x="240" y="441" text-anchor="middle" class="source">Source: Citizen Survey 2022&#x2013;23 · Lancet Citizens&#x2019; Commission on Reimagining India&#x2019;s Health System</text>
+</svg>

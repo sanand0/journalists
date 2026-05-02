@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+<defs>
+<style>
+.mast-bg  { fill: #ed1c24; }
+.wm-wh    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#ffffff; }
+.wm-dk    { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:19px; font-weight:bold; fill:#231f20; }
+.tagline  { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:15px; fill:#ffffff; }
+.border   { fill:none; stroke:#231f20; stroke-width:0.8; }
+.sep      { stroke:#231f20; stroke-width:0.6; fill:none; }
+.hl       { font-family: PoynterOSDisplay-Bold,'Poynter OS Display',Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; fill:#231f20; }
+.deck     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:13px; fill:#231f20; }
+.note     { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10.5px; fill:#6b7280; }
+.source   { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:9.4px; fill:#9ca3af; }
+.big-pct  { font-family: GriffithGothic-Bold,'Griffith Gothic','Arial Narrow',Arial,sans-serif; font-weight:bold; }
+.ring-lbl { font-family: PoynterAgateOne-BoldCondensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:12px; font-weight:bold; text-anchor:middle; }
+.ring-sub { font-family: PoynterAgateOne-Condensed,'Poynter Agate One','Arial Narrow',Arial,sans-serif; font-size:10px; text-anchor:middle; fill:#6b7280; }
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="480" height="480" fill="#ffffff"/>
+
+<!-- Masthead -->
+<rect class="mast-bg" width="480" height="29"/>
+<text transform="translate(6 21) scale(1 1.11)" class="wm-wh">STA<tspan class="wm-dk">TOI</tspan>STICS</text>
+<text transform="translate(128 22) scale(1 1.11)" class="tagline">A slice of life in numbers</text>
+
+<!-- Border -->
+<rect class="border" x="0.4" y="0.4" width="479.2" height="479.2"/>
+
+<!-- Headline -->
+<text x="240" y="67" text-anchor="middle" class="hl">9 in 10 Indians want a family doctor.</text>
+<text x="240" y="96" text-anchor="middle" class="hl">Barely 1 in 35 has one.</text>
+
+<!-- Deck -->
+<text x="240" y="119" text-anchor="middle" class="deck">87% of respondents say a dedicated family doctor should be</text>
+<text x="240" y="136" text-anchor="middle" class="deck">their first stop. Only 2.8% actually used a community health worker.</text>
+
+<!-- Separator -->
+<line class="sep" x1="30" y1="149" x2="450" y2="149"/>
+
+<!-- === TWO PROPORTIONAL CIRCLES === -->
+<!-- Big circle: 87% WANT → radius proportional to sqrt(87) → ~9.3 units -->
+<!-- Small circle: 2.8% HAVE → radius proportional to sqrt(2.8) → ~1.67 units -->
+<!-- Scale so big circle r = 130px, small r = 130 * (1.67/9.3) = 23.4px -->
+
+<!-- Big circle: center (170, 290), r=130 — "WANT" -->
+<circle cx="170" cy="280" r="130" fill="#1d3461" fill-opacity="0.10" stroke="#1d3461" stroke-width="2"/>
+<!-- Label inside big circle -->
+<text x="130" y="300" class="big-pct" style="font-size:64px;fill:#1d3461;">87%</text>
+<text x="170" y="320" class="ring-lbl" style="fill:#1d3461;">WANT a dedicated</text>
+<text x="170" y="334" class="ring-lbl" style="fill:#1d3461;">family doctor</text>
+<text x="170" y="346" class="ring-sub">n = 49,623</text>
+
+<!-- Small circle: center (370, 290), r=24 — "HAVE" -->
+<circle cx="370" cy="290" r="24" fill="#c1121f" fill-opacity="0.15" stroke="#c1121f" stroke-width="2"/>
+<!-- Label inside/near small circle -->
+<text x="370" y="286" class="big-pct" style="font-size:16px;fill:#c1121f;text-anchor:middle;">2.8%</text>
+<text x="370" y="300" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:8px;fill:#c1121f;text-anchor:middle;">actual use</text>
+
+<!-- VS label between circles -->
+<text x="320" y="295" text-anchor="middle" style="font-family:PoynterAgateOne-BoldCondensed,'Arial Narrow',Arial,sans-serif;font-size:20px;font-weight:bold;fill:#9ca3af;">VS</text>
+
+<!-- Annotation labels outside -->
+<text x="370" y="328" text-anchor="middle" class="ring-lbl" style="fill:#c1121f;">ACTUALLY</text>
+<text x="370" y="341" text-anchor="middle" class="ring-lbl" style="fill:#c1121f;">USED one</text>
+<text x="370" y="354" class="ring-sub">community worker visit</text>
+
+<!-- Scale note -->
+<text x="392" y="163" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:6px;fill:#9ca3af;">Circle area proportional to percentage</text>
+
+<!-- Supplementary stats bar -->
+<rect x="40" y="406" width="400" height="1" fill="#e5e7eb"/>
+<!-- Row of 3 secondary stats -->
+<text x="120" y="423" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Arial Narrow',Arial,sans-serif;font-size:18px;font-weight:bold;fill:#1d3461;">86%</text>
+<text x="120" y="435" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">want regular ASHA</text>
+<text x="120" y="445" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">community visits</text>
+
+<line x1="240" y1="400" x2="240" y2="440" stroke="#e5e7eb" stroke-width="0.8"/>
+
+<text x="360" y="423" text-anchor="middle" style="font-family:GriffithGothic-Bold,'Arial Narrow',Arial,sans-serif;font-size:18px;font-weight:bold;fill:#1d3461;">84%</text>
+<text x="360" y="435" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">want same facility</text>
+<text x="360" y="445" text-anchor="middle" style="font-family:PoynterAgateOne-Condensed,'Arial Narrow',Arial,sans-serif;font-size:9px;fill:#6b7280;">for all care</text>
+
+<!-- Footer separator -->
+<line class="sep" x1="30" y1="447" x2="450" y2="447"/>
+
+<!-- Note -->
+<text x="240" y="460" text-anchor="middle" class="note">&#x2018;Want family doctor&#x2019; = agree/strongly agree; &#x2018;Actual use&#x2019; = ASHA as most recent outpatient provider.</text>
+
+<!-- Source -->
+<text x="240" y="472" text-anchor="middle" class="source">Source: Citizen Survey 2022&#x2013;23 · Lancet Citizens&#x2019; Commission on Reimagining India&#x2019;s Health System</text>
+</svg>
