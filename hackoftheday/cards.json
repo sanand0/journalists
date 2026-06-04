@@ -3862,5 +3862,725 @@
     "qr_url": "https://timesofindia.indiatimes.com/technology/hack-of-day",
     "primary_source_name": "OpenAI Help Center",
     "primary_source_url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq"
+  },
+  {
+    "index": "105",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "CHECK WHICH APPS CAN ACCESS YOUR GOOGLE ACCOUNT",
+    "what_it_solves": "Helps you find old apps, extensions, quiz sites, editors, and services that may still have access to your Google account data.",
+    "what_to_do": "Review third-party access in your Google Account and remove anything you no longer use or trust.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "your Google Account settings."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Security."
+      },
+      {
+        "bold_title": "Open",
+        "text": "third-party apps and services or your account connections."
+      },
+      {
+        "bold_title": "Review",
+        "text": "apps that can access Gmail, Drive, Calendar, Contacts, or other account data."
+      },
+      {
+        "bold_title": "Remove",
+        "text": "any app you do not recognise, use, or trust anymore."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Removing access may break an integration you use. If needed, reconnect only from the official app or website.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Account Help",
+    "primary_source_url": "https://support.google.com/accounts/answer/14012355"
+  },
+  {
+    "index": "106",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "DOWNLOAD A BACKUP OF YOUR GOOGLE DATA",
+    "what_it_solves": "Helps you keep a copy of important Gmail, Drive, Photos, Contacts, and other Google data before changing accounts, phones, or storage plans.",
+    "what_to_do": "Use Google Takeout to create an export of the data you want to keep.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://takeout.google.com"
+      },
+      {
+        "bold_title": "Select",
+        "text": "the Google products you want to export."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the file type, export size, and delivery method."
+      },
+      {
+        "bold_title": "Create",
+        "text": "the export and wait for Google to prepare it."
+      },
+      {
+        "bold_title": "Download",
+        "text": "the archive and store it safely."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Exports can be very large and may contain private information. Save them only in a secure place.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Account Help",
+    "primary_source_url": "https://support.google.com/accounts/answer/3024190"
+  },
+  {
+    "index": "107",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "MOVE AUTHENTICATOR CODES BEFORE CHANGING PHONES",
+    "what_it_solves": "Helps you avoid getting locked out of important accounts that use app-based one-time codes for two-step verification.",
+    "what_to_do": "Transfer or sync Google Authenticator codes before wiping, selling, or losing access to your old phone.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Authenticator on your old phone."
+      },
+      {
+        "bold_title": "Check",
+        "text": "whether your codes are synced to your Google Account."
+      },
+      {
+        "bold_title": "Or use",
+        "text": "the transfer accounts option to export codes with a QR code."
+      },
+      {
+        "bold_title": "Install",
+        "text": "Google Authenticator on the new phone and sign in or import the QR code."
+      },
+      {
+        "bold_title": "Test",
+        "text": "one important login before erasing the old phone."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do this before the old phone is gone. Also save backup codes for your most important accounts.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Account Help",
+    "primary_source_url": "https://support.google.com/accounts/answer/1066447"
+  },
+  {
+    "index": "108",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "CHECK WHATSAPP LINKED DEVICES FOR SPYING",
+    "what_it_solves": "Helps you find WhatsApp Web or desktop sessions that may still be open on office computers, shared laptops, or old devices.",
+    "what_to_do": "Review linked devices in WhatsApp and log out from anything unfamiliar.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp on your phone."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Settings."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Linked devices."
+      },
+      {
+        "bold_title": "Review",
+        "text": "the device names and last active details."
+      },
+      {
+        "bold_title": "Log out",
+        "text": "from any device you do not recognise or no longer use."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Check this after using WhatsApp Web on borrowed or office computers, or if your chats show unusual activity.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1428782138011916"
+  },
+  {
+    "index": "109",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "CONNECT TO WHATSAPP THROUGH A PROXY",
+    "what_it_solves": "Helps WhatsApp keep working when normal access is blocked or disrupted on a local network.",
+    "what_to_do": "Use WhatsApp's proxy setting with a trusted proxy address when direct connection does not work.",
+    "steps": [
+      {
+        "bold_title": "Find",
+        "text": "a trusted proxy address from a reliable source."
+      },
+      {
+        "bold_title": "Open",
+        "text": "WhatsApp Settings."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Storage and data, then Proxy."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the proxy address."
+      },
+      {
+        "bold_title": "Connect",
+        "text": "and test by sending a message."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Use only trusted proxy addresses. Do not copy random proxy details from unknown groups or suspicious posts.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "WhatsApp Help Center",
+    "primary_source_url": "https://faq.whatsapp.com/1299035810920553"
+  },
+  {
+    "index": "110",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "SET PHONE RULES FOR CHILDREN WITH FAMILY LINK",
+    "what_it_solves": "Helps parents manage app downloads, permissions, screen time, bedtime, and location for a child's Google account.",
+    "what_to_do": "Use Google Family Link to set clear phone rules instead of negotiating every app and screen-time request manually.",
+    "steps": [
+      {
+        "bold_title": "Install",
+        "text": "or open the Google Family Link app."
+      },
+      {
+        "bold_title": "Select",
+        "text": "your child's supervised Google account."
+      },
+      {
+        "bold_title": "Set",
+        "text": "app approvals and app limits."
+      },
+      {
+        "bold_title": "Add",
+        "text": "daily screen-time limits and bedtime rules."
+      },
+      {
+        "bold_title": "Review",
+        "text": "usage and permissions regularly."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This works best when the rules are explained clearly to the child. It is a control tool, not a substitute for conversation.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Families Help",
+    "primary_source_url": "https://support.google.com/families/answer/7101025"
+  },
+  {
+    "index": "111",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "PUT YOUTUBE IN SUPERVISED MODE FOR KIDS",
+    "what_it_solves": "Helps children use YouTube with more age-appropriate settings instead of jumping straight into the full open platform.",
+    "what_to_do": "Set up a supervised YouTube experience or YouTube Kids through Family Link.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "the Family Link app."
+      },
+      {
+        "bold_title": "Select",
+        "text": "your child's account."
+      },
+      {
+        "bold_title": "Open",
+        "text": "YouTube controls."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "YouTube Kids or a supervised YouTube content setting."
+      },
+      {
+        "bold_title": "Review",
+        "text": "the setting as the child grows older."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "No filter is perfect. Check watch history and subscriptions periodically, especially for younger children.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "YouTube Help",
+    "primary_source_url": "https://support.google.com/youtube/answer/10314940"
+  },
+  {
+    "index": "112",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "TURN MEETINGS INTO LIVE CAPTIONS",
+    "what_it_solves": "Helps you follow online meetings when audio is unclear, accents are unfamiliar, or the room around you is noisy.",
+    "what_to_do": "Turn on live captions in Google Meet so spoken words appear as text on your screen.",
+    "steps": [
+      {
+        "bold_title": "Join",
+        "text": "a Google Meet call."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the meeting controls or more-options menu."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Captions."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the spoken language if prompted."
+      },
+      {
+        "bold_title": "Read",
+        "text": "the captions while continuing to listen."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Captions are turned on only for you. They are useful, but names, acronyms, and technical terms may still be wrong.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Meet Help",
+    "primary_source_url": "https://support.google.com/meet/answer/15077804"
+  },
+  {
+    "index": "113",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "TRANSLATE INDIAN LANGUAGES WITH BHASHINI",
+    "what_it_solves": "Helps you communicate across Indian languages for travel, service counters, shops, offices, schools, and family situations.",
+    "what_to_do": "Use Bhashini to translate text or speech between Indian languages.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Bhashini on the web or app."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the source and target Indian languages."
+      },
+      {
+        "bold_title": "Type",
+        "text": "or speak the sentence you want translated."
+      },
+      {
+        "bold_title": "Read",
+        "text": "or play the translated result."
+      },
+      {
+        "bold_title": "Use",
+        "text": "short, simple sentences for better accuracy."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "This is good for everyday understanding. For legal, medical, or financial meaning, verify with a person who knows the language well.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "BHASHINI, MeitY",
+    "primary_source_url": "https://bhashini.gov.in/"
+  },
+  {
+    "index": "114",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "SAVE FUEL WITH ECO-FRIENDLY ROUTES",
+    "what_it_solves": "Helps you choose routes that may use less fuel or energy on regular drives without manually comparing every option.",
+    "what_to_do": "Use Google Maps fuel-efficient routing and set your vehicle's engine type where available.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Maps."
+      },
+      {
+        "bold_title": "Search",
+        "text": "for your destination and tap Directions."
+      },
+      {
+        "bold_title": "Open",
+        "text": "route options."
+      },
+      {
+        "bold_title": "Turn on",
+        "text": "Prefer fuel-efficient routes."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "your engine type and compare route time before starting."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Do not choose an unsafe or unfamiliar road only to save fuel. Compare time, distance, and road quality too.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Maps Help",
+    "primary_source_url": "https://support.google.com/maps/answer/11470237"
+  },
+  {
+    "index": "115",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "CHECK HOW CROWDED A PLACE IS BEFORE GOING",
+    "what_it_solves": "Helps you avoid long waits at restaurants, shops, hospitals, banks, temples, salons, and public offices.",
+    "what_to_do": "Use Google Maps Popular Times and live busyness before leaving.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Maps."
+      },
+      {
+        "bold_title": "Search",
+        "text": "for the place you plan to visit."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the place details card."
+      },
+      {
+        "bold_title": "Scroll",
+        "text": "to Popular times or live busyness if available."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "a quieter time if your visit is flexible."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This works only where Google has enough visit data. Treat it as a useful estimate, not a guaranteed crowd count.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Business Profile Help",
+    "primary_source_url": "https://support.google.com/business/answer/6263531"
+  },
+  {
+    "index": "116",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "SET REPEATING TASKS FOR BILLS AND RENEWALS",
+    "what_it_solves": "Prevents missed rent, insurance renewals, school deadlines, medicine refills, subscriptions, and document-expiry dates.",
+    "what_to_do": "Use recurring tasks in Google Tasks instead of relying on memory.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Google Tasks."
+      },
+      {
+        "bold_title": "Create",
+        "text": "a task for the bill, renewal, or reminder."
+      },
+      {
+        "bold_title": "Add",
+        "text": "a date and time."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Repeat."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "daily, weekly, monthly, yearly, or a custom repeat pattern."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is better than keeping important recurring obligations in your head or buried inside old WhatsApp messages.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Tasks Help",
+    "primary_source_url": "https://support.google.com/tasks/answer/12132599"
+  },
+  {
+    "index": "117",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "CLEAN NEWSLETTERS WITH GMAIL MANAGE SUBSCRIPTIONS",
+    "what_it_solves": "Helps reduce inbox clutter from shopping sites, newsletters, travel portals, brands, courses, and alerts you no longer read.",
+    "what_to_do": "Use Gmail's Manage subscriptions view to unsubscribe from frequent senders in one place.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Gmail."
+      },
+      {
+        "bold_title": "Open",
+        "text": "the navigation menu."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Manage subscriptions if the option is available."
+      },
+      {
+        "bold_title": "Review",
+        "text": "senders that email you frequently."
+      },
+      {
+        "bold_title": "Unsubscribe",
+        "text": "from the ones you no longer want."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Use unsubscribe for genuine subscriptions. For suspicious or phishing mail, report spam instead of clicking links inside the email.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Google Blog",
+    "primary_source_url": "https://blog.google/products-and-platforms/products/gmail/new-manage-subscriptions-unsubscribe/"
+  },
+  {
+    "index": "118",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "TURN ON ENHANCED SAFE BROWSING IN CHROME",
+    "what_it_solves": "Adds stronger protection against phishing, malware, scam pages, dangerous downloads, and unsafe extensions while browsing.",
+    "what_to_do": "Use Chrome's Enhanced protection mode if you want stronger real-time Safe Browsing checks.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "Chrome."
+      },
+      {
+        "bold_title": "Go to",
+        "text": "Settings."
+      },
+      {
+        "bold_title": "Tap",
+        "text": "Privacy and security."
+      },
+      {
+        "bold_title": "Open",
+        "text": "Safe Browsing."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Enhanced protection."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "Enhanced protection shares extra security-related browsing information with Google. Use it if stronger protection matters more to you than the added data sharing.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Chrome Help",
+    "primary_source_url": "https://support.google.com/chrome/answer/9890866"
+  },
+  {
+    "index": "119",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "CHECK TRAFFIC CHALLANS ONLY ON OFFICIAL PARIVAHAN",
+    "what_it_solves": "Helps you avoid fake e-challan SMS or WhatsApp links that lead to fraud pages, payment traps, or malicious APKs.",
+    "what_to_do": "Verify challan status directly on the official Parivahan eChallan portal before paying.",
+    "steps": [
+      {
+        "bold_title": "Visit",
+        "text": "https://echallan.parivahan.gov.in"
+      },
+      {
+        "bold_title": "Choose",
+        "text": "Check challan status."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the challan number, vehicle number, or driving licence number."
+      },
+      {
+        "bold_title": "Verify",
+        "text": "the captcha and challan details."
+      },
+      {
+        "bold_title": "Pay",
+        "text": "only through the official portal flow."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Do not install APKs or pay from random links claiming to be traffic police. Go to the official site yourself.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Parivahan eChallan",
+    "primary_source_url": "https://echallan.parivahan.gov.in/index/check-challan-status"
+  },
+  {
+    "index": "120",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "USE DIGIYATRA BEFORE REACHING THE AIRPORT",
+    "what_it_solves": "Can reduce queue friction at participating Indian airports by using face-based digital processing at supported checkpoints.",
+    "what_to_do": "Register and add your boarding pass in the DigiYatra app before leaving for the airport.",
+    "steps": [
+      {
+        "bold_title": "Install",
+        "text": "the official DigiYatra app."
+      },
+      {
+        "bold_title": "Complete",
+        "text": "ID and face verification in the app."
+      },
+      {
+        "bold_title": "Add",
+        "text": "your upcoming flight or boarding pass."
+      },
+      {
+        "bold_title": "Share",
+        "text": "the travel data with the airport if prompted."
+      },
+      {
+        "bold_title": "Keep",
+        "text": "your normal ID and boarding pass ready as backup."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "DigiYatra is voluntary and airport support varies. Set it up before travel day, not while standing at the airport gate.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Ministry of Civil Aviation",
+    "primary_source_url": "https://www.civilaviation.gov.in/sites/default/files/2023-07/Digi%20Yatra%20Policy%20%28DIGI%20YATRA%29.pdf"
+  },
+  {
+    "index": "121",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "MAKE UPI PAYMENTS FROM A FEATURE PHONE",
+    "what_it_solves": "Lets people without smartphones or mobile internet make UPI payments through supported feature-phone methods.",
+    "what_to_do": "Use UPI 123PAY if your bank and number are set up for UPI.",
+    "steps": [
+      {
+        "bold_title": "Check",
+        "text": "whether your bank account and mobile number support UPI."
+      },
+      {
+        "bold_title": "Set",
+        "text": "or remember your UPI PIN securely."
+      },
+      {
+        "bold_title": "Use",
+        "text": "a supported UPI 123PAY method such as IVR, missed call, feature-phone app, or sound-based payment."
+      },
+      {
+        "bold_title": "Enter",
+        "text": "the payee and amount details carefully."
+      },
+      {
+        "bold_title": "Confirm",
+        "text": "the payment only with your own UPI PIN."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Never share your UPI PIN on a call. UPI PIN is used to send money, not to receive it.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "NPCI UPI 123PAY",
+    "primary_source_url": "https://www.npci.org.in/product/upi-123pay"
+  },
+  {
+    "index": "122",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "PAY UPI USING A RUPAY CREDIT CARD",
+    "what_it_solves": "Lets eligible users scan UPI QR codes and pay merchants using a linked RuPay credit card instead of only a bank account.",
+    "what_to_do": "Link an eligible RuPay credit card to a supported UPI app and select it while paying merchants.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "a UPI app that supports RuPay credit cards."
+      },
+      {
+        "bold_title": "Add",
+        "text": "a new payment method or credit card."
+      },
+      {
+        "bold_title": "Select",
+        "text": "your issuing bank and eligible RuPay credit card."
+      },
+      {
+        "bold_title": "Set",
+        "text": "or confirm the UPI PIN for the card."
+      },
+      {
+        "bold_title": "Choose",
+        "text": "the credit card while making merchant UPI payments."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Treat this like credit card spending, not free money. It is mainly for merchant payments, not casual person-to-person transfers.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "NPCI RuPay Credit Card on UPI",
+    "primary_source_url": "https://www.npci.org.in/product/rupay/credit-card-on-upi"
+  },
+  {
+    "index": "123",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "LIMIT WHERE YOUR DEBIT CARD CAN BE USED",
+    "what_it_solves": "Reduces risk if card details are leaked by turning off channels you rarely use, such as international, online, ATM, PoS, or contactless transactions.",
+    "what_to_do": "Use your bank app or card controls to disable unused channels and lower transaction limits.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "your bank app or card-control settings."
+      },
+      {
+        "bold_title": "Select",
+        "text": "the debit or credit card you want to manage."
+      },
+      {
+        "bold_title": "Review",
+        "text": "domestic, international, online, ATM, PoS, and contactless controls."
+      },
+      {
+        "bold_title": "Disable",
+        "text": "channels you do not normally use."
+      },
+      {
+        "bold_title": "Lower",
+        "text": "limits and raise them temporarily only when needed."
+      }
+    ],
+    "note_label": "CAREFUL",
+    "note": "Many frauds exploit card channels people forgot were open. Keep international and contactless usage off if you rarely need them.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "Reserve Bank of India",
+    "primary_source_url": "https://www.rbi.org.in/CommonPerson/english/scripts/FAQs.aspx?Id=1498"
+  },
+  {
+    "index": "124",
+    "created": "2026-06-05T06:21:46+08:00",
+    "title": "MAKE CHATGPT TEACH INSTEAD OF JUST ANSWER",
+    "what_it_solves": "Helps students learn concepts, coding, maths, writing, and exam topics without simply copying a final answer.",
+    "what_to_do": "Use ChatGPT Study Mode and ask it to guide, quiz, hint, and explain step by step.",
+    "steps": [
+      {
+        "bold_title": "Open",
+        "text": "ChatGPT."
+      },
+      {
+        "bold_title": "Type",
+        "text": "/ and select Study and learn if available."
+      },
+      {
+        "bold_title": "Describe",
+        "text": "your class level, topic, deadline, and what you are stuck on."
+      },
+      {
+        "bold_title": "Attach",
+        "text": "notes, a syllabus, or a photo of the problem if useful."
+      },
+      {
+        "bold_title": "Ask",
+        "text": "for hints and questions before the final answer."
+      }
+    ],
+    "note_label": "NOTE",
+    "note": "This is best for learning and revision. For exams or assignments, verify final answers against teachers, textbooks, or official solutions.",
+    "tip_name": "editorial.desk",
+    "tip_domain": "@timesinternet.com",
+    "qr_url": "https://timesinternet.com/hackoftheday",
+    "primary_source_name": "OpenAI Help Center",
+    "primary_source_url": "https://help.openai.com/en/articles/11780217-chatgpt-study-mode-faq"
   }
 ]
