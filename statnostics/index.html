@@ -141,16 +141,19 @@
     }
 
     /* Buttons */
-    .card-actions { display: flex; gap: 8px; }
+    .card-actions { display: flex; flex-wrap: wrap; gap: 6px; }
     .btn {
       border: none;
       cursor: pointer;
+      display: inline-flex;
+      align-items: center;
       font-size: 11px;
       font-weight: bold;
-      padding: 6px 13px;
+      padding: 6px 9px;
       border-radius: 2px;
       font-family: inherit;
       letter-spacing: 0.5px;
+      text-decoration: none;
       text-transform: uppercase;
       transition: background 0.15s;
     }
@@ -158,6 +161,8 @@
     .btn-view:hover { background: #16284e; }
     .btn-verify { background: #fff; color: #c1121f; border: 1.5px solid #c1121f; }
     .btn-verify:hover { background: #fef2f2; }
+    .btn-download { background: #fff; color: #1d3461; border: 1.5px solid #1d3461; }
+    .btn-download:hover { background: #f1f5f9; }
 
     /* ── Lightbox ── */
     #lightbox {
@@ -620,6 +625,7 @@ sections.forEach(({ gridId, base, cards }) => {
         <div class="card-actions">
           <button class="btn btn-view" data-svg="${svgSrc}">View full size</button>
           <button class="btn btn-verify" data-md="${mdSrc}" data-title="${card.title}">Verify</button>
+          <a class="btn btn-download" href="${svgSrc}" download="${card.file}.svg">Download SVG</a>
         </div>
       </div>`;
     grid.appendChild(el);

@@ -1,5 +1,15 @@
 # Prompts
 
+## Statoistics downloads, 04 Jun 2026
+
+<!--
+cd ~/code/journalists/
+dev.sh
+codex --yolo --model gpt-5.5 --config model_reasoning_effort=medium
+-->
+
+Add a button to the statnostics/index.html cards to download as SVG. Add it alongside the Verify button.
+
 ## Citizen Survey Statoistics, 27 Apr 2026 (Codex - GPT 5.4 High)
 
 <!-- 27th April -->
@@ -60,7 +70,7 @@ Finally, create a simple index.html similar to the statnostics/index.html which 
 
 The SVG are poor and are texts not visually aligned properly.
 
-Switch back to a professional and industry standard way of the visualization. It should be visually good and not just a plain barchart. 
+Switch back to a professional and industry standard way of the visualization. It should be visually good and not just a plain barchart.
 
 ---
 
